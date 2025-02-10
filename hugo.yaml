@@ -36,6 +36,16 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
+  # 搜索功能配置
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  
   # Favicon 配置
   favicon: "/favicon.ico"
   favicon16x16: "/favicon-16x16.png"
@@ -65,6 +75,10 @@ params:
 
 menu:
   main:
+    - identifier: "search"
+      name: "搜索"
+      url: "/search/"
+      weight: 5
     - identifier: "posts"
       name: "文章"
       url: "/posts/"
