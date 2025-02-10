@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:62124/posts/</link>
+    <link>http://localhost:57099/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62124/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57099/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:62124/posts/nezha-movie-review/</link>
+      <link>http://localhost:57099/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:57099/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:62124/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:57099/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:57099/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:62124/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:57099/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:57099/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -74,9 +74,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:57099/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:57099/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -92,9 +92,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</link>
+      <link>http://localhost:57099/posts/a-night-of-wake-keeping-at-funeral-home/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
+      <guid>http://localhost:57099/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
       <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -116,9 +116,9 @@
     </item>
     <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:62124/posts/it-takes-two-review/</link>
+      <link>http://localhost:57099/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:57099/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.png"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -145,9 +145,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:62124/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:57099/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:57099/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -197,10 +197,62 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>黑神话悟空：又爱又骂的西游冒险</title>
+      <link>http://localhost:57099/posts/black-myth-wukong-review/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57099/posts/black-myth-wukong-review/</guid>
+      <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
+      <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
+<p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
+<p>这三周里，一直在游戏群和各路天命人讨论着，B站、小红书、YouTube 的时间线里几乎都是这款游戏的内容推荐，即使在游戏之中，情不自禁处经常爆粗口，骂游戏，骂妖怪，骂地图，但是依然被故事吸引着，这绝对算是一段高光的游戏时刻，对得起这铺天盖地的&quot;过度&quot;宣传。</p>
+<p>通关后再回头看这部游戏，优点和缺点确实都非常明显，如此出圈，但其实并不适合很多人，尤其是之前没有玩过 ARPG 的新入局玩家。一开始打 10 分的媒体，能理解其中的情怀加分，但肯定到不了。</p>
+<p><img alt="游戏截图" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911210601_1.jpeg"></p>
+<p>从难度上，我个人的体感是，介于《战神4》和《艾尔登法环》之间，玩战神的过程，我几乎不看攻略，顺着剧情和引导，可以以标准难度通关（不包括额外的女武神挑战），而玩艾尔登法环时，我需要按照别人的攻略先铺垫前30个小时，然后才能在有攻略的情况下，进入到一种顺畅的游玩状态。</p>
+<p>对于黑神话悟空，上手很快，但除了第一关的教学关卡以外，没了攻略几乎很难以正常难度度过后面的关卡，这还不提那隐晦的游戏引导。</p>
+<h2 id="有无画质是两个游戏">有无画质是两个游戏</h2>
+<p>最初我是用 Steam Deck 来玩这个游戏，感觉是在红白机里以超级玛里奥的体验在打动作游戏，糊成马赛克，直到在 YouTube 上看了别人的开场视频，瞬间热血沸腾了，这才是大圣嘛！这细节、这闪电、这环境，美轮美奂不为过。</p>
+<p><img alt="游戏画面" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221950_1.jpeg"></p>
+<p>为了这个游戏，我去升级了现实中的游戏装备，等到画质拉高，立马就成了另外一款游戏。</p>
+<p>整个游戏历程里都在疯狂截图，每一帧都好看。其中最喜欢的游戏画面还是黄风岭和小西天这两个关卡。</p>
+<p>甚至最近，已经开始有点反噬我对艾尔登法环的游玩体验，再次打开老头环，以前的&quot;前有绝景&quot;突然不那么香了……</p>
+<h2 id="剧情是神作">剧情是神作</h2>
+<p>不得不说，剧情是这次游戏里最出彩的，基于最通识的西游设定，构建了逻辑自洽的游戏世界观。隐晦与留白得到，半文半白的对话，和每一章里充满寓意的收尾动画，不得不感概编剧的各种神来之笔。</p>
+<p>最喜欢那句，&ldquo;人也，兽也，佛也，妖也&rdquo;。黑神话的黑，是一种五彩斑斓的黑，渗透在三界六道，不再是86版《西游记》里的白月光。</p>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240825121216_1.jpeg"></p>
+<p>我已经在满怀期待着蕾雅（一位游戏 UP 主）的解读视频。我自己就不解读了，毕竟不擅长，只是保留那份意犹未尽的属于我自己游戏经历的模糊理解。</p>
+<p>同时，我也有一种担心，在黑神话之外，可能很难复刻这次的成功，对一个神话故事有如此透彻的理解应该需要超长时间的积累和迭代，无法速通。</p>
+<h2 id="充满诚意的细节">充满诚意的细节</h2>
+<p>不管是从画面细节、人物设定还是章节末尾的动画，很多地方都能感到创作者的用心和考究。比如丹药的名字，基本都可以在原著中找到出处，并不是胡编乱造。甚至在 B 站上看到一位考古专业的 Up 主，真的在黑神话里认真评估每一个古件的出处，有时只是一个亭子上的题词，放大之后也是有出处的。</p>
+<p>当从苦海北岸一路往小西山穿过一个长长的狭道，目击之处皆是各种充满真实感的雕塑，让我忍不住停下来截图一下。</p>
+<p>这种细节的充盈，让玩家即使再挑剔，也佩服得五体投地，每当看完都是会心一笑，太细节了。</p>
+<h2 id="记忆深刻的游戏角色们">记忆深刻的游戏角色们</h2>
+<p>整个游戏就像一场连番头目战，小兵很容易嘎掉，虽说众生皆有慧根，但小兵们肯定没有，不过，小兵外的众多头目和角色都太有记忆点了。</p>
+<p>如果要给这些角色排名，大概是猪八戒、黄眉、杨戬、牛魔王、黄风大圣、金池长老、小黄龙……等等等，太多了，我第一次这么认真的看设置里角色的介绍，而且大部分还是半文半白的隐晦介绍。</p>
+<p><img alt="游戏角色" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240831012709_1.jpeg"></p>
+<p>不过，我对那个四妹暂时无感，毕竟与天命人的拉扯还是太少了，更多的解读有点无中生有。</p>
+<h2 id="无法视而不见的缺点">无法视而不见的缺点</h2>
+<p>又爱又骂是有依据的，玩这个游戏的时候跟我开车时的脏话份量一样多。</p>
+<p>先说优化差。</p>
+<p>在 Steam Deck 上，黑神话是可以玩的程度，但仅限于可以玩。马赛克风格下，到了第二章依然难绷，卡得怀疑人生。即使后面升级装备到 4070s 的显卡，在官方没有发布更新之前，黑屏闪退是每天的日常。后来，更新发布之后，到了第六章，画面渲染依然能感觉到闪烁和卡顿。</p>
+<p>而且，不得不提到的是，连通关后的游戏字幕，也卡，很难理解。</p>
+<p>说说烦人的空气墙。</p>
+<p>我是舔图型玩家，喜欢一点点探索，尽量不漏，这导致我高频遇到空气墙，而且这个规则无法学习，比起堵着不让走，还好理解，真正让人难受的是，同样的场景下，一会儿可以走，一会儿又不可以，尤其是火焰山和小西天的浮屠界关卡。并且，最后打大圣残躯的时候，躲避中经常突然会碰到空气墙，这就不得不再多骂几句了。</p>
+<p>最后说说最欠缺的游戏引导。</p>
+<p>玩战神4或5时，真的可以全程不看攻略，整体引导循序渐进，规则前后一致性很强，这在塞尔达传说游戏里就更不用说了，一旦学会规则，就会进入到一种游戏的心流状态，有挑战但都可以琢磨出对策和解法。反观黑神话悟空，地图引导极差，无法在脑袋里构建出方向感，这都不算缺少小地图的黑锅。再者，剧情引导隐晦，比如花果山关卡里，提前去到水帘洞没有任何提示，哪怕像老头环里那类似&quot;此门无法从这一侧打开&quot;的提示也是有用的，留给你我的就只有猜了，最后不得不打开攻略。</p>
+<p>类似的情况，我可以骂一晚上……</p>
+<h2 id="是否是年度游戏">是否是年度游戏？</h2>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911222005_1.jpeg"></p>
+<p>《黑神话悟空》是我今年玩过的第5款游戏，其他还包括《星际拓荒》《漫威蜘蛛侠：迈尔斯·墨拉莱斯》《哈迪斯2》，以及还在玩的《艾尔登法环·黄金树幽影》。</p>
+<p>至于专业的游戏评测，这不是我擅长的，无法猜测。只能说，《黑神话悟空》算是我的年度游戏，其带来的游戏体验长度和深度，最为荡气回肠。即使吐槽甚多，缺点明显，但瑕不掩瑜，我依然期待其&quot;未竟&quot;的故事。</p>
+<p>今天已经选择了再入轮回了，不过，我应该不会真的二周目，只是多拿几个成就，这个游戏，就算结束了吧。</p>
+<p><img alt="游戏结尾" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221404_1.jpeg"></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:62124/posts/2023-toys-recap/</link>
+      <link>http://localhost:57099/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:57099/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
