@@ -2,10 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Joe 的折腾日记</title>
-    <link>http://localhost:52747/categories/</link>
+    <link>http://localhost:52411/categories/</link>
     <description>Recent content in Categories on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:52747/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52411/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>教程</title>
+      <link>http://localhost:52411/categories/%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52411/categories/%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>随笔</title>
+      <link>http://localhost:52411/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52411/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
