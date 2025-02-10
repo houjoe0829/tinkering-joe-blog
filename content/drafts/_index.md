@@ -2,6 +2,7 @@
 title: "草稿箱"
 description: "这里存放尚未完成的文章草稿"
 layout: "list"
+draft: true
 ---
 
 这个目录用于存放正在编写中的文章草稿。当文章完成后，可以将文件移动到 `content/posts` 目录发布。

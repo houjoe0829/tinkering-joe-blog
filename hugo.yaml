@@ -5,6 +5,19 @@ title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 
+# 内容安全配置
+security:
+  enableInlineShortcodes: false
+  _merge: deep
+
+# 私有内容配置
+privacy:
+  _merge: deep
+
+# 草稿目录配置
+taxonomies:
+  _merge: deep
+
 # RSS 配置
 outputs:
   home:
@@ -56,10 +69,6 @@ menu:
       name: "文章"
       url: "/posts/"
       weight: 10
-    - identifier: "drafts"
-      name: "草稿箱"
-      url: "/drafts/"
-      weight: 15
     - identifier: "about"
       name: "关于"
       url: "/about/"

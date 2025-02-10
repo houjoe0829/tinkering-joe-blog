@@ -25,7 +25,7 @@ description: "了解更多关于我的信息"
 - Strava: [我的 Strava 运动主页](https://www.strava.com/athletes/114261708)
 - GitHub: [我的 GitHub 主页](https://github.com/houjoe0829)
 
-## 🌟 我的 Side Project
+## 🌟 Side Project
 
 - [OmniAudio](https://omniaudio.info/)
   > 🎧 OmniAudio 是一款创新的 AI 音频内容聚合服务，它可以将各种形式的内容，如网页、Word 文档、Gmail、文本片段、甚至视频和音频文件，转化为podcast 播客节目，并生成可以直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。
