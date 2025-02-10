@@ -89,4 +89,79 @@
 .post-content p {
     font-size: 16px;
     line-height: 1.8;
+}
+
+/* 目录样式优化 */
+.toc {
+    margin: 0 2px 40px 2px;
+    padding: 0.8rem 1.2rem;  /* 减小上下内边距 */
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 暗色模式下的目录样式 */
+.dark .toc {
+    background: var(--entry);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 目录标题样式 */
+.toc details summary {
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+/* 移除之前错误的样式 */
+.toc details summary::before {
+    display: none;
+}
+
+/* 调整展开/折叠符号与文字的间距 */
+.toc details summary::-webkit-details-marker {
+    margin-right: 1em;  /* 增加间距 */
+}
+
+.toc details summary::marker {
+    margin-right: 1em;  /* 增加间距 */
+}
+
+/* 目录内容样式 */
+.toc .inner {
+    margin: 0.8rem 0.8rem 0;
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+}
+
+/* 目录链接样式 */
+.toc a {
+    color: var(--secondary);
+    transition: color 0.2s;
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+.toc a:hover {
+    color: var(--primary);
+    box-shadow: none;
+}
+
+/* 二级目录缩进 */
+.toc li ul {
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+
+/* 目录项间距 */
+.toc li {
+    margin: 0.4rem 0;
+    color: var(--secondary);
 } 
