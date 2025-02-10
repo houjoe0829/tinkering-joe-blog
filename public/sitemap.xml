@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/nezha-movie-review/</loc>
+    <loc>http://localhost:64750/posts/nezha-movie-review/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:64750/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:64750/posts/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ai-chat-lack-compression-history/</loc>
+    <loc>http://localhost:64750/posts/ai-chat-lack-compression-history/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</loc>
+    <loc>http://localhost:64750/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</loc>
     <lastmod>2024-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:64750/about/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/drafts/another-draft/</loc>
+    <loc>http://localhost:64750/drafts/another-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/drafts/example-draft/</loc>
+    <loc>http://localhost:64750/drafts/example-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/drafts/</loc>
+    <loc>http://localhost:64750/drafts/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url>
 </urlset>
