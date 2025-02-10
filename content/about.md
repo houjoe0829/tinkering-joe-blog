@@ -19,8 +19,11 @@ description: "了解更多关于我的信息"
 
 如果你有任何问题或想法，欢迎通过以下方式联系我：
 
-- GitHub: [我的 GitHub 主页](https://github.com/houjoe0829)
 - Email: houqiao829@gmail.com
+- Twitter: [我的 Twitter 主页](https://x.com/houjoe1)
+- Steam: [我的 Steam 主页](https://steamcommunity.com/id/houjoe/)
+- Strava: [我的 Strava 运动主页](https://www.strava.com/athletes/114261708)
+- GitHub: [我的 GitHub 主页](https://github.com/houjoe0829)
 
 ## 🙏 致谢
 
