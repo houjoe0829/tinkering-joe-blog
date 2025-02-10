@@ -2,39 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Joe 的折腾日记</title>
-    <link>http://localhost:52747/</link>
+    <link>http://localhost:57933/</link>
     <description>Recent content on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52747/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57933/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:52747/posts/nezha-movie-review/</link>
+      <link>http://localhost:57933/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52747/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:57933/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
+      <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
+<p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
+<p>春节档似乎除了这部电影以外，其它都备受争议。原本打算等网上资源出来再看，但听说《哪吒2》可能会延期，估计等到资源能看的时候，早都被剧透八百遍了，不如我自己来。</p>
+<p>老实说，当看到用妖炼丹的那一刻，很难说《哪吒之魔童闹海》没有致敬游戏《黑神话：悟空》，无论《封神演义》还是《西游记》中，都没有关于炼丹的这一延伸，而《黑神话：悟空》的核心矛盾就在于，长生不老的伪善，其背后则是以人命或妖命为代价进行炼丹。</p>
+<p>而且，这两部《哪吒》都主要改编于《封神演义》，但有趣的是，原著里并没有定海神针或者如意金箍棒，唯一靠的上边的还只是一颗定海神珠。电影最后无量仙翁砸中的柱子，应该就是金箍棒了。</p>
+<p>另外，这部电影也再次提醒我，作为普罗大众，真的对封神演义没有太多印象，电影里绝大部分的人物和反派几乎都可以在书里找到，比如石矶娘娘，书里也是被太乙真人捉住，看完电影，我又恶补了不少《封神演义》的背景。</p>
+<p>再比如，无量仙翁应该是以南极仙翁（也就是寿星）为原型，也确实是元始天尊的大弟子，地位高于十二金仙。</p>
+<p>我对阐教和截教也完全没有概念，在《封神演义》里，加上太上老君的人教，总共有三大教派，但这些仅存在于小说之中。</p>
+<p>最后，如果一定要说瑕疵，这部电影也是有的，好几处的强行搞笑，有些让人出戏，但也确实无大碍。</p>
+<p>题外话，看到一部如此高质量的电影获得高票房还是很高兴的，依靠本身素质过硬，而不是主旋律、流量明星或者民族情怀，这才是良性市场的正道呀，我愿意为其付费观看一下。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:52747/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:57933/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52747/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:57933/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
+      <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
+<p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
+<p>在探讨复杂话题时也是如此。从最初的问题描述，到不断调整表述方式，再到逐步明确自己的思路，整个过程充满了试错和迭代。虽然这些尝试都是必要的，但真正需要保留的，可能只是最后达成的那些清晰认识。</p>
+<p>有趣的是，类似的问题在企业级 AI 应用中已经得到了解决。比如企业知识库的 AI 问答就能够智能地提取和保留核心信息，在有限空间内处理大量的上下文内容。但在我们日常的 AI 聊天中，还缺少这样的功能。</p>
+<p>想象一下，如果能有一个&quot;压缩历史对话并继续&quot;的功能，就像给深度对话做个内容提炼。它能智能地总结我们达成的共识，把那些反复尝试和调整的过程提炼成精简的要点。这样我们就能在有限的对话空间里，既保留关键信息，又能继续深入交流。</p>
+<p>对于像我这样经常需要和 AI 多轮沟通才能表达清楚的用户来说，这个功能尤其重要。它不仅能让对话更加连贯，也能让我们把精力更多地放在真正的问题探讨上，而不是被各种重复和试错所困扰。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:52747/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
+      <link>http://localhost:57933/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52747/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
+      <guid>http://localhost:57933/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
       <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
+      <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
+<p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
+<p>如今人到中年，不知是社会习俗变得开放，还是因为我们已不再是小孩，一切都变得不再遮遮掩掩，我问的很多问题都得到了答案。</p>
+<p>在老家，现今的丧事流程已大幅简化，甚至显得有些过于简略，不够庄重。逝者去世当天，遗体便送往殡仪馆火化，随即入土安葬。亲戚们当天会聚在一起吃席，到&quot;五七&quot;（去世第35天）时再聚一次，吃顿饭就算是脱白换红，结束丧事。这样的简化让我们能了解的传统礼仪也越来越少了。</p>
+<p>而这次守灵是在我老婆的家乡，整个丧事格外隆重，这也是我第二次如此郑重地参与其中。由于逝者属于非正常死亡，这次的流程与以往略有不同：遗体在事故后被直接送往殡仪馆，在法医完成尸检后，我们便在殡仪馆内开始守灵仪式。</p>
+<p>有趣的是，现在的殡仪馆已经改换了一个更具正能量的名字：生命主题公园。回想最早时，这类场所还直接以其基本功能命名：火葬场。更让人觉得有意思的是，无论用哪个名字，在导航软件里都搜索不到，只有殡仪馆餐饮部会显示在搜索结果中。</p>
+<p>守灵在下午两点就开始了。因为还需要远程工作，我在午饭后提前驱车来到殡仪馆外的停车场。这是我第一次在白天来这里，上一次在家守灵时，是凌晨时分跟随运送遗体的车前来，那时漆黑一片，整个空气中都弥漫着淡淡的灰烬味。</p>
+<p>亲戚们在下午两点半陆续到达，灵堂已布置完毕。我询问了价格，整套布置和仪式约 8000 元左右。跪拜三个响头后，每人会领取一份孝袖巾，包含头巾和袖箍，依然是子辈佩戴白头巾黑袖箍，孙辈则是红头巾和红袖箍。</p>
+<p>整个灵堂播放着淡淡的哀乐，下午到傍晚期间陆续有人前来祭拜。</p>
+<p>守灵的氛围并不太过悲伤，一桌打麻将，一桌斗地主，甚至有些压过了哀乐，就算有人来跪拜，这些活动也没有完全停下，显得有些&quot;不协调&quot;，这可能是因为，虽然逝者是意外离世，但年事已高，算是喜丧性质。</p>
+<p>傍晚六点左右，这个季节天已经完全黑了下来，我们开始前往殡仪馆的餐饮部用餐。这是我人生第一次在这里吃饭。虽然是在殡仪馆内，但完全是传统酒席的规格，配备了转盘的圆桌，摆了四桌，酒菜齐全。说实话，菜品的味道还挺不错，只是吃起来没有那么放松，可能主要是我自己有这样那样矫情的顾虑。</p>
+<p>用过晚餐后回到灵堂，麻将和斗地主依然继续，我则打开微信读书消遣。到了晚上11点左右，我们一行人还开车到县城吃了碗牛肉面。</p>
+<p>夜宵回来后，因为天气实在太冷，简单逛了下生命主题公园便回到车上小憩。凌晨两点四十分，回到灵堂，正好赶上告别遗体的仪式。两位工作人员念诵逝词，带领众人进行告别仪式，虽然他们的普通话不太标准，但非常专业。从维持现场到念诵逝词，他们瞬间就能切换状态，我甚至能从旁瞥见工作人员眼中若隐若现的泪花。</p>
+<p>在这个过程中，工作人员给每个人分发了一小撮棉花。我们绕着遗体转三圈，瞻仰遗容，每转完一圈就磕头，磕头次数与圈数相应：第一圈磕一次，第二圈磕两次，第三圈磕三次。仪式结束后，我们将棉花交还逝者长子，随遗体一同火化。</p>
+<p>告别仪式结束后，遗体会被推出灵堂，用一个带轮子的架子运送。这架子正是我之前去洗手间时，在走廊里看到的那个。当时我就在想，这个架子应该就是……</p>
+<p>遗体火化过程约一小时，随后殡仪馆的守灵仪式便告结束。之后我们带着逝者&quot;回家&quot;，车队全程打着双闪。不过，即便回到家中，这也仅仅是守灵的第一夜。带着骨灰的遗物还需在家中继续守灵，更多的亲属会前来告别。待再守一夜后，才会正式入土为安。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>关于我</title>
-      <link>http://localhost:52747/about/</link>
+      <link>http://localhost:57933/about/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52747/about/</guid>
+      <guid>http://localhost:57933/about/</guid>
       <description>了解更多关于我的信息</description>
+      <content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
+<p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>
+<p><code>Product Manager</code>、<code>喜欢码字</code>、<code>Nas 小白用户</code>、<code>无人机机长</code>、<code>主机游戏玩家</code>、<code>有个流浪猫</code>、<code>江浙沪包游中</code>、<code>骑行新手</code>、<code>顺风车司机</code></p>
+<p>主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。</p>
+<p>产品经历：Evernote、AFFiNE、快手轻雀文档、轻雀协作</p>
+<h2 id="-联系方式">📮 联系方式</h2>
+<p>如果你有任何问题或想法，欢迎通过以下方式联系我：</p>
+<ul>
+<li>Email: <a href="mailto:houqiao829@gmail.com">houqiao829@gmail.com</a></li>
+<li>Twitter: <a href="https://x.com/houjoe1">我的 Twitter 主页</a></li>
+<li>Steam: <a href="https://steamcommunity.com/id/houjoe/">我的 Steam 主页</a></li>
+<li>Strava: <a href="https://www.strava.com/athletes/114261708">我的 Strava 运动主页</a></li>
+<li>GitHub: <a href="https://github.com/houjoe0829">我的 GitHub 主页</a></li>
+</ul>
+<h2 id="-致谢">🙏 致谢</h2>
+<p>感谢访问我的博客。这个站点使用 <a href="https://gohugo.io/">Hugo</a> 构建，主题是 <a href="https://github.com/adityatelange/hugo-PaperMod">PaperMod</a>，托管在 <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> 上。</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

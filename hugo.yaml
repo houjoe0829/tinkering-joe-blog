@@ -5,6 +5,13 @@ title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 
+# RSS 配置
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   author:
     name: "Joe"
@@ -15,9 +22,16 @@ params:
   ShowToc: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  
+  # RSS 相关设置
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  
   socialIcons:
     - name: "github"
       url: "https://github.com/houjoe0829"
+    - name: "rss"
+      url: "/index.xml"
 
 menu:
   main:
@@ -28,4 +42,8 @@ menu:
     - identifier: "about"
       name: "关于"
       url: "/about/"
-      weight: 20 
+      weight: 20
+    - identifier: "rss"
+      name: "RSS 订阅"
+      url: "/index.xml"
+      weight: 30 
