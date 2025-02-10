@@ -1,5 +1,6 @@
 baseURL: 'https://houjoe.me/'
 languageCode: 'zh-cn'
+hasCJKLanguage: true
 title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
