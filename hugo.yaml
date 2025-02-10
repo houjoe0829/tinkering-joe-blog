@@ -23,6 +23,17 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
+  # Favicon 配置
+  favicon: "/favicon.ico"
+  favicon16x16: "/favicon-16x16.png"
+  favicon32x32: "/favicon-32x32.png"
+  apple_touch_icon: "/apple-touch-icon.png"
+  android_chrome_192: "/android-chrome-192x192.png"
+  android_chrome_512: "/android-chrome-512x512.png"
+  webmanifest: "/site.webmanifest"
+  theme_color: "#2e2e33"
+  msapplication_TileColor: "#2e2e33"
+  
   # 自定义 CSS
   assets:
     css:
