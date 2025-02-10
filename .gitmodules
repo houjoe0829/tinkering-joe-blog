@@ -1,3 +1,12 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/diary"]
+	path = themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary.git
+[submodule "themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/spf13/hyde.git
+[submodule "themes/poison"]
+	path = themes/poison
+	url = https://github.com/lukeorth/poison.git

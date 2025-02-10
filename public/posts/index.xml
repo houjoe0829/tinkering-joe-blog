@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:52747/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52747/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:1313/posts/nezha-movie-review/</link>
+      <link>http://localhost:52747/posts/nezha-movie-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
-      <description>注意，以下皆为剧透</description>
+      <guid>http://localhost:52747/posts/nezha-movie-review/</guid>
+      <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
     </item>
   </channel>
 </rss>
