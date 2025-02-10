@@ -3,6 +3,7 @@ title: "关于我"
 date: 2024-02-10
 draft: false
 description: "了解更多关于我的信息"
+hideMeta: true
 ---
 
 ## 👨‍💻 个人简介
