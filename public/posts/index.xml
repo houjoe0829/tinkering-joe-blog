@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:62124/posts/</link>
+    <link>http://localhost:50182/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62124/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50182/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:62124/posts/nezha-movie-review/</link>
+      <link>http://localhost:50182/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:50182/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:62124/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:50182/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:50182/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:62124/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <link>http://localhost:50182/posts/cyberpunk-2077-hundred-hours-dream/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <guid>http://localhost:50182/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.png"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -84,10 +84,100 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>扑克牌&#34;干瞪眼&#34;的规则</title>
+      <link>http://localhost:50182/posts/poker-game-rules/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50182/posts/poker-game-rules/</guid>
+      <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
+<h2 id="怎么准备呢">怎么准备呢？</h2>
+<ol>
+<li>
+<p><strong>人数</strong>：2-6 人（常见3人）。</p>
+</li>
+<li>
+<p><strong>牌数</strong>：使用 1 副扑克（含大小王，共54张）</p>
+<ul>
+<li>可选：为了让牌均匀分配，可考虑添加空白的牌或者抽其他副牌里的大小王来凑数，凑成人数的整数倍，比如5人，凑55张（5的11倍），4人，凑56张（4的14倍）</li>
+</ul>
+</li>
+<li>
+<p><strong>发牌</strong>：每人初始发5张牌，剩余牌作为牌库。</p>
+<ul>
+<li>首局由随机玩家先出，后续由上一局赢家先出。</li>
+</ul>
+</li>
+</ol>
+<h2 id="出牌规则">出牌规则</h2>
+<h3 id="1-牌型有哪些从弱到强">1. 牌型有哪些（从弱到强）：</h3>
+<ul>
+<li>
+<p><strong>单张</strong>：任意一张牌（3最小，2最大）。</p>
+<ul>
+<li><strong>2的用法</strong>：2是单张和对子中的最大牌（如单2＞A，对2＞对A），但不可用于顺子。</li>
+</ul>
+</li>
+<li>
+<p><strong>对子</strong>：两张同点数牌（如对5）。</p>
+</li>
+<li>
+<p><strong>顺子</strong>：至少3张连续单牌（如4-5-6，A-2-3无效，2不可参与顺子）。</p>
+</li>
+<li>
+<p><strong>炸弹</strong>：</p>
+<ul>
+<li>三张同点牌（如3个5）可炸单张/对子/顺子；</li>
+<li>四张同点牌（如4个K）可炸任何非王炸牌型；</li>
+<li><strong>王炸</strong>：大小王组合（最大炸弹，可炸任何牌）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="可选赖子打法">可选：赖子打法</h4>
+<ul>
+<li>选了这个之后，王炸组合就不存在了，大小王作为赖子，可与变成任意牌，参与对子、顺子、炸弹，但不能单出。</li>
+</ul>
+<h3 id="2-出牌和发牌">2. 出牌和发牌：</h3>
+<ul>
+<li>首局由随机玩家先出，后续由上一局赢家先出。</li>
+<li>按顺时针方向轮流出牌，必须<strong>严格接续上家牌型</strong>，否则就只能干瞪眼
+<ul>
+<li>如：上家出单张3，下家只能出4或2，或炸弹</li>
+<li>如：上家出两张4，下家只能出两张5或者两张2，或炸弹</li>
+<li>如：上家出4-5-6，下家只能 5-6-7 或者炸弹</li>
+</ul>
+</li>
+<li>若无法接牌则喊&quot;过&quot;，所有人按顺序加一张牌，再由最后出牌者出牌</li>
+<li>最后牌堆空了之后，就不再加牌</li>
+</ul>
+<h3 id="3-其他规则">3. 其他规则：</h3>
+<ul>
+<li><strong>报牌</strong>：只剩1张牌时必须主动&quot;报单&quot;，否则可能被罚。</li>
+<li><strong>接风</strong>：若一人出完牌，下一轮由其下家优先出牌。</li>
+</ul>
+<h2 id="胜负判定">胜负判定</h2>
+<h3 id="1-胜利条件">1. 胜利条件</h3>
+<ul>
+<li>率先打完手牌者获胜</li>
+</ul>
+<h3 id="2-输家惩罚">2. 输家惩罚：</h3>
+<ul>
+<li>剩余1张牌：输1分</li>
+<li>剩余2张牌：输2分（以此类推）</li>
+</ul>
+<h4 id="可选加倍算法">可选：加倍算法</h4>
+<ul>
+<li>场上有人用了炸弹，则加倍一次</li>
+<li>炸一次，则输分乘以2</li>
+<li>炸两次，则输分乘以3（以此类推）</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:62124/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:50182/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:50182/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -98,10 +188,104 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>2024 玩物志：那些提升幸福感的好物</title>
+      <link>http://localhost:50182/posts/2024-favorite-things/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50182/posts/2024-favorite-things/</guid>
+      <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
+      <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
+<p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
+<p>如果有人问我，有什么能快速提升生活品质的秘诀，那一定是改善那些每天陪伴我们的好物。</p>
+<h2 id="年度软件系列">年度软件系列</h2>
+<h3 id="1-ai-系列-凡事先问一下-ai">1️⃣ AI 系列： 凡事先问一下 AI</h3>
+<p>AI 确实已经浸入生活的方方面面。虽然它们偶尔会产生幻觉、犯错，但作为生活和工作的最佳助手，这个说法一点也不夸张。</p>
+<p>我目前主要使用的是 <a href="https://claude.ai/">Claude</a>。无论是改写文案、翻译文本，还是编写简单的 HTML 文件或制作功能 Demo，它都能帮我避免基础错误，完成一些原本需要大量学习才能掌握的任务。</p>
+<p>Claude 是我最信赖的 AI 助手，它的输出质量很高。每当我遇到疑惑，我都会先向它请教。这些对话也总能带来意想不到的启发，以前独自思考时常常会陷入死胡同，而现在 Claude 为我打开了很多新的思路。</p>
+<p>另一个得力助手是豆包。虽然整体能力不及 Claude，但它在国内信息的及时性方面更胜一筹。豆包桌面版功能丰富，已经成为我的主力浏览器，能快速完成网页翻译、内容总结、AI 阅读等任务，让复杂的材料变得易于理解，而且完全免费。我还购置了豆包的硬件产品 Ola friend，方便随时唤醒豆包来提问，这个我后面也会提到。</p>
+<p>以下是我日常使用 AI 的主要场景：</p>
+<ul>
+<li>简单编程任务：Claude</li>
+<li>制作产品原型：Claude</li>
+<li>英文文案撰写：Claude</li>
+<li>辅助写作：Claude、Notion AI</li>
+<li>网页翻译：豆包</li>
+<li>网页总结：豆包</li>
+<li>识别动植物：豆包</li>
+<li>Chat with PDF：豆包</li>
+<li>审视我写的想法：Claude</li>
+</ul>
+<h3 id="2-omniaudiohttpsomniaudioinfo自定义自己的播客内容">2️⃣ <a href="https://omniaudio.info/">OmniAudio</a>：自定义自己的播客内容</h3>
+<p>今年骑行活动变多，播客成了最长久的陪伴，但是经常出现无播客可听的状态，OmniAudio 可以把网页、文本、Gmail 等转成播客并直接在现有播客客户端听，不过，对于我而言，最多的还是将 Twitter 里、微信公众号以及 RSS 订阅的网页文章转成播客来听，这样就有了更多可以听的内容，自己决定自己听什么。</p>
+<p>另外，即使是非中文网页也会自动翻译成中文的播客内容。</p>
+<h3 id="3-微信读书httpswereadqqcom真的就是看书">3️⃣ <a href="https://weread.qq.com/">微信读书</a>：真的就是看书</h3>
+<p>2024 年创下了个人的最高读书记录，读完了 22 本书。现在已养成习惯，随时随地掏出手机看上几眼，或是睡前捧着 iPad mini 读到睡意袭来。</p>
+<p>我最喜欢微信读书的几大特点：无出其右的中文排版、稳定可靠的跨设备同步、新增的 AI 问书功能，以及实用的网友划线笔记分享。</p>
+<p>虽然微信读书的功能已经开始有些臃肿，但若专注于阅读本身，它仍是最佳的中文书籍阅读平台。</p>
+<h3 id="4-stravahttpswwwstravacom解决找骑行路线的烦恼">4️⃣ <a href="https://www.strava.com/">Strava</a>：解决找骑行路线的烦恼</h3>
+<p>户外骑行最难的是，今天骑哪条线？</p>
+<p>在家附近，烦恼的是，有什么新路线可以骑，已有的那几条路线已经骑烦了。</p>
+<p>在外地，烦恼的是，初来乍到，咋安排线路？</p>
+<p>Strava 可以根据设定的距离，比如 25 公里，以及附近网友骑行的热度，自动计算出可以骑行的路线推荐，目前在骑过的城市里，基本没有落空过，总是可以环一圈回到初始位置，而且，还可以自己手动粗略画个圈，然后 Strava 自动计算出可骑行的路线。</p>
+<h3 id="5-滴答清单httpsdida365com持续收集愿望清单">5️⃣ <a href="https://dida365.com/">滴答清单</a>：持续收集愿望清单</h3>
+<p>对，又是滴答清单，虽然它本质是个任务管理工具，但我想分享的是它对生活的另一种影响。很多人好奇为什么我们可以找到那么多想去的地方或者想做的事情，其实是因为，这个收集愿望的过程一直在发生，我自己有越来越多的清单列表，游戏、电影、书籍、想去的地方、想买的东西、想去见的人、好的产品点子、想写的话题……</p>
+<p>有了这些愿望清单，不用压力太大。因为这些都只是&quot;想做的事&quot;，而不是&quot;必须做的事&quot;。每当要规划什么，就可以翻翻清单挑选，像是在还愿，这也会激发自己写下更多愿望。</p>
+<h3 id="6-day-onehttpsdayoneappcom这年头还是要有个写日记的地儿">6️⃣ <a href="https://dayoneapp.com/">Day One</a>：这年头还是要有个写日记的地儿</h3>
+<p>作为与 Evernote 使用历史相当的记录工具，十年过去，Evernote 早已淡去，而 Day One 依然可以活跃在我的生活中。对于一个情绪波动较大的人来说，写日记是与自己对话的绝佳方式。不过现在不用再像小学时那样每天写一篇完整的日记，而是随时记录生活片段，甚至连标题都不用。</p>
+<p>在这个信息高度膨胀的年代，过量信息时常扰乱稳定的情绪。而写日记这种传统方式，能帮助我们更快地消化情绪，保持内心平和。</p>
+<p>Day One 还有一个独特的优势：支持依据照片补录日记的功能。在添加照片到 Day One 时，App 会自动识别照片的拍摄时间和地理位置，创建一条对应时间点的日记，让整个时间线更加准确完整。这样，我们只管先拍照，有时间了再写。</p>
+<h2 id="年度硬件系列">年度硬件系列</h2>
+<h3 id="1-米家烘干机不再看天洗衣">1️⃣ 米家烘干机：不再看天洗衣</h3>
+<p>以前，天气会决定今天洗的衣服是明天干，还是再过几天。有了烘干机之后，洗衣到晾干就是固定的三个小时。这样就减少了一小块生活中的不确定性，少了要花精力关注的东西，可以将注意力投入到更有趣的事情上。</p>
+<p>而且，烘干的衣服和晒干的衣服差别非常大，前者暖烘烘也很柔软，后者在冬天就是一种硬质的冰凉。</p>
+<p>如果你有兴趣购买的话，强烈建议，不要购买洗烘一体，这是个大坑，让专业的工具做专业的事情吧，而且，如果你是租房，洗衣机一定是标配。</p>
+<h3 id="2-大行-p8-折叠车最佳-42-出行">2️⃣ 大行 P8 折叠车：最佳 4+2 出行</h3>
+<p>截止到 2024 年最后一天，总共骑行了 3200 公里，其中大行 P8 大概 3000 公里左右，陪我穿过了十几个城市。即使在骑了这么长的距离之后，我依然觉得，折叠车是骑行的最佳选择。自行车可以一直放在后备箱，在各种自驾的地方骑上一圈。</p>
+<p>如果是骑行入门折叠车，我的建议是，买大行 P8 基本不会错，最主流选择。不过，不差钱的话，另算。</p>
+<h3 id="3-家用充电桩让车永远满电">3️⃣ 家用充电桩：让车永远满电</h3>
+<p>首先要澄清一点：家用充电桩并不省钱。即使在电费较低的波谷时段充电，考虑到设备本身和安装费用都很高，并不会带来经济优势。不过，家充最大的价值在于提升用车体验，每天一觉醒来，车子已经满电，还用的是最便宜的电价，让人身心愉悦。</p>
+<h3 id="4-pc-主机为了黑神话攒了一主机">4️⃣ PC 主机：为了黑神话攒了一主机</h3>
+<p>专业的工具要做专业的事。说到既能满足居家又能满足出行的游戏主机，其实不一定非要选 Switch，Steam Deck 搭配 PC 主机的组合会更好。</p>
+<p>Switch、PS5 和 Steam Deck 这几家的游戏账号互不相通。这就意味着，一旦在某个设备上开始玩游戏，其他设备就只能闲置。而且，要么只能在家里玩，要么就得接受掌机上较差的画质。游戏不像电影，一款游戏往往要玩上一个月左右，这样割裂的游玩体验让我自己很不舒服。</p>
+<p>趁着黑神话悟空发布的档口，我重新调整了家里的游戏设备：Switch 留给老婆玩一些全家欢的游戏，新添了 PC 主机，这样可以与 Steam Deck 同步游戏库和进度，同时卖掉了 PS5。这样的搭配既能在家享受 PC 主机的高画质，又可以带着 Steam Deck 出门。</p>
+<h3 id="5-iphone-16-pro让随拍成真">5️⃣ iPhone 16 Pro：让随拍成真</h3>
+<p>可能是 iPhone 16 Pro 的画质跃升，也可能是其新增的实体拍照键，今年用 iPhone 拍照的频次已经大幅增加。在外骑行的时候，可以随时从车把上取下手机，抓拍完成，立刻再放回去，这一过程非常丝滑。</p>
+<h3 id="6-ola-friend-耳机随叫随到的-ai-助手">6️⃣ Ola friend 耳机：随叫随到的 AI 助手</h3>
+<p>我已经单独写了一篇安利文章给到 Ola friend，目前用了大半个月，观点没有变化，可以查看 <a href="https://www.notion.so/AI-15a8b0838b68801a899eea98a8d4325e?pvs=21">自驾和骑行的新伴侣：AI 耳机</a>。</p>
+<h3 id="7-其他更多">7️⃣ 其他更多</h3>
+<p>还有很多其他好物已经老生常淡，比如极空间 Nas、特斯拉 Model Y，依然每天在用。</p>
+<h2 id="年度影视剧">年度影视剧</h2>
+<p>老实说，2024 年的好剧数量在直觉上少于往年，最爱的漫威似乎没有任何记忆点的作品，以下是从豆瓣时间线上摘出来的。</p>
+<ul>
+<li>《曼达洛人》全三季：高质量的星球大战衍生美剧，有种看西部牛仔科幻剧的错觉，故事完整度很高，我们可以在剧情中跟随主角一起成长，剧情、特效、画面都是一流。</li>
+<li>《周处除三害》：出圈最广的剧，应该不用多介绍。</li>
+<li>《寄生兽：灰色部队》：作为寄生兽系列粉丝，原本以为只是简单翻拍，没想到是一种超强的韩国本土化。</li>
+<li>《辐射》第一季：作为没有玩过辐射的影迷，看完剧也已经将《辐射》游戏加入游戏愿望清单，这个剧散发的黑色幽默和废土文化太独特了。</li>
+<li>《豺狼的日子》第一季：超爽的复仇剧，精致的高端杀手作业，可以跟着主角一起屏住呼吸，能动手就动手，绝不逼逼。</li>
+</ul>
+<h2 id="年度游戏">年度游戏</h2>
+<p>今年能玩的游戏不多，卖掉了 PS5，也错过了那款年度游戏索尼机器人。</p>
+<ul>
+<li>《黑神话悟空》：这个不用介绍，一段意犹未尽的冒险，真心期待 DLC。<a href="https://www.notion.so/cf9a602e65da4ec5a5c45038d0874ccb?pvs=21">黑神话悟空：又爱又骂的西游冒险</a></li>
+<li>《无人深空》：刚打完这个长达 100 多小时的太空冒险。每当在陌生星球的天空中看到大量飞船出现时，都让我感慨万分，这就是儿时的白日梦呀。虽然游戏前期上手有些困难，后期内容也略显重复，但时不时打开游戏驾驶一会儿飞船依然让人心情愉悦。后续会单独写篇介绍来好好记录这段体验。</li>
+<li>《赛博朋克2077》：最近开始体验这款游戏，已经投入超过 25 小时。起初担心第一人称视角会影响游戏体验，但适应后，一个栩栩如生的夜之城便在眼前慢慢展开。每个支线任务都充满精心设计的细节，甚至游戏中频繁出现的脏话都成了独特的魅力所在。这让我想起《巫师3》带来的丰富剧情体验，不愧是波兰蠢驴的作品。</li>
+</ul>
+<h2 id="年度书籍">年度书籍</h2>
+<p>今年读完的书籍超过 20 本，但真正留下深刻印象的只有 5 本。</p>
+<ul>
+<li>《寻路中国》：一本从外国人视角记录 2000 年中国的作品，语言细腻坦诚。让我第一次感受到，原来一个外国人真的可以如此透彻地理解中国，从长城到北京郊外的乡村，再到江浙一带的丽水，值得跟着书籍一起走一走。</li>
+<li>《太白金星有点烦》：这不是一部简单的架空西游记的小说，读完，每个字都在写你我身边的社会、职场和官场。</li>
+<li>《阿波罗是如何飞到月球的》：从 0 到 1 的阿波罗登月计划，光是阅读就让人热血沸腾，满是敬畏。</li>
+<li>《莱特兄弟》：我们常以为莱特兄弟发明了飞机，但他们真正的创举是发明了飞机控制系统。然而，即使这样的概括也无法完全道出他们一路走来的艰辛与付出。</li>
+<li>《我的母亲做保洁》：最近出现了很多描述社会各阶层的书籍，快递、保洁等等，而这本书尤为出色。它的与众不同在于作者细致入微的调研和平实坦诚的叙述，不刻意煽情，只是静静讲述故事。</li>
+</ul>
+<p>最后，期待我们 2025 年末再见，元旦快乐。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:50182/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:50182/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -116,34 +300,10 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</link>
-      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
-      <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
-      <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
-<p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
-<p>如今人到中年，不知是社会习俗变得开放，还是因为我们已不再是小孩，一切都变得不再遮遮掩掩，我问的很多问题都得到了答案。</p>
-<p>在老家，现今的丧事流程已大幅简化，甚至显得有些过于简略，不够庄重。逝者去世当天，遗体便送往殡仪馆火化，随即入土安葬。亲戚们当天会聚在一起吃席，到&quot;五七&quot;（去世第35天）时再聚一次，吃顿饭就算是脱白换红，结束丧事。这样的简化让我们能了解的传统礼仪也越来越少了。</p>
-<p>而这次守灵是在我老婆的家乡，整个丧事格外隆重，这也是我第二次如此郑重地参与其中。由于逝者属于非正常死亡，这次的流程与以往略有不同：遗体在事故后被直接送往殡仪馆，在法医完成尸检后，我们便在殡仪馆内开始守灵仪式。</p>
-<p>有趣的是，现在的殡仪馆已经改换了一个更具正能量的名字：生命主题公园。回想最早时，这类场所还直接以其基本功能命名：火葬场。更让人觉得有意思的是，无论用哪个名字，在导航软件里都搜索不到，只有殡仪馆餐饮部会显示在搜索结果中。</p>
-<p>守灵在下午两点就开始了。因为还需要远程工作，我在午饭后提前驱车来到殡仪馆外的停车场。这是我第一次在白天来这里，上一次在家守灵时，是凌晨时分跟随运送遗体的车前来，那时漆黑一片，整个空气中都弥漫着淡淡的灰烬味。</p>
-<p>亲戚们在下午两点半陆续到达，灵堂已布置完毕。我询问了价格，整套布置和仪式约 8000 元左右。跪拜三个响头后，每人会领取一份孝袖巾，包含头巾和袖箍，依然是子辈佩戴白头巾黑袖箍，孙辈则是红头巾和红袖箍。</p>
-<p>整个灵堂播放着淡淡的哀乐，下午到傍晚期间陆续有人前来祭拜。</p>
-<p>守灵的氛围并不太过悲伤，一桌打麻将，一桌斗地主，甚至有些压过了哀乐，就算有人来跪拜，这些活动也没有完全停下，显得有些&quot;不协调&quot;，这可能是因为，虽然逝者是意外离世，但年事已高，算是喜丧性质。</p>
-<p>傍晚六点左右，这个季节天已经完全黑了下来，我们开始前往殡仪馆的餐饮部用餐。这是我人生第一次在这里吃饭。虽然是在殡仪馆内，但完全是传统酒席的规格，配备了转盘的圆桌，摆了四桌，酒菜齐全。说实话，菜品的味道还挺不错，只是吃起来没有那么放松，可能主要是我自己有这样那样矫情的顾虑。</p>
-<p>用过晚餐后回到灵堂，麻将和斗地主依然继续，我则打开微信读书消遣。到了晚上11点左右，我们一行人还开车到县城吃了碗牛肉面。</p>
-<p>夜宵回来后，因为天气实在太冷，简单逛了下生命主题公园便回到车上小憩。凌晨两点四十分，回到灵堂，正好赶上告别遗体的仪式。两位工作人员念诵逝词，带领众人进行告别仪式，虽然他们的普通话不太标准，但非常专业。从维持现场到念诵逝词，他们瞬间就能切换状态，我甚至能从旁瞥见工作人员眼中若隐若现的泪花。</p>
-<p>在这个过程中，工作人员给每个人分发了一小撮棉花。我们绕着遗体转三圈，瞻仰遗容，每转完一圈就磕头，磕头次数与圈数相应：第一圈磕一次，第二圈磕两次，第三圈磕三次。仪式结束后，我们将棉花交还逝者长子，随遗体一同火化。</p>
-<p>告别仪式结束后，遗体会被推出灵堂，用一个带轮子的架子运送。这架子正是我之前去洗手间时，在走廊里看到的那个。当时我就在想，这个架子应该就是……</p>
-<p>遗体火化过程约一小时，随后殡仪馆的守灵仪式便告结束。之后我们带着逝者&quot;回家&quot;，车队全程打着双闪。不过，即便回到家中，这也仅仅是守灵的第一夜。带着骨灰的遗物还需在家中继续守灵，更多的亲属会前来告别。待再守一夜后，才会正式入土为安。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:62124/posts/it-takes-two-review/</link>
+      <link>http://localhost:50182/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:50182/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.png"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -170,9 +330,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:62124/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:50182/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:50182/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -223,9 +383,9 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:62124/posts/black-myth-wukong-review/</link>
+      <link>http://localhost:50182/posts/black-myth-wukong-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/black-myth-wukong-review/</guid>
+      <guid>http://localhost:50182/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
@@ -276,9 +436,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:62124/posts/2023-toys-recap/</link>
+      <link>http://localhost:50182/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62124/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:50182/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
