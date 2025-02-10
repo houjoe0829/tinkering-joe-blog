@@ -44,6 +44,10 @@ menu:
       name: "文章"
       url: "/posts/"
       weight: 10
+    - identifier: "drafts"
+      name: "草稿箱"
+      url: "/drafts/"
+      weight: 15
     - identifier: "about"
       name: "关于"
       url: "/about/"
