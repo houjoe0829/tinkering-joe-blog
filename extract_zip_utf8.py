@@ -32,7 +32,7 @@ def extract_zip_with_utf8(zip_path, extract_dir):
 
 if __name__ == '__main__':
     # 设置输入输出路径
-    zip_path = 'Notionfiles/7dec57da-0985-4768-a7e1-c621a2d62049_Export-cb31b342-8203-41e2-8479-d916216040b0.zip'
+    zip_path = 'Notionfiles/78991676-f587-4502-b9e1-90b6b90c7b49_Export-918859d0-7562-4ea0-8824-addcd8b83f9b.zip'
     extract_dir = 'temp_notion'
     
     # 执行解压

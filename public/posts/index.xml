@@ -328,6 +328,156 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>性价比最高的科学上网方案：Shadowrocket</title>
+      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
+      <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>⚠️ 注意：</p>
+<ul>
+<li>如果不知道怎么改规则，让 AI 改，很靠谱的</li>
+<li>这个方案更适合已经了解基本科学上网的人，写得比较简略</li>
+<li>此方案仅适配苹果系设备，不支持 Windows、Android</li>
+<li>科学上网 = 代理软件（Shadowrocket）+ 海外线路</li>
+<li>最强保险依然是，买两家线路，更抗风险，当然，越多越好</li>
+<li>有 QuantumltX 的可以看 <a href="https://www.notion.so/Quantumlt-X-d0d663d0c40b4b7391d7b76b410b1331?pvs=21">最简约的科学上网方案：Quantumlt X</a></li>
+</ul></blockquote>
+<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/shadowrocket/image1.png"></p>
+<h2 id="为什么推荐-shadowrocket">为什么推荐 Shadowrocket</h2>
+<ul>
+<li>只需要购买一次，2.99刀（超便宜），即可在 Apple 苹果系设备上使用</li>
+<li>是买断制，不需要订阅</li>
+<li>支持 <code>Mac</code>、<code>iPhone</code>、<code>iPad</code>、<code>Apple TV</code> 等苹果全系设备
+<ul>
+<li>Mac 就是个 iPad 版本，但是关闭窗口，仍然可以运行在后台</li>
+</ul>
+</li>
+<li>配置全平台通用，节点线路资源和代理规则可分开管理，很方便添加多家机场节点</li>
+<li>网络活动抓包很容易看懂，而且可以根据网络自己再添加不同的规则，比 QuantumultX 其实更简单</li>
+</ul>
+<p><a href="https://apps.apple.com/hk/app/shadowrocket/id932747118">‎Shadowrocket 官方下载链接</a></p>
+<h2 id="如何购买-shadowrocket">如何购买 Shadowrocket</h2>
+<ul>
+<li>需要国外的 Apple ID 才可以下载这个代理工具</li>
+<li>如果没有的话，万能的淘宝吧
+<ul>
+<li>另外也可以在 Google 搜索，我感觉最近淘宝封锁的厉害，很难找到</li>
+</ul>
+</li>
+</ul>
+<h2 id="关于机场服务推荐">关于机场服务推荐</h2>
+<p>软件只是代理工具，真正使用还搭配线路。</p>
+<p>最强保险当然是买两家线路，或者一家机场，但有很多地区的线路节点，分摊风险。</p>
+<ul>
+<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu">https://agneo.co/?rc=epng2diu</a></li>
+<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE">https://renzhe.cloud/auth/register?code=ciDE</a>
+<ul>
+<li>不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问</li>
+</ul>
+</li>
+<li>整体而言，一般建议买一个月试一试，亲身体验一下，以上两家我都用了三年以上，网上也有其他的很多，可以都找一找。</li>
+</ul>
+<h2 id="一步一步配置-shadowrocket">一步一步配置 Shadowrocket</h2>
+<blockquote>
+<p>💡 一句话就是：添加节点订阅 + 节点分组 + 配置文件</p></blockquote>
+<h3 id="1添加节点订阅">（1）添加节点订阅</h3>
+<p>一般各大机场都会针对 Shadowrocket 出单独的订阅链接，比如我上面提到的两家都有，登录至直接导入到 Shadowrocket 就可以的。</p>
+<p><img alt="添加订阅" loading="lazy" src="/images/posts/shadowrocket/image2.png"></p>
+<h3 id="2导入配置">（2）导入配置</h3>
+<blockquote>
+<p>⚠️ 导入配置之后记得选择使用该配置哦，我分享了两个配置。<strong>关于如何下载，打开 conf 文件之后会在浏览器的 Tab 里打开，右单击打开的内容，选择&quot;存储为&quot;即可。</strong></p></blockquote>
+<p><a href="/conf/minimal_rules_by_jojo.conf">这是一个非常简单的配置</a></p>
+<p><a href="/conf/modified_by_jojo_2025-01-18.conf">这个有更多的分组，但是也没有带广告</a></p>
+<p>网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往：</p>
+<ul>
+<li>整体规则用 Claude AI 来生成</li>
+<li>尽可能简化规则，不必要的都删除掉，越简单越能减少网络玄学问题</li>
+<li>为节点按地区分区，这很重要，这样方便特定网址走特定地区，比如 Spotify、AI 等</li>
+<li>每个地区分组自动测速</li>
+<li>为 AI 单独增加策略组，已经添加了 ChatGPT、Claude、Gemini 等 AI</li>
+<li>为 Social Channel 增加了策略组</li>
+<li>为海外视频会议单独设置了策略组</li>
+<li>Apple、微软也增加了单独的策略组，均 Direct</li>
+</ul>
+<h3 id="3节点分组">（3）节点分组</h3>
+<p>这里主要是设定一个全局测速的自动节点，针对所有可用的节点，可以汇总多家机场。</p>
+<p><img alt="节点分组" loading="lazy" src="/images/posts/shadowrocket/image3.png"></p>
+<p>在首页-全局路由-分组里，开启简单模式，增加分组之后，如果不改或者空着就会默认选中所有的节点，这里建议加上筛选，因为机场有些节点是不可用的，容易干扰，尤其是那些用来显示流量的。</p>
+<p>筛选的正则表达式是这样的即可，主要排除一些无效节点（这个真的很重要哦）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">^(?!.*(流量|套餐|当前网址|海外用户)).*</span>
+</span></span></code></pre></div><p><img alt="筛选设置" loading="lazy" src="/images/posts/shadowrocket/image4.png"></p>
+<h3 id="4一些零碎设置">（4）一些零碎设置</h3>
+<ul>
+<li>在全局路由里，一定要将代理设置为&quot;按配置&quot;，不然很容易全局代理</li>
+<li>建议开启日志，这样代理有问题的时候，可以基于日志增删规则，在&quot;数据-日志-代理&quot;</li>
+<li>建议开启 iCloud 同步，在&quot;数据-iCloud&quot;</li>
+<li>建议开启自动更新，在&quot;设置-更新-配置&quot;里，但记得关闭提醒</li>
+<li>建议开启订阅更新，在&quot;设置-更新-订阅&quot;里，开启打开时更新和自动后台更新</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>居然是第一次去日本</title>
+      <link>http://localhost:1313/posts/first-time-in-japan/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
+      <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
+      <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
+<p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
+<p>在日本的这一路，我们去了东京、富士山、镰仓、大阪、京都。不过，整体可以粗暴地分为两部分，东京周边（东京、富士山、镰仓）和大阪周边（大阪、京都），而从我个人的观感来说，东京更像北京，更秩序也更紧张，大阪则像上海，松弛但有活力，从两个城市对待垃圾分类的态度也可以一窥一二。</p>
+<p>如果再去日本，大阪应该会变成我们的首选……</p>
+<h2 id="出租车真的很贵">出租车真的很贵</h2>
+<p>还未到日本之前只是听说日本出租车贵，等到了之后，贵开始更具象化了。</p>
+<p>落地的成田机场离市区大概70多公里，如果打车的话，大概 1500 元人民币，这甚至比我们从香港到东京的机票都要贵上一些。而从成田机场到市区缺乏直达公共交通，需要换乘好几次，整体耗时超过两个小时。不过，为了赶时间，最后我们通过包车解决了，大概一半的价格，也只有不到一半的时间，再次感谢万能的淘宝。</p>
+<p>这之后的几天里，我们都在小心翼翼避开打车，偶尔迫不得已也是胆战心惊地盯着司机的打表，数字的跳动比心脏都快，比如从东京新宿打车到民宿，不到三公里，花了 100 元人民币，大概 2000 日元。</p>
+<h2 id="消失的樱花和富士山">消失的樱花和富士山</h2>
+<p>本来就属于樱花季，民宿和机票的价格已经与旺季对齐，但是，全世界的樱花都开了，除了日本……
+没了樱花的东京再加上下雨，更不可爱了，后来在东京基本是沉闷式购物，银座、新宿、秋叶原……而下雨不仅让东京更凄凉，也让富士山隐身了。</p>
+<p>到东京的第二天，我们不相信运气会那么差，司机也说，只有中午有几率会晴朗一下，但大概率看不到富士山，但，我们依然顶着阴天，包车前往富士山脚下。不出所望，富士山像个大家闺秀，直到下午也没肯漏出一面。</p>
+<p>没有富士山的富士山景区就像没有西湖的杭州，什么都暗淡无光了，除了山脚下的山中湖。
+山中湖是富士山脚下最大的湖泊之一，肃杀的阴天里，从岸边望过去有种北欧的错觉，天空阴郁但也干净透彻，一群当地人在这天气下玩着桨板，而风吹得我们直哆嗦。</p>
+<p>在停车的一角，最受欢迎的大概就是水边的天鹅，每个人都要与它们合影一番。后来，还巧遇了每天来喂天鹅的两位日本摄影大叔，其中一个在天鹅群和人群都算社牛的大叔当起了&quot;导游&quot;，中文、日语、英语无缝切换，引导大家与天鹅一一合影，这也是我们第一次见到如此活泼的日本人，算是这破天气里的意外之旅了。</p>
+<p><img alt="山中湖边" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3933.jpg"></p>
+<p><img alt="喂天鹅的另一位日本大叔，沉默低调" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3979.jpg"></p>
+<h2 id="灌篮高手的镰仓">灌篮高手的镰仓</h2>
+<p>从东京乘坐两个多小时的城铁到了镰仓，著名的灌篮高手主题取景地。我们住在了一个接近胶囊旅馆风格的民宿，房间里是上下铺，洗澡和厕所是公用的，虽然空间局促，但是格外的干净，而且上铺的窗户在早上打开就是面朝海滩。</p>
+<p><img alt="镰仓民宿" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4050.jpg"></p>
+<p><img alt="镰仓海滩" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4062.jpg"></p>
+<p>而坏天气从我们到镰仓就结束了，没想到在这里看到了富士山，虽然隔着一个海湾，但心愿已成。</p>
+<p><img alt="远眺富士山" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4099.jpg"></p>
+<p><img alt="镰仓海岸" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4142.jpg"></p>
+<p>如果要形容镰仓的感受，悠闲、宁静、面朝大海，值得再来几次，从凌晨六七点就有人在冲浪，而这里的沙滩是一种格外的安逸，太舒适了，仅仅是散散步就觉得足矣。</p>
+<h2 id="任天堂主题之旅">任天堂主题之旅</h2>
+<p>大阪周边的行程基本就是围绕任天堂游戏主题的，不管是大阪环球影城的 Nintendo World，还是京都的任天堂总部，抑或大阪梅田地铁站附近的任天堂周边专卖区，甚至在大阪的国际机场，都有马立奥主题的周边，为了不虚此行，特别扛了一个20寸的马立奥回来，以纪念我和我老婆共同通关的《马立奥·奥德赛》和《马立奥·惊奇》这两款游戏。</p>
+<p>到了大阪的第二天，就是一天的环球影城之旅，北京的环球影城的排队阴影尚存，我们索性直奔只在大阪才有的 Nintendo World，跳过其他。</p>
+<p><img alt="Nintendo World" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4616.jpg"></p>
+<p>从进入园区的那一刻，就像进入到游戏世界，许多人和我们一样，戴着不同角色的帽子，而我戴着耀西，大摇大摆走在园区里。那些只在游戏里可见的场景被原样搬到了现实，我们从超级玛丽的水管进入 Nintendo World，如奥德赛一样的关卡山直接呈现在眼前，不时还可以看到真人大小的各种游戏角色时出现在人群里。</p>
+<p><img alt="马里奥世界" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4281.jpg"></p>
+<p>如果稍微留意的话就会发现，即使在排队的地方出现的问号宝箱是真的可以顶的，顶了之后的游戏奖励会出现戴着的任天堂手环里，恰到好处的&quot;幼稚&quot;，非常喜欢。</p>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4338.jpg"></p>
+<p>不过，真正属于任天堂的高光时刻，不是在任天堂园区内，而是园区外，也就是由马立奥压轴的花车游行，而且每隔一段时间，花车会停下来邀请路人一起&quot;发疯&quot;，High 就行了。</p>
+<p><img alt="花车游行" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4431.jpg"></p>
+<p>与任天堂园区的氛围对比起来，在京都的任天堂总部就无比日本打工族一些，远看像一座厂房一样，灰白色调的外墙没有一点红蓝主机的灵动，甚至，整个总部没有任何接待游客的服务中心，只有一个保安叉着腰站在大门内，如果不是&quot;任天堂株式会社&quot;的牌子挂在门口，毫不怀疑这是一个军事保护区……</p>
+<p><img alt="任天堂总部" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4519.jpg"></p>
+<p>不过，在这里，我们看到了长相最好的樱花树，也算变相达成了夙愿。</p>
+<h2 id="有趣的陌生人">有趣的陌生人</h2>
+<p>每次出行都能遇到不少有趣的外乡人，这大概是旅行的一种乐趣，比如山口湖遇到的那位社牛日本摄影师……</p>
+<p>去环球影城的地铁上，一位把我当做日本人的英格兰小哥在得知我可以说英语之后，长舒一口气，放弃了他有些纠结的日语，正好我们都是去环球影城，同程了一段。他非常喜欢日本，已经来了四五次，甚至用日文将父母的名字纹在了小臂上，说话间快速撸起袖子展示了一下，还不忘强调一下，&ldquo;时间长有点疼……&quot;。但小臂上的纹身除了&quot;家族&quot;两个汉字我认得，日语的片假名我也看不懂，这让我萌生了学学日语的想法。同程结束，他便戴上耳机离开了，接下来，他还会去广岛，那个原子弹爆炸过的地方。</p>
+<p>在京都府立植物园遇到的一群退休老爷爷老奶奶们，站在最茂盛的一颗樱花树下，招呼着我过去帮忙拍个照。七嘴八舌说了一堆我听不懂的日语之后，我用英语自顾自的说起来，提醒他们，我这个亚裔面孔不是本地人。可惜，我的摄影技术一般，虽然可以帮忙拍照，但无法帮助纠正有些光照阴影的拍摄视角，但他们依然很开心。看来，摄影也得学一学了。</p>
+<h2 id="陌生感">陌生感</h2>
+<p>很神奇，来日本之前，其实打开日本地图，对地图上冒出的很多地名都有一种熟悉的陌生感，比如京都、熊本、奈良、神户、福岛、琦玉、长崎等等，在各种媒体里都多少可以耳闻一些，懵懵懂懂。而随着实地造访，以及伴随到访点开的维基百科，总算拼凑了一个具象化的关联地图。不过，还有好多地图没有&quot;点亮&rdquo;，应该还会再来几次。</p>
+<h2 id="一些旅行-tips">一些旅行 Tips</h2>
+<p>作为只来过一次的游客，没有多少高价值心得可以分享。</p>
+<ul>
+<li>苹果手机可以直接在国内开通 Suica 交通卡（常备称作西瓜卡）</li>
+<li>日本很多地方是可以直接用微信和支付宝支付的，建议优先使用，比直接刷卡优惠</li>
+<li>日本不同名字的地铁属于不同的公司，换乘大部分需要先出站再进站</li>
+<li>善用小红书，真的帮助解决了非常多的问题</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>《双人成行》：确实值得再玩一次</title>
       <link>http://localhost:1313/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
