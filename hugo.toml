@@ -8,9 +8,7 @@ enableEmoji = true
 
 [params]
 # 作者信息
-author = {
-    name = "侯杰"
-}
+author = { name = "侯杰" }
 
 # 网站描述
 description = "记录学习笔记、技术思考和生活感悟"
