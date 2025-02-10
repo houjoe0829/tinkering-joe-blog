@@ -134,6 +134,26 @@
    - 图片文件必须放在 `static/images/` 目录下
    - 图片文件名同样使用英文和短横线
    - 在文章中使用相对路径引用图片：`![描述](/images/your-image.jpg)`
+   - **图片压缩**：
+     * 使用项目根目录下的 `compress_images.py` 脚本进行图片压缩
+     * 脚本会自动处理 `static/images/` 目录下的所有图片
+     * 压缩后的图片保存在 `static/images_compressed/` 目录
+     * 压缩参数：
+       - 质量：85%（可在脚本中调整 quality 参数）
+       - 最大尺寸：1920x1920（保持原比例）
+       - 自动移除图片元数据
+     * 使用方法：
+       ```bash
+       # 安装依赖
+       brew install imagemagick
+       # 运行压缩脚本
+       python compress_images.py
+       ```
+     * 压缩完成后，可以比较原始目录和压缩后目录的大小：
+       ```bash
+       du -sh static/images static/images_compressed
+       ```
+     * 确认压缩效果后，可以将压缩后的图片替换原始图片
 
 7. **标签管理规则**：
    - 使用已有的标签，避免创建过多相似的标签
@@ -147,6 +167,47 @@
 
 *   每次修改博客内容后，都建议先在本地预览，确保没有问题后再提交到 GitHub。
 *   如果您想要了解更多关于 Hugo 和 Cloudflare Pages 的使用方法，可以查阅它们的官方文档。
+
+### 从 Notion 导出文件的处理流程
+
+1. **准备工作**：
+   - 在 Notion 中选择要导出的页面
+   - 选择导出格式为 "Markdown & CSV"
+   - 确保导出时包含图片
+
+2. **文件处理步骤**：
+   - 将导出的 ZIP 文件放在 `Notionfiles` 目录下
+   - 运行 `extract_zip.py` 解压所有 ZIP 文件
+   - 运行 `process_notion_files.py` 处理解压后的文件
+   - 运行 `compress_images.py` 压缩处理后的图片
+
+3. **自动化处理内容**：
+   - 提取文章标题、标签、创建日期等信息
+   - 生成符合 Hugo 格式的 Front Matter
+   - 创建文章专属的图片目录
+   - 处理图片文件名和链接
+   - 自动清理已处理的源文件
+
+4. **注意事项**：
+   - 确保 Python 环境已安装 `pyyaml` 包：`pip3 install pyyaml`
+   - 确保已安装 ImageMagick：`brew install imagemagick`
+   - 图片会被自动压缩并限制最大尺寸为 1920x1920
+   - 处理完成后源文件会被自动删除
+   - 如果文章已存在，将会跳过处理
+
+5. **处理后的文件结构**：
+   ```
+   content/
+   └── posts/
+       └── article-title.md
+   static/
+   └── images/
+       └── posts/
+           └── article-title/
+               ├── image-1.jpg
+               ├── image-2.png
+               └── ...
+   ```
 
 ### 从 Notion 自动化迁移内容到当前博客
 
