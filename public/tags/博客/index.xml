@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>博客 on Joe 的折腾日记</title>
-    <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <link>http://localhost:54242/tags/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54242/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的第一篇博客</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:54242/posts/my-first-post/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:54242/posts/my-first-post/</guid>
       <description>欢迎来到我的个人博客</description>
     </item>
   </channel>
