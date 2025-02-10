@@ -9,7 +9,7 @@ description: "了解更多关于我的信息"
 
 我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.
 
-`Product Manager`、`喜欢码字`、`Nas 小白用户`、`无人机机长`、`主机游戏玩家`、`有个流浪猫`、`江浙沪包游中`、`骑行新手`、`顺风车司机`
+`Coding with AI`、`Product Manager`、`喜欢码字`、`Nas 小白用户`、`无人机机长`、`主机游戏玩家`、`有个流浪猫`、`江浙沪包游中`、`骑行新手`、`顺风车司机`
 
 主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。
 
@@ -25,6 +25,12 @@ description: "了解更多关于我的信息"
 - Strava: [我的 Strava 运动主页](https://www.strava.com/athletes/114261708)
 - GitHub: [我的 GitHub 主页](https://github.com/houjoe0829)
 
-## 🙏 致谢
+## 🌟 我的 Side Project
 
-感谢访问我的博客。这个站点使用 [Hugo](https://gohugo.io/) 构建，主题是 [PaperMod](https://github.com/adityatelange/hugo-PaperMod)，托管在 [Cloudflare Pages](https://pages.cloudflare.com/) 上。
+- [OmniAudio](https://omniaudio.info/)
+  > 🎧 OmniAudio 是一款创新的 AI 音频内容聚合服务，它可以将各种形式的内容，如网页、Word 文档、Gmail、文本片段、甚至视频和音频文件，转化为podcast 播客节目，并生成可以直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。
+
+- SparkFlow (纯开发练手)
+  > ✨ Type like texting, think like connecting.  SparkFlow 致力于打造全新的思考和写作方式，让你像聊天一样流畅输入，像 Logseq 那样快速关联。敬请期待！
+
+
