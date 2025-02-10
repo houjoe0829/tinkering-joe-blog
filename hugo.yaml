@@ -1,0 +1,30 @@
+baseURL: 'https://houjoe.me/'
+languageCode: 'zh-cn'
+title: "侯杰的个人博客"
+theme: 'PaperMod'
+enableEmoji: true
+
+params:
+  author:
+    name: "侯杰"
+  description: "记录学习笔记、技术思考和生活感悟"
+  defaultTheme: "auto"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/yourusername"
+
+menu:
+  main:
+    - identifier: "posts"
+      name: "文章"
+      url: "/posts/"
+      weight: 10
+    - identifier: "about"
+      name: "关于"
+      url: "/about/"
+      weight: 20 
