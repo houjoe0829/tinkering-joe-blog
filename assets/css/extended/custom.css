@@ -49,4 +49,37 @@
     .post-meta {
         margin-top: 0.8rem;
     }
+}
+
+/* 统一所有页面的标题大小 */
+.post-content h1,
+.main .post-content h1 {
+    margin: 40px auto 32px;
+    font-size: 24px;
+}
+
+.post-content h2,
+.main .post-content h2 {
+    margin: 32px auto 24px;
+    font-size: 22px;
+}
+
+.post-content h3,
+.main .post-content h3 {
+    font-size: 20px;
+}
+
+.post-content h4,
+.main .post-content h4 {
+    font-size: 18px;
+}
+
+.post-content h5,
+.main .post-content h5 {
+    font-size: 16px;
+}
+
+.post-content h6,
+.main .post-content h6 {
+    font-size: 14px;
 } 
