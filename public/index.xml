@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Joe 的折腾日记</title>
-    <link>http://localhost:56564/</link>
+    <link>http://localhost:62124/</link>
     <description>Recent content on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:56564/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62124/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:56564/posts/nezha-movie-review/</link>
+      <link>http://localhost:62124/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:62124/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:56564/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:62124/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:62124/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:56564/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:62124/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:62124/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -74,9 +74,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:62124/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -92,9 +92,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:56564/posts/a-night-of-wake-keeping-at-funeral-home/</link>
+      <link>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
+      <guid>http://localhost:62124/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
       <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -115,10 +115,92 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>关于我</title>
-      <link>http://localhost:56564/about/</link>
+      <title>《双人成行》：确实值得再玩一次</title>
+      <link>http://localhost:62124/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/about/</guid>
+      <guid>http://localhost:62124/posts/it-takes-two-review/</guid>
+      <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
+      <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.png"></p>
+<p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
+<p>翻看记录，上一次体验是在三年前的 Xbox 上。如今主机已不在身边，记忆也渐渐模糊，便趁这机会和老婆在 PC 上重温了一遍。</p>
+<p>对于有主机游戏经验的玩家来说，这款游戏其实很友好 —— 引导清晰明了，惩罚机制极其轻松，主要以解密和跳跃为主。游戏中穿插的小游戏更是休闲得不能再休闲。</p>
+<p>不过，但凡玩的人中有一个经验欠缺，对两人都是个折磨，毕竟这游戏比王者荣耀还依赖队友，建议大家视情感基础来酌情游玩。</p>
+<p>现在回过头看，《双人成行》的剧情简直就是游戏版的《再见爱人》： 一对感情淡漠的夫妻，因孩子的一本魔法书进入奇幻世界，在冒险过程中重新认识自己，最终治愈了彼此的关系。这强行治疗的过程，我不赞同不支持，但确实能理解这个套路。</p>
+<p>结局自然是经典的 happy kiss ending。这次我们大约花了 15 小时通关，比上次速度快了 6 个小时。本想收集全成就，试了几个后觉得重复性有点高，就放弃了。</p>
+<p>即便是第二次游玩，《双人成行》在双人游戏领域依然是当之无愧的佳作，是画面、游戏性和故事的集大成者，还没有能替代这个地位的。</p>
+<p>游戏中最令人难忘的片段有两处：一是骑着水下巨型鲶鱼遨游的场景，二是在魔法城堡中那段热血沸腾的战斗。</p>
+<p><img alt="水下巨型鲶鱼场景" loading="lazy" src="/images/posts/it-takes-two-review/image-1.png"></p>
+<p><img alt="魔法城堡战斗场景" loading="lazy" src="/images/posts/it-takes-two-review/image-2.png"></p>
+<p>回到游戏内外，就像游戏里的小梅和科迪，当双方没有一起合作可以做的事情，并且失去各自热爱的事情时，终将变成情感淡漠的开始，这点我还是深表理解的。</p>
+<p>游戏，也是可以一起做的事情……</p>
+<hr>
+<p><img alt="游戏截图3" loading="lazy" src="/images/posts/it-takes-two-review/image-3.png"></p>
+<p><img alt="游戏截图4" loading="lazy" src="/images/posts/it-takes-two-review/image-4.png"></p>
+<p><img alt="游戏截图5" loading="lazy" src="/images/posts/it-takes-two-review/image-5.png"></p>
+<p><img alt="游戏截图6" loading="lazy" src="/images/posts/it-takes-two-review/image-6.png"></p>
+<p><img alt="游戏截图7" loading="lazy" src="/images/posts/it-takes-two-review/image-7.png"></p>
+<p><img alt="游戏截图8" loading="lazy" src="/images/posts/it-takes-two-review/image-8.png"></p>
+<p><img alt="游戏截图9" loading="lazy" src="/images/posts/it-takes-two-review/image-9.png"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>《死侍与金刚狼》的疑问和彩蛋</title>
+      <link>http://localhost:62124/posts/deadpool-and-wolverine-review/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62124/posts/deadpool-and-wolverine-review/</guid>
+      <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>先说评价：</p>
+<p>首先，确实是粉丝向电影，以致于闪过的超级英雄多到让人充满问号，但是除了死侍与金刚狼，都是四五线之外的超级英雄或者反派。其次，还是挺闹腾的，嘴碎的死侍和一言不合就插人的金刚狼，看完脑子里嗡嗡的。回味来看，觉得这部电影的分数不会太高，一个是因为负担太重了，对观众的要求有些高，而且觉得漫威宇宙真的有些乏味了，不管是爆米花式复仇者还是另类英雄，套路都太多了。</p>
+<p>不过，还是觉得这部电影很欢乐的，太多的梗，让人会心一笑，漫威太懂造梗和彩蛋了。</p></blockquote>
+<h3 id="死侍与金刚狼不是第一次相遇了">死侍与金刚狼不是第一次相遇了</h3>
+<p>最早在金刚狼里出现与金刚狼对战的死侍就是瑞安·雷诺兹演的，但是他不能说话。</p>
+<p><img alt="早期的死侍形象" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image.png"></p>
+<h3 id="女死侍是死侍老婆演的">女死侍是死侍老婆演的</h3>
+<p>可以在豆瓣演员表看到</p>
+<p><img alt="女死侍演员" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-1.png"></p>
+<h3 id="拿叉子的女的是谁">拿叉子的女的是谁？</h3>
+<p>《夜魔侠》电影里的夜魔侠前任艾丽卡，精通武术及格斗，也有单独的电影《幻影杀手》</p>
+<p><img alt="《夜魔侠》海报" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-2.png"></p>
+<p><img alt="《幻影杀手》海报" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-3.png"></p>
+<h3 id="彼得为什么可以吸引死侍军团">彼得为什么可以吸引死侍军团？</h3>
+<p>彼得是《死侍2》里 X 特工队的一员，一出场就死了，后来被传也被死侍复活了，《死侍与金刚狼》算是坐实了。至于最后为什么死侍都喜欢彼得，看到一个影评里说：&ldquo;Peter 是漫威宇宙的魅魔，所有人见了他都如沐春风，所有戾气瞬间消散，对付死侍尤其好用。&rdquo;</p>
+<p><img alt="彼得的形象" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-4.png"></p>
+<h3 id="拿牌做武器的是谁">拿牌做武器的是谁？</h3>
+<p>牌王，本名为雷米·艾蒂安·勒博，为漫威漫画中的一位超级英雄，常与X战警互动。牌王属于变种人，他的能力有将动能注入他物和控制、静电制造、心灵防御力及超人般的感官、速度、力量和敏捷。</p>
+<h3 id="吸收掉霹雳火的人是谁">吸收掉霹雳火的人是谁？</h3>
+<p>霹雳火变体之后发&quot;火&quot;，没想到被一个反派给吸收了，他就是 X 战警的火人，可以在《X战警1》和《X战警2》里看到这个角色。</p>
+<p><img alt="X战警的火人" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-5.png"></p>
+<h3 id="梳理一下客串的英雄">梳理一下客串的英雄</h3>
+<ul>
+<li>钢力士：《死侍1》《死侍2》</li>
+<li>雪绪：《死侍1》《死侍2》</li>
+<li>少年弹头：《死侍1》《死侍2》</li>
+</ul>
+<p><img alt="客串英雄们" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-6.png"></p>
+<ul>
+<li>霹雳火：《神奇四侠》</li>
+</ul>
+<p><img alt="霹雳火" loading="lazy" src="/images/posts/deadpool-and-wolverine-review/image-7.png"></p>
+<ul>
+<li>剑齿虎：《金刚狼 1》</li>
+<li>刀锋战士：《刀锋战士 1/2/3》</li>
+<li>艾丽卡：《幻影杀手》</li>
+<li>金牌手：电影被取消制作</li>
+<li>X-23 劳拉：《金刚狼 3》</li>
+<li>蟾蜍：《X战警》</li>
+<li>死亡女：《X战警2》</li>
+<li>火人：《X战警2》</li>
+<li>绿巨人：《复仇者联盟》</li>
+<li>超人狼：亨利·卡维尔饰演</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:62124/about/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62124/about/</guid>
       <description>了解更多关于我的信息</description>
       <content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
 <p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>
@@ -151,9 +233,9 @@
     </item>
     <item>
       <title>另一篇草稿文章</title>
-      <link>http://localhost:56564/drafts/another-draft/</link>
+      <link>http://localhost:62124/drafts/another-draft/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/drafts/another-draft/</guid>
+      <guid>http://localhost:62124/drafts/another-draft/</guid>
       <description>&lt;p&gt;这是第二篇示例草稿文章，用来展示草稿箱中多篇文章的显示效果。&lt;/p&gt;
 &lt;h2 id=&#34;文章内容&#34;&gt;文章内容&lt;/h2&gt;
 &lt;p&gt;这里是一些示例内容&amp;hellip;&lt;/p&gt;
@@ -176,9 +258,9 @@
     </item>
     <item>
       <title>示例草稿</title>
-      <link>http://localhost:56564/drafts/example-draft/</link>
+      <link>http://localhost:62124/drafts/example-draft/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/drafts/example-draft/</guid>
+      <guid>http://localhost:62124/drafts/example-draft/</guid>
       <description>&lt;p&gt;这是一篇示例草稿文章，用来展示草稿功能如何使用。&lt;/p&gt;
 &lt;p&gt;当您在本地使用 &lt;code&gt;hugo server -D&lt;/code&gt; 命令预览网站时，可以看到这篇文章。但是在生产环境中，这篇文章不会被显示。&lt;/p&gt;
 &lt;h2 id=&#34;如何使用草稿功能&#34;&gt;如何使用草稿功能&lt;/h2&gt;
@@ -205,9 +287,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:56564/posts/2023-toys-recap/</link>
+      <link>http://localhost:62124/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56564/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:62124/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>

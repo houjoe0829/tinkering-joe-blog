@@ -1,0 +1,83 @@
+# Shadowrocket: 2024-11-12 20:02:57
+[General]
+bypass-system = true
+# 扩展 skip-proxy 以包含更多局域网地址
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,captive.apple.com,*.ccb.com,*.abchina.com.cn,*.psbc.com,www.baidu.com
+dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,223.5.5.5,119.29.29.29
+dns-direct-system = false
+icmp-auto-reply = true
+ipv6 = true
+private-ip-answer = true
+dns-direct-fallback-proxy = true
+# 添加完整的 TUN 排除路由
+tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32
+# 添加 DNS 劫持
+hijack-dns = 8.8.8.8:53,8.8.4.4:53
+
+[Proxy Group]
+Social Channel = select,新加坡节点
+AI 服务 = select,PROXY,香港节点,台湾节点,日本节点,新加坡节点,韩国节点,美国节点,policy-select-name=美国节点
+海外视频会议 = select,DIRECT,PROXY,香港节点,台湾节点,日本节点,新加坡节点,韩国节点,美国节点,policy-select-name=日本节点
+苹果服务 = select,DIRECT,PROXY,香港节点,台湾节点,日本节点,新加坡节点,韩国节点,美国节点
+谷歌服务 = select,PROXY,香港节点,台湾节点,日本节点,新加坡节点,韩国节点,美国节点
+微软服务 = select,DIRECT,PROXY,香港节点,台湾节点,日本节点,新加坡节点,韩国节点,美国节点
+香港节点 = url-test,url=http://www.gstatic.com/generate_204,interval=600,tolerance=0,timeout=5,select=0,policy-regex-filter=HK|Hong|hong|香港|深港|沪港|京港|港
+台湾节点 = url-test,interval=600,tolerance=0,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=TW|Taiwan|taiwan|台湾|台北|台中|新北|彰化|台
+日本节点 = url-test,url=http://www.gstatic.com/generate_204,interval=600,tolerance=0,timeout=5,select=0,policy-regex-filter=JP|Japan|japan|Tokyo|tokyo|日本|东京|大阪|京日|苏日|沪日|上日|川日|深日|广日
+新加坡节点 = url-test,url=http://www.gstatic.com/generate_204,interval=600,tolerance=0,timeout=5,select=0,policy-regex-filter=SG|Sing|sing|新加坡|狮城|沪新|京新|深新|杭新|广新
+韩国节点 = url-test,url=http://www.gstatic.com/generate_204,interval=600,tolerance=0,timeout=5,select=0,policy-regex-filter=KR|Korea|korea|KOR|韩国|首尔|韩|韓|春川
+美国节点 = url-test,interval=600,tolerance=0,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=(?!.*海外用户)(US|USA|America|america|United States|凤凉城|洛杉矶|西雅图|芝加哥|纽约|美西|广美)
+
+[Rule]
+DOMAIN-SUFFIX,twitter.com,SOCIAL CHANNEL
+DOMAIN-SUFFIX,twimg.com,SOCIAL CHANNEL
+DOMAIN-SUFFIX,x.com,SOCIAL CHANNEL
+DOMAIN-SUFFIX,reddit.com,SOCIAL CHANNEL
+# 局域网和本地网络规则（优先级提高）
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,localhost,DIRECT
+DOMAIN-SUFFIX,ip6-localhost,DIRECT
+DOMAIN-SUFFIX,ip6-loopback,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+IP-CIDR6,::1/128,DIRECT,no-resolve
+IP-CIDR6,FC00::/7,DIRECT,no-resolve
+IP-CIDR6,FE80::/10,DIRECT,no-resolve
+IP-CIDR6,FD00::/8,DIRECT,no-resolve
+# AI 服务相关
+DOMAIN-SUFFIX,gemini.google.com,AI 服务
+DOMAIN-SUFFIX,ai.com,AI 服务
+DOMAIN-SUFFIX,openai.com,AI 服务
+DOMAIN-SUFFIX,anthropic.com,AI 服务
+DOMAIN-SUFFIX,claude.ai,AI 服务
+DOMAIN-SUFFIX,perplexity.ai,AI 服务
+DOMAIN-SUFFIX,copilot.microsoft.com,AI 服务
+# 视频会议相关
+DOMAIN-SUFFIX,chime.aws,海外视频会议
+DOMAIN-SUFFIX,slack.com,海外视频会议
+DOMAIN-SUFFIX,zoom.us,海外视频会议
+DOMAIN-SUFFIX,slack-edge.com,海外视频会议
+# 必要的规则集
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Apple/Apple.list,苹果服务
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list,微软服务
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,谷歌服务
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list,DIRECT
+# 兜底规则
+GEOIP,CN,DIRECT
+FINAL,PROXY
+
+[Host]
+# 保持完整的 Host 配置
+*.apple.com = server:system
+*.icloud.com = server:system
+localhost = 127.0.0.1
+*.local = system
+
+[MITM]
+hostname = *.google.cn
