@@ -225,11 +225,20 @@ python compress_images.py
 6. **清理工作**：
    - 确认文章和图片都已正确迁移后，删除临时解压的文件：
      ```bash
+     # 确保在项目根目录下执行
      rm -rf temp_notion
      ```
-   - 删除原始的 Notion ZIP 文件：
+   - 删除原始的 Notion ZIP 文件（注意要在项目根目录下执行）：
      ```bash
+     # 确保在项目根目录下执行，替换为实际的 ZIP 文件名
      rm -f "Notionfiles/your-notion-export.zip"
+     ```
+   - 检查清理是否完成：
+     ```bash
+     # 检查临时目录是否已删除
+     ls -la | grep temp_notion
+     # 检查 Notion ZIP 文件是否已删除
+     ls -la Notionfiles/
      ```
    - 不要在这个阶段压缩图片，图片压缩将在后续统一处理
 
