@@ -134,32 +134,41 @@
    - 图片文件必须放在 `static/images/` 目录下
    - 图片文件名同样使用英文和短横线
    - 在文章中使用相对路径引用图片：`![描述](/images/your-image.jpg)`
-   - **图片压缩**：
-     * 使用项目根目录下的 `compress_images.py` 脚本进行图片压缩
-     * 脚本会自动处理 `static/images/` 目录下的所有图片
-     * 压缩后的图片保存在 `static/images_compressed/` 目录
-     * 压缩参数：
-       - 质量：85%（可在脚本中调整 quality 参数）
-       - 最大尺寸：1920x1920（保持原比例）
-       - 自动移除图片元数据
-     * 使用方法：
-       ```bash
-       # 安装依赖
-       brew install imagemagick
-       # 运行压缩脚本
-       python compress_images.py
-       ```
-     * 压缩完成后，可以比较原始目录和压缩后目录的大小：
-       ```bash
-       du -sh static/images static/images_compressed
-       ```
-     * 确认压缩效果后，可以将压缩后的图片替换原始图片
 
 7. **标签管理规则**：
    - 使用已有的标签，避免创建过多相似的标签
    - 标签使用中文，便于读者理解
    - 每篇文章建议使用 3-5 个标签
    - 标签应该反映文章的主要主题和分类
+
+## 图片压缩指南
+
+为了优化网站加载速度和存储空间，我们需要定期对图片进行压缩处理。以下是具体的压缩方法：
+
+### 压缩工具和参数
+- 使用项目根目录下的 `compress_images.py` 脚本进行图片压缩
+- 脚本会自动处理 `static/images/` 目录下的所有图片
+- 压缩后的图片保存在 `static/images_compressed/` 目录
+- 压缩参数：
+  * 质量：85%（可在脚本中调整 quality 参数）
+  * 最大尺寸：1920x1920（保持原比例）
+  * 自动移除图片元数据
+
+### 使用方法
+```bash
+# 安装依赖
+brew install imagemagick
+# 运行压缩脚本
+python compress_images.py
+```
+
+### 压缩效果确认
+- 比较原始目录和压缩后目录的大小：
+  ```bash
+  du -sh static/images static/images_compressed
+  ```
+- 确认压缩效果后，可以将压缩后的图片替换原始图片
+- 建议定期（如每月）对新增图片进行批量压缩
 
 ---
 
@@ -168,48 +177,75 @@
 *   每次修改博客内容后，都建议先在本地预览，确保没有问题后再提交到 GitHub。
 *   如果您想要了解更多关于 Hugo 和 Cloudflare Pages 的使用方法，可以查阅它们的官方文档。
 
-### 从 Notion 导出文件的处理流程
+### 从 Notion 导出文章的处理流程
 
-1. **准备工作**：
-   - 在 Notion 中选择要导出的页面
+为了保持博客内容的一致性和质量，从 Notion 导出的文章需要经过以下处理步骤：
+
+1. **Notion 导出准备**：
+   - 在 Notion 中选择要导出的单个页面
    - 选择导出格式为 "Markdown & CSV"
-   - 确保导出时包含图片
+   - 确保勾选 "Include content" 和 "Include files & media"
+   - 下载得到一个 ZIP 文件
 
 2. **文件处理步骤**：
-   - 将导出的 ZIP 文件放在 `Notionfiles` 目录下
-   - 运行 `extract_zip.py` 解压所有 ZIP 文件
-   - 运行 `process_notion_files.py` 处理解压后的文件
-   - 运行 `compress_images.py` 压缩处理后的图片
+   - 将 ZIP 文件解压到临时目录
+   - 找到主要的 Markdown 文件（通常是与页面同名的 .md 文件）
+   - 检查并收集所有相关的图片文件
 
-3. **自动化处理内容**：
-   - 提取文章标题、标签、创建日期等信息
-   - 生成符合 Hugo 格式的 Front Matter
-   - 创建文章专属的图片目录
-   - 处理图片文件名和链接
-   - 自动清理已处理的源文件
+3. **创建博客文章**：
+   - 在 `content/posts/` 下创建新的 Markdown 文件
+   - 文件名规范：使用英文，用短横线连接，例如 `my-first-post.md`
+   - 添加符合规范的 Front Matter：
+     ```yaml
+     ---
+     title: "文章标题"
+     date: YYYY-MM-DD  # 使用 Notion 文章的原始创建日期
+     draft: false
+     description: "文章描述，建议 100 字以内"
+     tags: ["标签1", "标签2"]
+     author: "Joe"
+     ---
+     ```
 
-4. **注意事项**：
-   - 确保 Python 环境已安装 `pyyaml` 包：`pip3 install pyyaml`
-   - 确保已安装 ImageMagick：`brew install imagemagick`
-   - 图片会被自动压缩并限制最大尺寸为 1920x1920
-   - 处理完成后源文件会被自动删除
-   - 如果文章已存在，将会跳过处理
+4. **图片处理**：
+   - 在 `static/images/posts/` 下创建与文章同名的目录
+   - 将所有图片文件移动到这个目录
+   - 统一图片命名格式：`image-1.jpg`, `image-2.png` 等
+   - 在文章中更新图片引用路径：
+     ```markdown
+     ![图片描述](/images/posts/article-name/image-1.jpg)
+     ```
 
-5. **处理后的文件结构**：
-   ```
-   content/
-   └── posts/
-       └── article-title.md
-   static/
-   └── images/
-       └── posts/
-           └── article-title/
-               ├── image-1.jpg
-               ├── image-2.png
-               └── ...
-   ```
+5. **内容检查和优化**：
+   - 检查并修正 Markdown 语法
+   - 确保标题层级正确（h1, h2, h3 等）
+   - 检查图片引用路径是否正确
+   - 优化文章描述和标签
 
-### 从 Notion 自动化迁移内容到当前博客
+6. **清理工作**：
+   - 确认文章和图片都已正确迁移后，删除临时解压的文件
+   - 删除原始的 Notion ZIP 文件
+   - 不要在这个阶段压缩图片，图片压缩将在后续统一处理
+
+7. **本地预览确认**：
+   - 运行 `hugo server -D` 启动本地预览
+   - 检查文章在列表和详情页的显示效果
+   - 确认所有图片能正常加载
+   - 检查文章格式和样式是否正确
+
+8. **提交更新**：
+   - 确认一切正常后，提交更新到 Git 仓库
+   - 等待 Cloudflare Pages 自动部署完成
+   - 在线检查文章的最终效果
+
+**注意事项**：
+- 每次只处理一篇文章，确保质量和准确性
+- 保持文章的原始创建时间，不要随意修改
+- 图片压缩将在后续统一处理，迁移时保持原图
+- 处理完成后及时清理临时文件和 ZIP 文件
+- 定期检查和更新标签体系，保持分类的一致性
+
+这个手动处理流程虽然看起来步骤较多，但能确保每篇文章都得到细致的处理和检查，保持博客内容的高质量和一致性。
 
 ## 自动化迁移技术方案 (开发者参考)
 
