@@ -223,8 +223,14 @@ python compress_images.py
    - 优化文章描述和标签
 
 6. **清理工作**：
-   - 确认文章和图片都已正确迁移后，删除临时解压的文件
-   - 删除原始的 Notion ZIP 文件
+   - 确认文章和图片都已正确迁移后，删除临时解压的文件：
+     ```bash
+     rm -rf temp_notion
+     ```
+   - 删除原始的 Notion ZIP 文件：
+     ```bash
+     rm -f "Notionfiles/your-notion-export.zip"
+     ```
    - 不要在这个阶段压缩图片，图片压缩将在后续统一处理
 
 7. **本地预览确认**：
