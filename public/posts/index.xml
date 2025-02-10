@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:64750/posts/</link>
+    <link>http://localhost:56564/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:64750/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56564/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:64750/posts/nezha-movie-review/</link>
+      <link>http://localhost:56564/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:64750/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:56564/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:64750/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:56564/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:64750/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:56564/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -41,10 +41,28 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>放下执念，打开取暖器</title>
+      <link>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</guid>
+      <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
+      <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
+<p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
+最难熬的莫过于这样的天气：说冷也不算太冷，却总是冷冷嗖嗖，让人浑身不自在，注意力不断被这份不适所占据。而我实在厌倦了裹着厚重的冬衣，或者抱着电脑蜷缩在沙发上。</p>
+<p>在北方生活过的人，大概都能体会那种舒适，过往在北京，我宁愿春节不回湖北老家。在暖气充足的屋子里，即便外面寒风凛冽，屋内依然可以穿着短袖短裤，悠闲地守在电视或电脑前，轻松自在，没有任何精神阻力。可一旦回到华中地区的村子里，连起床这件小事都要做大量的思想工作。</p>
+<p>之前一直有个疑问，人类发展了这么多年，发明了那么多的取暖方式，为什么冬天依然难过？</p>
+<p>去年此时，在失去暖气庇护的杭州，我被迫粗略研究了一下各类取暖方式：地暖、电暖器、暖风机、空调，甚至研究起了海南和春城昆明的气候。渐渐地，我明白了：人们总是奢望找到一种既经济又高效的取暖方式，如果找不到，就宁愿身体硬扛。这种执念本身就是个悖论。</p>
+<p>首先，国内根本不存在真正四季如春的城市。不能只看平均气温，要看冬季的实际温度，真的冷起来，连三亚都会让人感到不适。</p>
+<p>其次，廉价的取暖方式根本不存在。那些淘宝店家宣传的&quot;一天一度电&rdquo;，不是效果差，就是纯粹忽悠。</p>
+<p>除了北方的集中供暖，性价比最高的其实就是空调，但它在零度以下就显得力不从心了。而电取暖器的功率基本都是空调的一到两倍，要想省钱过冬，就只能耗费大量精力去用身体对抗了。</p>
+<p>当放下这种执念后，我反而轻松了：该开就开，与其在寒冷中耗费精力，不如把注意力放在真正有价值的事情上。这或许才是最省力的取暖方式。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:64750/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
+      <link>http://localhost:56564/posts/a-night-of-wake-keeping-at-funeral-home/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:64750/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
+      <guid>http://localhost:56564/posts/a-night-of-wake-keeping-at-funeral-home/</guid>
       <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
