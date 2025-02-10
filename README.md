@@ -45,7 +45,7 @@
 
 1.  **接收并理解内容**:  AI 助手会仔细阅读并理解您提供的文章标题和正文。
 2.  **创建 Markdown 文件**:  在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件。
-3.  **添加 Frontmatter**:  AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括 `title`, `date`, `draft`, `description`, `tags`, `author` 等字段，并根据文章内容进行合理设置。
+3.  **添加 Frontmatter**:  AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括 `title`, `date`, `draft`, `description`, `tags`, `author` 等字段，并根据文章内容进行合理设置。每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
 4.  **添加文章正文**:  AI 会将您提供的文章正文内容复制到 Markdown 文件中。
 
 ---
