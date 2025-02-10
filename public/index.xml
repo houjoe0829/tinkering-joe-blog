@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Joe 的折腾日记</title>
-    <link>http://localhost:59732/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:59732/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:59732/posts/nezha-movie-review/</link>
+      <link>http://localhost:1313/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59732/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:59732/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59732/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -42,9 +42,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:59732/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
+      <link>http://localhost:1313/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59732/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
+      <guid>http://localhost:1313/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
       <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -66,9 +66,9 @@
     </item>
     <item>
       <title>关于我</title>
-      <link>http://localhost:59732/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59732/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>了解更多关于我的信息</description>
       <content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
 <p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>

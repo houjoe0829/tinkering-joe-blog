@@ -23,6 +23,11 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
+  # 自定义 CSS
+  assets:
+    css:
+      - extended/custom.css
+  
   # RSS 相关设置
   ShowRssButtonInSectionTermList: true
   ShowFullTextinRSS: true

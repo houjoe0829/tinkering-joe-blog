@@ -7,4 +7,46 @@
     .post-content {
         font-size: 16px !important;  /* 移动端增大字体 */
     }
+}
+
+/* 优化博客文章详情页布局间距 */
+
+/* 调整文章头部整体间距 */
+.post-header {
+    margin-bottom: 3rem;
+}
+
+/* 调整面包屑导航的间距 */
+.nav.breadcrumbs {
+    margin-bottom: 2rem;
+}
+
+/* 调整文章标题的间距 */
+.post-title {
+    margin: 1rem 0 1.5rem 0;
+    line-height: 1.4;
+}
+
+/* 调整文章元信息（时间等）的间距和样式 */
+.post-meta {
+    margin-top: 1rem;
+}
+
+/* 确保移动端也有良好的间距 */
+@media screen and (max-width: 768px) {
+    .post-header {
+        margin-bottom: 2rem;
+    }
+    
+    .nav.breadcrumbs {
+        margin-bottom: 1.5rem;
+    }
+    
+    .post-title {
+        margin: 0.8rem 0 1.2rem 0;
+    }
+    
+    .post-meta {
+        margin-top: 0.8rem;
+    }
 } 
