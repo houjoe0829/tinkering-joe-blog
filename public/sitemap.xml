@@ -11,65 +11,11 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%89%A7%E9%80%8F/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%93%AA%E5%90%92/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/ai-chat-lack-compression-history/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%AF%B9%E8%AF%9D%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E8%81%8A%E5%A4%A9/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E4%B8%A7%E4%BA%8B/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E4%B9%A0%E4%BF%97/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</loc>
     <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%AE%88%E7%81%B5/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%96%87%E5%8C%96/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%AE%A1%E4%BB%AA%E9%A6%86/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%BB%8F%E5%8E%86/</loc>
-    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
@@ -77,22 +23,10 @@
     <loc>http://localhost:1313/drafts/another-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/drafts/example-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%8D%89%E7%A8%BF/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/drafts/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url>
 </urlset>

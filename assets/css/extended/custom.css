@@ -82,4 +82,11 @@
 .post-content h6,
 .main .post-content h6 {
     font-size: 14px;
+}
+
+/* 统一所有页面的正文字体大小 */
+.post-content,
+.post-content p {
+    font-size: 16px;
+    line-height: 1.8;
 } 
