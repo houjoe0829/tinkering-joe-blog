@@ -3,4 +3,10 @@
 /assets/jsconfig.json
 hugo_stats.json
 /.hugo_build.lock
-.DS_Store 
+.DS_Store
+/temp_extraction/
+/temp_content/
+/temp_static/
+/backup/
+.venv/
+/Notionfiles/ 
