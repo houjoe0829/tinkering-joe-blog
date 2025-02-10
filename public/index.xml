@@ -84,6 +84,96 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>扑克牌&#34;干瞪眼&#34;的规则</title>
+      <link>http://localhost:62124/posts/poker-game-rules/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62124/posts/poker-game-rules/</guid>
+      <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
+<h2 id="怎么准备呢">怎么准备呢？</h2>
+<ol>
+<li>
+<p><strong>人数</strong>：2-6 人（常见3人）。</p>
+</li>
+<li>
+<p><strong>牌数</strong>：使用 1 副扑克（含大小王，共54张）</p>
+<ul>
+<li>可选：为了让牌均匀分配，可考虑添加空白的牌或者抽其他副牌里的大小王来凑数，凑成人数的整数倍，比如5人，凑55张（5的11倍），4人，凑56张（4的14倍）</li>
+</ul>
+</li>
+<li>
+<p><strong>发牌</strong>：每人初始发5张牌，剩余牌作为牌库。</p>
+<ul>
+<li>首局由随机玩家先出，后续由上一局赢家先出。</li>
+</ul>
+</li>
+</ol>
+<h2 id="出牌规则">出牌规则</h2>
+<h3 id="1-牌型有哪些从弱到强">1. 牌型有哪些（从弱到强）：</h3>
+<ul>
+<li>
+<p><strong>单张</strong>：任意一张牌（3最小，2最大）。</p>
+<ul>
+<li><strong>2的用法</strong>：2是单张和对子中的最大牌（如单2＞A，对2＞对A），但不可用于顺子。</li>
+</ul>
+</li>
+<li>
+<p><strong>对子</strong>：两张同点数牌（如对5）。</p>
+</li>
+<li>
+<p><strong>顺子</strong>：至少3张连续单牌（如4-5-6，A-2-3无效，2不可参与顺子）。</p>
+</li>
+<li>
+<p><strong>炸弹</strong>：</p>
+<ul>
+<li>三张同点牌（如3个5）可炸单张/对子/顺子；</li>
+<li>四张同点牌（如4个K）可炸任何非王炸牌型；</li>
+<li><strong>王炸</strong>：大小王组合（最大炸弹，可炸任何牌）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="可选赖子打法">可选：赖子打法</h4>
+<ul>
+<li>选了这个之后，王炸组合就不存在了，大小王作为赖子，可与变成任意牌，参与对子、顺子、炸弹，但不能单出。</li>
+</ul>
+<h3 id="2-出牌和发牌">2. 出牌和发牌：</h3>
+<ul>
+<li>首局由随机玩家先出，后续由上一局赢家先出。</li>
+<li>按顺时针方向轮流出牌，必须<strong>严格接续上家牌型</strong>，否则就只能干瞪眼
+<ul>
+<li>如：上家出单张3，下家只能出4或2，或炸弹</li>
+<li>如：上家出两张4，下家只能出两张5或者两张2，或炸弹</li>
+<li>如：上家出4-5-6，下家只能 5-6-7 或者炸弹</li>
+</ul>
+</li>
+<li>若无法接牌则喊&quot;过&quot;，所有人按顺序加一张牌，再由最后出牌者出牌</li>
+<li>最后牌堆空了之后，就不再加牌</li>
+</ul>
+<h3 id="3-其他规则">3. 其他规则：</h3>
+<ul>
+<li><strong>报牌</strong>：只剩1张牌时必须主动&quot;报单&quot;，否则可能被罚。</li>
+<li><strong>接风</strong>：若一人出完牌，下一轮由其下家优先出牌。</li>
+</ul>
+<h2 id="胜负判定">胜负判定</h2>
+<h3 id="1-胜利条件">1. 胜利条件</h3>
+<ul>
+<li>率先打完手牌者获胜</li>
+</ul>
+<h3 id="2-输家惩罚">2. 输家惩罚：</h3>
+<ul>
+<li>剩余1张牌：输1分</li>
+<li>剩余2张牌：输2分（以此类推）</li>
+</ul>
+<h4 id="可选加倍算法">可选：加倍算法</h4>
+<ul>
+<li>场上有人用了炸弹，则加倍一次</li>
+<li>炸一次，则输分乘以2</li>
+<li>炸两次，则输分乘以3（以此类推）</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
       <link>http://localhost:62124/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>

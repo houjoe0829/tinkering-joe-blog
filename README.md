@@ -103,14 +103,19 @@
 3. **Front Matter 规范**：
    ```yaml
    ---
-   title: "文章标题"
-   date: 2025-02-10
+   title: '标题（如果标题中包含引号，外层使用单引号）'  # 例如：'扑克牌"干瞪眼"的规则'
+   date: YYYY-MM-DD  # 使用 Notion 文章的原始创建日期
    draft: false
    description: "文章描述，建议 100 字以内"
    tags: ["标签1", "标签2"]
    author: "Joe"
    ---
    ```
+   - **Front Matter 中引号使用规范**：
+     * 如果字符串中包含双引号，外层必须使用单引号，例如：`title: '包含"引号"的标题'`
+     * 如果字符串中包含单引号，外层使用双引号，例如：`title: "包含'引号'的标题"`
+     * 如果字符串中既有单引号又有双引号，使用单引号包裹，内部的单引号需要转义，例如：`title: '包含''单引号''和"双引号"的标题'`
+     * 如果字符串不包含任何引号，可以不加引号（但建议始终加上引号保持一致性）
 
 4. **本地预览和部署步骤**：
    - 每次更新后运行 `hugo --cleanDestinationDir` 清理缓存
@@ -198,7 +203,7 @@ python compress_images.py
    - 添加符合规范的 Front Matter：
      ```yaml
      ---
-     title: "文章标题"
+     title: '标题（如果标题中包含引号，外层使用单引号）'  # 例如：'扑克牌"干瞪眼"的规则'
      date: YYYY-MM-DD  # 使用 Notion 文章的原始创建日期
      draft: false
      description: "文章描述，建议 100 字以内"
