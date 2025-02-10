@@ -2,60 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:51910/posts/nezha-movie-review/</loc>
+    <loc>http://localhost:56564/posts/nezha-movie-review/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/</loc>
+    <loc>http://localhost:56564/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/</loc>
+    <loc>http://localhost:56564/posts/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/huangshan-half-day-tour/</loc>
+    <loc>http://localhost:56564/posts/huangshan-half-day-tour/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/cyberpunk-2077-hundred-hours-dream/</loc>
+    <loc>http://localhost:56564/posts/cyberpunk-2077-hundred-hours-dream/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/poker-game-rules/</loc>
+    <loc>http://localhost:56564/posts/poker-game-rules/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/ai-chat-lack-compression-history/</loc>
+    <loc>http://localhost:56564/posts/ai-chat-lack-compression-history/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/2024-favorite-things/</loc>
+    <loc>http://localhost:56564/posts/2024-favorite-things/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/let-go-obsession-turn-on-heater/</loc>
+    <loc>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</loc>
     <lastmod>2024-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/funeral-home-vigil/</loc>
+    <loc>http://localhost:56564/posts/funeral-home-vigil/</loc>
     <lastmod>2024-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/it-takes-two-review/</loc>
+    <loc>http://localhost:56564/posts/it-takes-two-review/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/deadpool-and-wolverine-review/</loc>
+    <loc>http://localhost:56564/posts/deadpool-and-wolverine-review/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/about/</loc>
+    <loc>http://localhost:56564/about/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/drafts/another-draft/</loc>
+    <loc>http://localhost:56564/drafts/another-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/drafts/example-draft/</loc>
+    <loc>http://localhost:56564/drafts/example-draft/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/drafts/</loc>
+    <loc>http://localhost:56564/drafts/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/black-myth-wukong-review/</loc>
+    <loc>http://localhost:56564/posts/black-myth-wukong-review/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/posts/2023-toys-recap/</loc>
+    <loc>http://localhost:56564/posts/2023-toys-recap/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51910/search/</loc>
+    <loc>http://localhost:56564/posts/memories-of-forgotten-mao-gou/</loc>
+    <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:56564/search/</loc>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:51910/posts/</link>
+    <link>http://localhost:56564/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:51910/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56564/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:51910/posts/nezha-movie-review/</link>
+      <link>http://localhost:56564/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:56564/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:51910/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:56564/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:56564/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:51910/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <link>http://localhost:56564/posts/cyberpunk-2077-hundred-hours-dream/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <guid>http://localhost:56564/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.png"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -85,9 +85,9 @@
     </item>
     <item>
       <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:51910/posts/poker-game-rules/</link>
+      <link>http://localhost:56564/posts/poker-game-rules/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/poker-game-rules/</guid>
+      <guid>http://localhost:56564/posts/poker-game-rules/</guid>
       <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
@@ -175,9 +175,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:51910/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:56564/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:56564/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -189,9 +189,9 @@
     </item>
     <item>
       <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:51910/posts/2024-favorite-things/</link>
+      <link>http://localhost:56564/posts/2024-favorite-things/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/2024-favorite-things/</guid>
+      <guid>http://localhost:56564/posts/2024-favorite-things/</guid>
       <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
       <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
@@ -283,9 +283,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:51910/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:56564/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -301,9 +301,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:51910/posts/funeral-home-vigil/</link>
+      <link>http://localhost:56564/posts/funeral-home-vigil/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/funeral-home-vigil/</guid>
+      <guid>http://localhost:56564/posts/funeral-home-vigil/</guid>
       <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -329,9 +329,9 @@
     </item>
     <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:51910/posts/it-takes-two-review/</link>
+      <link>http://localhost:56564/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:56564/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.png"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -358,9 +358,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:51910/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:56564/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:56564/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -411,9 +411,9 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:51910/posts/black-myth-wukong-review/</link>
+      <link>http://localhost:56564/posts/black-myth-wukong-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/black-myth-wukong-review/</guid>
+      <guid>http://localhost:56564/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
@@ -464,9 +464,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:51910/posts/2023-toys-recap/</link>
+      <link>http://localhost:56564/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51910/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:56564/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
@@ -548,6 +548,33 @@
 <h2 id="最后">最后</h2>
 <p>关于软硬件的工具盘点，其实我一直有维护自己的工具包，放在 Whimsical 里。</p>
 <p><a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph">https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>回忆：已经被遗忘的十五撵毛狗</title>
+      <link>http://localhost:56564/posts/memories-of-forgotten-mao-gou/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56564/posts/memories-of-forgotten-mao-gou/</guid>
+      <description>记录一个已经消失的元宵节传统习俗 —— 十五撵毛狗。这个曾经让孩子们兴奋不已的节日活动，如今已经随着时代的变迁渐渐淡出人们的记忆。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>本文最初发布于2018年3月，后备份到 Notion</p></blockquote>
+<p>本应该在正月十五的时候写下这篇文章，奈何，我在正月十六才开始看元宵节的电视节目，但晚到的元宵节还是勾起了我的回忆。小时候在老家，过年都没有元宵节热闹，虽然「初一拜父母，初二拜丈母，初三初四拜舅姑」，但「十五撵毛狗儿」更适合孩子们玩耍。</p>
+<p>之前，在每年的正月十五，天黑之后，家家户户的孩子们都会点着火把出门，走向河边的大堤上。火把是由废旧轮胎绑在木棍上做成的。在河堤上，小孩子们和大孩子们只是起哄式的走来走去，甚至与隔壁村的孩子们互相追逐，但很少会斗殴。作为汉族人，围着篝火跳舞并不是我们的强项。记忆中，漫山遍野都是火把，大概只有「激情燃烧的岁月」可以形容当时的亢奋。当初，我心中一直有一个疑问，毛狗是什么？真的有么？会咬人么？跟偷吃月亮的那个狗有啥关系？</p>
+<p><img alt="元宵节火把" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-1.jpg"></p>
+<p>玩到兴起，孩子们还会将能找到的柴火堆搬来一起烧掉，火势越大，孩子们的起哄声越大。藏了许久的烟火、鞭炮私货几乎都会在这一晚上全部用掉，像是将过年积攒的喜气来一次升华。更美好的是，大人们都有一个约定俗成的承诺，「今天不能打小孩」。只是偶尔，有些父母不怎么遵守承诺，或者，孩子们烧得确实有些过分了。</p>
+<p>以上是自己的模糊记忆，写这个文章之前，我特意电话给妈妈和堂哥来确认一些信息，目前，老家确实没有这个习俗了，消失的节点似乎是在大家开始上寄宿学校的时候，大概2000年左右。从目前查找的信息来看，应该与元宵节不是法定节假日有关，本来是节假日最重要的参与者，除非是碰上周末，否则，孩子们都在学校被关着。</p>
+<h2 id="寻根溯源">寻根溯源</h2>
+<p>楚天都市报在2018年2月8日还回忆了襄阳东津镇、峪山镇、黄龙镇一带的类似习俗，这些地方与我的老家很近，可以作为参考。</p>
+<p><img alt="襄阳地区的撵毛狗习俗" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-2.jpg"></p>
+<p>从这里才知道，原来毛狗是狐狸或者黄鼠狼，不过，我确实不记得小时候跟着一起唱过什么，好像只是与隔壁村的孩子们互相斗斗嘴。</p>
+<p>一篇很旧的新浪博文也提到了这个事情，「<a href="http://blog.sina.com.cn/s/blog_606cb20f0100m50m.html">少年纪事——正月十五撵毛狗</a>」，不过，<strong>只有一句话：初一拜父母，初二拜丈母，初三初四拜舅姑，十五十六撵毛狗儿。</strong></p>
+<p>Baidu里一篇已经被删除的宜昌秭归县快讯里也有提到同样的风俗，可惜，已经没有了更多细节，只有一张快照。</p>
+<p><img alt="秭归县的撵毛狗传统" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-3.jpg"></p>
+<p>Google照片搜索出来的全是与主题无关的萌狗，还是罢了。</p>
+<p>我觉得，狂欢才是一个节日最诱人的地方，就像越来越流行的万圣节，一夜之间大家都变成了孩子，与昨天和明天完全不一样，「不正常」才能合群，由此之后，节日的意义就变成了回味和足够的期待。</p>
+<p>想再变成孩子一次……</p>
+<h2 id="后记">后记</h2>
+<p>在朋友圈分享了文章之后，在微信好友的提醒下，又以关键词「赶毛狗」尝试搜索了一下，原来这个在恩施土家族是一个更为风行的传统。不过，土家族的赶毛狗更为正式一些，与宜昌秭归一样，会搭一个毛狗棚来烧。</p>
 ]]></content:encoded>
     </item>
   </channel>

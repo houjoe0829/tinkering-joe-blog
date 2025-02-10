@@ -159,21 +159,44 @@
   * 最大尺寸：1920x1920（保持原比例）
   * 自动移除图片元数据
 
-### 使用方法
-```bash
-# 安装依赖
-brew install imagemagick
-# 运行压缩脚本
-python compress_images.py
-```
+### 完整压缩流程
+1. **安装依赖**：
+   ```bash
+   brew install imagemagick
+   ```
 
-### 压缩效果确认
-- 比较原始目录和压缩后目录的大小：
-  ```bash
-  du -sh static/images static/images_compressed
-  ```
-- 确认压缩效果后，可以将压缩后的图片替换原始图片
-- 建议定期（如每月）对新增图片进行批量压缩
+2. **运行压缩脚本**：
+   ```bash
+   python compress_images.py
+   ```
+
+3. **确认压缩效果**：
+   ```bash
+   # 比较原始目录和压缩后目录的大小
+   du -sh static/images static/images_compressed
+   ```
+
+4. **替换原图**：
+   ```bash
+   # 将压缩后的图片替换原始图片
+   cp -r static/images_compressed/* static/images/
+   
+   # 删除临时的压缩目录
+   rm -rf static/images_compressed
+   ```
+
+5. **清理临时文件**：
+   ```bash
+   # 清理 macOS 系统生成的临时文件
+   find . -name ".DS_Store" -delete
+   ```
+
+### 注意事项
+- 建议每月定期对新增图片进行批量压缩
+- 压缩前建议先备份原始图片
+- 如果压缩后的图片质量不理想，可以在脚本中调整 quality 参数
+- 对于某些特殊图片（如透明背景的 PNG），如果压缩后出现问题，建议保留原图
+- 替换原图前，请确保已经检查过压缩后图片的质量
 
 ---
 
