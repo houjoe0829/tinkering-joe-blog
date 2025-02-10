@@ -1,13 +1,13 @@
 baseURL: 'https://houjoe.me/'
 languageCode: 'zh-cn'
-title: "侯杰的个人博客"
+title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 
 params:
   author:
-    name: "侯杰"
-  description: "记录学习笔记、技术思考和生活感悟"
+    name: "Joe"
+  description: "记录学习、思考和生活感悟"
   defaultTheme: "auto"
   ShowReadingTime: true
   ShowShareButtons: true
@@ -16,7 +16,7 @@ params:
   ShowCodeCopyButtons: true
   socialIcons:
     - name: "github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/houjoe0829"
 
 menu:
   main:
