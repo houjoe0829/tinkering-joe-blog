@@ -6,14 +6,28 @@
     <description>Recent content on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:52747/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
       <link>http://localhost:52747/posts/nezha-movie-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:52747/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
+    </item>
+    <item>
+      <title>AI 聊天缺少压缩历史对话的能力</title>
+      <link>http://localhost:52747/posts/ai-chat-lack-compression-history/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52747/posts/ai-chat-lack-compression-history/</guid>
+      <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
+    </item>
+    <item>
+      <title>在殡仪馆守灵的一晚上</title>
+      <link>http://localhost:52747/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</link>
+      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52747/posts/zai-bin-yi-guan-shou-ling-de-yi-wan-shang/</guid>
+      <description>一次特别的经历：讲述在殡仪馆守灵一晚上的见闻和感受，以及对生死、习俗的一些思考。</description>
     </item>
     <item>
       <title>关于我</title>

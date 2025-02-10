@@ -1,4 +1,4 @@
-# 我的个人博客 -  {{ Joe 的折腾日记 }} (基于 Hugo + Cloudflare Pages)
+# 我的个人博客 -  《Joe 的折腾日记》  (基于 Hugo + Cloudflare Pages)
 
 这个博客使用 Hugo 静态网站生成器构建，并托管在 Cloudflare Pages 上。
 
@@ -38,6 +38,15 @@
 
 3.  **停止预览**:
     *   在命令行终端中按下 `Ctrl + C` 即可停止本地 Hugo 开发服务器。
+
+## AI 助手更新博客的关键步骤
+
+当您提供博客文章内容给 AI 助手时，AI 将执行以下关键步骤来帮助您更新博客：
+
+1.  **接收并理解内容**:  AI 助手会仔细阅读并理解您提供的文章标题和正文。
+2.  **创建 Markdown 文件**:  在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件。
+3.  **添加 Frontmatter**:  AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括 `title`, `date`, `draft`, `description`, `tags`, `author` 等字段，并根据文章内容进行合理设置。
+4.  **添加文章正文**:  AI 会将您提供的文章正文内容复制到 Markdown 文件中。
 
 ---
 

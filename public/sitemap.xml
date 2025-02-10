@@ -2,33 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:52747/posts/nezha-movie-review/</loc>
+    <loc>http://localhost:55292/tags/ai/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/posts/ai-chat-lack-compression-history/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/posts/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/tags/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/tags/%E5%AF%B9%E8%AF%9D%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/tags/%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/tags/%E8%81%8A%E5%A4%A9/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55292/posts/nezha-movie-review/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/</loc>
+    <loc>http://localhost:55292/about/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/posts/</loc>
+    <loc>http://localhost:55292/tags/%E5%89%A7%E9%80%8F/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/tags/</loc>
+    <loc>http://localhost:55292/tags/%E5%93%AA%E5%90%92/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/about/</loc>
+    <loc>http://localhost:55292/tags/%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/tags/%E5%89%A7%E9%80%8F/</loc>
+    <loc>http://localhost:55292/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52747/tags/%E5%93%AA%E5%90%92/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:52747/tags/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:52747/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:52747/categories/</loc>
+    <loc>http://localhost:55292/categories/</loc>
   </url>
 </urlset>
