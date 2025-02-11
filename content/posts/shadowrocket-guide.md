@@ -57,13 +57,11 @@ author: "Joe"
 
 ### （2）导入配置
 
-> ⚠️ 导入配置之后记得选择使用该配置哦，我分享了两个配置。**关于如何下载，打开 conf 文件之后会在浏览器的 Tab 里打开，右单击打开的内容，选择"存储为"即可。**
+> ⚠️ 下载或者导入配置之后记得选择使用该配置哦
 
-[这是一个非常简单的配置](/conf/minimal_rules_by_jojo.conf)
+配置文件在这个链接里：[https://github.com/houjoe0829/shadowrocket-rules-joe](https://github.com/houjoe0829/shadowrocket-rules-joe)，或者，直接在添加配置里输入我这个配置下载链接即可：[https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf](https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf)
 
-[这个有更多的分组，但是也没有带广告](/conf/modified_by_jojo_2025-01-18.conf)
-
-网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往：
+网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往尽可能简化：
 
 - 整体规则用 Claude AI 来生成
 - 尽可能简化规则，不必要的都删除掉，越简单越能减少网络玄学问题
