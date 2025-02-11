@@ -374,36 +374,29 @@
      ---
      ```
 
-4. **图片处理（仅处理当前文章的图片）**：
+4. **图片处理（使用专用脚本）**：
    ```bash
-   # 为当前文章创建图片目录（使用文章的英文名）
-   article_name="my-article-name"
-   mkdir -p "static/images/posts/$article_name"
-
-   # 重命名并复制图片（避免空格，使用连字符）
-   # 例如：将 "image 1.png" 重命名为 "image-1.png"
-   cd temp_notion
-   counter=1
-   for img in *.{jpg,jpeg,png}; do
-     if [ -f "$img" ]; then
-       # 提取文件扩展名
-       ext="${img##*.}"
-       # 重命名为 image-1.png, image-2.png 等格式
-       new_name="image-$counter.$ext"
-       cp "$img" "../static/images/posts/$article_name/$new_name"
-       counter=$((counter + 1))
-     fi
-   done
-   cd ..
-
-   # 仅压缩当前文章的图片
-   python compress_images.py \
-     "static/images/posts/$article_name" \
-     "static/images_compressed/posts/$article_name"
-
-   # 将压缩后的 WebP 图片移回原目录
-   cp "static/images_compressed/posts/$article_name/"*.webp "static/images/posts/$article_name/"
+   # 使用专门的图片处理脚本处理当前文章的图片
+   python process_notion_images.py article-name --input temp_notion/images
    ```
+
+   脚本功能说明：
+   - 自动将图片转换为 WebP 格式并优化加载速度
+   - 智能压缩图片，保持良好质量的同时减小文件大小
+   - 自动重命名图片文件，保持命名规范（image-1.webp, image-2.webp 等）
+   - 限制图片最大尺寸为 1920x1920，自动等比例缩放
+   - PNG 图片自动使用无损压缩，保证透明度
+   
+   参数说明：
+   - `article-name`: 文章的英文名称，将用作图片目录名
+   - `--input` 或 `-i`: Notion 导出的图片所在目录
+   - `--quality` 或 `-q`: 可选，压缩质量 (1-100)，默认为 85
+   
+   注意事项：
+   - 处理后的图片将保存在 `static/images/posts/{article-name}/` 目录下
+   - 建议在处理前备份原始图片
+   - 对于高质量图片，可以适当提高压缩质量（如使用 `--quality 90`）
+   - 处理完成后，检查输出目录中的图片质量
 
 5. **更新图片引用**：
    - 在文章中更新图片引用路径，使用规范的格式：
@@ -413,13 +406,7 @@
    - 确保所有图片引用都使用连字符格式的文件名
    - 确保所有图片引用都指向 WebP 格式
 
-6. **清理工作**：
-   ```bash
-   # 清理临时文件和目录
-   rm -rf temp_notion static/images_compressed Notionfiles/*.zip
-   ```
-
-7. **本地预览确认**：
+6. **本地预览确认**：
    ```bash
    # 启动 Hugo 预览
    hugo server -D
@@ -428,17 +415,23 @@
    - 确认所有图片能正常加载
    - 检查文章格式和样式是否正确
 
-8. **提交更新**：
+7. **提交更新**：
    - 确认一切正常后，提交更新到 Git 仓库
    - 等待 Cloudflare Pages 自动部署完成
    - 在线检查文章的最终效果
+
+8. **清理临时文件**（仅在确认所有内容都正确后）：
+   ```bash
+   # 清理临时文件和目录
+   rm -rf temp_notion Notionfiles/*.zip
+   ```
 
 **注意事项**：
 - 严格遵循一次只处理一篇文章的原则，确保质量和准确性
 - 必须使用 Notion 文章的原始创建时间，不要使用当前日期或其他时间
 - 图片压缩只处理当前文章的图片，避免重复处理其他文章的图片
 - 图片文件名必须使用连字符，避免空格
-- 处理完成后及时清理临时文件
+- 所有步骤完成并确认无误后，再清理临时文件
 - 如果一个 ZIP 包含多篇文章，在完成当前文章的所有步骤后，再开始处理下一篇
 
 ## 自动化迁移技术方案 (开发者参考)
