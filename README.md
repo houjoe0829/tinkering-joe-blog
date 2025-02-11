@@ -127,7 +127,7 @@
    - 图片是否正常显示
    - Front Matter 是否正确生成
 
-4. **清理临时文件**：
+4.  **清理临时文件**：
    ```bash
    # 清理所有临时文件和目录
    rm -rf temp_notion  # 清理解压的临时目录
@@ -157,12 +157,12 @@
 
 ## 全局图片压缩指南
 
-为了优化网站加载速度和存储空间，我们需要定期对图片进行压缩处理和 WebP 转换。以下是具体的压缩方法：
+为了优化网站加载速度和存储空间，我们需要定期对图片进行压缩处理和 WebP 转换。以下是具体的压缩流程：
 
 ### 压缩工具和参数
 - 使用项目根目录下的 `compress_images.py` 脚本进行图片压缩和 WebP 转换
-- 脚本会自动处理 `static/images/` 目录下的所有图片
-- 压缩后的图片保存在 `static/images_compressed/` 目录
+- 脚本会自动处理 `static` 目录下的所有图片（包括子目录）
+- 网站图标相关文件（favicon、apple-touch-icon、android-chrome）会保持原格式
 - 压缩参数：
   * 质量：85%（可在脚本中调整 quality 参数）
   * 最大尺寸：1920x1920（保持原比例）
@@ -179,34 +179,63 @@
    ```bash
    python compress_images.py
    ```
+   这会在项目根目录创建 `static_compressed` 目录，存放压缩后的文件。
 
-3. **确认压缩效果**：
+3. **复制压缩后的文件**：
    ```bash
-   # 比较原始目录和压缩后目录的大小
-   du -sh static/images static/images_compressed
+   cp -r static_compressed/* static/
    ```
+   这一步会将压缩后的文件复制回原目录，同时保留原始文件作为备份。
 
 4. **更新图片引用**：
    ```bash
-   # 更新 Markdown 文件中的图片引用为 WebP 格式
    python update_image_refs.py
    ```
+   这一步会自动将所有 Markdown 文件中的图片引用更新为 WebP 格式。
+   例如：`![示例图片](/images/example.jpg)` 会被更新为 `![示例图片](/images/example.webp)`
 
-5. **替换原图**：
+5. **预览要删除的原始文件**：
    ```bash
-   # 将压缩后的图片替换原始图片
-   cp -r static/images_compressed/* static/images/
-   
-   # 删除临时的压缩目录
-   rm -rf static/images_compressed
+   python clean_original_images.py
    ```
+   这一步会显示哪些原始文件将被删除，以及可以节省的空间大小。
 
-6. **清理临时文件**：
+6. **确认无误后删除原始文件**：
    ```bash
+   python clean_original_images.py --execute
+   ```
+   这一步会删除已经转换为 WebP 格式的原始图片文件，但会保留网站图标相关文件。
+
+7. **清理临时文件**：
+   ```bash
+   rm -rf static_compressed
+   
    # 清理 macOS 系统生成的临时文件
    find . -name ".DS_Store" -delete
    ```
 
+### 注意事项
+
+1. **安全性考虑**：
+   - 压缩脚本会在单独的目录中生成压缩后的文件，不会直接修改原始文件
+   - 清理脚本默认为预览模式，让您可以在删除前确认更改
+   - 网站必需的图标文件（favicon 等）会自动保护，不会被转换或删除
+   - 更新图片引用时会自动备份原始 Markdown 文件
+
+2. **文件格式**：
+   - 支持的输入格式：JPG、JPEG、PNG、GIF、WebP
+   - 所有图片（除了网站图标）都会被转换为 WebP 格式
+   - PNG 文件会使用无损压缩转换为 WebP
+   - JPG 文件会使用有损压缩（质量 85%）转换为 WebP
+
+3. **性能优化**：
+   - WebP 格式通常可以减少 30-70% 的文件大小
+   - 图片会被限制在 1920x1920 的最大尺寸内
+   - 所有图片都会被移除元数据，进一步减小文件大小
+
+4. **兼容性**：
+   - 现代浏览器都支持 WebP 格式
+   - 网站图标保持原格式以确保最大兼容性
 
 ## 博客元数据格式规范
 

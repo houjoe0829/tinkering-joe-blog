@@ -18,6 +18,9 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
     # 支持的图片格式
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.webp')
     
+    # 不转换为 WebP 的特殊文件
+    protected_files = ('favicon', 'apple-touch-icon', 'android-chrome')
+    
     # 遍历输入目录
     for root, _, files in os.walk(input_dir):
         for file in files:
@@ -26,8 +29,11 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
                 input_path = os.path.join(root, file)
                 relative_path = os.path.relpath(input_path, input_dir)
                 
-                # 如果转换为 WebP，修改输出文件扩展名
-                if convert_to_webp:
+                # 判断是否需要转换为 WebP
+                should_convert = convert_to_webp and not any(pf in file.lower() for pf in protected_files)
+                
+                # 确定输出文件扩展名
+                if should_convert:
                     output_path = os.path.join(output_dir, os.path.splitext(relative_path)[0] + '.webp')
                 else:
                     output_path = os.path.join(output_dir, relative_path)
@@ -49,7 +55,7 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
                 
                 # 如果是 PNG 格式的图片，使用无损压缩
                 if file.lower().endswith('.png'):
-                    if convert_to_webp:
+                    if should_convert:
                         cmd.extend(['-define', 'webp:lossless=true'])
                     else:
                         cmd.extend(['-define', 'png:compression-level=9'])
@@ -65,7 +71,7 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
                     compressed_size = os.path.getsize(output_path)
                     
                     # 如果压缩后的文件更大，且不是转换为 WebP 的情况，使用原始文件
-                    if compressed_size >= original_size and not convert_to_webp:
+                    if compressed_size >= original_size and not should_convert:
                         os.replace(input_path, output_path)
                         print(f'保持原始文件: {relative_path} (压缩无效)')
                         continue
@@ -84,8 +90,8 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
 
 if __name__ == '__main__':
     # 设置输入输出目录
-    input_dir = 'static/images'  # 原始图片目录
-    output_dir = 'static/images_compressed'  # 压缩后的图片目录
+    input_dir = 'static'  # 原始图片目录
+    output_dir = 'static_compressed'  # 压缩后的图片目录
     
     # 执行压缩
     # 对于 PNG 使用无损压缩，对于 JPEG 使用 85 的质量
