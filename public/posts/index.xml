@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:52491/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52491/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:1313/posts/nezha-movie-review/</link>
+      <link>http://localhost:52491/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:52491/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:1313/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:52491/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:52491/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <link>http://localhost:52491/posts/cyberpunk-2077-hundred-hours-dream/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <guid>http://localhost:52491/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.png"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -85,9 +85,9 @@
     </item>
     <item>
       <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:1313/posts/poker-game-rules/</link>
+      <link>http://localhost:52491/posts/poker-game-rules/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/poker-game-rules/</guid>
+      <guid>http://localhost:52491/posts/poker-game-rules/</guid>
       <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
@@ -175,9 +175,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:52491/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:52491/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -189,16 +189,16 @@
     </item>
     <item>
       <title>镇江小城，极简半日游</title>
-      <link>http://localhost:1313/posts/zhenjiang-half-day-tour/</link>
+      <link>http://localhost:52491/posts/zhenjiang-half-day-tour/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zhenjiang-half-day-tour/</guid>
+      <guid>http://localhost:52491/posts/zhenjiang-half-day-tour/</guid>
       <description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description>
-      <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.jpg"></p>
+      <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
 <p>来镇江并非什么深思熟虑的计划，只是因为有事要去南京，由于实在去过太多次，老婆临时加了这个途径点。</p>
 <p>镇江与南京相接，在其东北方，从杭州开车去这两个城市几乎是同样的时长，三个小时左右，而再从镇江到南京也就一小时车程，完全不耽误事情，极为合适。</p>
 <p>而且镇江也算是我们江浙沪包游计划的一座城，不过，未罗列在明确的清单里，主要是太小了。与其一起的泰州、常州、扬州，这几个地级市都不大，挤在一块，上次山东半岛自驾，不经意间就穿过了这几座城。</p>
 <p>如果要给镇江归个类，加上我们之前专门去过的淮安、扬州，以及还未去的泰州、南通，这些地方组成了著名的淮扬菜系（我也是写的时候现查的），历史悠久，以精致出名。</p>
-<p><img alt="城市风光" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-2.jpg"></p>
+<p><img alt="城市风光" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-2.webp"></p>
 <p>而这次，我们只预留了半天的时间，住一晚上，第二天在酒店吃完早餐就开往南京。从网上查到的信息来看，镇江可逛的地方还挺多，而且即使叫做什么什么山的，也都是公园性质的，难度极低，不要相信本地标语。</p>
 <p>由于时间有限，以及休闲为主，初步拟定为下午逛一逛金山寺，备选为镇江市博物馆，晚上夜游西津渡，剩下的时间就尝一尝镇江美食三怪，难度指数为简单。</p>
 <p>到之前，我就有了第一个疑问，为什么叫镇江？大概取自镇守长江的意思，这里是长江和京杭大运河交汇点，还挺好理解。</p>
@@ -206,37 +206,37 @@
 <p>门票50元（提前买可以省5元）</p>
 <p>作为从杭州远道而来的游客，我对金山寺开山祖师法海的民间传说有一个最大的疑惑点，为何法海与白娘子在此斗法，引得水漫镇江金山，却最后被镇压在杭州西湖旁边的雷峰塔，着实让人不解。</p>
 <p>值得提一句，现在金山寺的虚拟导游，就是白娘子…… 希望法海在泉下不要有太大火气。</p>
-<p><img alt="金山寺景色" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-3.jpg"></p>
+<p><img alt="金山寺景色" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-3.webp"></p>
 <p>不过，回到金山寺本身来说，这地方确实很值得逛一逛，完全对得起票价，尤其是依山而建的寺庙，大雄宝殿、天王殿、观音阁、藏经楼，与山浑然一体，即使和我一样不懂佛法也不懂古建，其内部建筑的细腻精致非常值得惊叹之余，拍拍照打打卡。</p>
-<p><img alt="金山寺建筑" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-4.jpg"></p>
-<p><img alt="金山寺细节" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-5.jpg"></p>
-<p><img alt="金山寺景观" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-6.jpg"></p>
-<p><img alt="金山寺一角" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-7.jpg"></p>
-<p><img alt="金山寺全景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-8.jpg"></p>
-<p><img alt="金山寺建筑细节" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-9.jpg"></p>
+<p><img alt="金山寺建筑" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-4.webp"></p>
+<p><img alt="金山寺细节" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-5.webp"></p>
+<p><img alt="金山寺景观" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-6.webp"></p>
+<p><img alt="金山寺一角" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-7.webp"></p>
+<p><img alt="金山寺全景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-8.webp"></p>
+<p><img alt="金山寺建筑细节" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-9.webp"></p>
 <h2 id="西津渡">西津渡</h2>
 <p>这是一个很有些历史的古街区，不需要门票。夜市和店面大部分都挺无聊的，需要在其中仔细分辨才能看出与本地特色相关的美食，不过，西津渡本身还是值得走一走，实打实的历史故事散步在各个角落，很容易就可以留意到。</p>
 <p>这里在网上最出名的是夜景，可惜我拍不出来那种质感，建议在下午五点半关闭通道之前登上旁边的云台山，当然，如果这个高度也叫山的话…… 山顶有个2014年刚建的仿古风格的塔，这样等到下山的时候正好天逐渐黑下来，可以俯瞰整个古街区的夜景。</p>
-<p><img alt="西津渡夜景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-10.jpg"></p>
-<p><img alt="西津渡街景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-11.jpg"></p>
-<p><img alt="西津渡古建筑" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-12.jpg"></p>
+<p><img alt="西津渡夜景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-10.webp"></p>
+<p><img alt="西津渡街景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-11.webp"></p>
+<p><img alt="西津渡古建筑" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-12.webp"></p>
 <h2 id="镇江美食三怪">镇江美食三怪</h2>
 <p>镇江的美食，就是号称镇江三怪的锅盖面、水晶肴肉和镇江香醋，也就是那句俗语：镇江有三怪，香醋摆不坏，肴肉不当菜，面锅里煮锅盖。</p>
 <p>镇江香醋的特色是可以放很久，虽然我没有深入研究过，但据说与著名的山西陈醋相比，镇江香醋用糯米酿造，山西陈醋则以高粱为主料，后者口感更为酸烈，这个说法我也没有真正试过。</p>
 <p>锅盖面，怎么说呢，建议不要有太高的期待，一碗不会特别惊艳的汤面，面条可以理解为更筋道一点的挂面，颜色偏黄，然后就是可搭配各种浇头，长鱼（黄鳝）、肥肠、猪肚等等。本来在出发前看中了一家叫&quot;好再来锅盖面&quot;的本地面馆，可惜下午2点就不营业了，最后在西津渡的&quot;李嫂锅盖面&quot;吃到一碗还不错的锅盖面。</p>
-<p><img alt="锅盖面" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-13.jpg"></p>
-<p><img alt="面馆环境" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-14.jpg"></p>
+<p><img alt="锅盖面" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-13.webp"></p>
+<p><img alt="面馆环境" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-14.webp"></p>
 <p>不过，相比之下，之前在其他地方吃到的阳春面给我的惊艳感会更多一些，也是淮扬菜系。</p>
 <p>水晶肴肉是一种将卤汁和肉凝冻在一起的做法，切的方方正正，看上去有种水晶剔透的错觉。不过，吃起来偏咸，口感接近火腿肠，会更硬实一些。据说，吃的时候要浇上香醋，这样一来就吃完了镇江三怪。</p>
-<p><img alt="水晶肴肉" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-15.jpg"></p>
+<p><img alt="水晶肴肉" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-15.webp"></p>
 <p>每一次探索一座新城，哪怕城市不大，都越发感受到，即使去之前阅览大量文字、图片、视频，也始终无法在大脑里真正构建起一座城市的模糊轮廓，直到肉身降临的那一刻。江浙沪有太多这样值得逛得地方了，特别适合周末突然的造访。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:1313/posts/2024-favorite-things/</link>
+      <link>http://localhost:52491/posts/2024-favorite-things/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-favorite-things/</guid>
+      <guid>http://localhost:52491/posts/2024-favorite-things/</guid>
       <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
       <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
@@ -328,9 +328,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:52491/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:52491/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -346,9 +346,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:1313/posts/funeral-home-vigil/</link>
+      <link>http://localhost:52491/posts/funeral-home-vigil/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/funeral-home-vigil/</guid>
+      <guid>http://localhost:52491/posts/funeral-home-vigil/</guid>
       <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -366,17 +366,17 @@
 <p>在这个过程中，工作人员给每个人分发了一小撮棉花。我们绕着遗体转三圈，瞻仰遗容，每转完一圈就磕头，磕头次数与圈数相应：第一圈磕一次，第二圈磕两次，第三圈磕三次。仪式结束后，我们将棉花交还逝者长子，随遗体一同火化。</p>
 <p>告别仪式结束后，遗体会被推出灵堂，用一个带轮子的架子运送。这架子正是我之前去洗手间时，在走廊里看到的那个。当时我就在想，这个架子应该就是……</p>
 <p>遗体火化过程约一小时，随后殡仪馆的守灵仪式便告结束。之后我们带着逝者&quot;回家&quot;，车队全程打着双闪。不过，即便回到家中，这也仅仅是守灵的第一夜。带着骨灰的遗物还需在家中继续守灵，更多的亲属会前来告别。待再守一夜后，才会正式入土为安。</p>
-<p><img alt="殡仪馆外景" loading="lazy" src="/images/funeral-home-vigil/IMG_2386.jpeg"></p>
-<p><img alt="灵堂布置" loading="lazy" src="/images/funeral-home-vigil/IMG_2412.jpeg"></p>
-<p><img alt="夜晚的生命主题公园" loading="lazy" src="/images/funeral-home-vigil/IMG_2472.jpeg"></p>
-<p><img alt="告别仪式" loading="lazy" src="/images/funeral-home-vigil/IMG_2475.jpeg"></p>
+<p><img alt="殡仪馆外景" loading="lazy" src="/images/funeral-home-vigil/IMG_2386.webp"></p>
+<p><img alt="灵堂布置" loading="lazy" src="/images/funeral-home-vigil/IMG_2412.webp"></p>
+<p><img alt="夜晚的生命主题公园" loading="lazy" src="/images/funeral-home-vigil/IMG_2472.webp"></p>
+<p><img alt="告别仪式" loading="lazy" src="/images/funeral-home-vigil/IMG_2475.webp"></p>
 ]]></content:encoded>
     </item>
     <item>
       <title>性价比最高的科学上网方案：Shadowrocket</title>
-      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
+      <link>http://localhost:52491/posts/shadowrocket-guide/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
+      <guid>http://localhost:52491/posts/shadowrocket-guide/</guid>
       <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -463,9 +463,9 @@
     </item>
     <item>
       <title>最简约的科学上网方案：Quantumlt X</title>
-      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
+      <link>http://localhost:52491/posts/quantumult-x-guide/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
+      <guid>http://localhost:52491/posts/quantumult-x-guide/</guid>
       <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -522,7 +522,7 @@
 </ul>
 <blockquote>
 <p>⬇️ 配置文件样例</p></blockquote>
-<p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x/image2.png"></p>
+<p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x/image2.webp"></p>
 <p><a href="/conf/quantumult_20240722182237.conf">配置文件下载</a></p>
 <ul>
 <li>如截图，在配置文件里的 [server_remote] 模块，替换为自己的机场链接，链接需选择机场提供的的 &ldquo;QuantumltX 订阅链接&rdquo;</li>
@@ -548,9 +548,9 @@
     </item>
     <item>
       <title>居然是第一次去日本</title>
-      <link>http://localhost:1313/posts/first-time-in-japan/</link>
+      <link>http://localhost:52491/posts/first-time-in-japan/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
+      <guid>http://localhost:52491/posts/first-time-in-japan/</guid>
       <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
       <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
 <p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
@@ -567,28 +567,28 @@
 <p>没有富士山的富士山景区就像没有西湖的杭州，什么都暗淡无光了，除了山脚下的山中湖。
 山中湖是富士山脚下最大的湖泊之一，肃杀的阴天里，从岸边望过去有种北欧的错觉，天空阴郁但也干净透彻，一群当地人在这天气下玩着桨板，而风吹得我们直哆嗦。</p>
 <p>在停车的一角，最受欢迎的大概就是水边的天鹅，每个人都要与它们合影一番。后来，还巧遇了每天来喂天鹅的两位日本摄影大叔，其中一个在天鹅群和人群都算社牛的大叔当起了&quot;导游&quot;，中文、日语、英语无缝切换，引导大家与天鹅一一合影，这也是我们第一次见到如此活泼的日本人，算是这破天气里的意外之旅了。</p>
-<p><img alt="山中湖边" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3933.jpg"></p>
-<p><img alt="喂天鹅的另一位日本大叔，沉默低调" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3979.jpg"></p>
+<p><img alt="山中湖边" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3933.webp"></p>
+<p><img alt="喂天鹅的另一位日本大叔，沉默低调" loading="lazy" src="/images/posts/first-time-in-japan/IMG_3979.webp"></p>
 <h2 id="灌篮高手的镰仓">灌篮高手的镰仓</h2>
 <p>从东京乘坐两个多小时的城铁到了镰仓，著名的灌篮高手主题取景地。我们住在了一个接近胶囊旅馆风格的民宿，房间里是上下铺，洗澡和厕所是公用的，虽然空间局促，但是格外的干净，而且上铺的窗户在早上打开就是面朝海滩。</p>
-<p><img alt="镰仓民宿" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4050.jpg"></p>
-<p><img alt="镰仓海滩" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4062.jpg"></p>
+<p><img alt="镰仓民宿" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4050.webp"></p>
+<p><img alt="镰仓海滩" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4062.webp"></p>
 <p>而坏天气从我们到镰仓就结束了，没想到在这里看到了富士山，虽然隔着一个海湾，但心愿已成。</p>
-<p><img alt="远眺富士山" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4099.jpg"></p>
-<p><img alt="镰仓海岸" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4142.jpg"></p>
+<p><img alt="远眺富士山" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4099.webp"></p>
+<p><img alt="镰仓海岸" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4142.webp"></p>
 <p>如果要形容镰仓的感受，悠闲、宁静、面朝大海，值得再来几次，从凌晨六七点就有人在冲浪，而这里的沙滩是一种格外的安逸，太舒适了，仅仅是散散步就觉得足矣。</p>
 <h2 id="任天堂主题之旅">任天堂主题之旅</h2>
 <p>大阪周边的行程基本就是围绕任天堂游戏主题的，不管是大阪环球影城的 Nintendo World，还是京都的任天堂总部，抑或大阪梅田地铁站附近的任天堂周边专卖区，甚至在大阪的国际机场，都有马立奥主题的周边，为了不虚此行，特别扛了一个20寸的马立奥回来，以纪念我和我老婆共同通关的《马立奥·奥德赛》和《马立奥·惊奇》这两款游戏。</p>
 <p>到了大阪的第二天，就是一天的环球影城之旅，北京的环球影城的排队阴影尚存，我们索性直奔只在大阪才有的 Nintendo World，跳过其他。</p>
-<p><img alt="Nintendo World" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4616.jpg"></p>
+<p><img alt="Nintendo World" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4616.webp"></p>
 <p>从进入园区的那一刻，就像进入到游戏世界，许多人和我们一样，戴着不同角色的帽子，而我戴着耀西，大摇大摆走在园区里。那些只在游戏里可见的场景被原样搬到了现实，我们从超级玛丽的水管进入 Nintendo World，如奥德赛一样的关卡山直接呈现在眼前，不时还可以看到真人大小的各种游戏角色时出现在人群里。</p>
-<p><img alt="马里奥世界" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4281.jpg"></p>
+<p><img alt="马里奥世界" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4281.webp"></p>
 <p>如果稍微留意的话就会发现，即使在排队的地方出现的问号宝箱是真的可以顶的，顶了之后的游戏奖励会出现戴着的任天堂手环里，恰到好处的&quot;幼稚&quot;，非常喜欢。</p>
-<p><img alt="游戏场景" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4338.jpg"></p>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4338.webp"></p>
 <p>不过，真正属于任天堂的高光时刻，不是在任天堂园区内，而是园区外，也就是由马立奥压轴的花车游行，而且每隔一段时间，花车会停下来邀请路人一起&quot;发疯&quot;，High 就行了。</p>
-<p><img alt="花车游行" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4431.jpg"></p>
+<p><img alt="花车游行" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4431.webp"></p>
 <p>与任天堂园区的氛围对比起来，在京都的任天堂总部就无比日本打工族一些，远看像一座厂房一样，灰白色调的外墙没有一点红蓝主机的灵动，甚至，整个总部没有任何接待游客的服务中心，只有一个保安叉着腰站在大门内，如果不是&quot;任天堂株式会社&quot;的牌子挂在门口，毫不怀疑这是一个军事保护区……</p>
-<p><img alt="任天堂总部" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4519.jpg"></p>
+<p><img alt="任天堂总部" loading="lazy" src="/images/posts/first-time-in-japan/IMG_4519.webp"></p>
 <p>不过，在这里，我们看到了长相最好的樱花树，也算变相达成了夙愿。</p>
 <h2 id="有趣的陌生人">有趣的陌生人</h2>
 <p>每次出行都能遇到不少有趣的外乡人，这大概是旅行的一种乐趣，比如山口湖遇到的那位社牛日本摄影师……</p>
@@ -608,9 +608,9 @@
     </item>
     <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:1313/posts/it-takes-two-review/</link>
+      <link>http://localhost:52491/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:52491/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.png"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -637,9 +637,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:1313/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:52491/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:52491/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -690,27 +690,27 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:1313/posts/black-myth-wukong-review/</link>
+      <link>http://localhost:52491/posts/black-myth-wukong-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/black-myth-wukong-review/</guid>
+      <guid>http://localhost:52491/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
 <p>这三周里，一直在游戏群和各路天命人讨论着，B站、小红书、YouTube 的时间线里几乎都是这款游戏的内容推荐，即使在游戏之中，情不自禁处经常爆粗口，骂游戏，骂妖怪，骂地图，但是依然被故事吸引着，这绝对算是一段高光的游戏时刻，对得起这铺天盖地的&quot;过度&quot;宣传。</p>
 <p>通关后再回头看这部游戏，优点和缺点确实都非常明显，如此出圈，但其实并不适合很多人，尤其是之前没有玩过 ARPG 的新入局玩家。一开始打 10 分的媒体，能理解其中的情怀加分，但肯定到不了。</p>
-<p><img alt="游戏截图" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911210601_1.jpeg"></p>
+<p><img alt="游戏截图" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911210601_1.webp"></p>
 <p>从难度上，我个人的体感是，介于《战神4》和《艾尔登法环》之间，玩战神的过程，我几乎不看攻略，顺着剧情和引导，可以以标准难度通关（不包括额外的女武神挑战），而玩艾尔登法环时，我需要按照别人的攻略先铺垫前30个小时，然后才能在有攻略的情况下，进入到一种顺畅的游玩状态。</p>
 <p>对于黑神话悟空，上手很快，但除了第一关的教学关卡以外，没了攻略几乎很难以正常难度度过后面的关卡，这还不提那隐晦的游戏引导。</p>
 <h2 id="有无画质是两个游戏">有无画质是两个游戏</h2>
 <p>最初我是用 Steam Deck 来玩这个游戏，感觉是在红白机里以超级玛里奥的体验在打动作游戏，糊成马赛克，直到在 YouTube 上看了别人的开场视频，瞬间热血沸腾了，这才是大圣嘛！这细节、这闪电、这环境，美轮美奂不为过。</p>
-<p><img alt="游戏画面" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221950_1.jpeg"></p>
+<p><img alt="游戏画面" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221950_1.webp"></p>
 <p>为了这个游戏，我去升级了现实中的游戏装备，等到画质拉高，立马就成了另外一款游戏。</p>
 <p>整个游戏历程里都在疯狂截图，每一帧都好看。其中最喜欢的游戏画面还是黄风岭和小西天这两个关卡。</p>
 <p>甚至最近，已经开始有点反噬我对艾尔登法环的游玩体验，再次打开老头环，以前的&quot;前有绝景&quot;突然不那么香了……</p>
 <h2 id="剧情是神作">剧情是神作</h2>
 <p>不得不说，剧情是这次游戏里最出彩的，基于最通识的西游设定，构建了逻辑自洽的游戏世界观。隐晦与留白得到，半文半白的对话，和每一章里充满寓意的收尾动画，不得不感概编剧的各种神来之笔。</p>
 <p>最喜欢那句，&ldquo;人也，兽也，佛也，妖也&rdquo;。黑神话的黑，是一种五彩斑斓的黑，渗透在三界六道，不再是86版《西游记》里的白月光。</p>
-<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240825121216_1.jpeg"></p>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240825121216_1.webp"></p>
 <p>我已经在满怀期待着蕾雅（一位游戏 UP 主）的解读视频。我自己就不解读了，毕竟不擅长，只是保留那份意犹未尽的属于我自己游戏经历的模糊理解。</p>
 <p>同时，我也有一种担心，在黑神话之外，可能很难复刻这次的成功，对一个神话故事有如此透彻的理解应该需要超长时间的积累和迭代，无法速通。</p>
 <h2 id="充满诚意的细节">充满诚意的细节</h2>
@@ -721,7 +721,7 @@
 <h2 id="记忆深刻的游戏角色们">记忆深刻的游戏角色们</h2>
 <p>整个游戏就像一场连番头目战，小兵很容易嘎掉，虽说众生皆有慧根，但小兵们肯定没有，不过，小兵外的众多头目和角色都太有记忆点了。</p>
 <p>如果要给这些角色排名，大概是猪八戒、黄眉、杨戬、牛魔王、黄风大圣、金池长老、小黄龙……等等等，太多了，我第一次这么认真的看设置里角色的介绍，而且大部分还是半文半白的隐晦介绍。</p>
-<p><img alt="游戏角色" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240831012709_1.jpeg"></p>
+<p><img alt="游戏角色" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240831012709_1.webp"></p>
 <p>不过，我对那个四妹暂时无感，毕竟与天命人的拉扯还是太少了，更多的解读有点无中生有。</p>
 <h2 id="无法视而不见的缺点">无法视而不见的缺点</h2>
 <p>又爱又骂是有依据的，玩这个游戏的时候跟我开车时的脏话份量一样多。</p>
@@ -734,18 +734,18 @@
 <p>玩战神4或5时，真的可以全程不看攻略，整体引导循序渐进，规则前后一致性很强，这在塞尔达传说游戏里就更不用说了，一旦学会规则，就会进入到一种游戏的心流状态，有挑战但都可以琢磨出对策和解法。反观黑神话悟空，地图引导极差，无法在脑袋里构建出方向感，这都不算缺少小地图的黑锅。再者，剧情引导隐晦，比如花果山关卡里，提前去到水帘洞没有任何提示，哪怕像老头环里那类似&quot;此门无法从这一侧打开&quot;的提示也是有用的，留给你我的就只有猜了，最后不得不打开攻略。</p>
 <p>类似的情况，我可以骂一晚上……</p>
 <h2 id="是否是年度游戏">是否是年度游戏？</h2>
-<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911222005_1.jpeg"></p>
+<p><img alt="游戏场景" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911222005_1.webp"></p>
 <p>《黑神话悟空》是我今年玩过的第5款游戏，其他还包括《星际拓荒》《漫威蜘蛛侠：迈尔斯·墨拉莱斯》《哈迪斯2》，以及还在玩的《艾尔登法环·黄金树幽影》。</p>
 <p>至于专业的游戏评测，这不是我擅长的，无法猜测。只能说，《黑神话悟空》算是我的年度游戏，其带来的游戏体验长度和深度，最为荡气回肠。即使吐槽甚多，缺点明显，但瑕不掩瑜，我依然期待其&quot;未竟&quot;的故事。</p>
 <p>今天已经选择了再入轮回了，不过，我应该不会真的二周目，只是多拿几个成就，这个游戏，就算结束了吧。</p>
-<p><img alt="游戏结尾" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221404_1.jpeg"></p>
+<p><img alt="游戏结尾" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221404_1.webp"></p>
 ]]></content:encoded>
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:1313/posts/2023-toys-recap/</link>
+      <link>http://localhost:52491/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:52491/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
@@ -831,9 +831,9 @@
     </item>
     <item>
       <title>一个产品经理的自我修行</title>
-      <link>http://localhost:1313/posts/product-manager-self-cultivation/</link>
+      <link>http://localhost:52491/posts/product-manager-self-cultivation/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/product-manager-self-cultivation/</guid>
+      <guid>http://localhost:52491/posts/product-manager-self-cultivation/</guid>
       <description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>这篇文章写给自己，工作和生活都需要一些简单可运行的规则。</p></blockquote>
@@ -893,24 +893,24 @@
     </item>
     <item>
       <title>回忆：已经被遗忘的十五撵毛狗</title>
-      <link>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</link>
+      <link>http://localhost:52491/posts/memories-of-forgotten-mao-gou/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</guid>
+      <guid>http://localhost:52491/posts/memories-of-forgotten-mao-gou/</guid>
       <description>记录一个已经消失的元宵节传统习俗 —— 十五撵毛狗。这个曾经让孩子们兴奋不已的节日活动，如今已经随着时代的变迁渐渐淡出人们的记忆。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>本文最初发布于2018年3月，后备份到 Notion</p></blockquote>
 <p>本应该在正月十五的时候写下这篇文章，奈何，我在正月十六才开始看元宵节的电视节目，但晚到的元宵节还是勾起了我的回忆。小时候在老家，过年都没有元宵节热闹，虽然「初一拜父母，初二拜丈母，初三初四拜舅姑」，但「十五撵毛狗儿」更适合孩子们玩耍。</p>
 <p>之前，在每年的正月十五，天黑之后，家家户户的孩子们都会点着火把出门，走向河边的大堤上。火把是由废旧轮胎绑在木棍上做成的。在河堤上，小孩子们和大孩子们只是起哄式的走来走去，甚至与隔壁村的孩子们互相追逐，但很少会斗殴。作为汉族人，围着篝火跳舞并不是我们的强项。记忆中，漫山遍野都是火把，大概只有「激情燃烧的岁月」可以形容当时的亢奋。当初，我心中一直有一个疑问，毛狗是什么？真的有么？会咬人么？跟偷吃月亮的那个狗有啥关系？</p>
-<p><img alt="元宵节火把" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-1.jpg"></p>
+<p><img alt="元宵节火把" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-1.webp"></p>
 <p>玩到兴起，孩子们还会将能找到的柴火堆搬来一起烧掉，火势越大，孩子们的起哄声越大。藏了许久的烟火、鞭炮私货几乎都会在这一晚上全部用掉，像是将过年积攒的喜气来一次升华。更美好的是，大人们都有一个约定俗成的承诺，「今天不能打小孩」。只是偶尔，有些父母不怎么遵守承诺，或者，孩子们烧得确实有些过分了。</p>
 <p>以上是自己的模糊记忆，写这个文章之前，我特意电话给妈妈和堂哥来确认一些信息，目前，老家确实没有这个习俗了，消失的节点似乎是在大家开始上寄宿学校的时候，大概2000年左右。从目前查找的信息来看，应该与元宵节不是法定节假日有关，本来是节假日最重要的参与者，除非是碰上周末，否则，孩子们都在学校被关着。</p>
 <h2 id="寻根溯源">寻根溯源</h2>
 <p>楚天都市报在2018年2月8日还回忆了襄阳东津镇、峪山镇、黄龙镇一带的类似习俗，这些地方与我的老家很近，可以作为参考。</p>
-<p><img alt="襄阳地区的撵毛狗习俗" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-2.jpg"></p>
+<p><img alt="襄阳地区的撵毛狗习俗" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-2.webp"></p>
 <p>从这里才知道，原来毛狗是狐狸或者黄鼠狼，不过，我确实不记得小时候跟着一起唱过什么，好像只是与隔壁村的孩子们互相斗斗嘴。</p>
 <p>一篇很旧的新浪博文也提到了这个事情，「<a href="http://blog.sina.com.cn/s/blog_606cb20f0100m50m.html">少年纪事——正月十五撵毛狗</a>」，不过，<strong>只有一句话：初一拜父母，初二拜丈母，初三初四拜舅姑，十五十六撵毛狗儿。</strong></p>
 <p>Baidu里一篇已经被删除的宜昌秭归县快讯里也有提到同样的风俗，可惜，已经没有了更多细节，只有一张快照。</p>
-<p><img alt="秭归县的撵毛狗传统" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-3.jpg"></p>
+<p><img alt="秭归县的撵毛狗传统" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-3.webp"></p>
 <p>Google照片搜索出来的全是与主题无关的萌狗，还是罢了。</p>
 <p>我觉得，狂欢才是一个节日最诱人的地方，就像越来越流行的万圣节，一夜之间大家都变成了孩子，与昨天和明天完全不一样，「不正常」才能合群，由此之后，节日的意义就变成了回味和足够的期待。</p>
 <p>想再变成孩子一次……</p>
