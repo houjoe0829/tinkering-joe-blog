@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:58181/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58181/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:58181/posts/nezha-movie-review/</link>
+      <link>http://localhost:1313/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:58181/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:1313/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:1313/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:58181/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <link>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <guid>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -85,9 +85,9 @@
     </item>
     <item>
       <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:58181/posts/poker-game-rules/</link>
+      <link>http://localhost:1313/posts/poker-game-rules/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/poker-game-rules/</guid>
+      <guid>http://localhost:1313/posts/poker-game-rules/</guid>
       <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
@@ -175,9 +175,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:58181/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -189,9 +189,9 @@
     </item>
     <item>
       <title>镇江小城，极简半日游</title>
-      <link>http://localhost:58181/posts/zhenjiang-half-day-tour/</link>
+      <link>http://localhost:1313/posts/zhenjiang-half-day-tour/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/zhenjiang-half-day-tour/</guid>
+      <guid>http://localhost:1313/posts/zhenjiang-half-day-tour/</guid>
       <description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description>
       <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
 <p>来镇江并非什么深思熟虑的计划，只是因为有事要去南京，由于实在去过太多次，老婆临时加了这个途径点。</p>
@@ -234,9 +234,9 @@
     </item>
     <item>
       <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:58181/posts/2024-favorite-things/</link>
+      <link>http://localhost:1313/posts/2024-favorite-things/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/2024-favorite-things/</guid>
+      <guid>http://localhost:1313/posts/2024-favorite-things/</guid>
       <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
       <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
@@ -328,9 +328,9 @@
     </item>
     <item>
       <title>自驾和骑行的新伴侣：AI 耳机</title>
-      <link>http://localhost:58181/posts/ola-friend-ai-earphone/</link>
+      <link>http://localhost:1313/posts/ola-friend-ai-earphone/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/ola-friend-ai-earphone/</guid>
+      <guid>http://localhost:1313/posts/ola-friend-ai-earphone/</guid>
       <description>体验 Ola Friend AI 耳机的使用感受，从开放式耳机的需求出发，探讨它在自驾和骑行场景下的优缺点，以及 AI 助手如何改变我们的日常生活。</description>
       <content:encoded><![CDATA[<p>第一次感觉，很多想知道的东西，真的可以唾手可得。这极大地满足了我的好奇心，虽然我问的问题都是些没什么意义的，但于当时的自己而言，很有趣呀。</p>
 <p>&ldquo;豆包豆包，江门有什么好吃的好玩的&rdquo;</p>
@@ -372,9 +372,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:58181/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -390,9 +390,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:58181/posts/funeral-home-vigil/</link>
+      <link>http://localhost:1313/posts/funeral-home-vigil/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/funeral-home-vigil/</guid>
+      <guid>http://localhost:1313/posts/funeral-home-vigil/</guid>
       <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -418,9 +418,9 @@
     </item>
     <item>
       <title>性价比最高的科学上网方案：Shadowrocket</title>
-      <link>http://localhost:58181/posts/shadowrocket-guide/</link>
+      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/shadowrocket-guide/</guid>
+      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
       <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -507,9 +507,9 @@
     </item>
     <item>
       <title>最实用的技能之一：做一本双语电子书</title>
-      <link>http://localhost:58181/posts/how-to-make-bilingual-ebook/</link>
+      <link>http://localhost:1313/posts/how-to-make-bilingual-ebook/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/how-to-make-bilingual-ebook/</guid>
+      <guid>http://localhost:1313/posts/how-to-make-bilingual-ebook/</guid>
       <description>介绍如何使用沉浸式翻译插件和 ChatGPT，将英文电子书转换为双语对照版本，让阅读不再受语言限制。</description>
       <content:encoded><![CDATA[<p>这是最近最有用的技能了。</p>
 <p>由于看书比较杂，为了跨过语言的障碍，扩大看书的选择范围，真正实现看书无国界，开始尝试翻译只有英文资源或者中文翻译较差的书籍。</p>
@@ -536,9 +536,9 @@
     </item>
     <item>
       <title>说走就走的骑行</title>
-      <link>http://localhost:58181/posts/cycling-adventure/</link>
+      <link>http://localhost:1313/posts/cycling-adventure/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/cycling-adventure/</guid>
+      <guid>http://localhost:1313/posts/cycling-adventure/</guid>
       <description>从一圈只能骑行10公里开始，到现在已经骑行超过2000公里，穿行了15个城市。这是一个关于如何培养骑行兴趣，以及骑行给生活带来改变的故事。</description>
       <content:encoded><![CDATA[<p>现在，每到一个地方，如果不骑行压过，心情就像有了便宜却不得占的懊悔，少了一种功德上的圆满，比如下雨的洛阳，比如时间不允许的烟台养马岛……</p>
 <p><img alt="骑行装备" loading="lazy" src="/images/posts/cycling-adventure/image-17674.webp"></p>
@@ -588,9 +588,9 @@
     </item>
     <item>
       <title>最简约的科学上网方案：Quantumlt X</title>
-      <link>http://localhost:58181/posts/quantumult-x-guide/</link>
+      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/quantumult-x-guide/</guid>
+      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
       <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -673,9 +673,9 @@
     </item>
     <item>
       <title>居然是第一次去日本</title>
-      <link>http://localhost:58181/posts/first-time-in-japan/</link>
+      <link>http://localhost:1313/posts/first-time-in-japan/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/first-time-in-japan/</guid>
+      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
       <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
       <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
 <p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
@@ -733,9 +733,9 @@
     </item>
     <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:58181/posts/it-takes-two-review/</link>
+      <link>http://localhost:1313/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:1313/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.webp"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -762,9 +762,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:58181/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:1313/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:1313/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -815,9 +815,9 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:58181/posts/black-myth-wukong-review/</link>
+      <link>http://localhost:1313/posts/black-myth-wukong-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/black-myth-wukong-review/</guid>
+      <guid>http://localhost:1313/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
@@ -868,9 +868,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:58181/posts/2023-toys-recap/</link>
+      <link>http://localhost:1313/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:1313/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
@@ -955,10 +955,103 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>超过 3200 公里的华南自驾，写一写感受</title>
+      <link>http://localhost:1313/posts/chao-guo-3200-gong-li-de-hua-nan-zi-jia-xie-yi-xie-gan-shou/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chao-guo-3200-gong-li-de-hua-nan-zi-jia-xie-yi-xie-gan-shou/</guid>
+      <description>&amp;gt; 此刻我们家的猫强行睡在我的电脑旁边人不能随便走动一离开就开始骂骂咧咧毕竟这次自驾花了 9 天也关了它 9 天</description>
+      <content:encoded><![CDATA[<h1 id="超过-3200-公里的华南自驾写一写感受">超过 3200 公里的华南自驾，写一写感受</h1>
+<blockquote>
+<p>此刻，我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天，也关了它 9 天。</p></blockquote>
+<p>原本我以为最终行程可能接近 2800 公里，没想到，汇总了一下实际导航里程，超过 3240 公里，下图中从杭州到广州的的长环为实际行程轨迹图，主要在浙江、江西、广东、福建华南四省。</p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled.png"></p>
+<p>首先，必须感谢我司的支持，才可以有这次真·移动办公的一周经历，白天咖啡馆办公，晚上和周末迁徙，一种特别的公路旅行实验。</p>
+<h3 id="为什么会有这次自驾">为什么会有这次自驾</h3>
+<p>主要还是一时兴起，五年没有回广州了，恰好有私事要去一次，想顺便刷一下高德上的足迹成就，就像塞尔达游戏里的「开图」，也想感受一下真正的电车长途驾驶体验，华南几乎是电车的最低难度了。</p>
+<p>只不过，一开始，只有自驾往返广州是确定的，临行前确定了沙县作为途径点，毕竟它在清单里躺了好几年了。然后在路上我们搞懂了广州「开四停四」的限行，意味着，如果周日开到的话，第二周周三是我们可以待在广州的最后时间点，老婆说她想去汕头，那就沿海开回去，正好换个公路主题，去程穿山，回程沿海，最后的实际行程最成变成了这样，不过，不用特别细看：</p>
+<table>
+  <thead>
+      <tr>
+          <th>周六</th>
+          <th>从杭州一路开到福建省三明市沙县区，晚上又从沙县连夜开到龙岩市连城县</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>周日</td>
+          <td>从连城县开到江西省赣州市全南县，又继续开到广州</td>
+      </tr>
+      <tr>
+          <td>周一</td>
+          <td>待在广州</td>
+      </tr>
+      <tr>
+          <td>周二</td>
+          <td>待在广州</td>
+      </tr>
+      <tr>
+          <td>周三</td>
+          <td>白天待在广州，晚上经广州番禺、广州南沙、中山、东莞开到深圳</td>
+      </tr>
+      <tr>
+          <td>周四</td>
+          <td>晚上从深圳开到汕头，途中遇到暴雨致路面塌方，堵了1个小时</td>
+      </tr>
+      <tr>
+          <td>周五</td>
+          <td>待在汕头</td>
+      </tr>
+      <tr>
+          <td>周六</td>
+          <td>上午开车前往南澳岛，下午从南澳岛开到泉州，晚上原计划从泉州开到福建市最北边的福安市，但从福清市开始暴雨，之后途中又遇到短时雷暴，堵了两个小时，改为夜宿福建省宁德市林厝服务区</td>
+      </tr>
+      <tr>
+          <td>周日</td>
+          <td>从宁德开回杭州，在磐安县服务区停留了一下</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="最大的小遗憾">最大的小遗憾</h3>
+<p>不得不说，本次公路自驾还是有很多小遗憾的，比如最大的这一个，未曾想到从深圳到汕头会路过隆江，早知如此，一定会把这个地方提前加为途经点，吃一次正宗的隆江猪脚饭再走，路过的时候已是深夜，令人唏嘘不已……</p>
+<h3 id="一定要聊的美食与烟火气">一定要聊的美食与烟火气</h3>
+<p>习惯了在城市大商场的觅食，在华南反而像个土鳖子一样，午夜时分，注视着街上熙熙攘攘的人群和依然灯火辉煌的餐厅，忍不住卧槽了好几声。</p>
+<p>这也加大了伴随我们一路的疑问，都说杭州是美食荒漠，那杭州到底缺少了啥？似乎是一种“烟火气”，这不是城市里的商场和美食街可以弥补的。</p>
+<p>汕头、泉州、广州都有着浓厚的街边美食氛围，大排档一样的环境，营业到凌晨，街巷随便找一家餐馆味道都不算差。这与杭州所体现出来的精致不一样，不是说精致的不好吃，但他们都待在大商城，营业到10点，而出现在街巷的只是功能性餐饮，以饱腹为主的简易快餐。</p>
+<p>在这烟火气下，深夜走在汕头的大街上，是一种非常危险的行径。即使是深夜，人流依然攒动，各家餐厅的名字更是无比接地气，光是读名字都会觉得，比如猪血汤、猪脚肚肉饭、鹅肉饭…… 肯定很好吃。</p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%201.png"></p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%202.png"></p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%203.png"></p>
+<p>不过，说到此次自驾排名第一的美食，必须是老婆已经安利一众朋友的广州的鸡煲，由于没有带我，在汕头的时候又去吃了一次，虽说不太一样，但不一样的好吃，广州更胜一筹，相同点是都加了一种石橄榄作为汤底。</p>
+<p><img alt="汕头的鸡煲" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%204.png"></p>
+<p>汕头的鸡煲</p>
+<p>汕头的牛肉粿条汤也是能进入榜单的，即使在酒店点其外卖也很好吃，非常喜欢他们处理的牛肉口感，嫩而不柴，恰到好处，记得再点个牛肉丸汤。而另一个不得不提到的，是在泉州吃完小吃匆忙带上一份的“四果汤”，确实泉州最佳，冰甜可口，不腻，其实它算一种包含多种水果的甜品，还能在其中吃到汤圆，太适合这个夏季了。</p>
+<h3 id="在路上的风景">在路上的风景</h3>
+<p>由于一直在路上，驾车为主，虽然大都是在高速或者高架上，但不同地区，开车的体感还是有很大差别的，这也是我喜欢白天开车的原因，可以看到不同的风景。</p>
+<p>去程的路上，基本都是穿山洞看远山，没有太大的风景起伏，不细看，是无法区分浙江的山上多竹子，而福建则是漫山的树。</p>
+<p>粤港澳大湾区是第一段让我们感受到差异的地方，从广州到深圳，一路几乎没有留白的地方，全被城镇填满了视野，连声感叹这世界级城市圈的繁忙，江浙沪不能比。而且，从这里开始，慢慢步入沿海自驾主题，尤其是深圳宝安区附近的高速，在一座离岸的高架桥上，唯一的遗憾是，当时是夜晚了，感受不到太多海景。</p>
+<p>后来，南澳岛弥补了这个缺憾，周六上午，我们缓慢驶过十公里跨海大桥，并沿着岛上的海边公路行驶了三四公里后才返程，很有 feel 的自驾体验。</p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%205.png"></p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%206.png"></p>
+<p>回程途中有一个未能拍到的奇景，周六晚上，当我们顶着雨前行在从泉州开往宁德的路上，驶过福清市时，老婆说前面有海市蜃楼，我扫了一眼，以为是由于遮挡未能显示全部灯光的高楼楼顶，但开近一些才发现，这是一座半山腰的道观，通体发亮，配上这夜幕下的黑，诡异十足，像极了奇幻小说里的修仙观，写这篇文章时查了一下，这大概是福清市的石竹山道院。</p>
+<p><img alt="石竹山道院网图" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%207.png"></p>
+<p>石竹山道院网图</p>
+<p>后来，这诡异的气氛在福建继续得到了延续，前一天晚上的暴雨，虽然让我们堵了两个小时，但第二天的福建，只能用仙气飘飘来形容，视野所及，山顶皆有云海，很快就忘却了下雨的不愉快。</p>
+<p><img alt="早起的山顶云海" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%208.png"></p>
+<p>早起的山顶云海</p>
+<h3 id="更明确的长途驾驶感受">更明确的长途驾驶感受</h3>
+<p>虽然之前也开过 1200 公里到湖北，但只有武汉一个必需的经停点，不算真正的长途规划，而多次往返杭州与南京，也只有 250 公里左右，并且我还会经常偷懒半路停车休息一下。这次之后，我大概能感受到其中的节奏，一天可以跑多长时间，多远的距离，不停歇的情况下，一次多长距离更适合。</p>
+<p>老实说，3200 公里开下来并不累，基本分摊在很多天里，虽然全程只有我一个人开，但只要上高速都尽可能开着辅助驾驶 AP，而且不得不说，短时雷暴的时候，雨刮器已经很难清理出一片看得见的视野了，但是辅助驾驶可以，依然将车稳定得保持在车道内，而我只需要把预期速度调低到 50 迈。</p>
+<p><img alt="Untitled" loading="lazy" src="%E8%B6%85%E8%BF%87%203200%20%E5%85%AC%E9%87%8C%E7%9A%84%E5%8D%8E%E5%8D%97%E8%87%AA%E9%A9%BE%EF%BC%8C%E5%86%99%E4%B8%80%E5%86%99%E6%84%9F%E5%8F%97%20093c6f529738420baad8860c8f2c1dba/Untitled%209.png"></p>
+<h3 id="开图是一种乐趣">开图是一种乐趣</h3>
+<p>我很喜欢高德地图的足迹功能，这也是坚决不用车自带导航的原因，就像当年的迷雾地图，每到一个地方点亮一片区域，希望有朝一日可以点亮中国所有的城市，这既是地图导航也是记录本身。</p>
+<p>而且不只是地图上的点亮，只有真切到了一个城市或者区域，原本在地图上只是一个点的地方，才会突然变得立体起来，比如汕头，比如深圳，比如泉州，不再只是一个名字，一堆标签，而是实实在在的建筑、美食和人气，想想，仅仅只是能作为一个观察者，已经感到非常幸运了。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>一个产品经理的自我修行</title>
-      <link>http://localhost:58181/posts/product-manager-self-cultivation/</link>
+      <link>http://localhost:1313/posts/product-manager-self-cultivation/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/product-manager-self-cultivation/</guid>
+      <guid>http://localhost:1313/posts/product-manager-self-cultivation/</guid>
       <description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>这篇文章写给自己，工作和生活都需要一些简单可运行的规则。</p></blockquote>
@@ -1018,9 +1111,9 @@
     </item>
     <item>
       <title>好的问题能自动驱动我们获得答案</title>
-      <link>http://localhost:58181/posts/good-questions-drive-answers/</link>
+      <link>http://localhost:1313/posts/good-questions-drive-answers/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/good-questions-drive-answers/</guid>
+      <guid>http://localhost:1313/posts/good-questions-drive-answers/</guid>
       <description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description>
       <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a></p>
 <p>flomo 的新年特刊推文（flomo 是一款卡片笔记工具）</p>
@@ -1049,9 +1142,9 @@
     </item>
     <item>
       <title>在延吉的二日游记</title>
-      <link>http://localhost:58181/posts/yanji-two-days-trip/</link>
+      <link>http://localhost:1313/posts/yanji-two-days-trip/</link>
       <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/yanji-two-days-trip/</guid>
+      <guid>http://localhost:1313/posts/yanji-two-days-trip/</guid>
       <description>一次从北京到延吉的周末美食之旅，探访了中国最大的朝鲜族聚集地，品尝了地道的朝鲜美食，并意外造访了中朝边境小城图们。</description>
       <content:encoded><![CDATA[<p>写游记的时候，正在图们北站（23号下午5点半）。</p>
 <p><img alt="图们北站" loading="lazy" src="/images/posts/yanji-two-days-trip/image-8.webp"></p>
@@ -1125,9 +1218,9 @@
     </item>
     <item>
       <title>哪些东西/事情打开了你的新世界大门</title>
-      <link>http://localhost:58181/posts/things-that-opened-new-world/</link>
+      <link>http://localhost:1313/posts/things-that-opened-new-world/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/things-that-opened-new-world/</guid>
+      <guid>http://localhost:1313/posts/things-that-opened-new-world/</guid>
       <description>回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。</description>
       <content:encoded><![CDATA[<h1 id="哪些东西事情打开了你的新世界大门">哪些东西/事情打开了你的新世界大门</h1>
 <p><img alt="平凡的世界" loading="lazy" src="/images/posts/things-that-opened-new-world/image-1.webp"></p>
@@ -1171,9 +1264,9 @@
     </item>
     <item>
       <title>2019 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:58181/posts/2019-toys-and-gadgets-recap/</link>
+      <link>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/2019-toys-and-gadgets-recap/</guid>
+      <guid>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</guid>
       <description>分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。</description>
       <content:encoded><![CDATA[<p>能够经历过时间轮换并依然活用在手机和背包里的软件与硬件才是年度玩物，借着 2020 的开始，决定分享一下 2019 年的「玩物志」，之前经常在微信群和 Telegram 群分享好用有趣的 App，那些都是增量，今天分享的是 2019 存量。</p>
 <h2 id="年度最喜欢的硬件"><strong>年度最喜欢的硬件</strong></h2>
@@ -1233,9 +1326,9 @@
     </item>
     <item>
       <title>回忆：已经被遗忘的十五撵毛狗</title>
-      <link>http://localhost:58181/posts/memories-of-forgotten-mao-gou/</link>
+      <link>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/memories-of-forgotten-mao-gou/</guid>
+      <guid>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</guid>
       <description>记录一个已经消失的元宵节传统习俗 —— 十五撵毛狗。这个曾经让孩子们兴奋不已的节日活动，如今已经随着时代的变迁渐渐淡出人们的记忆。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>本文最初发布于2018年3月，后备份到 Notion</p></blockquote>
@@ -1260,9 +1353,9 @@
     </item>
     <item>
       <title>坐着火车去俄罗斯联邦（多图预警）</title>
-      <link>http://localhost:58181/posts/train-journey-to-russia/</link>
+      <link>http://localhost:1313/posts/train-journey-to-russia/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/train-journey-to-russia/</guid>
+      <guid>http://localhost:1313/posts/train-journey-to-russia/</guid>
       <description>一趟特殊的火车旅行：从北京出发，穿越蒙古国，抵达俄罗斯联邦的布里亚特共和国，最终到达贝加尔湖畔。一路上有着独特的风景、有趣的人和难忘的经历。</description>
       <content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
 <p>这是一篇迟来的游记，2017年9月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地——贝加尔湖畔。</p>
@@ -1352,9 +1445,9 @@
     </item>
     <item>
       <title>那些曾经让自己怦然心动的科技瞬间</title>
-      <link>http://localhost:58181/posts/tech-moments-that-touched-my-heart/</link>
+      <link>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</link>
       <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/tech-moments-that-touched-my-heart/</guid>
+      <guid>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</guid>
       <description>回忆那些曾经让我惊艳的科技体验瞬间，从第一部手机到移动互联网时代，记录着科技给生活带来的点点惊喜。</description>
       <content:encoded><![CDATA[<p>写这个文章是为了尝试精准回忆一下那些现在看来理所当然却在以前让自己怦然心动的科技体验瞬间。不得不说，越来越难被惊艳到了，当越来越多的惊喜变为日常，就像吃完了川菜再去品味粤菜一样，寡然无味，或者像回顾过去的港片，才发现好多喜剧电影的演技和剧情无比拙劣。不过，写作是为了重忆初心，就像回忆童年，多半都是美好的。</p>
 <p>真正的科技是从一部手机开始。</p>
@@ -1375,100 +1468,6 @@
 <p><img alt="微信群聊" loading="lazy" src="/images/posts/tech-moments-that-touched-my-heart/image-5.webp"></p>
 <p>如果说近期那些让人为之一动的科技，只能是大家习以为常的微信群。一开始只是亲戚们用微信群发偶然形成的一个临时群，形成之后立刻又被删除。后来我直接创建了一个固定的微信群。最初是兴奋的，后来沉寂了一段时间，不知从何开始，微信群开始作为广播定期做亲戚间的聚会以及长辈们之间的寒暄。而且，我发现了一个规律，老家微信群的活跃度与小龙虾的季节正相关。</p>
 <p>从今年开始，爸妈已经开始学会了用微信，从视频或者音频通话，逐渐升级为照片分享，每一次我都保存着，期待下一次回忆。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>朝鲜四日行纪录</title>
-      <link>http://localhost:58181/posts/north-korea-four-days-journey/</link>
-      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58181/posts/north-korea-four-days-journey/</guid>
-      <description>发布于2016年的旅行日记放在 Notion 里备份一下</description>
-      <content:encoded><![CDATA[<h1 id="朝鲜四日行纪录">朝鲜四日行纪录</h1>
-<p>今天是2016年4月2日，写于正在朝鲜境内行驶的火车上，火车正以大货车的速度行驶着，一直以来火车都是&quot;况且～况且～况且&quot;得造句手法，此刻却换成了吱呀吱呀吱呀的奇怪声音，一响就是一路，6个人，5个人都睡着了，剩下我一个人琢磨着文字，趁没有列车员，猛地偷拍了两张窗外。</p>
-<p><img alt="窗外景色" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-1.webp"></p>
-<p>这一列火车只有4节车厢，上车时，拿着15号车厢票的我们一直在想，前面13节都哪里去了。不过，万幸的是，火车不再是传说中的绿皮型号，变成了&quot;新空调硬卧&quot;，只是我感觉不到空调的存在。</p>
-<p><img alt="火车内部" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-2.webp"></p>
-<p>火车在过了鸭绿江之后就到了新义州，最浪费时间的就是这里，安检花了两个小时，查名单、查行李、查入关申请表，全部都是手动，对于带了电脑的更是繁琐，幸好四节车厢只坐满了两节左右。</p>
-<p>从新义州到平壤需要五个多小时，窗外的风景是单调的农村，地广人稀，房子大都是白色围墙和屋墙再加上青灰色屋顶，统一建设，像是批量生成。在新奇了一个小时，以及严肃得探讨了价值观、人生观之后，兴致少了很多。</p>
-<p><img alt="农村景色1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-3.webp"></p>
-<p><img alt="农村景色2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-4.webp"></p>
-<p>火车路过过一些&quot;大城市&quot;，我自己也无法分清这是乡镇还是城市，除了房屋密集，&ldquo;大城市&quot;的房子就像破旧的老城区，不成样子，我们好多次都在怀疑这些空洞的房子是否有人住。</p>
-<p>此刻是4月3日，从一处景点妙香山回去的路上，</p>
-<p>旅行到现在才体会到《演员的自我修养》这本书的上层境界，在妙香山国际友谊纪念馆里我们真正表演出了真诚，没有为难任何讲解员。国际友谊纪念馆保存了据说是&quot;170多个国家和地区&quot;赠送给朝鲜的礼物，多半是来朝的公司或者组织赠送的，选择性忽略之后就变成了该地区赠送，于是此行变成了朝鲜旅游最无聊的一段。</p>
-<p><img alt="前往妙香山" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-5.webp"></p>
-<ul>
-<li><em>官方导游带着我们前往妙香山国际友谊纪念馆</em></li>
-</ul>
-<p>此刻是4月5日，两天没有写任何内容，只有在回丹东的火车上，慢慢回忆着。除去2号和5号在往返的火车，真正游玩的时间只有3号与4号，而且大部分的时间也在路上，去妙香山往返花了5到6个多小时，去开城往返花了7到8个小时。加上只有靠近平壤的路才很平，其他路段都非常颠簸，平板看视频或者Kindle看书都会快速培养困意，U型枕是最好的伙伴，可惜只有导游带了。</p>
-<p><img alt="平壤远景" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-6.webp"></p>
-<ul>
-<li><em>来自车上拍摄的平壤，远处是主体思想塔，桥下是大同江</em></li>
-</ul>
-<h1 id="导游">导游</h1>
-<p>知乎上的攻略就告诉我们，朝鲜的导游是一边带着我们玩一边监视我们，大概是如此。导游一般一男一女，这次也是，不过，为了隐私，就不提供他们的照片了。</p>
-<p>女导游是我们眼中典型的&quot;被洗脑&quot;的平壤人，家境不错，深刻相信金家的领导，像新闻联播一样惯用夸张的描述来讲述朝鲜的好，每一次描述都会提起&quot;金日成主席、金正日将军和金正恩元帅&rdquo;。我在想，假如金家再统治很长时间，这段话会越来越难说了。</p>
-<p>尽管女导游是典型的平壤人，但她很好交流，没有太多隐藏，可以看得出那种发自内心对金家的热爱，我们全程都很配合，这让我们的关系越来越好。</p>
-<p>男导游面相较黑，岁数与我们相近，而且一直穿着与他的相貌较为违和的西装，这个和路上遇到的很多平壤人一样，且不善交流。不过，他去过中国很多地方，知道微博微信和QQ，是他提醒我在三八线搜索网络信号，并在行车过程中借我们的手机看新闻，看综艺，看科幻电影。</p>
-<h1 id="4月2日">4月2日</h1>
-<p>经过8个小时到达平壤我们去了万寿台，给&quot;伟大的金日成主席和金正日将军&quot;敬礼献花，一束花20元人民币。不得不惊叹的是，两个巨大的铜像打光非常好，加上那样大的高度差，这种营造的&quot;个人崇拜&quot;，我也感觉到了。</p>
-<p><img alt="万寿台1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-7.webp"></p>
-<p><img alt="万寿台2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-8.webp"></p>
-<p>吃完晚饭就去了西山酒店，一家新建的一级酒店，朝鲜酒店分为特级、一级和二级。导游特别强调，晚上不能独自出外散步，&ldquo;很危险&rdquo;。</p>
-<p><img alt="夜景" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-9.webp"></p>
-<ul>
-<li><em>夜晚的朝鲜夜景，灯光相比北京少了很多</em></li>
-</ul>
-<h1 id="4月3日">4月3日</h1>
-<p>一大早起来的第一个任务就是拍摄阳台外的全景。远处是火力发电站。</p>
-<p><img alt="阳台全景" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-10.webp"></p>
-<ul>
-<li>最荒唐的一幕，远处山坡上挥动旗帜的队伍，朝鲜导游说意在鼓舞上班</li>
-</ul>
-<p>7点早餐，七点半出发去妙香山，顺道参观一个佛教寺院，傍晚回到市区，参观国家图书馆，再参观金日成广场。广场上看到正在火炬游行训练的大学生，导游不让拍摄游行训练的群众，我还是拍了。</p>
-<p><img alt="图书馆1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-11.webp"></p>
-<p>这个图书馆音乐教室里的录放机，工作人员饶有兴致地播放了一首中文歌，毛阿敏的。旁边是先科DVD播放机，另外一个旅行团的人已经忍不住嘲笑起来，这是我最不愿意跟团的原因，幸好只有这一站在一起。</p>
-<p><img alt="图书馆2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-12.webp"></p>
-<p>图书馆正在自习的朝鲜学生，只有17岁以上才可以进入。</p>
-<p><img alt="图书馆3" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-13.webp"></p>
-<p>从图书馆7楼瞭望台拍摄金日成广场，可以看到远处最高的主题思想塔以及金日成广场上的游行训练方队。</p>
-<p><img alt="广场1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-14.webp"></p>
-<p>站在金日成广场拍摄图书馆，以及趁机拍摄休息中的游行方队。</p>
-<p><img alt="广场2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-15.webp"></p>
-<p>不能忘了一点，朝中友谊塔</p>
-<p><img alt="朝中友谊塔" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-16.webp"></p>
-<p>晚上的晚餐是我们最喜欢的一次，服务员为我们安排了舞蹈，很欢乐的舞蹈，虽然我在北京去过平壤的餐厅而且看过表演的舞蹈，但尤其喜欢这一次，这个时候让我想起了白天那次较为糟糕的午餐，喝了一瓶2011年产的啤酒，保质期3个月。</p>
-<h1 id="4月4日">4月4日</h1>
-<p>这一天是最惊奇的一次，因为要去朝鲜三八线，而且是站在三八线上，这象中的朝鲜人，面对这样的时刻还是有蛮多幽默感。</p>
-<p><img alt="三八线1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-17.webp"></p>
-<p><img alt="三八线2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-18.webp"></p>
-<p>一个香港生活的法国人要和我们一起坐在谈判桌上拍照，&ldquo;这样才符合历史，有黄种人也得有白人&rdquo;。</p>
-<p><img alt="三八线3" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-19.webp"></p>
-<p>这是在三八线上的屋子里</p>
-<p><img alt="三八线4" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-20.webp"></p>
-<p>三八线上屋子的全景，蓝色屋子的后面是韩国，站在旁边时，导游提醒我打开网络，于是我收到了韩国网络，还有运营商的提醒短信，赶紧发了一条朋友圈（后来才知道，发送失败了，哎）。</p>
-<p><img alt="三八线5" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-21.webp"></p>
-<p><img alt="三八线6" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-22.webp"></p>
-<p>三八线近景，左边是韩国领土，右边是朝鲜领土，有点紧张</p>
-<p>之后参观了开城的高丽成均馆，就匆匆赶回平壤，天气有点热。</p>
-<p><img alt="开城菜" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-23.webp"></p>
-<ul>
-<li><em>中午特色的开城菜</em></li>
-</ul>
-<h1 id="4月3日傍晚">4月3日傍晚</h1>
-<p>也是今天旅程有意义的第二段，体验平均深度为100米左右的朝鲜地铁</p>
-<p><img alt="地铁1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-24.webp"></p>
-<p><img alt="地铁2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-25.webp"></p>
-<p><img alt="地铁3" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-26.webp"></p>
-<p>坐扶梯下去需要两分多钟，地铁声音很大，而且地铁里的气味比较难闻。</p>
-<p><img alt="地铁4" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-27.webp"></p>
-<p>地铁坐完一站就被带到另外一个无聊的地方，&ldquo;友谊百货商城&quot;或者就是一个商店，很小，全是纪念品</p>
-<p><img alt="商店" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-28.webp"></p>
-<h1 id="4月5日">4月5日</h1>
-<p>离开平壤，给导游留了电话和邮箱，期待她能出国。</p>
-<p><img alt="离开平壤" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-29.webp"></p>
-<p>最后，我带回了最初承诺的&quot;主题思想&quot;一本。</p>
-<p><img alt="主题思想1" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-30.webp"></p>
-<p><img alt="主题思想2" loading="lazy" src="/images/posts/north-korea-four-days-journey/image-31.webp"></p>
 ]]></content:encoded>
     </item>
   </channel>

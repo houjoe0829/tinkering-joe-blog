@@ -41,7 +41,7 @@
    - 保持相同类型元素的样式一致，如所有页面的标题大小。
    - 使用变量和规律性的数值（如标题大小每级减小 2px）来维护样式的统一性。
 
-## 日常更新博客
+## 日常手动更新博客的流程
 
 您只需要关注以下几个步骤即可轻松更新您的博客：
 
@@ -98,11 +98,7 @@
 
 2. **自动处理流程**：
    ```bash
-   # 第一步：清理之前的临时文件（如果有）
-   rm -rf temp_notion
-   rm -rf content/posts/your-article-name.md  # 如果需要重新处理某篇文章
-   
-   # 第二步：执行自动处理脚本
+   执行自动处理脚本
    python extract_zip_utf8.py
    ```
    
@@ -112,36 +108,13 @@
    - 保持原文内容不变，仅处理必要的格式转换
    - 自动提取文章元数据（标题、创建时间等）
    - 生成规范的英文文件名和 Front Matter
+   - 自动处理文章中的所有图片：
+     * 创建文章专属的图片目录
+     * 复制并重命名图片文件
+     * 压缩图片并转换为 WebP 格式
+     * 更新文章中的图片引用路径
 
-3. **图片处理**（如果文章包含图片）：
-   ```bash
-   # 第一步：为当前文章创建专属图片目录
-   article_name="your-article-name"  # 使用脚本生成的英文文件名
-   mkdir -p "static/images/posts/$article_name"
-   
-   # 第二步：复制并处理图片
-   cd temp_notion/your-notion-folder
-   counter=1
-   for img in *.*; do
-     if [[ "$img" =~ \.(jpg|jpeg|png|PNG|JPG|JPEG)$ ]]; then
-       ext="${img##*.}"
-       new_name="image-$counter.$ext"
-       cp "$img" "../../static/images/posts/$article_name/$new_name"
-       echo "Copied $img to $new_name"
-       counter=$((counter + 1))
-     fi
-   done
-   cd ../../
-   
-   # 第三步：压缩当前文章的图片
-   python compress_article_images.py "$article_name"
-   
-   # 第四步：更新压缩后的图片
-   cp -r "static/images_compressed/posts/$article_name/"*.webp \
-     "static/images/posts/$article_name/"
-   ```
-
-4. **本地预览确认**：
+3. **本地预览确认**：
    ```bash
    # 启动 Hugo 预览
    hugo server -D
@@ -153,10 +126,9 @@
    - 图片是否正常显示
    - Front Matter 是否正确生成
 
-5. **清理临时文件**：
+4. **清理临时文件**：
    ```bash
    # 清理所有临时文件和目录
-   rm -rf "static/images_compressed/posts/$article_name"  # 清理压缩临时目录
    rm -rf temp_notion  # 清理解压的临时目录
    rm -f Notionfiles/*.zip  # 清理原始 ZIP 文件
    ```
