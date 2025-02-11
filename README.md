@@ -261,12 +261,16 @@
    - 在 Notion 中选择要导出的单个页面
    - 选择导出格式为 "Markdown & CSV"
    - 确保勾选 "Include content" 和 "Include files & media"
-   - 下载得到一个 ZIP 文件
+   - 下载得到一个 ZIP 文件，将其放入 `Notionfiles` 目录
 
-2. **文件处理步骤**：
-   - 将 ZIP 文件解压到临时目录
-   - 找到主要的 Markdown 文件（通常是与页面同名的 .md 文件）
-   - 检查并收集所有相关的图片文件
+2. **解压与处理（一次只处理一篇文章）**：
+   ```bash
+   # 解压 ZIP 文件到临时目录
+   python extract_zip_utf8.py
+   ```
+   - 解压后会在 `temp_notion` 目录下看到 Markdown 文件和相关图片
+   - 如果 ZIP 包含多篇文章，选择其中一篇进行处理，完成后再处理下一篇
+   - **重要**：记录下原始文章的创建时间（Created Time），这将用作博客文章的发布时间
 
 3. **创建博客文章**：
    - 在 `content/posts/` 下创建新的 Markdown 文件
@@ -274,8 +278,8 @@
    - 添加符合规范的 Front Matter：
      ```yaml
      ---
-     title: '标题（如果标题中包含引号，外层使用单引号）'  # 例如：'扑克牌"干瞪眼"的规则'
-     date: YYYY-MM-DD  # 使用 Notion 文章的原始创建日期
+     title: '标题（如果标题中包含引号，外层使用单引号）'
+     date: YYYY-MM-DD  # 使用 Notion 文章的原始创建时间，不要使用当前日期
      draft: false
      description: "文章描述，建议 100 字以内"
      tags: ["标签1", "标签2"]
@@ -284,42 +288,37 @@
      ```
 
 4. **图片处理**：
-   - 在 `static/images/posts/` 下创建与文章同名的目录
-   - 将所有图片文件移动到这个目录
-   - 统一图片命名格式：`image-1.jpg`, `image-2.png` 等
-   - 在文章中更新图片引用路径：
-     ```markdown
-     ![图片描述](/images/posts/article-name/image-1.jpg)
-     ```
+   ```bash
+   # 为当前文章创建图片目录
+   mkdir -p static/images/posts/article-name
 
-5. **内容检查和优化**：
-   - 检查并修正 Markdown 语法
-   - 确保标题层级正确（h1, h2, h3 等）
-   - 检查图片引用路径是否正确
-   - 优化文章描述和标签
+   # 复制图片到目标目录
+   cp "temp_notion/文章目录/"*.{jpg,jpeg,png} static/images/posts/article-name/
+
+   # 压缩当前文章的图片
+   python compress_images.py static/images/posts/article-name static/images_compressed/posts/article-name
+
+   # 将压缩后的图片移回原目录
+   cp static/images_compressed/posts/article-name/*.webp static/images/posts/article-name/
+   ```
+
+5. **更新图片引用**：
+   - 在文章中更新图片引用路径为 WebP 格式：
+     ```markdown
+     ![图片描述](/images/posts/article-name/image.webp)
+     ```
 
 6. **清理工作**：
-   - 确认文章和图片都已正确迁移后，删除临时解压的文件：
-     ```bash
-     # 确保在项目根目录下执行
-     rm -rf temp_notion
-     ```
-   - 删除原始的 Notion ZIP 文件（注意要在项目根目录下执行）：
-     ```bash
-     # 确保在项目根目录下执行，替换为实际的 ZIP 文件名
-     rm -f "Notionfiles/your-notion-export.zip"
-     ```
-   - 检查清理是否完成：
-     ```bash
-     # 检查临时目录是否已删除
-     ls -la | grep temp_notion
-     # 检查 Notion ZIP 文件是否已删除
-     ls -la Notionfiles/
-     ```
-   - 不要在这个阶段压缩图片，图片压缩将在后续统一处理
+   ```bash
+   # 清理临时文件
+   rm -rf temp_notion static/images_compressed
+   ```
 
 7. **本地预览确认**：
-   - 运行 `hugo server -D` 启动本地预览
+   ```bash
+   # 启动 Hugo 预览
+   hugo server -D
+   ```
    - 检查文章在列表和详情页的显示效果
    - 确认所有图片能正常加载
    - 检查文章格式和样式是否正确
@@ -330,13 +329,11 @@
    - 在线检查文章的最终效果
 
 **注意事项**：
-- 每次只处理一篇文章，确保质量和准确性
-- 保持文章的原始创建时间，不要随意修改
-- 图片压缩将在后续统一处理，迁移时保持原图
-- 处理完成后及时清理临时文件和 ZIP 文件
-- 定期检查和更新标签体系，保持分类的一致性
-
-这个手动处理流程虽然看起来步骤较多，但能确保每篇文章都得到细致的处理和检查，保持博客内容的高质量和一致性。
+- 严格遵循一次只处理一篇文章的原则，确保质量和准确性
+- 必须使用 Notion 文章的原始创建时间，不要使用当前日期或其他时间
+- 图片压缩只处理当前文章的图片，避免重复处理其他文章的图片
+- 处理完成后及时清理临时文件
+- 如果一个 ZIP 包含多篇文章，在完成当前文章的所有步骤后，再开始处理下一篇
 
 ## 自动化迁移技术方案 (开发者参考)
 
