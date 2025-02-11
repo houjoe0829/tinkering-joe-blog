@@ -14,25 +14,25 @@ author: "Joe"
 以前只知黄山很出名，多半归因于出现在各种挂历上的迎客松，但不知其中真意。此次爬完，我会真的向许多人推荐黄山，奇松怪石，雾凇云海，冬天还能多出一份别样的冷峻。                                                            
 我之前总爱用"层峦叠嶂"来形容浙江的山，如水墨画一样，用灰度表现出层层叠叠的山峦，但整体朦胧柔和一些。而黄山，只需看一眼，就会觉得是不一样的中国风，一时想不起来，直到后来与 AI 对话，才知晓，这种风格叫工笔画。与朦胧不同，黄山的岩石轮廓清晰，甚至可以看出精确的线条，配上云海为底，层次分明，恰似不同深浅的墨色晕染。这里，我已经绞尽脑汁了，只是说服你去看看，与雪山、青山皆不同，但唯有肉眼可证。                                            
 
-![黄山风景](/images/posts/huangshan-half-day-tour/image.png)
+![黄山风景](/images/posts/huangshan-half-day-tour/image-8.webp)
 
-![黄山全景](/images/posts/huangshan-half-day-tour/image%201.png)
+![黄山全景](/images/posts/huangshan-half-day-tour/image-1.webp)
 
 说到迎客松，坦白说，我个人不太喜欢，如果不是人群示意，我都不知道它是它。但黄山松整体的风格太具有辨识度了，因大风而成的旗帜状造型，处处皆是，比之好看的也是一棵接着一棵。更为神奇的是，这些黄山松总是长在一些不那么正经的地方，然后还能顽强的长出来，就像是 P 上去一样。
                                 
-![黄山松特写](/images/posts/huangshan-half-day-tour/image%202.png)
+![黄山松特写](/images/posts/huangshan-half-day-tour/image-2.webp)
 
-![奇特的黄山松](/images/posts/huangshan-half-day-tour/image%203.png)
+![奇特的黄山松](/images/posts/huangshan-half-day-tour/image-3.webp)
 
-![山间的黄山松](/images/posts/huangshan-half-day-tour/image%204.png)
+![山间的黄山松](/images/posts/huangshan-half-day-tour/image-4.webp)
 
 此次的云海确实不如网上那般壮观，尽管我们算是幸运的，到了山顶，天晴了，但是雾气跟着我们的脚步也一起上来了。我们似乎总是徘徊在云里雾里的边界，看不出一个轮廓清晰的云海，直到最后被完全淹没。                              
 
-![云雾缭绕的山峰](/images/posts/huangshan-half-day-tour/image%205.png)
+![云雾缭绕的山峰](/images/posts/huangshan-half-day-tour/image-5.webp)
 
-![云海景观](/images/posts/huangshan-half-day-tour/image%206.png)
+![云海景观](/images/posts/huangshan-half-day-tour/image-6.webp)
 
-![云中的黄山](/images/posts/huangshan-half-day-tour/image%207.png)
+![云中的黄山](/images/posts/huangshan-half-day-tour/image-7.webp)
 
 就行程而言，一旦用了索道，黄山的整体难度中等偏下，实际徒步不过3公里尔尔。一路上我们会用上各种交通工具，酒店的接驳车、上山下山的大巴、云中索道，甚至还可以体验滑竿，坐在椅子上，由两位脚夫抬着上山，价格公示，童叟无欺。
 

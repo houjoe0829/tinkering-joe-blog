@@ -24,7 +24,7 @@ author: "Joe"
 
 不过，在我的滴答清单里，"想去的地方"还有许多江浙沪的地方有待探索，其实也不需要那种震撼心灵的景色，每个地方都有自己的不同韵味，或景致或文化，当个观察者，肉身体验其中的不同。                                            
 
-![旅行清单](/images/posts/2023-toys-recap/Untitled%201.png)
+![旅行清单](/images/posts/2023-toys-recap/Untitled-1.png)
 
 ### 个体的自由，与不太好的大时代
 
@@ -52,26 +52,26 @@ author: "Joe"
 - [巫师3](https://www.notion.so/3-2c04f670002241049611f6582cf6c6ba?pvs=21) ：这是一个老游戏，在两度放弃之后，终于在今年的 Steam Deck 上玩完了，本体和 DLC 的主线剧情和支线剧情让人意犹未尽。                           
 - [战神之诸神黄昏](https://www.notion.so/59e08de7e95b4b2fa76e30d0c2a66a15?pvs=21) ：一部稳定发挥的续作，虽然没有太多惊喜，但是，一贯的高水准已经足够，而且，还有一个完美的结局。                                        
 
-![年度游戏](/images/posts/2023-toys-recap/Untitled%202.png)
+![年度游戏](/images/posts/2023-toys-recap/Untitled-2.png)
 
 ### 年度影视剧
 
 [《万神殿 第二季》](https://movie.douban.com/subject/36067160/)：这是一部动画，本来以为只是像第一季里对 AI 的探讨，而且第二季差点夭折。没想到后半段直接升华了，立意比看过的《拾荒者统治》高很多了。                    
 
-![万神殿第二季](/images/posts/2023-toys-recap/Untitled%203.png)
+![万神殿第二季](/images/posts/2023-toys-recap/Untitled-3.png)
 
 ### 年度书籍
 
 [《The Mom test》](https://book.douban.com/subject/26320572/)：这是一本在另外的书籍里看到的引用，没想到书籍不厚，没有中文版，只是阐述如何与用户沟通，但意外得有用，超越《马斯克传》对我的意义，读后笔记正在排队中。    
 
-![The Mom test](/images/posts/2023-toys-recap/Untitled%204.png)
+![The Mom test](/images/posts/2023-toys-recap/Untitled-4.png)
 
 ### 年度旅行地
 
 - [超过 3200 公里的华南自驾，写一写感受](https://www.notion.so/3200-093c6f529738420baad8860c8f2c1dba?pvs=21) ：华南的自驾让我有信心跑更远的长途了。                                                                     
 - 千岛湖的意外之旅：这是一个没有在推特上分享过的地点，在4月的千岛湖骑行结束之后，开车随意闲逛偶然发现的一片河床，就是那种想象中的河床，绿意盎然，静谧惬意，虽不知名但印象深刻。                                        
 
-![千岛湖河床](/images/posts/2023-toys-recap/Untitled%205.png)
+![千岛湖河床](/images/posts/2023-toys-recap/Untitled-5.png)
 
 ### 年度软件
 
@@ -85,7 +85,7 @@ author: "Joe"
                                                        
 - QuantumultX：科学上网的工具有很多，我只是选择一个来深耕，而 QuantumultX 也是最具性价比的工具之一，也是精神自由的基建之一。 [《最简约的科学上网方案：Quantumlt X》](https://whimsical.com/quantumlt-x-5bQizxDYWyYg7iy1MWDwWF)
                                                                                        
-![年度软件](/images/posts/2023-toys-recap/Untitled%206.png)
+![年度软件](/images/posts/2023-toys-recap/Untitled-6.png)
 
 ### 年度硬件
 
@@ -97,7 +97,7 @@ author: "Joe"
 
 - **极空间 Nas**：去年的玩物志里已经提过它，但是 Nas 在日常出现的频率越来越高了，所有影视剧基本都是下载下来观看的，尤其是上了 4K 电视之后，蓝光 4K 资源越来越多，断网也不担心。最近，我把听歌也搬到了 Nas，网络环境越来越差了，总是有越来越多看不到的内容或者突然消失的歌曲。 [Nas 私有云：真国内观影必备](https://www.notion.so/Nas-b2b08a643bfa484bb3a534ea4cb8072c?pvs=21)
                       
-![年度硬件](/images/posts/2023-toys-recap/Untitled%207.png)
+![年度硬件](/images/posts/2023-toys-recap/Untitled-7.png)
 
 ## 最后
 
