@@ -17,27 +17,27 @@ author: "Joe"
 
 最早在金刚狼里出现与金刚狼对战的死侍就是瑞安·雷诺兹演的，但是他不能说话。
 
-![早期的死侍形象](/images/posts/deadpool-and-wolverine-review/image.png)
+![早期的死侍形象](/images/posts/deadpool-and-wolverine-review/image.webp)
 
 ### 女死侍是死侍老婆演的
 
 可以在豆瓣演员表看到
 
-![女死侍演员](/images/posts/deadpool-and-wolverine-review/image-1.png)
+![女死侍演员](/images/posts/deadpool-and-wolverine-review/image-1.webp)
 
 ### 拿叉子的女的是谁？
 
 《夜魔侠》电影里的夜魔侠前任艾丽卡，精通武术及格斗，也有单独的电影《幻影杀手》
 
-![《夜魔侠》海报](/images/posts/deadpool-and-wolverine-review/image-2.png)
+![《夜魔侠》海报](/images/posts/deadpool-and-wolverine-review/image-2.webp)
 
-![《幻影杀手》海报](/images/posts/deadpool-and-wolverine-review/image-3.png)
+![《幻影杀手》海报](/images/posts/deadpool-and-wolverine-review/image-3.webp)
 
 ### 彼得为什么可以吸引死侍军团？
 
 彼得是《死侍2》里 X 特工队的一员，一出场就死了，后来被传也被死侍复活了，《死侍与金刚狼》算是坐实了。至于最后为什么死侍都喜欢彼得，看到一个影评里说："Peter 是漫威宇宙的魅魔，所有人见了他都如沐春风，所有戾气瞬间消散，对付死侍尤其好用。"
 
-![彼得的形象](/images/posts/deadpool-and-wolverine-review/image-4.png)
+![彼得的形象](/images/posts/deadpool-and-wolverine-review/image-4.webp)
 
 ### 拿牌做武器的是谁？
 
@@ -47,7 +47,7 @@ author: "Joe"
 
 霹雳火变体之后发"火"，没想到被一个反派给吸收了，他就是 X 战警的火人，可以在《X战警1》和《X战警2》里看到这个角色。
 
-![X战警的火人](/images/posts/deadpool-and-wolverine-review/image-5.png)
+![X战警的火人](/images/posts/deadpool-and-wolverine-review/image-5.webp)
 
 ### 梳理一下客串的英雄
 
@@ -55,11 +55,11 @@ author: "Joe"
 - 雪绪：《死侍1》《死侍2》
 - 少年弹头：《死侍1》《死侍2》
 
-![客串英雄们](/images/posts/deadpool-and-wolverine-review/image-6.png)
+![客串英雄们](/images/posts/deadpool-and-wolverine-review/image-6.webp)
 
 - 霹雳火：《神奇四侠》
 
-![霹雳火](/images/posts/deadpool-and-wolverine-review/image-7.png)
+![霹雳火](/images/posts/deadpool-and-wolverine-review/image-7.webp)
 
 - 剑齿虎：《金刚狼 1》
 - 刀锋战士：《刀锋战士 1/2/3》

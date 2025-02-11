@@ -17,7 +17,7 @@ author: "Joe"
 
 另外，暂时不要买国产版，非国产版本只是需要稍微折腾一下，但是可以自由自在玩游戏，这不就是人生所求么。
 
-![Switch](/images/posts/2019-toys-and-gadgets-recap/switch.jpg)
+![Switch](/images/posts/2019-toys-and-gadgets-recap/switch.webp)
 
 ### **AirPods**
 

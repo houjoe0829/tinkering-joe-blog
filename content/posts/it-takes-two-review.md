@@ -7,7 +7,7 @@ tags: ["游戏评测", "双人成行", "游戏体验"]
 author: "Joe"
 ---
 
-![游戏截图](/images/posts/it-takes-two-review/image.png)
+![游戏截图](/images/posts/it-takes-two-review/image.webp)
 
 最近该游戏在 Steam 特价，六十多块就可以买下。
 
@@ -25,9 +25,9 @@ author: "Joe"
 
 游戏中最令人难忘的片段有两处：一是骑着水下巨型鲶鱼遨游的场景，二是在魔法城堡中那段热血沸腾的战斗。
 
-![水下巨型鲶鱼场景](/images/posts/it-takes-two-review/image-1.png)
+![水下巨型鲶鱼场景](/images/posts/it-takes-two-review/image-1.webp)
 
-![魔法城堡战斗场景](/images/posts/it-takes-two-review/image-2.png)
+![魔法城堡战斗场景](/images/posts/it-takes-two-review/image-2.webp)
 
 回到游戏内外，就像游戏里的小梅和科迪，当双方没有一起合作可以做的事情，并且失去各自热爱的事情时，终将变成情感淡漠的开始，这点我还是深表理解的。
 
@@ -35,16 +35,16 @@ author: "Joe"
 
 ---
 
-![游戏截图3](/images/posts/it-takes-two-review/image-3.png)
+![游戏截图3](/images/posts/it-takes-two-review/image-3.webp)
 
-![游戏截图4](/images/posts/it-takes-two-review/image-4.png)
+![游戏截图4](/images/posts/it-takes-two-review/image-4.webp)
 
-![游戏截图5](/images/posts/it-takes-two-review/image-5.png)
+![游戏截图5](/images/posts/it-takes-two-review/image-5.webp)
 
-![游戏截图6](/images/posts/it-takes-two-review/image-6.png)
+![游戏截图6](/images/posts/it-takes-two-review/image-6.webp)
 
-![游戏截图7](/images/posts/it-takes-two-review/image-7.png)
+![游戏截图7](/images/posts/it-takes-two-review/image-7.webp)
 
-![游戏截图8](/images/posts/it-takes-two-review/image-8.png)
+![游戏截图8](/images/posts/it-takes-two-review/image-8.webp)
 
-![游戏截图9](/images/posts/it-takes-two-review/image-9.png)
+![游戏截图9](/images/posts/it-takes-two-review/image-9.webp)
