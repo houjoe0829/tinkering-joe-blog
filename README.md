@@ -246,6 +246,93 @@
    - 对于重要的展示图片，可以适当提高压缩质量
    - 如果发现某些图片显示异常，可以选择保留原格式
 
+### 图片处理规则
+
+为了确保图片处理的一致性和避免误操作，请严格按照以下步骤处理图片：
+
+1. **创建文章专属图片目录**：
+   ```bash
+   # 使用文章的英文名创建目录
+   article_name="your-article-name"  # 例如：cycling-adventure
+   mkdir -p "static/images/posts/$article_name"
+   ```
+
+2. **复制并重命名图片**：
+   ```bash
+   # 进入临时目录
+   cd temp_notion/your-notion-folder
+   
+   # 重命名并复制图片（避免空格，使用连字符）
+   counter=1
+   for img in *.*; do
+     if [[ "$img" =~ \.(jpg|jpeg|png|PNG|JPG|JPEG)$ ]]; then
+       ext="${img##*.}"
+       new_name="image-$counter.$ext"
+       cp "$img" "../../static/images/posts/$article_name/$new_name"
+       echo "Copied $img to $new_name"
+       counter=$((counter + 1))
+     fi
+   done
+   cd ../../
+   ```
+
+3. **压缩当前文章的图片**：
+   ```bash
+   # 重要：只压缩当前文章的图片目录
+   python compress_images.py \
+     "static/images/posts/$article_name" \
+     "static/images_compressed/posts/$article_name"
+   ```
+
+4. **更新压缩后的图片**：
+   ```bash
+   # 只压缩更新当前文章的图片
+   cp "static/images_compressed/posts/$article_name/"*.webp \
+     "static/images/posts/$article_name/"
+   ```
+
+5. **清理临时文件**：
+   ```bash
+   # 只删除当前文章的临时压缩目录
+   rm -rf "static/images_compressed/posts/$article_name"
+   ```
+
+### 注意事项
+
+1. **严格遵循目录结构**：
+   - 每篇文章的图片必须放在其专属目录：`static/images/posts/article-name/`
+   - 不要在根目录或其他文章目录中处理图片
+
+2. **图片压缩原则**：
+   - 每次只处理一篇文章的图片
+   - 使用文章专属的输入输出目录
+   - 不要使用项目根目录作为压缩目标
+
+3. **避免常见错误**：
+   - ❌ 不要直接压缩 `static/images` 目录
+   - ❌ 不要在一次操作中处理多篇文章的图片
+   - ❌ 不要使用通用的临时目录
+
+4. **最佳实践**：
+   - ✅ 始终使用文章的英文名作为目录名
+   - ✅ 在处理新文章前清理之前的临时文件
+   - ✅ 压缩完成后立即验证图片质量
+
+5. **文件命名规范**：
+   - 图片文件名格式：`image-1.webp`, `image-2.webp` 等
+   - 不使用原始文件名，避免中文和特殊字符
+   - 统一使用小写字母和数字
+
+6. **质量控制**：
+   - 压缩后的图片大小不应超过原图
+   - WebP 格式的质量参数统一设置为 85%
+   - 压缩后要检查图片是否正常显示
+
+通过严格遵循这些规则，可以确保：
+- 每篇文章的图片都被正确处理
+- 避免误操作影响其他文章的图片
+- 保持项目的整洁和一致性
+
 ---
 
 **提示**:

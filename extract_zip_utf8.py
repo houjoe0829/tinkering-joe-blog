@@ -2,6 +2,7 @@ import os
 import zipfile
 import shutil
 from pathlib import Path
+import glob
 
 def extract_zip_with_utf8(zip_path, extract_dir):
     # 确保目标目录存在
@@ -31,10 +32,21 @@ def extract_zip_with_utf8(zip_path, extract_dir):
                 print(f"提取文件时出错: {str(e)}")
 
 if __name__ == '__main__':
+    # 查找 Notionfiles 目录下的第一个 ZIP 文件
+    zip_files = glob.glob('Notionfiles/*.zip')
+    if not zip_files:
+        print('错误：在 Notionfiles 目录下没有找到 ZIP 文件')
+        exit(1)
+    
     # 设置输入输出路径
-    zip_path = 'Notionfiles/bbd43b4b-bc93-4cbb-816c-da6a73d85cfe_Export-2d54ca9d-34f1-49f6-80ed-99e1b82961e2.zip'
+    zip_path = zip_files[0]
     extract_dir = 'temp_notion'
     
+    # 如果目标目录已存在，先删除它
+    if os.path.exists(extract_dir):
+        shutil.rmtree(extract_dir)
+    
+    print(f'正在解压文件: {zip_path}')
     # 执行解压
     extract_zip_with_utf8(zip_path, extract_dir)
     print('解压完成！') 
