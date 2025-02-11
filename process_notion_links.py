@@ -160,9 +160,9 @@ def process_markdown_file(input_file, article_name):
     # 处理本地图片
     content = process_local_images(content, article_name, temp_image_dir)
     
-    # 查找所有图片链接
+    # 查找所有图片链接，保持顺序
     image_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
-    image_links = re.findall(image_pattern, content)
+    image_links = list(re.finditer(image_pattern, content))
     
     if not image_links:
         print("未找到图片链接")
@@ -170,18 +170,40 @@ def process_markdown_file(input_file, article_name):
     
     print(f"找到 {len(image_links)} 个图片链接")
     
-    # 下载所有图片
-    downloaded_images = {}
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        for alt_text, url in image_links:
-            if url.startswith('http'):
-                print(f"下载图片: {url}")
-                local_filename = executor.submit(download_image, url, temp_image_dir).result()
-                if local_filename:
-                    downloaded_images[url] = local_filename
-                    print(f"✓ 成功下载: {local_filename}")
-                else:
-                    print(f"✗ 下载失败: {url}")
+    # 创建图片信息映射，包含所有图片（无论是否下载成功）
+    image_info_map = {}
+    download_success_count = 0
+    
+    # 按顺序处理每个图片
+    for i, match in enumerate(image_links, 1):
+        alt_text, url = match.groups()
+        img_info = {
+            'alt_text': alt_text,
+            'url': url,
+            'start': match.start(),
+            'end': match.end(),
+            'original_text': match.group(0),
+            'position': i,  # 记录在文章中的位置
+            'downloaded': False,  # 标记是否下载成功
+            'local_filename': None
+        }
+        
+        if url.startswith('http'):
+            print(f"下载图片 {i}/{len(image_links)}: {url}")
+            local_filename = download_image(url, temp_image_dir)
+            if local_filename:
+                img_info['downloaded'] = True
+                img_info['local_filename'] = local_filename
+                download_success_count += 1
+                print(f"✓ 成功下载 {i}/{len(image_links)}: {local_filename}")
+            else:
+                print(f"✗ 下载失败 {i}/{len(image_links)}: {url}")
+        else:  # 本地图片
+            img_info['downloaded'] = True  # 本地图片视为已下载
+            img_info['local_filename'] = os.path.basename(url)
+            download_success_count += 1
+        
+        image_info_map[url] = img_info
     
     # 处理下载的图片
     if os.listdir(temp_image_dir):
@@ -189,24 +211,24 @@ def process_markdown_file(input_file, article_name):
         # 使用图片处理脚本处理下载的图片
         os.system(f'python process_notion_images.py {article_name} --input "{temp_image_dir}"')
         
-        # 更新 Markdown 文件中的图片引用
-        for url, local_filename in downloaded_images.items():
-            # 获取处理后的 WebP 文件名（根据 process_notion_images.py 的命名规则）
-            webp_filename = f"image-{list(downloaded_images.keys()).index(url) + 1}.webp"
-            new_path = f"/images/posts/{article_name}/{webp_filename}"
+        # 按照原始顺序更新 Markdown 文件中的图片引用
+        new_content = content
+        for match in reversed(image_links):  # 从后向前替换，避免位置变化
+            alt_text, url = match.groups()
+            img_info = image_info_map[url]
+            position = img_info['position']  # 使用原始位置作为图片编号
             
-            # 更新 Markdown 内容
-            pattern = f'!\\[([^\\]]*)\\]\\({re.escape(url)}\\)'
-            content = re.sub(pattern, f'![\\1]({new_path})', content)
+            if img_info['downloaded']:  # 只替换成功下载的图片
+                webp_filename = f"image-{position}.webp"
+                new_path = f"/images/posts/{article_name}/{webp_filename}"
+                new_content = (
+                    new_content[:match.start()] +
+                    f'![{alt_text}]({new_path})' +
+                    new_content[match.end():]
+                )
+            # 下载失败的图片保持原始链接不变
         
-        # 更新本地图片引用
-        local_image_pattern = r'!\[([^\]]*)\]\(([^)]+\.(?:jpg|jpeg|png|webp))\)'
-        local_images = re.findall(local_image_pattern, content, re.IGNORECASE)
-        for i, (alt_text, image_path) in enumerate(local_images, len(downloaded_images) + 1):
-            if not image_path.startswith(('http://', 'https://', '/')):
-                new_path = f"/images/posts/{article_name}/image-{i}.webp"
-                pattern = f'!\\[([^\\]]*)\\]\\({re.escape(image_path)}\\)'
-                content = re.sub(pattern, f'![\\1]({new_path})', content)
+        content = new_content
     
     # 创建新的 Front Matter
     post = frontmatter.Post(content, **metadata)
@@ -220,7 +242,9 @@ def process_markdown_file(input_file, article_name):
     
     print(f"\n处理完成:")
     print(f"- 总计图片链接: {len(image_links)}")
-    print(f"- 成功下载: {len(downloaded_images)}")
+    print(f"- 成功下载: {download_success_count}")
+    if len(image_links) > download_success_count:
+        print(f"- 下载失败: {len(image_links) - download_success_count}")
     print(f"- 更新后的文件: {output_file}")
 
 def main():
