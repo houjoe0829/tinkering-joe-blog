@@ -386,10 +386,9 @@
 <p><img alt="添加订阅" loading="lazy" src="/images/posts/shadowrocket/image2.png"></p>
 <h3 id="2导入配置">（2）导入配置</h3>
 <blockquote>
-<p>⚠️ 导入配置之后记得选择使用该配置哦，我分享了两个配置。<strong>关于如何下载，打开 conf 文件之后会在浏览器的 Tab 里打开，右单击打开的内容，选择&quot;存储为&quot;即可。</strong></p></blockquote>
-<p><a href="/conf/minimal_rules_by_jojo.conf">这是一个非常简单的配置</a></p>
-<p><a href="/conf/modified_by_jojo_2025-01-18.conf">这个有更多的分组，但是也没有带广告</a></p>
-<p>网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往：</p>
+<p>⚠️ 下载或者导入配置之后记得选择使用该配置哦</p></blockquote>
+<p>配置文件在这个链接里：<a href="https://github.com/houjoe0829/shadowrocket-rules-joe">https://github.com/houjoe0829/shadowrocket-rules-joe</a>，或者，直接在添加配置里输入我这个配置下载链接即可：<a href="https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf">https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf</a></p>
+<p>网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往尽可能简化：</p>
 <ul>
 <li>整体规则用 Claude AI 来生成</li>
 <li>尽可能简化规则，不必要的都删除掉，越简单越能减少网络玄学问题</li>
@@ -415,6 +414,91 @@
 <li>建议开启自动更新，在&quot;设置-更新-配置&quot;里，但记得关闭提醒</li>
 <li>建议开启订阅更新，在&quot;设置-更新-订阅&quot;里，开启打开时更新和自动后台更新</li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>最简约的科学上网方案：Quantumlt X</title>
+      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
+      <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>⚠️ 注意：</p>
+<ul>
+<li>这个方案更适合已经了解基本科学上网的人，写得比较简略</li>
+<li>此方案仅适配苹果系设备，不支持 Windows、Android</li>
+<li>科学上网 = 代理软件（QuantumultX） + 海外线路</li>
+<li>最强保险是，买两家线路，更抗风险</li>
+</ul></blockquote>
+<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/quantumult-x/image1.png"></p>
+<h2 id="为什么推荐-quantumult-x">为什么推荐 Quantumult X</h2>
+<ul>
+<li>Quantumult X 只需要购买一次，7.99刀，即可在 Apple 苹果系设备上使用</li>
+<li>是买断制，不需要订阅</li>
+<li>支持 <code>Mac</code>、<code>iPhone</code>、<code>iPad</code>、<code>Apple TV</code> 等苹果全系设备</li>
+<li>好看，也算吧，不过，这个比较个人倾向</li>
+<li>配置全平台通用，节点线路资源和代理规则可分开管理，很方便添加多家机场节点</li>
+<li>稳定性很好，我使用过的中间，QuantumltX &gt; Stash &gt; Shadowrocket</li>
+<li>网络活动抓包很容易看懂，而且可以根据网络自己再添加不同的规则</li>
+</ul>
+<p><a href="https://apps.apple.com/ca/app/quantumult-x/id1443988620">‎Quantumult X 官方下载链接</a></p>
+<h2 id="如何购买-quantumult-x">如何购买 Quantumult X</h2>
+<ul>
+<li>需要国外的 Apple ID 才可以下载这个代理工具</li>
+<li>如果没有的话，万能的淘宝，最优解
+<ul>
+<li>尽量选择那种已经购买 QuantumultX 的账号，或者买了海外 ID 之后，再找商家充值来购买</li>
+</ul>
+</li>
+</ul>
+<h2 id="关于机场服务推荐">关于机场服务推荐</h2>
+<p>软件只是代理工具，真正使用还搭配线路。</p>
+<p>最强保险当然是买两家线路，或者一家机场，但有很多地区的线路节点，分摊风险。</p>
+<ul>
+<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu">https://agneo.co/?rc=epng2diu</a></li>
+<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE">https://renzhe.cloud/auth/register?code=ciDE</a>
+<ul>
+<li>不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问</li>
+</ul>
+</li>
+<li>整体而言，一般建议买一个月试一试，亲身体验一下，以上两家我都用了三年以上，网上也有其他的很多，可以都找一找。</li>
+</ul>
+<h2 id="最佳-quantumlt-x-配置">最佳 Quantumlt X 配置</h2>
+<ul>
+<li><strong>如果嫌麻烦，一般购买的机场线路服务里有配置导入，也可以直接导入即可使用</strong></li>
+<li>不嫌麻烦的话，可以用我的配置文件来修改，都是经验累积，适应性更好，配置文件已经放在下面</li>
+<li>在样例中，已经尽可能去掉多余的规则，尤其是去广告，规则越复杂，越难 Debug</li>
+<li>支持所有节点的自动测速，也支持手动选择特定节点</li>
+<li>支持为 AI 工具设置单独的策略，包括 ChatGPT、Claude、Gemini</li>
+<li>支持聚合多家机场服务商的节点，并按照地区分组</li>
+<li>已经为 Spotify 设置单独的线路，一般比较忌讳香港线路，需留意</li>
+<li>已经为 Slack 设置单独的线路，可以单独选择线路</li>
+<li>Apple 与 iCloud 相关按照 Direct 来处理</li>
+</ul>
+<blockquote>
+<p>⬇️ 配置文件样例</p></blockquote>
+<p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x/image2.png"></p>
+<p><a href="/conf/quantumult_20240722182237.conf">配置文件下载</a></p>
+<ul>
+<li>如截图，在配置文件里的 [server_remote] 模块，替换为自己的机场链接，链接需选择机场提供的的 &ldquo;QuantumltX 订阅链接&rdquo;</li>
+<li>替换之后，机场链接前的 # 符号去掉，替换几个机场就去掉几个</li>
+<li>可以添加多个机场，模板里是两个，可以自己复制并粘贴</li>
+</ul>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>记得在 QuantumltX 设置里修改模式为规则分流，默认的情况下是全部走代理</li>
+</ul>
+<p><img alt="设置界面" loading="lazy" src="/images/posts/quantumult-x/image3.png"></p>
+<ul>
+<li>没有一劳永逸的办法，这个也只能减少折腾</li>
+<li>添加新的机场链接之后，到设置-节点资源-全部更新一下，不然不会生效</li>
+</ul>
+<h2 id="遇到过的问题">遇到过的问题</h2>
+<h3 id="1打开-quantumultx-之后无法使用手机的投屏">（1）打开 QuantumultX 之后无法使用手机的投屏</h3>
+<p>只需要在&quot;设置-其他设置-VPN&quot;打开&quot;兼容性增强&quot;即可。</p>
+<h3 id="2需要定期打开-quantumltx">（2）需要定期打开 QuantumltX</h3>
+<p>似乎在后台无法及时更新，如果遇到网络不正常，打开一次等它更新即可。</p>
+<h2 id="继续补充中">继续补充中</h2>
 ]]></content:encoded>
     </item>
     <item>
