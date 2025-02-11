@@ -246,92 +246,107 @@
    - 对于重要的展示图片，可以适当提高压缩质量
    - 如果发现某些图片显示异常，可以选择保留原格式
 
-### 图片处理规则
+### 图片处理规则（重要！）
 
-为了确保图片处理的一致性和避免误操作，请严格按照以下步骤处理图片：
+为了避免误操作和保持项目的一致性，图片处理必须严格遵循以下步骤：
 
-1. **创建文章专属图片目录**：
+#### 1. 目录结构规范
+```bash
+static/images/posts/
+└── article-name/           # 每篇文章必须使用独立目录
+    ├── image-1.webp       # 图片必须按顺序编号
+    ├── image-2.webp
+    └── image-3.webp
+```
+
+#### 2. 图片处理工作流（必须按顺序执行）
+
+```bash
+# 第一步：为当前文章创建专属图片目录（必须使用文章的英文名）
+article_name="2019-toys-and-gadgets-recap"  # 示例：将此处改为当前文章的英文名
+mkdir -p "static/images/posts/$article_name"
+
+# 第二步：复制图片到文章专属目录
+cd temp_notion/your-notion-folder
+counter=1
+for img in *.*; do
+  if [[ "$img" =~ \.(jpg|jpeg|png|PNG|JPG|JPEG)$ ]]; then
+    ext="${img##*.}"
+    new_name="image-$counter.$ext"
+    cp "$img" "../../static/images/posts/$article_name/$new_name"
+    echo "Copied $img to $new_name"
+    counter=$((counter + 1))
+  fi
+done
+cd ../../
+
+# 第三步：压缩当前文章的图片
+# ⚠️ 注意：使用 compress_article_images.py 而不是 compress_images.py
+python compress_article_images.py "$article_name"
+
+# 第四步：更新当前文章的压缩图片
+cp -r "static/images_compressed/posts/$article_name/"*.webp \
+  "static/images/posts/$article_name/"
+
+# 第五步：清理当前文章的临时文件
+rm -rf "static/images_compressed/posts/$article_name"
+```
+
+#### 3. 图片压缩脚本说明
+
+项目中有两个不同的图片压缩脚本，用途不同：
+
+1. **compress_article_images.py**：
+   - 用途：压缩单篇文章的图片
+   - 使用方法：`python compress_article_images.py "article-name"`
+   - 示例：`python compress_article_images.py "2019-toys-and-gadgets-recap"`
+   - ✅ 这是处理新文章时应该使用的脚本
+
+2. **compress_images.py**：
+   - 用途：仅在特殊情况下用于压缩所有图片（如站点迁移）
+   - ❌ 禁止在日常文章处理中使用
+   - ⚠️ 使用前必须得到管理员确认
+
+#### 4. 严格禁止的操作（❌）
+
+1. **禁止全局压缩**：
    ```bash
-   # 使用文章的英文名创建目录
-   article_name="your-article-name"  # 例如：cycling-adventure
-   mkdir -p "static/images/posts/$article_name"
+   # ❌ 严禁执行以下命令
+   python compress_images.py "static/images" "static/images_compressed"
    ```
 
-2. **复制并重命名图片**：
+2. **禁止多文章同时处理**：
    ```bash
-   # 进入临时目录
-   cd temp_notion/your-notion-folder
+   # ❌ 严禁同时处理多个文章的图片
+   python compress_images.py "static/images/posts/article1" "static/images/posts/article2"
+   ```
+
+3. **禁止使用错误的目录结构**：
+   ```bash
+   # ❌ 禁止将图片直接放在 posts 目录下
+   static/images/posts/image1.webp  # 错误
    
-   # 重命名并复制图片（避免空格，使用连字符）
-   counter=1
-   for img in *.*; do
-     if [[ "$img" =~ \.(jpg|jpeg|png|PNG|JPG|JPEG)$ ]]; then
-       ext="${img##*.}"
-       new_name="image-$counter.$ext"
-       cp "$img" "../../static/images/posts/$article_name/$new_name"
-       echo "Copied $img to $new_name"
-       counter=$((counter + 1))
-     fi
-   done
-   cd ../../
+   # ✅ 必须放在文章专属目录下
+   static/images/posts/article-name/image-1.webp  # 正确
    ```
 
-3. **压缩当前文章的图片**：
-   ```bash
-   # 重要：只压缩当前文章的图片目录
-   python compress_images.py \
-     "static/images/posts/$article_name" \
-     "static/images_compressed/posts/$article_name"
-   ```
+#### 4. 图片处理检查清单
 
-4. **更新压缩后的图片**：
-   ```bash
-   # 只压缩更新当前文章的图片
-   cp "static/images_compressed/posts/$article_name/"*.webp \
-     "static/images/posts/$article_name/"
-   ```
+每次处理图片前，请检查：
 
-5. **清理临时文件**：
-   ```bash
-   # 只删除当前文章的临时压缩目录
-   rm -rf "static/images_compressed/posts/$article_name"
-   ```
+- [ ] 是否已创建文章专属目录？
+- [ ] 目录名是否使用文章的英文名？
+- [ ] 是否只处理当前文章的图片？
+- [ ] 图片是否按顺序编号？
+- [ ] 是否清理了之前的临时文件？
 
-### 注意事项
+#### 5. 常见错误处理
 
-1. **严格遵循目录结构**：
-   - 每篇文章的图片必须放在其专属目录：`static/images/posts/article-name/`
-   - 不要在根目录或其他文章目录中处理图片
-
-2. **图片压缩原则**：
-   - 每次只处理一篇文章的图片
-   - 使用文章专属的输入输出目录
-   - 不要使用项目根目录作为压缩目标
-
-3. **避免常见错误**：
-   - ❌ 不要直接压缩 `static/images` 目录
-   - ❌ 不要在一次操作中处理多篇文章的图片
-   - ❌ 不要使用通用的临时目录
-
-4. **最佳实践**：
-   - ✅ 始终使用文章的英文名作为目录名
-   - ✅ 在处理新文章前清理之前的临时文件
-   - ✅ 压缩完成后立即验证图片质量
-
-5. **文件命名规范**：
-   - 图片文件名格式：`image-1.webp`, `image-2.webp` 等
-   - 不使用原始文件名，避免中文和特殊字符
-   - 统一使用小写字母和数字
-
-6. **质量控制**：
-   - 压缩后的图片大小不应超过原图
-   - WebP 格式的质量参数统一设置为 85%
-   - 压缩后要检查图片是否正常显示
-
-通过严格遵循这些规则，可以确保：
-- 每篇文章的图片都被正确处理
-- 避免误操作影响其他文章的图片
-- 保持项目的整洁和一致性
+如果发现压缩了错误的目录：
+1. 立即停止当前操作
+2. 删除所有 `static/images_compressed` 目录
+3. 从版本控制恢复原始图片
+4. 重新按照正确步骤处理当前文章的图片
 
 ---
 
@@ -371,9 +386,24 @@
      * 统一图片命名和存储位置
      * 转换为 WebP 格式并优化
    - 更新文章中的图片引用路径
-   - 生成最终的博客文章文件
+   - 生成最终的博客文章文件（用原文内容，不要修改）
 
-4. **本地预览确认**：
+4. **图片压缩处理**：
+   ```bash
+   # 假设文章英文名为 your-article-name
+   article_name="your-article-name"
+   
+   # 压缩当前文章的图片
+   python compress_images.py \
+     "static/images/posts/$article_name" \
+     "static/images_compressed/posts/$article_name"
+   
+   # 更新压缩后的图片
+   cp "static/images_compressed/posts/$article_name/"*.webp \
+     "static/images/posts/$article_name/"
+   ```
+
+5. **本地预览确认**：
    ```bash
    # 启动 Hugo 预览
    hugo server -D
@@ -382,15 +412,17 @@
    - 确认所有图片能正常加载
    - 检查文章格式和样式是否正确
 
-5. **提交更新**：
+6. **提交更新**：
    - 确认一切正常后，提交更新到 Git 仓库
    - 等待 Cloudflare Pages 自动部署完成
    - 在线检查文章的最终效果
 
-6. **清理临时文件**：
+7. **清理临时文件**：
    ```bash
    # 清理临时文件和目录
-   rm -rf temp_notion Notionfiles/*.zip
+   rm -rf "static/images_compressed/posts/$article_name"  # 清理压缩临时目录
+   rm -rf temp_notion  # 清理解压的临时目录
+   rm -f Notionfiles/*.zip  # 清理原始 ZIP 文件
    ```
 
 ### 技术实现说明
@@ -421,65 +453,4 @@
    - 避免特殊字符和空格
 
 2. **图片处理**：
-   - 所有图片统一存放在 `static/images/posts/{article-name}/` 目录
-   - 自动转换为 WebP 格式以优化加载速度
-   - 使用统一的命名格式：`image-1.webp`, `image-2.webp` 等
-
-3. **元数据处理**：
-   - 使用 Notion 页面的创建时间作为文章发布时间
-   - 自动提取标签信息
-   - 自动生成文章描述（从正文提取）
-
-4. **内容清理**：
-   - 自动移除 Notion 特有的元数据
-   - 清理重复的标题
-   - 规范化空行和格式
-
-5. **质量控制**：
-   - 每次处理完成后必须进行本地预览
-   - 检查图片加载和显示效果
-   - 确认文章格式和样式正确
-
-## 自动化迁移技术方案 (开发者参考)
-
-本博客的 Notion 文章自动化迁移功能，由以下技术方案实现，供开发者参考：
-
-**核心编程语言**：**Python**
-
-**主要依赖库**：
-
-*   `zipfile`:  用于解压和处理 Notion 导出的 ZIP 文件。
-*   `frontmatter`:  用于解析和操作 Markdown 文件中的 Frontmatter 元数据。
-*   `re` (正则表达式):  用于进行文本内容匹配、替换和格式化，例如清理 Notion 特殊语法、转换代码块等。
-*   `datetime`:  用于处理日期和时间信息，特别是 Notion 页面的创建时间。
-*   `os` 和 `shutil`:  用于文件和目录操作，例如创建目录、移动文件、重命名文件等。
-
-**核心处理流程**：
-
-1.  **ZIP 文件解压**：使用 `zipfile` 库解压用户提供的 ZIP 文件，获取 Notion 导出的 Markdown 文件和图片资源。
-2.  **Markdown 文件解析**：
-    *   遍历解压后的目录，识别 Markdown 文件。
-    *   使用 `frontmatter` 库加载 Markdown 文件，解析 Frontmatter 元数据和正文内容。
-3.  **元数据提取与转换**：
-    *   从 Markdown 文件名或特定文件中尝试提取文章标题。
-    *   **关键步骤**：解析 Notion 导出文件中的元数据信息（例如 CSV 文件或 JSON 文件，如果 Notion 导出包含），尝试获取页面的原始创建时间 `created_time`。
-    *   构建符合 Hugo Frontmatter 规范的元数据，包括 `title`, `date` (设置为提取到的创建时间), `draft`, `description`, `tags`, `author` 等字段。
-4.  **内容清洗与转换**：
-    *   **Notion 语法清理**：使用正则表达式 (`re`) 清理 Notion 特有的 Markdown 语法，例如移除公式块、调整代码块语法等，确保内容与 Hugo 兼容。
-    *   **图片路径替换**：
-        *   识别 Markdown 内容中的图片引用链接，通常是 Notion 的 S3 链接或本地相对路径。
-        *   将图片下载或复制到 Hugo 项目的 `static/images/posts/{文章英文标题}/` 目录下。
-        *   将 Markdown 中的图片引用路径更新为 Hugo 博客的相对路径格式，例如 `![图片描述](/images/posts/{文章英文标题}/image.jpg)`。
-5.  **Hugo Markdown 文件生成**：
-    *   使用 `frontmatter` 库，将清洗转换后的 Markdown 内容和构建的 Frontmatter 元数据重新组合，生成符合 Hugo 格式的 Markdown 文件。
-    *   将生成的 Markdown 文件保存到 `content/drafts/` 目录下，等待用户进一步编辑和发布。
-6.  **生成迁移报告**：
-    *   记录每个文件的处理状态，包括成功处理的文件名、图片数量、提取到的创建时间等信息。
-    *   如果处理过程中发生任何错误或异常，记录错误信息，方便问题排查和用户参考。
-    *   将迁移报告输出为文本文件或 Markdown 文件，与迁移结果一起提供给用户。
-
-**用户操作透明化**：
-
-整个自动化迁移过程，用户只需提供 Notion 导出的 ZIP 文件，无需手动运行任何脚本或进行复杂配置。AI 助手在后台完成所有技术处理，并将最终结果以 Hugo 博客文件的形式交付给用户，实现真正的 "一键迁移" 体验。
-
----
+   - 所有图片统一存放在 `
