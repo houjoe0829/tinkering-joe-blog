@@ -35,23 +35,23 @@ author: "Joe"
 
 在停车的一角，最受欢迎的大概就是水边的天鹅，每个人都要与它们合影一番。后来，还巧遇了每天来喂天鹅的两位日本摄影大叔，其中一个在天鹅群和人群都算社牛的大叔当起了"导游"，中文、日语、英语无缝切换，引导大家与天鹅一一合影，这也是我们第一次见到如此活泼的日本人，算是这破天气里的意外之旅了。
 
-![山中湖边](/images/posts/first-time-in-japan/IMG_3933.jpg)
+![山中湖边](/images/posts/first-time-in-japan/IMG_3933.webp)
 
-![喂天鹅的另一位日本大叔，沉默低调](/images/posts/first-time-in-japan/IMG_3979.jpg)
+![喂天鹅的另一位日本大叔，沉默低调](/images/posts/first-time-in-japan/IMG_3979.webp)
 
 ## 灌篮高手的镰仓
 
 从东京乘坐两个多小时的城铁到了镰仓，著名的灌篮高手主题取景地。我们住在了一个接近胶囊旅馆风格的民宿，房间里是上下铺，洗澡和厕所是公用的，虽然空间局促，但是格外的干净，而且上铺的窗户在早上打开就是面朝海滩。
 
-![镰仓民宿](/images/posts/first-time-in-japan/IMG_4050.jpg)
+![镰仓民宿](/images/posts/first-time-in-japan/IMG_4050.webp)
 
-![镰仓海滩](/images/posts/first-time-in-japan/IMG_4062.jpg)
+![镰仓海滩](/images/posts/first-time-in-japan/IMG_4062.webp)
 
 而坏天气从我们到镰仓就结束了，没想到在这里看到了富士山，虽然隔着一个海湾，但心愿已成。
 
-![远眺富士山](/images/posts/first-time-in-japan/IMG_4099.jpg)
+![远眺富士山](/images/posts/first-time-in-japan/IMG_4099.webp)
 
-![镰仓海岸](/images/posts/first-time-in-japan/IMG_4142.jpg)
+![镰仓海岸](/images/posts/first-time-in-japan/IMG_4142.webp)
 
 如果要形容镰仓的感受，悠闲、宁静、面朝大海，值得再来几次，从凌晨六七点就有人在冲浪，而这里的沙滩是一种格外的安逸，太舒适了，仅仅是散散步就觉得足矣。
 
@@ -61,23 +61,23 @@ author: "Joe"
 
 到了大阪的第二天，就是一天的环球影城之旅，北京的环球影城的排队阴影尚存，我们索性直奔只在大阪才有的 Nintendo World，跳过其他。
 
-![Nintendo World](/images/posts/first-time-in-japan/IMG_4616.jpg)
+![Nintendo World](/images/posts/first-time-in-japan/IMG_4616.webp)
 
 从进入园区的那一刻，就像进入到游戏世界，许多人和我们一样，戴着不同角色的帽子，而我戴着耀西，大摇大摆走在园区里。那些只在游戏里可见的场景被原样搬到了现实，我们从超级玛丽的水管进入 Nintendo World，如奥德赛一样的关卡山直接呈现在眼前，不时还可以看到真人大小的各种游戏角色时出现在人群里。
 
-![马里奥世界](/images/posts/first-time-in-japan/IMG_4281.jpg)
+![马里奥世界](/images/posts/first-time-in-japan/IMG_4281.webp)
 
 如果稍微留意的话就会发现，即使在排队的地方出现的问号宝箱是真的可以顶的，顶了之后的游戏奖励会出现戴着的任天堂手环里，恰到好处的"幼稚"，非常喜欢。
 
-![游戏场景](/images/posts/first-time-in-japan/IMG_4338.jpg)
+![游戏场景](/images/posts/first-time-in-japan/IMG_4338.webp)
 
 不过，真正属于任天堂的高光时刻，不是在任天堂园区内，而是园区外，也就是由马立奥压轴的花车游行，而且每隔一段时间，花车会停下来邀请路人一起"发疯"，High 就行了。
 
-![花车游行](/images/posts/first-time-in-japan/IMG_4431.jpg)
+![花车游行](/images/posts/first-time-in-japan/IMG_4431.webp)
 
 与任天堂园区的氛围对比起来，在京都的任天堂总部就无比日本打工族一些，远看像一座厂房一样，灰白色调的外墙没有一点红蓝主机的灵动，甚至，整个总部没有任何接待游客的服务中心，只有一个保安叉着腰站在大门内，如果不是"任天堂株式会社"的牌子挂在门口，毫不怀疑这是一个军事保护区……
 
-![任天堂总部](/images/posts/first-time-in-japan/IMG_4519.jpg)
+![任天堂总部](/images/posts/first-time-in-japan/IMG_4519.webp)
 
 不过，在这里，我们看到了长相最好的樱花树，也算变相达成了夙愿。
 

@@ -39,10 +39,10 @@ author: "Joe"
 
 遗体火化过程约一小时，随后殡仪馆的守灵仪式便告结束。之后我们带着逝者"回家"，车队全程打着双闪。不过，即便回到家中，这也仅仅是守灵的第一夜。带着骨灰的遗物还需在家中继续守灵，更多的亲属会前来告别。待再守一夜后，才会正式入土为安。
 
-![殡仪馆外景](/images/funeral-home-vigil/IMG_2386.jpeg)
+![殡仪馆外景](/images/funeral-home-vigil/IMG_2386.webp)
 
-![灵堂布置](/images/funeral-home-vigil/IMG_2412.jpeg)
+![灵堂布置](/images/funeral-home-vigil/IMG_2412.webp)
 
-![夜晚的生命主题公园](/images/funeral-home-vigil/IMG_2472.jpeg)
+![夜晚的生命主题公园](/images/funeral-home-vigil/IMG_2472.webp)
 
-![告别仪式](/images/funeral-home-vigil/IMG_2475.jpeg) 
+![告别仪式](/images/funeral-home-vigil/IMG_2475.webp) 

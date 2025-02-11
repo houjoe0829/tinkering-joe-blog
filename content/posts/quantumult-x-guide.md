@@ -58,7 +58,7 @@ author: "Joe"
 
 > ⬇️ 配置文件样例
 
-![配置示例](/images/posts/quantumult-x/image2.png)
+![配置示例](/images/posts/quantumult-x/image2.webp)
 
 [配置文件下载](/conf/quantumult_20240722182237.conf)
 
