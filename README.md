@@ -287,31 +287,49 @@
      ---
      ```
 
-4. **图片处理**：
+4. **图片处理（仅处理当前文章的图片）**：
    ```bash
-   # 为当前文章创建图片目录
-   mkdir -p static/images/posts/article-name
+   # 为当前文章创建图片目录（使用文章的英文名）
+   article_name="my-article-name"
+   mkdir -p "static/images/posts/$article_name"
 
-   # 复制图片到目标目录
-   cp "temp_notion/文章目录/"*.{jpg,jpeg,png} static/images/posts/article-name/
+   # 重命名并复制图片（避免空格，使用连字符）
+   # 例如：将 "image 1.png" 重命名为 "image-1.png"
+   cd temp_notion
+   counter=1
+   for img in *.{jpg,jpeg,png}; do
+     if [ -f "$img" ]; then
+       # 提取文件扩展名
+       ext="${img##*.}"
+       # 重命名为 image-1.png, image-2.png 等格式
+       new_name="image-$counter.$ext"
+       cp "$img" "../static/images/posts/$article_name/$new_name"
+       counter=$((counter + 1))
+     fi
+   done
+   cd ..
 
-   # 压缩当前文章的图片
-   python compress_images.py static/images/posts/article-name static/images_compressed/posts/article-name
+   # 仅压缩当前文章的图片
+   python compress_images.py \
+     "static/images/posts/$article_name" \
+     "static/images_compressed/posts/$article_name"
 
-   # 将压缩后的图片移回原目录
-   cp static/images_compressed/posts/article-name/*.webp static/images/posts/article-name/
+   # 将压缩后的 WebP 图片移回原目录
+   cp "static/images_compressed/posts/$article_name/"*.webp "static/images/posts/$article_name/"
    ```
 
 5. **更新图片引用**：
-   - 在文章中更新图片引用路径为 WebP 格式：
+   - 在文章中更新图片引用路径，使用规范的格式：
      ```markdown
-     ![图片描述](/images/posts/article-name/image.webp)
+     ![图片描述](/images/posts/article-name/image-1.webp)
      ```
+   - 确保所有图片引用都使用连字符格式的文件名
+   - 确保所有图片引用都指向 WebP 格式
 
 6. **清理工作**：
    ```bash
-   # 清理临时文件
-   rm -rf temp_notion static/images_compressed
+   # 清理临时文件和目录
+   rm -rf temp_notion static/images_compressed Notionfiles/*.zip
    ```
 
 7. **本地预览确认**：
@@ -332,6 +350,7 @@
 - 严格遵循一次只处理一篇文章的原则，确保质量和准确性
 - 必须使用 Notion 文章的原始创建时间，不要使用当前日期或其他时间
 - 图片压缩只处理当前文章的图片，避免重复处理其他文章的图片
+- 图片文件名必须使用连字符，避免空格
 - 处理完成后及时清理临时文件
 - 如果一个 ZIP 包含多篇文章，在完成当前文章的所有步骤后，再开始处理下一篇
 
