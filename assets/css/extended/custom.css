@@ -91,6 +91,14 @@
     line-height: 1.8;
 }
 
+@media screen and (max-width: 768px) {
+    .post-content,
+    .post-content p {
+        font-size: 18px !important;  /* 移动端增大字体 */
+        line-height: 1.7;  /* 适当调整行高以提升移动端阅读体验 */
+    }
+}
+
 /* 目录样式优化 */
 .toc {
     margin: 0 2px 40px 2px;
