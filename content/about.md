@@ -31,4 +31,3 @@ hideMeta: true
 
 - SparkFlow (纯开发练手)
   > ✨ Type like texting, think like connecting. 希望做一款极简卡片笔记，让你像聊天一样快速记录，像 Logseq 那样自由关联。最终目标是，Capture your idea instantly, let AI handle the rest.
-
