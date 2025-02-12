@@ -12,7 +12,7 @@ title: "美食是一场发现之旅"
 
 </aside>
 
-![重口味的老家菜](/images/posts/food-discovery-journey/image-1.webp)
+![重口味的老家菜](/images/posts/food-discovery-journey/image-2.webp)
 
 重口味的老家菜
 
@@ -34,7 +34,7 @@ title: "美食是一场发现之旅"
 
 而一旦味蕾打开，我可以毫无顾忌，品尝印度的咖喱、埃塞俄比亚的英吉拉、越南的米粉、韩国的泡菜、日本的料理，以及贝加尔湖畔的腌制鱼，甚至在英格兰的炸鱼薯条，我都可以品出其中的有趣味道。我发现，原来人可以不再是那个只会在家乡味道中徘徊的人。我开始理解，芥末原本只是一种压制腥味的调料，但在不同的料理中却变成了一种全新的味道体验，食物本身也在变化。
 
-![埃塞俄比亚菜：英吉拉](/images/posts/food-discovery-journey/image-2.webp)
+![埃塞俄比亚菜：英吉拉](/images/posts/food-discovery-journey/image-1.webp)
 
 就如对粤菜的转变一样，我们的味蕾是可以改变的，但这需要抵抗本能的，突破之后，我们可以体验更多。
 

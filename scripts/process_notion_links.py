@@ -21,6 +21,7 @@ import hashlib
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 import shutil
+import json
 
 def download_image(url, output_dir):
     """下载图片并返回本地文件名"""
@@ -172,6 +173,7 @@ def process_markdown_file(input_file, article_name):
     
     # 创建图片信息映射，包含所有图片（无论是否下载成功）
     image_info_map = {}
+    image_order = []  # 新增：保存图片顺序
     download_success_count = 0
     
     # 按顺序处理每个图片
@@ -204,12 +206,19 @@ def process_markdown_file(input_file, article_name):
             download_success_count += 1
         
         image_info_map[url] = img_info
+        image_order.append(img_info)  # 新增：按顺序保存图片信息
     
     # 处理下载的图片
     if os.listdir(temp_image_dir):
         print("\n处理下载的图片...")
-        # 使用图片处理脚本处理下载的图片
-        os.system(f'python process_notion_images.py {article_name} --input "{temp_image_dir}"')
+        
+        # 新增：保存图片顺序信息到 JSON 文件
+        order_file = os.path.join(temp_image_dir, 'image_order.json')
+        with open(order_file, 'w', encoding='utf-8') as f:
+            json.dump(image_order, f, ensure_ascii=False, indent=2)
+        
+        # 使用图片处理脚本处理下载的图片，传入顺序文件
+        os.system(f'python scripts/process_notion_images.py {article_name} --input "{temp_image_dir}" --order "{order_file}"')
         
         # 按照原始顺序更新 Markdown 文件中的图片引用
         new_content = content

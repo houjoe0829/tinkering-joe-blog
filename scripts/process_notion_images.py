@@ -7,10 +7,12 @@
 1. 将 Notion 导出的图片重命名为规范格式
 2. 压缩图片并转换为 WebP 格式
 3. 保持单一职责，只处理当前文章的图片
+4. 支持按照文章中的实际顺序重命名图片
 """
 
 import os
 import sys
+import json
 import shutil
 from pathlib import Path
 from PIL import Image
@@ -49,11 +51,21 @@ def process_image(input_path, output_path, quality=85):
         print(f"处理图片 {input_path} 时出错: {str(e)}")
         return False
 
+def load_image_order(order_file):
+    """从 JSON 文件加载图片顺序信息"""
+    try:
+        with open(order_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"读取顺序文件失败: {str(e)}")
+        return None
+
 def main():
     parser = argparse.ArgumentParser(description='处理 Notion 导出文章的图片')
     parser.add_argument('article_name', help='文章的英文名称（用作目录名）')
     parser.add_argument('--input', '-i', required=True, help='Notion 导出的图片所在目录')
     parser.add_argument('--quality', '-q', type=int, default=85, help='压缩质量 (1-100), 默认 85')
+    parser.add_argument('--order', '-o', help='包含图片顺序信息的 JSON 文件路径')
     args = parser.parse_args()
 
     # 确保输入目录存在
@@ -76,20 +88,52 @@ def main():
 
     print(f"找到 {len(image_files)} 个图片文件")
     
+    # 加载图片顺序信息（如果提供）
+    image_order = None
+    if args.order:
+        image_order = load_image_order(args.order)
+    
     # 处理每个图片
     success_count = 0
-    for i, img_path in enumerate(sorted(image_files), 1):
-        # 生成新的文件名
-        new_name = f"image-{i}.webp"
-        output_path = os.path.join(output_dir, new_name)
-        
-        print(f"处理第 {i}/{len(image_files)} 个图片: {img_path.name} -> {new_name}")
-        
-        if process_image(str(img_path), output_path, args.quality):
-            success_count += 1
-            print(f"✓ 成功处理: {new_name}")
-        else:
-            print(f"✗ 处理失败: {img_path.name}")
+    processed_files = []
+    
+    if image_order:
+        # 按照指定顺序处理图片
+        for i, file_info in enumerate(image_order, 1):
+            original_name = file_info['local_filename']
+            if not original_name:
+                continue
+                
+            img_path = Path(args.input) / original_name
+            if not img_path.exists():
+                print(f"警告: 找不到文件 {original_name}")
+                continue
+                
+            new_name = f"image-{i}.webp"
+            output_path = os.path.join(output_dir, new_name)
+            
+            print(f"处理第 {i}/{len(image_order)} 个图片: {img_path.name} -> {new_name}")
+            
+            if process_image(str(img_path), output_path, args.quality):
+                success_count += 1
+                processed_files.append(img_path)
+                print(f"✓ 成功处理: {new_name}")
+            else:
+                print(f"✗ 处理失败: {img_path.name}")
+    else:
+        # 按文件名排序处理图片
+        for i, img_path in enumerate(sorted(image_files), 1):
+            new_name = f"image-{i}.webp"
+            output_path = os.path.join(output_dir, new_name)
+            
+            print(f"处理第 {i}/{len(image_files)} 个图片: {img_path.name} -> {new_name}")
+            
+            if process_image(str(img_path), output_path, args.quality):
+                success_count += 1
+                processed_files.append(img_path)
+                print(f"✓ 成功处理: {new_name}")
+            else:
+                print(f"✗ 处理失败: {img_path.name}")
 
     print(f"\n处理完成:")
     print(f"- 总计图片: {len(image_files)}")

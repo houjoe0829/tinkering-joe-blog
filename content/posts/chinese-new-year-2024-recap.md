@@ -17,7 +17,7 @@ title: "Joe's Recap：过年那些事儿"
 
 ![冻雨覆盖的树枝](/images/posts/chinese-new-year-2024-recap/image-0.webp)
 
-![路边的积雪](/images/posts/chinese-new-year-2024-recap/image-1.webp)
+![路边的积雪](/images/posts/chinese-new-year-2024-recap/image-8.webp)
 
 但，我们仍然是幸运的，冻雨最严重的地方在湖北荆门、仙桃附近，这并不是我们的必经之路，当武汉范围的雨夹雪开始时，我们正在武汉周边的各个高速口突围，绕城大半圈，上上下下，如同鬼打墙般，不是堵死就是直接高速封路。当雪肉眼可见得下大时，我们索性直接下了高速，找酒店住下，在武汉逗留了两个晚上。
 
@@ -45,7 +45,7 @@ title: "Joe's Recap：过年那些事儿"
 
 当央视春晚悄无声息得替代了大部分的守岁活动之后，除夕夜就是全家人吃着瓜子看着春晚，直到 12 点。而从春晚不以娱乐观众开始，加上受不了主持人像幼儿园老师一样的智障对话，已经好多年抗拒春晚，守岁基本就分崩离析了，各玩各的，到了 12 点起来放个鞭炮，守岁结束。
 
-![守岁时的零食](/images/posts/chinese-new-year-2024-recap/image-2.webp)
+![守岁时的零食](/images/posts/chinese-new-year-2024-recap/image-1.webp)
 
 ## Stay foolish，stay hungry
 
@@ -74,11 +74,11 @@ Stay hungry，春节期间，保持饥饿感真的是一种难能可贵的节奏
 
 安庆是我们回程特意经停的城市，在没有了解它之前，毫无存在感，但是，它就像一个没落的大户人家，曾经是和武汉、南京、重庆齐名的城市，有着无数辉煌的过去，那句"树上的鸟儿成双对……"的黄梅戏起源这个地方，安徽省简称"皖"也是源于这里。
 
-![安庆街景](/images/posts/chinese-new-year-2024-recap/image-3.webp)
+![安庆街景](/images/posts/chinese-new-year-2024-recap/image-2.webp)
 
 安庆，也称"宜城"，变相与我的老家同名，不过，不只是名字，饮食也很像，虽然主食是米饭，但早餐以面食为主，推荐其肉丝炒面和牛肉包。安庆的炒面最与众不同的地方是，同样是炒面，其炒完仍带有卤汁，湿润而入味。
 
-![安庆的肉丝炒面](/images/posts/chinese-new-year-2024-recap/image-4.webp)
+![安庆的肉丝炒面](/images/posts/chinese-new-year-2024-recap/image-3.webp)
 
 ## 最近的精神角落
 
@@ -86,19 +86,19 @@ Stay hungry，春节期间，保持饥饿感真的是一种难能可贵的节奏
 
 很喜欢这种可以窥见另一种生活的读物，之前还读过一本讲快递员的，但读不下去，我还是非常在乎文笔的，不过，很喜欢这本书的文字风格，娓娓道来，不是那种无聊的流水账。
 
-![《我的母亲做保洁》](/images/posts/chinese-new-year-2024-recap/image-5.webp)
+![《我的母亲做保洁》](/images/posts/chinese-new-year-2024-recap/image-4.webp)
 
 ### 游戏：星际拓荒
 
 这段期间玩得最投入的游戏了，虽然本质上是解谜类，但是玩家可以驾驶自己的飞船在一个迷你版的太阳系里自由探索，寻找故事的答案，每天不断起飞到不同的星球，如无意外，这应该是我的 2024 年度游戏之一了。
 
-![星际拓荒](/images/posts/chinese-new-year-2024-recap/image-6.webp)
+![星际拓荒](/images/posts/chinese-new-year-2024-recap/image-5.webp)
 
 ### 游戏：吸血鬼幸存者
 
 大年三十的晚上开始的游戏，没想到如此上头，从春晚前开始，一口气到守岁结束才放下，玩法简单，半小时以内一局，但整个屏幕都在子弹横飞，玩家只需要控制左摇杆即可……非常爽快
 
-![吸血鬼幸存者](/images/posts/chinese-new-year-2024-recap/image-7.webp)
+![吸血鬼幸存者](/images/posts/chinese-new-year-2024-recap/image-6.webp)
 
 ### 影视剧：《曼达洛人》1-3季
 
@@ -106,7 +106,7 @@ Stay hungry，春节期间，保持饥饿感真的是一种难能可贵的节奏
 
 曼达洛人有种孤胆英雄的侠客感，游走四方，类似《巫师》系列的杰洛特，做任务赚佣金，但是逐步发现自己内心的正义感，以及值得改变的很多偏见，我们跟随主角一起在成长。除此之外，太空、飞船、外星人，每一个科幻元素都质感到位，画面几乎不差于电影。
 
-![曼达洛人](/images/posts/chinese-new-year-2024-recap/image-8.webp)
+![曼达洛人](/images/posts/chinese-new-year-2024-recap/image-7.webp)
 
 ## 不过
 
