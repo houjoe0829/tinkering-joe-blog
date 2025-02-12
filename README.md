@@ -1,4 +1,4 @@
-# Joe 的折腾日记  (基于 Hugo + Cloudflare Pages)
+# Joe 的折腾日记
 
 这个博客使用 Hugo 静态网站生成器构建，并托管在 Cloudflare Pages 上。
 
