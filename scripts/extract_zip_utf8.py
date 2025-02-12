@@ -127,6 +127,60 @@ def generate_frontmatter(title, description="", tags=None):
                               sort_keys=False,
                               default_style='\"') + "---\n\n"
 
+def clean_notion_metadata(content):
+    """清理 Notion 导出的元数据
+    
+    Args:
+        content: 原始文章内容
+    
+    Returns:
+        清理后的文章内容
+    """
+    # 分割内容为行
+    lines = content.split('\n')
+    
+    # 跳过 Front Matter
+    content_start = 0
+    if lines[0].strip() == '---':
+        for i in range(1, len(lines)):
+            if lines[i].strip() == '---':
+                content_start = i + 1
+                break
+    
+    # 清理 Notion 特有的元数据行
+    cleaned_lines = []
+    skip_patterns = [
+        r'^Created:.*$',
+        r'^Created time:.*$',
+        r'^Updated:.*$',
+        r'^Last edited:.*$',
+        r'^Last edited time:.*$',
+        r'^Tags:.*$',
+        r'^Author:.*$'
+    ]
+    
+    # 编译正则表达式
+    skip_patterns = [re.compile(pattern) for pattern in skip_patterns]
+    
+    # 处理正文内容
+    for line in lines[content_start:]:
+        # 检查是否匹配任何需要跳过的模式
+        should_skip = any(pattern.match(line.strip()) for pattern in skip_patterns)
+        if not should_skip:
+            cleaned_lines.append(line)
+    
+    # 重新组合内容
+    if content_start > 0:
+        # 保留原始的 Front Matter
+        cleaned_content = '\n'.join(lines[:content_start] + cleaned_lines)
+    else:
+        cleaned_content = '\n'.join(cleaned_lines)
+    
+    # 移除多余的空行
+    cleaned_content = re.sub(r'\n{3,}', '\n\n', cleaned_content)
+    
+    return cleaned_content.strip() + '\n'
+
 def process_content(content, article_name):
     """处理文章内容，移除重复标题和处理链接
     
@@ -137,6 +191,9 @@ def process_content(content, article_name):
     Returns:
         处理后的文章内容
     """
+    # 首先清理 Notion 元数据
+    content = clean_notion_metadata(content)
+    
     lines = content.split('\n')
     
     # 移除开头的标题（# 开头的行）

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Joe 的折腾日记</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:54018/posts/</link>
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54018/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:1313/posts/nezha-movie-review/</link>
+      <link>http://localhost:54018/posts/nezha-movie-review/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
+      <guid>http://localhost:54018/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:1313/posts/huangshan-half-day-tour/</link>
+      <link>http://localhost:54018/posts/huangshan-half-day-tour/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/huangshan-half-day-tour/</guid>
+      <guid>http://localhost:54018/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <link>http://localhost:54018/posts/cyberpunk-2077-hundred-hours-dream/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <guid>http://localhost:54018/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -85,9 +85,9 @@
     </item>
     <item>
       <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:1313/posts/poker-game-rules/</link>
+      <link>http://localhost:54018/posts/poker-game-rules/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/poker-game-rules/</guid>
+      <guid>http://localhost:54018/posts/poker-game-rules/</guid>
       <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
@@ -175,9 +175,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
+      <link>http://localhost:54018/posts/ai-chat-lack-compression-history/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
+      <guid>http://localhost:54018/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -189,9 +189,9 @@
     </item>
     <item>
       <title>镇江小城，极简半日游</title>
-      <link>http://localhost:1313/posts/zhenjiang-half-day-tour/</link>
+      <link>http://localhost:54018/posts/zhenjiang-half-day-tour/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zhenjiang-half-day-tour/</guid>
+      <guid>http://localhost:54018/posts/zhenjiang-half-day-tour/</guid>
       <description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description>
       <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
 <p>来镇江并非什么深思熟虑的计划，只是因为有事要去南京，由于实在去过太多次，老婆临时加了这个途径点。</p>
@@ -234,9 +234,9 @@
     </item>
     <item>
       <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:1313/posts/2024-favorite-things/</link>
+      <link>http://localhost:54018/posts/2024-favorite-things/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-favorite-things/</guid>
+      <guid>http://localhost:54018/posts/2024-favorite-things/</guid>
       <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
       <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
@@ -328,9 +328,9 @@
     </item>
     <item>
       <title>自驾和骑行的新伴侣：AI 耳机</title>
-      <link>http://localhost:1313/posts/ola-friend-ai-earphone/</link>
+      <link>http://localhost:54018/posts/ola-friend-ai-earphone/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ola-friend-ai-earphone/</guid>
+      <guid>http://localhost:54018/posts/ola-friend-ai-earphone/</guid>
       <description>体验 Ola Friend AI 耳机的使用感受，从开放式耳机的需求出发，探讨它在自驾和骑行场景下的优缺点，以及 AI 助手如何改变我们的日常生活。</description>
       <content:encoded><![CDATA[<p>第一次感觉，很多想知道的东西，真的可以唾手可得。这极大地满足了我的好奇心，虽然我问的问题都是些没什么意义的，但于当时的自己而言，很有趣呀。</p>
 <p>&ldquo;豆包豆包，江门有什么好吃的好玩的&rdquo;</p>
@@ -372,9 +372,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</link>
+      <link>http://localhost:54018/posts/let-go-obsession-turn-on-heater/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</guid>
+      <guid>http://localhost:54018/posts/let-go-obsession-turn-on-heater/</guid>
       <description>记录一下在寒冷天气中，如何放下执念，拥抱舒适的取暖方式，提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -390,9 +390,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:1313/posts/funeral-home-vigil/</link>
+      <link>http://localhost:54018/posts/funeral-home-vigil/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/funeral-home-vigil/</guid>
+      <guid>http://localhost:54018/posts/funeral-home-vigil/</guid>
       <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -418,9 +418,9 @@
     </item>
     <item>
       <title>性价比最高的科学上网方案：Shadowrocket</title>
-      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
+      <link>http://localhost:54018/posts/shadowrocket-guide/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
+      <guid>http://localhost:54018/posts/shadowrocket-guide/</guid>
       <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -507,9 +507,9 @@
     </item>
     <item>
       <title>最实用的技能之一：做一本双语电子书</title>
-      <link>http://localhost:1313/posts/how-to-make-bilingual-ebook/</link>
+      <link>http://localhost:54018/posts/how-to-make-bilingual-ebook/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-make-bilingual-ebook/</guid>
+      <guid>http://localhost:54018/posts/how-to-make-bilingual-ebook/</guid>
       <description>介绍如何使用沉浸式翻译插件和 ChatGPT，将英文电子书转换为双语对照版本，让阅读不再受语言限制。</description>
       <content:encoded><![CDATA[<p>这是最近最有用的技能了。</p>
 <p>由于看书比较杂，为了跨过语言的障碍，扩大看书的选择范围，真正实现看书无国界，开始尝试翻译只有英文资源或者中文翻译较差的书籍。</p>
@@ -536,9 +536,9 @@
     </item>
     <item>
       <title>说走就走的骑行</title>
-      <link>http://localhost:1313/posts/cycling-adventure/</link>
+      <link>http://localhost:54018/posts/cycling-adventure/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cycling-adventure/</guid>
+      <guid>http://localhost:54018/posts/cycling-adventure/</guid>
       <description>从一圈只能骑行10公里开始，到现在已经骑行超过2000公里，穿行了15个城市。这是一个关于如何培养骑行兴趣，以及骑行给生活带来改变的故事。</description>
       <content:encoded><![CDATA[<p>现在，每到一个地方，如果不骑行压过，心情就像有了便宜却不得占的懊悔，少了一种功德上的圆满，比如下雨的洛阳，比如时间不允许的烟台养马岛……</p>
 <p><img alt="骑行装备" loading="lazy" src="/images/posts/cycling-adventure/image-17674.webp"></p>
@@ -588,9 +588,9 @@
     </item>
     <item>
       <title>最简约的科学上网方案：Quantumlt X</title>
-      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
+      <link>http://localhost:54018/posts/quantumult-x-guide/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
+      <guid>http://localhost:54018/posts/quantumult-x-guide/</guid>
       <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -673,9 +673,9 @@
     </item>
     <item>
       <title>居然是第一次去日本</title>
-      <link>http://localhost:1313/posts/first-time-in-japan/</link>
+      <link>http://localhost:54018/posts/first-time-in-japan/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
+      <guid>http://localhost:54018/posts/first-time-in-japan/</guid>
       <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
       <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
 <p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
@@ -732,10 +732,73 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>Joe&#39;s Recap：过年那些事儿</title>
+      <link>http://localhost:54018/posts/chinese-new-year-2024-recap/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:54018/posts/chinese-new-year-2024-recap/</guid>
+      <description>春节回老家的一些感受和思考，以及路上的见闻</description>
+      <content:encoded><![CDATA[<p>Created: February 17, 2024 6:40 PM
+Updated: October 13, 2024 3:18 PM</p>
+<p>从自驾返回杭州开始，已经慢慢构思着这篇文章的大纲，也算是自驾的乐趣之一。回程 1200 公里左右，我们把行程变成了三天两晚的边走边逛，原本准备去江西南昌尝一尝瓦罐汤，不过，省会城市周边的高速现状让我们不得不改了线路，改为绕道安徽安庆，途径黄山市宏村，再返回杭州，不算辛苦的奔波。</p>
+<h2 id="湖北的大雪与冻雨">湖北的大雪与冻雨</h2>
+<p>2024 年春节最大的新闻始于湖北大雪与冻雨带来的华中地区交通瘫痪。</p>
+<p>在大雪中，我一开始没有分清冻雨给这次灾害带来的加成，直到留意到路边被压弯的树，一种类似于雾凇的冰覆盖在树的表层，这确实不是雪可以做到的。在武汉穿行时，不时可以看到已经压断的树枝倒在路边。</p>
+<p><img alt="冻雨覆盖的树枝" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-0.webp"></p>
+<p><img alt="路边的积雪" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-1.webp"></p>
+<p>但，我们仍然是幸运的，冻雨最严重的地方在湖北荆门、仙桃附近，这并不是我们的必经之路，当武汉范围的雨夹雪开始时，我们正在武汉周边的各个高速口突围，绕城大半圈，上上下下，如同鬼打墙般，不是堵死就是直接高速封路。当雪肉眼可见得下大时，我们索性直接下了高速，找酒店住下，在武汉逗留了两个晚上。</p>
+<p>这次算是解锁了在大雪中开车的成就，感受到了雪中打滑的无力感，只是请的年假全用在了赶路这件事上了。</p>
+<p>而最终，我们在逗留的第三天走乡道出了武汉，横穿湖北孝感，并从孝感市云梦县上了高速，后面就几乎是一路狂奔到老家。</p>
+<h2 id="老生常谈的年味">老生常谈的年味</h2>
+<p>年味的缺失总是一年又一年的话题……</p>
+<p>实质上，过年在我们老家是以固定的模式一直运转着，几乎没有变化，总共三个阶段，年前的年货准备，大年三十的团年饭与守岁，最后是持续两周的串门拜年和吃大餐，在我写这篇文章的当下，亲戚们还在继续着。</p>
+<p>我在愿望清单里也加了一条，某一年，我要尝试在老家从腊月二十待到正月十五。</p>
+<p>其实，原本十五那天，老家还有一个特殊的节日，在大孩子们（指高中生）十五不放假之后，这个节日消亡了，可以参考我之前写的 <a href="/posts/recap-yi-jing-bei-yi-wang-de-shi-wu-nian-mao-gou"><strong>回忆：已经被遗忘的十五撵毛狗</strong></a> 。</p>
+<p>年味淡漠，这是不争的事实，但到底淡漠了什么呢？这是自回老家起就萦绕在脑间的问题。</p>
+<p>我觉得是参与感……</p>
+<p>年味是父母提供的，他们准备了大量年货，整个过程耳濡目染，有铺垫有参与，就像一部情绪到位的电影，起承转合，逐步拉开大幕，而轮到我们，基本是直接空降在大结局夜，端起团年饭，缺失的是前期的参与，我们既无法参与，没有假期，也不会参与，没有动力，没有能力。</p>
+<p>另一种参与感的缺失，是缺少一起做的事情，尤其是守岁。</p>
+<p>当央视春晚悄无声息得替代了大部分的守岁活动之后，除夕夜就是全家人吃着瓜子看着春晚，直到 12 点。而从春晚不以娱乐观众开始，加上受不了主持人像幼儿园老师一样的智障对话，已经好多年抗拒春晚，守岁基本就分崩离析了，各玩各的，到了 12 点起来放个鞭炮，守岁结束。</p>
+<p><img alt="守岁时的零食" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-2.webp"></p>
+<h2 id="stay-foolishstay-hungry">Stay foolish，stay hungry</h2>
+<p>套用乔布斯演讲的语录，描述一种待在老家的状态。</p>
+<p>Stay foolish，不能尝试去表现得聪明，更不能妄想着说服老家的人，简单迎合即可，我们并不生活在那个环境，无法判断事情的对错，更遑论其是否有对错可言，当好一个观察者，多问问那些值得好奇的事情，保持一种 foolish。</p>
+<p>Stay hungry，春节期间，保持饥饿感真的是一种难能可贵的节奏，随着过年开启的是一种几乎不会饿的麻木感，索然无味，浑浑噩噩，一顿接着一顿。为了让味觉保鲜，从前几次春节开始，基本不饿不吃，不管是多大的盛情邀约。</p>
+<h2 id="none-of-your-business">None of your business</h2>
+<p>这些年，催婚催生已经在我回老家之后不多见了。</p>
+<p>主要是那句话，&ldquo;none of your business&rdquo;，既是对别人的态度，也是对自己的劝戒，我对所有的催生催婚都是这个态度，私事，与他们无关，一般会简单迎合一下，不过，如果有必要，我一定会怼到亲戚们闭嘴。</p>
+<p>我们常说的边界感，不是亲戚们自我觉醒的，是需要自己争取的。</p>
+<p>当然，与我无关的事，我也不会干预，每个人都有自己承担后果的能力，遵从每个人自己的意愿。</p>
+<h2 id="随机认识一座城安庆">随机认识一座城：安庆</h2>
+<blockquote>
+<p>安庆像一座没落的大户人家</p></blockquote>
+<p>开着电车走高速，在这种节假日期间，我们基本是根据需要随时下高速充电，这样，总是能去到很多意想不到的城市，于是，打开维基百科，认识这座城。</p>
+<p>安庆是我们回程特意经停的城市，在没有了解它之前，毫无存在感，但是，它就像一个没落的大户人家，曾经是和武汉、南京、重庆齐名的城市，有着无数辉煌的过去，那句&quot;树上的鸟儿成双对……&ldquo;的黄梅戏起源这个地方，安徽省简称&quot;皖&quot;也是源于这里。</p>
+<p><img alt="安庆街景" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-3.webp"></p>
+<p>安庆，也称&quot;宜城&rdquo;，变相与我的老家同名，不过，不只是名字，饮食也很像，虽然主食是米饭，但早餐以面食为主，推荐其肉丝炒面和牛肉包。安庆的炒面最与众不同的地方是，同样是炒面，其炒完仍带有卤汁，湿润而入味。</p>
+<p><img alt="安庆的肉丝炒面" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-4.webp"></p>
+<h2 id="最近的精神角落">最近的精神角落</h2>
+<h3 id="书籍我的母亲做保洁">书籍《我的母亲做保洁》</h3>
+<p>很喜欢这种可以窥见另一种生活的读物，之前还读过一本讲快递员的，但读不下去，我还是非常在乎文笔的，不过，很喜欢这本书的文字风格，娓娓道来，不是那种无聊的流水账。</p>
+<p><img alt="《我的母亲做保洁》" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-5.webp"></p>
+<h3 id="游戏星际拓荒">游戏：星际拓荒</h3>
+<p>这段期间玩得最投入的游戏了，虽然本质上是解谜类，但是玩家可以驾驶自己的飞船在一个迷你版的太阳系里自由探索，寻找故事的答案，每天不断起飞到不同的星球，如无意外，这应该是我的 2024 年度游戏之一了。</p>
+<p><img alt="星际拓荒" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-6.webp"></p>
+<h3 id="游戏吸血鬼幸存者">游戏：吸血鬼幸存者</h3>
+<p>大年三十的晚上开始的游戏，没想到如此上头，从春晚前开始，一口气到守岁结束才放下，玩法简单，半小时以内一局，但整个屏幕都在子弹横飞，玩家只需要控制左摇杆即可……非常爽快</p>
+<p><img alt="吸血鬼幸存者" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-7.webp"></p>
+<h3 id="影视剧曼达洛人1-3季">影视剧：《曼达洛人》1-3季</h3>
+<p>在从杭州开回老家的路上，断断续续看完的，包括堵车。</p>
+<p>曼达洛人有种孤胆英雄的侠客感，游走四方，类似《巫师》系列的杰洛特，做任务赚佣金，但是逐步发现自己内心的正义感，以及值得改变的很多偏见，我们跟随主角一起在成长。除此之外，太空、飞船、外星人，每一个科幻元素都质感到位，画面几乎不差于电影。</p>
+<p><img alt="曼达洛人" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-8.webp"></p>
+<h2 id="不过">不过</h2>
+<p>经过一整个春节的酝酿，我们已经下定决心，明年不回家过年了，还是出去玩吧。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:1313/posts/it-takes-two-review/</link>
+      <link>http://localhost:54018/posts/it-takes-two-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/it-takes-two-review/</guid>
+      <guid>http://localhost:54018/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，分享这款经典双人游戏的独特魅力和感悟。</description>
       <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.webp"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
@@ -762,9 +825,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:1313/posts/deadpool-and-wolverine-review/</link>
+      <link>http://localhost:54018/posts/deadpool-and-wolverine-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/deadpool-and-wolverine-review/</guid>
+      <guid>http://localhost:54018/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -815,9 +878,9 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:1313/posts/black-myth-wukong-review/</link>
+      <link>http://localhost:54018/posts/black-myth-wukong-review/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/black-myth-wukong-review/</guid>
+      <guid>http://localhost:54018/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
@@ -868,9 +931,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:1313/posts/2023-toys-recap/</link>
+      <link>http://localhost:54018/posts/2023-toys-recap/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-toys-recap/</guid>
+      <guid>http://localhost:54018/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
@@ -956,9 +1019,9 @@
     </item>
     <item>
       <title>超过 3200 公里的华南自驾，写一写感受</title>
-      <link>http://localhost:1313/posts/south-china-road-trip-review/</link>
+      <link>http://localhost:54018/posts/south-china-road-trip-review/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/south-china-road-trip-review/</guid>
+      <guid>http://localhost:54018/posts/south-china-road-trip-review/</guid>
       <description>此刻我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天也关了它 9 天</description>
       <content:encoded><![CDATA[<blockquote>
 <p>此刻，我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天，也关了它 9 天。</p></blockquote>
@@ -1048,9 +1111,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap：8月以前</title>
-      <link>http://localhost:1313/posts/joe-recap-8-month-before/</link>
+      <link>http://localhost:54018/posts/joe-recap-8-month-before/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/joe-recap-8-month-before/</guid>
+      <guid>http://localhost:54018/posts/joe-recap-8-month-before/</guid>
       <description>这一篇是写给 Newsletter 通道的文章，欢迎订阅关注</description>
       <content:encoded><![CDATA[<p>没想到已经8月了，再过四个月今年就结束了，上一次推送还是2月份，之后，即使更新了一些文章，也没有再推送过，主要是很多写的内容不适合推给所有人，不打扰反而更好。</p>
 <p>不过，我自己还是希望实现最初码字的愿望，让文字的分享成为日常习惯，至少可以每隔一段时间写一写之前时间的总结，就像面对一群朋友时的侃大山。</p>
@@ -1095,9 +1158,9 @@
     </item>
     <item>
       <title>一个产品经理的自我修行</title>
-      <link>http://localhost:1313/posts/product-manager-self-cultivation/</link>
+      <link>http://localhost:54018/posts/product-manager-self-cultivation/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/product-manager-self-cultivation/</guid>
+      <guid>http://localhost:54018/posts/product-manager-self-cultivation/</guid>
       <description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>这篇文章写给自己，工作和生活都需要一些简单可运行的规则。</p></blockquote>
@@ -1157,9 +1220,9 @@
     </item>
     <item>
       <title>好的问题能自动驱动我们获得答案</title>
-      <link>http://localhost:1313/posts/good-questions-drive-answers/</link>
+      <link>http://localhost:54018/posts/good-questions-drive-answers/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/good-questions-drive-answers/</guid>
+      <guid>http://localhost:54018/posts/good-questions-drive-answers/</guid>
       <description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description>
       <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a></p>
 <p>flomo 的新年特刊推文（flomo 是一款卡片笔记工具）</p>
@@ -1188,9 +1251,9 @@
     </item>
     <item>
       <title>在延吉的二日游记</title>
-      <link>http://localhost:1313/posts/yanji-two-days-trip/</link>
+      <link>http://localhost:54018/posts/yanji-two-days-trip/</link>
       <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/yanji-two-days-trip/</guid>
+      <guid>http://localhost:54018/posts/yanji-two-days-trip/</guid>
       <description>一次从北京到延吉的周末美食之旅，探访了中国最大的朝鲜族聚集地，品尝了地道的朝鲜美食，并意外造访了中朝边境小城图们。</description>
       <content:encoded><![CDATA[<p>写游记的时候，正在图们北站（23号下午5点半）。</p>
 <p><img alt="图们北站" loading="lazy" src="/images/posts/yanji-two-days-trip/image-8.webp"></p>
@@ -1264,9 +1327,9 @@
     </item>
     <item>
       <title>哪些东西/事情打开了你的新世界大门</title>
-      <link>http://localhost:1313/posts/things-that-opened-new-world/</link>
+      <link>http://localhost:54018/posts/things-that-opened-new-world/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/things-that-opened-new-world/</guid>
+      <guid>http://localhost:54018/posts/things-that-opened-new-world/</guid>
       <description>回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。</description>
       <content:encoded><![CDATA[<h1 id="哪些东西事情打开了你的新世界大门">哪些东西/事情打开了你的新世界大门</h1>
 <p><img alt="平凡的世界" loading="lazy" src="/images/posts/things-that-opened-new-world/image-1.webp"></p>
@@ -1310,9 +1373,9 @@
     </item>
     <item>
       <title>2019 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</link>
+      <link>http://localhost:54018/posts/2019-toys-and-gadgets-recap/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</guid>
+      <guid>http://localhost:54018/posts/2019-toys-and-gadgets-recap/</guid>
       <description>分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。</description>
       <content:encoded><![CDATA[<p>能够经历过时间轮换并依然活用在手机和背包里的软件与硬件才是年度玩物，借着 2020 的开始，决定分享一下 2019 年的「玩物志」，之前经常在微信群和 Telegram 群分享好用有趣的 App，那些都是增量，今天分享的是 2019 存量。</p>
 <h2 id="年度最喜欢的硬件"><strong>年度最喜欢的硬件</strong></h2>
@@ -1372,9 +1435,9 @@
     </item>
     <item>
       <title>回忆：已经被遗忘的十五撵毛狗</title>
-      <link>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</link>
+      <link>http://localhost:54018/posts/memories-of-forgotten-mao-gou/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</guid>
+      <guid>http://localhost:54018/posts/memories-of-forgotten-mao-gou/</guid>
       <description>记录一个已经消失的元宵节传统习俗 —— 十五撵毛狗。这个曾经让孩子们兴奋不已的节日活动，如今已经随着时代的变迁渐渐淡出人们的记忆。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>本文最初发布于2018年3月，后备份到 Notion</p></blockquote>
@@ -1399,9 +1462,9 @@
     </item>
     <item>
       <title>坐着火车去俄罗斯联邦（多图预警）</title>
-      <link>http://localhost:1313/posts/train-journey-to-russia/</link>
+      <link>http://localhost:54018/posts/train-journey-to-russia/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/train-journey-to-russia/</guid>
+      <guid>http://localhost:54018/posts/train-journey-to-russia/</guid>
       <description>一趟特殊的火车旅行：从北京出发，穿越蒙古国，抵达俄罗斯联邦的布里亚特共和国，最终到达贝加尔湖畔。一路上有着独特的风景、有趣的人和难忘的经历。</description>
       <content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
 <p>这是一篇迟来的游记，2017年9月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地——贝加尔湖畔。</p>
@@ -1491,9 +1554,9 @@
     </item>
     <item>
       <title>那些曾经让自己怦然心动的科技瞬间</title>
-      <link>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</link>
+      <link>http://localhost:54018/posts/tech-moments-that-touched-my-heart/</link>
       <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</guid>
+      <guid>http://localhost:54018/posts/tech-moments-that-touched-my-heart/</guid>
       <description>回忆那些曾经让我惊艳的科技体验瞬间，从第一部手机到移动互联网时代，记录着科技给生活带来的点点惊喜。</description>
       <content:encoded><![CDATA[<p>写这个文章是为了尝试精准回忆一下那些现在看来理所当然却在以前让自己怦然心动的科技体验瞬间。不得不说，越来越难被惊艳到了，当越来越多的惊喜变为日常，就像吃完了川菜再去品味粤菜一样，寡然无味，或者像回顾过去的港片，才发现好多喜剧电影的演技和剧情无比拙劣。不过，写作是为了重忆初心，就像回忆童年，多半都是美好的。</p>
 <p>真正的科技是从一部手机开始。</p>

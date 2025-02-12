@@ -13,8 +13,20 @@ def clean_original_images(images_dir, dry_run=True):
     # 要清理的图片格式
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif')
     
-    # 不删除的特殊文件
-    protected_files = ('favicon', 'apple-touch-icon', 'android-chrome')
+    # 不删除的特殊文件（完整匹配）
+    protected_files = (
+        'favicon.ico',
+        'apple-touch-icon.png',
+        'android-chrome-192x192.png',
+        'android-chrome-512x512.png'
+    )
+    
+    # 不删除的文件模式（部分匹配）
+    protected_patterns = (
+        'favicon',
+        'apple-touch-icon',
+        'android-chrome'
+    )
     
     # 统计信息
     total_files = 0
@@ -26,12 +38,18 @@ def clean_original_images(images_dir, dry_run=True):
     # 遍历目录
     for root, _, files in os.walk(images_dir):
         for file in files:
-            # 跳过保护的文件
-            if any(pf in file.lower() for pf in protected_files):
+            file_lower = file.lower()
+            
+            # 跳过完全匹配的保护文件
+            if file in protected_files:
+                continue
+                
+            # 跳过包含保护模式的文件
+            if any(pattern in file_lower for pattern in protected_patterns):
                 continue
                 
             # 检查是否是目标格式
-            if file.lower().endswith(image_extensions):
+            if file_lower.endswith(image_extensions):
                 file_path = os.path.join(root, file)
                 webp_path = os.path.splitext(file_path)[0] + '.webp'
                 

@@ -8,6 +8,39 @@
 *   **Cloudflare Pages**:  提供网站托管、CDN 加速和自动部署。
 *   **GitHub**:  用于存储博客源代码和版本管理。
 
+## 项目目录结构
+
+```
+discovery-log/
+├── archetypes/          # Hugo 文章模板
+├── assets/              # 自定义样式和资源文件
+│   └── css/
+│       └── extended/
+│           └── custom.css
+├── content/             # 博客文章内容
+│   └── posts/          # 所有博客文章
+├── data/               # Hugo 数据文件
+├── i18n/               # 国际化文件
+├── layouts/            # 自定义布局模板
+├── public/             # Hugo 生成的静态网站文件
+├── resources/          # Hugo 缓存资源
+├── scripts/            # 工具脚本目录
+│   ├── extract_zip_utf8.py           # Notion ZIP 文件处理
+│   ├── compress_article_images.py     # 单篇文章图片压缩
+│   ├── compress_images.py            # 全局图片压缩
+│   ├── clean_original_images.py      # 清理原始图片
+│   ├── update_image_refs.py          # 更新图片引用
+│   ├── process_notion_links.py       # 处理 Notion 链接
+│   └── process_notion_images.py      # 处理 Notion 图片
+├── static/             # 静态资源文件
+│   └── images/        # 图片资源
+│       └── posts/     # 文章图片
+├── themes/             # Hugo 主题
+├── Notionfiles/        # Notion 导出的 ZIP 文件
+├── hugo.yaml           # Hugo 配置文件
+└── README.md          # 项目说明文档
+```
+
 ## 博客样式定制
 
 博客使用了 PaperMod 主题，并进行了一些自定义样式调整。所有的自定义样式都在 `assets/css/extended/custom.css` 文件中。
@@ -87,73 +120,81 @@
 4. **添加文章正文**：AI 会将您提供的文章正文内容复制到 Markdown 文件中。
 
 ## 使用 AI 助手来处理 Notion Zip 文件
-主要是将 Notion 导出的 Zip 文件转换为 Markdown 文件的 Blog
+主要是将 Notion 导出的 Zip 文件转换为当前的 Blog 格式。
 
-为了保持博客内容的一致性和质量，从 Notion 导出的文章需要经过以下处理步骤：
+为了保持博客内容的一致性和质量，请 AI 务必遵守以下处理步骤：
 
-1. **Notion 导出准备**：
-   - 在 Notion 中选择要导出的单个页面
-   - 选择导出格式为 "Markdown & CSV"
-   - 确保勾选 "Include content" 和 "Include files & media"
-   - 下载得到一个 ZIP 文件，将其放入项目根目录的 `Notionfiles` 目录中
+1. **Notion Zip 准备**：
+   - 将 Notion 导出的 Zip 文件放入项目根目录的 `Notionfiles` 目录中
 
-2. **自动处理流程**：
+2. **解压缩处理**：
    ```bash
-   执行自动处理脚本
-   python extract_zip_utf8.py
+   python scripts/extract_zip_utf8.py
    ```
-   
-   脚本会自动完成以下工作：
-   - 解压 ZIP 文件到 `temp_notion` 目录
+   - 脚本会将 ZIP 文件解压到 `temp_notion` 目录
    - 自动处理文件名编码问题
-   - 保持原文内容不变，仅处理必要的格式转换
-   - 自动提取文章元数据（标题、创建时间等）
-   - 生成规范的英文文件名和 Front Matter
-   - 自动处理文章中的所有图片：
-     * 创建文章专属的图片目录
-     * 复制并重命名图片文件
-     * 压缩图片并转换为 WebP 格式
-     * 更新文章中的图片引用路径
 
-3. **本地预览确认**：
-   ```bash
-   # 启动 Hugo 预览
-   hugo server -D
-   ```
-   
-   检查以下内容：
-   - 文章内容是否完整且格式正确
-   - 原文是否保持不变
-   - 图片是否正常显示
-   - Front Matter 是否正确生成
-
-4.  **清理临时文件**：
-   ```bash
-   # 清理所有临时文件和目录
-   rm -rf temp_notion  # 清理解压的临时目录
-   rm -f Notionfiles/*.zip  # 清理原始 ZIP 文件
-   ```
-
-### 重要注意事项
-
-1. **内容保护**：
-   - 脚本会保持原文内容不变，只处理必要的格式转换
-   - 不会修改或重写任何原始文本
-   - 保留原文的段落结构和格式
-
-2. **错误处理**：
-   - 如果处理过程出现错误，可以删除生成的文件重新开始
-   - 使用 Git 来跟踪变更，方便回滚错误的修改
-
-3. **文件命名**：
-   - 英文文件名自动从中文标题生成
-   - 使用小写字母、数字和短横线
-   - 避免特殊字符和空格
+3. **手动内容处理**：
+   - 检查是否生成了规范的英文文件名，如果不是则手动修复
+     * 使用纯英文单词，不使用拼音
+     * 单词之间用短横线（-）连接
+     * 所有字母小写
+     * 文件名应该清晰表达文章主题
+     * 如果是特定时间的文章，建议加入年份
+     * 示例：
+       - ✅ `chinese-new-year-2024-recap.md`
+       - ✅ `my-first-coding-experience.md`
+       - ❌ `joe-recap-guo-nian.md`（不要使用拼音）
+       - ❌ `My-First-Post.md`（不要使用大写）
+       - ❌ `post1.md`（不够具体）
+   - 创建并完善 Front Matter 元数据
+   - 检查并修复文章格式
 
 4. **图片处理**：
-   - 图片统一存放在文章专属目录下
-   - 自动压缩和转换为 WebP 格式
-   - 保持原图作为备份
+   - 在 `static/images/posts/` 下创建文章专属图片目录
+   - 从 `temp_notion` 复制需要的图片到文章图片目录
+   - 按规范重命名图片文件
+   - 运行图片压缩脚本：
+     ```bash
+     python scripts/compress_article_images.py <article-name>
+     ```
+
+5. **更新图片链接**：
+   - 检查并更新文章中的所有图片引用路径
+   - 确保使用正确的相对路径格式：`/images/posts/<article-name>/image-name.webp`
+
+6. **最终检查**：
+   - 运行本地预览：`hugo server -D`
+   - 确认所有图片能正常显示
+   - 检查文章格式是否正确
+
+7. **清理原始图片**：
+   - 预览要删除的原始文件：
+     ```bash
+     python scripts/clean_original_images.py
+     ```
+   - 确认无误后删除原始文件：
+     ```bash
+     python scripts/clean_original_images.py --execute
+     ```
+   - 这一步会删除已经转换为 WebP 格式的原始图片文件
+   - 注意：网站图标文件（如 android-chrome-*.png、apple-touch-icon.png 等）会自动保护，不会被删除
+
+8. **清理临时文件**：
+   ```bash
+   # 清理 Notion 处理的临时文件
+   rm -rf temp_notion
+   rm -f Notionfiles/*.zip
+   
+   # 清理图片压缩的临时目录
+   rm -rf static_compressed
+   rm -rf static/images_compressed
+   ```
+
+注意事项：
+- 每个步骤完成后请仔细检查，确保无误后再进行下一步
+- 如果发现问题，可以随时回退到之前的步骤
+- 保留原始 ZIP 文件，直到所有步骤都确认无误
 
 ## 全局图片压缩指南
 
@@ -177,7 +218,7 @@
 
 2. **运行压缩脚本**：
    ```bash
-   python compress_images.py
+   python scripts/compress_images.py
    ```
    这会在项目根目录创建 `static_compressed` 目录，存放压缩后的文件。
 
@@ -189,29 +230,32 @@
 
 4. **更新图片引用**：
    ```bash
-   python update_image_refs.py
+   python scripts/update_image_refs.py
    ```
    这一步会自动将所有 Markdown 文件中的图片引用更新为 WebP 格式。
    例如：`![示例图片](/images/example.jpg)` 会被更新为 `![示例图片](/images/example.webp)`
 
 5. **预览要删除的原始文件**：
    ```bash
-   python clean_original_images.py
+   python scripts/clean_original_images.py
    ```
    这一步会显示哪些原始文件将被删除，以及可以节省的空间大小。
 
 6. **确认无误后删除原始文件**：
    ```bash
-   python clean_original_images.py --execute
+   python scripts/clean_original_images.py --execute
    ```
    这一步会删除已经转换为 WebP 格式的原始图片文件，但会保留网站图标相关文件。
 
 7. **清理临时文件**：
    ```bash
-   rm -rf static_compressed
+   # 清理 Notion 处理的临时文件
+   rm -rf temp_notion
+   rm -f Notionfiles/*.zip
    
-   # 清理 macOS 系统生成的临时文件
-   find . -name ".DS_Store" -delete
+   # 清理图片压缩的临时目录
+   rm -rf static_compressed
+   rm -rf static/images_compressed
    ```
 
 ### 注意事项
