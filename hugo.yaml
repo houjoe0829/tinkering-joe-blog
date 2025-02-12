@@ -30,6 +30,7 @@ params:
     name: "Joe"
   description: "记录学习、思考和生活感悟"
   defaultTheme: "auto"
+  disableThemeToggle: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowToc: true
