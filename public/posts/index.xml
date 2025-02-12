@@ -493,7 +493,7 @@
 <p><img alt="节点分组" loading="lazy" src="/images/posts/shadowrocket/image3.png"></p>
 <p>在首页-全局路由-分组里，开启简单模式，增加分组之后，如果不改或者空着就会默认选中所有的节点，这里建议加上筛选，因为机场有些节点是不可用的，容易干扰，尤其是那些用来显示流量的。</p>
 <p>筛选的正则表达式是这样的即可，主要排除一些无效节点（这个真的很重要哦）。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">^(?!.*(流量|套餐|当前网址|海外用户)).*</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>^(?!.*(流量|套餐|当前网址|海外用户)).*
 </span></span></code></pre></div><p><img alt="筛选设置" loading="lazy" src="/images/posts/shadowrocket/image4.png"></p>
 <h3 id="4一些零碎设置">（4）一些零碎设置</h3>
 <ul>

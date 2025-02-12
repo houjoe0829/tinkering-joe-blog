@@ -367,3 +367,12 @@ tags: ["教程", "写作规范"]
 title: "博客文章元数据格式指南"
 ---
 ```
+
+## 许可证说明
+
+本仓库采用双重许可证模式：
+
+1. **博客内容**：所有博客文章内容（包括文字、图片等）采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可证。
+2. **代码部分**：所有代码文件采用 [MIT](https://opensource.org/licenses/MIT) 许可证。
+
+详细的许可说明请查看 [LICENSE.md](LICENSE.md) 文件。
