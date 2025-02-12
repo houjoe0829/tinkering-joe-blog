@@ -14,7 +14,7 @@ hideMeta: true
 
 主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。
 
-产品经历：[Evernote](https://evernot.com/)、[AFFiNE](https://affine.pro/)、[轻雀文档](https://qingque.cn/products/docs)、[轻雀协作](https://qingque.cn/practice)
+产品经历：[Evernote](https://evernote.com/)、[AFFiNE](https://affine.pro/)、[轻雀文档](https://qingque.cn/products/docs)、[轻雀协作](https://qingque.cn/practice)
 
 ## 📮 找到我
 
