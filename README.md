@@ -8,9 +8,9 @@
 *   **Cloudflare Pages**:  提供网站托管、CDN 加速和自动部署。
 *   **GitHub**:  用于存储博客源代码和版本管理。
 
-## 评论系统 (可选)
+## 评论系统
 
-### 使用 GitHub Discussions (推荐)
+### 使用 GitHub Discussions
 
 *   **评论数据存储**:  评论数据直接存储在 GitHub 仓库的 Discussions 功能中。
 *   **前端组件**:  使用开源组件 [Giscus](https://giscus.app/) 在博客页面中嵌入评论功能。
