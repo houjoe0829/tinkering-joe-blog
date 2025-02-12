@@ -100,7 +100,7 @@ menu:
       url: "/posts/"
       weight: 10
     - identifier: "about"
-      name: "关于"
+      name: "关于我"
       url: "/about/"
       weight: 20
     - identifier: "rss"
