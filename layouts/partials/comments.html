@@ -1,0 +1,20 @@
+{{- /* 评论系统 */ -}}
+{{- if .Site.Params.comments }}
+  {{- if .Site.Params.giscus.enable }}
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ .Site.Params.giscus.repo }}"
+          data-repo-id="{{ .Site.Params.giscus.repoId }}"
+          data-category="{{ .Site.Params.giscus.category }}"
+          data-category-id="{{ .Site.Params.giscus.categoryId }}"
+          data-mapping="{{ .Site.Params.giscus.mapping }}"
+          data-strict="0"
+          data-reactions-enabled="{{ .Site.Params.giscus.reactionsEnabled }}"
+          data-emit-metadata="{{ .Site.Params.giscus.emitMetadata }}"
+          data-input-position="{{ .Site.Params.giscus.inputPosition }}"
+          data-theme="{{ .Site.Params.giscus.theme }}"
+          data-lang="{{ .Site.Params.giscus.lang }}"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {{- end }}
+{{- end }} 

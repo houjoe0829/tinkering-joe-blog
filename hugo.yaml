@@ -36,6 +36,21 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
+  # 评论系统配置
+  comments: true
+  giscus:
+    enable: true
+    repo: "houjoe0829/tinkering-joe-blog"
+    repoId: "YOUR_REPOSITORY_ID"
+    category: "Comments"
+    categoryId: "YOUR_CATEGORY_ID"
+    mapping: "pathname"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "zh-CN"
+  
   # 搜索功能配置
   fuseOpts:
     isCaseSensitive: false
