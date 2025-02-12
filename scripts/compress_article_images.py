@@ -19,6 +19,23 @@ def compress_image(input_path, output_path, max_size=(1920, 1920), quality=85):
         # 读取图片
         img = Image.open(input_path)
         
+        # 应用 EXIF 旋转
+        try:
+            if hasattr(img, '_getexif'):
+                exif = img._getexif()
+                if exif is not None:
+                    orientation = exif.get(274)  # 274 是 Orientation 标记的 ID
+                    if orientation is not None:
+                        # 根据 Orientation 值旋转图片
+                        if orientation == 3:
+                            img = img.rotate(180, expand=True)
+                        elif orientation == 6:
+                            img = img.rotate(270, expand=True)
+                        elif orientation == 8:
+                            img = img.rotate(90, expand=True)
+        except:
+            pass  # 如果无法读取或应用 EXIF 数据，就使用原始图片
+        
         # 移除 EXIF 数据
         if "exif" in img.info:
             img.info.pop("exif")

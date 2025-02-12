@@ -29,9 +29,7 @@ discovery-log/
 │   ├── compress_article_images.py     # 单篇文章图片压缩
 │   ├── compress_images.py            # 全局图片压缩
 │   ├── clean_original_images.py      # 清理原始图片
-│   ├── update_image_refs.py          # 更新图片引用
-│   ├── process_notion_links.py       # 处理 Notion 链接
-│   └── process_notion_images.py      # 处理 Notion 图片
+│   └── update_image_refs.py          # 更新图片引用
 ├── static/             # 静态资源文件
 │   └── images/        # 图片资源
 │       └── posts/     # 文章图片
@@ -89,7 +87,7 @@ discovery-log/
     *   如果您需要在文章中插入图片，请将图片文件放在 `static/images/` 目录下。
     *   然后在 Markdown 文件中使用 Markdown 语法引用图片，例如 `![图片描述](/images/your-image.jpg)`。
 
-3.  **提交更新**:
+3. **提交更新**:
     *   完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     *   Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
@@ -150,25 +148,34 @@ discovery-log/
    - 创建并完善 Front Matter 元数据
    - 检查并修复文章格式
 
-4. **图片处理**：
-   - 在 `static/images/posts/` 下创建文章专属图片目录
-   - 从 `temp_notion` 复制需要的图片到文章图片目录
-   - 按规范重命名图片文件
-   - 运行图片压缩脚本：
-     ```bash
-     python scripts/compress_article_images.py <article-name>
-     ```
+4. **处理文章和图片**：
+   建议采用手动方式处理文章和图片，以确保更高的质量和准确性：
 
-5. **更新图片链接**：
-   - 检查并更新文章中的所有图片引用路径
-   - 确保使用正确的相对路径格式：`/images/posts/<article-name>/image-name.webp`
+   ① **文章处理**：
+      - 仔细阅读原文，理解内容和时间线
+      - 创建新的 Markdown 文件，使用规范的英文名，如：`content/posts/taizhou-travel-notes.md`
+      - 手动编写 Front Matter，确保：
+        * 标题、描述准确
+        * 日期使用实际游玩/撰写时间
+        * 标签分类合理
+        * 作者信息正确
 
-6. **最终检查**：
-   - 运行本地预览：`hugo server -D`
-   - 确认所有图片能正常显示
-   - 检查文章格式是否正确
+   ② **图片处理**：
+      - 在 `static/images/posts/` 下创建与文章同名的目录
+      - 将原始图片复制到该目录
+      - 根据图片内容给予有意义的文件名
+      - 建议将图片转换为 WebP 格式以节省空间
+      - 图片引用格式：`![图片描述](/images/posts/article-name/image-name.webp)`
 
-7. **清理原始图片**：
+   ③ **最终检查**：
+      - 确认所有图片都能正确显示
+      - 检查文章格式是否规范
+      - 确保图片描述准确且有意义
+      - 验证文章元数据的准确性
+
+   注意：虽然手动处理会花费更多时间，但能确保更好的质量控制和准确性。对于图片压缩和格式转换，可以使用图形界面工具（如 ImageOptim）来处理。
+
+5. **清理原始图片**：
    - 预览要删除的原始文件：
      ```bash
      python scripts/clean_original_images.py
@@ -180,15 +187,11 @@ discovery-log/
    - 这一步会删除已经转换为 WebP 格式的原始图片文件
    - 注意：网站图标文件（如 android-chrome-*.png、apple-touch-icon.png 等）会自动保护，不会被删除
 
-8. **清理临时文件**：
+6. **清理临时文件**：
    ```bash
    # 清理 Notion 处理的临时文件
    rm -rf temp_notion
    rm -f Notionfiles/*.zip
-   
-   # 清理图片压缩的临时目录
-   rm -rf static_compressed
-   rm -rf static/images_compressed
    ```
 
 注意事项：
