@@ -8,6 +8,33 @@
 *   **Cloudflare Pages**:  提供网站托管、CDN 加速和自动部署。
 *   **GitHub**:  用于存储博客源代码和版本管理。
 
+## 评论系统 (可选)
+
+### 使用 GitHub Discussions (推荐)
+
+*   **评论数据存储**:  评论数据直接存储在 GitHub 仓库的 Discussions 功能中。
+*   **前端组件**:  使用开源组件 [Giscus](https://giscus.app/) 在博客页面中嵌入评论功能。
+*   **用户认证**:  用户需要拥有 GitHub 账号才能评论。
+*   **优点**:
+    *   **零维护成本**:  无需服务器和数据库，完全依赖 GitHub 平台。
+    *   **与 GitHub 集成**:  天然与代码仓库集成，方便管理和审核。
+    *   **Markdown 支持**:  评论支持 Markdown 格式。
+*   **缺点**:
+    *   **仓库需公开**:  博客仓库必须设置为 Public 才能公开评论。
+    *   **依赖 GitHub**:  评论功能依赖 GitHub 服务的稳定性。
+    *   **用户门槛**:  需要用户注册 GitHub 账号。
+*   **适用场景**:  静态博客，对维护成本敏感，希望利用 GitHub 账号体系。
+
+**如何启用**:
+
+1.  **公开仓库**:  确保您的博客 GitHub 仓库是 Public 的。
+2.  **启用 Discussions**:  在仓库 `Settings` -> `Discussions` 中启用 Discussions 功能。
+3.  **集成 Giscus**:  在 Hugo 博客的文章页面模板中，添加 Giscus 提供的 JavaScript 代码，并根据 Giscus 官方文档配置相关参数 (仓库名、仓库 ID、分类 ID 等)。
+
+**更详细的配置步骤和说明，请参考 [Giscus 官方网站](https://giscus.app/)。**
+
+---
+
 ## 项目目录结构
 
 ```
