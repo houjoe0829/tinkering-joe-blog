@@ -20,10 +20,10 @@ hideMeta: true
 
 如果有任何问题、合作想法或只是想打个招呼，欢迎通过以下方式找到我：
 
-- 📧 **Email**: [houqiao829@gmail.com](mailto:houqiao829@gmail.com)
-- 🐦 **Twitter**: [@houjoe1](https://x.com/houjoe1) - 更新比较随意，私信开放！
-- 🐙 **GitHub**: [houjoe0829](https://github.com/houjoe0829) -  我也开始写代码了……
-- 💬 **Wechat**: 微信号[houjoe829] - 请备注来意
+- 📧 **Email**：[houqiao829@gmail.com](mailto:houqiao829@gmail.com)
+- 🐦 **Twitter**：[@houjoe1](https://x.com/houjoe1) - 更新比较随意，私信开放！
+- 🐙 **GitHub**：[houjoe0829](https://github.com/houjoe0829) -  我也开始写代码了……
+- 💬 **Wechat**：微信号[houjoe829]  -  请备注来意
 
 ## 🌟 Side Projects
 
