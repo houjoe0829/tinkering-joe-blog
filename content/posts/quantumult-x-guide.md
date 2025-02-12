@@ -13,7 +13,7 @@ author: "Joe"
 > - 科学上网 = 代理软件（QuantumultX） + 海外线路
 > - 最强保险是，买两家线路，更抗风险
 
-![Mac 界面效果](/images/posts/quantumult-x/image1.png)
+![Mac 界面效果](/images/posts/quantumult-x/image1.webp)
 
 ## 为什么推荐 Quantumult X
 
