@@ -41,9 +41,9 @@ params:
   giscus:
     enable: true
     repo: "houjoe0829/tinkering-joe-blog"
-    repoId: "YOUR_REPOSITORY_ID"
+    repoId: "R_kgDON2_r4w"
     category: "Comments"
-    categoryId: "YOUR_CATEGORY_ID"
+    categoryId: "DIC_kwDON2_r484Cm4_k"
     mapping: "pathname"
     reactionsEnabled: "1"
     emitMetadata: "0"
