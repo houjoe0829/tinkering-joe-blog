@@ -183,7 +183,7 @@ discovery-log/
       - 创建新的 Markdown 文件，使用规范的英文名，如：`content/posts/taizhou-travel-notes.md`
       - 手动编写 Front Matter，确保：
         * 标题、描述准确
-        * 日期使用实际游玩/撰写时间
+        * 日期使用 Notion zip 实际数据的日期
         * 标签分类合理
         * 作者信息正确
 
@@ -191,8 +191,13 @@ discovery-log/
       - 在 `static/images/posts/` 下创建与文章同名的目录
       - 将原始图片复制到该目录
       - 根据图片内容给予有意义的文件名
-      - 建议将图片转换为 WebP 格式以节省空间
-      - 图片引用格式：`![图片描述](/images/posts/article-name/image-name.webp)`
+      - 使用 `compress_article_images.py` 脚本处理单篇文章的图片：
+        ```bash
+        python scripts/compress_article_images.py article-name
+        ```
+      - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
+      - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
+      - 注意：这里不要使用 `compress_images.py`，它是用于全站图片批量处理的
 
    ③ **最终检查**：
       - 确认所有图片都能正确显示
@@ -202,8 +207,8 @@ discovery-log/
 
    注意：虽然手动处理会花费更多时间，但能确保更好的质量控制和准确性。对于图片压缩和格式转换，可以使用图形界面工具（如 ImageOptim）来处理。
 
-5. **清理原始图片**：
-   - 预览要删除的原始文件：
+5. 清理临时文件
+   ① **清理原始图片**：
      ```bash
      python scripts/clean_original_images.py
      ```
@@ -214,7 +219,7 @@ discovery-log/
    - 这一步会删除已经转换为 WebP 格式的原始图片文件
    - 注意：网站图标文件（如 android-chrome-*.png、apple-touch-icon.png 等）会自动保护，不会被删除
 
-6. **清理临时文件**：
+   ② **清理其他临时文件**：
    ```bash
    # 清理 Notion 处理的临时文件
    rm -rf temp_notion
