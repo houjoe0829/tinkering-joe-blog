@@ -25,11 +25,6 @@
     *   **用户门槛**:  需要用户注册 GitHub 账号。
 *   **适用场景**:  静态博客，对维护成本敏感，希望利用 GitHub 账号体系。
 
-**如何启用**:
-
-1.  **公开仓库**:  确保您的博客 GitHub 仓库是 Public 的。
-2.  **启用 Discussions**:  在仓库 `Settings` -> `Discussions` 中启用 Discussions 功能。
-3.  **集成 Giscus**:  在 Hugo 博客的文章页面模板中，添加 Giscus 提供的 JavaScript 代码，并根据 Giscus 官方文档配置相关参数 (仓库名、仓库 ID、分类 ID 等)。
 
 **更详细的配置步骤和说明，请参考 [Giscus 官方网站](https://giscus.app/)。**
 
