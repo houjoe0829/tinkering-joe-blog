@@ -213,12 +213,10 @@ AI 将执行以下关键步骤来帮助您更新博客：
    ① **清理原始图片**：
 
      ```bash
+     # 预览要删除的原始图片文件
      python scripts/clean_original_images.py
-     ```
-
-   * 确认无误后删除原始文件：
-
-     ```bash
+     
+     # 确认无误后删除原始图片文件
      python scripts/clean_original_images.py --execute
      ```
 
