@@ -129,13 +129,16 @@ discovery-log/
 
 ## AI 助手依据 Markdown 文件手动更新博客的说明
 
-这个是处理手动提供 Markdown 文件的情况
+在这种场景下，我只通过 Markdown 文章提供标题和正文。
 
-您提供 Markdown 博客文章内容给 AI 助手时，AI 将执行以下关键步骤来帮助您更新博客：
+AI 将执行以下关键步骤来帮助您更新博客：
 
 1. **接收并理解内容**：AI 助手会仔细阅读并理解您提供的文章标题和正文。
 2. **创建 Markdown 文件**：在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件。
 3. **添加 Frontmatter**：AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括 `title`, `date`, `draft`, `description`, `tags`, `author` 等字段，并根据文章内容进行合理设置。每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
+   - YAML 对特殊字符非常敏感，特别是在 Front Matter 中
+   - 在元数据里，使用纯英文引号包裹 YAML 值
+   - 在元数据里，统一使用半角标点符号
 4. **添加文章正文**：AI 会将您提供的文章正文内容复制到 Markdown 文件中。
 
 ## 使用 AI 助手来处理 Notion Zip 文件
