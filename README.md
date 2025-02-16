@@ -181,6 +181,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
    ① **文章处理**：
       * 仔细阅读原文，理解内容和时间线
       * 创建新的 Markdown 文件，使用规范的英文名，如：`content/posts/taizhou-travel-notes.md`
+      * 保留文章内容里的原始链接，不要修改
       * 手动编写 Front Matter，确保：
         * 标题、描述准确
         * 日期使用 Notion zip 实际数据的日期
