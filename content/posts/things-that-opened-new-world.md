@@ -3,11 +3,9 @@ title: '哪些东西/事情打开了你的新世界大门'
 date: '2020-04-09'
 draft: false
 description: '回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。'
-tags: ["生活感悟"]
+tags: ["生活感悟", "提升幸福感的好物"]
 author: "Joe"
 ---
-
-# 哪些东西/事情打开了你的新世界大门
 
 ![平凡的世界](/images/posts/things-that-opened-new-world/image-1.webp)
 
