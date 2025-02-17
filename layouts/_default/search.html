@@ -29,14 +29,25 @@
 <!-- 标签列表 -->
 <div id="tagCloud" class="post-tags">
     {{- $tags := slice }}
-    {{- range $tag, $pages := .Site.Taxonomies.tags }}
-        {{- $tagInfo := dict "name" $tag "count" (len $pages) }}
-        {{- $tags = $tags | append $tagInfo }}
+    {{- range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{- /* 获取原始标签名称 */ -}}
+        {{- $originalName := "" }}
+        {{- range $taxonomy }}
+            {{- range .Page.Params.tags }}
+                {{- if eq (. | urlize) ($name | urlize) }}
+                    {{- $originalName = . }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        {{- if $originalName }}
+            {{- $tagInfo := dict "name" $originalName "urlizedName" $name "count" (len $taxonomy) }}
+            {{- $tags = $tags | append $tagInfo }}
+        {{- end }}
     {{- end }}
     
     {{- $sortedTags := sort (sort $tags "name") "count" "desc" }}
     {{- range $tagInfo := $sortedTags }}
-    <a href="/tags/{{ $tagInfo.name | urlize }}/" class="tag-link">
+    <a href="/tags/{{ $tagInfo.urlizedName }}/" class="tag-link">
         <span class="tag-name">{{ $tagInfo.name }}</span>
         <span class="tag-count">{{ $tagInfo.count }}</span>
     </a>
