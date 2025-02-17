@@ -38,12 +38,23 @@
   {{- end }}
 
   <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{- if .Params.tags }}
+    <div class="post-tags">
+      {{ range .Params.tags }}
+      {{- $tag := . }}
+      {{- $tagCount := 0 }}
+      {{- range $.Site.RegularPages }}
+        {{- if in .Params.tags $tag }}
+          {{- $tagCount = add $tagCount 1 }}
+        {{- end }}
       {{- end }}
-    </ul>
+      <a href="/tags/{{ $tag | urlize }}/" class="tag-link">
+        <span class="tag-name">{{ $tag }}</span>
+        <span class="tag-count">{{ $tagCount }}</span>
+      </a>
+      {{ end }}
+    </div>
+    {{- end }}
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}

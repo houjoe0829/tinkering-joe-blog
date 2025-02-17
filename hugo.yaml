@@ -14,9 +14,10 @@ security:
 privacy:
   _merge: deep
 
-# 草稿目录配置
+# 分类配置
 taxonomies:
-  _merge: deep
+  tag: "tags"
+  category: "categories"
 
 # RSS 配置
 outputs:
