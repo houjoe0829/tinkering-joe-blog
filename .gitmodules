@@ -9,4 +9,4 @@
 	url = https://github.com/lukeorth/poison.git
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
+	url = https://github.com/houjoe0829/hugo-PaperMod.git
