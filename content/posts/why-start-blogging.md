@@ -3,7 +3,7 @@ author: "Joe"
 date: 2025-02-13
 description: "探讨为什么要写博客，以及写作如何帮助我们更好地思考、记录和分享"
 draft: false
-tags: ["写作", "思考", "生活感悟"]
+tags: ["生活感悟"]
 title: "为什么要写 blog？"
 ---
 

@@ -3,7 +3,7 @@ title: '性价比最高的科学上网方案：Shadowrocket'
 date: 2024-11-12
 draft: false
 description: "一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。"
-tags: ["折腾软硬件", "软件推荐"]
+tags: ["折腾软硬件"]
 author: "Joe"
 ---
 

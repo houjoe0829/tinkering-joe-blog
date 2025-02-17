@@ -3,7 +3,7 @@ title: '2019 玩物志：年度软件与硬件盘点'
 date: 2020-02-20
 draft: false
 description: "分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。"
-tags: ["软件推荐", "硬件", "年度总结", "效率工具"]
+tags: ["提升幸福感的好物", "折腾软硬件"]
 author: "Joe"
 ---
 
