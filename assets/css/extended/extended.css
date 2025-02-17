@@ -43,35 +43,44 @@
 .post-tags .tag-link {
     display: inline-flex;
     align-items: center;
-    padding: 0.4rem 0.8rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 20px;
-    background-color: var(--tertiary);
-    color: var(--theme);
+    background-color: var(--code-bg);
+    color: var(--secondary);
     text-decoration: none;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    line-height: 1.6;
 }
 
 .post-tags .tag-link:hover {
-    background-color: var(--secondary);
-    color: var(--theme);
+    background-color: var(--border);
+    color: var(--secondary);
     transform: translateY(-2px);
 }
 
 .post-tags .tag-name {
-    margin-right: 0.4rem;
+    margin-right: 0.3rem;
 }
 
 .post-tags .tag-count {
-    display: inline-flex;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* 导航栏搜索图标对齐 */
+.nav #menu li a {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    padding: 0 0.4rem;
-    border-radius: 12px;
-    background-color: var(--primary);
-    color: var(--theme);
-    font-size: 0.8rem;
-    font-weight: 500;
+    height: 100%;
+}
+
+.nav #menu li a span {
+    display: flex;
+    align-items: center;
+}
+
+.nav #menu li a span svg {
+    width: 18px;
+    height: 18px;
 }
