@@ -40,37 +40,22 @@
     }
 }
 
-/* 文章标签样式 */
-.post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 2rem 0;
-}
-
 .post-tags .tag-link {
     display: inline-flex;
     align-items: center;
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
-    background-color: var(--code-bg);
-    color: var(--secondary);
+    background-color: var(--tertiary);
+    color: var(--theme);
     text-decoration: none;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .post-tags .tag-link:hover {
-    background-color: var(--border);
-    color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--theme);
     transform: translateY(-2px);
-}
-
-.post-tags .tag-icon {
-    width: 1em;
-    height: 1em;
-    margin-right: 0.4rem;
-    transform: translateY(-1px); /* 微调图标位置 */
 }
 
 .post-tags .tag-name {
@@ -85,27 +70,8 @@
     height: 1.5rem;
     padding: 0 0.4rem;
     border-radius: 12px;
-    background-color: var(--border);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--theme);
     font-size: 0.8rem;
     font-weight: 500;
 }
-
-/* 确保移动端也有良好的显示效果 */
-@media screen and (max-width: 768px) {
-    .post-tags {
-        gap: 0.6rem;
-        margin: 1.5rem 0;
-    }
-    
-    .post-tags .tag-link {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.85rem;
-    }
-    
-    .post-tags .tag-count {
-        min-width: 1.3rem;
-        height: 1.3rem;
-        font-size: 0.75rem;
-    }
-} 

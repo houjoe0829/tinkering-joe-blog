@@ -1,0 +1,58 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+<div id="searchbox">
+    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+<!-- 标签列表 -->
+<div id="tagCloud" class="post-tags">
+    {{- $tags := slice }}
+    {{- range $tag, $pages := .Site.Taxonomies.tags }}
+        {{- $tagInfo := dict "name" $tag "count" (len $pages) }}
+        {{- $tags = $tags | append $tagInfo }}
+    {{- end }}
+    
+    {{- $sortedTags := sort (sort $tags "name") "count" "desc" }}
+    {{- range $tagInfo := $sortedTags }}
+    <a href="/tags/{{ $tagInfo.name | urlize }}/" class="tag-link">
+        <span class="tag-name">{{ $tagInfo.name }}</span>
+        <span class="tag-count">{{ $tagInfo.count }}</span>
+    </a>
+    {{- end }}
+</div>
+
+<script>
+// 当搜索框有输入时隐藏标签
+document.getElementById('searchInput').addEventListener('input', function() {
+    const tagCloud = document.getElementById('tagCloud');
+    if (this.value.length > 0) {
+        tagCloud.style.display = 'none';
+    } else {
+        tagCloud.style.display = 'flex';
+    }
+});
+</script>
+
+{{- end }}{{/* end main */}} 
