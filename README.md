@@ -55,7 +55,7 @@ discovery-log/
 │   └── images/        # 图片资源
 │       └── posts/     # 文章图片
 ├── themes/             # Hugo 主题
-├── Notionfiles/        # Notion 导出的 ZIP 文件
+├── draftfiles/        # Notion 导出的 ZIP 文件
 ├── hugo.yaml           # Hugo 配置文件
 └── README.md          # 项目说明文档
 ```
@@ -155,7 +155,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 为了保持博客内容的一致性和质量，请 AI 务必遵守以下处理步骤：
 
 1. **Notion Zip 准备**：
-   * 将 Notion 导出的 Zip 文件放入项目根目录的 `Notionfiles` 目录中
+   * 将 Notion 导出的 Zip 文件放入项目根目录的 `draftfiles` 目录中
 
 2. **解压缩处理**：
 
@@ -239,7 +239,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
    ```bash
    # 清理 Notion 处理的临时文件
    rm -rf temp_notion
-   rm -f Notionfiles/*.zip
+   rm -f draftfiles/*.zip
    ```
 
 注意事项：
@@ -316,7 +316,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
    ```bash
    # 清理 Notion 处理的临时文件
    rm -rf temp_notion
-   rm -f Notionfiles/*.zip
+   rm -f draftfiles/*.zip
    
    # 清理图片压缩的临时目录
    rm -rf static_compressed
