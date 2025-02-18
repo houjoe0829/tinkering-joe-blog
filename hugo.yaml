@@ -105,7 +105,20 @@ menu:
       name: "关于我"
       url: "/about/"
       weight: 20
+    - identifier: "subscribe"
+      name: "订阅更新"
+      url: "#"
+      weight: 30
+      post: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>'
     - identifier: "rss"
-      name: "RSS 订阅"
+      name: "RSS"
       url: "/index.xml"
-      weight: 30 
+      weight: 31
+      parent: "subscribe"
+      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>'
+    - identifier: "telegram"
+      name: "Telegram 订阅"
+      url: "https://t.me/blogofjoe"
+      weight: 32
+      parent: "subscribe"
+      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>' 

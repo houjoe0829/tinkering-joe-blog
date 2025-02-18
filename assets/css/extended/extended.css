@@ -73,6 +73,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    padding: 0 0.5rem;
 }
 
 .nav #menu li a span {
@@ -101,4 +102,265 @@
     width: 100%;
     height: 2px;
     background-color: currentColor;
+}
+
+/* 导航栏下拉菜单样式 */
+.nav #menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.8rem;
+    height: var(--header-height);
+    overflow: visible;
+}
+
+.nav #menu li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav #menu .menu-trigger {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.5rem;
+    color: var(--secondary);
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav #menu .menu-item-name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 确保订阅更新入口样式与其他导航项一致 */
+@media screen and (min-width: 769px) {
+    .nav #menu .menu-trigger {
+        color: var(--content);
+    }
+}
+
+.nav #menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+    margin-top: 0;
+    padding: 8px 0;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    list-style: none;
+}
+
+.nav #menu li.active > .sub-menu {
+    display: block;
+}
+
+.nav #menu .sub-menu li {
+    margin: 0;
+    height: auto;
+}
+
+.nav #menu .sub-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.75rem 1.25rem;
+    color: var(--secondary);
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.nav #menu .sub-menu a:hover {
+    background: var(--code-bg);
+}
+
+.nav #menu .sub-menu svg {
+    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* 适配暗色模式 */
+:root[data-theme="dark"] .nav #menu .sub-menu {
+    background: var(--theme);
+    border-color: var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 移动端菜单适配 */
+@media screen and (max-width: 768px) {
+    /* 防止菜单展开时页面横向滚动 */
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .nav #menu {
+        gap: 0.5rem;
+    }
+
+    /* 默认隐藏所有主菜单项 */
+    .nav #menu > li:not(.show-more-on-mobile) {
+        display: none;
+    }
+
+    /* More 菜单样式 */
+    .nav #menu .more-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav #menu .more-menu .menu-trigger {
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    /* 汉堡菜单图标 */
+    .nav #menu .more-menu .hamburger-icon {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+    }
+
+    .nav #menu .more-menu .hamburger-icon span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: var(--content);
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .nav #menu .more-menu .hamburger-icon span:nth-child(1) {
+        top: 4px;
+    }
+
+    .nav #menu .more-menu .hamburger-icon span:nth-child(2) {
+        top: 11px;
+    }
+
+    .nav #menu .more-menu .hamburger-icon span:nth-child(3) {
+        top: 18px;
+    }
+
+    /* 汉堡菜单激活状态 */
+    .nav #menu .more-menu.active .hamburger-icon span:nth-child(1) {
+        top: 11px;
+        transform: rotate(135deg);
+    }
+
+    .nav #menu .more-menu.active .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+
+    .nav #menu .more-menu.active .hamburger-icon span:nth-child(3) {
+        top: 11px;
+        transform: rotate(-135deg);
+    }
+
+    /* 下拉菜单样式 */
+    .nav #menu .more-menu .sub-menu {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0.5rem;
+        left: auto;
+        transform: none;
+        width: auto;
+        min-width: 200px;
+        max-width: 280px;
+        max-height: calc(100vh - var(--header-height));
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: var(--theme);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.5rem 0;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 100;
+    }
+
+    .nav #menu .more-menu.active .sub-menu {
+        display: block;
+    }
+
+    .nav #menu .more-menu .sub-menu li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav #menu .more-menu .sub-menu a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0.75rem 1.25rem;
+        color: var(--secondary);
+        font-size: 1rem;
+        line-height: 1.4;
+        transition: background-color 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav #menu .more-menu .sub-menu a:hover {
+        background: var(--code-bg);
+    }
+
+    .nav #menu .more-menu .sub-menu svg {
+        margin-right: 0.75rem;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+    /* 优化移动端菜单项间距 */
+    .nav #menu .more-menu .sub-menu li + li {
+        margin-top: 2px;
+    }
+
+    /* 移动端菜单背景模糊效果 */
+    .nav #menu .more-menu .sub-menu {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* 确保菜单不会超出屏幕 */
+    @media screen and (max-width: 350px) {
+        .nav #menu .more-menu .sub-menu {
+            min-width: 180px;
+        }
+    }
+}
+
+/* 桌面端隐藏 More 菜单 */
+@media screen and (min-width: 769px) {
+    .nav #menu .more-menu {
+        display: none;
+    }
 }
