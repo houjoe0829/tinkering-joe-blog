@@ -364,3 +364,13 @@
         display: none;
     }
 }
+
+/* 确保下拉菜单的定位和点击区域正确 */
+.nav #menu li {
+    position: relative;
+}
+
+.nav #menu .sub-menu {
+    position: absolute;
+    z-index: 1000;
+}
