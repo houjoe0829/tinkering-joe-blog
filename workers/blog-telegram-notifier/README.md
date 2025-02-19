@@ -4,10 +4,11 @@
 
 ## 功能特点
 
-- 每天早上 10 点自动检查博客 RSS 更新（可自定义检查频率）
+- 每 3 小时自动检查博客 RSS 更新
 - 检查前一天的新文章（00:00:00 到 23:59:59）
 - 将新文章以简洁的格式推送到 Telegram Channel
 - 支持显示文章标题、描述和链接
+- 支持测试模式，方便调试和验证
 
 ## 部署步骤
 
@@ -25,14 +26,33 @@
      TELEGRAM_BOT_TOKEN = "您的 Telegram Bot Token"  # 类型选择：Secret
      TELEGRAM_CHANNEL_ID = "@您的频道ID"            # 类型选择：String
      BLOG_RSS_URL = "https://houjoe.me/index.xml"   # 类型选择：String
+     IS_TEST_MODE = "true"                          # 类型选择：String，测试时设为 true
+     TELEGRAM_TEST_USER_ID = "您的用户ID"           # 类型选择：String，测试时需要
      ```
 
 3. **设置定时任务**
    - 在 Worker 的设置页面中找到 "Triggers" -> "Cron Triggers"
-   - 添加 Cron 触发器：`0 2 * * *`
-   - 说明：这个时间是 UTC 时间，对应北京时间上午 10 点
-     - UTC 2:00 = 北京时间 10:00
-     - 每天这个时间运行时，会检查前一天（北京时间 00:00:00 到 23:59:59）的文章
+   - 添加 Cron 触发器：`0 */3 * * *`（每 3 小时运行一次）
+
+## 测试模式说明
+
+本服务支持测试模式，便于在正式部署前进行功能验证：
+
+1. **测试模式特点**
+   - 消息会发送到个人而不是频道
+   - 不会更新 KV 存储中的最后检查时间
+   - 不会记录已发送的文章状态
+   - 消息中会显示"测试模式"标记
+
+2. **如何使用测试模式**
+   - 设置 `IS_TEST_MODE = "true"`
+   - 设置 `TELEGRAM_TEST_USER_ID` 为您的个人 Telegram ID
+   - 直接访问 Worker URL 或使用 Quick Edit 中的 "Send" 按钮触发测试
+
+3. **切换到正式模式**
+   - 将 `IS_TEST_MODE` 改为 `"false"` 或删除该变量
+   - 确保 `TELEGRAM_CHANNEL_ID` 已正确设置
+   - 移除 `TELEGRAM_TEST_USER_ID`（可选）
 
 ## 消息格式
 
@@ -83,11 +103,12 @@
 1. **没有收到推送**
    - 检查 Worker 的 "Logs" 页面是否有错误信息
    - 确认文章的发布时间是否在检查范围内（当天 00:00:00 到 23:59:59）
-   - 验证 RSS feed 是否包含最新文章（访问 https://houjoe.me/index.xml）
+   - 验证 RSS feed 是否包含最新文章
+   - 检查是否处于测试模式（此时消息会发送到测试用户而不是频道）
 
 2. **收到错误响应**
    - `{"success": false, "error": "Failed to send Telegram message"}` 
-     → 检查 Bot Token 和 Channel ID
+     → 检查 Bot Token 和 Channel ID（测试模式下检查 Test User ID）
    - `{"success": false, "error": "Failed to fetch RSS feed"}`
      → 检查 RSS URL 是否可访问
    - `{"success": false, "error": "KV 存储未配置"}`
@@ -138,11 +159,12 @@
 1. **没有收到推送**
    - 检查 Worker 的 "Logs" 页面是否有错误信息
    - 确认文章的发布时间是否在检查范围内（当天 00:00:00 到 23:59:59）
-   - 验证 RSS feed 是否包含最新文章（访问 https://houjoe.me/index.xml）
+   - 验证 RSS feed 是否包含最新文章
+   - 检查是否处于测试模式（此时消息会发送到测试用户而不是频道）
 
 2. **收到错误响应**
    - `{"success": false, "error": "Failed to send Telegram message"}` 
-     → 检查 Bot Token 和 Channel ID
+     → 检查 Bot Token 和 Channel ID（测试模式下检查 Test User ID）
    - `{"success": false, "error": "Failed to fetch RSS feed"}`
      → 检查 RSS URL 是否可访问
    - `{"success": false, "error": "KV 存储未配置"}`
