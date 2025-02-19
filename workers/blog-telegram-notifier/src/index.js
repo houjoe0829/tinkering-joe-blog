@@ -43,18 +43,12 @@ function extractTag(xml, tag) {
   return match ? match[1].trim() : '';
 }
 
-// 从 XML 中提取所有标签内容
-function extractAllTags(xml, tag) {
-  const regex = new RegExp(`<${tag}[^>]*>(.*?)<\/${tag}>`, 'gs');
-  const matches = [...xml.matchAll(regex)];
-  return matches.map(match => match[1].trim());
-}
-
 // 解析 RSS XML
 function parseRSS(xml) {
-  // 提取所有 item 标签
   const itemRegex = /<item>(.*?)<\/item>/gs;
   const items = [...xml.matchAll(itemRegex)];
+  
+  console.log('RSS 解析完成，共找到文章:', items.length);
   
   return items.map(item => {
     const itemXml = item[1];
@@ -62,14 +56,16 @@ function parseRSS(xml) {
       title: extractTag(itemXml, 'title'),
       link: extractTag(itemXml, 'link'),
       pubDate: extractTag(itemXml, 'pubDate'),
-      description: extractTag(itemXml, 'description').replace(/<\/?[^>]+(>|$)/g, ''), // 移除 HTML 标签
-      categories: extractAllTags(itemXml, 'category')
+      description: extractTag(itemXml, 'description').replace(/<\/?[^>]+(>|$)/g, '')
     };
   });
 }
 
 // 发送 Telegram 消息
 async function sendTelegramMessage(text, env) {
+  // 判断是否为测试模式
+  const chatId = env.IS_TEST_MODE === 'true' ? env.TELEGRAM_TEST_USER_ID : env.TELEGRAM_CHANNEL_ID;
+  
   const url = `https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`;
   const response = await fetch(url, {
     method: 'POST',
@@ -77,7 +73,7 @@ async function sendTelegramMessage(text, env) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      chat_id: env.TELEGRAM_CHANNEL_ID,
+      chat_id: chatId,
       text: text,
       parse_mode: 'HTML',
       disable_web_page_preview: false
@@ -94,43 +90,113 @@ async function sendTelegramMessage(text, env) {
 // 检查新文章并发送通知
 async function checkAndNotify(env) {
   try {
-    // 获取时间范围
-    const { start, end } = getTimeRange();
+    if (!env.KV) {
+      throw new Error('KV 存储未配置');
+    }
+
+    // 从 KV 获取上次检查时间
+    let lastCheckTime;
+    try {
+      const storedTime = await env.KV.get('lastCheckTime');
+      console.log('上次检查时间:', storedTime);
+      
+      if (storedTime) {
+        lastCheckTime = new Date(storedTime);
+        if (isNaN(lastCheckTime.getTime())) {
+          lastCheckTime = new Date();
+        }
+      } else {
+        lastCheckTime = new Date();
+      }
+    } catch (kvError) {
+      console.error('读取 KV 时出错:', kvError);
+      lastCheckTime = new Date();
+    }
+    
+    const now = new Date();
     
     // 获取 RSS Feed
     const response = await fetch(env.BLOG_RSS_URL);
     if (!response.ok) {
-      throw new Error('Failed to fetch RSS feed');
+      throw new Error('获取 RSS feed 失败');
     }
     
     const xml = await response.text();
     const items = parseRSS(xml);
     
-    // 筛选在时间范围内的文章
-    const newPosts = items.filter(item => {
+    // 筛选新文章
+    const newPosts = [];
+    for (const item of items) {
       const pubDate = new Date(item.pubDate);
-      return pubDate >= start && pubDate < end;
-    });
+      
+      if (env.IS_TEST_MODE === 'true') {
+        if (pubDate > lastCheckTime) {
+          newPosts.push(item);
+        }
+        continue;
+      }
+      
+      const postKey = `sent_${item.link}`;
+      const isSent = await env.KV.get(postKey);
+      
+      if (pubDate > lastCheckTime && !isSent) {
+        newPosts.push(item);
+      }
+    }
     
-    // 如果有新文章，发送通知
+    console.log(`发现 ${newPosts.length} 篇新文章需要发送`);
+    
+    // 发送新文章
     for (const post of newPosts) {
       const message = `
 📝 <b>${post.title}</b>
 
 ${post.description ? `${post.description.slice(0, 200)}...` : ''}
 
-🏷 标签: ${post.categories.length > 0 ? post.categories.join(', ') : '无标签'}
-
 🔗 <a href="${post.link}">阅读全文</a>
+
+${env.IS_TEST_MODE === 'true' ? '⚠️ 测试模式消息' : ''}
+发布时间: ${new Date(post.pubDate).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
 `;
       
       await sendTelegramMessage(message, env);
+      
+      if (env.IS_TEST_MODE !== 'true') {
+        const postKey = `sent_${post.link}`;
+        try {
+          await env.KV.put(postKey, 'true', {expirationTtl: 60 * 60 * 24 * 7});
+          console.log(`已发送文章: ${post.title}`);
+        } catch (kvError) {
+          console.error(`标记文章发送状态失败: ${post.title}`);
+        }
+      }
     }
     
-    return { success: true, processed: newPosts.length };
+    if (env.IS_TEST_MODE !== 'true') {
+      try {
+        await env.KV.put('lastCheckTime', now.toISOString());
+        console.log('已更新最后检查时间');
+      } catch (kvError) {
+        console.error('更新最后检查时间失败');
+      }
+    }
+    
+    return { 
+      success: true, 
+      processed: newPosts.length,
+      lastCheckTime: lastCheckTime.toISOString(),
+      currentTime: now.toISOString(),
+      isTestMode: env.IS_TEST_MODE === 'true'
+    };
   } catch (error) {
-    console.error('Error:', error);
-    return { success: false, error: error.message };
+    console.error('运行出错:', error.message);
+    return { 
+      success: false, 
+      error: error.message,
+      lastCheckTime: lastCheckTime?.toISOString(),
+      currentTime: new Date().toISOString(),
+      isTestMode: env.IS_TEST_MODE === 'true'
+    };
   }
 }
 
@@ -143,9 +209,38 @@ export default {
   
   // 处理 HTTP 请求（用于测试）
   async fetch(request, env, ctx) {
+    const debugLogs = [];
+    
+    // 重写 console.log 来捕获日志
+    const originalLog = console.log;
+    const originalError = console.error;
+    
+    console.log = (...args) => {
+      debugLogs.push(['log', ...args]);
+      originalLog.apply(console, args);
+    };
+    
+    console.error = (...args) => {
+      debugLogs.push(['error', ...args]);
+      originalError.apply(console, args);
+    };
+    
     const result = await checkAndNotify(env);
-    return new Response(JSON.stringify(result), {
-      headers: { 'Content-Type': 'application/json' },
+    
+    // 恢复原始的 console 方法
+    console.log = originalLog;
+    console.error = originalError;
+    
+    return new Response(JSON.stringify({
+      ...result,
+      debug: {
+        logs: debugLogs,
+      }
+    }, null, 2), {
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
     });
   },
 }; 
