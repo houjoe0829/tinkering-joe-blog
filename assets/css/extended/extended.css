@@ -374,3 +374,27 @@
     position: absolute;
     z-index: 1000;
 }
+
+/* 加载更多按钮样式 */
+#load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#load-more {
+    background: var(--primary);
+    color: var(--theme);
+    border: none;
+    border-radius: 18px;
+    padding: 8px 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.no-more {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 14px;
+    margin: 2rem 0;
+}
