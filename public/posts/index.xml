@@ -561,6 +561,32 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>数字时代的生存清单</title>
+      <link>http://localhost:1313/posts/digital-age-survival-checklist/</link>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/digital-age-survival-checklist/</guid>
+      <description>在数字时代，我们需要未雨绸缪，准备一些必要的工具和知识，以保持与世界的连接</description>
+      <content:encoded><![CDATA[<p>这个清单不是为了逃离什么，而是为了与世界连接。在看不见的角落里，一些改变总是在悄然发生。它不是实体的阻隔，而是一种潜移默化的收紧。慢慢我们会发现，很多东西原来还可以，突然就不行了，这种外在的封闭还会渗透到内心，让思维出现一道无形的墙，甚至我们自己都难以察觉这种变化。</p>
+<p>所以，有些东西需要未雨绸缪，提前准备，清单很简单，关键在自己。</p>
+<p>基础版：</p>
+<ul>
+<li>一套科学上网工具与常识</li>
+<li>一台非国产手机</li>
+<li>注册海外 Apple ID</li>
+<li>注册 Gmail、Twitter、Reddit、YouTube 账户</li>
+<li>申请 Visa 信用卡</li>
+<li>海外 AI 账户，比如 ChatGPT 或者 Claude</li>
+</ul>
+<p>进阶版：</p>
+<ul>
+<li>购买海外手机号</li>
+<li>拥有一台 Nas，用来保存数据</li>
+<li>申请海外银行卡</li>
+<li>注册海外公司</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>性价比最高的科学上网方案：Shadowrocket</title>
       <link>http://localhost:1313/posts/shadowrocket-guide/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
@@ -1572,7 +1598,7 @@
 <p>7月3日在巴厘岛海边远程工作</p>
 <h3 id="-专注与完整性">→ 专注与完整性</h3>
 <p>其实很早在之前写的文章里提到过，也是一直在主动训练的部分，同类型的事情，一次只做一个，专注沉浸，结束了再做下一个，与直觉不同，比起同时开启多个，这样反而可以完成更多，比如游戏、书籍、影视剧等等，可能需要准备的是，一个清单、一份歌单以及一款用来随时30分钟倒计时的 App。</p>
-<p><a href="/posts/finish-one-thing-is-important">做完一件事，很重要</a></p>
+<p><a href="/posts/importance-of-task-completion">做完一件事，很重要</a></p>
 <h3 id="-不完美的中间态">→ 不完美的中间态</h3>
 <p>年初的时候在推上特别写过这个话题。慢慢的，越来越能接受一种笔记的中间态，不过早去美化笔记，而是即用即更新，凌乱是一个必须经历的过程，时间会让积累自然发生。</p>
 <p><img alt="不完美的中间态" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-2.webp"></p>
@@ -1709,6 +1735,31 @@
 <ul>
 <li>对比 PS5 和 Switch 这类主机，Steam Deck 还是会遇到很多小的不稳定问题，多尝试重启，准没错</li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>做完一件事，很重要</title>
+      <link>http://localhost:1313/posts/importance-of-task-completion/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/importance-of-task-completion/</guid>
+      <description>探讨了在当今信息爆炸时代，如何专注于完成一件事的重要性，以及避免陷入任务切换的陷阱</description>
+      <content:encoded><![CDATA[<p>现在想做和可以做的事情越来越多了，旅行清单、游戏清单、影视剧清单、好奇心清单、写作清单等等，随着时间几乎各种想做的清单都在不断变长。</p>
+<p>我自己经常会陷入到一种混沌任务的状态，就像小时候拿着遥控器对着电视不断换台，总觉得下一个会更有趣，一遍又一遍循环后，什么影视剧也没有看到，全是&quot;欣赏&quot;切来切去的广告。而现在，这一切变成了不断切换清单里的任务，看看哪个更喜欢，哪个可以更容易完成，最后把时间浪费在切换中。</p>
+<p>其实大部分想做的事情，都是无法两分钟内可以解决的。</p>
+<p>追一部剧，少的话1天，更新慢的话，需要一个月；
+写完一篇文章，短则2小时，断断续续的话大概几个月；
+看完一本书，一般15天；
+玩完一个游戏可能30天左右；
+自驾前往1个地方，可能1-7天不等；</p>
+<h3 id="专注任务的完成">专注任务的完成</h3>
+<p>以前，总是恼于同时进行的大量任务，看似忙忙碌碌，实则在结束时一堆半成品，有一种捡了芝麻丢了西瓜的无为感。</p>
+<p>最近尝试降低预期，不追求任务完成的数量，也不追求任务完成的速度，专注于当下任务的完成，一个类型的任务一次一个，做完或者决定放弃为结束态，然后下一个，这样下来，虽然速度慢了，但反而可以开始真正读完一本书、写完一篇文章……</p>
+<p>而且这个过程里，很多有挑战的任务需要跨越长时间周期，任务的延续性就非常重要了，将大任务拆解为每天可以进行的小任务，直到累积成一个完整性的任务，将挑战消解在每一天里，完成它。</p>
+<h3 id="追求时间块的完整性">追求时间块的完整性</h3>
+<p>从我自己的体验来看，人有15分钟的冷启动任务周期，就像写这篇文章，一直很抗拒，但是强行进行15分钟&quot;热身&quot;后，反而停不下来。之前推崇过番茄工作法这种固定时间间隔的时间管理，挺实用，反正一次半小时，亏不了，实在不行就先强行来个半小时，而当真正有了一段「完整」的时间后，会进入到一种心流状态，更容易一口气做完，然后，下一个……</p>
+<h3 id="半途而废产生脏数据">半途而废产生脏数据</h3>
+<p>脏数据会对原本想做的事情产生污染，当然，这是一个比喻……
+就像一个游戏库里半途而废的《巫师3》，中途舍弃丢了游戏存档之后，在新的设备上就更难重开了，不想重复之前的进度，只能在清单里落灰。类似的，还有看了一半的书籍，不知道看到第几集就分心的一部美剧，写到快结尾却弃了的文章，等等</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1987,6 +2038,62 @@
 <p><img alt="海鲜炒面，海鲜不多，炒面里的鸡蛋让整体更有味，且食材新鲜" loading="lazy" src="/images/posts/dongji-island-tour-2022/fried-seafood-noodles.webp"></p>
 <blockquote>
 <p>这次的东极岛之行其实运气不那么好，天气阴雨，但心情还是很放松，不过，应该只会来这一次，主要是由于，岛上本身不那么耐玩，而且虽然是仅一个半小时的船程，但太值得让人吐槽了，全程船舱封闭不让外出，甚至在回程的途中，索性连内部空调都不开，来回的感觉就是，一坐下就开始头脑昏胀，好让我们「睡」过去，这打消了我们未来带长辈来探险的可能性。</p></blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>拿 Notion 做什么？不做什么</title>
+      <link>http://localhost:1313/posts/how-i-use-notion-2022/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-i-use-notion-2022/</guid>
+      <description>分享我的 Notion 使用心得：如何将 Notion 打造成个人资料库和数字花园，以及哪些场景不适合使用 Notion</description>
+      <content:encoded><![CDATA[<p>其实本文是之前准备撰写的「第二大脑与数字花园」的延伸，原本是基于笔记软件 Craft 的一种使用梳理，可能因为懒，导致这个主题的构思孕育失败，而且已经从 Craft 又回到了 Notion，正好，最近好几位朋友问我是如何使用 Notion 的，一时冲动，就借题发挥了一下。</p>
+<p>从最早 2016 年开始接触使用 Notion，现在基本围绕 Notion 形成了一套稳定的使用方法，这套方法在之前使用 Craft、Evernote 等笔记工具的时候也基本都可以正常运转，只是不同工具的效率不太一样，与自己的契合度也不同。</p>
+<p>其实工具不是最重要的，最重要的是有一个可以运转的个人系统或者说具象的方法论，工具只是承载方法论的载体。一旦有可运转的个人系统，哪怕是纸和笔，又有何妨。</p>
+<p>如果你恰好正在探寻什么样的笔记工具最适合自己，更建议花时间和自己对话一下，「我这个笔记的需求和目的到底是什么？为什么会有这个需求」，也许拿起一张纸画画思路会更清晰，一旦梳理完毕就船到桥头自然直了。</p>
+<h2 id="拿-notion-做什么">拿 Notion 做什么？</h2>
+<p>Notion 对于我个人而言是个人资料库和个人站点，可以理解为两类用途。</p>
+<h3 id="一类是建立个人资料库">一类是建立个人资料库</h3>
+<p>➡️ <strong>产品案例收集库</strong>：已经几乎为参与的每一款互联网产品都建立了对应的行业产品资料库，遇到的每一个新产品都会尽可能落库并搜罗一部分相关资料和截图</p>
+<p>➡️ <strong>游戏仓库</strong>：有一些非常有趣的游戏，我会为其建立页面，搜罗百科、攻略、背景信息，甚至将精彩游戏截屏保存在其中</p>
+<p>➡️ <strong>产品经理知识库</strong>：由于跨度较多，内容繁杂，特别为知识库做了一个知识树形式的目录页面，将相关信息按照个人认知分门别类，主要是希望一些初级型问题，不用重复造轮子，研究一次，可以解决遇到的重复性问题</p>
+<p>➡️ <strong>硬件折腾日志</strong>：我自己很喜欢折腾我买到的每一个数码产品，比如 VR 硬件 Oculus Quest 2，为他们每个都建立一个页面，搜罗相关信息，挖掘其最大潜力，我有一个关于软路由的页面，基本囊括了我从小白到了解软路由的全部过程的内容，还有每一次折腾的日记。</p>
+<p>➡️ <strong>没用的研究</strong>：日常生活中有很多我们经常遇到，但是对其背后机理较为模糊的生活常识等，比如社保到底是怎么回事，现在的 AI 到底会不会智能，游戏的那几个代表分类的缩写到底是啥，可以闲下来，研究一次，一劳永逸</p>
+<p>基本上，Notion 已经是我个人生活的数字花园，我将我生活中的方方面面都在 Notion 里有一个映射，或者是一个带有目录的 Page，或者是一个 Database，以上仅为部分，无法一一列举，而且都在使用的过程中逐步成长。</p>
+<h3 id="另一类而言notion-是我的公共个人站点">另一类而言，Notion 是我的公共个人站点</h3>
+<p>一直觉得 Notion 是超越博客、微信公众号、Twitter、视频号一样的存在，让分享的内容不止是图片、博文或者视频，而是几乎任何内容。我想将自己更多的想法和经历公开出来，尤其是借助网络，有机会与更多的人产生连接，这个比 Notion 的双向链接更有趣，也是对互联网内容的一种微薄贡献。</p>
+<p>虽然，一个人的量，如皮毛，但每个人都是独一无二的，这是一块完全自己拥有和控制的数字花园。</p>
+<p>我已经在其中放置了一些粗糙的想法和经历分享，近期已经在用这种输出的形式让自己的很多无用爱好变得更有意义，比如之前提到的一些因为好奇心而产生的很多无用研究，我将其命名为好奇星球。</p>
+<p>也建立了一个可以展示的阅读手记，我会按照我个人的思路拆解那些值得深度阅读的文章、书籍、播客、视频等等，就当给未来的自己讲解。</p>
+<p>最近甚至想过，为我儿时的模糊记忆创建一个年代博物馆，认真探索一下脑海里带有滤镜的记忆，然后将那些记忆中的事物展示出来，每个人的经历和记忆都是独特的，也希望我的这些可以让这个互联网更丰富一丢丢。</p>
+<h2 id="拿-notion-不做什么">拿 Notion 不做什么？</h2>
+<p>虽然 Notion 号称 All in one，这个应该是站在群体用途角度的，对于我个人而言，有很多场景，我是不大会用 Notion 硬掰的。</p>
+<h3 id="1-不做密码记录">1. 不做密码记录</h3>
+<p>Notion 虽然有登录的邮件提示，但是没有登录设备的管理，也没有两步验证码，我对其的安全与隐私的信任还是不如 Evernote，重要的密码还是密码管理软件，专业的工具做专业的事情。</p>
+<h3 id="2-不做任务管理">2. 不做任务管理</h3>
+<p>Notion 可以做任务管理，网上有非常多网友的分享，但是，可以用不代表好用，而且，Notion 对于我自己来说，是一个知识库一样的工具，任务管理更多的是过程性数据，两者的信息重要程度不一样，如果有「物理」隔离是最好的，只有经过处理的信息才值得放到 Notion 里。</p>
+<h3 id="3-不用来记录零碎的想法">3. 不用来记录零碎的想法</h3>
+<p>零碎的想法记录更重要的是快和效率，这都不是一个网页应用所擅长的。</p>
+<h2 id="从工具到数字花园">从工具到数字花园</h2>
+<h3 id="什么是数字花园">什么是数字花园</h3>
+<p>之前在尝试用各种概念诠释那种达成以人为本的工具状态，「数字花园」是我最喜欢的。来自雪小豹翻译的《数字花园简史和理念》总结的数字花园特点可以一窥究竟。</p>
+<h3 id="如何在-notion-里实现数字花园呢">如何在 Notion 里实现数字花园呢？</h3>
+<p>👉 <strong>选择一款工具，坚持用</strong></p>
+<p>经常换工具真的是大忌，再高效的工具都不如熟悉的工具，如果是熟练使用 Word，也可以是好用的记录工具，不过，由于我自己是做这类生产力工具，经常容易被「诱惑」，以上这句话也是写给我自己的。</p>
+<p>👉 <strong>使用即更新，持续生长</strong></p>
+<p>经常听到朋友说，整理太麻烦，大多是因为，希望在一天甚至更短的时间完成一块内容的整理，一蹴而就。我自己更喜欢坚持一件小事，比如每次用笔记的时候就去更新一下笔记，「使用即更新」，不追求完美，将整理笔记的成本分散在每一次使用中，可以细水长流，持续生长。</p>
+<p>👉 <strong>关联笔记上下文，包括 Notion 内与外</strong></p>
+<p>最喜欢 Notion 的功能，莫过于其双向链接和同步模块，前者既可以看到当前页面引用了哪些页面也可以看到这个页面被谁引用了，后者可以让同一份内容在多个页面展现，一处更新处处更新，并且可以看到这份内容被哪些个页面使用了。</p>
+<p>不管是双向链接，还是同步模块，都让信息的关联变得越来越容易，未来只要找到一处信息就可以挖出关联的信息。</p>
+<p>这种便利在 Notion 会很高效，但每个人都使用着不只一个工具，尽管没有了这些功能，但也会尽可能在每次处理时，都把 Notion 内外的关联都加上，比如我的任务管理工具是滴答清单，我会在滴答清单里附上 Notion 的链接，并加上 Notion 这个标签，代表这个任务与 Notion 有关联，未来我找到这个任务的时候顺手也可以找到关联的 Notion 页面。</p>
+<p>👉 <strong>文档即工作台</strong></p>
+<p>这是一个认知，也是一个值得养成的习惯，理想状态是，只要开始处理一件事情，哪怕是只是一个物品或者想法，都会打开 Notion 搜索一下，没有就新建一个页面，这个页面就是这个东西的工作台，从诞生到最终落地的全过程都会发生在这里，一步一个脚印。</p>
+<p>👉 <strong>用未来的自己可以看得懂的话写笔记</strong></p>
+<p>之前经常听到，要用「自己的话」来写笔记，其实这是不够的，这个「自己的话」需要的是未来的「自己」，因为看笔记的人是未来的你。那么撰写想法、拆解文章和书籍，都需要尽可能的用未来的自己可以看得懂的话，虽然很耗时，但值得慢下来。</p>
+<p>👉 <strong>将 Notion Database 当作文件夹使用</strong></p>
+<p>这是专门针对 Notion 的使用策略，Notion 的侧边栏页面树固然可以承载每个人的笔记分类，但是页面树结构对分类的要求过多，不只是要注意父子层级，还要注意同级顺序，对整理笔记压力较大，而且很多时候，整理不需要这么严格的层级顺序，文件夹的那种松散归类还是需要的。</p>
+<p>其实 Notion 的 Database 就是文件夹，而且可以创建一个 Full page 的 Database，可以理解为这个页面只有 Database 功能，拿这个当作根目录就可以视为一个文件夹。</p>
+<p>换一种方式，其实 Notion 有两种页面（Page），一种是普通的页面，一种是 Database 类型的页面，只是在页面树里无法直接创建一个 Database 类型的页面，只能在其他页面创建 Full page 的 Database 页面然后再拖拽过去。</p>
+<p>一旦理解了这个，在 Notion 里的内容管理会更随心所欲。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -3212,27 +3319,24 @@
       <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/northkorea-fourdays-journey-record/</guid>
       <description>2016年4月的朝鲜之行，记录了一段特殊的旅程和独特的见闻</description>
-      <content:encoded><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/20715850">朝鲜四日行纪录</a></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="出发">出发</h1>
+      <content:encoded><![CDATA[<h1 id="出发">出发</h1>
 <p>今天是2016年4月2日，写于正在朝鲜境内行驶的火车上，火车正以大货车的速度行驶着，一直以来火车都是&quot;况且～况且～况且&quot;得造句手法，此刻却换成了吱呀吱呀吱呀的奇怪声音，一响就是一路，6个人，5个人都睡着了，剩下我一个人琢磨着文字，趁没有列车员，猛地偷拍了两张窗外。</p>
-<p><img alt="https://pic4.zhimg.com/0a1df7f6e538e933ff3b2a9821206647_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-20.webp"></p>
 <p>这一列火车只有4节车厢，上车时，拿着15号车厢票的我们一直在想，前面13节都哪里去了。不过，万幸的是，火车不再是传说中的绿皮型号，变成了&quot;新空调硬卧&quot;，只是我感觉不到空调的存在。</p>
-<p><img alt="ccc00a5dc6a15ad237c6f22661332f03_1440w.webp" loading="lazy" src="%E6%9C%9D%E9%B2%9C%E5%9B%9B%E6%97%A5%E8%A1%8C%E7%BA%AA%E5%BD%95%205cf659918b1044b68cf256dbd42079b7/ccc00a5dc6a15ad237c6f22661332f03_1440w.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-32.webp"></p>
 <p>火车在过了鸭绿江之后就到了新义州，最浪费时间的就是这里，安检花了两个小时，查名单、查行李、查入关申请表，全部都是手动，对于带了电脑的更是繁琐，幸好四节车厢只坐满了两节左右。</p>
 <p>从新义州到平壤需要五个多小时，窗外的风景是单调的农村，地广人稀，房子大都是白色围墙和屋墙再加上青灰色屋顶，统一建设，像是批量生成。在新奇了一个小时，以及严肃得探讨了价值观、人生观之后，兴致少了很多。</p>
-<p><img alt="https://pic2.zhimg.com/8495d87dd8c5164f6a3d876482144765_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic4.zhimg.com/d71c1fa5a4539d9dc135ba1ac970d5f3_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-22.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-1.webp"></p>
 <p>火车路过过一些&quot;大城市&quot;，我自己也无法分清这是乡镇还是城市，除了房屋密集，&ldquo;大城市&quot;的房子就像破旧的老城区，不成样子，我们好多次都在怀疑这些空洞的房子是否有人住。</p>
 <p>此刻是4月3日，从一处景点妙香山回去的路上，</p>
 <p>旅行到现在才体会到《演员的自我修养》这本书的上层境界，在妙香山国际友谊纪念馆里我们真正表演出了真诚，没有为难任何讲解员。国际友谊纪念馆保存了据说是&quot;170多个国家和地区&quot;赠送给朝鲜的礼物，多半是来朝的公司或者组织赠送的，选择性忽略之后就变成了该地区赠送，于是此行变成了朝鲜旅游最无聊的一段。</p>
-<p><img alt="https://pic4.zhimg.com/875d13d9ccbd64b8a75d60684417f03f_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-3.webp"></p>
 <ul>
 <li><em>官方导游带着我们前往妙香山国际友谊纪念馆</em></li>
 </ul>
 <p>此刻是4月5日，两天没有写任何内容，只有在回丹东的火车上，慢慢回忆着。除去2号和5号在往返的火车，真正游玩的时间只有3号与4号，而且大部分的时间也在路上，去妙香山往返花了5到6个多小时，去开城往返花了7到8个小时。加上只有靠近平壤的路才很平，其他路段都非常颠簸，平板看视频或者Kindle看书都会快速培养困意，U型枕是最好的伙伴，可惜只有导游带了。</p>
-<p><img alt="https://pic4.zhimg.com/aad3bc77febc2068ce31df296966ffab_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-2.webp"></p>
 <ul>
 <li><em>来自车上拍摄的平壤，远处是主体思想塔，桥下是大同江</em></li>
 </ul>
@@ -3243,68 +3347,72 @@
 <p>男导游面相较黑，岁数与我们相近，而且一直穿着与他的相貌较为违和的西装，这个和路上遇到的很多平壤人一样，且不善交流。不过，他去过中国很多地方，知道微博微信和QQ，是他提醒我在三八线搜索网络信号，并在行车过程中借我们的手机看新闻，看综艺，看科幻电影。</p>
 <h1 id="4月2日"><strong>4月2日</strong></h1>
 <p>经过8个小时到达平壤火车站之后，导游迅速带我们去了万寿台，给&quot;伟大的金日成主席和金正日将军&quot;敬礼献花，一束花20元人民币。不得不惊叹的是，两个巨大的铜像打光非常好，加上那样大的高度差，这种营造的&quot;个人崇拜&quot;，我也感觉到了。</p>
-<p><img alt="https://pic1.zhimg.com/a3eb0fcae2f1c62715abeae8444e6490_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic3.zhimg.com/ce5c4b5df3c766d26c3a117387cbb36e_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-24.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-16.webp"></p>
 <p>吃完晚饭就去了西山酒店，一家新建的一级酒店，朝鲜酒店分为特级、一级和二级。导游特别强调，晚上不能独自出外散步，&ldquo;很危险&rdquo;。</p>
-<p><img alt="https://pic4.zhimg.com/a7b44d6e442ab6c063847a1ef89f64f7_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-5.webp"></p>
 <ul>
 <li><em>夜晚的朝鲜夜景，灯光相比北京少了很多</em></li>
 </ul>
 <h1 id="4月3日"><strong>4月3日</strong></h1>
 <p>一大早起来的第一个任务就是拍摄阳台外的全景</p>
-<p><img alt="https://pic1.zhimg.com/b3beb880ead49094b751eaaf227594f0_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-26.webp"></p>
 <ul>
 <li><em>远处是火力发电站</em></li>
 </ul>
-<p><img alt="https://pic1.zhimg.com/cad0056b2033d764ed1a7f0087f7eb64_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-7.webp"></p>
 <ul>
 <li>最荒唐的一幕，远处山坡上挥动旗帜的队伍，朝鲜导游说意在鼓舞上班</li>
 </ul>
 <p>7点早餐，七点半出发去妙香山，顺道参观一个佛教寺院，傍晚回到市区，参观国家图书馆，再参观金日成广场。广场上看到正在火炬游行训练的大学生，导游不让拍摄游行训练的群众，我还是拍了。</p>
-<p><img alt="https://pic1.zhimg.com/9bb4ec7c5e3db0e1d091688d24e51c4c_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-23.webp"></p>
 <p>这个图书馆音乐教室里的录放机，工作人员饶有兴致地播放了一首中文歌，毛阿敏的。旁边是先科DVD播放机，另外一个旅行团的人已经忍不住嘲笑起来，这是我最不愿意跟团的原因，幸好只有这一站在一起。</p>
-<p><img alt="https://pic4.zhimg.com/b04b75fa55cea8edae234ade81b44933_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-9.webp"></p>
 <p>图书馆正在自习的朝鲜学生，只有17岁以上才可以进入。</p>
-<p><img alt="https://pic1.zhimg.com/553cb082cf929cb92f3cbbcd7a499078_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-14.webp"></p>
 <p>从图书馆7楼瞭望台拍摄金日成广场，可以看到远处最高的主题思想塔以及金日成广场上的游行训练方队。</p>
-<p><img alt="https://pic2.zhimg.com/0975f63981a4085009432593e8f2f31d_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-28.webp"></p>
 <p>站在金日成广场拍摄图书馆，以及趁机拍摄休息中的游行方队。</p>
-<p><img alt="https://pic4.zhimg.com/c3fb1c228fe1b64b91d7a02dc50e9edb_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-11.webp"></p>
 <p>不能忘了一点，朝中友谊塔</p>
-<p><img alt="https://pic2.zhimg.com/732181516e975cd0d424b1f71e509aa5_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-29.webp"></p>
 <p>晚上的晚餐是我们最喜欢的一次，服务员为我们安排了舞蹈，很欢乐的舞蹈，虽然我在北京去过平壤的餐厅而且看过表演的舞蹈，但尤其喜欢这一次，这个时候让我想起了白天那次较为糟糕的午餐，喝了一瓶2011年产的啤酒，保质期3个月。</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cKONu4-p0ws?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
 <h1 id="4月4日"><strong>4月4日</strong></h1>
 <p>这一天是最惊奇的一次，因为要去朝鲜三八线，而且是站在三八线上，这一次也改变了一点我们印象中的朝鲜人，面对这样的时刻还是有蛮多幽默感。</p>
-<p><img alt="https://pic3.zhimg.com/1ba691292fe6f6066ee96aac90b0ed5e_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic1.zhimg.com/c435d78284b952d5e49b650b870545a0_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-19.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-17.webp"></p>
 <p>一个香港生活的法国人要和我们一起坐在谈判桌上拍照，&ldquo;这样才符合历史，有黄种人也得有白人&rdquo;。</p>
-<p><img alt="https://pic1.zhimg.com/78dd544e3eb56952a5c7bad882d51278_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-13.webp"></p>
 <p>这是在三八线上的屋子里</p>
-<p><img alt="https://pic2.zhimg.com/dc3be4da34ae6a7f9ceeba475c96f42d_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-4.webp"></p>
 <p>三八线上屋子的全景，蓝色屋子的后面是韩国，站在旁边时，导游提醒我打开网络，于是我收到了韩国网络，还有运营商的提醒短信，赶紧发了一条朋友圈（后来才知道，发送失败了，哎）。</p>
-<p><img alt="https://pic3.zhimg.com/06c512b05608b3f21a088f93c7291e6a_b.png" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic2.zhimg.com/ca10fa7bb9c981f16264b77c2dd4c5b5_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-6.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-10.webp"></p>
 <p>三八线近景，左边是韩国领土，右边是朝鲜领土，有点紧张</p>
 <p>之后参观了开城的高丽成均馆，就匆匆赶回平壤，天气有点热。</p>
-<p><img alt="https://pic4.zhimg.com/269843c7d9033ea0c8da2b89a0faa19b_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-18.webp"></p>
 <ul>
 <li><em>中午特色的开城菜</em></li>
 </ul>
 <h1 id="4月3日傍晚"><strong>4月3日傍晚</strong></h1>
 <p>也是今天旅程有意义的第二段，体验平均深度为100米左右的朝鲜地铁</p>
-<p><img alt="https://pic4.zhimg.com/4269bc393dff1b41f56d7059a745f8db_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic2.zhimg.com/1cc6b4359c49aad9557b7e2896bc0df5_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic4.zhimg.com/38a87cf530085389c48dd120beb369b7_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-12.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-8.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-31.webp"></p>
 <p>坐扶梯下去需要两分多钟，地铁声音很大，而且地铁里的气味比较难闻。</p>
-<p><img alt="https://pic1.zhimg.com/7f12e03ee089000f79e1c7edb9a7fe10_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-30.webp"></p>
 <p>地铁坐完一站就被带到另外一个无聊的地方，&ldquo;友谊百货商城&quot;或者就是一个商店，很小，全是纪念品</p>
-<p><img alt="https://pic2.zhimg.com/a3a853274abc9c02a45a52dd6594cc01_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-15.webp"></p>
 <h1 id="4月5日"><strong>4月5日</strong></h1>
 <p>离开平壤，给导游留了电话和邮箱，期待她能出国。</p>
-<p><img alt="https://pic3.zhimg.com/2026aa2d759a94acef3109b7cadaa6fe_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-25.webp"></p>
 <p>最后，我带回了最初承诺的&quot;主题思想&quot;一本。</p>
-<p><img alt="https://pic2.zhimg.com/2c84e093189b6eb529d11a2b86383ee9_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
-<p><img alt="https://pic4.zhimg.com/a5b1ededccc0fe6e1bca1bcc3cd54bc7_b.jpg" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/image-0.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-21.webp"></p>
+<p><img alt="图片" loading="lazy" src="/images/posts/northkorea-fourdays-journey-record/zhihu-image-27.webp"></p>
 ]]></content:encoded>
     </item>
     <item>
