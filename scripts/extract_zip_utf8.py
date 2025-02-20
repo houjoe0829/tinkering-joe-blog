@@ -12,10 +12,24 @@ def extract_notion_metadata(content):
         content: 原始文章内容
     
     Returns:
-        创建时间字符串 (YYYY-MM-DD)
+        创建时间字符串 (YYYY-MM-DD)，如果无法解析则返回 None
     """
-    # 这是一篇旧文章的迁移，使用原始创建日期
-    return "2018-02-21"
+    # 查找 Created: 行
+    created_pattern = r'Created: ([A-Za-z]+ \d{1,2}, \d{4})'
+    match = re.search(created_pattern, content)
+    
+    if match:
+        try:
+            # 将 Notion 的日期格式转换为 datetime 对象
+            date_str = match.group(1)
+            date_obj = datetime.strptime(date_str, '%B %d, %Y')
+            # 转换为 YYYY-MM-DD 格式
+            return date_obj.strftime('%Y-%m-%d')
+        except ValueError as e:
+            print(f"警告：无法解析创建时间 '{date_str}': {e}")
+            return None
+    
+    return None
 
 def clean_notion_metadata(content):
     """清理 Notion 导出的元数据，只保留标题、正文和图片引用
@@ -116,6 +130,9 @@ def main():
                 
                 # 提取创建时间
                 created_time = extract_notion_metadata(content)
+                if not created_time:
+                    print(f"警告：无法从文件中提取创建时间，将使用当前时间")
+                    created_time = datetime.now().strftime('%Y-%m-%d')
                 
                 # 清理 Notion 元数据，只保留标题和正文
                 content = clean_notion_metadata(content)
