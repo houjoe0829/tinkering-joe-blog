@@ -25,7 +25,7 @@ VR 会议的截图
 
 # 不只是需要 Oculus Quest 2，首次配置复杂
 
-VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第一步，关于 VR 的体验可以查看另外一个记录 [聊一聊最近买的 VR 设备：Oculus Quest 2](/posts/liao-yi-liao-zui-jin-mai-de-vr-she-bei-oculus-quest-2) 
+VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第一步，关于 VR 的体验可以查看另外一个记录 [聊一聊最近买的 VR 设备：Oculus Quest 2](/posts/oculus-quest2-vr-review) 
 
 拿到一台 Oculus 设备就会发现，登录与激活需要 Facebook 账户，需要设备外的科学上网条件，这个大概也是阻碍 Oculus 在国内起飞的最关键石头。
 

@@ -241,10 +241,10 @@ AI 将执行以下关键步骤来帮助您更新博客：
 
      ```bash
      # 预览要删除的原始图片文件
-     python scripts/clean_original_images.py
+     python3 scripts/clean_original_images.py
      
      # 确认无误后删除原始图片文件
-     python scripts/clean_original_images.py --execute
+     python3 scripts/clean_original_images.py --execute
      ```
 
    * 这一步会删除已经转换为 WebP 格式的原始图片文件

@@ -112,7 +112,7 @@ Miro 的弊端是，价格真的很贵，而且国内访问稍微有一些慢。
 
 这个之前写过好多，不多赘述，但是值得占位一下。
 
-[聊一聊最近买的 VR 设备：Oculus Quest 2](https://www.notion.so/VR-Oculus-Quest-2-b8543c6adf244faa90dd75ed705438aa?pvs=21) 
+[聊一聊最近买的 VR 设备：Oculus Quest 2](/posts/oculus-quest2-vr-review) 
 
 [记录一次 VR Workroom 的体验](/posts/vr-workroom-experience) 
 
