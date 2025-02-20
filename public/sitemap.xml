@@ -191,8 +191,14 @@
     <loc>http://localhost:1313/posts/good-questions-drive-answers/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/inspiration-creativity-and-system-innovation/</loc>
+    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2021-software-hardware-review/</loc>
     <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ecco-pro-software-archaeology/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/emotn-android-tv-exploration/</loc>
     <lastmod>2021-11-24T00:00:00+00:00</lastmod>
@@ -238,6 +244,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/paradox-of-self-consistency/</loc>
     <lastmod>2019-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/anki-vector-robot-review/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/stories-about-sleeping-places/</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
