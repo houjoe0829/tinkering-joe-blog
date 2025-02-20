@@ -41,11 +41,6 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
-  # Google Analytics 配置
-  analytics:
-    google:
-      SiteVerificationTag: ""
-  
   # 评论系统配置
   comments: true
   giscus:
