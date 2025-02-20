@@ -107,9 +107,6 @@
     <loc>http://localhost:1313/posts/vr-workroom-experience/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-new-year-homecoming-thoughts/</loc>
-    <lastmod>2024-02-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/chinese-new-year-2024-recap/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -238,6 +235,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/six-years-with-evernote/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/chinese-new-year-homecoming-thoughts/</loc>
+    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/train-journey-to-russia/</loc>
     <lastmod>2018-01-26T00:00:00+00:00</lastmod>
