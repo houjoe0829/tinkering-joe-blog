@@ -2348,20 +2348,20 @@
 <p>如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 <a href="http://mdnice.com">mdnice.com</a> 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。</p>
 <p>也就是你只需要，导出为 .md 文件，导入到此文件到编辑器，选择好适合的主题，简单再修一修排版，就可以复制走了。</p>
 <p>另外，最近感觉其正在商业化，已经推出了插件，逐渐在向更专业的方向演进着。</p>
-<p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.png"></p>
+<p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.webp"></p>
 <p>网址：<a href="https://mdnice.com/">https://mdnice.com/</a></p>
 <h2 id="开启上帝视角的微信微信小助手">开启上帝视角的微信：微信小助手</h2>
 <p>这是一个仅支持 Mac 端的一个免费工具，开启之后像是微信开启了上帝视角，你可以知晓谁退群了，谁撤回了什么消息，还可以强制 Mac 端微信切换成正在内测的黑夜模式。另外，还支持微信多开，自动回复设置，包括设置智能回复的语言库。</p>
-<p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.png"></p>
+<p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.webp"></p>
 <p>网址：<a href="https://www.waerfa.com/wechatextension-for-wechat-mac-version">https://www.waerfa.com/wechatextension-for-wechat-mac-version</a></p>
 <h2 id="翻译能力超强的助手deepl">翻译能力超强的助手：DeepL</h2>
 <p>之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概20多个工单。</p>
 <p>另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。</p>
-<p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.png"></p>
+<p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.webp"></p>
 <p>网址：<a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a></p>
 <h2 id="质朴而强大的免费电子书资源网站">质朴而强大的免费电子书资源网站</h2>
 <p>不管是从网址拼写还是从界面上来看，都非常质朴，但是相比之前用过的电子书查询网站有很多优势，比如没有太多骗人的套路，支持中英文书籍，书库很全，是真的很全。</p>
-<p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.png"></p>
+<p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.webp"></p>
 <p>网址：<a href="https://b-ok.cc/">https://b-ok.cc/</a></p>
 ]]></content:encoded>
     </item>
@@ -2614,6 +2614,211 @@
 <p>重新尝试罗列工作与生活周计划，这是我自己比较习惯的计划方式，一周有一个阶段性的开始和结束，又不至于一天太短，做了事情也看不到进度。</p>
 <p>尝试用番茄工作法来切割时间，每半个小时一个工作区间，保持适度的专注。而且，半个小时的「强制」沉浸，可以很快带自己进入到一种「流」的状态。</p>
 <p>重新捡起健身的小任务，感谢任天堂的《健身环大冒险》，每天流汗半小时，等到洗完澡，可以真的「静下来」写写文字，今天是健身的第17天。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>最近看上了什么 App | 005</title>
+      <link>http://localhost:1313/posts/recent-app-discoveries-005/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/recent-app-discoveries-005/</guid>
+      <description>本期推荐了 Notion 的重大更新、新版 Edge 浏览器、RelayChat 插件、Desktop Goose 桌面宠物、Inoreader 和幕享投屏工具等应用。</description>
+      <content:encoded><![CDATA[<h2 id="越来越强大的-notion">越来越强大的 Notion</h2>
+<p>近期 Notion 的更新让我再一次心动起来，我在印象笔记、Evernote、Bear Note 以及 Notion 里都存有大量笔记，方便我每次的喜新厌旧，这一次也不例外。</p>
+<p>这批次的更新中，排名第一的是，终于支持了中日韩文字的搜索。对于 Notion 而言，由于其嵌套关系的文档呈现形式，没有搜索的 Notion 是之前抛弃它的主要理由，远大于「没有离线」以及没有 API 接口，因为层级复杂且没有一个地方可以浏览到所有的内容，无法搜索就像内容困死在了里面。新的搜索里，中文搜索不再只能从开头匹配，而且可以快速切换最近查看的笔记，还可增加更多的过滤条件来精准搜索。搜索完成之后，现在的 Notion 已经成为一个相对成熟的中文文档编辑与管理工具。</p>
+<p><img alt="Notion 的新搜索功能" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search.webp"></p>
+<p><img alt="Notion 的搜索过滤条件" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search-filter.webp"></p>
+<p>排名第二的更新是强化移动端的快速搜索和快速新建，在任意页面可以一键直达。</p>
+<p><img alt="Notion 移动端的快速操作（配图来自官网）" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-mobile.webp"></p>
+<p>除以上以外，Notion 还支持在线流程图工具 Whimsical 的文档嵌入预览，但是，看了一下价格，还是放弃了，比 Notion 还要贵上许多，继续用我的 iThoughtsX。</p>
+<p>Notion 注册链接： <a href="https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d">https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d</a></p>
+<h2 id="浏览器的新选择chrome-内核的-edge">浏览器的新选择：Chrome 内核的 Edge</h2>
+<p>微软终于发布了正式版 Chromium 内核浏览器 Edge，支持 Windows 7、8、8.1、10 和 macOS，支持全部现有的 Chrome 扩展。假如未来 Chrome 内核的插件上架了微软应用商店，希望可以解决很多国内的用户无法访问 Chrome App Store 的问题。</p>
+<p><img alt="新版 Edge 浏览器界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/edge-chromium.webp"></p>
+<p>官网下载：<a href="https://www.microsoft.com/en-us/edge">https://www.microsoft.com/en-us/edge</a></p>
+<h2 id="让上网不孤单的-relaychat-chrome-插件">让上网不孤单的 RelayChat Chrome 插件</h2>
+<p>安装这个插件之后，你可以在任何网页打开聊天窗口与全世界各地的网友实时沟通，目前人还是有一些少，尝鲜为主。</p>
+<p><img alt="RelayChat 插件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/relaychat.webp"></p>
+<p>官网地址：<a href="https://relaychat.app/">https://relaychat.app/</a></p>
+<h2 id="沙雕有趣的桌面宠物desktop-goose-桌面鹅">沙雕有趣的桌面宠物：Desktop Goose 桌面鹅</h2>
+<p>上一次的桌面宠物还是 QQ 宠物（已下架），看到这个，有一种浓浓的岁月感。这款 Desktop Goose 支持 macOS 和 Windows，安装启动之后，桌面会出现一只闲逛的鹅，还有叫声和跟随其后的脚印。</p>
+<p><img alt="Desktop Goose 桌面宠物" loading="lazy" src="/images/posts/recent-app-discoveries-005/desktop-goose.webp"></p>
+<p>这只鹅不只是闲逛，还会定期从桌面边缘拖出一个带有内容的窗口，我收集了一些放在下面，而且，你如果一旦关闭窗口，它会立马冲刺过去，叼住你的鼠标拖拽逃逸。</p>
+<p><img alt="拖着窗口的鹅" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-window.webp"></p>
+<p><img alt="鹅的消息 1" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-1.webp"></p>
+<p><img alt="鹅的消息 2" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-2.webp"></p>
+<p><img alt="鹅的消息 3" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-3.webp"></p>
+<p><img alt="鹅的消息 4" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-4.webp"></p>
+<p>这篇文章写作期间，我尝试打开了，真的太干扰我写东西了，关闭了吧。突然发现，没有任何地方可以关闭，最后只能在进程管理中强行退出。</p>
+<p>下载链接：<a href="https://samperson.itch.io/desktop-goose">https://samperson.itch.io/desktop-goose</a></p>
+<h2 id="支持订阅-newsletter-的-inoreader">支持订阅 Newsletter 的 Inoreader</h2>
+<p>在这个 AI 盛行的年代，阅读这件事，我是极其厌烦算法的加入，一直是 RSS 阅读的重度使用者，而 Inoreader 是我觉得目前最像 Google Reader 的产品，这次更新除了网页界面的大改版还支持订阅 Newsletter。正好，除了 RSS 以外我还用邮件订阅了很多 Newsletter，比如：</p>
+<ul>
+<li>Maker Mind：<a href="https://nesslabs.com/newsletter">https://nesslabs.com/newsletter</a> 提高对大脑的理解和效率提升</li>
+<li>Bear Talk：<a href="https://www.beartalking.com/">https://www.beartalking.com/</a> 有趣也有用的分享，像个朋友</li>
+<li>Product Hunter：<a href="https://www.producthunt.com/">https://www.producthunt.com/</a> 发掘有趣也有用的新 App</li>
+<li>Benedict Evans：<a href="https://www.ben-evans.com/">https://www.ben-evans.com/</a> 关于科技、技术与安全</li>
+</ul>
+<p><img alt="大改版的 Inoreader 界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/inoreader.webp"></p>
+<p>教程可参考官网：<a href="https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html">https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html</a></p>
+<p>更新之后，再次减少了一个分散的内容查看通道。</p>
+<h2 id="支持全平台设备互相无线投屏的免费应用幕享">支持全平台设备互相无线投屏的免费应用：幕享</h2>
+<p>曾经花钱买了 Airsever 和 Reflector 的我，看到这个强悍的工具，第一时间就分享了。其拥有 Windows、macOS、iOS、Android、Android TV 客户端，支持 AirPlay、Miracast、DLNA 协议，可以在手机与电脑间相互投屏，还能通过 App 控制 Windows 电脑。（来自小众软件）</p>
+<p><img alt="幕享投屏软件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/letsview.webp"></p>
+<p>下载：<a href="https://letsview.com/zh/">https://letsview.com/zh/</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>阳光下的阴影：矛盾的逻辑自洽</title>
+      <link>http://localhost:1313/posts/paradox-of-self-consistency/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/paradox-of-self-consistency/</guid>
+      <description>探讨人类在面对矛盾时如何通过逻辑自洽来合理化行为，以及如何避免陷入这种思维陷阱</description>
+      <content:encoded><![CDATA[<p>某天吃了当当网李国庆和俞渝的瓜（是的，这篇文章起源于那天），震惊之余，开始去思考这类争议，我自己的一贯常识，一旦遇到争议就会下意识得去寻找其中的&quot;坏人&quot;，什么小孩才分对错，大人只在乎利益之类的大道理，都是狗屁。长久以来的教育暗示我们，事情还是有&quot;对错&quot;，以及必然有&quot;正确答案&quot;，哪怕剧情反转，也是说明群众在寻找正确答案的路上。</p>
+<p>但是一旦找到&quot;答案&quot;，下一步疑问就是，&ldquo;TA 怎么可以这样&quot;或者&quot;难道他不愧疚么&rdquo;。似乎在正义的世界里，阳光下的阴影是不存在的。</p>
+<p>实际是，日常的生活里，那些细枝末节的正义对面，坏人也会安然自若，甚至，还在苦苦纠结着，&ldquo;主要原因在你，你却不自知&rdquo;。</p>
+<p>突然联想到一句总结的话，&ldquo;你不要指望通过讲道理来改变一个坏人，因为坏人本身，就有一条属于自己的自洽逻辑。&rdquo;</p>
+<p>一个人即使背负过错，也不会持续很长时间。人的自我认知调节能力就像情绪的调节器，为了情绪的稳定，我们总可以合理化一切。就像与一个比自己牛逼的同龄人待久了，情绪会从不服到慢慢承认现实，最后找到一大堆理由说明自己&quot;必然&quot;不如他，运气、勤奋、靠父母，等等，一下子逻辑合理，&ldquo;释然&quot;了很多。</p>
+<p>逻辑自洽般的合理化是一种本能，可以让人活得更舒心，但是，反过来，必要的时候我们需要理解并拆解它，接近事实才是客观认识世界和自我反省的第一步，在寻找真相的路上，那些粉饰出来的障碍，我们需要有能力认清。</p>
+<p>所有的合理都有其适用范围的，当因为信息不对称或者信息封锁，合理性就很容易成立，这也是我们经常提到的传销所使用的策略，不让你与外界联系，疯狂地灌输，加上封闭环境下的&quot;周围人&quot;榜样，即使是良好的教育也会进入逻辑的圈套。不过，传销是一种极端，自我封闭诸如只与周围人沟通而缺少与外界交流的意识，也会形成一个半封闭的氛围，出现我们常会遇到的，在公司内合理，在公司外看起来竟荒诞不羁的怪象。</p>
+<p>缺少足够清晰度的描述也是逻辑自洽的重灾区，经常可见于工作会议抑或公关人员的官宣。如我们所知，语言与逻辑有着你中有我我中有你的互生关系，语言所带来的的文字，与文字所指向的新概念层出不穷，由此产生的文字游戏让人难以捉摸，于是诞生了那句经典台词，&ldquo;最终解释权归本公司所有&rdquo;。我们也经常遇到，通过将 A 类比为 B，然后因为 B 成立，所以 A 成立的最为常见的文字游戏，我们需要认清，即使 B 可以成立，A 也不等于 B。</p>
+<p>有时候遇到的逻辑自洽更为荒诞，我自己出生在乡村，小时候常听到的爸爸妈妈或者左邻右舍唠叨在嘴旁的许多大道理，并不是因为其背后严谨的逻辑，或者是古老经验的传承，仅仅是因为，念起来很押韵，长大了才知道这份道理，让人哭笑不得。</p>
+<p>如果已有的逻辑无法自洽或者合理化，还有一个人类特有的能力来辅助，杜撰意义。&ldquo;杜撰&quot;并不是一个贬义词，因为&quot;意义&quot;本身是有其价值的。曾经读了一本生物学家写的书《人类存在的意义》，通篇的结论就是，没有意义。但是，人类可以创造意义，意义可以聚集群体，形成可继承的人类群体文化。但是&quot;杜撰意义&quot;也不是一个褒义词，当已有逻辑无法自洽时，我们可以编造一些不存在的意义，让行为和事情合理化，这也意味着，我们需要区分，哪些是事实和推理，哪些是强行拐弯的虚假&quot;意义&rdquo;。</p>
+<p>如何尽量避免矛盾的逻辑自洽是一个无尽的答案，目前推荐的是《原则》里提到的做法，分享之前做的读书笔记：如何做到头脑极度开放。</p>
+<p><img alt="如何做到头脑极度开放" loading="lazy" src="/images/posts/paradox-of-self-consistency/mindset-openness.webp"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>睡觉其实是件很有故事的事情</title>
+      <link>http://localhost:1313/posts/stories-about-sleeping-places/</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/stories-about-sleeping-places/</guid>
+      <description>从汉江夜宿到简易树屋，从屋顶到拖拉机车厢，回忆那些有趣的睡觉经历</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>这篇文章写了接近五个月，断断续续，直到今天回到老家才再次续上。此时屋外一改白天鸡鸣鸟叫，只剩零零星星的蝈蝈和风吹树叶的沙沙声，寂静到让我立马顿悟了这深夜的&quot;深&quot;。</p></blockquote>
+<p><img alt="夜晚的宁静" loading="lazy" src="/images/posts/stories-about-sleeping-places/night-silence.webp"></p>
+<h3 id="深夜的村子">深夜的村子</h3>
+<p>文章灵感来源于六月份的夜晚，当时在马来西亚红树林的河上坐着船，导游带着我们寻找萤火虫，抹黑前进的船迎着海风突然勾起了大量关于小时候睡觉的有趣经历，有趣到，回忆刚开始我就神游起来，甚至忽略了导游那总是一惊一乍的呼喊。</p>
+<p>在工作时间里，睡觉已经变得弥足珍贵但又按部就班。在小时候，睡觉其实是既无奈又可能有趣的经历，无奈是因为电视频道的单调和父母的严管，有趣则在于，睡觉可以不按套路出牌，最后，可能形成属于自己的猎奇故事。</p>
+<h3 id="汉江夜宿">汉江夜宿</h3>
+<p>回忆因水上的船而起是有缘由的，家住汉江边，曾经至少两次夜宿汉江，一次是父亲答应帮助他人（可能是叔叔）看护一晚还在汉江边装运的草垛。临近傍晚，父亲带着我和哥哥们一起，抱着被子，前往江边。正方体的草垛堆积在船上，我们将被子铺开放在草垛堆的顶部。聊天，听夜莺，看星星，盯着河里开着鱼灯的捕鱼人，我已经忘记了那晚是否有蚊子多的问题，但至少人生第一次听到夜莺叫，只是父亲也说不清楚夜莺的细节，神秘感保持了好久。</p>
+<p>第二次是冲动，与堂哥一起练胆，尝试去河边睡觉，原本是去河堤，不如直接水边更实在。最后，我们睡在了一艘打渔船的顶篷上，虽然凉爽，但蚊子多，不敢翻身，怕掉进水里，最后不得已钻进了渔船里，船内闷热，蚊子也不缺席，我已经忘却后来故事是怎么结尾的，可能被蚊子咬断片了。</p>
+<p><img alt="汉江边的夜景" loading="lazy" src="/images/posts/stories-about-sleeping-places/hanjiang-night.webp"></p>
+<p>来自老家的真实取景</p>
+<h3 id="简易树屋">简易树屋</h3>
+<p>不要浪漫化&quot;树屋&quot;这个名字，只是简单的四根树干架起一个悬空的可睡觉的木板，一般建在水库或者农田旁边，有简易屋顶，主要是为了看护。</p>
+<p><img alt="简易树屋" loading="lazy" src="/images/posts/stories-about-sleeping-places/tree-house.webp"></p>
+<p>树屋睡过太多次，之前为了看护家门口的池塘也架了一个，由于是半固定式建筑，一般设施较为齐全，甚至有灯、蚊帐和我藏着的小人书，方便第二天赖床不起时打发时间。人生第一次见到萤火虫就是在亲戚家的简易树屋上，伴随着亲戚的鼾声，我只能瞎激动一番，然后在今天才真正有机会写出这个故事。</p>
+<h3 id="在屋顶">在屋顶</h3>
+<p>屋顶应该是最早被用来抵御炎热的工具，随着老家楼房的多次改修，屋顶一直在变，我在堂屋和下屋的屋顶都睡过。</p>
+<p>收音机是夜宿屋顶的必备小家电，开着极小声，耳朵贴着去听收音机里的相声，慢慢入睡。有时半夜会被突发的打雷或者雨点惊醒，不得已回到房间，此时往往是屋里最闷的时候。运气好，其实可以睡到自然醒，被子一般会被露水打湿表层，不过，不用担心，等到中午太阳暴晒就会再次干蓬蓬了。</p>
+<h3 id="拖拉机车厢">拖拉机车厢</h3>
+<p>打雷或者阵雨是夏天夜晚经常会发生的事情，一旦屋顶不可用，我们还有更为粗暴的备选方案。将拖拉机的车厢与车头分离，推到院子大门所在的廊道处，拆掉一扇大门放置在车厢上作为床板，然后，就不用在下雨的闷热夜晚待在室内了。</p>
+<h3 id="惊悚柴床">惊悚柴床</h3>
+<p>柴床（网上居然搜索不到）往往意味着，宽厚的木板做成的床垫底部主要是稻草的传统床式，柴床也会搭配着相对更加漆黑的房间以及类似于普通布料的密闭古老蚊帐，因为，这一般是爷爷奶奶那一代人才会拥有的家居。小时候去姥姥姥爷家里睡过一次，放在传统瓦房里的柴床真的是无死角透漏着惊悚，瓦房的屋顶飞奔着老鼠，吱呀吱呀作响的床垫，本已昏暗的灯光在密封性极好的蚊帐下更是微弱，这样的房间里，我总是像上学一样早起，然后神经质一样逃离。</p>
+<h3 id="初中小通铺">初中小通铺</h3>
+<p>睡觉并不总是美好或者猎奇的，印象里，初中就像是原始社会，稚气未脱而熊孩子居多的时间段，那是我最不想回去的年代，40个男生住在一个屋子，总共20个床铺，没有电扇，热天里，睡觉就是一种修行，即使将被子撤去，全部换上报纸，报纸也被一张一张汗湿，不堪回首。</p>
+<h3 id="夜间大巴">夜间大巴</h3>
+<p>大巴车是我在大学里最喜欢的交通工具，晚上九点左右从县城出发，平躺在车里，摇晃一晚上就可以到武汉，有时还会遇到下雨，戴上耳机跟着车的频率，雨越大越自由自在，除了偶尔过于突出的鼾声和醇厚的脚臭。从那时起就有一种强烈的主观体验，外界流动的环境会带动思绪的流动，在车里构思着写作，文思如泉涌。</p>
+<p>大巴车一般凌晨两三点就会到汉口，大多时候，我会提前下车，拉着行李箱，逛着暗了好多度的汉口江滩，也是第一次感受到，老人的晨练居然可以在凌晨这么早。</p>
+<p>当然，除了这些，还有很多可以一句话带过的有趣睡觉经历，曾经在<a href="/posts/train-journey-to-russia">俄罗斯游记</a>里写过的 K3 长途火车，平躺着穿过蒙古，或者那糟糕的越南大巴卧铺，闷热到让人无法睡眠，等我再继续攒着更多故事。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>工作手记：流程、规则与灵活度</title>
+      <link>http://localhost:1313/posts/thoughts-on-workflow-rules-and-flexibility/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/thoughts-on-workflow-rules-and-flexibility/</guid>
+      <description>探讨工作中流程与规则的重要性，以及如何在规范和灵活性之间找到平衡点</description>
+      <content:encoded><![CDATA[<p>有时，做事确实不能太机会主义，就像写文章，似乎总是在等待一个完美的契机，一个有位子的地铁座位，恰到好处不冷不热的体感温度。但事与愿违，地铁总是拥挤不堪，暖气在人流中被逐渐放大，聒噪，闷热，不想敲击手里的虚拟键盘，还是，直接开始写吧。</p>
+<p>本期想聊一聊工作中常见的「流程与规则」，极端的流程与规则诸如经常被诟病的政府部门，需要证明你爸是你爸，文件一式三份，不过，政府部门的流程也在逐步简化，包括流程云端化，甚至在微信中可以一次办理很多业务。但是，如我们所见，即使流程在优化，在精简，但无法被消除，长久以来的矛盾也是如此，一种个体的我们与一对多的政府流程之间的持续冲突，个体会有很多不同的情况甚至特例，但流程不是针对个人的，很大意义上是针对一个群体，我们对于流程的怨念也就可以归纳为宏观与微观的认知冲突。</p>
+<p>曾经做过客服相关的工作，对于流程尤其敏感，不管客服有多高的效率，用户总会抱怨回复时间不及时，因为客服的目标是保证整个咨询队列的回复效率，甚至会牺牲某个用户本该可以及时收到的回复，而用户只能看到他面对的客服还没有帮忙解决问题。</p>
+<p>简单的归纳说，流程对于团队或者公司是有必要的，是一种提高团队效率而非从某个个人效率的角度出发的，但不是所有事务都适合流程化，完全没有变通也暗示着死气沉沉和过多的拘束。</p>
+<p>我经常看到的另一个极端，互联网公司尤其是小型创业公司对规则与流程似乎总是流露出一种鄙夷的态度，大概从骨子里就认为，只有极高的灵活度才能事半功倍，结果往往适得其反。混乱而不确定性的灵活度经常会让新人无所适从，也让老人之间逐渐丧失信任度，因为过高的灵活度大多意味着无法琢磨的规律甚至潜规则，抑或所谓的灵活度是以职称高的人为准，低阶的他人只是被动配合。</p>
+<p>合适的流程一般是公司关键路径和交际的规则显性化，尤其是会重复发生的关键路径和同事交际，不用总是重复发明轮子，其中，显性的浅一层意思是，文字化，更深一层的意思就是，达成共识的文字规则，甚至是构建内部系统，比如通用的报销系统、A/B 测试系统等等，有章可循，如果真的要调整也是达成共识后的优化。</p>
+<h2 id="合适的流程有什么好处呢">合适的流程有什么好处呢？</h2>
+<h3 id="一界限清晰减少沟通成本">一、界限清晰，减少沟通成本</h3>
+<p>一般通过新人加入的友好度就可以看出一个团队的流程建设是否完善，茫然不知所措，不知道下一步，不知道各部门的对接人，没有详尽的内部产品介绍，一大堆只存在于个别同事脑海里的产品特例，好比学一门语言没有语法也没有参考书，只能耳濡目染，当然，也不是不可以，只是太低效，当遇到同业的竞争时，业务能力决定成本，这其中就包括沉淀的流程和规则，换一种说法就是，经验的流程化。</p>
+<p>另外一种判定方式就是不同部门甩锅程度，流程往往意味着界限尽量清晰，减少不必要的灰色地带，因为灰色界限部分拼的是谁拥有最终解释权，或者势均力敌，最后纠缠在一起，变成漫天飞舞的锅。</p>
+<h3 id="二有条不紊地多任务降低出错的概率">二、有条不紊地多任务，降低出错的概率</h3>
+<p>流程意味着沉淀出相对固定的路径，不重复发明轮子，一方面，由于不同的项目有固定的路径，那么可以按照既有的流程推进，也适用于现在当下多任务并行的现状，乱中有序，有自己的章法，好的比赛到最后就是看谁更少出错，总结经验，不断迭代。</p>
+<p>沉淀后的流程也可以减少不必要的决策，让精力真正用在刀尖上，当事事都决策，疲于应付，我们还有多少心思去思考方向，这是一种长远的效率意识。我跟大家一样，讨厌无谓的忙碌，看上去风尘仆仆，雷厉风行，经常大部分是琐碎甚至麻痹自己的成分。</p>
+<p>有流程的协作也会让团队成员对接更顺畅，比如研发项目经常说的里程碑，流程既可以让成员有一种全局意识，知晓当前的进度，也可以预知下一步，即，作为成员的我知道下一步该跟谁对接，怎么对接，甚至流程还可以避免很多人拉不下脸面，委托&quot;流程&quot;来帮助推进项目前进，类似于说&quot;不是我催你，是我们认可的流程要求必须这样&quot;，或许，沉淀的流程就成为了那一双看不见的手。</p>
+<p>写到最后，似乎对于流程有一种极度的崇拜，其实不然，我自己更喜欢的其实是秩序，如果工作可以一个人一件事，那么流程和规则无关紧要，只是，现在的工作总是并行多任务且涉及众多部门，无秩序太容易让人忙忙碌碌却无所作为，甚至总是在重复发明轮子。</p>
+<p>不过，制定的规则一旦开始运行就会进入一种集体无意识的状态，或者到了某一天，规则会变得天经地义不容置疑。这意味着，一旦项目结束进入复盘时，流程本身也需要进入到复盘的状态，及时调整。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>最近在做啥？</title>
+      <link>http://localhost:1313/posts/recent-life-updates-2019-09/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/recent-life-updates-2019-09/</guid>
+      <description>分享近期的生活动态，包括玩塞尔达传说的心得、未完成的写作计划，以及最近常用的软件推荐。</description>
+      <content:encoded><![CDATA[<p>好久没有写过长文了，准备再间歇性发作一会儿，聊聊近期的动态。</p>
+<h1 id="最近沉迷在塞尔达传说">最近沉迷在塞尔达传说</h1>
+<p><img alt="塞尔达传说游戏截图" loading="lazy" src="/images/posts/recent-life-updates-2019-09/zelda-game-screenshot.webp"></p>
+<p>最近入手了任天堂的游戏主机 Switch，起因是，不止一人提到一款几乎封神的 Switch 独占游戏「塞尔达传说：荒野之息」，然而，从名字到画风，我都像在豆瓣里看到一部评分 9.0 的文艺片，既无法否认其优秀，但也担心我这样的下里巴人食之无味，毕竟，一款游戏，又能怎样。而当第三次看到朋友推荐时，好奇心爆发了，当晚购买，第二天收到，零零散散花了120个小时体验了这款有趣的开放世界游戏，而现在，我一直琢磨着，假如我是那些曾经向我推荐此游戏的朋友，我该如何表达，不至于让我错过了那么久：</p>
+<ul>
+<li>它应该算是任天堂赠送给这个时代的礼物或者艺术品，值得所有人也体验一下；</li>
+<li>一款让人回到童年的游戏，不仅仅是因为怀旧，还因为自由和天马行空；</li>
+<li>有着宫崎骏漫画一样的画风，但是有着比 GTA 侠盗飞车还自由的想象力，我几乎爬遍了游戏里的整个塞尔达大陆；</li>
+<li>沉浸其中的感觉是，Switch 就像是买这个游戏赠送的；</li>
+</ul>
+<p><img alt="滑翔中猛然发现一条龙腾空而起（塞尔达传说）" loading="lazy" src="/images/posts/recent-life-updates-2019-09/zelda-dragon-flying.webp"></p>
+<p>滑翔中猛然发现一条龙腾空而起（塞尔达传说）</p>
+<p><img alt="天上的一个 Boss（塞尔达传说）" loading="lazy" src="/images/posts/recent-life-updates-2019-09/zelda-boss-fight.webp"></p>
+<p>天上的一个 Boss（塞尔达传说）</p>
+<p>目前我已经从塞尔达传说中缓过神来，不至于念念不忘，但确实难以忘怀，就像较早之前文章里提到的，兴趣是征服一个世界最好的钥匙，好比高中时，是魔幻小说让我进入小说世界，最终才读到了《平凡的世界》这样超长但影响至今的作品，Switch 和塞尔达让我真正开始理解主机游戏的世界。</p>
+<p>近期，我对 Switch 和塞尔达游戏本身更感兴趣，Switch 并不是性能最好的主机，但是是真正能带来娱乐性的游戏设备，塞尔达传说也不是画质最好的开放世界游戏，但依然不能阻止它的「封神」之路。对于设计互联网产品的启发性来说，这比 iPhone 更能阐释了一种恰到好处的妥协：</p>
+<blockquote>
+<p>在产品开发时期，研究者总会想利用最先进的技术来制造最棒的商品。但我以为，想要研发出赚钱的商品，使用最先进的技术，对商品而言不是加分而是扣分。利用已经发展成熟，甚至接近淘汰的技术进行水平思考，将它应用到完全不同的领域上，反而容易制造出畅销商品。（GBA 之父横井军平的设计哲学「枯萎技术的水平思考」）</p></blockquote>
+<p>参考：<a href="https://mp.weixin.qq.com/s/glO4auN63pHun7K4-SOdbw">《任天堂的设计哲学》一文</a></p>
+<blockquote>
+<p>秉着任天堂一贯的设计理念，在《塞尔达传说：荒野之息》中我们更加没有看到传统意义上的&quot;新手引导&quot;。玩家们在不知不觉中就熟悉了游戏的操作玩法，并且会感受到其上手容易精通难的设计理念。</p></blockquote>
+<p>参考：<a href="https://mp.weixin.qq.com/s?__biz=MzA4MDc5OTg5MA==&amp;mid=2650608181&amp;idx=1&amp;sn=10cccf32bf3d655b5991dff688aba217&amp;chksm=879703c8b0e08adee06890758ce2f2792db3988d1ef946575ebd6d83b033075874cfb78f2c98&amp;mpshare=1&amp;scene=1&amp;srcid=0722vkRQmtViztsewGmsh2mu#rd">《塞尔达传说：荒野之息》是如何做新手引导的</a>？</p>
+<h1 id="最近烂尾的写作文稿">最近烂尾的写作文稿</h1>
+<p>包括一篇马来西亚游记、一篇关于睡觉的有趣回忆录还有一篇碎片思考都烂尾在笔记里，我会重新拾起来，完善已经完成大纲的文章。</p>
+<p>游记是近期想培养的习惯，那些我至今记忆犹新的旅行，都是被我写在了文章里，当我无法三言两语描述某个地方的美好时，转发一篇自己的游记给朋友能帮助很多，不再是零零散散毫无参考性，有了些许时间维度上的系统性。</p>
+<p><img alt="马来西亚的邦邦岛（游记里的小岛）" loading="lazy" src="/images/posts/recent-life-updates-2019-09/malaysia-bangbang-island.webp"></p>
+<p>马来西亚的邦邦岛（游记里的小岛）</p>
+<p>关于睡觉的话题，是我旅行途中突然涌现的话题性回忆，小时候的睡觉有一点点不那么按部就班，甚至有些乡野气息，露宿在河边，在田野，在屋顶，在祖屋的柴床上，说不定我可以简单手绘画出示意。</p>
+<h1 id="最近的常用软件">最近的常用软件</h1>
+<p>经常在知乎和微信上给人推荐软件，其实，我自己的软件也经常变动，分享一下近期成为常用软件的好 App：</p>
+<ul>
+<li>魔法上网的软件已经从 Surge 独占改为 Surge + Shadowrocket，主要是不想订购新的 Surge 3，太贵了，而 Shadowrocket 的稳定性和新特性都非常不错，Mac 上还推荐 ClashX，有着极其可爱的 Logo；</li>
+<li>待办事项管理已从 Todoist 迁到了 Things 3，Things 3 的交互极其用心，小心思非常多，相比较于 Web 网页包装成的客户端，Things 3 反应更快，而且，感觉到像白纸一样自由的待办事项工具，之后我会写个文档单独夸奖一次；</li>
+<li>看视频目前主要集中在了 Youtube 和 Bilibili，近期中文自媒体大批上了 Youtube，终于让我可以国内国外一起兼顾，而Bilibili 让我看到了一群真正爱分享的网友，不管是鬼畜制作还是攻略分享，我实实在在感受到了一种「认真的闲」；</li>
+<li>文件存储全面改为 iCloud，之前还夹杂着 Dropbox，但是在苹果设备生态里，iCloud 的润物细无声做到了极致，而且，真的便宜，尤其是相对于 Dropbox 每月至少 80 RMB的价格而言；</li>
+<li>手写软件在 Goodnotes 5 和 Notability 之间纠结了好久，毕竟 Notability 可以录音还有完整功能的 Mac 端，但是新版 Goodnotes 设计让 Notability 一下子就显得「过时」了，加上 Goodnotes 近期超强更新频率，我心甘情愿换船了，iPad Pro 现在已经成为我的最佳电子草稿本，不过，如果是大学生的话，还是推荐 Notability，录音和笔记的搭配非常适合学生场景；</li>
+<li>思维导图软件依然继续在 XMind ZEN 上，足够丰富的样式，以至于，虽然我吐槽了好多次其依然坚守的传统文件存储机制以及尴尬至极的订阅制，但是，确实好看；</li>
+</ul>
+<p>今天写到这里，感谢阅读。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>2019 年春节随记：年复一年的吐槽和变化</title>
+      <link>http://localhost:1313/posts/chinese-new-year-2019-reflections/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chinese-new-year-2019-reflections/</guid>
+      <description>记录了一个北漂青年回到湖北农村老家过年的所见所闻，以及对家乡变迁的思考。</description>
+      <content:encoded><![CDATA[<p>（以下皆为我主观观察，仅代表我的周围）</p>
+<p>我的老家在湖北某个县城的乡村里，冬天的冷不能靠数据来说话（数据上确实没有北京冷），但就是冷，如果没有取暖器材，只能窝在被子里，曾想，如果解决了方言识别的问题的话，我觉得智能音箱会是老家冬天最适合的小家电，只用动口不用动手。</p>
+<p>由于今年有重要政治任务，所以提前回家过年。</p>
+<p>而回家过春节，除了准备好红包和年货，还要准备好心情，一种特别亢奋的状态，才能匹配这无穷无尽的侃大山和催婚而不显得尴尬、无聊和愤怒。</p>
+<p><img alt="老家的取暖设备" loading="lazy" src="/images/posts/chinese-new-year-2019-reflections/winter-heating.webp"></p>
+<p>每年春节回家，我都会给自己布置一些业余任务，然而，最后都被打败了。躲在取暖房里，无法专心写作和假装学习，不管是拿起手机或是电脑，都有围过来的亲戚朋友指点一下，看上去是怕我尴尬才过来跟我搭句话，或是小朋友的好奇，让我不得不先回答，我在干啥，然后引出了更多新的好奇，只得关掉电脑，作罢。就连吃鸡游戏也无法正常玩耍，因为根本听不到走进的敌人的声音，最后落得被小朋友鄙视，落地成盒。</p>
+<p>「又不是不能过」和「忍一忍」是老家最大的顽疾，催了两年才缓缓在家装上取暖的烧柴炉，至此，终于有一个地方可以不用靠跺脚来过春节，之前父母都说，冬天很短，忍忍就过去了，或者说，过年都是这个样子，又不是过不了年。</p>
+<p>今年还剩余一个问题，那就是「靠太阳能的热水器」，与另外一个从广州回来的长辈一起吐槽着，爸妈是农民，靠天吃饭这么多年，现在还要靠天洗澡，回家后遇到的晴天少之又少，想要吸取天地之精华洗个澡真是难于等晴天。目测，今年是催的第一年，按照过往经验，还需要催至少一年。</p>
+<p>每次回家，家乡都有变化，但不变的是那几百块钱的恩恩怨怨，依然在发酵，亲戚们之间的争吵其实都是小钱上的纠葛，但时间之长，长于我们的想象。我像听八卦一样，听爸妈讲完亲戚们之间的长长短短纠纠葛葛，又不得不祈祷，希望过年可以冲淡一些恩怨，或者年后再发酵和争吵吧。</p>
+<p>手机已经是老家无法绕过的场景，我担心的是孩子，这不是一种高高在上的怜悯，而是实实在在的担忧，父母精神生活的匮乏和疏于管理，亲近手机是孩子内部和外部的最佳解决方案，内部而言，没有其他好玩的活动，不如手机新奇有意思，游戏和短视频几乎可以无穷无尽，外部而言，父母们就是打牌和玩手机，对于嘈杂的小朋友，给一部手机和平板就安安静静了，何乐而不为。</p>
+<p>一种魔幻场景就是：</p>
+<p>一阵大声呵斥：「你们咋还玩手机，是想挨打不，别不听话」。然后，父母们低头去玩自己的手机了。</p>
+<p>玩笑也是老家里我无法理解的对话，主要发生在大人和孩子们之间，孩子因为一件丢人的事情，可能是成绩或者某次言谈举止，被大人们当作谈资当面逗孩子，一种近似嘲讽性的玩笑，而这种成人式的玩笑让小朋友们气急败坏，等到气哭时，大人们就一起哈哈大笑。</p>
+<p>当然，不管怎么吐槽都是老家，尽管有些恶趣味，都不阻止我持续观察它的新变化。</p>
+<p>随着整个县城在争取先进城市，一大堆的政策逐渐凸显，我特意咨询了在政府工作的同学，其中关于农村卫生的改革非常见效，在村子里，以前随地可见的垃圾堆，已经消失不见，村子里增加了专门收垃圾的专员，而父母也不知道从什么时候开始养成了垃圾装桶的习惯，每天有人处理。</p>
+<p>粪便排污也是一大变化，虽然家里很早装了抽水马桶，但马桶的水是随意排放的，所以，之前每年都是只有我们回家才会用抽水马桶，而今年，每一家都装了非常大的化粪桶。来自在政府工作的同学说，污水处理厂也在修建中，可见的未来会修建下水道并集中处理污水。</p>
+<p><img alt="乡村道路" loading="lazy" src="/images/posts/chinese-new-year-2019-reflections/village-road.webp"></p>
+<p>当然，不论我如何吐槽这个地方，我都无比期待村子里更多的变化，正在筹备的天然气下乡，正在准备的新公路待规划，越来越多的汽车，我期待有一天，村子变得更宜居，过年回家的体验变得更好，父母可以接受更多新的生活方式。</p>
+<p>我曾经看到的最好的农村场景出现在韩国济州岛，村子里干干净净，几乎一尘不然，而且，咖啡和拖拉机可以出现在同一个画面里，也并不是那么违和，希望有一天也可以看到，虽然我不爱喝咖啡。</p>
 ]]></content:encoded>
     </item>
     <item>
