@@ -44,7 +44,7 @@ title: "Joe's Recap：8月以前"
 
 其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像[这个](https://whimsical.com/s3pm6mwq1RT6jF3WFmTph)。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。
 
-更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 [Monica](/posts/monica-review)。
+更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 [Monica](https://monica.im/)。
 
 ![AI 助手的使用](/images/posts/joe-recap-8-month-before/image-3.webp)
 
