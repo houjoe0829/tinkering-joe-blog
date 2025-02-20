@@ -3,7 +3,7 @@ author: "Joe"
 date: "2020-01-20"
 description: "本期推荐了 Notion 的重大更新、新版 Edge 浏览器、RelayChat 插件、Desktop Goose 桌面宠物、Inoreader 和幕享投屏工具等应用。"
 draft: false
-tags: ["软件推荐"]
+tags: ["折腾软硬件"]
 title: "最近看上了什么 App | 005"
 ---
 
