@@ -100,13 +100,32 @@ def convert_to_english_name(chinese_title):
     
     return filename
 
-def generate_frontmatter(title, description="", tags=None):
+def parse_notion_datetime(datetime_str):
+    """解析 Notion 导出的日期时间字符串
+    
+    Args:
+        datetime_str: Notion 格式的日期时间字符串，如 "November 13, 2024 8:17 PM"
+    
+    Returns:
+        格式化的日期时间字符串，如 "2024-11-13T20:17:00+08:00"
+    """
+    try:
+        # 解析 Notion 的日期时间格式
+        dt = datetime.strptime(datetime_str, "%B %d, %Y %I:%M %p")
+        # 返回格式化的字符串，添加北京时区
+        return dt.strftime("%Y-%m-%dT%H:%M:00+08:00")
+    except ValueError as e:
+        print(f"警告：无法解析日期时间字符串 '{datetime_str}': {e}")
+        return datetime.now().strftime("%Y-%m-%dT%H:%M:00+08:00")
+
+def generate_frontmatter(title, description="", tags=None, created_time=None):
     """生成符合规范的 Front Matter
     
     Args:
         title: 文章标题
         description: 文章描述
         tags: 标签列表
+        created_time: 文章创建时间
     
     Returns:
         格式化的 Front Matter 字符串
@@ -114,10 +133,14 @@ def generate_frontmatter(title, description="", tags=None):
     if tags is None:
         tags = []
     
+    # 如果没有提供创建时间，使用当前时间
+    if created_time is None:
+        created_time = datetime.now().strftime("%Y-%m-%dT%H:%M:00+08:00")
+    
     # 按照规范的顺序创建 frontmatter
     frontmatter = {
         "author": "Joe",
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": created_time,
         "description": description,
         "draft": False,
         "tags": tags,
@@ -132,6 +155,70 @@ def generate_frontmatter(title, description="", tags=None):
                               default_flow_style=False,
                               sort_keys=False,
                               default_style='\"') + "---\n\n"
+
+def extract_notion_metadata(content):
+    """从 Notion 导出的内容中提取元数据
+    
+    Args:
+        content: 原始文章内容
+    
+    Returns:
+        (创建时间, 标签列表, 描述)的元组
+    """
+    created_time = None
+    tags = []
+    description = ""
+    
+    # 分割内容为行
+    lines = content.split('\n')
+    
+    # 定义正则表达式
+    created_pattern = re.compile(r'^Created(?:\stime)?:\s+(.+)$')
+    tags_pattern = re.compile(r'^Tags:\s+(.+)$')
+    
+    # 提取第一段作为描述（跳过标题和元数据）
+    content_started = False
+    desc_lines = []
+    
+    for line in lines:
+        line = line.strip()
+        
+        # 跳过空行
+        if not line:
+            continue
+            
+        # 检查创建时间
+        created_match = created_pattern.match(line)
+        if created_match:
+            created_time = parse_notion_datetime(created_match.group(1))
+            continue
+            
+        # 检查标签
+        tags_match = tags_pattern.match(line)
+        if tags_match:
+            # 解析标签字符串
+            tags_str = tags_match.group(1)
+            # 移除可能的 Notion 链接格式
+            tags_str = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', tags_str)
+            # 分割标签
+            tags = [tag.strip() for tag in tags_str.split(',') if tag.strip()]
+            continue
+            
+        # 提取描述（第一个非元数据、非标题的段落）
+        if not content_started:
+            if line.startswith('#'):  # 跳过标题
+                continue
+            if any(pattern.match(line) for pattern in [created_pattern, tags_pattern]):
+                continue
+            content_started = True
+        
+        if content_started and len(desc_lines) < 1:  # 只取第一段
+            desc_lines.append(line)
+    
+    # 组合描述
+    description = ' '.join(desc_lines) if desc_lines else ""
+    
+    return created_time, tags, description
 
 def clean_notion_metadata(content):
     """清理 Notion 导出的元数据
@@ -197,14 +284,20 @@ def process_content(content, article_name):
     Returns:
         处理后的文章内容
     """
-    # 首先清理 Notion 元数据
+    # 首先提取元数据
+    created_time, tags, description = extract_notion_metadata(content)
+    
+    # 清理 Notion 元数据
     content = clean_notion_metadata(content)
     
     lines = content.split('\n')
     
     # 移除开头的标题（# 开头的行）
     if lines and lines[0].strip().startswith('# '):
+        title = lines[0].strip('#').strip()
         lines = lines[1:]
+    else:
+        title = article_name.replace('-', ' ').title()
     
     # 处理 Notion 链接
     processed_lines = []
@@ -221,9 +314,20 @@ def process_content(content, article_name):
         
         processed_lines.append(line)
     
+    # 生成新的 Front Matter
+    front_matter = generate_frontmatter(
+        title=title,
+        description=description,
+        tags=tags,
+        created_time=created_time
+    )
+    
+    # 组合最终内容
+    content = front_matter + '\n'.join(processed_lines)
+    
     # 确保段落之间有正确的空行
-    content = '\n'.join(processed_lines).strip()
-    return content + '\n'
+    content = re.sub(r'\n{3,}', '\n\n', content)
+    return content.strip() + '\n'
 
 def process_image_links(content, article_name):
     """处理文章中的图片链接为统一格式
@@ -252,115 +356,62 @@ def process_image_links(content, article_name):
     
     return content
 
-def extract_zip_utf8(zip_path="draftfiles"):
-    """解压 Notion 导出的 ZIP 文件并进行基础处理
-    
-    Args:
-        zip_path: ZIP 文件所在目录
-    """
+def main():
+    """主函数，处理 Notion 导出的 ZIP 文件"""
     # 创建临时目录
-    temp_dir = "temp_notion"
-    if not os.path.exists(temp_dir):
-        os.makedirs(temp_dir)
+    temp_dir = Path('temp_notion')
+    temp_dir.mkdir(exist_ok=True)
     
-    # 查找 ZIP 文件
-    zip_files = [f for f in os.listdir(zip_path) if f.endswith('.zip')]
-    if not zip_files:
-        print("未找到 ZIP 文件")
-        return
+    # 查找 draftfiles 目录中的 ZIP 文件
+    zip_files = list(Path('draftfiles').glob('*.zip'))
     
-    for zip_file in zip_files:
-        full_path = os.path.join(zip_path, zip_file)
-        print(f"正在解压文件: {full_path}")
+    for zip_path in zip_files:
+        print(f"正在解压文件: {zip_path}")
         
-        try:
-            with zipfile.ZipFile(full_path, 'r') as zip_ref:
-                # 解压所有文件
-                for file_info in zip_ref.filelist:
+        # 解压 ZIP 文件
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            # 获取所有 Markdown 文件
+            markdown_files = [f for f in zip_ref.namelist() if f.endswith('.md')]
+            
+            for md_file in markdown_files:
+                # 解码文件名（处理中文）
+                try:
+                    # 尝试使用 UTF-8 解码
+                    decoded_name = md_file.encode('cp437').decode('utf-8')
+                except UnicodeEncodeError:
+                    # 如果失败，假设文件名已经是 UTF-8
+                    decoded_name = md_file
+                except Exception as e:
+                    print(f"警告：无法解码文件名 '{md_file}': {e}")
+                    continue
+                
+                print(f"                            成功提取: {decoded_name}")
+                
+                # 读取文件内容
+                try:
+                    content = zip_ref.read(md_file).decode('utf-8')
+                except UnicodeDecodeError:
                     try:
-                        # 使用 CP437 编码处理文件名
-                        file_name = file_info.filename.encode('cp437').decode('utf-8')
-                    except:
-                        # 如果转换失败，尝试直接使用原始文件名
-                        file_name = file_info.filename
-                    
-                    # 创建目标路径
-                    target_path = os.path.join(temp_dir, file_name)
-                    
-                    # 确保目标目录存在
-                    os.makedirs(os.path.dirname(target_path), exist_ok=True)
-                    
-                    # 解压文件
-                    try:
-                        source = zip_ref.open(file_info)
-                        target = open(target_path, "wb")
-                        with source, target:
-                            shutil.copyfileobj(source, target)
-                        print(f"成功提取: {file_name}")
-                    except Exception as e:
-                        print(f"提取文件失败: {file_name}")
-                        print(f"错误信息: {str(e)}")
+                        content = zip_ref.read(md_file).decode('gbk')
+                    except UnicodeDecodeError:
+                        print(f"错误：无法解码文件内容 '{decoded_name}'")
                         continue
                 
-                # 处理所有 Markdown 文件
-                for root, dirs, files in os.walk(temp_dir):
-                    for file in files:
-                        if file.endswith('.md'):
-                            md_path = os.path.join(root, file)
-                            
-                            # 读取文件内容
-                            try:
-                                with open(md_path, 'r', encoding='utf-8') as f:
-                                    content = f.read()
-                                    
-                                    # 提取标题
-                                    title_match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
-                                    if title_match:
-                                        title = title_match.group(1)
-                                    else:
-                                        title = os.path.splitext(file)[0]
-                                    
-                                    # 提取描述（第一段非空文本）
-                                    description = ""
-                                    for line in content.split('\n'):
-                                        line = line.strip()
-                                        if line and not line.startswith('#'):
-                                            description = line
-                                            break
-                                    
-                                    # 生成英文文件名
-                                    article_name = convert_to_english_name(title)
-                                    
-                                    # 处理文章内容（移除重复标题和处理链接）
-                                    processed_content = process_content(content, article_name)
-                                    
-                                    # 处理图片链接
-                                    processed_content = process_image_links(processed_content, article_name)
-                                    
-                                    # 生成 Front Matter
-                                    front_matter = generate_frontmatter(
-                                        title=title,
-                                        description=description,
-                                        tags=[]  # 这里可以添加标签提取逻辑
-                                    )
-                                    
-                                    # 组合最终内容
-                                    final_content = front_matter + processed_content
-                                    
-                                    # 保存处理后的文件
-                                    output_path = f"temp_notion/{article_name}.md"
-                                    with open(output_path, 'w', encoding='utf-8') as f:
-                                        f.write(final_content)
-                                    
-                                    print(f"\n处理文章: {title} -> {article_name}")
-                                    
-                            except Exception as e:
-                                print(f"处理文件失败: {str(e)}")
-                                continue
-        
-        except Exception as e:
-            print(f"处理 ZIP 文件时出错: {str(e)}")
-            continue
+                # 获取文章标题（移除扩展名和可能的 Notion ID）
+                article_title = re.sub(r'\s+[a-f0-9]{32}$', '', 
+                                     Path(decoded_name).stem)
+                
+                # 转换为英文文件名
+                article_name = convert_to_english_name(article_title)
+                print(f"\n处理文章: {article_title} -> {article_name}")
+                
+                # 处理文章内容
+                content = process_content(content, article_name)
+                content = process_image_links(content, article_name)
+                
+                # 保存处理后的文件
+                output_path = temp_dir / f"{article_name}.md"
+                output_path.write_text(content, encoding='utf-8')
     
     print("\n解压和基础处理完成！")
     print("\n后续步骤：")
@@ -369,5 +420,5 @@ def extract_zip_utf8(zip_path="draftfiles"):
     print("3. 添加文章元数据")
     print("4. 清理临时文件")
 
-if __name__ == "__main__":
-    extract_zip_utf8() 
+if __name__ == '__main__':
+    main() 
