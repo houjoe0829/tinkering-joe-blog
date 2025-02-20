@@ -14,7 +14,7 @@
       <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/best-local-ai-note-taking-tools/</guid>
       <description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description>
-      <content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308">歸藏老师</a>在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
+      <content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308" target="_blank" rel="noopener noreferrer">歸藏老师</a> 在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
 <p><img alt="Twitter 截图" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp"></p>
 <p>我自己最近除了将个人博客从 Notion 搬到了个人站点 houjoe.me，也将日常笔记从 Notion 迁到了 Obsidian，主要是用 Cursor 这类 AI 编程工具多了之后，Coding with AI 的正反馈让我也更希望 Note-Taking with AI。</p>
 <p>其实，一般代码仓库里都有一个最大的&quot;笔记&quot;，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。</p>
@@ -35,7 +35,7 @@
 <h3 id="第一步学习一下编程工具的界面">第一步，学习一下编程工具的界面</h3>
 <p>不需要学习代码，只是熟悉界面，而且，一旦认识之后，以后再学习编程的门槛就更低了。</p>
 <h3 id="第二步安装一些-markdown-插件">第二步，安装一些 Markdown 插件</h3>
-<p>编程工具是把所有文件当做代码来编辑，需要一些插件来改善编辑体验，这里我最推荐的是 <a href="https://marketplace.cursorapi.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>，还有很多其他的，比如，还有能让编辑 Markdown 像 Word 文档那样的体验，不过，不推荐，因为，影响了 AI 的能力发挥。</p>
+<p>编程工具是把所有文件当做代码来编辑，需要一些插件来改善编辑体验，这里我最推荐的是 <a href="https://marketplace.cursorapi.com/items?itemName=yzhang.markdown-all-in-one" target="_blank" rel="noopener noreferrer">Markdown All in One</a> ，还有很多其他的，比如，还有能让编辑 Markdown 像 Word 文档那样的体验，不过，不推荐，因为，影响了 AI 的能力发挥。</p>
 <p><img alt="Markdown 插件" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/markdown-plugin.webp"></p>
 <h3 id="第三步去掉一些-markdown-语法的检测">第三步，去掉一些 Markdown 语法的检测</h3>
 <p>如果不禁用，会显示很多波浪线形式的下划线，有点类似于文档编辑里的拼写检查，影响编辑的心情。不过，如果不介意的话，可以忽略这一步。因为，去掉这个有些麻烦，需要更改配置文件，我是让 AI 帮忙修改的配置文件。</p>
@@ -51,7 +51,7 @@
       <guid>http://localhost:1313/posts/flow-book-about-happiness/</guid>
       <description>《心流：最优体验心理学》读书笔记，探讨如何从日常事务中获得更多幸福体验</description>
       <content:encoded><![CDATA[<p>豆瓣评分：8.2</p>
-<p>传送门：<a href="https://book.douban.com/subject/27186106/">https://book.douban.com/subject/27186106/</a></p>
+<p>传送门：<a href="https://book.douban.com/subject/27186106/" target="_blank" rel="noopener noreferrer">https://book.douban.com/subject/27186106/</a> </p>
 <p>书的全名是《心流：最优体验心理学》，属于 2025 年看完的第 2 本书。</p>
 <p>虽然书名看上去像是介绍效率的，其实无关乎高效，更多的是心理体验。这本书很适合希望实现心流工作状态，或者希望从日常事务中获得更多幸福体验的人。从我个人的经验来说，富有挑战的工作确实有，但不多见，充盈生活的还是琐事居多。</p>
 <p>先说书籍的整体评价，我给三星半，因为翻译有一点点拗口，行文也有些松散，导致看的过程中需要和 AI 聊一聊才好理解，不过，仍然属于值得读且不那么难读的范畴，也是我自己看得非常仔细的一本书，大量划线和笔记，并且完整读下来确实解决了很多的疑惑。</p>
@@ -95,7 +95,7 @@
 <p>一直有个妄想，希望能把周围的一切都写进文字里，因为，一旦出现在我的视野里，它就属于我的故事一部分，可以讲述一次我的观察。</p>
 <p>文字不分长短，或是寥寥数语的微博，或是徐徐道来的 blog，只要能完整传达一个想法，都是值得的表达。</p>
 <p>身边的朋友比较了解一些，我一直在写东西，虽不太能称之为写作，太正式，不太适合我，也没有成什么气候，无法靠这个生活，但胜在断断续续的坚持。从古早的 QQ 空间开始，到私密的电子笔记，到新浪微博，经常默默地更新着。</p>
-<p>后来，直到知乎专栏才算真正开始公开写东西，最近主要在微信公众号和 Notion 站点更新，而这两天，我买了新域名 <a href="http://houjoe.me">houjoe.me</a> ，决定只在微信公众号和个人站点发布了，这篇文章当做站点的开端……</p>
+<p>后来，直到知乎专栏才算真正开始公开写东西，最近主要在微信公众号和 Notion 站点更新，而这两天，我买了新域名 <a href="http://houjoe.me" target="_blank" rel="noopener noreferrer">houjoe.me</a>  ，决定只在微信公众号和个人站点发布了，这篇文章当做站点的开端……</p>
 <h1 id="从记录开始的写">从记录开始的写</h1>
 <blockquote>
 <p>微信朋友圈和微博是最好的写作训练场。</p></blockquote>
@@ -388,7 +388,7 @@
 <h2 id="年度软件系列">年度软件系列</h2>
 <h3 id="1-ai-系列-凡事先问一下-ai">1️⃣ AI 系列： 凡事先问一下 AI</h3>
 <p>AI 确实已经浸入生活的方方面面。虽然它们偶尔会产生幻觉、犯错，但作为生活和工作的最佳助手，这个说法一点也不夸张。</p>
-<p>我目前主要使用的是 <a href="https://claude.ai/">Claude</a>。无论是改写文案、翻译文本，还是编写简单的 HTML 文件或制作功能 Demo，它都能帮我避免基础错误，完成一些原本需要大量学习才能掌握的任务。</p>
+<p>我目前主要使用的是 <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a> 。无论是改写文案、翻译文本，还是编写简单的 HTML 文件或制作功能 Demo，它都能帮我避免基础错误，完成一些原本需要大量学习才能掌握的任务。</p>
 <p>Claude 是我最信赖的 AI 助手，它的输出质量很高。每当我遇到疑惑，我都会先向它请教。这些对话也总能带来意想不到的启发，以前独自思考时常常会陷入死胡同，而现在 Claude 为我打开了很多新的思路。</p>
 <p>另一个得力助手是豆包。虽然整体能力不及 Claude，但它在国内信息的及时性方面更胜一筹。豆包桌面版功能丰富，已经成为我的主力浏览器，能快速完成网页翻译、内容总结、AI 阅读等任务，让复杂的材料变得易于理解，而且完全免费。我还购置了豆包的硬件产品 Ola friend，方便随时唤醒豆包来提问，这个我后面也会提到。</p>
 <p>以下是我日常使用 AI 的主要场景：</p>
@@ -403,22 +403,22 @@
 <li>Chat with PDF：豆包</li>
 <li>审视我写的想法：Claude</li>
 </ul>
-<h3 id="2-omniaudiohttpsomniaudioinfo自定义自己的播客内容">2️⃣ <a href="https://omniaudio.info/">OmniAudio</a>：自定义自己的播客内容</h3>
+<h3 id="2-omniaudiohttpsomniaudioinfo自定义自己的播客内容">2️⃣ <a href="https://omniaudio.info/" target="_blank" rel="noopener noreferrer">OmniAudio</a> ：自定义自己的播客内容</h3>
 <p>今年骑行活动变多，播客成了最长久的陪伴，但是经常出现无播客可听的状态，OmniAudio 可以把网页、文本、Gmail 等转成播客并直接在现有播客客户端听，不过，对于我而言，最多的还是将 Twitter 里、微信公众号以及 RSS 订阅的网页文章转成播客来听，这样就有了更多可以听的内容，自己决定自己听什么。</p>
 <p>另外，即使是非中文网页也会自动翻译成中文的播客内容。</p>
-<h3 id="3-微信读书httpswereadqqcom真的就是看书">3️⃣ <a href="https://weread.qq.com/">微信读书</a>：真的就是看书</h3>
+<h3 id="3-微信读书httpswereadqqcom真的就是看书">3️⃣ <a href="https://weread.qq.com/" target="_blank" rel="noopener noreferrer">微信读书</a> ：真的就是看书</h3>
 <p>2024 年创下了个人的最高读书记录，读完了 22 本书。现在已养成习惯，随时随地掏出手机看上几眼，或是睡前捧着 iPad mini 读到睡意袭来。</p>
 <p>我最喜欢微信读书的几大特点：无出其右的中文排版、稳定可靠的跨设备同步、新增的 AI 问书功能，以及实用的网友划线笔记分享。</p>
 <p>虽然微信读书的功能已经开始有些臃肿，但若专注于阅读本身，它仍是最佳的中文书籍阅读平台。</p>
-<h3 id="4-stravahttpswwwstravacom解决找骑行路线的烦恼">4️⃣ <a href="https://www.strava.com/">Strava</a>：解决找骑行路线的烦恼</h3>
+<h3 id="4-stravahttpswwwstravacom解决找骑行路线的烦恼">4️⃣ <a href="https://www.strava.com/" target="_blank" rel="noopener noreferrer">Strava</a> ：解决找骑行路线的烦恼</h3>
 <p>户外骑行最难的是，今天骑哪条线？</p>
 <p>在家附近，烦恼的是，有什么新路线可以骑，已有的那几条路线已经骑烦了。</p>
 <p>在外地，烦恼的是，初来乍到，咋安排线路？</p>
 <p>Strava 可以根据设定的距离，比如 25 公里，以及附近网友骑行的热度，自动计算出可以骑行的路线推荐，目前在骑过的城市里，基本没有落空过，总是可以环一圈回到初始位置，而且，还可以自己手动粗略画个圈，然后 Strava 自动计算出可骑行的路线。</p>
-<h3 id="5-滴答清单httpsdida365com持续收集愿望清单">5️⃣ <a href="https://dida365.com/">滴答清单</a>：持续收集愿望清单</h3>
+<h3 id="5-滴答清单httpsdida365com持续收集愿望清单">5️⃣ <a href="https://dida365.com/" target="_blank" rel="noopener noreferrer">滴答清单</a> ：持续收集愿望清单</h3>
 <p>对，又是滴答清单，虽然它本质是个任务管理工具，但我想分享的是它对生活的另一种影响。很多人好奇为什么我们可以找到那么多想去的地方或者想做的事情，其实是因为，这个收集愿望的过程一直在发生，我自己有越来越多的清单列表，游戏、电影、书籍、想去的地方、想买的东西、想去见的人、好的产品点子、想写的话题……</p>
 <p>有了这些愿望清单，不用压力太大。因为这些都只是&quot;想做的事&quot;，而不是&quot;必须做的事&quot;。每当要规划什么，就可以翻翻清单挑选，像是在还愿，这也会激发自己写下更多愿望。</p>
-<h3 id="6-day-onehttpsdayoneappcom这年头还是要有个写日记的地儿">6️⃣ <a href="https://dayoneapp.com/">Day One</a>：这年头还是要有个写日记的地儿</h3>
+<h3 id="6-day-onehttpsdayoneappcom这年头还是要有个写日记的地儿">6️⃣ <a href="https://dayoneapp.com/" target="_blank" rel="noopener noreferrer">Day One</a> ：这年头还是要有个写日记的地儿</h3>
 <p>作为与 Evernote 使用历史相当的记录工具，十年过去，Evernote 早已淡去，而 Day One 依然可以活跃在我的生活中。对于一个情绪波动较大的人来说，写日记是与自己对话的绝佳方式。不过现在不用再像小学时那样每天写一篇完整的日记，而是随时记录生活片段，甚至连标题都不用。</p>
 <p>在这个信息高度膨胀的年代，过量信息时常扰乱稳定的情绪。而写日记这种传统方式，能帮助我们更快地消化情绪，保持内心平和。</p>
 <p>Day One 还有一个独特的优势：支持依据照片补录日记的功能。在添加照片到 Day One 时，App 会自动识别照片的拍摄时间和地理位置，创建一条对应时间点的日记，让整个时间线更加准确完整。这样，我们只管先拍照，有时间了再写。</p>
@@ -439,7 +439,7 @@
 <h3 id="5-iphone-16-pro让随拍成真">5️⃣ iPhone 16 Pro：让随拍成真</h3>
 <p>可能是 iPhone 16 Pro 的画质跃升，也可能是其新增的实体拍照键，今年用 iPhone 拍照的频次已经大幅增加。在外骑行的时候，可以随时从车把上取下手机，抓拍完成，立刻再放回去，这一过程非常丝滑。</p>
 <h3 id="6-ola-friend-耳机随叫随到的-ai-助手">6️⃣ Ola friend 耳机：随叫随到的 AI 助手</h3>
-<p>我已经单独写了一篇安利文章给到 Ola friend，目前用了大半个月，观点没有变化，可以查看 <a href="https://www.notion.so/AI-15a8b0838b68801a899eea98a8d4325e?pvs=21">自驾和骑行的新伴侣：AI 耳机</a>。</p>
+<p>我已经单独写了一篇安利文章给到 Ola friend，目前用了大半个月，观点没有变化，可以查看 <a href="https://www.notion.so/AI-15a8b0838b68801a899eea98a8d4325e?pvs=21" target="_blank" rel="noopener noreferrer">自驾和骑行的新伴侣：AI 耳机</a> 。</p>
 <h3 id="7-其他更多">7️⃣ 其他更多</h3>
 <p>还有很多其他好物已经老生常淡，比如极空间 Nas、特斯拉 Model Y，依然每天在用。</p>
 <h2 id="年度影视剧">年度影视剧</h2>
@@ -454,7 +454,7 @@
 <h2 id="年度游戏">年度游戏</h2>
 <p>今年能玩的游戏不多，卖掉了 PS5，也错过了那款年度游戏索尼机器人。</p>
 <ul>
-<li>《黑神话悟空》：这个不用介绍，一段意犹未尽的冒险，真心期待 DLC。<a href="https://www.notion.so/cf9a602e65da4ec5a5c45038d0874ccb?pvs=21">黑神话悟空：又爱又骂的西游冒险</a></li>
+<li>《黑神话悟空》：这个不用介绍，一段意犹未尽的冒险，真心期待 DLC。<a href="https://www.notion.so/cf9a602e65da4ec5a5c45038d0874ccb?pvs=21" target="_blank" rel="noopener noreferrer">黑神话悟空：又爱又骂的西游冒险</a> </li>
 <li>《无人深空》：刚打完这个长达 100 多小时的太空冒险。每当在陌生星球的天空中看到大量飞船出现时，都让我感慨万分，这就是儿时的白日梦呀。虽然游戏前期上手有些困难，后期内容也略显重复，但时不时打开游戏驾驶一会儿飞船依然让人心情愉悦。后续会单独写篇介绍来好好记录这段体验。</li>
 <li>《赛博朋克2077》：最近开始体验这款游戏，已经投入超过 25 小时。起初担心第一人称视角会影响游戏体验，但适应后，一个栩栩如生的夜之城便在眼前慢慢展开。每个支线任务都充满精心设计的细节，甚至游戏中频繁出现的脏话都成了独特的魅力所在。这让我想起《巫师3》带来的丰富剧情体验，不愧是波兰蠢驴的作品。</li>
 </ul>
@@ -600,7 +600,7 @@
 <li>此方案仅适配苹果系设备，不支持 Windows、Android</li>
 <li>科学上网 = 代理软件（Shadowrocket）+ 海外线路</li>
 <li>最强保险依然是，买两家线路，更抗风险，当然，越多越好</li>
-<li>有 QuantumltX 的可以看 <a href="/posts/quantumult-x-guide">最简约的科学上网方案：Quantumlt X</a></li>
+<li>有 QuantumltX 的可以看 <a href="/posts/quantumult-x-guide">最简约的科学上网方案：Quantumlt X</a> </li>
 </ul></blockquote>
 <p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/shadowrocket/image1.webp"></p>
 <h2 id="为什么推荐-shadowrocket">为什么推荐 Shadowrocket</h2>
@@ -615,7 +615,7 @@
 <li>配置全平台通用，节点线路资源和代理规则可分开管理，很方便添加多家机场节点</li>
 <li>网络活动抓包很容易看懂，而且可以根据网络自己再添加不同的规则，比 QuantumultX 其实更简单</li>
 </ul>
-<p><a href="https://apps.apple.com/hk/app/shadowrocket/id932747118">‎Shadowrocket 官方下载链接</a></p>
+<p><a href="https://apps.apple.com/hk/app/shadowrocket/id932747118" target="_blank" rel="noopener noreferrer">‎Shadowrocket 官方下载链接</a> </p>
 <h2 id="如何购买-shadowrocket">如何购买 Shadowrocket</h2>
 <ul>
 <li>需要国外的 Apple ID 才可以下载这个代理工具</li>
@@ -629,8 +629,8 @@
 <p>软件只是代理工具，真正使用还搭配线路。</p>
 <p>最强保险当然是买两家线路，或者一家机场，但有很多地区的线路节点，分摊风险。</p>
 <ul>
-<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu">https://agneo.co/?rc=epng2diu</a></li>
-<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE">https://renzhe.cloud/auth/register?code=ciDE</a>
+<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu" target="_blank" rel="noopener noreferrer">https://agneo.co/?rc=epng2diu</a> </li>
+<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE" target="_blank" rel="noopener noreferrer">https://renzhe.cloud/auth/register?code=ciDE</a> 
 <ul>
 <li>不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问</li>
 </ul>
@@ -646,7 +646,7 @@
 <h3 id="2导入配置">（2）导入配置</h3>
 <blockquote>
 <p>⚠️ 下载或者导入配置之后记得选择使用该配置哦</p></blockquote>
-<p>配置文件在这个链接里：<a href="https://github.com/houjoe0829/shadowrocket-rules-joe">https://github.com/houjoe0829/shadowrocket-rules-joe</a>，或者，直接在添加配置里输入我这个配置下载链接即可：<a href="https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf">https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf</a></p>
+<p>配置文件在这个链接里：<a href="https://github.com/houjoe0829/shadowrocket-rules-joe" target="_blank" rel="noopener noreferrer">https://github.com/houjoe0829/shadowrocket-rules-joe</a> ，或者，直接在添加配置里输入我这个配置下载链接即可：<a href="https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf</a> </p>
 <p>网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往尽可能简化：</p>
 <ul>
 <li>整体规则用 Claude AI 来生成</li>
@@ -676,6 +676,286 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>产品经理入门书籍的推荐</title>
+      <link>http://localhost:1313/posts/product-manager-starter-book-recommendations/</link>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/product-manager-starter-book-recommendations/</guid>
+      <description>一份个人总结的产品经理入门书籍推荐清单</description>
+      <content:encoded><![CDATA[<p>这里主要回答针对产品经理入门的书籍推荐，纯个人经验出发，仅供参考。</p>
+<h2 id="整体入门">整体入门</h2>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/20428922/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">学会提问</div>
+      <div class="bookmark-url">https://book.douban.com/subject/20428922/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/24697776/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">批判性思维工具（原书第3版）</div>
+      <div class="bookmark-url">https://book.douban.com/subject/24697776/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/4723970/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">人人都是产品经理</div>
+      <div class="bookmark-url">https://book.douban.com/subject/4723970/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/11445674/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">产品经理修炼之道</div>
+      <div class="bookmark-url">https://book.douban.com/subject/11445674/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/5914587/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">启示录</div>
+      <div class="bookmark-url">https://book.douban.com/subject/5914587/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="需求调研入门">需求调研入门</h2>
+<p><a href="/posts/the-mom-test-du-shu-bi-ji">《The Mom Test》读书笔记</a> </p>
+<h2 id="需求文档撰写">需求文档撰写</h2>
+<p>在整体入门里的书籍一般都会提到，以下是一些形而上的建议，其实有个土办法，收集一些觉得好的 PRD 案例多琢磨琢磨，每个公司或者团队都会有。</p>
+<p><a href="https://houjoe.notion.site/PRD-1278b0838b6880acb410cf2acc37fceb?pvs=4" target="_blank" rel="noopener noreferrer">关于 PRD 的撰写建议</a> </p>
+<h2 id="设计入门">设计入门</h2>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/26742341/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">设计心理学</div>
+      <div class="bookmark-url">https://book.douban.com/subject/26742341/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/6523997/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">用户体验要素</div>
+      <div class="bookmark-url">https://book.douban.com/subject/6523997/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="数据分析入门">数据分析入门</h2>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/26278639/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">精益数据分析</div>
+      <div class="bookmark-url">https://book.douban.com/subject/26278639/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/20381154/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">深入浅出数据分析</div>
+      <div class="bookmark-url">https://book.douban.com/subject/20381154/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="运营与增长入门">运营与增长入门</h2>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/27193454/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">引爆用户增长</div>
+      <div class="bookmark-url">https://book.douban.com/subject/27193454/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/27593848/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">增长黑客</div>
+      <div class="bookmark-url">https://book.douban.com/subject/27593848/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="团队协作与沟通">团队协作与沟通</h2>
+<p><a href="/posts/ru-he-cai-neng-fei-bao-li-gou-tong">如何才能《非暴力沟通》</a> </p>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/25338822/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">团队协作的五大障碍</div>
+      <div class="bookmark-url">https://book.douban.com/subject/25338822/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="产研与项目管理">产研与项目管理</h2>
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/6011928/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">写给大家看的项目管理书</div>
+      <div class="bookmark-url">https://book.douban.com/subject/6011928/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/26803452/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">敏捷项目管理</div>
+      <div class="bookmark-url">https://book.douban.com/subject/26803452/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/27132072/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">OKR工作法</div>
+      <div class="bookmark-url">https://book.douban.com/subject/27132072/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<div class="bookmark-container">
+  <a class="bookmark-link" href="https://book.douban.com/subject/30419555/" target="_blank" rel="noopener noreferrer">
+    <div class="bookmark-content">
+      <div class="bookmark-title">持续交付2.0</div>
+      <div class="bookmark-url">https://book.douban.com/subject/30419555/</div>
+    </div>
+    <div class="bookmark-icon">
+      <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14L21 3"></path>
+      </svg>
+    </div>
+  </a>
+</div> 
+<h2 id="其他">其他</h2>
+<p><a href="/posts/from-customer-service-to-product-manager-insights">从 0 到 1 转岗（产品经理）的一些感悟</a> </p>
+<p><a href="/posts/product-manager-self-cultivation">一个产品经理的自我修行</a> </p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>最实用的技能之一：做一本双语电子书</title>
       <link>http://localhost:1313/posts/how-to-make-bilingual-ebook/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
@@ -693,7 +973,7 @@
 <p><img alt="双语对照效果" loading="lazy" src="/images/posts/how-to-make-bilingual-ebook/image.webp"></p>
 <h2 id="制作的步骤">制作的步骤</h2>
 <p>下载安装沉浸式翻译插件，支持 Safari、Firefox、Chrome、Edge 等等浏览器</p>
-<p>插件地址：<a href="https://immersivetranslate.com/zh-Hans/">https://immersivetranslate.com/zh-Hans/</a></p>
+<p>插件地址：<a href="https://immersivetranslate.com/zh-Hans/" target="_blank" rel="noopener noreferrer">https://immersivetranslate.com/zh-Hans/</a> </p>
 <p><img alt="沉浸式翻译插件" loading="lazy" src="/images/posts/how-to-make-bilingual-ebook/image-1.webp"></p>
 <p>安装之后右单击插件图标进入制作双语 EPUB 电子书的页面</p>
 <p><img alt="制作双语电子书入口" loading="lazy" src="/images/posts/how-to-make-bilingual-ebook/image-2.webp"></p>
@@ -781,7 +1061,7 @@
 <li>稳定性很好，我使用过的中间，QuantumltX &gt; Stash &gt; Shadowrocket</li>
 <li>网络活动抓包很容易看懂，而且可以根据网络自己再添加不同的规则</li>
 </ul>
-<p><a href="https://apps.apple.com/ca/app/quantumult-x/id1443988620">‎Quantumult X 官方下载链接</a></p>
+<p><a href="https://apps.apple.com/ca/app/quantumult-x/id1443988620" target="_blank" rel="noopener noreferrer">‎Quantumult X 官方下载链接</a> </p>
 <h2 id="如何购买-quantumult-x">如何购买 Quantumult X</h2>
 <ul>
 <li>需要国外的 Apple ID 才可以下载这个代理工具</li>
@@ -795,8 +1075,8 @@
 <p>软件只是代理工具，真正使用还搭配线路。</p>
 <p>最强保险当然是买两家线路，或者一家机场，但有很多地区的线路节点，分摊风险。</p>
 <ul>
-<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu">https://agneo.co/?rc=epng2diu</a></li>
-<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE">https://renzhe.cloud/auth/register?code=ciDE</a>
+<li>稳定且速度快的一家 <a href="https://agneo.co/?rc=epng2diu" target="_blank" rel="noopener noreferrer">https://agneo.co/?rc=epng2diu</a> </li>
+<li>性价比较高的一家 <a href="https://renzhe.cloud/auth/register?code=ciDE" target="_blank" rel="noopener noreferrer">https://renzhe.cloud/auth/register?code=ciDE</a> 
 <ul>
 <li>不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问</li>
 </ul>
@@ -818,7 +1098,7 @@
 <blockquote>
 <p>⬇️ 配置文件样例</p></blockquote>
 <p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x/image2.webp"></p>
-<p><a href="/conf/quantumult_20240722182237.conf">配置文件下载</a></p>
+<p><a href="/conf/quantumult_20240722182237.conf">配置文件下载</a> </p>
 <ul>
 <li>如截图，在配置文件里的 [server_remote] 模块，替换为自己的机场链接，链接需选择机场提供的的 &ldquo;QuantumltX 订阅链接&rdquo;</li>
 <li>替换之后，机场链接前的 # 符号去掉，替换几个机场就去掉几个</li>
@@ -904,9 +1184,9 @@
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/craft-notes-app-review/</guid>
       <description>深入探讨 Craft 这款独特的笔记软件，分析其优缺点，以及与 Notion、Evernote 等主流笔记软件的对比</description>
-      <content:encoded><![CDATA[<p><a href="https://www.craft.do/">Craft | A fresh take on documents</a></p>
+      <content:encoded><![CDATA[<p><a href="https://www.craft.do/" target="_blank" rel="noopener noreferrer">Craft | A fresh take on documents</a> </p>
 <p>Craft 官网</p>
-<p>此文原来在 Craft 里撰写，可直接 <a href="https://www.craft.do/s/ObkasdnAiZtDfX">点击访问</a></p>
+<p>此文原来在 Craft 里撰写，可直接 <a href="https://www.craft.do/s/ObkasdnAiZtDfX" target="_blank" rel="noopener noreferrer">点击访问</a> </p>
 <p>3月29日 Craft.do 大更新，支持了添加任意格式的文件为附件，离成熟的笔记应用又近了一步，我已经向周围的多个朋友推荐了它。就在写文章的间隙，4月1日的最新消息，Craft 团队获得了800万美元的 A 轮投资，恭喜他们。</p>
 <p>不过，目前为止，仍然觉得 Craft 是一款被低估了的笔记应用，很多人都不知晓，我准备详细介绍一番。</p>
 <h2 id="为什么我选择了-craft">为什么我选择了 Craft</h2>
@@ -926,7 +1206,7 @@
 </li>
 </ul>
 <p><img alt="存储选项" loading="lazy" src="/images/posts/craft-notes-app-review/storage-options.webp"></p>
-<p><a href="https://www.craft.do/s/vu0kBsrwCYJQrn">1.3 - Craft update - Offline / iCloud storage &amp; Search updates</a></p>
+<p><a href="https://www.craft.do/s/vu0kBsrwCYJQrn" target="_blank" rel="noopener noreferrer">1.3 - Craft update - Offline / iCloud storage &amp; Search updates</a> </p>
 <ul>
 <li><strong>链接快速识别变为书签样式</strong>，这个识别链接的过程是前台完成，不依赖服务器来响应。其实从 Notion 支持快速将链接识别为书签开始，我对剪藏的依赖越来越少，一来减少剪藏的网页，笔记内容以自己撰写为主，二来，链接可以获取到实时更新的信息，我已经克服了松鼠症。</li>
 <li><strong>支持手写</strong>，非必需，但是我有时候喜欢在笔记里用手写辅助推演一下，而现在的手写软件都不支持 Deeplink，即无法在笔记软件里引用手写笔记的内容，这里必须吐槽一下 Goodnotes5 和 Notability，而 Craft 支持 Apple 原生的手写组件；</li>
@@ -965,7 +1245,7 @@
 <p>一旦涉及到更换工具，最头疼的部分大概就是数据迁移，之前 Notion 刚出来的时候很早就做了 Evernote 的 enex 文件导入，后期利用 Evernote API 做了帐户维度的整体迁移，目前 Craft 支持 Markdown 文件和 Textbundle 文件的导入，如果之前使用的是 Markdown，比较容易就迁移了，但是如果使用的 Notion 或者 Evernote，迁移就较为麻烦。</p>
 <p>我的策略是，不做整体迁移，只逐步复制粘贴使用较为频繁的笔记到 Craft，也借此机会认真清理那些不重要的笔记。</p>
 <h2 id="价格与限制">价格与限制</h2>
-<p><a href="https://www.craft.do/pricing">Craft - Pricing</a></p>
+<p><a href="https://www.craft.do/pricing" target="_blank" rel="noopener noreferrer">Craft - Pricing</a> </p>
 <p>免费版仅支持1000个 Block，限制全文检索，目前这个阶段对免费用户不那么友好，可能在接受了融资之后，这个情况后期会得到改善，一如之前的 Notion。</p>
 <p>付费版包含全部功能，一个月28，一年248元，另外支持外部存储本身也是付费功能之一。</p>
 <p><img alt="价格方案" loading="lazy" src="/images/posts/craft-notes-app-review/pricing.webp"></p>
@@ -1002,9 +1282,9 @@
 <p>中间正襟危坐的 Yang 就是我，哈哈哈哈哈，忽略这个名字</p>
 <h1 id="先介绍一下-vr-workroom">先介绍一下 VR Workroom</h1>
 <p>全名是 Horizon Workroom，是 Facebook 针对企业会议场景的虚拟现实会议室应用，主要是方便身在世界各地的人们，可以像坐在一起一样沟通和写作，目前仅支持自家的 Oculus Quest 2 设备。</p>
-<p><a href="https://www.oculus.com/workrooms/?locale=zh_CN">Workrooms | 商务会议的 VR 体验</a></p>
+<p><a href="https://www.oculus.com/workrooms/?locale=zh_CN" target="_blank" rel="noopener noreferrer">Workrooms | 商务会议的 VR 体验</a> </p>
 <h1 id="不只是需要-oculus-quest-2首次配置复杂">不只是需要 Oculus Quest 2，首次配置复杂</h1>
-<p>VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第一步，关于 VR 的体验可以查看另外一个记录 <a href="/posts/oculus-quest2-vr-review">聊一聊最近买的 VR 设备：Oculus Quest 2</a></p>
+<p>VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第一步，关于 VR 的体验可以查看另外一个记录 <a href="/posts/oculus-quest2-vr-review">聊一聊最近买的 VR 设备：Oculus Quest 2</a> </p>
 <p>拿到一台 Oculus 设备就会发现，登录与激活需要 Facebook 账户，需要设备外的科学上网条件，这个大概也是阻碍 Oculus 在国内起飞的最关键石头。</p>
 <p>激活之后，你还需要注册并创建 Horizon Workroom 的账户，还需要加入一个企业的 Workplace，毕竟这是针对企业服务的。</p>
 <p>接下来，需要设定自己的虚拟形象，划定自己的办公桌（Desk），是的，你不能随便坐着，需要基于现实中的某一个。</p>
@@ -1023,7 +1303,7 @@
 <p>一个小时的会议，得益于 Oculus Quest 2 的轻量，真的不累，可能也和现在是冬季有关，如果是夏季，Oculus 的续航还没有到，我自己的忍耐极限已经到了，满头大汗。</p>
 <p>不得不说，会议桌的零成本无限扩展，让人一下子感受到了 VR 的意义，「空间」本身零成本。之前，已经有将电脑桌面引入 VR 的先例，相当于快速无成本搭建自己的多显示器工作区，还有千变万化的虚拟环境。</p>
 <p><img alt="图片来自：https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift" loading="lazy" src="/images/posts/vr-workroom-experience/vr-desktop-mac-brings-macos-oculus-rift.webp"></p>
-<p>图片来自：<a href="https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift">https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift</a></p>
+<p>图片来自：<a href="https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift" target="_blank" rel="noopener noreferrer">https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift</a> </p>
 <h1 id="回到骨感的现实">回到骨感的现实</h1>
 <p>你会真的在 Workroom 里开会么？不会，至少，我周围的的小伙伴没有 VR 设备。</p>
 <p>但，即使有 VR 设备，Workroom 的表现也只是刚到可用的级别。</p>
@@ -1034,10 +1314,10 @@
 <p>这个人只是离开了，感觉像是「离开」了</p>
 <h1 id="更期待-horizon-world">更期待 Horizon World</h1>
 <p>相比较于本期体验的 Horizon Workroom，更期待另一款产品 Horizon World，不过，我还没有注册邀请码。</p>
-<p><a href="https://www.oculus.com/facebook-horizon/">Horizon Worlds | Virtual Reality Worlds and Communities</a></p>
+<p><a href="https://www.oculus.com/facebook-horizon/" target="_blank" rel="noopener noreferrer">Horizon Worlds | Virtual Reality Worlds and Communities</a> </p>
 <p>Horizon Worlds 可以让每个人在虚拟世界里借用模板和素材创建一个自己的「Worlds 世界」，并可以分享给其他人，有兴趣的可以看看这位播主的视频。</p>
-<p><a href="https://www.youtube.com/watch?v=QgukxplN2uQ">Oculus Quest 2: Horizon Worlds Walk Through &amp; Metaverse Talk</a></p>
-<p>这个和 <a href="https://www.gravitysketch.com">Gravity Sketch</a> 有啥区别呢？Gravity Sketch 更像是专业美术设计工具，对人的要求太高，分享出来的成品可玩性也极差，除了一开始的好奇心驱使我进去了一下，过高的门槛劝退了我这个毫无艺术气息的 VR 用户。</p>
+<p><a href="https://www.youtube.com/watch?v=QgukxplN2uQ" target="_blank" rel="noopener noreferrer">Oculus Quest 2: Horizon Worlds Walk Through &amp; Metaverse Talk</a> </p>
+<p>这个和 <a href="https://www.gravitysketch.com" target="_blank" rel="noopener noreferrer">Gravity Sketch</a>  有啥区别呢？Gravity Sketch 更像是专业美术设计工具，对人的要求太高，分享出来的成品可玩性也极差，除了一开始的好奇心驱使我进去了一下，过高的门槛劝退了我这个毫无艺术气息的 VR 用户。</p>
 <h1 id="最后的最后">最后的最后</h1>
 <p>其实，元宇宙本身是否可以成功，我不那么清晰，但是对 VR 爱好者来说，是一个利好消息，几年前三分钟热的 VR 元年，又有更多厂商可以介入发力了。虽然很多时候会吐槽，VR 设备目前技术限制较多，但我个人的使用上来看，技术限制只是一部分，最大的限制还是生态的不完整，除了游戏，几乎没有任何实用意义的服务，每个工具都是玩具级别的，甚至连登录其他服务账户都费劲，落灰只是时间问题。</p>
 ]]></content:encoded>
@@ -1061,7 +1341,7 @@
 <p>年味的缺失总是一年又一年的话题……</p>
 <p>实质上，过年在我们老家是以固定的模式一直运转着，几乎没有变化，总共三个阶段，年前的年货准备，大年三十的团年饭与守岁，最后是持续两周的串门拜年和吃大餐，在我写这篇文章的当下，亲戚们还在继续着。</p>
 <p>我在愿望清单里也加了一条，某一年，我要尝试在老家从腊月二十待到正月十五。</p>
-<p>其实，原本十五那天，老家还有一个特殊的节日，在大孩子们（指高中生）十五不放假之后，这个节日消亡了，可以参考我之前写的 <a href="/posts/memories-of-forgotten-mao-gou"><strong>回忆：已经被遗忘的十五撵毛狗</strong></a> 。</p>
+<p>其实，原本十五那天，老家还有一个特殊的节日，在大孩子们（指高中生）十五不放假之后，这个节日消亡了，可以参考我之前写的 <a href="/posts/memories-of-forgotten-mao-gou"><strong>回忆：已经被遗忘的十五撵毛狗</strong></a>  。</p>
 <p>年味淡漠，这是不争的事实，但到底淡漠了什么呢？这是自回老家起就萦绕在脑间的问题。</p>
 <p>我觉得是参与感……</p>
 <p>年味是父母提供的，他们准备了大量年货，整个过程耳濡目染，有铺垫有参与，就像一部情绪到位的电影，起承转合，逐步拉开大幕，而轮到我们，基本是直接空降在大结局夜，端起团年饭，缺失的是前期的参与，我们既无法参与，没有假期，也不会参与，没有动力，没有能力。</p>
@@ -1141,8 +1421,9 @@
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/food-discovery-journey/</guid>
       <description>探索味蕾的边界，从家乡的重口味到世界各地的美食，一场关于味觉的发现之旅</description>
-      <content:encoded><![CDATA[<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+      <content:encoded><![CDATA[<aside>
+💡 这是一篇与 AI 协作一起写完的文章，第一次尝试。
+</aside>
 <p><img alt="重口味的老家菜" loading="lazy" src="/images/posts/food-discovery-journey/image-2.webp"></p>
 <p>重口味的老家菜</p>
 <p>在老家的味道中，凝结着时间和情感的纽带。这些味道扎根于每个人心中，不仅仅是食物的滋味，更是土地赋予我们深刻的印记。然而，大部分时候，我们却往往被这些印记所困住。</p>
@@ -1251,19 +1532,19 @@
 <p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>
 <p><code>Coding with AI</code>、<code>Product Manager</code>、<code>喜欢码字</code>、<code>Nas 小白用户</code>、<code>无人机机长</code>、<code>主机游戏玩家</code>、<code>有个流浪猫</code>、<code>江浙沪包游中</code>、<code>骑行新手</code>、<code>顺风车司机</code></p>
 <p>主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。</p>
-<p>产品经历：<a href="https://evernote.com/">Evernote</a>、<a href="https://affine.pro/">AFFiNE</a>、<a href="https://qingque.cn/products/docs">轻雀文档</a>、<a href="https://qingque.cn/practice">轻雀协作</a></p>
+<p>产品经历：<a href="https://evernote.com/" target="_blank" rel="noopener noreferrer">Evernote</a> 、<a href="https://affine.pro/" target="_blank" rel="noopener noreferrer">AFFiNE</a> 、<a href="https://qingque.cn/products/docs" target="_blank" rel="noopener noreferrer">轻雀文档</a> 、<a href="https://qingque.cn/practice" target="_blank" rel="noopener noreferrer">轻雀协作</a> </p>
 <h2 id="-找到我">📮 找到我</h2>
 <p>如果有任何问题、合作想法或只是想打个招呼，欢迎通过以下方式找到我：</p>
 <ul>
-<li>📧 <strong>Email</strong>：<a href="mailto:houqiao829@gmail.com">houqiao829@gmail.com</a></li>
-<li>🐦 <strong>Twitter</strong>：<a href="https://x.com/houjoe1">@houjoe1</a> - 更新比较随意，私信开放！</li>
-<li>🐙 <strong>GitHub</strong>：<a href="https://github.com/houjoe0829">houjoe0829</a> -  我也开始写代码了……</li>
+<li>📧 <strong>Email</strong>：<a href="mailto:houqiao829@gmail.com">houqiao829@gmail.com</a> </li>
+<li>🐦 <strong>Twitter</strong>：<a href="https://x.com/houjoe1" target="_blank" rel="noopener noreferrer">@houjoe1</a>  - 更新比较随意，私信开放！</li>
+<li>🐙 <strong>GitHub</strong>：<a href="https://github.com/houjoe0829" target="_blank" rel="noopener noreferrer">houjoe0829</a>  -  我也开始写代码了……</li>
 <li>💬 <strong>Wechat</strong>：微信号[houjoe829]  -  请备注来意</li>
 </ul>
 <h2 id="-side-projects">🌟 Side Projects</h2>
 <ul>
 <li>
-<p><a href="https://omniaudio.info/">OmniAudio</a></p>
+<p><a href="https://omniaudio.info/" target="_blank" rel="noopener noreferrer">OmniAudio</a> </p>
 <blockquote>
 <p>🎧 OmniAudio 是一款 AI 音频内容聚合服务，它可以将各种形式的内容，如网页、Word 文档、Gmail、文本片段、甚至视频和音频文件，转化为 podcast 播客节目，并生成可以直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p></blockquote>
 <p><img alt="OmniAudio - Turn Anything into Audio You can Listen to" loading="lazy" src="/images/posts/omniaudio-hero.webp"></p>
@@ -1338,7 +1619,7 @@
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
 当我尝试回顾这一年，记忆始终有些嘈杂，至少，五月之前的记忆已变得模糊，好在有相册时间线和之前码出来的一些文章帮助回忆。                                                                                               <br>
-另外，网上闲逛时偶遇了推特上网友分享的某大神每年问自己的 40 个问题，《<a href="https://stephango.com/40-questions">40 questions to ask yourself every year</a>》。边回忆边回答，非常推荐。回顾与盘点的意义在于&quot;存档&quot;，就当做写给未来的自己，等到回溯时不至于混沌一片。</p>
+另外，网上闲逛时偶遇了推特上网友分享的某大神每年问自己的 40 个问题，《<a href="https://stephango.com/40-questions" target="_blank" rel="noopener noreferrer">40 questions to ask yourself every year</a> 》。边回忆边回答，非常推荐。回顾与盘点的意义在于&quot;存档&quot;，就当做写给未来的自己，等到回溯时不至于混沌一片。</p>
 <p>让我用这 40 个问题的最后一个来开始：如何用一句话总结你的这一年？</p>
 <blockquote>
 <p>💡 未读万卷书，但行万里路。</p></blockquote>
@@ -1359,21 +1640,21 @@
 <h3 id="年度游戏">年度游戏</h3>
 <p>对于游戏而言，2023 真的是一个值得玩家欢呼的一年，大作频出，卷出了天际。即使作为一个非重度玩家，我也感受到了游戏厂商的满满诚意，奈何分身乏术，只能一部一部玩。</p>
 <ul>
-<li><a href="/posts/tears-of-the-kingdom-review"><strong>《塞尔达传说·王国之泪》游记（涉及剧透）</strong></a> ：尽管很多人转身去了博德之门3，我依然最喜欢王国之泪，最自由的开放世界游戏，没有之一，时不时都想回海拉鲁大陆闲逛一下。</li>
-<li><a href="https://www.notion.so/2-35aafb890fa64d08b5e1b8cde2fe5940?pvs=21">漫威蜘蛛侠 2</a> ：未曾想到这个会超越《巫师3》在我心目中的位置， 但动作实在太炫酷了，长达 28 小时的电影之旅，让人心潮澎湃。</li>
-<li><a href="https://www.notion.so/3-2c04f670002241049611f6582cf6c6ba?pvs=21">巫师3</a> ：这是一个老游戏，在两度放弃之后，终于在今年的 Steam Deck 上玩完了，本体和 DLC 的主线剧情和支线剧情让人意犹未尽。</li>
-<li><a href="https://www.notion.so/59e08de7e95b4b2fa76e30d0c2a66a15?pvs=21">战神之诸神黄昏</a> ：一部稳定发挥的续作，虽然没有太多惊喜，但是，一贯的高水准已经足够，而且，还有一个完美的结局。</li>
+<li><a href="/posts/tears-of-the-kingdom-review"><strong>《塞尔达传说·王国之泪》游记（涉及剧透）</strong></a>  ：尽管很多人转身去了博德之门3，我依然最喜欢王国之泪，最自由的开放世界游戏，没有之一，时不时都想回海拉鲁大陆闲逛一下。</li>
+<li><a href="https://www.notion.so/2-35aafb890fa64d08b5e1b8cde2fe5940?pvs=21" target="_blank" rel="noopener noreferrer">漫威蜘蛛侠 2</a>  ：未曾想到这个会超越《巫师3》在我心目中的位置， 但动作实在太炫酷了，长达 28 小时的电影之旅，让人心潮澎湃。</li>
+<li><a href="https://www.notion.so/3-2c04f670002241049611f6582cf6c6ba?pvs=21" target="_blank" rel="noopener noreferrer">巫师3</a>  ：这是一个老游戏，在两度放弃之后，终于在今年的 Steam Deck 上玩完了，本体和 DLC 的主线剧情和支线剧情让人意犹未尽。</li>
+<li><a href="https://www.notion.so/59e08de7e95b4b2fa76e30d0c2a66a15?pvs=21" target="_blank" rel="noopener noreferrer">战神之诸神黄昏</a>  ：一部稳定发挥的续作，虽然没有太多惊喜，但是，一贯的高水准已经足够，而且，还有一个完美的结局。</li>
 </ul>
 <p><img alt="年度游戏" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-2.webp"></p>
 <h3 id="年度影视剧">年度影视剧</h3>
-<p><a href="https://movie.douban.com/subject/36067160/">《万神殿 第二季》</a>：这是一部动画，本来以为只是像第一季里对 AI 的探讨，而且第二季差点夭折。没想到后半段直接升华了，立意比看过的《拾荒者统治》高很多了。</p>
+<p><a href="https://movie.douban.com/subject/36067160/" target="_blank" rel="noopener noreferrer">《万神殿 第二季》</a> ：这是一部动画，本来以为只是像第一季里对 AI 的探讨，而且第二季差点夭折。没想到后半段直接升华了，立意比看过的《拾荒者统治》高很多了。</p>
 <p><img alt="万神殿第二季" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-3.webp"></p>
 <h3 id="年度书籍">年度书籍</h3>
-<p><a href="https://book.douban.com/subject/26320572/">《The Mom test》</a>：这是一本在另外的书籍里看到的引用，没想到书籍不厚，没有中文版，只是阐述如何与用户沟通，但意外得有用，超越《马斯克传》对我的意义，读后笔记正在排队中。</p>
+<p><a href="https://book.douban.com/subject/26320572/" target="_blank" rel="noopener noreferrer">《The Mom test》</a> ：这是一本在另外的书籍里看到的引用，没想到书籍不厚，没有中文版，只是阐述如何与用户沟通，但意外得有用，超越《马斯克传》对我的意义，读后笔记正在排队中。</p>
 <p><img alt="The Mom test" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-4.webp"></p>
 <h3 id="年度旅行地">年度旅行地</h3>
 <ul>
-<li><a href="/posts/south-china-road-trip-review">超过 3200 公里的华南自驾，写一写感受</a>：华南的自驾让我有信心跑更远的长途了。</li>
+<li><a href="/posts/south-china-road-trip-review">超过 3200 公里的华南自驾，写一写感受</a> ：华南的自驾让我有信心跑更远的长途了。</li>
 <li>千岛湖的意外之旅：这是一个没有在推特上分享过的地点，在4月的千岛湖骑行结束之后，开车随意闲逛偶然发现的一片河床，就是那种想象中的河床，绿意盎然，静谧惬意，虽不知名但印象深刻。</li>
 </ul>
 <p><img alt="千岛湖河床" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-5.webp"></p>
@@ -1383,16 +1664,16 @@
 <p>ChatGPT 与 AI：2023 年也是 AI 与 AI 的应用真正爆发的一年，AI 已经让获取信息变得越来越简单，我不知道 AI 是否真的改变了世界，但真真切切改变了我。对于日常生活中的 Desk Research、文本翻译、代码编程有极大的帮助，是的，感谢 AI，我已经可以读懂和写 Swift 代码了，目前还在入门中。我也尝试过让 AI 帮助我写文章，虽然写的文章很快也很正确，但真的很乏味，放弃了。</p>
 </li>
 <li>
-<p><a href="https://whimsical.com/">Whimsical</a>：目前最满足我工作的 Visual Thinking 工具，不管是普通文档、思维导图、流程图、原型图，都可以在其完成，还可以互相引用，已经替代了 Notion、Craft、Figma、幕布作为个人知识库的构建，仅将 Notion 用作个人博客的搭建。在我的待办里，我会用 Whimsical 写一篇 Whimsical 的介绍，还在排队中。</p>
+<p><a href="https://whimsical.com/" target="_blank" rel="noopener noreferrer">Whimsical</a> ：目前最满足我工作的 Visual Thinking 工具，不管是普通文档、思维导图、流程图、原型图，都可以在其完成，还可以互相引用，已经替代了 Notion、Craft、Figma、幕布作为个人知识库的构建，仅将 Notion 用作个人博客的搭建。在我的待办里，我会用 Whimsical 写一篇 Whimsical 的介绍，还在排队中。</p>
 </li>
 <li>
-<p><a href="https://dida365.com/">滴答清单</a>：兜兜转转，我从 Things3 回到了滴答清单，目前性价比最高的任务管理工具，也是最佳干活伴侣。列个任务清单，打开自带的番茄钟，逐个划掉任务，还可以作为日常工作的日志，随时回溯。</p>
+<p><a href="https://dida365.com/" target="_blank" rel="noopener noreferrer">滴答清单</a> ：兜兜转转，我从 Things3 回到了滴答清单，目前性价比最高的任务管理工具，也是最佳干活伴侣。列个任务清单，打开自带的番茄钟，逐个划掉任务，还可以作为日常工作的日志，随时回溯。</p>
 </li>
 <li>
-<p><a href="https://immersivetranslate.com/">沉浸式翻译</a>：这是一个浏览器插件，可以使用 Google 翻译、微软翻译或者 ChatGPT。完全超越了之前提到过的彩云小译，不管是英文网页阅读，YouTube 字幕、Epub 文件，都是效果极佳，让我再次相信，世界是平的。</p>
+<p><a href="https://immersivetranslate.com/" target="_blank" rel="noopener noreferrer">沉浸式翻译</a> ：这是一个浏览器插件，可以使用 Google 翻译、微软翻译或者 ChatGPT。完全超越了之前提到过的彩云小译，不管是英文网页阅读，YouTube 字幕、Epub 文件，都是效果极佳，让我再次相信，世界是平的。</p>
 </li>
 <li>
-<p>QuantumultX：科学上网的工具有很多，我只是选择一个来深耕，而 QuantumultX 也是最具性价比的工具之一，也是精神自由的基建之一。 <a href="/posts/quantumult-x-guide">《最简约的科学上网方案：Quantumlt X》</a></p>
+<p>QuantumultX：科学上网的工具有很多，我只是选择一个来深耕，而 QuantumultX 也是最具性价比的工具之一，也是精神自由的基建之一。 <a href="/posts/quantumult-x-guide">《最简约的科学上网方案：Quantumlt X》</a> </p>
 </li>
 </ul>
 <p><img alt="年度软件" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-6.webp"></p>
@@ -1402,19 +1683,19 @@
 <p><strong>索尼头戴耳机 XM5</strong>：不管是居家、办公室，还是在旅途中，只要戴上耳机，就可以开始一天的工作，最佳生产力工具伴侣。</p>
 </li>
 <li>
-<p><strong>Steam Deck</strong>：有了 Steam Deck，好多游戏突然变得可以玩了，随时随地进入游戏世界，比如《巫师3》，在车里，在酒店里，在酒吧，都可以。 <a href="/posts/steam-deck-review"><strong>发布一年多，终于入手了 Steam Deck</strong></a></p>
+<p><strong>Steam Deck</strong>：有了 Steam Deck，好多游戏突然变得可以玩了，随时随地进入游戏世界，比如《巫师3》，在车里，在酒店里，在酒吧，都可以。 <a href="/posts/steam-deck-review"><strong>发布一年多，终于入手了 Steam Deck</strong></a> </p>
 </li>
 <li>
 <p><strong>米家扫拖机器人 1S</strong>：一开始忘记在这里列举它，完全是因为它只是默默付出，已经为我们家打扫了 130 多次，每周换一次水并清洁一下污水。虽然，它无法覆盖所有的范围，但确实已经大幅提升家里的整洁度，尤其是地面的落灰和猫毛。</p>
 </li>
 <li>
-<p><strong>极空间 Nas</strong>：去年的玩物志里已经提过它，但是 Nas 在日常出现的频率越来越高了，所有影视剧基本都是下载下来观看的，尤其是上了 4K 电视之后，蓝光 4K 资源越来越多，断网也不担心。最近，我把听歌也搬到了 Nas，网络环境越来越差了，总是有越来越多看不到的内容或者突然消失的歌曲。 <a href="/posts/nas-private-cloud-guide">Nas 私有云：真国内观影必备</a></p>
+<p><strong>极空间 Nas</strong>：去年的玩物志里已经提过它，但是 Nas 在日常出现的频率越来越高了，所有影视剧基本都是下载下来观看的，尤其是上了 4K 电视之后，蓝光 4K 资源越来越多，断网也不担心。最近，我把听歌也搬到了 Nas，网络环境越来越差了，总是有越来越多看不到的内容或者突然消失的歌曲。 <a href="/posts/nas-private-cloud-guide">Nas 私有云：真国内观影必备</a> </p>
 </li>
 </ul>
 <p><img alt="年度硬件" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-7.webp"></p>
 <h2 id="最后">最后</h2>
 <p>关于软硬件的工具盘点，其实我一直有维护自己的工具包，放在 Whimsical 里。</p>
-<p><a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph">https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph</a></p>
+<p><a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph" target="_blank" rel="noopener noreferrer">https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1441,7 +1722,7 @@
 <p>尽管各大国内的NAS 厂家都在试图降低 NAS 的上手难度，但是，NAS 的初始设置和日常维护还没有到达日常手机的使用门槛级别，需要使用的人有基本的电脑与网络经验，NAS 确实不适合无脑入。</p>
 <p>另外，选择 NAS 一定会绕不开群晖这类海内外知名厂商，这一类 NAS 产品生态更成熟，而且隐私性更好，但维护成本更高，需要更多的专业知识才能真正发挥作用。</p>
 <p>而对于我的诉求则是，「恰到好处的折腾」，既可以有很高的可玩性，也要上手简单维护成本低，比如我选择的「极空间」，一个手机号就可以完成所有初始化设置，在这里，请极空间商务记得给我打一下广告费。</p>
-<p><a href="https://www.zspace.cn/">极空间官网-科技保存美好生活</a></p>
+<p><a href="https://www.zspace.cn/" target="_blank" rel="noopener noreferrer">极空间官网-科技保存美好生活</a> </p>
 <p>NAS 官网，请自行查看，另外，绿联也出了自己的 NAS，我没有用过，不做详细介绍。</p>
 <p><img alt="NAS 大概长这样，像个小一丢丢的主机" loading="lazy" src="/images/posts/nas-private-cloud-guide/Untitled%201.webp"></p>
 <p>其实这种对比，这有点类似于协同办公软件飞书和 Slack 的对比，前者帮你完成日历、文档、聊天、OA 的全部打通，有很好的一体系，手机号登录即可使用，而后者则更开放，但需要你自己动手配置属于自己的日历、文档等服务，组合更自由，扩展性更强，不过，各有优劣，需认清自己的需求和实际可投入的精力。</p>
@@ -1476,7 +1757,7 @@
 <ul>
 <li>极空间 NAS 是可以与百度网盘、阿里云盘都是双向备份的，不过，没有会员，速度为 0</li>
 <li>有经常远程观影的话，家里的网络带宽最好可以开高一点，更顺畅</li>
-<li>寻找资源的话，推荐这个 <a href="http://www.dytt8.net/">http://www.dytt8.net</a>，没有之一</li>
+<li>寻找资源的话，推荐这个 <a href="http://www.dytt8.net/" target="_blank" rel="noopener noreferrer">http://www.dytt8.net</a> ，没有之一</li>
 <li>如果你想折腾 Docker，最好你懂技术，或者你有一个懂技术的朋友，或者 AI</li>
 <li>重要的信息记得开启双重备份，尤其是相册什么的，影视资源都是容易找到的</li>
 </ul>
@@ -1490,7 +1771,7 @@
       <description>在杭州生活一年的感悟：从初来乍到到渐入佳境，分享我对这座城市的印象与思考</description>
       <content:encoded><![CDATA[<p>按照约定又要开始码字分享了，上一次这个 Recap 系列还是8月8日，计划定期写下去。</p>
 <p>写这篇分享时，正坐在江西九江市八里湖旁的一个酒店里，随机开始了一个「番茄钟」，也就是一轮的时间，写一写最近的所思所想，码字总是让人能很快安静下来。</p>
-<p>在已经过去的8月与即将结束的9月里，不管是计划内或计划外的行程，长途是一个始终贯穿的主题，比如，「<a href="/posts/south-china-road-trip-review">3200公里的华南之行</a>」，以及当下正处在第二次往返老家的长途行程里，累积行驶将超过1万公里。</p>
+<p>在已经过去的8月与即将结束的9月里，不管是计划内或计划外的行程，长途是一个始终贯穿的主题，比如，「<a href="/posts/south-china-road-trip-review">3200公里的华南之行</a> 」，以及当下正处在第二次往返老家的长途行程里，累积行驶将超过1万公里。</p>
 <p><img alt="在从安徽即将进入浙江的服务区里" loading="lazy" src="/images/posts/hangzhou-one-year-recap/Untitled.webp"></p>
 <h2 id="一年的杭州印象">一年的杭州印象</h2>
 <p>9月24日是杭州亚运开幕后的第一天，不过，更重要的是，这也是我们来杭州一年的日子，去年的今天，我们突然从北京举家搬迁到杭州，带着老婆和我们的流浪猫。</p>
@@ -1509,7 +1790,7 @@
 <p>接下来，可能依然秉持一种简单的生活准则，「想办法让那些美好的事情更主动发生」，即使是需要经常往返的「湖北—杭州」线路，我也会想办法尽可能让每次途经点不一样一些，总是会有很多意料之外的有趣。</p>
 <h2 id="最近的精神角落">最近的精神角落</h2>
 <h3 id="游戏">游戏</h3>
-<p>在上一次提到的<a href="https://houjoe.notion.site/1424b91cdd8e41d4b1d586670fc41697?pvs=4">底特律：化身为人</a>结束之后，依然还沉浸在<a href="https://houjoe.notion.site/3-2c04f670002241049611f6582cf6c6ba?pvs=4">巫师3</a>的游戏世界里，支线太多，多到完全没心情搞主线，这片大陆的百姓生活都太苦了，我还将继续孜孜不倦地拯救每一个支线故事上的平民。</p>
+<p>在上一次提到的<a href="https://houjoe.notion.site/1424b91cdd8e41d4b1d586670fc41697?pvs=4" target="_blank" rel="noopener noreferrer">底特律：化身为人</a> 结束之后，依然还沉浸在<a href="https://houjoe.notion.site/3-2c04f670002241049611f6582cf6c6ba?pvs=4" target="_blank" rel="noopener noreferrer">巫师3</a> 的游戏世界里，支线太多，多到完全没心情搞主线，这片大陆的百姓生活都太苦了，我还将继续孜孜不倦地拯救每一个支线故事上的平民。</p>
 <h3 id="动漫">动漫</h3>
 <ul>
 <li>《万神殿》是近期看完的一部高能动漫，我的心情和其中一个角色「凯斯宾」一样，不断打破认知，有种看黑客帝国的错觉，以及这种靠上传意识来解决编程无法实现 AI 的设定，我其实是很买单的，不过，这部动漫的第二部据说已经做完了，但是被砍了，只能节哀了。</li>
@@ -1518,7 +1799,7 @@
 </ul>
 <h3 id="书籍">书籍</h3>
 <ul>
-<li>最近读完的《小而美》这本书，很适合自由职业者，介绍了一种不追求做大做强的创业思路，值得读一读，并不厚，但是不用期望太高。之前的笔记可以查看这里<a href="https://houjoe.notion.site/e6e4202851e240e4977f73df05f925ce?pvs=4">《小而美：持续盈利的经营法则》笔记与摘抄</a></li>
+<li>最近读完的《小而美》这本书，很适合自由职业者，介绍了一种不追求做大做强的创业思路，值得读一读，并不厚，但是不用期望太高。之前的笔记可以查看这里<a href="https://houjoe.notion.site/e6e4202851e240e4977f73df05f925ce?pvs=4" target="_blank" rel="noopener noreferrer">《小而美：持续盈利的经营法则》笔记与摘抄</a> </li>
 <li>之前在 Twitter 上特别提到，想要看完的《我在北京送快递》这本书，但在进度到50%的时候，放弃了，这种非常少有的特别视角讲述让人对快递员有了更多的了解，但是流水账式的叙述，我觉得是配不上这个豆瓣评分的，这也是我之前看不下去《三体》的原因吧</li>
 <li>目前开始阅读《埃隆·马斯克传》，进度1%……</li>
 </ul>
@@ -1628,40 +1909,40 @@
 <h2 id="1-最近的心态变化">1. 最近的心态变化</h2>
 <h3 id="-以不变应万变">→ 以不变应万变</h3>
 <p>想起来最近和父母提到的话：没有什么是确定的，不确定性是常态。</p>
-<p>从去年突然更换工作和城市以来，地点与时间相对变得自由，也就意味着需要面对更多的不确定性，单从地点上，有时在办公室，有时在家，有时在车上，有时在咖啡厅，有时在酒吧……就像之前面对项目频繁调整写下的 <a href="/posts/product-manager-self-cultivation">一个产品经理的自我修行</a> 那样，变化与嘈杂始终是生活的主旋律，那么，需要有一些不变的东西，抽象来说，比如心态，比如准则，而具体来讲，比如可以随时随地打开的电脑或者主机，继续之前未竟的工作或游戏，或者续上之前没有写完的文章，没有探索完的主题，不管人在哪里。</p>
+<p>从去年突然更换工作和城市以来，地点与时间相对变得自由，也就意味着需要面对更多的不确定性，单从地点上，有时在办公室，有时在家，有时在车上，有时在咖啡厅，有时在酒吧……就像之前面对项目频繁调整写下的 <a href="/posts/product-manager-self-cultivation">一个产品经理的自我修行</a>  那样，变化与嘈杂始终是生活的主旋律，那么，需要有一些不变的东西，抽象来说，比如心态，比如准则，而具体来讲，比如可以随时随地打开的电脑或者主机，继续之前未竟的工作或游戏，或者续上之前没有写完的文章，没有探索完的主题，不管人在哪里。</p>
 <p><img alt="7月3日在巴厘岛海边远程工作" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-1.webp"></p>
 <p>7月3日在巴厘岛海边远程工作</p>
 <h3 id="-专注与完整性">→ 专注与完整性</h3>
 <p>其实很早在之前写的文章里提到过，也是一直在主动训练的部分，同类型的事情，一次只做一个，专注沉浸，结束了再做下一个，与直觉不同，比起同时开启多个，这样反而可以完成更多，比如游戏、书籍、影视剧等等，可能需要准备的是，一个清单、一份歌单以及一款用来随时30分钟倒计时的 App。</p>
-<p><a href="/posts/importance-of-task-completion">做完一件事，很重要</a></p>
+<p><a href="/posts/importance-of-task-completion">做完一件事，很重要</a> </p>
 <h3 id="-不完美的中间态">→ 不完美的中间态</h3>
 <p>年初的时候在推上特别写过这个话题。慢慢的，越来越能接受一种笔记的中间态，不过早去美化笔记，而是即用即更新，凌乱是一个必须经历的过程，时间会让积累自然发生。</p>
 <p><img alt="不完美的中间态" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-2.webp"></p>
 <h2 id="2-软件工具的使用调整">2. 软件工具的使用调整</h2>
 <p>这半年，正在从一种追求过于纯粹的离线可用，逐步调整思路，更偏向于 Building life public with tools（这是一个还未写完的想法，下一篇准备写完的文章），其实使用路数变化不大，日记等私密记录，仍然是使用 Bear 来快速记录和标签标记，离线可用且加密，但是，个人知识库和博客，从 Craft 改回 Notion 这种云端工具，这样在未来随时都可以把个人知识库某一块折腾的无用但有趣的内容分享出来，至于为什么放弃了 Craft，缺少 Database 吧。</p>
-<p>就像我的个人博客：<a href="/posts/why-start-blogging">Joe 的折腾日记</a></p>
-<p>其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像<a href="https://whimsical.com/s3pm6mwq1RT6jF3WFmTph">这个</a>。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。</p>
-<p>更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 <a href="https://monica.im/">Monica</a>。</p>
+<p>就像我的个人博客：<a href="/posts/why-start-blogging">Joe 的折腾日记</a> </p>
+<p>其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像<a href="https://whimsical.com/s3pm6mwq1RT6jF3WFmTph" target="_blank" rel="noopener noreferrer">这个</a> 。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。</p>
+<p>更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 <a href="https://monica.im/" target="_blank" rel="noopener noreferrer">Monica</a> 。</p>
 <p><img alt="AI 助手的使用" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-3.webp"></p>
 <h2 id="3-最近去过的地方">3. 最近去过的地方</h2>
 <p>自从去年来到杭州，「江浙沪包游」一直是我的核心主题，目前已经从杭州自驾去了舟山、宁波、湖州、台州、金华、千岛湖、南京、上海、绍兴等等，不过，不是所有的地方都会有游记，但也很想都留下想法，下次一定。</p>
-<p><a href="/posts/dongji-island-tour-2022">我们在东极岛，天气阴</a></p>
-<p><a href="/posts/shaoxing-one-day-trip-2023">记录绍兴一日游</a></p>
-<p><a href="/posts/taizhou-travel-notes">台(tāi)州游记</a></p>
+<p><a href="/posts/dongji-island-tour-2022">我们在东极岛，天气阴</a> </p>
+<p><a href="/posts/shaoxing-one-day-trip-2023">记录绍兴一日游</a> </p>
+<p><a href="/posts/taizhou-travel-notes">台(tāi)州游记</a> </p>
 <h2 id="4-公开的个人游戏库">4. 公开的个人游戏库</h2>
-<p>最近直接在<a href="/posts/why-start-blogging">个人主页</a>公开分享了<a href="/posts/game-library">游戏库</a>页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。</p>
+<p>最近直接在<a href="/posts/why-start-blogging">个人主页</a> 公开分享了<a href="/posts/game-library">游戏库</a> 页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。</p>
 <p>而这半年的主要游戏时间确实都给了《王国之泪》，而且还只是暂时性结束，预计在下半年的某一个时间点还会继续探索海拉鲁大陆，这种探索的满足感是其他游戏很难提供的。</p>
-<p><a href="/posts/tears-of-the-kingdom-review">《塞尔达传说·王国之泪》游记（涉及剧透）</a></p>
-<p><a href="/posts/god-of-war-ragnarok">战神之诸神黄昏</a></p>
-<p><a href="/posts/psychonauts-2">脑航员2</a></p>
-<p><a href="/posts/detroit-become-human">底特律：化身为人</a></p>
+<p><a href="/posts/tears-of-the-kingdom-review">《塞尔达传说·王国之泪》游记（涉及剧透）</a> </p>
+<p><a href="/posts/god-of-war-ragnarok">战神之诸神黄昏</a> </p>
+<p><a href="/posts/psychonauts-2">脑航员2</a> </p>
+<p><a href="/posts/detroit-become-human">底特律：化身为人</a> </p>
 <p><img alt="游戏截图" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-4.webp"></p>
 <h2 id="5-最近看过的书">5. 最近看过的书</h2>
-<p>前半年看的书籍太少了，文章为主，只有一本为了了解马斯克创办马斯克而阅读的<a href="/posts/tesla-book-review">《特斯拉：埃隆·马斯克的颠覆创新与商业智慧》笔记与摘抄</a>，适合作为了解电车的一个特别的角度，后半年加加油。</p>
+<p>前半年看的书籍太少了，文章为主，只有一本为了了解马斯克创办马斯克而阅读的<a href="/posts/tesla-book-review">《特斯拉：埃隆·马斯克的颠覆创新与商业智慧》笔记与摘抄</a> ，适合作为了解电车的一个特别的角度，后半年加加油。</p>
 <h2 id="6-败家的硬件">6. 败家的硬件</h2>
 <p>这部分不用多说，虽败家，但仍然推荐，还有一篇想写给 Nas，但还在清单里，先立 flag。</p>
-<p><a href="/posts/why-not-recommend-tesla">为什么不推荐买特斯拉</a></p>
-<p><a href="/posts/steam-deck-review">发布一年多，终于入手了 Steam Deck</a></p>
+<p><a href="/posts/why-not-recommend-tesla">为什么不推荐买特斯拉</a> </p>
+<p><a href="/posts/steam-deck-review">发布一年多，终于入手了 Steam Deck</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1671,7 +1952,7 @@
       <guid>http://localhost:1313/posts/steam-deck-review/</guid>
       <description>在 Steam Deck 发布一年多后的使用体验分享，包括设备优缺点、游戏体验、实用配件以及避坑指南</description>
       <content:encoded><![CDATA[<blockquote>
-<p>Steam Deck 最近达到了一个重要的里程碑：目前有超过1万款游戏被分类为&quot;已测试&quot;或&quot;可游玩&quot;。（来自：<a href="https://www.gamersky.com/news/202306/1612042.shtml">游民星空</a>）</p></blockquote>
+<p>Steam Deck 最近达到了一个重要的里程碑：目前有超过1万款游戏被分类为&quot;已测试&quot;或&quot;可游玩&quot;。（来自：<a href="https://www.gamersky.com/news/202306/1612042.shtml" target="_blank" rel="noopener noreferrer">游民星空</a> ）</p></blockquote>
 <p>其实，现在是入手 Steam Deck 最好的时机，在发布一年多之后，Steam Deck 已经越过了拓荒期，不仅价格回落，而且，系统和社区本身都已经非常成熟，这里的社区指的是所有互联网上的衍生周边内容。几乎所有可能遇到的已知问题基本都有解决方案，要么是系统修复，要么是第三方插件。</p>
 <h2 id="为什么入手-steam-deck">为什么入手 Steam Deck</h2>
 <p>我已经有 Switch 和 PS5 了，这让我纠结了几个月。大概是因为出行较多之后，决定还是妥协画质，追求移动性，也就是，既要玩 3A 大作，也要带着方便，而 Switch 只是一个塞尔达启动器。</p>
@@ -1716,7 +1997,7 @@
 <p><img alt="PS5 串流界面" loading="lazy" src="/images/posts/steam-deck-review/ps5-streaming.webp"></p>
 <h2 id="做了哪些设置">做了哪些设置？</h2>
 <p>先安装插件商店 Decky Loader。Decky Loader 是一个由第三方开发者专门为 Steam Deck 开发的插件商店和管理程序，你可以在 Steam OS 的侧边栏中打开 Decky Loader，来轻松实现搜索、下载和管理各种实用的第三方插件。（当然，我直接让店家给我装好了，还是钱好使，省时间，后续插件我就可以自己折腾了）</p>
-<p><a href="https://github.com/SteamDeckHomebrew/decky-loader">Decky Loader GitHub 地址</a></p>
+<p><a href="https://github.com/SteamDeckHomebrew/decky-loader" target="_blank" rel="noopener noreferrer">Decky Loader GitHub 地址</a> </p>
 <table>
   <thead>
       <tr>
@@ -1735,15 +2016,15 @@
       </tr>
       <tr>
           <td>百度网盘 Linux 版本</td>
-          <td>在桌面模式下安装的，主要方便上传截图和视频，唯一的缺陷是无法像在 Mac 和 PC 那样直接映射本地文件夹，只能手动操作，但是我在我的 Nas 上设置了一个监控，一旦有新的上传，自动下载到我的 Nas 里，也算简化了。<a href="https://www.youtube.com/watch?v=pa0CVwPCFyo">安装教程</a></td>
+          <td>在桌面模式下安装的，主要方便上传截图和视频，唯一的缺陷是无法像在 Mac 和 PC 那样直接映射本地文件夹，只能手动操作，但是我在我的 Nas 上设置了一个监控，一旦有新的上传，自动下载到我的 Nas 里，也算简化了。<a href="https://www.youtube.com/watch?v=pa0CVwPCFyo" target="_blank" rel="noopener noreferrer">安装教程</a> </td>
       </tr>
       <tr>
           <td>Chiaki 串流工具</td>
-          <td>桌面模式下安装，为串流 PS5 服务，<a href="https://www.bilibili.com/read/cv15142226/">教程</a></td>
+          <td>桌面模式下安装，为串流 PS5 服务，<a href="https://www.bilibili.com/read/cv15142226/" target="_blank" rel="noopener noreferrer">教程</a> </td>
       </tr>
       <tr>
           <td>Yuzu 模拟器</td>
-          <td>桌面模式下安装，Switch 模拟器，<a href="https://yuzu-emu.org/">官网</a></td>
+          <td>桌面模式下安装，Switch 模拟器，<a href="https://yuzu-emu.org/" target="_blank" rel="noopener noreferrer">官网</a> </td>
       </tr>
       <tr>
           <td>Chrome 浏览器</td>
@@ -1860,7 +2141,7 @@
 <p><img alt="天台山道教学院" loading="lazy" src="/images/posts/taizhou-travel-notes/taizhou0002.webp"></p>
 <p>这真的是一个正规四年大学本科的高等学府，每年大概招生50人，学校位于天台山的一个山顶，正对一大片山顶天池（俗称水库），旁边一座不知道名字的宝塔，门前的乱石子停车场停着各种车辆，与穿着道袍下车的学生相对比，多少有些背景太假的错觉。</p>
 <p>只是，门卫不让进，毕竟是学校。缘分已尽之后，我们只能给这个奇怪到有点奇异的山顶拍拍全景图，山顶、水库、道教学校、环湖路……</p>
-<p><a href="https://photos.app.goo.gl/42tAFgMjPWWpGcfY8">New item by Joe Hou</a></p>
+<p><a href="https://photos.app.goo.gl/42tAFgMjPWWpGcfY8" target="_blank" rel="noopener noreferrer">New item by Joe Hou</a> </p>
 <p>这个是 360 全景，可以旋转查看</p>
 <p><img alt="天台山道教学院全景" loading="lazy" src="/images/posts/taizhou-travel-notes/taizhou0003.webp"></p>
 <p>如果想要去上学，需要各地道观的推荐，不用幻想了。</p>
@@ -1875,7 +2156,7 @@
 <h2 id="-围城一样的台州府城">→ 围城一样的台州府城</h2>
 <p>台州府城就两个要点，爬长城一样的古城墙，以及在美食街吃各种碳水特色小吃。</p>
 <p>来之前我想象过有城墙的城市，全国太多样板了，真肉身到了县城之后，发现还是挺不一样的。</p>
-<p><a href="https://photos.app.goo.gl/GNuer7QoWhZpKsy47">New item by Joe Hou</a></p>
+<p><a href="https://photos.app.goo.gl/GNuer7QoWhZpKsy47" target="_blank" rel="noopener noreferrer">New item by Joe Hou</a> </p>
 <p>台州府全景（紫阳街上空）</p>
 <p>台州府城，依河而建，是由古城墙、湖和山包围起来的古城区，城墙大概占五分之三，真的是环了一大圈，从城墙地图就可以看出来，全程走完需要一个半小时。中间空的部分是古城区，右侧是其东湖，右下侧是巾山，而城墙的最南端连接的是美食一条街「紫阳街」。</p>
 <p><img alt="台州府城全景图" loading="lazy" src="/images/posts/taizhou-travel-notes/taizhou0010.webp"></p>
@@ -1937,7 +2218,7 @@
 <p><img alt="在苏格兰高地开车，一时兴起路边起飞航拍云海" loading="lazy" src="/images/posts/why-not-recommend-tesla/scotland-highland-drone.webp"></p>
 <h2 id="3远程观影">（3）远程观影</h2>
 <p>之前写过一篇文章，主要分享如何在车上远程连接自己放在家里的私有云 Nas，借助车辆本身无限流量和车内音响，可以直接远程观看下载好的几百部高清电影，每次等人或者充电时，都可以直接接着之前的进度继续观看，观看进度可以与手机、电脑、家里的电视同步。</p>
-<p><a href="https://houjoe.notion.site/d56812ba8429490294b2572dd2297745?pvs=4">特斯拉自带浏览器一键全屏看视频</a></p>
+<p><a href="https://houjoe.notion.site/d56812ba8429490294b2572dd2297745?pvs=4" target="_blank" rel="noopener noreferrer">特斯拉自带浏览器一键全屏看视频</a> </p>
 <h2 id="442-骑行之旅">（4）4+2 骑行之旅</h2>
 <p><img alt="Tesla Model 3" loading="lazy" src="/images/posts/why-not-recommend-tesla/tesla-model-3.webp"></p>
 <p>4+2 是指四轮加上两轮。</p>
@@ -1983,12 +2264,12 @@
 <p>因为2022年11月份出国了一次，对离线的感受更加深切，有大量的行程单、票据和证件需要在无网络或者网络不稳定的情况下访问。不管是 Craft 还是 Notion，其自带的同步服务基本都不支持手机甚至电脑上真正的离线内容访问，这让我再次激活了我的 Evernote 账户。从功能定位上，Evernote 仍然是一款绝佳的资料存储工具，有真正的离线数据，成熟的账户安全机制，实用性和私密性足够。</p>
 <p><img alt="Evernote 界面截图" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/evernote-interface.webp"></p>
 <h2 id="things3我的好奇清单">Things3：我的好奇清单</h2>
-<p><a href="https://culturedcode.com/things/">The all-new Things. Your to-do list for Mac &amp; iOS</a></p>
+<p><a href="https://culturedcode.com/things/" target="_blank" rel="noopener noreferrer">The all-new Things. Your to-do list for Mac &amp; iOS</a> </p>
 <p>Things3 依然是今年最坚挺也最刷存在感的软件，尝试过用各种 App 替代它，但恰到好处的交互和柔和的截止日期功能，用起来有着极低的心智负担，即使有着明显的缺点，比如不支持图片或者附件的保存，但挡不住简单易用。</p>
 <p>任务管理软件最大的作用在于，持续保持生活的目标感，始终都能有很多想做的事情，哪怕是想看一部电影、读一本书、查阅一篇文章、玩某个游戏，抑或探索一个主题、旅行一个地方、深思一个问题，等等，都会可以视作一个待办，不做也没关系，有想做的事情本身就是一种目标感，随时可以开启。</p>
 <p><img alt="Things3 任务列表" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/things3-tasks.webp"></p>
 <h2 id="spotify一种听歌的自由">Spotify：一种听歌的自由</h2>
-<p><a href="https://open.spotify.com/">Spotify - Web Player: Music for everyone</a></p>
+<p><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify - Web Player: Music for everyone</a> </p>
 <p>今年将音乐软件切到了 Spotify，实在不想有些歌手，听着听着就没了，而且 Spotify 几乎支持包括 PS5 在内的所有设备，跨设备之间还可以连接控制。但最大的惊喜还是听不完的高质量精选歌单，可以收获很多预期之外的歌曲，大概这就是所谓的「听见不同」吧，并且，Spotify 也可以订阅播客，省掉一个 App。</p>
 <p>不过，在国内不是很推荐 Spotify，不付费的话，在国内就是跨境听歌，只有15天左右的免费。</p>
 <p><img alt="Spotify 界面" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/spotify-interface.webp"></p>
@@ -1997,7 +2278,7 @@
 <p>不过，更重要的是，所有的专注时长可以积累，每一次累积都是种一棵树，直到种出一片树林，甚至可以在积分达到2500之后种出一颗真正的树，由官方完成，就像一场简单的升级游戏，每一次专注都有收获，即使任务并没有完成。</p>
 <p><img alt="Forest 应用界面" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/forest-app.webp"></p>
 <h2 id="figma设计与创意白板工具">Figma：设计与创意白板工具</h2>
-<p><a href="https://www.figma.com/">Figma: the collaborative interface design tool.</a></p>
+<p><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma: the collaborative interface design tool.</a> </p>
 <p>虽然 Figma 是专门给视觉或者交互设计师用的作图工具，但是对于产品原型设计和日常想法梳理，也是不错的。当我有一个想法的时候，就会开一个白板，试着跟着思路画一画，想法可以发散也可以快速收敛到具体的原型图上。</p>
 <p>当然，最主要的还是，Figma 免费版本完全够用，省了之前用 Miro （国外著名白板工具）的1000多块钱，还比 Miro 性能更好。</p>
 <p><img alt="Figma 设计界面" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/figma-interface.webp"></p>
@@ -2011,7 +2292,7 @@
 <p>车作为实质意义上的第二空间，我们甚至在车上配置了随时可以去露营的全套装备，以及持续增加的周边旅行清单，希望2023年可以继续完成江浙沪包邮区的开车抵达。</p>
 <p><img alt="特斯拉 Model Y" loading="lazy" src="/images/posts/2022-gadget-review-software-and-hardware/tesla-model-y.webp"></p>
 <h2 id="极空间-nas个人影视站点">极空间 Nas：个人影视站点</h2>
-<p><a href="https://www.zspace.cn/">极空间官网-科技保存美好生活</a></p>
+<p><a href="https://www.zspace.cn/" target="_blank" rel="noopener noreferrer">极空间官网-科技保存美好生活</a> </p>
 <p>不得不说，对国内的观影环境几乎是负信任度了，2022年尤甚。</p>
 <p>各大视频 App 上线各种阉割版特供版，而曾经推荐的网盘观影方式，我发现百度网盘里存的美剧莫名少了一半，我用阿里云盘离线下载的电影居然在飞机上无法离线播放，原因是因为没有网，而夸克网盘的资源投屏到电视上会大幅降低清晰度。</p>
 <p>买 Nas 的最大目的是构建属于自己的影视库，不用担心空间存储的问题，一个人观看的体量其实是有限的，这么多年，我的豆瓣标记看过的影视剧大概700部左右。</p>
@@ -2023,10 +2304,10 @@
 <p>即使是疫情，出行依然是2022的主旋律，所以，无人机还是随身带上，有了车之后，无人机基本就放在车上，并配备了专门的车载充电器，有好的风景，随时可以起飞。</p>
 <p>这一年里最喜欢的功能还是无人机的全景拍照，可以360度拍照并生成一个真正的高空全景图片，不过，一般的相册是无法识别全景的，Google 相册可以，以下是分享的一些。</p>
 <ul>
-<li><a href="https://photos.app.goo.gl/otMb2uXETkEw8pGZ7">英国天空岛全景</a></li>
-<li><a href="https://photos.app.goo.gl/YEDFGtjYt5Gdh6Gu8">苏格兰高地全景</a></li>
-<li><a href="https://photos.app.goo.gl/SrAcCa1qY9ymPwKP8">湖州太湖全景</a></li>
-<li><a href="https://photos.app.goo.gl/tGutUPnaj8u9ijoY8">舟山东极岛全景</a></li>
+<li><a href="https://photos.app.goo.gl/otMb2uXETkEw8pGZ7" target="_blank" rel="noopener noreferrer">英国天空岛全景</a> </li>
+<li><a href="https://photos.app.goo.gl/YEDFGtjYt5Gdh6Gu8" target="_blank" rel="noopener noreferrer">苏格兰高地全景</a> </li>
+<li><a href="https://photos.app.goo.gl/SrAcCa1qY9ymPwKP8" target="_blank" rel="noopener noreferrer">湖州太湖全景</a> </li>
+<li><a href="https://photos.app.goo.gl/tGutUPnaj8u9ijoY8" target="_blank" rel="noopener noreferrer">舟山东极岛全景</a> </li>
 </ul>
 <h2 id="随身电风扇夏日最佳伴侣">随身电风扇：夏日最佳伴侣</h2>
 <p>虽然现在是冬天，但2022年的夏天太印象深刻，绝对是噩梦一样，而在噩梦一样的天气里出行，随身电风扇绝对是最佳伴侣，甚至可以「救命」，它可以充电后续航8个小时，也可以接电一直使用，还可以收纳在很小的斜挎包里，无感便携。</p>
@@ -2055,7 +2336,7 @@
 <p>好在，庙子湖的天气虽然也是阴雨，但是是不赶人的那种，甚至兴之所至，我们直接绕着岛徒步了半圈，走过灯塔，走过左右大型墓地的步道，走过庙子湖最老的街区，据说也走过了《后会无期》的取景地，只是未曾发觉。</p>
 <p>庙子湖的老街走起来有一种在九份（台东）的感觉。</p>
 <p><img alt="台湾九份山城（2016年9月）" loading="lazy" src="/images/posts/dongji-island-tour-2022/jiufen-2016.webp"></p>
-<p><a href="https://photos.app.goo.gl/cDMeATy6xt3jiMiC8">点击查看庙子湖全景图片</a>（360 度环绕，由 Google 相册提供支持）</p>
+<p><a href="https://photos.app.goo.gl/cDMeATy6xt3jiMiC8" target="_blank" rel="noopener noreferrer">点击查看庙子湖全景图片</a> （360 度环绕，由 Google 相册提供支持）</p>
 <p><img alt="庙子湖的全貌图" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-overview.webp"></p>
 <p><img alt="庙子湖的环岛路，非常舒适，强烈建议，全程只需2个半小时" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-road.webp"></p>
 <p><img alt="夜晚下的庙子湖岛，还能听到一阵一阵的 KTV 歌声" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-night.webp"></p>
@@ -2149,7 +2430,7 @@
 <h2 id="规则1面向工作的斯多葛主义">规则1：面向工作的斯多葛主义</h2>
 <p>可能很多人没听过斯多葛主义，初听上去比较突兀。斯多葛主义是一种非常务实的处世态度（或者，哲学），适用于生活，也适用于工作，尤其是其「控制二分法」。简单理解为，我们能完全控制的事情，需要多多关注并积极设定目标；我们完全无法控制的事情，分割开，尽量不关注；我们只能部分控制的事情，需要关注，但在设定目标的时候尽可能只设定内在目标，即可以控制的部分的目标。</p>
 <p>二分法的作用可以让我们少一些理想主义，少一些对不可控事情的执念，相应的也会少很多不必要的烦恼，以更为务实的态度来推进工作的进展。</p>
-<p>如果想了解更多关于斯多葛主义，推荐这本书入门：<a href="https://book.douban.com/subject/27167270/">像哲学家一样生活</a></p>
+<p>如果想了解更多关于斯多葛主义，推荐这本书入门：<a href="https://book.douban.com/subject/27167270/" target="_blank" rel="noopener noreferrer">像哲学家一样生活</a> </p>
 <h2 id="规则2了解现状不急于发言">规则2：了解现状，不急于发言</h2>
 <p>俗话说，「没有调研就没有发言权」。在没有真正熟悉了解现状之前，不急于发表看法，但是，不阻碍想法的产生，可以先行记录下来。我自己会为每一个正在服务的产品建立 Wiki（百科）页面，这样可以有一片区域按照我自己的思路搜集并整理产品现状信息，回头再看看之前那些草率的想法，可能极其幼稚。</p>
 <p>这条规则适用于加入一个新的团队。</p>
@@ -2182,14 +2463,14 @@
 <li>接纳不同意见，不对不同意见过度反应</li>
 </ul>
 <p>关于重大决策的讨论，按照以往经验，总是越辩越明朗，即使最后是求同存异，也是在充分表达不同意见之后的取舍。</p>
-<p>更多关于不惧怕冲突的讨论，推荐这本很薄的书《团队协作的五大障碍》，真的很薄：<a href="https://book.douban.com/subject/25338822/">团队协作的五大障碍</a></p>
+<p>更多关于不惧怕冲突的讨论，推荐这本很薄的书《团队协作的五大障碍》，真的很薄：<a href="https://book.douban.com/subject/25338822/" target="_blank" rel="noopener noreferrer">团队协作的五大障碍</a> </p>
 <h2 id="规则10主动降低语速">规则10：主动降低语速</h2>
 <p>虽然说，不惧怕冲突，但是也不能让情绪破坏整个沟通，没有比主动降低语速更简单易执行的规则了。通过这个简单的外在调整，很容易影响内在的情绪起伏，而且语气本身是最容易被他人识别的情绪特征。尝试在波动中保持一贯低语速，很自然会平静下来，还不会激起沟通人的情绪。</p>
 <h2 id="规则11检视一切工作">规则11：检视一切工作</h2>
 <p>检视工作的前提是，不信任其他人。因为人是会犯错的，而且这种错误很难自查，只能依赖第三者，而我们就是别人的第三者。甚至，我们在检视验收技术实现时，都是假设对方只完成了60%，真实情况可能更低，尤其是复杂的产品需求。</p>
 <h2 id="规则12争议下的决策机制">规则12：争议下的决策机制</h2>
 <p>产品经理每天有大量的决策要做，每一个决策都有非常多的考虑，尤其是没有管理权的情况下要完成资源调动，需要说服很多人，时间和精力之间有一个平衡，这个就是我最喜欢的一种决策方式：广泛征求意见，和少数人商量，一个人做决策。</p>
-<p>不过，不太清楚这个规则的最早出处，来自于古早时期在大学里读到的宣传百度管理法则的书籍，这本书我就不点评了，放个链接：<a href="https://book.douban.com/subject/4185489/">壹百度</a></p>
+<p>不过，不太清楚这个规则的最早出处，来自于古早时期在大学里读到的宣传百度管理法则的书籍，这本书我就不点评了，放个链接：<a href="https://book.douban.com/subject/4185489/" target="_blank" rel="noopener noreferrer">壹百度</a> </p>
 <h2 id="规则13多准备一套方案">规则13：多准备一套方案</h2>
 <p>这里的「一」是一个象征，而非字面的含义。强迫自己多准备一些方案有很多好处，诸如，强迫自己回到需求的本质来思考，是否有其他可行的方向，或者，强迫自己换一个角度，尝试其他的假设，而不急于否定，即使是之前一眼就看出的错误方向，不妨也当作另一种方案「展示」出来。</p>
 <p>第一个正确的方案不一定是最终答案，之前在其他文章里也提到的，常见的现象是，「The firsr draft of anything is shit …」，如果实在想不到更多方案，可以给周围的人讲一下现有的，可能讲着讲着就有了其他思路，抑或，你的业余听众会马上会给你不一样的反馈。</p>
@@ -2205,7 +2486,7 @@
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/good-questions-drive-answers/</guid>
       <description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description>
-      <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a></p>
+      <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw" target="_blank" rel="noopener noreferrer">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a> </p>
 <p>flomo 的新年特刊推文（flomo 是一款卡片笔记工具）</p>
 <blockquote>
 <p>好的问题能自动驱动我们获得答案</p></blockquote>
@@ -2224,7 +2505,7 @@
 <p>能力不足，意识先行……</p>
 <p>就像学习游泳一样，首先得不怕水，不能害怕问题多，甚至不愿面对问题；</p>
 <p>不要以已有问题的数量来评价自己，这真的会让人气馁的，甚至害怕新问题，而是聚焦在已处理问题的数量上，可以获得更多成就感；</p>
-<p>记录所有问题，如之前分享过的， <a href="https://www.notion.so/Everything-is-Todo-2a21e684b5f54e66b3dfaf056a14fbc2?pvs=21">Everything is Todo：简单易上手的事务管理理念</a> ，问题也是待办（Todo），先把问题写下来，也是一种明晰问题的过程，而且可以在无聊的时候，随机选择一个问题来处理；</p>
+<p>记录所有问题，如之前分享过的， <a href="https://www.notion.so/Everything-is-Todo-2a21e684b5f54e66b3dfaf056a14fbc2?pvs=21" target="_blank" rel="noopener noreferrer">Everything is Todo：简单易上手的事务管理理念</a>  ，问题也是待办（Todo），先把问题写下来，也是一种明晰问题的过程，而且可以在无聊的时候，随机选择一个问题来处理；</p>
 <p>记录问题的时候建议记录一下触发这个问题的动机，这样可以让自己在处理的时候，仍然可以保留较强的积极性，坚持做完；</p>
 <p>处理问题的时候，第一性原理很重要，回到问题最本质的部分，这样不会被其呈现的当前心态所迷惑，而且一旦回归本质，往往会有更多选择；</p>
 <p>每个问题都值得拥有一个「工作台」，这个「工作台」不是真的工作台，我喜欢为每个问题配置一个笔记或者文档，相关信息放置其中，主要是因为，很多时候处理一些问题，时间上并不是连贯的，这这些「工作台」不仅可以让这些问题随时都可以继续，还可以在处理之后，随时都可以回溯；</p>
@@ -2238,18 +2519,18 @@
       <description>2021年度最喜欢的软件和硬件盘点，主要以在生活中占据不可替代的地位为主</description>
       <content:encoded><![CDATA[<p>这是一篇从 2021 年开始写，居然写到跨年的文章。</p>
 <p>之前在即刻社区看到最喜欢的三个产品的主题，三个太少，不适合三心二意的我，不如自己盘点一下这一年最喜欢的软件和硬件，主要以在生活中占据不可替代的地位为主，软件居多。</p>
-<p>更早也有写 <a href="https://www.notion.so/2019-73648a392c954e888ff3479ec93327b6?pvs=21">2019 玩物志：年度软件与硬件盘点</a></p>
+<p>更早也有写 <a href="https://www.notion.so/2019-73648a392c954e888ff3479ec93327b6?pvs=21" target="_blank" rel="noopener noreferrer">2019 玩物志：年度软件与硬件盘点</a> </p>
 <h1 id="软件篇">软件篇</h1>
 <h2 id="notion我的数字花园">Notion：我的数字花园</h2>
 <p><img alt="Notion 界面截图" loading="lazy" src="/images/posts/2021-software-hardware-review/notion-screenshot.webp"></p>
-<p>去年年初还沉浸在 Craft 这款笔记软件中（之前写的 <a href="/posts/craft-notes-app-review">Craft：一款小众且独特的笔记软件</a>），虽然仍觉得 Craft 很好用，但在综合实力上，Notion 还在最适合我的，不过，关于 Notion 的用法可查看最近写的 <a href="https://www.notion.so/Notion-792944f70f1641cebb1a924725b56486?pvs=21">拿 Notion 做什么？不做什么？ </a></p>
+<p>去年年初还沉浸在 Craft 这款笔记软件中（之前写的 <a href="/posts/craft-notes-app-review">Craft：一款小众且独特的笔记软件</a> ），虽然仍觉得 Craft 很好用，但在综合实力上，Notion 还在最适合我的，不过，关于 Notion 的用法可查看最近写的 <a href="https://www.notion.so/Notion-792944f70f1641cebb1a924725b56486?pvs=21" target="_blank" rel="noopener noreferrer">拿 Notion 做什么？不做什么？ </a> </p>
 <p>在使用 Notion 越来越熟练之后，已经在其构建了属于我自己的「数字花园」，我的工作 Wiki、阅读笔记、产品案例集、个人生活 Wiki、个人博客、游戏记录、软件折腾日志、没什么用的小研究都放在上面。</p>
 <p>2022年的一个目标是准备在 Notion 里公开更多可分享的，比如，更多的旅行日记、奇怪的想法、阅读笔记、没用的小研究、记忆博物馆等等等等。</p>
 <h2 id="滴答清单一切皆可待办">滴答清单：一切皆可待办</h2>
 <p><img alt="滴答清单界面" loading="lazy" src="/images/posts/2021-software-hardware-review/ticktick-screenshot.webp"></p>
 <p>直接的好处是，原来，我有好多事情可以做！</p>
 <p>经过几番艰难的抉择，在 Things3 和滴答清单里最终选择了后者，因为滴答清单的每一个任务都支持添加图片，这一年 Todo 工具已经深度融合我的生活，在我的生活里，Everything is Todo，零碎的想法、待做的事情、待看的文章、想去的地方，想法的产生与完成这个想法是时间维度上是分开的，需要一个存储器来托管，在我想法产生的时候，可以快速录入，在我闲置的，翻开 Todo，随便找一件事情去做，就像这篇文章。</p>
-<p>了解我的事务管理方法可以查看 <a href="https://www.notion.so/Everything-is-Todo-2a21e684b5f54e66b3dfaf056a14fbc2?pvs=21">Everything is Todo：简单易上手的事务管理理念</a></p>
+<p>了解我的事务管理方法可以查看 <a href="https://www.notion.so/Everything-is-Todo-2a21e684b5f54e66b3dfaf056a14fbc2?pvs=21" target="_blank" rel="noopener noreferrer">Everything is Todo：简单易上手的事务管理理念</a> </p>
 <h2 id="flomo碎片思考工具">flomo：碎片思考工具</h2>
 <p><img alt="flomo 界面" loading="lazy" src="/images/posts/2021-software-hardware-review/flomo-screenshot.webp"></p>
 <p>之前分享过一篇文章，有意义的生活才会更幸福，而生活的意义来源于很多地方，反思是可以培养生活的意义，这也是 flomo 的意义涌现，我喜欢在 flomo 里与自己对话。</p>
@@ -2292,8 +2573,8 @@
 <h2 id="vr-oculus-quest-2为元宇宙预热">VR Oculus Quest 2：为元宇宙预热</h2>
 <p><img alt="Oculus Quest 2 设备" loading="lazy" src="/images/posts/2021-software-hardware-review/oculus-quest2.webp"></p>
 <p>这个之前写过好多，不多赘述，但是值得占位一下。</p>
-<p><a href="/posts/oculus-quest2-vr-review">聊一聊最近买的 VR 设备：Oculus Quest 2</a></p>
-<p><a href="/posts/vr-workroom-experience">记录一次 VR Workroom 的体验</a></p>
+<p><a href="/posts/oculus-quest2-vr-review">聊一聊最近买的 VR 设备：Oculus Quest 2</a> </p>
+<p><a href="/posts/vr-workroom-experience">记录一次 VR Workroom 的体验</a> </p>
 <h2 id="xboxxgp-与电视盒子">Xbox：XGP 与电视盒子</h2>
 <p><img alt="Xbox 游戏机" loading="lazy" src="/images/posts/2021-software-hardware-review/xbox.webp"></p>
 <p>XGP 是 Xbox Game Pass 的缩写，是 Xbox 游戏订阅服务的一种，每个月付一点钱，可以畅玩 300 多款游戏，包括很多第一方大作，很适合我这样的轻度主机玩家。2021年年初，我卖掉了 Switch，主要是由于，Switch 上喜欢的游戏基本都通关了，塞尔达已经重开了两遍，更多的 3A 大作基本带不动，还是换个主机平台探索一下。</p>
@@ -2314,17 +2595,17 @@
 <p>目录 ⬇️</p>
 <h2 id="emotn-是什么">Emotn 是什么？</h2>
 <p>一个免费无广告的 Android TV 应用商店，并且可以在不需要安卓电视有谷歌框架的情况下安装 YouTube、Netflix 等，打开这个应用商店有一种之前在小米盒子国际版里打开正规 Google Play Store 的错觉，激起了我折腾电视的想法。</p>
-<p><a href="https://app.emotn.com/">Emotn Store 官方下载地址</a></p>
+<p><a href="https://app.emotn.com/" target="_blank" rel="noopener noreferrer">Emotn Store 官方下载地址</a> </p>
 <blockquote>
 <p>💡 Emotn 支持上传自己的 APK 应用安装包，在电视上无需账户，通过一个叫做分享码的方式来传输和安装，非常方便</p></blockquote>
 <h2 id="安装-emotn-非常简单">安装 Emotn 非常简单</h2>
 <p>下载 APK 安装包到 U 盘，然后接入电视来安装，由于我的坚果投影仪自带的文件管理器不识别非视频、图片的文件，这个过程还下载了一个 ES 文件浏览器来打开 U 盘里的安装包，好在坚果没有什么未知应用安装的限制，直接安装成功了。</p>
-<p><a href="http://www.estrongs.com/">ES 文件浏览器官网</a></p>
+<p><a href="http://www.estrongs.com/" target="_blank" rel="noopener noreferrer">ES 文件浏览器官网</a> </p>
 <h2 id="我安装了那些应用">我安装了那些应用</h2>
 <h3 id="先上-youtube">先上 YouTube</h3>
 <p>我和我老婆已经非常习惯在 YouTube 上订阅并观看视频，之前是用 Xbox 来安装并通过 HDMI 来连接播放。Xbox 基本不用担心，正规设备。</p>
 <p>在国产电视上安装，会有很多奇奇怪怪的小问题，比如这次下载了 YouTube TV 版本，结果，始终无法登录，点击即闪退，最后换成了据说是俄罗斯小伙开发的 Smart YouTube TV，成功了，而且还可以免广告，不过，我是 YouTube Premium，无法验证。</p>
-<p><a href="https://smartyoutubetv.github.io/">Smart YouTube TV 主页</a></p>
+<p><a href="https://smartyoutubetv.github.io/" target="_blank" rel="noopener noreferrer">Smart YouTube TV 主页</a> </p>
 <h3 id="netflix-失败了">Netflix 失败了</h3>
 <p>Netflix 对设备要求很高，只有经过验证的设备才能安装最通用的 Netflix TV 版本，国产电视基本不可能，推荐安装 Emotn 里那个叫做 Netflix for Pad 的版本，不过，我的电视遥控器适配不是很好，有些小瑕疵，比如无法通过遥控器来播放指定集数，一怒之下，卸载了。</p>
 <blockquote>
@@ -2338,25 +2619,25 @@
 <p>与虎牙 TV 一样，也是只有特定版本才是完整的资源。</p>
 <h3 id="全能型播放器-kodi">全能型播放器 Kodi</h3>
 <p>可惜，我的坚果投影仪无法正常运行 Kodi 新版，它的强大，无以伦比，我甚至已经为它建好了一个专门的 Page 来挖掘一下，只能等坚果升级一下其系统再试试，NND。</p>
-<p><a href="https://kodi.tv/">Kodi 官网</a></p>
+<p><a href="https://kodi.tv/" target="_blank" rel="noopener noreferrer">Kodi 官网</a> </p>
 <p>推荐观看以下 YouTube 视频来了解 Kodi：</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=XEHoepm-ivg">KODI是什么？KODI能做什么？这期做个介绍，随便辟辟谣。</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLTI5d7Gwez7pdJ_S-AV1tDrFFdwRly_e4">【KODI应该这么玩】</a></li>
+<li><a href="https://www.youtube.com/watch?v=XEHoepm-ivg" target="_blank" rel="noopener noreferrer">KODI是什么？KODI能做什么？这期做个介绍，随便辟辟谣。</a> </li>
+<li><a href="https://www.youtube.com/playlist?list=PLTI5d7Gwez7pdJ_S-AV1tDrFFdwRly_e4" target="_blank" rel="noopener noreferrer">【KODI应该这么玩】</a> </li>
 </ul>
 <p><img alt="Kodi 界面预览" loading="lazy" src="/images/posts/emotn-android-tv-exploration/kodi-interface.webp"></p>
 <h3 id="全球-6000-多-tv-直播源">全球 6000 多 TV 直播源</h3>
 <p>先通过 Emotn 安装了一个叫做 IPTV 的流媒体客户端，然后添加了 GitHub 大神维护的直播源地址，超多 TV 直播源都可以看到，还可以收藏，一下子感觉国产电视国际化了。</p>
 <p>以下为直播源 GitHub 地址，有教程和工具：
-<a href="https://github.com/imDazui/Tvlist-awesome-m3u-m3u8">https://github.com/imDazui/Tvlist-awesome-m3u-m3u8</a></p>
+<a href="https://github.com/imDazui/Tvlist-awesome-m3u-m3u8" target="_blank" rel="noopener noreferrer">https://github.com/imDazui/Tvlist-awesome-m3u-m3u8</a> </p>
 <h2 id="最后关于科学上网">最后：关于科学上网</h2>
 <p>我的科学上网是一台 R2S 的软路由（OpenWRT）+ ShadowSockR Plus 插件来完成的，配合小米路由器，主要是方便家里所有电脑、手机、主机、电视盒子翻墙，这个说起来比较麻烦，我贴一下我参考的教程，需要自个研究一下，有机会再单写一次。</p>
 <p>推荐观看以下 YouTube 视频来了解软路由：</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=NwJtD_JBfeI">划重点！入手软路由前你必须要了解的事情！！！</a></li>
-<li><a href="https://www.youtube.com/watch?v=jwd7wvqcDYY">揭秘openwrt三大神器！clash ssrplus passwall 速度测试！软路由openwrt lede科学上网插件</a></li>
+<li><a href="https://www.youtube.com/watch?v=NwJtD_JBfeI" target="_blank" rel="noopener noreferrer">划重点！入手软路由前你必须要了解的事情！！！</a> </li>
+<li><a href="https://www.youtube.com/watch?v=jwd7wvqcDYY" target="_blank" rel="noopener noreferrer">揭秘openwrt三大神器！clash ssrplus passwall 速度测试！软路由openwrt lede科学上网插件</a> </li>
 </ul>
-<p>科学上网线路服务商是 AgentNEO，能看 Netflix，稳定，链接：<a href="https://agneo.co/?rc=epng2diu">https://agneo.co/?rc=epng2diu</a></p>
+<p>科学上网线路服务商是 AgentNEO，能看 Netflix，稳定，链接：<a href="https://agneo.co/?rc=epng2diu" target="_blank" rel="noopener noreferrer">https://agneo.co/?rc=epng2diu</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2396,7 +2677,7 @@
 <em>江米鸡</em></p>
 <p>而为了让这次出行更像休闲的周末，我们甚至取消了需要耗时一天的延吉-长白山之行，当然，也可以理解为&quot;懒&quot;…</p>
 <p>尽管是淡季，仍然可以直观感觉到延吉的堵车，接近70万的人口有17万私家车和2000多辆的士，加上不守规矩的停放，视野所及皆是车…</p>
-<p>往前追溯，我们与延吉的另一个缘分是，几年前去平壤时（<a href="/posts/north-korea-four-days">朝鲜四日行纪录</a>），带我们的朝鲜导游是在延边大学上的学，而延边大学就在延吉，一个乍一看像武大，但不让进的山坡学校。</p>
+<p>往前追溯，我们与延吉的另一个缘分是，几年前去平壤时（<a href="/posts/north-korea-four-days">朝鲜四日行纪录</a> ），带我们的朝鲜导游是在延边大学上的学，而延边大学就在延吉，一个乍一看像武大，但不让进的山坡学校。</p>
 <p><img alt="延边大学" loading="lazy" src="/images/posts/yanji-two-days-trip/image-10.webp"></p>
 <p>网上最常见关于延吉的著名夜市照就是延边大学对面的大学城，我也拍了一个。</p>
 <p><img alt="延边大学夜市" loading="lazy" src="/images/posts/yanji-two-days-trip/image-3.webp"></p>
@@ -2418,7 +2699,7 @@
 <em>边境线严禁飞无人机</em></p>
 <p>老实说，这里居然有风景，相比景色荒漠的延吉，还挺好看</p>
 <p><img alt="图们风景" loading="lazy" src="/images/posts/yanji-two-days-trip/image-24.webp"></p>
-<p>在图们也是我们第二次离朝鲜近在咫尺，上一次还是2016年坐火车前往平壤（<a href="/posts/north-korea-four-days">朝鲜四日行纪录</a>），导游也以一种司空见惯的语调介绍着种种历史与八卦，比如小时候遇到的偷渡客，对面朝鲜的男女兵营，日据时代起的火车线，还挺有趣…</p>
+<p>在图们也是我们第二次离朝鲜近在咫尺，上一次还是2016年坐火车前往平壤（<a href="/posts/north-korea-four-days">朝鲜四日行纪录</a> ），导游也以一种司空见惯的语调介绍着种种历史与八卦，比如小时候遇到的偷渡客，对面朝鲜的男女兵营，日据时代起的火车线，还挺有趣…</p>
 <p><img alt="中朝交接&quot;图们江&quot;" loading="lazy" src="/images/posts/yanji-two-days-trip/image-22.webp">
 <em>中朝交接&quot;图们江&quot;，河对岸是朝鲜</em></p>
 <p><img alt="朝鲜火车站" loading="lazy" src="/images/posts/yanji-two-days-trip/image-21.webp">
@@ -2499,7 +2780,7 @@
 <blockquote>
 <p>记录的 Todo 越来越多怎么办？</p></blockquote>
 <p>当 Everything is Todo 之后，要做的事情肯定会越来越多，这真的是一个数字游戏，① 忽略收件箱里的数字，只关注当天要做的，我把 Todo App 的图标数字改为了仅显示当天到期必须要做的数字，这个不是欺骗，而是只关注重点，事情是做不完的；② Giving up is allowed（任务是可放弃的），定期审视这些要做的事情的时候，学会是否放弃/取消一些任务；③ 直接从清单第一个开始，One Todo at one time（一次只做一件事情）；</p>
-<p>另外，感谢 Twitter <a href="https://twitter.com/WuPingJu">@P.J. Wu 吳秉儒</a> 的建议，增加更多 Review 机制。其实这部分，App 本身可以做一些：</p>
+<p>另外，感谢 Twitter <a href="https://twitter.com/WuPingJu" target="_blank" rel="noopener noreferrer">@P.J. Wu 吳秉儒</a>  的建议，增加更多 Review 机制。其实这部分，App 本身可以做一些：</p>
 <p>① 增加随机模式，App 自动随机推荐进入一个 Todo，我个人挺喜欢这种，之前有 App 实现过；</p>
 <p>② 增加更多透视视图，鼓励用户按照自己的习惯自定义视图，从不同角度 Review 自己的 Todo，比如「创建时间超过90天的任务」等等，这一块 Things3 的视图几近于无。</p>
 <p>③ 类似于 Slack 处理群组那样，超过n天没有任何操作的任务可以通过内部提示，提示用户快速处理一下，比如放弃。</p>
@@ -2519,7 +2800,7 @@
 <li>闲暇时只需要关注以前的自己给自己的 Todo</li>
 </ul>
 <p>建议使用标签（Tag）来给清单里的不同事务分类，标签的好处是不破坏清单的整体结构（比如额外增加层级和区隔），保持一个可以鸟瞰全局的维度「One List」，还可以根据条件筛选出不同的任务视图。</p>
-<p>目前 <a href="https://culturedcode.com/things/">Things3</a> 的标签分类设计已经是我心目中最好的之一，但在手机上默认隐藏了标签分类，需要在折叠菜单里唤出，操作不方便，而且随着 One List 里的事务越来越多，仅靠标签，也是不够的，有更多设想：</p>
+<p>目前 <a href="https://culturedcode.com/things/" target="_blank" rel="noopener noreferrer">Things3</a>  的标签分类设计已经是我心目中最好的之一，但在手机上默认隐藏了标签分类，需要在折叠菜单里唤出，操作不方便，而且随着 One List 里的事务越来越多，仅靠标签，也是不够的，有更多设想：</p>
 <ol>
 <li>新建 Todo 会根据过往的 Todo 来推荐标签，减少添加标签的成本</li>
 <li>支持随机模式，比如从你的 One List 里随机挑选一个任务开始</li>
@@ -2588,7 +2869,7 @@
 </ul>
 <h1 id="为什么要撰写这个任务管理方法">为什么要撰写这个任务管理方法？</h1>
 <p>一则借分享这个任务管理方法的机会来认真总结提炼一下自己的方法，找出可复用的核心，而且，撰写这个任务管理方法，也是大概两三个月前记录的 Todo，同时也是2021年的年度计划之一；</p>
-<p>二则觉得，目前市面上的 Todo 工具大都在两个极端中发展，简单的 Todo 就像玩具，没有方法论支撑，更像是练手的作品，传统的 Todo 工具，都在 GTD（<a href="https://zh.wikipedia.org/wiki/%E5%B0%BD%E7%AE%A1%E5%8E%BB%E5%81%9A">Getting Things Done</a>）的框架里将任务管理复杂化，比如过多的结构和层级，任务的工作区（详情部分）过于简单和结构化，无法扩展。而 Things3 虽然好用也有诸多毛病，比如极其简陋的任务编辑器、难以理解的「随时」（<a href="https://www.reddit.com/r/thingsapp/comments/8e582i/how_do_you_guys_use_the_anytime_and_someday/">Reddit 上网友同样的困惑</a>）、不支持农历、标签筛选太差。</p>
+<p>二则觉得，目前市面上的 Todo 工具大都在两个极端中发展，简单的 Todo 就像玩具，没有方法论支撑，更像是练手的作品，传统的 Todo 工具，都在 GTD（<a href="https://zh.wikipedia.org/wiki/%E5%B0%BD%E7%AE%A1%E5%8E%BB%E5%81%9A" target="_blank" rel="noopener noreferrer">Getting Things Done</a> ）的框架里将任务管理复杂化，比如过多的结构和层级，任务的工作区（详情部分）过于简单和结构化，无法扩展。而 Things3 虽然好用也有诸多毛病，比如极其简陋的任务编辑器、难以理解的「随时」（<a href="https://www.reddit.com/r/thingsapp/comments/8e582i/how_do_you_guys_use_the_anytime_and_someday/" target="_blank" rel="noopener noreferrer">Reddit 上网友同样的困惑</a> ）、不支持农历、标签筛选太差。</p>
 <p>依照此方法论为支撑，我自己设计了一款 Todo 工具，有兴趣的朋友说不定可以聊一聊……</p>
 <h1 id="常见-faq">常见 FAQ</h1>
 ]]></content:encoded>
@@ -2608,8 +2889,8 @@
 <li>后者是以 Google 全球街景为内容资源的世界地图，可以在家看遍全世界，只是与我喜欢的 Google earth 相差甚远，期待早日 Google Earth VR 可以运行在不需要 PC 的 VR 主机上，想以上帝模式打开虚拟地球，想想就激动；</li>
 </ul>
 <p><img alt="纽特的箱子" loading="lazy" src="/images/posts/oculus-quest2-vr-review/newt-case.webp"></p>
-<p>一开始我对 VR 设备的期待是<a href="https://movie.douban.com/subject/25726614/">《神奇动物在哪里》</a>中纽特的手提箱，随身携带，只要打开就可以进入其中的异样世界，实际来看，我相信 VR 未来肯定可行，但是还很遥远。</p>
-<p><a href="https://harrypotter.fandom.com/zh/wiki/%E7%BA%BD%E7%89%B9%C2%B7%E6%96%AF%E5%8D%A1%E6%9B%BC%E5%BE%B7%E7%9A%84%E7%AE%B1%E5%AD%90?variant=zh">纽特·斯卡曼德的箱子</a></p>
+<p>一开始我对 VR 设备的期待是<a href="https://movie.douban.com/subject/25726614/" target="_blank" rel="noopener noreferrer">《神奇动物在哪里》</a> 中纽特的手提箱，随身携带，只要打开就可以进入其中的异样世界，实际来看，我相信 VR 未来肯定可行，但是还很遥远。</p>
+<p><a href="https://harrypotter.fandom.com/zh/wiki/%E7%BA%BD%E7%89%B9%C2%B7%E6%96%AF%E5%8D%A1%E6%9B%BC%E5%BE%B7%E7%9A%84%E7%AE%B1%E5%AD%90?variant=zh" target="_blank" rel="noopener noreferrer">纽特·斯卡曼德的箱子</a> </p>
 <ul>
 <li>成像依然不够清晰，Oculus 做了取巧，通过算法，让算力集中在 VR 视野焦点，而视野焦点以外还是有可意识到的模糊部分，总想着可以更清晰；</li>
 <li>主机游戏定位，不算一个可以真正独当一面的计算机设备，尽管也有人开发了各种各样的工具，但是都是试验性质，连输入密码都费劲；</li>
@@ -2617,8 +2898,8 @@
 <li>全景图片和视频的拍摄、查看流程不够连贯（黑话是说，链路不完整），之前用 Google Cardboard 玩具版 VR 都可以直接看手机拼凑的全景图片，当时是用 Nexus 手机在香港一家民宿拍的卧室的全景图，戴上去时，让人有种穿越的感觉，可惜这么多年过去了，拍摄全景图片视频再到 VR 设备里看，依然很脱节，我想用全景来记录；</li>
 </ul>
 <p>最能体现 VR 特点的应用是官方的 First steps 和 First contact，每一个有 VR 设备的朋友都值得认真试一试，让人置身一个虚拟世界的工作台，看到的小物件都可以交互，放飞火箭、扔飞机、打沙袋、遥控热气球等等，随心所欲，就像真实世界的操作，可惜，非常短暂的剧情就匆匆结束了。</p>
-<p><a href="https://www.oculus.com/experiences/quest/1863547050392688/">First Steps on Oculus Quest</a></p>
-<p><a href="https://www.oculus.com/experiences/quest/2188021891257542">Oculus First Contact on Oculus Quest</a></p>
+<p><a href="https://www.oculus.com/experiences/quest/1863547050392688/" target="_blank" rel="noopener noreferrer">First Steps on Oculus Quest</a> </p>
+<p><a href="https://www.oculus.com/experiences/quest/2188021891257542" target="_blank" rel="noopener noreferrer">Oculus First Contact on Oculus Quest</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2629,24 +2910,24 @@
       <description>分享几个最近发现的实用工具：Markdown Nice、微信小助手、DeepL 翻译和一个电子书资源网站</description>
       <content:encoded><![CDATA[<p>好久没有写最近在用或者新发现的有趣 App 了，主要是忙着换工作的事宜，尤其是疫情期间更换工作，一旦节奏找回还是需要尽快重新进入状态。</p>
 <h2 id="markdown-写作者的福音markdown-nice">Markdown 写作者的福音：Markdown Nice</h2>
-<p>如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 <a href="http://mdnice.com">mdnice.com</a> 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。</p>
+<p>如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 <a href="http://mdnice.com" target="_blank" rel="noopener noreferrer">mdnice.com</a>  即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。</p>
 <p>也就是你只需要，导出为 .md 文件，导入到此文件到编辑器，选择好适合的主题，简单再修一修排版，就可以复制走了。</p>
 <p>另外，最近感觉其正在商业化，已经推出了插件，逐渐在向更专业的方向演进着。</p>
 <p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.webp"></p>
-<p>网址：<a href="https://mdnice.com/">https://mdnice.com/</a></p>
+<p>网址：<a href="https://mdnice.com/" target="_blank" rel="noopener noreferrer">https://mdnice.com/</a> </p>
 <h2 id="开启上帝视角的微信微信小助手">开启上帝视角的微信：微信小助手</h2>
 <p>这是一个仅支持 Mac 端的一个免费工具，开启之后像是微信开启了上帝视角，你可以知晓谁退群了，谁撤回了什么消息，还可以强制 Mac 端微信切换成正在内测的黑夜模式。另外，还支持微信多开，自动回复设置，包括设置智能回复的语言库。</p>
 <p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.webp"></p>
-<p>网址：<a href="https://www.waerfa.com/wechatextension-for-wechat-mac-version">https://www.waerfa.com/wechatextension-for-wechat-mac-version</a></p>
+<p>网址：<a href="https://www.waerfa.com/wechatextension-for-wechat-mac-version" target="_blank" rel="noopener noreferrer">https://www.waerfa.com/wechatextension-for-wechat-mac-version</a> </p>
 <h2 id="翻译能力超强的助手deepl">翻译能力超强的助手：DeepL</h2>
 <p>之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概20多个工单。</p>
 <p>另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。</p>
 <p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.webp"></p>
-<p>网址：<a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a></p>
+<p>网址：<a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">https://www.deepl.com/translator</a> </p>
 <h2 id="质朴而强大的免费电子书资源网站">质朴而强大的免费电子书资源网站</h2>
 <p>不管是从网址拼写还是从界面上来看，都非常质朴，但是相比之前用过的电子书查询网站有很多优势，比如没有太多骗人的套路，支持中英文书籍，书库很全，是真的很全。</p>
 <p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.webp"></p>
-<p>网址：<a href="https://b-ok.cc/">https://b-ok.cc/</a></p>
+<p>网址：<a href="https://b-ok.cc/" target="_blank" rel="noopener noreferrer">https://b-ok.cc/</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2658,8 +2939,8 @@
       <content:encoded><![CDATA[<p><img alt="从客服到产品经理的转岗之路" loading="lazy" src="/images/posts/from-customer-service-to-product-manager-insights/cover.webp"></p>
 <p>疫情逐渐解禁了，这两天开始与朋友们各种小聚，前两天和一个学弟朋友聊到转岗的事宜，正好从这次工作阶段性结束开始，趁着时机对这次接近两年的转岗经历（从运营客服到产品经理）做一次总结。平常，我自己确实很少直接写产品经理工作相关的文章，主要是对自己的认知积累不是特别自信，还是先积累到自己的笔记里，而且，离我自己想象中的「产品专家」确实还有一段漫长的路，任重而道远。</p>
 <p>我之前写过以客服经历为样本的两篇总结，可以按照顺序阅读，也证明我不是伪造经历。</p>
-<p><a href="/posts/my-life-as-customer-service">其实，我是一个客服</a></p>
-<p><a href="/posts/my-life-as-customer-service-final">其实，我是一个客服（终篇）</a></p>
+<p><a href="/posts/my-life-as-customer-service">其实，我是一个客服</a> </p>
+<p><a href="/posts/my-life-as-customer-service-final">其实，我是一个客服（终篇）</a> </p>
 <h2 id="为什么要转岗">为什么要转岗？</h2>
 <p>工作的前几年，兼着社群运营和客服管理两部分工作，最后也做到了部门负责人，但是，明显感觉到极低的行业天花板，以及对于「重复流程」的厌倦。当时思考可以想到的三个方向，一个是在互联网外企里逐步深入，走资深技术支持的路线，稳定而光鲜，一个是在国内互联网公司中尽快切入到纯运营相关的工作，未知而富有挑战性，还有一个方向是从售后尝试延展到售前，逐渐从幕后走到销售岗，可靠也熟悉，三个方向都做了一些尝试，也感谢这个过程中许多朋友的支持和启发。</p>
 <p>一开始，由于朋友创业的诱惑，决定按照第二个方向彻底切到「杂务」运营岗位中，两个月的运营工作中，让我对运营中的「新媒体运营」非常失望，也造成了长时间对于国内新媒体（微信公众号、知乎专栏、小红书之类）的「偏见」，太多的新媒体运营对社会不只是毫无作用，甚至是毒瘤一样的存在，「二更食堂事件」更是加剧了我的焦虑。而且，运营工作和之前客服工作有一个通性，被动成分较多，很难有阶段性结束，以前，问题是客服工作的主要触发点，被动应对，现在，热点是运营工作的事件线，总是奔波中。</p>
@@ -2682,7 +2963,7 @@
 <p>其次，不要害怕分歧，需要规避这种深耕于文化基因深处的毛病，和气有时会成为共事的目标之一，其无意义且极度扰乱真正的讨论。</p>
 <p>另外，开放性的沟通中，最简单有效的方法之一是，主动尝试减慢自己说话的速度，减少语气的波动，通过外部的改变可以很大程度引导自己和别人的情绪。</p>
 <p>更多开放性的思考可以参考之前做的思维导图笔记，简单易理解。</p>
-<p><a href="https://zhuanlan.zhihu.com/p/34013035">《原则》读书笔记·思维导图</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/34013035" target="_blank" rel="noopener noreferrer">《原则》读书笔记·思维导图</a> </p>
 <p><img alt="原则思维导图" loading="lazy" src="/images/posts/from-customer-service-to-product-manager-insights/principles-mindmap.webp"></p>
 <h3 id="方法论的积累搭屋建瓴">方法论的积累，搭屋建瓴</h3>
 <p><img alt="来自个人手绘（多多包涵）" loading="lazy" src="/images/posts/from-customer-service-to-product-manager-insights/personal-drawing.webp"></p>
@@ -2731,7 +3012,7 @@
 <p>我不太喜欢限制自己的胡思乱想，<strong>一开始的想法都是无用的、廉价的甚至非常拙劣的，这需要自知之明，但是想法的诞生都是伴随一到两个方向上的亮点</strong>，不过早评价想法，反而应该努力助其在当时尽可能完善，完善其构思，完善其与现有个人其他记录的连接与分类关系。</p>
 <p>这些想法会成为自己的素材，成为思考的一个新节点。</p>
 <p>这让我想起了前段时间看到看到的关于创造的视频：【创作的本源】一切都是混搭(Everything is a Remix)。</p>
-<p><a href="https://www.bilibili.com/video/BV12s411Z7en/">https://www.bilibili.com/video/BV12s411Z7en/</a></p>
+<p><a href="https://www.bilibili.com/video/BV12s411Z7en/" target="_blank" rel="noopener noreferrer">https://www.bilibili.com/video/BV12s411Z7en/</a> </p>
 <p>也许，<strong>换一种说法，这些成为素材或者思考新节点的想法也成为了自己可以混搭（Remix） 的新的创作本源。</strong></p>
 <p>所有这些产生出来的想法，会发酵，会莫名其妙激发新的连接和思考。</p>
 <p>得益于有记录，可以很容易发现，很多现在正在和朋友讨论甚至在执行的方案，都可以追溯到早期非常拙劣的版本，甚至来源于好几个不同的想法，大概印证了那句话，一个成熟的方案不是一蹴而就，也不是无中生有的。</p>
@@ -2780,7 +3061,7 @@
 <p><img alt="战隼的学习探索" loading="lazy" src="/images/posts/things-that-opened-new-world/image-4.webp"></p>
 <h2 id="战隼的学习探索-2009">战隼的学习探索 2009</h2>
 <p>这是一个订阅了五六年的博客，在通过移动搜索踏入信息时代之后，战隼的学习探索是我找到的第一个启蒙站点，思维导图、时间管理以及各类提高自我管理意识的科普，陪伴了整个大学。虽然现在觉得自己已经过了入学者的小白阶段，早已不再订阅，但这个启蒙的新天地还是在持续发酵中。</p>
-<p>网址：<a href="http://www.read.org.cn/">http://www.read.org.cn/</a></p>
+<p>网址：<a href="http://www.read.org.cn/" target="_blank" rel="noopener noreferrer">http://www.read.org.cn/</a> </p>
 <h2 id="电子地图-2011">电子地图 2011</h2>
 <p>刚到武汉的时候，还是依赖着纸质地图探索一个城市，这类地图对使用者本身的方向感要求很高，因为需要先找到自己所在的位置，才能继续导航，2011 年左右，时间有些模糊了，在塞班 S60 系统盛行时，电子地图已经基本可用。而其带来的改变是，在探索真实外部世界时，不会再像父母那样，依赖熟人或者陌生人，避免由此会产生的一种对外部世界的畏惧感。当有一个更为透明化的世界可以自行探索，只需一部手机，现实世界就不再是黑盒一样。若干年后的几天，地图已经更高清更智能，还有很多配套的 LBS 服务，实现想走就走的旅行的门槛，也越来越低。</p>
 <p><img alt="电子地图" loading="lazy" src="/images/posts/things-that-opened-new-world/image-5.webp"></p>
@@ -2842,7 +3123,7 @@
 <p>Kindle 少了很多功能，但也让看书回到读书本身，没有无限读书卡，没有网文推荐，也没有签到送积分，始终保持着导入外部书籍资源的开放性。如果只是看书买书，依照我自己的读书数目来看，一年也花不了多少钱。而如果被运营活动本身推着，反而容易丧失最初读书的目标。另外，个人非常不推荐 Kindle 硬件，做笔记太弱，尤其是中文输入，看小说除外。</p>
 <p><img alt="Kindle" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/kindle.webp"></p>
 <h3 id="telegram"><strong>Telegram</strong></h3>
-<p>使用这个软件就像进入一个地下江湖，形形色色的有趣频道和群组，暗流涌动，缤纷多彩。有搬运 Netflix 美剧资源的频道、有根据链接下载 Twitter 视频的 Bot，还有每周推荐书和无损音乐的频道，也有我自己创建的推荐发现好软件的频道 App News 任意门 <a href="https://t.me/appnewsdoor">https://t.me/appnewsdoor</a>，还有众多兴趣群组，如果不知道从哪里加入就直接 Google 搜索 Telegram 群组。另外，一定要使用 Nicegram 这个第三方 Telegram 客户端，可以更自由自在。</p>
+<p>使用这个软件就像进入一个地下江湖，形形色色的有趣频道和群组，暗流涌动，缤纷多彩。有搬运 Netflix 美剧资源的频道、有根据链接下载 Twitter 视频的 Bot，还有每周推荐书和无损音乐的频道，也有我自己创建的推荐发现好软件的频道 App News 任意门 <a href="https://t.me/appnewsdoor" target="_blank" rel="noopener noreferrer">https://t.me/appnewsdoor</a> ，还有众多兴趣群组，如果不知道从哪里加入就直接 Google 搜索 Telegram 群组。另外，一定要使用 Nicegram 这个第三方 Telegram 客户端，可以更自由自在。</p>
 <p><img alt="Telegram" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/telegram.webp"></p>
 <h3 id="todoist"><strong>Todoist</strong></h3>
 <p>当自己真正开始软件断舍离的时候，最信任的任务管理软件还是回归到了 Todoist，比待办事项专业，比滴答清单好看，支持图片评论，支持很多第三方 App 的协作。相比较使用笔记软件记录零碎信息，我更喜欢把做某件事务所涉及到的零零碎碎像记录日志一样直接以评论的方式贴到 Todoist 对应事务里，既不会丢失也方便后期追溯，同时，也不会让本身笔记软件的记录过于碎片化。</p>
@@ -2863,7 +3144,7 @@
 <p>日常最主要的信息来源，无智能算法推荐，无社交，只是默默帮助抓取追踪的内容源。Inoreader 是一个订阅服务，依赖最为传统的信息抓取机制，同时它也有客户端，但是第三方的客户端比如 Reeder 会更好，更适合离线阅读。目前大概二十多个订阅源，四百多个加星的文章，如果能导入之前已经逝去的 Google reader，应该可以有更多记录。</p>
 <p><img alt="Inoreader" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/inoreader.webp"></p>
 <h3 id="百度网盘"><strong>百度网盘</strong></h3>
-<p>我不用百度网盘同步，主要是我不太相信国内的任何云存储服务，但是这个挡不住目前百度网盘成为影视剧存储中心的地位，详细可以参考之前的一篇文章 《<a href="http://mp.weixin.qq.com/s?__biz=MzIxNTU3MjcyMA==&amp;mid=2247483847&amp;idx=1&amp;sn=ddf448dd8ed0d943d0b53dfdbebd1a5a&amp;chksm=97970858a0e0814e653d41f342622f4bbf1b1d4f5c641c61289b1489bfaf66ce361593d234bb&amp;scene=21#wechat_redirect">如何利用百度网盘打造私人影视库</a>》，写得更详细。</p>
+<p>我不用百度网盘同步，主要是我不太相信国内的任何云存储服务，但是这个挡不住目前百度网盘成为影视剧存储中心的地位，详细可以参考之前的一篇文章 《<a href="http://mp.weixin.qq.com/s?__biz=MzIxNTU3MjcyMA==&amp;mid=2247483847&amp;idx=1&amp;sn=ddf448dd8ed0d943d0b53dfdbebd1a5a&amp;chksm=97970858a0e0814e653d41f342622f4bbf1b1d4f5c641c61289b1489bfaf66ce361593d234bb&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">如何利用百度网盘打造私人影视库</a> 》，写得更详细。</p>
 <p><img alt="百度网盘" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/baidupan.webp"></p>
 ]]></content:encoded>
     </item>
@@ -2914,15 +3195,15 @@
 <p>排名第二的更新是强化移动端的快速搜索和快速新建，在任意页面可以一键直达。</p>
 <p><img alt="Notion 移动端的快速操作（配图来自官网）" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-mobile.webp"></p>
 <p>除以上以外，Notion 还支持在线流程图工具 Whimsical 的文档嵌入预览，但是，看了一下价格，还是放弃了，比 Notion 还要贵上许多，继续用我的 iThoughtsX。</p>
-<p>Notion 注册链接： <a href="https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d">https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d</a></p>
+<p>Notion 注册链接： <a href="https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d" target="_blank" rel="noopener noreferrer">https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d</a> </p>
 <h2 id="浏览器的新选择chrome-内核的-edge">浏览器的新选择：Chrome 内核的 Edge</h2>
 <p>微软终于发布了正式版 Chromium 内核浏览器 Edge，支持 Windows 7、8、8.1、10 和 macOS，支持全部现有的 Chrome 扩展。假如未来 Chrome 内核的插件上架了微软应用商店，希望可以解决很多国内的用户无法访问 Chrome App Store 的问题。</p>
 <p><img alt="新版 Edge 浏览器界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/edge-chromium.webp"></p>
-<p>官网下载：<a href="https://www.microsoft.com/en-us/edge">https://www.microsoft.com/en-us/edge</a></p>
+<p>官网下载：<a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener noreferrer">https://www.microsoft.com/en-us/edge</a> </p>
 <h2 id="让上网不孤单的-relaychat-chrome-插件">让上网不孤单的 RelayChat Chrome 插件</h2>
 <p>安装这个插件之后，你可以在任何网页打开聊天窗口与全世界各地的网友实时沟通，目前人还是有一些少，尝鲜为主。</p>
 <p><img alt="RelayChat 插件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/relaychat.webp"></p>
-<p>官网地址：<a href="https://relaychat.app/">https://relaychat.app/</a></p>
+<p>官网地址：<a href="https://relaychat.app/" target="_blank" rel="noopener noreferrer">https://relaychat.app/</a> </p>
 <h2 id="沙雕有趣的桌面宠物desktop-goose-桌面鹅">沙雕有趣的桌面宠物：Desktop Goose 桌面鹅</h2>
 <p>上一次的桌面宠物还是 QQ 宠物（已下架），看到这个，有一种浓浓的岁月感。这款 Desktop Goose 支持 macOS 和 Windows，安装启动之后，桌面会出现一只闲逛的鹅，还有叫声和跟随其后的脚印。</p>
 <p><img alt="Desktop Goose 桌面宠物" loading="lazy" src="/images/posts/recent-app-discoveries-005/desktop-goose.webp"></p>
@@ -2933,22 +3214,22 @@
 <p><img alt="鹅的消息 3" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-3.webp"></p>
 <p><img alt="鹅的消息 4" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-4.webp"></p>
 <p>这篇文章写作期间，我尝试打开了，真的太干扰我写东西了，关闭了吧。突然发现，没有任何地方可以关闭，最后只能在进程管理中强行退出。</p>
-<p>下载链接：<a href="https://samperson.itch.io/desktop-goose">https://samperson.itch.io/desktop-goose</a></p>
+<p>下载链接：<a href="https://samperson.itch.io/desktop-goose" target="_blank" rel="noopener noreferrer">https://samperson.itch.io/desktop-goose</a> </p>
 <h2 id="支持订阅-newsletter-的-inoreader">支持订阅 Newsletter 的 Inoreader</h2>
 <p>在这个 AI 盛行的年代，阅读这件事，我是极其厌烦算法的加入，一直是 RSS 阅读的重度使用者，而 Inoreader 是我觉得目前最像 Google Reader 的产品，这次更新除了网页界面的大改版还支持订阅 Newsletter。正好，除了 RSS 以外我还用邮件订阅了很多 Newsletter，比如：</p>
 <ul>
-<li>Maker Mind：<a href="https://nesslabs.com/newsletter">https://nesslabs.com/newsletter</a> 提高对大脑的理解和效率提升</li>
-<li>Bear Talk：<a href="https://www.beartalking.com/">https://www.beartalking.com/</a> 有趣也有用的分享，像个朋友</li>
-<li>Product Hunter：<a href="https://www.producthunt.com/">https://www.producthunt.com/</a> 发掘有趣也有用的新 App</li>
-<li>Benedict Evans：<a href="https://www.ben-evans.com/">https://www.ben-evans.com/</a> 关于科技、技术与安全</li>
+<li>Maker Mind：<a href="https://nesslabs.com/newsletter" target="_blank" rel="noopener noreferrer">https://nesslabs.com/newsletter</a>  提高对大脑的理解和效率提升</li>
+<li>Bear Talk：<a href="https://www.beartalking.com/" target="_blank" rel="noopener noreferrer">https://www.beartalking.com/</a>  有趣也有用的分享，像个朋友</li>
+<li>Product Hunter：<a href="https://www.producthunt.com/" target="_blank" rel="noopener noreferrer">https://www.producthunt.com/</a>  发掘有趣也有用的新 App</li>
+<li>Benedict Evans：<a href="https://www.ben-evans.com/" target="_blank" rel="noopener noreferrer">https://www.ben-evans.com/</a>  关于科技、技术与安全</li>
 </ul>
 <p><img alt="大改版的 Inoreader 界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/inoreader.webp"></p>
-<p>教程可参考官网：<a href="https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html">https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html</a></p>
+<p>教程可参考官网：<a href="https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html" target="_blank" rel="noopener noreferrer">https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html</a> </p>
 <p>更新之后，再次减少了一个分散的内容查看通道。</p>
 <h2 id="支持全平台设备互相无线投屏的免费应用幕享">支持全平台设备互相无线投屏的免费应用：幕享</h2>
 <p>曾经花钱买了 Airsever 和 Reflector 的我，看到这个强悍的工具，第一时间就分享了。其拥有 Windows、macOS、iOS、Android、Android TV 客户端，支持 AirPlay、Miracast、DLNA 协议，可以在手机与电脑间相互投屏，还能通过 App 控制 Windows 电脑。（来自小众软件）</p>
 <p><img alt="幕享投屏软件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/letsview.webp"></p>
-<p>下载：<a href="https://letsview.com/zh/">https://letsview.com/zh/</a></p>
+<p>下载：<a href="https://letsview.com/zh/" target="_blank" rel="noopener noreferrer">https://letsview.com/zh/</a> </p>
 ]]></content:encoded>
     </item>
     <item>
@@ -3004,7 +3285,7 @@
 <h3 id="夜间大巴">夜间大巴</h3>
 <p>大巴车是我在大学里最喜欢的交通工具，晚上九点左右从县城出发，平躺在车里，摇晃一晚上就可以到武汉，有时还会遇到下雨，戴上耳机跟着车的频率，雨越大越自由自在，除了偶尔过于突出的鼾声和醇厚的脚臭。从那时起就有一种强烈的主观体验，外界流动的环境会带动思绪的流动，在车里构思着写作，文思如泉涌。</p>
 <p>大巴车一般凌晨两三点就会到汉口，大多时候，我会提前下车，拉着行李箱，逛着暗了好多度的汉口江滩，也是第一次感受到，老人的晨练居然可以在凌晨这么早。</p>
-<p>当然，除了这些，还有很多可以一句话带过的有趣睡觉经历，曾经在<a href="/posts/train-journey-to-russia">俄罗斯游记</a>里写过的 K3 长途火车，平躺着穿过蒙古，或者那糟糕的越南大巴卧铺，闷热到让人无法睡眠，等我再继续攒着更多故事。</p>
+<p>当然，除了这些，还有很多可以一句话带过的有趣睡觉经历，曾经在<a href="/posts/train-journey-to-russia">俄罗斯游记</a> 里写过的 K3 长途火车，平躺着穿过蒙古，或者那糟糕的越南大巴卧铺，闷热到让人无法睡眠，等我再继续攒着更多故事。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -3055,10 +3336,10 @@
 <p>近期，我对 Switch 和塞尔达游戏本身更感兴趣，Switch 并不是性能最好的主机，但是是真正能带来娱乐性的游戏设备，塞尔达传说也不是画质最好的开放世界游戏，但依然不能阻止它的「封神」之路。对于设计互联网产品的启发性来说，这比 iPhone 更能阐释了一种恰到好处的妥协：</p>
 <blockquote>
 <p>在产品开发时期，研究者总会想利用最先进的技术来制造最棒的商品。但我以为，想要研发出赚钱的商品，使用最先进的技术，对商品而言不是加分而是扣分。利用已经发展成熟，甚至接近淘汰的技术进行水平思考，将它应用到完全不同的领域上，反而容易制造出畅销商品。（GBA 之父横井军平的设计哲学「枯萎技术的水平思考」）</p></blockquote>
-<p>参考：<a href="https://mp.weixin.qq.com/s/glO4auN63pHun7K4-SOdbw">《任天堂的设计哲学》一文</a></p>
+<p>参考：<a href="https://mp.weixin.qq.com/s/glO4auN63pHun7K4-SOdbw" target="_blank" rel="noopener noreferrer">《任天堂的设计哲学》一文</a> </p>
 <blockquote>
 <p>秉着任天堂一贯的设计理念，在《塞尔达传说：荒野之息》中我们更加没有看到传统意义上的&quot;新手引导&quot;。玩家们在不知不觉中就熟悉了游戏的操作玩法，并且会感受到其上手容易精通难的设计理念。</p></blockquote>
-<p>参考：<a href="https://mp.weixin.qq.com/s?__biz=MzA4MDc5OTg5MA==&amp;mid=2650608181&amp;idx=1&amp;sn=10cccf32bf3d655b5991dff688aba217&amp;chksm=879703c8b0e08adee06890758ce2f2792db3988d1ef946575ebd6d83b033075874cfb78f2c98&amp;mpshare=1&amp;scene=1&amp;srcid=0722vkRQmtViztsewGmsh2mu#rd">《塞尔达传说：荒野之息》是如何做新手引导的</a>？</p>
+<p>参考：<a href="https://mp.weixin.qq.com/s?__biz=MzA4MDc5OTg5MA==&amp;mid=2650608181&amp;idx=1&amp;sn=10cccf32bf3d655b5991dff688aba217&amp;chksm=879703c8b0e08adee06890758ce2f2792db3988d1ef946575ebd6d83b033075874cfb78f2c98&amp;mpshare=1&amp;scene=1&amp;srcid=0722vkRQmtViztsewGmsh2mu#rd" target="_blank" rel="noopener noreferrer">《塞尔达传说：荒野之息》是如何做新手引导的</a> ？</p>
 <h1 id="最近烂尾的写作文稿">最近烂尾的写作文稿</h1>
 <p>包括一篇马来西亚游记、一篇关于睡觉的有趣回忆录还有一篇碎片思考都烂尾在笔记里，我会重新拾起来，完善已经完成大纲的文章。</p>
 <p>游记是近期想培养的习惯，那些我至今记忆犹新的旅行，都是被我写在了文章里，当我无法三言两语描述某个地方的美好时，转发一篇自己的游记给朋友能帮助很多，不再是零零散散毫无参考性，有了些许时间维度上的系统性。</p>
@@ -3111,7 +3392,7 @@
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-life-as-customer-service-final/</guid>
       <description>三年后的客服工作总结，分享客服工作中的流程化、系统化思维和经验</description>
-      <content:encoded><![CDATA[<p>有知乎的网友看到了我三年前的文章 <a href="/posts/my-life-as-customer-service">其实，我是一个客服</a>，已经过去太久，回复完他的评论，突然有了更多想要去说的话，正好将此篇文章作为已经离开的这个岗位的总结，随便聊一聊，仅供参考。</p>
+      <content:encoded><![CDATA[<p>有知乎的网友看到了我三年前的文章 <a href="/posts/my-life-as-customer-service">其实，我是一个客服</a> ，已经过去太久，回复完他的评论，突然有了更多想要去说的话，正好将此篇文章作为已经离开的这个岗位的总结，随便聊一聊，仅供参考。</p>
 <blockquote>
 <p>工作背景：一款工具性产品的客服；客服只是我日常的一半工作；不涉及较重的呼叫中心业务。</p></blockquote>
 <h2 id="客服工作是一个流程化的任务"><strong>客服工作是一个流程化的任务</strong></h2>
@@ -3122,7 +3403,7 @@
 <p>如果涉及到需要决策的部分，可以靠提前设定原则来规避。最为基本的，客服至少需要知道在回复一个用户时需要了解的基本要素，或者不同的渠道应该以什么底线和什么针对性的方式来回复，比如哪些事情必须做，哪些事情不能做，尽量以清单的形式反复打磨来呈现。</p>
 <p>处理的步骤和决策的原则都需要在培训或者日常的会议中反复强调，尤其是遇到了合适的案例，可以借题来发挥，最终能够完成意识上的统一。这里，文字化所有的流程是一个必要的开始。口径不统一，流程混乱，是用户最不愿意看到的。</p>
 <p>从更高的角度上来讲，我的日常任务就是要确保整个客服系统的稳定运行，从基础框架的搭建（硬件），到客服的专业服务意识（软件）。在之前的工作中，我会在电脑桌面放上一个整体的思维导图，以此映射整个客服系统，在每一次的讨论中，反复修正。</p>
-<p>关于思维导图，可以参考另外一篇文章：<a href="https://zhuanlan.zhihu.com/p/35277679">https://zhuanlan.zhihu.com/p/35277679</a></p>
+<p>关于思维导图，可以参考另外一篇文章：<a href="https://zhuanlan.zhihu.com/p/35277679" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/35277679</a> </p>
 <h2 id="扩展客户服务的边界从用户找到我们之前就开始"><strong>扩展客户服务的边界，从用户找到我们之前就开始</strong></h2>
 <p>客服工作确实是被动的，等待用户与我们联系，甚至有时是在等待产品BUG的出现。不过，这种被动的情形下，可以更为主动的出击。在2017年的一次用户调研中，除了打电话以外的方式中，搜索仍然是排名第一的。那么对于搜索内容的干预就是重要但不紧急的第二象限工作。我们可以从日常的数据中挖出最为常见的问题Top 10，然后以用户的视角尝试在百度搜索，将这些问题的解决方法放在用户在搜索中可以看到的位置。</p>
 <p>更为主动的态度始于我们以用户接触我们的途径来思考，他们会在百度知道和知乎提问，甚至一部分用户是在应用商店看到我们。这些所有可以涉及的地方，从成本上考虑之后，我们既可以直接进行内容干预，也可以增设联系的途径，避免用户情绪无处宣泄。</p>
@@ -3188,7 +3469,7 @@
 <p>楚天都市报在2018年2月8日还回忆了襄阳东津镇、峪山镇、黄龙镇一带的类似习俗，这些地方与我的老家很近，可以作为参考。</p>
 <p><img alt="襄阳地区的撵毛狗习俗" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-2.webp"></p>
 <p>从这里才知道，原来毛狗是狐狸或者黄鼠狼，不过，我确实不记得小时候跟着一起唱过什么，好像只是与隔壁村的孩子们互相斗斗嘴。</p>
-<p>一篇很旧的新浪博文也提到了这个事情，「<a href="http://blog.sina.com.cn/s/blog_606cb20f0100m50m.html">少年纪事——正月十五撵毛狗</a>」，不过，<strong>只有一句话：初一拜父母，初二拜丈母，初三初四拜舅姑，十五十六撵毛狗儿。</strong></p>
+<p>一篇很旧的新浪博文也提到了这个事情，「<a href="http://blog.sina.com.cn/s/blog_606cb20f0100m50m.html" target="_blank" rel="noopener noreferrer">少年纪事——正月十五撵毛狗</a> 」，不过，<strong>只有一句话：初一拜父母，初二拜丈母，初三初四拜舅姑，十五十六撵毛狗儿。</strong></p>
 <p>Baidu里一篇已经被删除的宜昌秭归县快讯里也有提到同样的风俗，可惜，已经没有了更多细节，只有一张快照。</p>
 <p><img alt="秭归县的撵毛狗传统" loading="lazy" src="/images/posts/memories-of-forgotten-mao-gou/image-3.webp"></p>
 <p>Google照片搜索出来的全是与主题无关的萌狗，还是罢了。</p>
@@ -3205,11 +3486,11 @@
       <guid>http://localhost:1313/posts/six-years-with-evernote/</guid>
       <description>从一个普通用户的角度，分享使用印象笔记6年来的心得体会和实际应用场景</description>
       <content:encoded><![CDATA[<p><img alt="Evernote Logo" loading="lazy" src="/images/posts/six-years-with-evernote/evernote-logo.webp"></p>
-<p>这篇文章是为了在专栏里更新之前还是学生时作答的知乎问题：印象笔记（Evernote）有哪些常见的用途？ <a href="https://www.zhihu.com/question/20418504/answer/15083561">https://www.zhihu.com/question/20418504/answer/15083561</a></p>
+<p>这篇文章是为了在专栏里更新之前还是学生时作答的知乎问题：印象笔记（Evernote）有哪些常见的用途？ <a href="https://www.zhihu.com/question/20418504/answer/15083561" target="_blank" rel="noopener noreferrer">https://www.zhihu.com/question/20418504/answer/15083561</a> </p>
 <p>截止到2018年2月，我已经用了6年的Evernote，总共6个笔记本组，50个笔记本，存储了7762条笔记，并与女朋友一起使用了三年多。与很多人一样，由于各种原因甚至审美疲劳，都曾想过换一下其他类似的工具来使用，从OneNote、Bear、Keep、Apple Note、Day One到Notion，最长的使用了两个月，最后都逐个放弃了。靠谱的搜索、跨平台的同步、各渠道内容的剪辑、干净的界面以及强大的移动端，虽然每一项都有可替代的，但是没有一款可一次性替代所有项的。</p>
 <p>笔记只有从时间的维度上看，才能更快凸显其真正的意义。而反向推理，这些年一直都活跃的笔记本，恰恰更能反映一些生活的重心，用了6年之后，这些笔记本现在是什么样子的呢？以下仅供参考。</p>
 <h3 id="从一个叫收件箱的默认笔记本开始">从一个叫「收件箱」的默认笔记本开始</h3>
-<p>使用信息管理工具或者数字笔记的人大概都接触过GTD的收件箱概念（不了解GTD的，可以参考之前写的关于时间管理的文章 <a href="https://zhuanlan.zhihu.com/p/20005871">https://zhuanlan.zhihu.com/p/20005871</a>），随时收集零碎的想法并定期清空，这也意味着，虽然这个笔记本用得最多，但是笔记永远最少。有了收件箱，定期清理的习惯可以考虑设置一个提醒，我自己比较喜欢每周一次，而清理收件箱可以有一种打扫完房间的宁静感。</p>
+<p>使用信息管理工具或者数字笔记的人大概都接触过GTD的收件箱概念（不了解GTD的，可以参考之前写的关于时间管理的文章 <a href="https://zhuanlan.zhihu.com/p/20005871" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/20005871</a> ），随时收集零碎的想法并定期清空，这也意味着，虽然这个笔记本用得最多，但是笔记永远最少。有了收件箱，定期清理的习惯可以考虑设置一个提醒，我自己比较喜欢每周一次，而清理收件箱可以有一种打扫完房间的宁静感。</p>
 <p><img alt="收件箱图标" loading="lazy" src="/images/posts/six-years-with-evernote/inbox-icon.webp"></p>
 <h3 id="我的老家记录老家的点点滴滴">「我的老家」，记录老家的点点滴滴</h3>
 <p>由于长期从事互联网相关的工作，「不得已」沦为老家的IT管理员，而这带来的另外一个角色意义就是，必须努力承担亲戚们助理式的笔记和照片存储服务，记录着每一家亲戚的WiFi密码，每一次亲戚们发在群里的合照，而且还要精准命名「什么时间在什么地点拍的哪些人的合照」，我喜欢在他们都遗忘的时候，翻出来看一看并分享出去。里面还有两条置顶的笔记，一条是回家需要做的事情，比如需要给谁修手机或者教会谁使用手机，另一条是回家想做的一些事情，每一次回家可以选择一到两件，让回家变得更有意义。</p>
@@ -3277,7 +3558,7 @@
 <p>其他精神上的折磨比如和亲戚之间的意见不合，就像我们经常面对朋友圈里的养生文章，即使牟足了劲儿想要说服对方，却没有意义，又让关系变得过于紧张，到头来还要落个读死书的名声。</p>
 <p>很多人说，上了学应该在村子里算是一个读书人一样的存在，会有着起码的尊重。恰恰相反，村子里的人对大学生有一种埋在骨子里的歧视感，是否得到尊重歧视只与赚钱多少有关。上学的时候，回家想帮衬着做点事情，一旦出错，甩过来的就是一句「还是一个大学生，连这都不会」，而如果想要参与一些家庭的事务，也会被「读书的娃啥都不懂」来直接回绝。</p>
 <h3 id="互联网在老家的扩张和下沉">互联网在老家的扩张和下沉</h3>
-<p>在科技新闻里，总是能听到各类网络服务「下沉」 到三四五六线城镇的消息，类似于我之前写的即刻App <a href="https://zhuanlan.zhihu.com/p/33510598">https://zhuanlan.zhihu.com/p/33510598</a>，当然，微信的「下沉」应该叫做扩张式渗透，毕竟最开始用微信的人依然在用着微信。</p>
+<p>在科技新闻里，总是能听到各类网络服务「下沉」 到三四五六线城镇的消息，类似于我之前写的即刻App <a href="https://zhuanlan.zhihu.com/p/33510598" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/33510598</a> ，当然，微信的「下沉」应该叫做扩张式渗透，毕竟最开始用微信的人依然在用着微信。</p>
 <p>首先渗透到村子里的微信，带来了信息沟通上的极大冲击，群视频通话、微信语音、图片分享等等便利功能。一位长辈甚至检讨了最初对网络的「极力反对」，惊讶于这种有如大妈们八卦小分队式的趣味性，甚至在不见面的时候也可以听到远方晚辈们聊天的声音。</p>
 <p>微信比QQ的俗套之处就在于最开始对于语音消息的自然支持，不会拼音或者五笔的父母也可以对着微信语音输入，以前的沟壑变成了&quot;要尽量给爸爸妈妈发语音消息&quot;的礼貌。</p>
 <p><img alt="老家的日常" loading="lazy" src="/images/posts/chinese-new-year-homecoming-thoughts/daily-life.webp"></p>
@@ -3312,7 +3593,7 @@
       <content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
 <p>这是一篇迟来的游记，2017年9月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地——贝加尔湖畔。</p>
 <h2 id="9月27日-登上国际列车k3">9月27日 登上国际列车K3</h2>
-<p>还未上车就发生了一点不愉快的事情，我们为在火车上的3天预备的头发免洗喷雾被安检员扣下，因为「喷雾无法带上火车」，不过，比起前面一位大叔带的菜刀、扳手，我们的违禁品还算非常低调了。另外，我感觉这次火车上车的地方与我们上次坐车去丹东前往朝鲜的上车点很类似。（点击查看 <a href="https://zhuanlan.zhihu.com/p/20715850">朝鲜四日行纪录</a>）</p>
+<p>还未上车就发生了一点不愉快的事情，我们为在火车上的3天预备的头发免洗喷雾被安检员扣下，因为「喷雾无法带上火车」，不过，比起前面一位大叔带的菜刀、扳手，我们的违禁品还算非常低调了。另外，我感觉这次火车上车的地方与我们上次坐车去丹东前往朝鲜的上车点很类似。（点击查看 <a href="https://zhuanlan.zhihu.com/p/20715850" target="_blank" rel="noopener noreferrer">朝鲜四日行纪录</a> ）</p>
 <p><img alt="北京站" loading="lazy" src="/images/posts/train-journey-to-russia/image-35.webp"></p>
 <p>从北京到内蒙古一直都是穿地洞模式，就像一直在地底行驶，一下子穿到了草原，还好，这期间享受了仅有的两顿免费正餐，接下来就没有免费午餐了。</p>
 <p><img alt="草原风光" loading="lazy" src="/images/posts/train-journey-to-russia/image-29.webp"></p>
@@ -3407,7 +3688,7 @@
 <p>先看一段维基百科满足一下好奇心：</p>
 <blockquote>
 <p>Vivaldi是一款网页浏览器，由韋瓦第科技公司（Vivaldi Technologies）所開發，該公司由Opera軟體公司的創辦人與前執行長谭咏文和資深副總經理富田龍起（Tatsuki Tomita）離開Opera公司後另起爐灶新創辦。Opera原有不少受歡迎的專屬功能，卻在從Presto引擎更換為Blink的轉型過程中被削減而少掉原味。為此，Vivaldi訴求「為我們的朋友而打造」，旨在為原先Opera的忠實愛用者，如高階技術專家、重度的互联网用户，提供原有Presto Opera的諸多專屬功能，例如自訂面板、筆記、分頁群組、單鍵快捷鍵等等。</p></blockquote>
-<p>官网地址：<a href="https://vivaldi.com/">Vivaldi Browser | Fast &amp; Flexible Web Browser</a></p>
+<p>官网地址：<a href="https://vivaldi.com/" target="_blank" rel="noopener noreferrer">Vivaldi Browser | Fast &amp; Flexible Web Browser</a> </p>
 <h2 id="一眼就会喜欢上的外表">一眼就会喜欢上的「外表」</h2>
 <p>Vivaldi浏览器的主题是动态变化的，不是gif动图的那种，而是可以随着访问网页的不同，浏览器部分组件的颜色随之一起变幻，这个是Vivaldi 浏览器最为惊艳的部分，至少是一个直观而又酷炫的开始，可能有很多人会觉得过于花哨，但我的建议是，可以上手打开不同的网站体验一下实际的效果，这个与近代我们使用的山寨机跑马灯效果还是非常不一样的。按照官方视频的表意来看，每天面对着的工作已经足够乏味，还是需要世界能活泼可爱有意境一些。甚至，Vivaldi浏览器还支持与飞利浦的HUE连接，这样在组件颜色动态变化的同时，HUE灯也会同时变换同样的色彩，其实用性无法强加，但是美观和装逼度十足。(不过，这显然是另一个经济能力有限的故事，以后有钱了再写)</p>
 <p><img alt="Vivaldi浏览器的动态主题效果" loading="lazy" src="/images/posts/vivaldi-browser-review/theme-preview.webp"></p>
@@ -3427,7 +3708,7 @@
 <h2 id="可以全局快速搜索的快捷命令">可以全局快速搜索的快捷命令</h2>
 <p>在CMD+E组合键下，Vivaldi会即时进入一个类似Mac下Spotlight的搜索框状态栏（如下图），这个搜索框可以实现全局搜索：搜索浏览器的功能设置、已有的书签、所有的历史记录和当前的那些标签页。</p>
 <p>CMD+E 之后，可以使用上下键快速切换当前的几个标签页，这个场景几乎让我无法再忍受Chrome的标签切换；也可以需要的功能，比如直接输入&quot;新建&quot;来选择匹配结果里的&quot;新建标签页&quot;；也可以输入书签关键词，来快速在新的页面打开指定书签；也可以输入任意关键词，可以选择在默认搜索引擎里搜索此关键词。</p>
-<p>在上一篇知乎专栏《<a href="https://zhuanlan.zhihu.com/p/32446179">谈一谈让效率倍增的快速搜索概念</a>》，也特意集中聊了一下概念相近的此类快速搜索功能。</p>
+<p>在上一篇知乎专栏《<a href="https://zhuanlan.zhihu.com/p/32446179" target="_blank" rel="noopener noreferrer">谈一谈让效率倍增的快速搜索概念</a> 》，也特意集中聊了一下概念相近的此类快速搜索功能。</p>
 <p><img alt="Vivaldi浏览器的快捷命令功能" loading="lazy" src="/images/posts/vivaldi-browser-review/quick-command.webp"></p>
 <h2 id="终于开始支持的浏览器同步">终于开始支持的浏览器同步</h2>
 <p>已经使用Vivaldi浏览器一年多了，一直未写相关的文章，除了由于一个既有的小BUG，还有一个重要原因就是，其只能单机运行。而帐户同步是一个软件的灵魂，即使是输入法，我也会登录自己的帐户，这样在更换设备的时候，不用重复发明轮子。近期的Vivaldi测试版中，也终于开始支持同步。</p>
@@ -3439,8 +3720,8 @@
 <p><img alt="Vivaldi浏览器的笔记功能" loading="lazy" src="/images/posts/vivaldi-browser-review/note-taking.webp"></p>
 <p>Vivaldi有两个版本的，类似于开发版和稳定版的区别，只有开发版支持账号同步。</p>
 <ul>
-<li>稳定版Stable版本下载：<a href="https://vivaldi.com/download/">https://vivaldi.com/download/</a></li>
-<li>开发版Snapshot版本下载：<a href="https://vivaldi.com/blog/snapshots/">https://vivaldi.com/blog/snapshots/</a></li>
+<li>稳定版Stable版本下载：<a href="https://vivaldi.com/download/" target="_blank" rel="noopener noreferrer">https://vivaldi.com/download/</a> </li>
+<li>开发版Snapshot版本下载：<a href="https://vivaldi.com/blog/snapshots/" target="_blank" rel="noopener noreferrer">https://vivaldi.com/blog/snapshots/</a> </li>
 </ul>
 <h2 id="评论区常见问题">评论区常见问题：</h2>
 <p><strong>1.为什么内核用得Chrome，却不直接用Chrome？</strong></p>
@@ -3630,7 +3911,7 @@
 <p>用户最擅长的仅仅是描述一个简单并对问题的解决没有多少帮助的当前状态，大多数情况下可能只是情绪的表达，所以，我们首先是一个心理辅导师，然后才是客服，而且以用户对于产品的理解，很少有能独立讲清楚自己问题的，在我们认真倾听之后，&ldquo;提出更好的问题&quot;会成为下一个大的挑战。这个时候我们应该会想起一个很多人知道的&quot;5W1H&quot;分析法，什么时间什么人在什么地方使用什么方法做了什么事情，为什么？</p>
 <p><img alt="5W1H分析法" loading="lazy" src="/images/posts/my-life-as-customer-service/5w1h-analysis.webp"></p>
 <p>**&ldquo;5W1H&quot;分析法套用在产品上之后就可以变成：**什么时间什么网络下在什么系统版本的什么设备中什么版本的产品上做了什么操作之后出现了什么样的错误提示。</p>
-<p>这里推荐<a href="http://book.douban.com/subject/1504957/">《学会提问》</a>这本书，原因如书名。</p>
+<p>这里推荐<a href="http://book.douban.com/subject/1504957/" target="_blank" rel="noopener noreferrer">《学会提问》</a> 这本书，原因如书名。</p>
 <p>另外，即使在用户精准回复问题之后，为了减少转述过程中的信息失真，越能还原问题的影像会越有用，这个时候，效果：现场观察错误&gt;视频录制问题/远程查看&gt;截图与活动日志&gt;文字或者语音描述。</p>
 <h2 id="如何判定与解决问题重启电脑真的可以解决一半的问题吗">如何判定与解决问题——重启电脑真的可以解决一半的问题吗？</h2>
 <p><img alt="重启电脑解决问题" loading="lazy" src="/images/posts/my-life-as-customer-service/restart-computer.webp"></p>
@@ -3642,12 +3923,12 @@
 <h2 id="如何debug一个未知的问题问题是绝逼可以重现的">如何Debug一个未知的问题——问题是绝逼可以重现的</h2>
 <blockquote>
 <p>处理问题的原则：1. 问题是可以重现的2. 如果问题不能重现，请参考第一条</p></blockquote>
-<p>我以非技术人员的角度大胆总结，程序员的世界其实是一个有着严谨逻辑的世界，所以，在这个世界里的每一件事情有着必然存在的因果关系，程序的Bug就是其一，客服要与程序员一起找出每个bug的原因。当然，如果你想了解一个不一定得有因果关系的世界，可以点击查看果壳的一篇文章<a href="http://www.guokr.com/article/372530/">《世界上为什么存在灵魂？》</a></p>
+<p>我以非技术人员的角度大胆总结，程序员的世界其实是一个有着严谨逻辑的世界，所以，在这个世界里的每一件事情有着必然存在的因果关系，程序的Bug就是其一，客服要与程序员一起找出每个bug的原因。当然，如果你想了解一个不一定得有因果关系的世界，可以点击查看果壳的一篇文章<a href="http://www.guokr.com/article/372530/" target="_blank" rel="noopener noreferrer">《世界上为什么存在灵魂？》</a> </p>
 <p>如果要一句话概括现有我理解的重现问题的方法就是，采用控制变量法，穷举可能的场景并不断进行简单的QA（Quality Assurance），然后缩小问题的范围，再重新采用控制变量法，穷举可能的场景，重复以上的操作，直到QA重现问题。（我不是专业QA，你可以随意吐槽我的观点）</p>
 <p>现在问题来了，为什么要重现问题？因果关系是，程序员说，只有可以重现的问题他们才可以解决，是不是很有道理？</p>
 <h2 id="如何写一个好的解决方案授人以鱼不如授之以渔">如何写一个好的解决方案——授人以鱼不如授之以渔</h2>
 <p>刚开始做客服的时候，我就吭哧吭哧给每个遇到的新问题写下解决方法模板，并分享给其他人，以为其他同事可以直接引用，但后来发现，部门里每个同事基本上都会有一套属于自己的方法模板。这个直到有一天才想明白，其实真正的解决方法模板应当不仅包括解决方案还要包含问题判定思路，否则，其他人无法把这些解决方案放到一个合适的场景中使用，也不能理解这个解决方案的深意。</p>
-<p>一个一个独立的解决方案是一种显性的存在于我们脑海里的思路，我们可以很轻易将其捕捉并呈现在文档里，但那种以&quot;经验&quot;和对产品的理解做出的问题判断是快速并且很难捕捉到其思维过程的，我们需要逐步推敲，再将其文字化。这一段有点类似那本讲述思考的<a href="https://book.douban.com/subject/10785583/">《思考，快与慢》</a>，强烈推荐。</p>
+<p>一个一个独立的解决方案是一种显性的存在于我们脑海里的思路，我们可以很轻易将其捕捉并呈现在文档里，但那种以&quot;经验&quot;和对产品的理解做出的问题判断是快速并且很难捕捉到其思维过程的，我们需要逐步推敲，再将其文字化。这一段有点类似那本讲述思考的<a href="https://book.douban.com/subject/10785583/" target="_blank" rel="noopener noreferrer">《思考，快与慢》</a> ，强烈推荐。</p>
 <p>判定思路与解决方案合起来也是一种更能系统理解这个问题的方法，所以，新的解决方法模板必须包含基本的判定思路和几个解决方案，这样之后，其他人才可以理解并使用模板。</p>
 <p><strong>那么，一个好的解决方案格式需要遵循什么原则呢？</strong></p>
 <p><strong>1. 列表式</strong></p>
@@ -3660,12 +3941,12 @@
 <p>如果在一些工单系统中，用户收到我们的邮件或者回复将不只是解决方案本身，还有定制的邮件片头和片尾，在使用之前需要先了解这个解决方案用在什么地方。</p>
 <h2 id="如何更好的让用户接受你的回复愤怒的孩子">如何更好的让用户接受你的回复——愤怒的孩子</h2>
 <p>一个再好的解决方案，如果用户根本不接受你的建议，一切都是枉然。</p>
-<p>**解决问题之前，请先解决用户的情绪问题，这也是做客服的难点所在。**想起了一本看过的书<a href="http://book.douban.com/subject/6429253/">《别以为你懂孩子的心》</a>，当然，我并不是将用户比喻成孩子，而是两者属于同样场景的问题，想象你和一个正在哭闹的孩子使劲讲道理，这显然不是一部政治正确的电影，后者确实可以通过讲道理解决一切问题。</p>
+<p>**解决问题之前，请先解决用户的情绪问题，这也是做客服的难点所在。**想起了一本看过的书<a href="http://book.douban.com/subject/6429253/" target="_blank" rel="noopener noreferrer">《别以为你懂孩子的心》</a> ，当然，我并不是将用户比喻成孩子，而是两者属于同样场景的问题，想象你和一个正在哭闹的孩子使劲讲道理，这显然不是一部政治正确的电影，后者确实可以通过讲道理解决一切问题。</p>
 <p>**不要说废话，委婉需有度。**越直接面对用户的问题，可以越让用户感觉到客服的诚意，当然，有时会因为公司PR的要求，有些话不能直接讲，这个是最难受的——客服和用户都很难受。</p>
 <p>**回复需有针对性，不要过度依赖模板。**模板越来越完善也会让客服越来越像机器人，缺少灵活度，甚至当用户回复了信息之后，客服在判定这些信息没有意义情况下，便会直接忽略，然后再次粘贴模板回复。</p>
 <h2 id="作为一名客服需有的态度较真你就输了">作为一名客服需有的态度——较真，你就输了</h2>
 <p>用户带着问题咨询时，多半还会带着情绪，作为一个正常人类，在打交道的过程中，我们的情绪也必然会随之而起，但千万不要动怒，我们需要区分清楚，其实，用户迁怒的一般只是是产品本身，与客服的人身和能力没有关系。</p>
-<p>&ldquo;始于愤怒，必终于羞耻&rdquo;——<a href="http://book.douban.com/subject/5346110/">《查理智慧书》</a></p>
+<p>&ldquo;始于愤怒，必终于羞耻&rdquo;——<a href="http://book.douban.com/subject/5346110/" target="_blank" rel="noopener noreferrer">《查理智慧书》</a> </p>
 <p>曾经在思考，为什么产品经理不直接接触这么多的用户？这样不是可以更了解用户的需求和问题么？其实不然，当用户与客服接触时，由于用户对产品的不了解所而带来的无法正确表达自己的需求，以及用户本身的情绪，客服会成为一道很好的过滤网，过滤掉那些用户声音的噪音，之后再将其中有用的部分传递给产品经理。</p>
 <p>最后，作为一名客服，我也在琢磨着，如何更有效的传递用户的声音给产品经理，如何帮助产品经理了解产品问题的真实紧急重要程度，有机会再分享。</p>
 ]]></content:encoded>

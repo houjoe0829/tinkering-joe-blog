@@ -172,4 +172,81 @@
 .toc li {
     margin: 0.4rem 0;
     color: var(--secondary);
+}
+
+/* Bookmark 样式 */
+.bookmark-container {
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bookmark-container:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  background: var(--entry);
+}
+
+.bookmark-content {
+  flex: 1;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.bookmark-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookmark-url {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookmark-icon {
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+.bookmark-icon svg {
+  display: block;
+}
+
+/* 深色模式适配 */
+.dark .bookmark-container {
+  border-color: var(--border);
+}
+
+.dark .bookmark-container:hover {
+  border-color: var(--primary);
+}
+
+.dark .bookmark-link {
+  background: var(--entry);
+}
+
+.dark .bookmark-title {
+  color: var(--primary);
+}
+
+.dark .bookmark-url {
+  color: var(--secondary);
 } 

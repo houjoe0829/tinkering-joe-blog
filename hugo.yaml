@@ -5,6 +5,12 @@ title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 
+# Markdown 渲染配置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # 允许在 Markdown 中渲染 HTML
+
 # Google Analytics
 googleAnalytics: G-Z9QGC5ZNEE
 
