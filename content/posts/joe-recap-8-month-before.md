@@ -40,7 +40,7 @@ title: "Joe's Recap：8月以前"
 
 这半年，正在从一种追求过于纯粹的离线可用，逐步调整思路，更偏向于 Building life public with tools（这是一个还未写完的想法，下一篇准备写完的文章），其实使用路数变化不大，日记等私密记录，仍然是使用 Bear 来快速记录和标签标记，离线可用且加密，但是，个人知识库和博客，从 Craft 改回 Notion 这种云端工具，这样在未来随时都可以把个人知识库某一块折腾的无用但有趣的内容分享出来，至于为什么放弃了 Craft，缺少 Database 吧。
 
-就像我的个人博客：[Joe 的折腾日记](/posts/why-start-blogging)
+就像我的个人博客：[Joe 的折腾日记](https://houjoe.me/)
 
 其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像[这个](https://whimsical.com/s3pm6mwq1RT6jF3WFmTph)。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。
 
