@@ -203,9 +203,6 @@
     <loc>http://localhost:1313/posts/everything-is-todo-simple-task-management/</loc>
     <lastmod>2021-08-04T23:45:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2021-08-04T23:45:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/oculus-quest2-vr-review/</loc>
     <lastmod>2021-06-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -257,6 +254,12 @@
     <loc>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/the-mom-test-reading-notes/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/three-days-to-see-book-review/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/six-years-with-evernote/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -274,6 +277,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</loc>
     <lastmod>2017-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/do-we-need-chicken-soup-for-soul/</loc>
+    <lastmod>2017-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/northkorea-fourdays-journey-record/</loc>
     <lastmod>2016-04-02T00:00:00+00:00</lastmod>

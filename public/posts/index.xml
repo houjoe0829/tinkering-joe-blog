@@ -782,7 +782,7 @@
   </a>
 </div> 
 <h2 id="需求调研入门">需求调研入门</h2>
-<p><a href="https://houjoe.notion.site/The-Mom-Test-b7107c8ce7e74f7b86a7259b10c458d3?pvs=4" target="_blank" rel="noopener noreferrer">《The Mom Test》读书笔记</a> </p>
+<p><a href="/posts/the-mom-test-reading-notes">《The Mom Test》读书笔记</a> </p>
 <h2 id="需求文档撰写">需求文档撰写</h2>
 <p>在整体入门里的书籍一般都会提到，以下是一些形而上的建议，其实有个土办法，收集一些觉得好的 PRD 案例多琢磨琢磨，每个公司或者团队都会有。</p>
 <p><a href="https://houjoe.notion.site/PRD-1278b0838b6880acb410cf2acc37fceb?pvs=4" target="_blank" rel="noopener noreferrer">关于 PRD 的撰写建议</a> </p>
@@ -3507,6 +3507,186 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>《The Mom Test》读书笔记</title>
+      <link>http://localhost:1313/posts/the-mom-test-reading-notes/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/the-mom-test-reading-notes/</guid>
+      <description>如何与客户交谈并了解你的商业想法是否可行, 即使每个人都在说谎</description>
+      <content:encoded><![CDATA[<p>这本书是我在《小而美：持续盈利的经营法则》里看到的引用，本来没有特别在意。尤其是在没有看副标题之前，其像《穷爸爸富爸爸》那样劝退了我，直到某个机缘巧合的再次推荐，我重新找到了这本书，试看了一下。</p>
+<p>这是一个聚焦在很小一点上的书籍，主要是介绍如何与潜在客户（或者用户）通过对话获得关于自己 Business 的真实反馈，与我自己之前做客服的经历也有相通之处，很适合需要经常做市场调研或者用户访谈的人群，比如创业者或者产品设计。</p>
+<h3 id="即使我们忽略其中的方法论只是意识上的改变也是可以的比如">即使我们忽略其中的方法论，只是意识上的改变也是可以的，比如：</h3>
+<ol>
+<li>每个与我们对话的人都在不同程度的欺骗我们，越亲近的人越是如此</li>
+<li>没有直接送到嘴边的事实，好的事实都是需要在对话里花精力挖掘出来的，也是这本书的价值</li>
+<li>用户拥有问题，但不一定清楚问题的本质是什么，而我们有义务搞清楚问题是什么，并提供对应的解决方案</li>
+<li>对话是为了获取具体发生的事实，而不是未来的观点，所以，不能相信用户说&quot;这个我未来会付钱&quot;</li>
+<li>对话本身就是对人性的挑战，除了对话的人爱撒谎，我们自己也总是比想象中更想要获得认可，这会导致获得很多虚假的恭维</li>
+<li>拥有很多想法是创业者的日常，但往往急于行动，而不是追寻想法背后的动机和目的</li>
+<li>很多人不太会处理用户的反馈，可以理解用户的想法，但不要遵从</li>
+<li>很多用户说的问题，其实都不是问题，因为实际什么都没有尝试，只是口头说一说</li>
+<li>用户访谈尽量闭嘴，更不要提及自己的想法，我们的目的是获取对方的事实</li>
+</ol>
+<h3 id="在意识先行之后如何执行这套有价值的对话流程呢">在意识先行之后，如何执行这套有价值的对话流程呢？</h3>
+<blockquote>
+<p>流程图原始地址：<a href="https://whimsical.com/how-to-run-the-process-NDcj7MbeCYb3YWB7sAubkt" target="_blank" rel="noopener noreferrer">how-to-run-the-process</a> </p></blockquote>
+<p><img alt="The Mom Test 对话流程" loading="lazy" src="/images/the-mom-test-process-flow.png"></p>
+<h2 id="妈妈测试-mom-test">妈妈测试 Mom Test</h2>
+<p>People say you shouldn&rsquo;t ask your mom whether your business is a good idea. That&rsquo;s technically true, but it misses the point. You shouldn&rsquo;t ask anyone whether your business is a good idea. At least not in those words. Your mom will lie to you the most (just &lsquo;cuz she loves you), but it&rsquo;s a bad question and invites everyone to lie to you at least a little.</p>
+<blockquote>
+<p>每个人都在或多或少撒谎，你的妈妈撒谎最多，其实越是亲近的人越容易撒谎。（这个地方反向说明了，如何以好的措辞来提问才能有可能不让别人欺骗自己。）</p></blockquote>
+<p>妈妈测试是一套简单的规则，用于制定好问题，即使是你的妈妈也无法对你撒谎。</p>
+<p>收集一堆错误的积极结果就像说服一个醉酒的人他清醒一样：没有任何改善。</p>
+<p>早期客户对话的有用性的衡量标准是它是否提供了关于客户生活和世界观的具体事实。这些事实反过来又使我们能够改进我们的业务。</p>
+<blockquote>
+<p>这里其实首先说明不要问主观想法，要询问具体发生的事实，任何提炼或者主观的意见都会有曲解甚至撒谎。</p></blockquote>
+<p>The Mom Test（的核心）</p>
+<ol>
+<li>Talk about their life instead of your idea 谈论他们的生活而不是你的想法</li>
+<li>Ask about specifics in the past instead of generics or opinions about the future 询问过去的具体事项，而不是关于未来的概括或意见</li>
+<li>Talk less and listen more 少说多听</li>
+</ol>
+<p>被称为&quot;妈妈测试&quot;，因为它会引出一些连你的妈妈都无法对你撒谎的问题。</p>
+<p>Rule of thumb: Customer conversations are bad by default. It&rsquo;s your job to fix them.</p>
+<p>经验法则：默认情况下，客户对话是糟糕的。你的工作是修复它们。</p>
+<blockquote>
+<p>获得答案是需要花费很大精力的，而不是直接相信送到眼前的事情。</p></blockquote>
+<p>假设你正在开发一个帮助建筑公司管理供应商的应用程序。你可以要求他们展示他们目前的做法。谈论他们喜欢和讨厌的部分。询问他们在选择这个应用程序之前尝试过哪些其他工具和流程。他们是否正在积极寻找替代品？如果是，是什么让他们犹豫不决？如果不是，为什么不是？他们目前的工具在哪些方面浪费了他们的金钱？是否有预算购买更好的工具？现在，将所有这些信息综合起来，自己决定是否是一个好主意。</p>
+<p>Rule of thumb: Anything involving the future is an over-optimistic lie.</p>
+<p>经验法则：任何涉及未来的事情都是过于乐观的谎言。</p>
+<p>经验法则：人们知道自己的问题是什么，但不知道如何解决这些问题。</p>
+<blockquote>
+<p>很多时候，我都觉得，人们并不知道自己的问题本质是什么，他们只知道问题的表象，我们要知道的是表象和表象的 Context 是什么。</p></blockquote>
+<p>好的故事应该&quot;展示，而不是告诉&quot;。</p>
+<blockquote>
+<p>最好的方式是，站在用户旁边，让用户演示一下，实在不行可以录屏，但是尽量避免用户转述。</p></blockquote>
+<p>Rule of thumb: Watching someone do a task will show you where the problems and inefficiencies really are, not where the customer thinks they are.</p>
+<p>经验法则：观察他人执行任务将向你展示问题和低效之处的真正所在，而非顾客认为的所在。</p>
+<blockquote>
+<p><strong>其实就是观察别人做了什么，而不是说了什么</strong></p></blockquote>
+<p>Rule of thumb: If they haven&rsquo;t looked for ways of solving it already, they&rsquo;re not going to look for (or buy) yours.</p>
+<p>经验法则：如果他们还没有寻找解决办法，那么他们也不会寻找（或购买）你的解决方案。</p>
+<blockquote>
+<p><strong>说明这个问题并不重要。</strong></p></blockquote>
+<p>一如既往地，询问他们目前的做法，而不是他们认为将来可能会做的事情。</p>
+<p>要问的问题是关于你的客户的生活：<strong>他们的问题、关心的事情、限制和目标</strong>。你谦卑而真诚地收集尽可能多的关于他们的信息，然后自己进行有远见的解决方案。一旦你迈出了这一步，你通过承诺和进步来确认它是正确的（并加以完善）</p>
+<p>It boils down to this: you aren&rsquo;t allowed to tell them what their problem is, and in return, they aren&rsquo;t allowed to tell you what to build. They own the problem, you own the solution.</p>
+<p>归根结底就是这样：你不能告诉他们问题是什么，而他们也不能告诉你要建造什么。他们拥有问题，你拥有解决方案。</p>
+<blockquote>
+<p><strong>用户拥有问题，而我们拥有构建方案的能力。</strong></p></blockquote>
+<h2 id="避免坏数据---avoiding-bad-data">避免坏数据 - Avoiding bad data</h2>
+<p>Unfortunately, they&rsquo;re almost certainly lying. Not necessarily intentionally. They might want to be supportive or to protect your feelings. Or your excitement might be rubbing off on them.</p>
+<p>很不幸，他们几乎肯定在撒谎。不一定是有意的。他们可能想要支持你或保护你的感受。或者是你的兴奋感影响了他们。</p>
+<blockquote>
+<p><strong>你交谈的人可能为了表达对你的支持而欺骗你。</strong></p></blockquote>
+<p>一旦你开始注意到，通过回避恭维、锚定废话和深入探究思想，重新回到正轨是很容易的。</p>
+<blockquote>
+<p>如果一个会议以赞美结束，那么大概率是恭维，都是 Bad Data，这是书中提到的。</p></blockquote>
+<p>Even if they really do like it, that data is still worthless. For example, venture capitalists (professional judges of the future) are wrong far more than right. If even a VC&rsquo;s opinion is probably wrong, what weight could that of some random guy&rsquo;s possibly have?</p>
+<p>即使他们真的喜欢它，那些数据仍然毫无价值。例如，风险投资家（未来的专业评判者）往往错误远多于正确。即使风投家的意见可能是错误的，那么一个随机人的意见又能有多大的分量呢？</p>
+<blockquote>
+<p>除了行业专家以外，其他人的意见基本都是毫无价值的。（书里提到的）</p></blockquote>
+<p>你需要的是事实和承诺，而不是恭维。</p>
+<p>摆脱恭维的错误信息的最佳方法是完全避免提及你的想法。如果它们仍然发生，你需要转移恭维的注意力，继续收集事实和承诺。</p>
+<blockquote>
+<p>一旦提及自己的想法，对谈的人不太可能去否定你的想法，反过来就只会听到正面的恭维。</p></blockquote>
+<p>为了进行一次良好的对话，你并不需要得到你想要听到的结果。你只需要找到真相。</p>
+<blockquote>
+<p><strong>交谈是为了获取真相，极有可能听到自己不想听到的结果。</strong></p></blockquote>
+<p>Sometimes it&rsquo;s easier to spot the symptoms than to notice the original compliment.</p>
+<p>忽略赞美应该很容易，但事实并非如此。我们非常渴望听到赞美，以至于常常被欺骗，将其视为积极的数据点而非空洞的谎言。有时候，更容易察觉到症状，而不是注意到最初的赞美。</p>
+<blockquote>
+<p><strong>赞美往往很虚空，缺少事实的支撑。</strong></p></blockquote>
+<p>忽略赞美应该很容易，但事实并非如此。我们非常渴望听到赞美，以至于常常被欺骗，将其视为积极的数据点而非空洞的谎言。</p>
+<blockquote>
+<p><strong>对于我们自己，我们比我们想象中更想听到赞美，这也说明，本能的我们会忍不住去提及自己的想法。</strong></p></blockquote>
+<p>当有人开始谈论他们&quot;总是&quot;、&ldquo;通常&rdquo;、&ldquo;从不&quot;或&quot;会&quot;做什么时，他们只是在给你提供一些泛泛而谈的假设性内容。遵循《妈妈的测试》的原则，将他们带回到过去的具体情况中。询问他们上次发生的时间，让他们向你描述一下，他们是如何解决的，还尝试了什么其他方法。</p>
+<blockquote>
+<p><strong>其实也是在避免泛泛而谈</strong></p></blockquote>
+<p>最糟糕的引发废话的问题是：&ldquo;你会这样做吗？&ldquo;当然他们可能会。某一天。但这并不意味着他们会这样做。</p>
+<blockquote>
+<p>这句话问的也是未来。</p></blockquote>
+<p>当使用一般性描述时，人们描述的是他们想成为的人，而不是他们实际上是谁。你需要具体说明以突出边缘情况。</p>
+<p>你需要具体说明以突出边缘情况。</p>
+<blockquote>
+<p><strong>锚定是以废话为锚点，探索更具体的事实</strong></p></blockquote>
+<p>为了接近这个真相，你只需要拒绝他们的泛泛之论、偶然的抱怨和空洞的承诺。相反，将他们锚定在他们已经过的生活和他们已经采取的行动上。</p>
+<p>创业者总是被想法淹没。</p>
+<p>把它们写下来，但不要急于把它们添加到你的待办事项列表中。创业公司的重点是专注并执行一个可扩展的想法，而不是追随每一个好主意。</p>
+<blockquote>
+<p><strong>这就是日常最常遇到的问题，不要急于添加到待办，而是先写下来，Review 之后再做定夺，Review 是了解想法背后的动机和目的，急于行动总是反复。</strong></p></blockquote>
+<p>当你听到一个请求时，你的工作是理解背后的动机。你可以通过深入探究问题来找到根本原因。为什么他们要以这种方式做？为什么他们想要这个功能？他们在没有这个功能的情况下是如何应对的？深入挖掘。</p>
+<blockquote>
+<p>即使是自己的请求也是如此，这些都是直觉上的想法。</p></blockquote>
+<p><strong>挖掘功能请求的常见问题，适合给客服和运营同学</strong></p>
+<p>Questions to dig into feature requests:</p>
+<p>深入了解功能请求的问题：</p>
+<ul>
+<li>&ldquo;Why do you want that?&rdquo; 你为什么想要那个？</li>
+<li>&ldquo;What would that let you do?&rdquo; 那会让你做什么？</li>
+<li>&ldquo;How are you coping without it?&rdquo; 你没有它的话，你怎么应对？</li>
+<li>&ldquo;Do you think we should push back the launch add that feature, or is it something we could add later?&rdquo; 你认为我们应该推迟发布并添加这个功能，还是可以稍后再添加？</li>
+<li>How would that fit into your day? 那会如何适应你的一天？</li>
+</ul>
+<p>Questions to dig into emotional signals:</p>
+<p>深入探讨情绪信号的问题：</p>
+<ul>
+<li>&ldquo;Tell me more about that.&rdquo; 告诉我更多关于那个的事情。</li>
+<li>&ldquo;That seems to really bug you — I bet there&rsquo;s a story here.&rdquo; 这似乎真的让你很烦恼 - 我敢打赌这里面肯定有个故事。</li>
+<li>&ldquo;What makes it so awful?&rdquo; 是什么让它如此糟糕？</li>
+<li>&ldquo;Why haven&rsquo;t you been able to fix this already?&rdquo; 为什么你还没能解决这个问题？</li>
+<li>&ldquo;You seem pretty excited about that — it&rsquo;s a big deal?&rdquo; 你似乎对此非常兴奋 - 这是一件大事吗？</li>
+<li>&ldquo;Why so happy?&rdquo; 为什么这么开心？</li>
+<li>&ldquo;Go on.&rdquo; 继续。</li>
+</ul>
+<blockquote>
+<p>任何强烈的情绪都值得探索，它是一种信号</p></blockquote>
+<p>Rule of thumb: Ideas and feature requests should be understood, but not obeyed.</p>
+<p>经验法则：理解意见和功能请求，但不必遵从。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>《假如给我三天光明》读后感</title>
+      <link>http://localhost:1313/posts/three-days-to-see-book-review/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/three-days-to-see-book-review/</guid>
+      <description>《假如给我三天光明》读后感：一个既盲又聋的人是如何学习和理解这个世界的</description>
+      <content:encoded><![CDATA[<p><img alt="海伦·凯勒肖像" loading="lazy" src="/images/posts/three-days-to-see-book-review/helen-keller-portrait.webp"></p>
+<p>先附上一段海伦凯勒的演讲片段，来自一个又盲又聋的人。</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rfr6YO-zLZc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p>《假如给我三天光明》真的是一本烂大街的书籍，当然，这里的「烂大街」指的是客观情况，而非主观的喜恶。假如我在地摊上看到它，肯定一毫秒都不会犹豫，直接走开，似乎直觉上已经知道这本书的大概剧情，甚至我担心，以书名为这篇文章标题，文章可能会注定沉寂下去。</p>
+<p>但是，我依然对海伦凯勒产生了极大的兴趣，尤其是当我知道她不仅是个盲人，还丧失了听力。一个愈发强烈的问题激发了我的好奇心：她到底是怎么学习这么多东西的？既看不见，也听不见。</p>
+<p>读完这本书是远远不够的，我们还需要更多信息：</p>
+<ul>
+<li><a href="https://book.douban.com/subject/4241108/" target="_blank" rel="noopener noreferrer">《海伦.凯勒自传-我生活的故事》</a>  （未读完）</li>
+<li>海伦凯勒百科，<a href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E5%80%AB%C2%B7%E5%87%B1%E5%8B%92" target="_blank" rel="noopener noreferrer">维基百科</a> ，<a href="https://baike.baidu.com/item/%E6%B5%B7%E4%BC%A6%C2%B7%E5%87%AF%E5%8B%92" target="_blank" rel="noopener noreferrer">百度百科</a> </li>
+<li><a href="https://movie.douban.com/subject/1297274/" target="_blank" rel="noopener noreferrer">海伦凯勒传记</a>  电影，拍摄于1962年，成年的部分由真人出演，且真人也参与了编剧</li>
+<li>另外还有其他6部作品，而且除了海伦凯勒的作品，还有其老师莎莉文的书籍和百科。</li>
+</ul>
+<p>也不得不感慨，海伦的传记作品真多，从书籍到电影都有，当初应该有不少人对她的生活感兴趣。</p>
+<p>读完这本书最大的感受是，不管是翻译后的文本，还是原作，词句过于文人的气息，很多的修饰语让我感觉像是在看一篇高考高分作文。</p>
+<p>海伦凯勒的世界如果要简单分类，就是莎莉文老师来之前和来之后，莎莉文老师对于海伦凯勒已经不能用灯塔来形容，她几乎用毕生的精力来默默支持着海伦凯勒。海伦6岁的时候，莎莉文受邀作为其老师，直到1916年由于生病第一次离开，接近30年的时间，这期间莎莉文不仅帮助海伦逐渐学会了认字、说话、考上大学并完成学业，甚至在读此书的时候，我一直都在怀疑，书籍中涉及的很多「经历」应该都来自于莎莉文老师的转述（这里的「都」要重读），毕竟那些细节是需要眼睛来查看而不是靠想象来完成的。</p>
+<blockquote>
+<p>我一生中最重要的时候是安妮·曼斯菲尔德·莎莉文老师到我家的那一天。她来之前我所过的生活和她来之后的有天壤之别，每每回首此时我都不禁感慨万千。</p></blockquote>
+<p>海伦凯勒与莎莉文老师的童年有着惊人的相似之处，由于眼疾，莎莉文老师也从小脾气暴躁，无法确定这是否与之后有效帮助海伦脱离其同样躁动的情绪困境有着经验上的继承关系，但在海伦父母束手无策的情况下，确实是莎莉文安抚其情绪，并完成了建立互信的第一步。没有互信，海伦是无法接受任何信息。</p>
+<p>莎莉文是如何完成教会海伦认字的：</p>
+<blockquote>
+<p>我玩了一会儿洋娃娃，莎莉文老师拉起我的手，慢慢地在手上拼出了洋娃娃的单词&quot;d-o-l-l&quot;。我立刻对这种手指游戏产生了兴趣，于是也开始有样学样。试了几次终于正确拼出来了，我真是高兴得不得了、骄傲得不得了。我迫不及待地飞跑到楼下找母亲，把洋娃娃的单词拼给她看。</p></blockquote>
+<p>好奇心不断「迫使」海伦认识越来越多的名字，这个游戏像「癌细胞」扩散一样，逐渐蔓延到周边的所有事物。</p>
+<p>最精彩的部分属于从具象到抽象：什么是爱？从理解「想」到理解「爱」。海伦自己在文中说了自己的众多对「爱」的理解，直到先接受了「想」这个概念。</p>
+<blockquote>
+<p>一两天之后，我在玩串珠子的游戏，也就是把不同大小的珠子按照两大三小的顺序串在一起。我总是串错，而莎莉文老师则不厌其烦地给我一遍遍指出来。最后我自己发现了珠串中一个明显的错误，于是集中精神想这个问题，思忖着我应该怎么重新安排这些珠子。这时候，莎莉文老师碰了碰我的额头，在我手上有力地写下&quot;想&quot;这个字。我灵光一忽然明白：&ldquo;想&quot;就是我脑子里正在进行的过程，这是我第一次接触抽象的概念。</p></blockquote>
+<blockquote>
+<p>同样的你不能摸到爱，但是你能感受到它对万物的滋润。没有爱，你就不会快乐，也不会想玩耍了。</p></blockquote>
+<p>每每看到这一段，我都不断在回想，最初我是如何理解「爱」这个词语，似乎是对父母的依恋和电视剧的混合作用，也许当我们不能从认知上理解父母的「爱」时，我们只能本能的「任性」。这里由衷的佩服莎莉文老师，她的耐心让她抓住了恰当的时机来让海伦理解的这个抽象的概念。</p>
+<p>从理解了抽象和具象的英语单词之后，就像底层认知基础完成，逐渐延伸到阅读，到尝试写作和演讲，后期虽然也是困难重重，但信息的传递模式和类型都与我们的类似。</p>
+<p>附上读书的思维笔记。</p>
+<p><img alt="读书思维导图" loading="lazy" src="/images/posts/three-days-to-see-book-review/reading-mind-map.webp"></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>用了 6 年的印象笔记是什么样子的？</title>
       <link>http://localhost:1313/posts/six-years-with-evernote/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
@@ -3796,6 +3976,39 @@
 <p><img alt="微信群聊" loading="lazy" src="/images/posts/tech-moments-that-touched-my-heart/image-5.webp"></p>
 <p>如果说近期那些让人为之一动的科技，只能是大家习以为常的微信群。一开始只是亲戚们用微信群发偶然形成的一个临时群，形成之后立刻又被删除。后来我直接创建了一个固定的微信群。最初是兴奋的，后来沉寂了一段时间，不知从何开始，微信群开始作为广播定期做亲戚间的聚会以及长辈们之间的寒暄。而且，我发现了一个规律，老家微信群的活跃度与小龙虾的季节正相关。</p>
 <p>从今年开始，爸妈已经开始学会了用微信，从视频或者音频通话，逐渐升级为照片分享，每一次我都保存着，期待下一次回忆。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>生活到底需不需要心灵鸡汤？</title>
+      <link>http://localhost:1313/posts/do-we-need-chicken-soup-for-soul/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/do-we-need-chicken-soup-for-soul/</guid>
+      <description>一篇关于心灵鸡汤的反思，探讨我们是否应该完全排斥所谓的&amp;#39;鸡汤&amp;#39;，以及如何在其中找到真正有价值的内容。</description>
+      <content:encoded><![CDATA[<p>本来准备如日常习惯那样睡觉了，却在睡前刷微博的时候看到一句让我足以反思自己生活的话，暂且称之为「真理」。</p>
+<blockquote>
+<p>当一个人缺乏自律的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人的思想观念所扰，几乎永远不可能去做内心真正渴望的事情。</p></blockquote>
+<p>但是我能预料到两个结果：</p>
+<ul>
+<li>第一个结果：那个微博下面的评论中肯定有大量网友嘲讽与之放在一起的「心灵鸡汤」们，事实也确实如此</li>
+<li>第二个结果：即使这句鸡汤让我现在醍醐灌顶，但是不出三天，我肯定会选择性遗忘，或者对这句话产生极强的免疫效力，或者与微博下面的同仁们一样，在很快的将来就从崇拜模式切换为嘲讽模式</li>
+</ul>
+<p>而这句话和这句话引发的关联让我想起了另外一本最近刚读完的书，<a href="https://book.douban.com/subject/3312040/" target="_blank" rel="noopener noreferrer">《谁会认错》</a> ，一本带着颇为俗气的书名的书籍，但却被作者以心理学的专业角度通篇阐述了「认知失调」的产生和与之关联的诸生诸相。如果放到心灵鸡汤这个问题上来讲，认知失调就是，这句心灵鸡汤引发的我对积极生活的向往，和我碌碌无为生活现状的尖锐矛盾。而这种失调的最终结果一般是，人的有意识或者无意识的保护机制会让我们失去理智，以各种「合理的证据」让我们很快安于现状，恢复到认知失调之前的状态，也就是回归到碌碌无为的生活里去。</p>
+<p>而我此时相信，自己对心灵鸡汤的态度，至少有一部分属于认知失调的范畴，即，我鄙视心灵鸡汤，「鸡汤都是坑人的，不能傻逼」，这样我才能安心睡觉，不为自己碌碌无为的状态所困扰。这也让我想起最近一直在草稿中却未能完成的一篇文章《不能遗忘的初心》，我不想遗忘最初的梦想，却是在一口一个「现实」中让自己相信，普通人就应该那样，工作、结婚、生娃和买房。</p>
+<p>如果要回归事务的本质，也许应该重读一下这篇文章，<a href="http://m.jiemian.com/article/979488.html" target="_blank" rel="noopener noreferrer">《中国式鸡汤简史》</a> </p>
+<p>鸡汤产生于一个最适合它的时代，压抑之后，以真善美来促进个人的自我修行，填补了一个社会的真空。却在之后的流行中被动膨胀和扭曲，直至最后，裹挟着垃圾和真理，与人渐行渐远。</p>
+<p>不排除鸡汤包含某些虚假的谎言和信誓旦旦的扯淡，但其中也不乏真理，一味的排斥与认知失调的自我保护，在此时有一种同流合污的快感，从心底去抵制鸡汤，顺势而名正言顺得碌碌无为。</p>
+<p>回到那个高中年代，我也是曾经狂热的鸡汤爱好者，追捧过陈安之也读过畅销励志书籍，至少他们伴随了我的复读生活，至今犹记，在复读时的书桌里放着两本书，一本余秋雨的<a href="https://book.douban.com/subject/1054889/" target="_blank" rel="noopener noreferrer">《行者无疆》</a> ，一本不知作者是谁的<a href="https://book.douban.com/subject/1189784/" target="_blank" rel="noopener noreferrer">《狼道》</a> ，每逢第二节课下自习，我都会翻出来读两句，后者被我用签字笔划了无数的重点，相当于整本书。极具气势的排比励志句，不仅让复读生活像打了鸡血一样，也让作文句子多了更多可复制粘贴的内容。甚至在二次高考结束之后，将书送给了一个朋友，外加自己有点癫狂的推荐语。</p>
+<p><img alt="书籍推荐语" loading="lazy" src="/images/posts/do-we-need-chicken-soup-for-soul/book-recommendation.webp"></p>
+<p>也许如很多人总结的那样，真的是因为度过了那个「傻逼」的阶段，高年级的自己开始看不起低年级的我，至少，再也不相信QQ空间的热门转载，以及，加入了讨伐父母微信鸡汤的大军。</p>
+<p>我比较担心的是，假如真的因此错过了大量「真理」，我是否还应该庆幸，或者是否应该站在所谓的道德制高点继续去批判那个我们标记为「鸡汤」的一切。</p>
+<p>「相信」鸡汤有一句鸡汤式的答案：</p>
+<p>不成功的人讲真理是没有人信的，只有真正成功的人和假装成功的人讲真理才会有人相信。我们本来反对的是假装成功的人以及伪装的真理，却碰巧反对了真理，并不屑一顾。</p>
+<p>不过，写这个文章并不是为了立马找到一个清晰的答案，而是有三个理由：</p>
+<ul>
+<li>第一，只是借文章来梳理思考，不能来假装顿悟</li>
+<li>第二，我只是想与文章开头的那句醍醐灌顶的话发生更多的「故事」，记忆深刻，以免忘掉</li>
+<li>第三，想试着做一件此时内心真正渴望的事情，写完这个文章，即使已经凌晨四点了。</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>

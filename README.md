@@ -248,13 +248,11 @@ AI 将执行以下关键步骤来帮助您更新博客：
    * 这一步会删除已经转换为 WebP 格式的原始图片文件
    * 注意：网站图标文件（如 android-chrome-*.png、apple-touch-icon.png 等）会自动保护，不会被删除
 
-7. 清理其他临时文件：
+7. **清理所有临时文件**：
+   * 清理临时解压目录：`rm -rf temp_notion/*`
+   * 清理临时压缩图片：`rm -rf static/images_compressed/posts/article-name`
+   * 清理已处理的 Notion zip 文件：`rm -f draftfiles/*.zip`
 
-   ```bash
-   # 清理 Notion 处理的临时文件
-   rm -rf temp_notion
-   rm -f draftfiles/*.zip
-   ```
 8. 运行自检清单
    自检之前，一定要先读一下 README 里的元数据要求，读完再进行依次检查：
    - 文件名是否是有意义的英文名

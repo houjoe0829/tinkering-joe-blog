@@ -99,12 +99,5 @@
       <guid>http://localhost:1313/tags/%E9%AA%91%E8%A1%8C/</guid>
       <description></description>
     </item>
-    <item>
-      <title>软件推荐</title>
-      <link>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
-      <pubDate>Wed, 04 Aug 2021 23:45:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
