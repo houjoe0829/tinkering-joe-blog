@@ -54,9 +54,9 @@ title: "Joe's Recap：8月以前"
 
 [我们在东极岛，天气阴](/posts/dongji-island-tour)
 
-[记录绍兴一日游](/posts/shaoxing-one-day-tour)
+[记录绍兴一日游](/posts/shaoxing-one-day-trip-2023)
 
-[台(tāi)州游记](/posts/taizhou-tour)
+[台(tāi)州游记](/posts/taizhou-travel-notes)
 
 ## 4. 公开的个人游戏库
 

@@ -160,7 +160,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 2. **解压缩处理**：
 
    ```bash
-   python scripts/extract_zip_utf8.py
+   python3 scripts/extract_zip_utf8.py
    ```
 
    * 脚本会将 ZIP 文件解压到 `temp_notion` 目录
@@ -193,7 +193,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
       * 创建新的 Markdown 文件，使用规范的英文名，如：`content/posts/taizhou-travel-notes.md`
       * 保留文章内容里的原始链接，不要修改
       * 手动编写 Front Matter，确保：
-        * 标题、描述准确
+        * 标题、描述准确，使用原文标题，不要生成新的标题
         * 日期使用 Notion zip 实际数据的日期
         * 标签分类合理
         * 作者信息正确
