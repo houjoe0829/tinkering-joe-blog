@@ -249,4 +249,48 @@
 
 .dark .bookmark-url {
   color: var(--secondary);
+}
+
+/* 引用博文部分样式 */
+.post-references {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.post-references h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.post-references h2 .reference-count {
+    display: inline-block;
+    font-size: 0.9em;
+    color: var(--secondary);
+    margin-left: 0.5rem;
+}
+
+/* 只设置列表容器的间距 */
+.post-references .post-references-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .post-references {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .post-references h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .post-references .post-references-list {
+        gap: 0.2rem;
+    }
 } 

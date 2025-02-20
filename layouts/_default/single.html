@@ -61,6 +61,44 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
+
+    {{/* 添加反向引用部分 */}}
+    {{- $currentPath := .RelPermalink }}
+    {{- $currentFile := .File.BaseFileName }}
+    {{- $currentPathNoSlash := strings.TrimSuffix "/" $currentPath }}
+    {{- $references := slice }}
+    {{- range .Site.RegularPages }}
+      {{- if or 
+          (strings.Contains .RawContent $currentPath) 
+          (strings.Contains .RawContent $currentPathNoSlash)
+          (strings.Contains .RawContent (printf "@%s.md" $currentFile))
+          (strings.Contains .RawContent (printf "/posts/%s" $currentFile)) }}
+        {{- if ne .RelPermalink $currentPath }}
+          {{- $references = $references | append . }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- if gt (len $references) 0 }}
+    <div class="post-references">
+      <h2>反向引用 <span class="reference-count">{{ len $references }}</span></h2>
+      <div class="post-references-list">
+        {{- range sort $references "Date" "desc" }}
+        <article class="post-entry">
+          <header class="entry-header">
+            <h2>{{ .Title }}</h2>
+          </header>
+          <div class="entry-content">
+            <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+          </div>
+          <footer class="entry-footer">
+            {{- partial "post_meta.html" . -}}
+          </footer>
+          <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+        </article>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}
