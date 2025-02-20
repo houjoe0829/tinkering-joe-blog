@@ -60,17 +60,17 @@ title: "Joe's Recap：8月以前"
 
 ## 4. 公开的个人游戏库
 
-最近直接在[个人主页](/posts/why-start-blogging)公开分享了[游戏库](/posts/game-library)页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。
+最近直接在个人主页公开分享了[游戏库](https://houjoe.notion.site/d34dd37c78ba44c5abbc34e417d94ccf?v=e86bb38ab2ec4aadba04d59f7507bc9b&pvs=4)页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。
 
 而这半年的主要游戏时间确实都给了《王国之泪》，而且还只是暂时性结束，预计在下半年的某一个时间点还会继续探索海拉鲁大陆，这种探索的满足感是其他游戏很难提供的。
 
 [《塞尔达传说·王国之泪》游记（涉及剧透）](/posts/tears-of-the-kingdom-review)
 
-[战神之诸神黄昏](/posts/god-of-war-ragnarok)
+[战神之诸神黄昏](https://houjoe.notion.site/59e08de7e95b4b2fa76e30d0c2a66a15?pvs=4)
 
-[脑航员2](/posts/psychonauts-2)
+[脑航员2](https://houjoe.notion.site/2-e1ccdd0038dd47bb8b4cc99a0a492f25?pvs=4)
 
-[底特律：化身为人](/posts/detroit-become-human)
+[底特律：化身为人](https://houjoe.notion.site/1424b91cdd8e41d4b1d586670fc41697?pvs=4)
 
 ![游戏截图](/images/posts/joe-recap-8-month-before/image-4.webp)
 
