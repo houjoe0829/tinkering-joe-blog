@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2024-02-20
+date: 2020-05-18
 description: "回忆老家的两道特色美食：杀猪菜与小龙虾，以及它们背后的故事"
 draft: false
 tags: ["小城故事", "生活感悟"]
