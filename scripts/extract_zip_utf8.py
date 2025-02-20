@@ -23,6 +23,13 @@ def convert_to_english_name(chinese_title):
     """
     # 预定义的中文词语映射表
     word_mapping = {
+        "新昌": "xinchang",
+        "一日": "one-day",
+        "游": "trip",
+        "碳水": "carbs",
+        "美食": "food",
+        "下岩贝": "xiayanbei",
+        "村": "village",
         "回顾": "recap",
         "总结": "recap",
         "月": "month",
@@ -41,7 +48,6 @@ def convert_to_english_name(chinese_title):
         "回忆": "recap",
         "玩具": "toys",
         "游记": "journey",
-        "总结": "summary",
         "日记": "diary",
         "体验": "experience",
         "评测": "review",
@@ -246,7 +252,7 @@ def process_image_links(content, article_name):
     
     return content
 
-def extract_zip_utf8(zip_path="Notionfiles"):
+def extract_zip_utf8(zip_path="draftfiles"):
     """解压 Notion 导出的 ZIP 文件并进行基础处理
     
     Args:

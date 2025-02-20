@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/flow-book-about-happiness/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</loc>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/best-local-ai-note-taking-tools/</loc>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/flow-book-about-happiness/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
@@ -44,9 +53,6 @@
     <loc>http://localhost:1313/posts/poker-game-rules/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/ai-chat-lack-compression-history/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -60,9 +66,6 @@
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024-favorite-things/</loc>
-    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</loc>
@@ -98,11 +101,11 @@
     <loc>http://localhost:1313/posts/first-time-in-japan/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/best-local-ai-note-taking-tools/</loc>
-    <lastmod>2024-02-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/chinese-new-year-2024-recap/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/food-discovery-journey/</loc>
     <lastmod>2024-02-12T00:00:00+00:00</lastmod>

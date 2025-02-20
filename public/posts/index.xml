@@ -6,8 +6,44 @@
     <description>Recent content in Posts on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最好的本地 AI 笔记软件：Obsidian &#43; Cursor</title>
+      <link>http://localhost:1313/posts/best-local-ai-note-taking-tools/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/best-local-ai-note-taking-tools/</guid>
+      <description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description>
+      <content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308">歸藏老师</a>在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
+<p><img alt="Twitter 截图" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp"></p>
+<p>我自己最近除了将个人博客从 Notion 搬到了个人站点 houjoe.me，也将日常笔记从 Notion 迁到了 Obsidian，主要是用 Cursor 这类 AI 编程工具多了之后，Coding with AI 的正反馈让我也更希望 Note-Taking with AI。</p>
+<p>其实，一般代码仓库里都有一个最大的&quot;笔记&quot;，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。</p>
+<p>而且，近期为了让 AI 能够精准且充分理解需求上下文，我在另一个实验性产品的代码仓库里，直接新建了 Docs 文件夹，然后将 PRD 以 Markdown 文件的形式放在里面，这样就可以更愉快地让 AI 精细化干活了。</p>
+<h2 id="为什么选择-obsidian">为什么选择 Obsidian？</h2>
+<p>如上面提到的，因为代码编辑工具认 Markdown 格式的文件。所以，理论上以 Markdown 来存储内容的 Logseq 也是可以的，但是它的 Markdown 会加很多额外的格式。一番对比下来，Obsidian 的 Markdown 会接近代码里的格式规范一些。</p>
+<h2 id="如何让-cursor-与-obsidian-协作">如何让 Cursor 与 Obsidian 协作</h2>
+<p>使用 Obsidian 之后，会有一个 Vault 文件夹，可以理解为数据库文件夹，Obsidian 所有笔记数据都以 Markdown 形式存储在里面，这个时候只需要用 Cursor 或者其他 AI 编程工具打开这个文件夹就可以开始了。</p>
+<p>别忘了，字节的 AI 编程工具 Trae 还免费呢，可以试试。</p>
+<h2 id="为什么是-ai-ide">为什么是 AI IDE</h2>
+<p>以 Cursor 为例，Cursor 的上下文引用能力远高于目前遇到的任何文档，可以 @ 一篇文档、一个文件夹，甚至是之前与 AI 的历史对话，而且，还可以选择是否基于 Codebase 回答。</p>
+<p>如果你不想 @ 上下文，其 Agent（智能体）模式还可以自主拆解问题，读取上下文，相比较而言，我觉得大部分文档的 AI 能力有些机械，说一句做一句。</p>
+<p><img alt="Cursor 上下文功能" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/cursor-context.webp"></p>
+<p>另外，Cursor 对文档内容的修改是 Inline（句子）级别的。</p>
+<p>举个例子，在 Notion 里面，当我们让 AI 一次润色好几段内容，它会修改全部，我们要么一起接受，要么都放弃，而在 Cursor 里，对文本的修改就像代码一样，它会按需修改，然后我们可以逐条选择或者拒绝，这才是精细化修改应该有的样子呀。</p>
+<h2 id="可以让体验更好一些">可以让体验更好一些</h2>
+<p>Cursor 这类 IDE 工具毕竟是为代码而生的，有一定门槛，需要简单上个手。</p>
+<h3 id="第一步学习一下编程工具的界面">第一步，学习一下编程工具的界面</h3>
+<p>不需要学习代码，只是熟悉界面，而且，一旦认识之后，以后再学习编程的门槛就更低了。</p>
+<h3 id="第二步安装一些-markdown-插件">第二步，安装一些 Markdown 插件</h3>
+<p>编程工具是把所有文件当做代码来编辑，需要一些插件来改善编辑体验，这里我最推荐的是 <a href="https://marketplace.cursorapi.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>，还有很多其他的，比如，还有能让编辑 Markdown 像 Word 文档那样的体验，不过，不推荐，因为，影响了 AI 的能力发挥。</p>
+<p><img alt="Markdown 插件" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/markdown-plugin.webp"></p>
+<h3 id="第三步去掉一些-markdown-语法的检测">第三步，去掉一些 Markdown 语法的检测</h3>
+<p>如果不禁用，会显示很多波浪线形式的下划线，有点类似于文档编辑里的拼写检查，影响编辑的心情。不过，如果不介意的话，可以忽略这一步。因为，去掉这个有些麻烦，需要更改配置文件，我是让 AI 帮忙修改的配置文件。</p>
+<h3 id="第四步创建笔记别忘了加上后缀">第四步，创建笔记别忘了加上后缀</h3>
+<p>与普通笔记不一样，用代码编辑器来新增 Markdown 文件是需要这样的格式：name.md</p>
+<p>这样一来，我们就有了一个真 Local first（本地优先）的 AI 笔记方案。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>《心流》：这本书其实和幸福有关</title>
       <link>http://localhost:1313/posts/flow-book-about-happiness/</link>
@@ -837,42 +873,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>最好的本地 AI 笔记软件：Obsidian &#43; Cursor</title>
-      <link>http://localhost:1313/posts/best-local-ai-note-taking-tools/</link>
-      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/best-local-ai-note-taking-tools/</guid>
-      <description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description>
-      <content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308">歸藏老师</a>在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
-<p><img alt="Twitter 截图" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp"></p>
-<p>我自己最近除了将个人博客从 Notion 搬到了个人站点 houjoe.me，也将日常笔记从 Notion 迁到了 Obsidian，主要是用 Cursor 这类 AI 编程工具多了之后，Coding with AI 的正反馈让我也更希望 Note-Taking with AI。</p>
-<p>其实，一般代码仓库里都有一个最大的&quot;笔记&quot;，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。</p>
-<p>而且，近期为了让 AI 能够精准且充分理解需求上下文，我在另一个实验性产品的代码仓库里，直接新建了 Docs 文件夹，然后将 PRD 以 Markdown 文件的形式放在里面，这样就可以更愉快地让 AI 精细化干活了。</p>
-<h2 id="为什么选择-obsidian">为什么选择 Obsidian？</h2>
-<p>如上面提到的，因为代码编辑工具认 Markdown 格式的文件。所以，理论上以 Markdown 来存储内容的 Logseq 也是可以的，但是它的 Markdown 会加很多额外的格式。一番对比下来，Obsidian 的 Markdown 会接近代码里的格式规范一些。</p>
-<h2 id="如何让-cursor-与-obsidian-协作">如何让 Cursor 与 Obsidian 协作</h2>
-<p>使用 Obsidian 之后，会有一个 Vault 文件夹，可以理解为数据库文件夹，Obsidian 所有笔记数据都以 Markdown 形式存储在里面，这个时候只需要用 Cursor 或者其他 AI 编程工具打开这个文件夹就可以开始了。</p>
-<p>别忘了，字节的 AI 编程工具 Trae 还免费呢，可以试试。</p>
-<h2 id="为什么是-ai-ide">为什么是 AI IDE</h2>
-<p>以 Cursor 为例，Cursor 的上下文引用能力远高于目前遇到的任何文档，可以 @ 一篇文档、一个文件夹，甚至是之前与 AI 的历史对话，而且，还可以选择是否基于 Codebase 回答。</p>
-<p>如果你不想 @ 上下文，其 Agent（智能体）模式还可以自主拆解问题，读取上下文，相比较而言，我觉得大部分文档的 AI 能力有些机械，说一句做一句。</p>
-<p><img alt="Cursor 上下文功能" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/cursor-context.webp"></p>
-<p>另外，Cursor 对文档内容的修改是 Inline（句子）级别的。</p>
-<p>举个例子，在 Notion 里面，当我们让 AI 一次润色好几段内容，它会修改全部，我们要么一起接受，要么都放弃，而在 Cursor 里，对文本的修改就像代码一样，它会按需修改，然后我们可以逐条选择或者拒绝，这才是精细化修改应该有的样子呀。</p>
-<h2 id="可以让体验更好一些">可以让体验更好一些</h2>
-<p>Cursor 这类 IDE 工具毕竟是为代码而生的，有一定门槛，需要简单上个手。</p>
-<h3 id="第一步学习一下编程工具的界面">第一步，学习一下编程工具的界面</h3>
-<p>不需要学习代码，只是熟悉界面，而且，一旦认识之后，以后再学习编程的门槛就更低了。</p>
-<h3 id="第二步安装一些-markdown-插件">第二步，安装一些 Markdown 插件</h3>
-<p>编程工具是把所有文件当做代码来编辑，需要一些插件来改善编辑体验，这里我最推荐的是 <a href="https://marketplace.cursorapi.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>，还有很多其他的，比如，还有能让编辑 Markdown 像 Word 文档那样的体验，不过，不推荐，因为，影响了 AI 的能力发挥。</p>
-<p><img alt="Markdown 插件" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/markdown-plugin.webp"></p>
-<h3 id="第三步去掉一些-markdown-语法的检测">第三步，去掉一些 Markdown 语法的检测</h3>
-<p>如果不禁用，会显示很多波浪线形式的下划线，有点类似于文档编辑里的拼写检查，影响编辑的心情。不过，如果不介意的话，可以忽略这一步。因为，去掉这个有些麻烦，需要更改配置文件，我是让 AI 帮忙修改的配置文件。</p>
-<h3 id="第四步创建笔记别忘了加上后缀">第四步，创建笔记别忘了加上后缀</h3>
-<p>与普通笔记不一样，用代码编辑器来新增 Markdown 文件是需要这样的格式：name.md</p>
-<p>这样一来，我们就有了一个真 Local first（本地优先）的 AI 笔记方案。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Joe&#39;s Recap：过年那些事儿</title>
       <link>http://localhost:1313/posts/chinese-new-year-2024-recap/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
@@ -931,6 +931,38 @@
 <p><img alt="曼达洛人" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-7.webp"></p>
 <h2 id="不过">不过</h2>
 <p>经过一整个春节的酝酿，我们已经下定决心，明年不回家过年了，还是出去玩吧。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>新昌一日游：碳水美食与下岩贝村</title>
+      <link>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</guid>
+      <description>一次轻松愉快的新昌一日游，品尝当地特色美食，探访山顶下岩贝村</description>
+      <content:encoded><![CDATA[<p>又是一次极其休闲的江浙沪周边游。</p>
+<p>新昌县是绍兴下辖的县城，之前以为是嵊（shèng）州市的一个区，因为地图上来看实在太近了。由于不到两个小时车程就可以从杭州到达新昌县，原本留宿一晚的计划改为了当日往返。</p>
+<p><img alt="新昌县城一角" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2062.webp"></p>
+<p>游玩也很简单，如果你也希望以最放松的方式来体验一次新昌，可以直接参考一下我们的极简计划：首先，直接略过本地标志性景点，大佛寺，对这类景点实在无感。然后，中午吃一吃本地美食，下午去山顶的下岩贝村喝喝咖啡看看风景，晚上再来市区吃一顿，结束，返程即可。美食可以根据自己的饱腹程度和饮食习惯来安排午餐和晚餐。</p>
+<p>吃的几家店基本在一条街上，不用走太多路。</p>
+<h3 id="燕子春饼">燕子春饼</h3>
+<p>初看以为是山东杂粮煎饼的绍兴版，店面极其简陋，和街头没有座位的早餐店相差不了多少，看上去实在没有信心，已经走过了，犹豫了一下还是鼓足勇气走了回去。</p>
+<p>真实吃的话，完全不一样，四层薄饼，卷上猪头肉和其他各种食材作为馅，我们还额外加了臭豆腐，吃起来清脆和馅香交织，层次丰富，超出预期。这也是我们午餐的第一顿，突然让我对后面有了信心，而不是来之前那种缺少信心的状态。本地有很多春饼店，还有一家胖妹春饼，小红书上也很推荐。</p>
+<p><img alt="燕子春饼的外观" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/DSCF2741.webp"></p>
+<p><img alt="春饼的特写" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/DSCF2756.webp"></p>
+<h3 id="沃洲路62号羊骨头">沃洲路62号羊骨头</h3>
+<p>也是午餐，店里弥漫着一种淡淡的臭豆腐味道。直到两点依然火爆，店里人挤人，每一桌旁都站着焦急等待的人，本来还算差的就餐体验，被其美味给弥补了。羊骨头和豆腐生煎包都令人印象深刻，评价羊肉很简单，没有膻味就足够了，不过，确实是羊骨头，邻桌小孩吮吸骨髓的声响很吵，但反而成了最好的背书。</p>
+<p><img alt="羊骨头的特写" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/DSCF2771.webp"></p>
+<p>豆腐生煎包真的很特别，嫩豆腐作为馅料，鸡蛋作为生煎包的底，既有香脆的皮又有咬下去的内部的嫩滑。看在这个味道的份上，先不差评了。</p>
+<p><img alt="豆腐生煎包" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2055.webp"></p>
+<h3 id="下岩贝村">下岩贝村</h3>
+<p><img alt="下岩贝村全景" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/dji_fly_20241116_160154_282_1731744142166_pano_2.webp"></p>
+<p>午餐后，我们开车去了十九峰景区的下岩贝村，比去嵊州市还远一点，一个免费停车和免费参观的网红山村打卡点。有一个观景台在村子旁边，真的可以看到远方的十九峰，像站岗一样一字排开，远方天空的丁达尔现象让这个山顶观景点停满了摆拍摄影的人，整个下午都很热闹，观景台下方是一条U字形的河流。我们在村里的落日咖啡各点了一杯咖啡，慵懒了一下午。</p>
+<h3 id="一溜下">一溜下</h3>
+<p>这真的是一个店名。蒸的馄饨和芋饺，也很适合晚餐。第一次吃到蒸的馄饨，不再是汤汤水水的那种口感，更像是更嫩的蒸饺体验，没有太多水汽，吃起来甚至有点劲道。芋饺我不太喜欢，用了本地一种小芋头做成的饺子面皮，口感更偏糯米食材，属于我不喜欢的。另外，顺便点的鸡爪，意外的好吃，特别的卤味，很烂，还有一股完全不让人反感的淡淡的甜味，不好描述。</p>
+<p><img alt="蒸馄饨" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2145.webp"></p>
+<p><img alt="芋饺" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2147.webp"></p>
+<p><img alt="卤鸡爪" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2149.webp"></p>
+<p>我觉得这三家美食都挺好的，除了芋饺，而且在查攻略的时候，我们去掉了本地与年糕相关的美食，这个也有很多，可以在小红书关注一下。</p>
 ]]></content:encoded>
     </item>
     <item>
