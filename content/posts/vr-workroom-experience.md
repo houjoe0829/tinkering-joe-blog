@@ -9,7 +9,7 @@ title: "记录一次 VR Workroom 的体验"
 
 一次机缘巧合的情况下，提前体验了一次「元宇宙」，与一众网友在 Meta（原 Facebook）出品的 Horizon Workroom 中开了一次线上 VR 版本的会议。会议本身虽然没有什么实质性的内容，但值得记录一下，算是人类初期对「元宇宙」的观光旅游团之一，方便未来自己有机会自我嘲讽一番。
 
-![VR 会议的截图](/images/posts/vr-workroom-experience/Untitled.webp)
+![VR 会议的截图](/images/posts/vr-workroom-experience/Untitled-3.webp)
 
 VR 会议的截图
 
@@ -35,19 +35,19 @@ VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第
 
 另外，你还可以连接自己的电脑，也可以不连接，连接过程也是非常麻烦，经常需要一会儿看看 VR 里的提示，一会儿还需要看看电脑里的提示。
 
-![连接电脑之后，可以将电脑屏幕投射到 VR 里，相当于 VR 作为电脑的显示器](/images/posts/vr-workroom-experience/Untitled.png.webp)
+![连接电脑之后，可以将电脑屏幕投射到 VR 里，相当于 VR 作为电脑的显示器](/images/posts/vr-workroom-experience/Untitled-3.webp)
 
 连接电脑之后，可以将电脑屏幕投射到 VR 里，相当于 VR 作为电脑的显示器
 
 如果你没有 VR 设备，还可以以传统的视频接入，从 VR 里看，你会显示为一个电脑摄像头画面。
 
-![从摄像头接入的真实效果](/images/posts/vr-workroom-experience/218082891_1607636922760152_2726725756434828786_n.jpeg.webp)
+![从摄像头接入的真实效果](/images/posts/vr-workroom-experience/218082891_1607636922760152_2726725756434828786_n.webp)
 
 从摄像头接入的真实效果
 
 # Workroom 的体验还是不错的
 
-![在 Workroom 里击掌](/images/posts/vr-workroom-experience/Untitled 1.png.webp)
+![在 Workroom 里击掌](/images/posts/vr-workroom-experience/Untitled-4.webp)
 
 在 Workroom 里击掌
 
@@ -61,7 +61,7 @@ VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第
 
 不得不说，会议桌的零成本无限扩展，让人一下子感受到了 VR 的意义，「空间」本身零成本。之前，已经有将电脑桌面引入 VR 的先例，相当于快速无成本搭建自己的多显示器工作区，还有千变万化的虚拟环境。
 
-![图片来自：https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift](/images/posts/vr-workroom-experience/vr-desktop-mac-brings-macos-oculus-rift.png.webp)
+![图片来自：https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift](/images/posts/vr-workroom-experience/vr-desktop-mac-brings-macos-oculus-rift.webp)
 
 图片来自：[https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift](https://zh.freax.be/vr-desktop-mac-brings-macos-oculus-rift)
 
@@ -77,7 +77,7 @@ VR 设备 Oculus Quest 2 是参与的起始条件，但拥有 Oculus 2 只是第
 
 还有一个吐槽的小点，断网或者卡住的视觉设计，太像这个人「去世」的样子
 
-![这个人只是离开了，感觉像是「离开」了](/images/posts/vr-workroom-experience/Untitled 2.png.webp)
+![这个人只是离开了，感觉像是「离开」了](/images/posts/vr-workroom-experience/Untitled-5.webp)
 
 这个人只是离开了，感觉像是「离开」了
 

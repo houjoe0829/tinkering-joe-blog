@@ -15,7 +15,7 @@ author: "Joe"
 > - 最强保险依然是，买两家线路，更抗风险，当然，越多越好
 > - 有 QuantumltX 的可以看 [最简约的科学上网方案：Quantumlt X](/posts/quantumult-x-guide)
 
-![Mac 界面效果](/images/posts/shadowrocket/image1.png)
+![Mac 界面效果](/images/posts/shadowrocket/image1.webp)
 
 ## 为什么推荐 Shadowrocket
 
@@ -53,7 +53,7 @@ author: "Joe"
 
 一般各大机场都会针对 Shadowrocket 出单独的订阅链接，比如我上面提到的两家都有，登录至直接导入到 Shadowrocket 就可以的。
 
-![添加订阅](/images/posts/shadowrocket/image2.png)
+![添加订阅](/images/posts/shadowrocket/image2.webp)
 
 ### （2）导入配置
 
@@ -76,7 +76,7 @@ author: "Joe"
 
 这里主要是设定一个全局测速的自动节点，针对所有可用的节点，可以汇总多家机场。
 
-![节点分组](/images/posts/shadowrocket/image3.png)
+![节点分组](/images/posts/shadowrocket/image3.webp)
 
 在首页-全局路由-分组里，开启简单模式，增加分组之后，如果不改或者空着就会默认选中所有的节点，这里建议加上筛选，因为机场有些节点是不可用的，容易干扰，尤其是那些用来显示流量的。
 
@@ -86,7 +86,7 @@ author: "Joe"
 ^(?!.*(流量|套餐|当前网址|海外用户)).*
 ```
 
-![筛选设置](/images/posts/shadowrocket/image4.png)
+![筛选设置](/images/posts/shadowrocket/image4.webp)
 
 ### （4）一些零碎设置
 
