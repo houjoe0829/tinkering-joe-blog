@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2024-02-20
+date: 2021-11-24
 description: "探索 Emotn 这款免费无广告的 Android TV 应用商店，以及如何在国产安卓电视上安装和使用各种流媒体应用"
 draft: false
 tags: ["折腾软硬件"]
