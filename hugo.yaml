@@ -5,6 +5,9 @@ title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 
+# Google Analytics
+googleAnalytics: G-Z9QGC5ZNEE
+
 # 内容安全配置
 security:
   enableInlineShortcodes: false
@@ -37,6 +40,11 @@ params:
   ShowToc: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  
+  # Google Analytics 配置
+  analytics:
+    google:
+      SiteVerificationTag: ""
   
   # 评论系统配置
   comments: true

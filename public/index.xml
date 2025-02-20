@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Joe 的折腾日记</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Joe 的折腾日记</description>
-    <generator>Hugo -- 0.143.1</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>最好的本地 AI 笔记软件：Obsidian &#43; Cursor</title>
-      <link>http://localhost:1313/posts/best-local-ai-note-taking-tools/</link>
-      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/best-local-ai-note-taking-tools/</guid>
-      <description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description>
-      <content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308">歸藏老师</a>在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Joe 的折腾日记</title><link>https://houjoe.me/</link><description>Recent content on Joe 的折腾日记</description><generator>Hugo -- 0.143.1</generator><language>zh-cn</language><lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://houjoe.me/index.xml" rel="self" type="application/rss+xml"/><item><title>最好的本地 AI 笔记软件：Obsidian + Cursor</title><link>https://houjoe.me/posts/best-local-ai-note-taking-tools/</link><pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/best-local-ai-note-taking-tools/</guid><description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description><content:encoded><![CDATA[<p>看到<a href="https://x.com/op7418/status/1891827233423012308">歸藏老师</a>在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
 <p><img alt="Twitter 截图" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp"></p>
 <p>我自己最近除了将个人博客从 Notion 搬到了个人站点 houjoe.me，也将日常笔记从 Notion 迁到了 Obsidian，主要是用 Cursor 这类 AI 编程工具多了之后，Coding with AI 的正反馈让我也更希望 Note-Taking with AI。</p>
 <p>其实，一般代码仓库里都有一个最大的&quot;笔记&quot;，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。</p>
@@ -42,15 +26,7 @@
 <h3 id="第四步创建笔记别忘了加上后缀">第四步，创建笔记别忘了加上后缀</h3>
 <p>与普通笔记不一样，用代码编辑器来新增 Markdown 文件是需要这样的格式：name.md</p>
 <p>这样一来，我们就有了一个真 Local first（本地优先）的 AI 笔记方案。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>《心流》：这本书其实和幸福有关</title>
-      <link>http://localhost:1313/posts/flow-book-about-happiness/</link>
-      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/flow-book-about-happiness/</guid>
-      <description>《心流：最优体验心理学》读书笔记，探讨如何从日常事务中获得更多幸福体验</description>
-      <content:encoded><![CDATA[<p>豆瓣评分：8.2</p>
+]]></content:encoded></item><item><title>《心流》：这本书其实和幸福有关</title><link>https://houjoe.me/posts/flow-book-about-happiness/</link><pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/flow-book-about-happiness/</guid><description>《心流：最优体验心理学》读书笔记，探讨如何从日常事务中获得更多幸福体验</description><content:encoded><![CDATA[<p>豆瓣评分：8.2</p>
 <p>传送门：<a href="https://book.douban.com/subject/27186106/">https://book.douban.com/subject/27186106/</a></p>
 <p>书的全名是《心流：最优体验心理学》，属于 2025 年看完的第 2 本书。</p>
 <p>虽然书名看上去像是介绍效率的，其实无关乎高效，更多的是心理体验。这本书很适合希望实现心流工作状态，或者希望从日常事务中获得更多幸福体验的人。从我个人的经验来说，富有挑战的工作确实有，但不多见，充盈生活的还是琐事居多。</p>
@@ -81,15 +57,7 @@
 </ol>
 <h2 id="点-5熵的概念">点 5：熵的概念</h2>
 <p>这本书另外一个重要的点，是科普了熵的概念：熵代表着系统走向混乱和无序的倾向。很多人信奉&quot;顺其自然&quot;的处世哲学，但书中点明了一个深刻的道理：若不持续投入精力，生活中的一切都会自然地趋向无序。无论是友谊、家庭关系还是职业发展，在不投注精力的情况下，都会消散或沉寂。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>为什么要写 blog？</title>
-      <link>http://localhost:1313/posts/why-start-blogging/</link>
-      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/why-start-blogging/</guid>
-      <description>探讨为什么要写博客，以及写作如何帮助我们更好地思考、记录和分享</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>为什么要写 blog？</title><link>https://houjoe.me/posts/why-start-blogging/</link><pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/why-start-blogging/</guid><description>探讨为什么要写博客，以及写作如何帮助我们更好地思考、记录和分享</description><content:encoded><![CDATA[<blockquote>
 <p>最近为了测试 AI 的能力边界，写代码比较多，Coding with AI 了好几天，现在需要换换脑子码码字。</p></blockquote>
 <p>写的东西如果被许多人读到，大概就是一种福报，但确实不是目标。</p>
 <p>一直有个妄想，希望能把周围的一切都写进文字里，因为，一旦出现在我的视野里，它就属于我的故事一部分，可以讲述一次我的观察。</p>
@@ -150,15 +118,7 @@
 <p>完美的契合点，大概就是，为自己而写和为别人而写在技巧和选题上达到一种平衡，真心祝愿每个爱写的人，可以到达这个程度，我也在努力中。</p>
 <p>关于别人是否会对我们的分享感兴趣，其实不必过分忧虑。</p>
 <p>即使是看似重复的游记或教程，也都承载着写作者自己的观察和思考。想想我们在搜索旅行攻略时的心情，往往不是只看一篇就满足，而是希望通过不同人的记录，拼凑出一个更立体的印象。有人侧重美食体验，有人关注人文风情，有人擅长记录细节，这些不同视角的叙述，就像万花筒里的碎片，组合成了丰富多彩的互联网世界。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:1313/posts/nezha-movie-review/</link>
-      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
-      <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
-      <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
+]]></content:encoded></item><item><title>《黑神话：哪吒》，确实好看（有剧透）</title><link>https://houjoe.me/posts/nezha-movie-review/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/nezha-movie-review/</guid><description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description><content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
 <p>春节档似乎除了这部电影以外，其它都备受争议。原本打算等网上资源出来再看，但听说《哪吒2》可能会延期，估计等到资源能看的时候，早都被剧透八百遍了，不如我自己来。</p>
 <p>老实说，当看到用妖炼丹的那一刻，很难说《哪吒之魔童闹海》没有致敬游戏《黑神话：悟空》，无论《封神演义》还是《西游记》中，都没有关于炼丹的这一延伸，而《黑神话：悟空》的核心矛盾就在于，长生不老的伪善，其背后则是以人命或妖命为代价进行炼丹。</p>
@@ -168,15 +128,7 @@
 <p>我对阐教和截教也完全没有概念，在《封神演义》里，加上太上老君的人教，总共有三大教派，但这些仅存在于小说之中。</p>
 <p>最后，如果一定要说瑕疵，这部电影也是有的，好几处的强行搞笑，有些让人出戏，但也确实无大碍。</p>
 <p>题外话，看到一部如此高质量的电影获得高票房还是很高兴的，依靠本身素质过硬，而不是主旋律、流量明星或者民族情怀，这才是良性市场的正道呀，我愿意为其付费观看一下。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:1313/posts/huangshan-half-day-tour/</link>
-      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/huangshan-half-day-tour/</guid>
-      <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
-      <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
+]]></content:encoded></item><item><title>黄山半日游：云里雾里的工笔画</title><link>https://houjoe.me/posts/huangshan-half-day-tour/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/huangshan-half-day-tour/</guid><description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description><content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。                                                   <br>
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
 <p>这份困意源于早上6点的起床，我们6点四十开始坐大巴爬上黄山，直到12点20左右下山，总共接近6个小时的行程，比小红书上常说的8小时要短上一些。                                                                              <br>
 以前只知黄山很出名，多半归因于出现在各种挂历上的迎客松，但不知其中真意。此次爬完，我会真的向许多人推荐黄山，奇松怪石，雾凇云海，冬天还能多出一份别样的冷峻。                                                         <br>
@@ -200,15 +152,7 @@
 <li>最后，一定要关注头部保暖，不妨想一想，黄山松为啥个个造型都像樱桃小丸子里的花轮同学。</li>
 </ul>
 <p>好了，写完准备睡觉，新年快乐呀！</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</guid>
-      <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
-      <content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp"></p>
+]]></content:encoded></item><item><title>赛博朋克 2077：一场一百多小时的梦</title><link>https://houjoe.me/posts/cyberpunk-2077-hundred-hours-dream/</link><pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/cyberpunk-2077-hundred-hours-dream/</guid><description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description><content:encoded><![CDATA[<p><img alt="赛博朋克2077游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
 <p>整体评价来说，四颗星。2077 属于丰富剧情推动的开放世界游戏，有一点 GTA 的味道，但细节和自由度一般。</p>
 <p>上手前犹豫了好久，好像蠢驴家（开发团队 CDPR）的游戏都需要我尝试好几次，《巫师 3》尝试了两三次，《2077》也是如此，直到春节前第二次正式尝试才真正克服了第一人称的阻碍，好游戏需要再多一点点耐心。</p>
@@ -225,15 +169,7 @@
 <p>总的来说，《赛博朋克 2077》是一款值得投入时间的游戏。虽然它可能不是最完美的开放世界游戏，但它的故事、角色和世界观都非常出色。如果你能克服最初的上手难度，你会发现这是一场令人难忘的数字化冒险。</p>
 <p>最后，我想说的是，这款游戏最大的魅力在于它展现的不仅仅是一个科技发达的未来世界，更是一面映照人性的镜子。在这个充满义体改造和数字幻象的世界里，最珍贵的依然是人与人之间的真诚关系。</p>
 <p><img alt="游戏截图5" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image-5.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:1313/posts/poker-game-rules/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/poker-game-rules/</guid>
-      <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>扑克牌"干瞪眼"的规则</title><link>https://houjoe.me/posts/poker-game-rules/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/poker-game-rules/</guid><description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description><content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
 <h2 id="怎么准备呢">怎么准备呢？</h2>
 <ol>
@@ -315,29 +251,13 @@
 <li>炸一次，则输分乘以2</li>
 <li>炸两次，则输分乘以3（以此类推）</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
-      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
-      <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
-      <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
+]]></content:encoded></item><item><title>AI 聊天缺少压缩历史对话的能力</title><link>https://houjoe.me/posts/ai-chat-lack-compression-history/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/ai-chat-lack-compression-history/</guid><description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description><content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对&quot;创建新对话&quot;的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
 <p>在探讨复杂话题时也是如此。从最初的问题描述，到不断调整表述方式，再到逐步明确自己的思路，整个过程充满了试错和迭代。虽然这些尝试都是必要的，但真正需要保留的，可能只是最后达成的那些清晰认识。</p>
 <p>有趣的是，类似的问题在企业级 AI 应用中已经得到了解决。比如企业知识库的 AI 问答就能够智能地提取和保留核心信息，在有限空间内处理大量的上下文内容。但在我们日常的 AI 聊天中，还缺少这样的功能。</p>
 <p>想象一下，如果能有一个&quot;压缩历史对话并继续&quot;的功能，就像给深度对话做个内容提炼。它能智能地总结我们达成的共识，把那些反复尝试和调整的过程提炼成精简的要点。这样我们就能在有限的对话空间里，既保留关键信息，又能继续深入交流。</p>
 <p>对于像我这样经常需要和 AI 多轮沟通才能表达清楚的用户来说，这个功能尤其重要。它不仅能让对话更加连贯，也能让我们把精力更多地放在真正的问题探讨上，而不是被各种重复和试错所困扰。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>镇江小城，极简半日游</title>
-      <link>http://localhost:1313/posts/zhenjiang-half-day-tour/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zhenjiang-half-day-tour/</guid>
-      <description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description>
-      <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
+]]></content:encoded></item><item><title>镇江小城，极简半日游</title><link>https://houjoe.me/posts/zhenjiang-half-day-tour/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/zhenjiang-half-day-tour/</guid><description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description><content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
 <p>来镇江并非什么深思熟虑的计划，只是因为有事要去南京，由于实在去过太多次，老婆临时加了这个途径点。</p>
 <p>镇江与南京相接，在其东北方，从杭州开车去这两个城市几乎是同样的时长，三个小时左右，而再从镇江到南京也就一小时车程，完全不耽误事情，极为合适。</p>
 <p>而且镇江也算是我们江浙沪包游计划的一座城，不过，未罗列在明确的清单里，主要是太小了。与其一起的泰州、常州、扬州，这几个地级市都不大，挤在一块，上次山东半岛自驾，不经意间就穿过了这几座城。</p>
@@ -374,15 +294,7 @@
 <p>水晶肴肉是一种将卤汁和肉凝冻在一起的做法，切的方方正正，看上去有种水晶剔透的错觉。不过，吃起来偏咸，口感接近火腿肠，会更硬实一些。据说，吃的时候要浇上香醋，这样一来就吃完了镇江三怪。</p>
 <p><img alt="水晶肴肉" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-15.webp"></p>
 <p>每一次探索一座新城，哪怕城市不大，都越发感受到，即使去之前阅览大量文字、图片、视频，也始终无法在大脑里真正构建起一座城市的模糊轮廓，直到肉身降临的那一刻。江浙沪有太多这样值得逛得地方了，特别适合周末突然的造访。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:1313/posts/2024-favorite-things/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-favorite-things/</guid>
-      <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
-      <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
+]]></content:encoded></item><item><title>2024 玩物志：那些提升幸福感的好物</title><link>https://houjoe.me/posts/2024-favorite-things/</link><pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/2024-favorite-things/</guid><description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description><content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的&quot;物&quot;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
 <p>如果有人问我，有什么能快速提升生活品质的秘诀，那一定是改善那些每天陪伴我们的好物。</p>
 <h2 id="年度软件系列">年度软件系列</h2>
@@ -468,15 +380,7 @@
 <li>《我的母亲做保洁》：最近出现了很多描述社会各阶层的书籍，快递、保洁等等，而这本书尤为出色。它的与众不同在于作者细致入微的调研和平实坦诚的叙述，不刻意煽情，只是静静讲述故事。</li>
 </ul>
 <p>最后，期待我们 2025 年末再见，元旦快乐。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>自驾和骑行的新伴侣：AI 耳机</title>
-      <link>http://localhost:1313/posts/ola-friend-ai-earphone/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ola-friend-ai-earphone/</guid>
-      <description>体验 Ola Friend AI 耳机的使用感受，从开放式耳机的需求出发，探讨它在自驾和骑行场景下的优缺点，以及 AI 助手如何改变我们的日常生活。</description>
-      <content:encoded><![CDATA[<p>第一次感觉，很多想知道的东西，真的可以唾手可得。这极大地满足了我的好奇心，虽然我问的问题都是些没什么意义的，但于当时的自己而言，很有趣呀。</p>
+]]></content:encoded></item><item><title>自驾和骑行的新伴侣：AI 耳机</title><link>https://houjoe.me/posts/ola-friend-ai-earphone/</link><pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/ola-friend-ai-earphone/</guid><description>体验 Ola Friend AI 耳机的使用感受，从开放式耳机的需求出发，探讨它在自驾和骑行场景下的优缺点，以及 AI 助手如何改变我们的日常生活。</description><content:encoded><![CDATA[<p>第一次感觉，很多想知道的东西，真的可以唾手可得。这极大地满足了我的好奇心，虽然我问的问题都是些没什么意义的，但于当时的自己而言，很有趣呀。</p>
 <p>&ldquo;豆包豆包，江门有什么好吃的好玩的&rdquo;</p>
 <p>&ldquo;这附近的楼盘大概房价多少？&rdquo;</p>
 <p>&ldquo;离我最近的这座山叫什么？&rdquo;</p>
@@ -512,15 +416,7 @@
 <p><img alt="Ola Friend 耳机包装盒" loading="lazy" src="/images/posts/ola-friend-ai-earphone/IMG_3038.webp"></p>
 <p><img alt="Ola Friend 耳机充电盒" loading="lazy" src="/images/posts/ola-friend-ai-earphone/IMG_3037.webp"></p>
 <p><img alt="Ola Friend 耳机实物" loading="lazy" src="/images/posts/ola-friend-ai-earphone/IMG_3034.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>放下执念，打开取暖器</title>
-      <link>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</link>
-      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</guid>
-      <description>从对抗寒冷到接纳取暖设备，记录一次放下执念的心路历程，以及如何在寒冷天气中提升工作效率和生活幸福感。</description>
-      <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
+]]></content:encoded></item><item><title>放下执念，打开取暖器</title><link>https://houjoe.me/posts/let-go-obsession-turn-on-heater/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/let-go-obsession-turn-on-heater/</guid><description>从对抗寒冷到接纳取暖设备，记录一次放下执念的心路历程，以及如何在寒冷天气中提升工作效率和生活幸福感。</description><content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句&quot;你真不怕冷！&ldquo;的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在10度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
 最难熬的莫过于这样的天气：说冷也不算太冷，却总是冷冷嗖嗖，让人浑身不自在，注意力不断被这份不适所占据。而我实在厌倦了裹着厚重的冬衣，或者抱着电脑蜷缩在沙发上。</p>
 <p>在北方生活过的人，大概都能体会那种舒适，过往在北京，我宁愿春节不回湖北老家。在暖气充足的屋子里，即便外面寒风凛冽，屋内依然可以穿着短袖短裤，悠闲地守在电视或电脑前，轻松自在，没有任何精神阻力。可一旦回到华中地区的村子里，连起床这件小事都要做大量的思想工作。</p>
@@ -530,15 +426,7 @@
 <p>其次，廉价的取暖方式根本不存在。那些淘宝店家宣传的&quot;一天一度电&rdquo;，不是效果差，就是纯粹忽悠。</p>
 <p>除了北方的集中供暖，性价比最高的其实就是空调，但它在零度以下就显得力不从心了。而电取暖器的功率基本都是空调的一到两倍，要想省钱过冬，就只能耗费大量精力去用身体对抗了。</p>
 <p>当放下这种执念后，我反而轻松了：该开就开，与其在寒冷中耗费精力，不如把注意力放在真正有价值的事情上。这或许才是最省力的取暖方式。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:1313/posts/funeral-home-vigil/</link>
-      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/funeral-home-vigil/</guid>
-      <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
-      <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
+]]></content:encoded></item><item><title>在殡仪馆守灵的一晚上</title><link>https://houjoe.me/posts/funeral-home-vigil/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/funeral-home-vigil/</guid><description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description><content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
 <p>如今人到中年，不知是社会习俗变得开放，还是因为我们已不再是小孩，一切都变得不再遮遮掩掩，我问的很多问题都得到了答案。</p>
 <p>在老家，现今的丧事流程已大幅简化，甚至显得有些过于简略，不够庄重。逝者去世当天，遗体便送往殡仪馆火化，随即入土安葬。亲戚们当天会聚在一起吃席，到&quot;五七&quot;（去世第35天）时再聚一次，吃顿饭就算是脱白换红，结束丧事。这样的简化让我们能了解的传统礼仪也越来越少了。</p>
@@ -558,15 +446,7 @@
 <p><img alt="灵堂布置" loading="lazy" src="/images/funeral-home-vigil/IMG_2412.webp"></p>
 <p><img alt="夜晚的生命主题公园" loading="lazy" src="/images/funeral-home-vigil/IMG_2472.webp"></p>
 <p><img alt="告别仪式" loading="lazy" src="/images/funeral-home-vigil/IMG_2475.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>性价比最高的科学上网方案：Shadowrocket</title>
-      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
-      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
-      <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>性价比最高的科学上网方案：Shadowrocket</title><link>https://houjoe.me/posts/shadowrocket-guide/</link><pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/shadowrocket-guide/</guid><description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description><content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
 <ul>
 <li>如果不知道怎么改规则，让 AI 改，很靠谱的</li>
@@ -647,15 +527,7 @@
 <li>建议开启自动更新，在&quot;设置-更新-配置&quot;里，但记得关闭提醒</li>
 <li>建议开启订阅更新，在&quot;设置-更新-订阅&quot;里，开启打开时更新和自动后台更新</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>最实用的技能之一：做一本双语电子书</title>
-      <link>http://localhost:1313/posts/how-to-make-bilingual-ebook/</link>
-      <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-make-bilingual-ebook/</guid>
-      <description>介绍如何使用沉浸式翻译插件和 ChatGPT，将英文电子书转换为双语对照版本，让阅读不再受语言限制。</description>
-      <content:encoded><![CDATA[<p>这是最近最有用的技能了。</p>
+]]></content:encoded></item><item><title>最实用的技能之一：做一本双语电子书</title><link>https://houjoe.me/posts/how-to-make-bilingual-ebook/</link><pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/how-to-make-bilingual-ebook/</guid><description>介绍如何使用沉浸式翻译插件和 ChatGPT，将英文电子书转换为双语对照版本，让阅读不再受语言限制。</description><content:encoded><![CDATA[<p>这是最近最有用的技能了。</p>
 <p>由于看书比较杂，为了跨过语言的障碍，扩大看书的选择范围，真正实现看书无国界，开始尝试翻译只有英文资源或者中文翻译较差的书籍。</p>
 <p>当然，我也尝试过先提升个人英语阅读能力的办法，文章还行，书籍太耗神了，很容易看睡着，还是放弃折腾自己，走走捷径。</p>
 <p>不过，有一说一，如果不介意翻译质量，导入到微信读书里的英文书籍，微信读书是直接提供翻译能力的，也是双语对照效果。小缺陷是，读起来磕磕碰碰，有点难读下去。</p>
@@ -676,15 +548,7 @@
 <p>翻译之后应该会自动下载到本地，然后就可以导入到微信读书了。</p>
 <p>今年已经看了两本 ChatGPT 翻译的书籍，体验相当不错，虽然达不到人工精译的标准，但已经是成本和质量的完美契合点了。</p>
 <p>希望这个简单分享有用，也祝大家看书自由。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>说走就走的骑行</title>
-      <link>http://localhost:1313/posts/cycling-adventure/</link>
-      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cycling-adventure/</guid>
-      <description>从一圈只能骑行10公里开始，到现在已经骑行超过2000公里，穿行了15个城市。这是一个关于如何培养骑行兴趣，以及骑行给生活带来改变的故事。</description>
-      <content:encoded><![CDATA[<p>现在，每到一个地方，如果不骑行压过，心情就像有了便宜却不得占的懊悔，少了一种功德上的圆满，比如下雨的洛阳，比如时间不允许的烟台养马岛……</p>
+]]></content:encoded></item><item><title>说走就走的骑行</title><link>https://houjoe.me/posts/cycling-adventure/</link><pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/cycling-adventure/</guid><description>从一圈只能骑行10公里开始，到现在已经骑行超过2000公里，穿行了15个城市。这是一个关于如何培养骑行兴趣，以及骑行给生活带来改变的故事。</description><content:encoded><![CDATA[<p>现在，每到一个地方，如果不骑行压过，心情就像有了便宜却不得占的懊悔，少了一种功德上的圆满，比如下雨的洛阳，比如时间不允许的烟台养马岛……</p>
 <p><img alt="骑行装备" loading="lazy" src="/images/posts/cycling-adventure/image-17674.webp"></p>
 <p>整个夏天到现在，基本是速干衣轮着换。100元三件的迪卡侬速干衣是我的最爱，虽然松松垮垮，但胜在凉爽轻便，是我最爱的&quot;骑行服&quot;了，买起来也是恣意妄为。</p>
 <p>与小红书精致的骑行不同，我不太想为骑行单独准备衣服，之前的骑行裤已经闲置了。毕竟，骑行需要骑行裤这件事，无形中放大了骑行的门槛，阻碍了说走就走的随意。</p>
@@ -728,15 +592,7 @@
 <p>减了，似乎又没减。</p>
 <p>骑行五个月，数据上只少了10斤，体型上变化不大，而体检里，中度脂肪肝也退到了轻度。</p>
 <p>不过，最大的变化还是身体的感觉，有了一种对身体&quot;虚无&quot;的掌控感，无法描述，以及，多了一种探索这个现实世界的常规方式。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>最简约的科学上网方案：Quantumlt X</title>
-      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
-      <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>最简约的科学上网方案：Quantumlt X</title><link>https://houjoe.me/posts/quantumult-x-guide/</link><pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/quantumult-x-guide/</guid><description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description><content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
 <ul>
 <li>这个方案更适合已经了解基本科学上网的人，写得比较简略</li>
@@ -810,15 +666,7 @@
 <h3 id="2需要定期打开-quantumltx">（2）需要定期打开 QuantumltX</h3>
 <p>似乎在后台无法及时更新，如果遇到网络不正常，打开一次等它更新即可。</p>
 <h2 id="继续补充中">继续补充中</h2>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>居然是第一次去日本</title>
-      <link>http://localhost:1313/posts/first-time-in-japan/</link>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
-      <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
-      <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
+]]></content:encoded></item><item><title>居然是第一次去日本</title><link>https://houjoe.me/posts/first-time-in-japan/</link><pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/first-time-in-japan/</guid><description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description><content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
 <p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
 <p>在日本的这一路，我们去了东京、富士山、镰仓、大阪、京都。不过，整体可以粗暴地分为两部分，东京周边（东京、富士山、镰仓）和大阪周边（大阪、京都），而从我个人的观感来说，东京更像北京，更秩序也更紧张，大阪则像上海，松弛但有活力，从两个城市对待垃圾分类的态度也可以一窥一二。</p>
 <p>如果再去日本，大阪应该会变成我们的首选……</p>
@@ -870,15 +718,7 @@
 <li>日本不同名字的地铁属于不同的公司，换乘大部分需要先出站再进站</li>
 <li>善用小红书，真的帮助解决了非常多的问题</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Joe&#39;s Recap：过年那些事儿</title>
-      <link>http://localhost:1313/posts/chinese-new-year-2024-recap/</link>
-      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/chinese-new-year-2024-recap/</guid>
-      <description>春节回老家的一些感受和思考，以及路上的见闻</description>
-      <content:encoded><![CDATA[<p>从自驾返回杭州开始，已经慢慢构思着这篇文章的大纲，也算是自驾的乐趣之一。回程 1200 公里左右，我们把行程变成了三天两晚的边走边逛，原本准备去江西南昌尝一尝瓦罐汤，不过，省会城市周边的高速现状让我们不得不改了线路，改为绕道安徽安庆，途径黄山市宏村，再返回杭州，不算辛苦的奔波。</p>
+]]></content:encoded></item><item><title>Joe's Recap：过年那些事儿</title><link>https://houjoe.me/posts/chinese-new-year-2024-recap/</link><pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/chinese-new-year-2024-recap/</guid><description>春节回老家的一些感受和思考，以及路上的见闻</description><content:encoded><![CDATA[<p>从自驾返回杭州开始，已经慢慢构思着这篇文章的大纲，也算是自驾的乐趣之一。回程 1200 公里左右，我们把行程变成了三天两晚的边走边逛，原本准备去江西南昌尝一尝瓦罐汤，不过，省会城市周边的高速现状让我们不得不改了线路，改为绕道安徽安庆，途径黄山市宏村，再返回杭州，不算辛苦的奔波。</p>
 <h2 id="湖北的大雪与冻雨">湖北的大雪与冻雨</h2>
 <p>2024 年春节最大的新闻始于湖北大雪与冻雨带来的华中地区交通瘫痪。</p>
 <p>在大雪中，我一开始没有分清冻雨给这次灾害带来的加成，直到留意到路边被压弯的树，一种类似于雾凇的冰覆盖在树的表层，这确实不是雪可以做到的。在武汉穿行时，不时可以看到已经压断的树枝倒在路边。</p>
@@ -931,15 +771,7 @@
 <p><img alt="曼达洛人" loading="lazy" src="/images/posts/chinese-new-year-2024-recap/image-7.webp"></p>
 <h2 id="不过">不过</h2>
 <p>经过一整个春节的酝酿，我们已经下定决心，明年不回家过年了，还是出去玩吧。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>新昌一日游：碳水美食与下岩贝村</title>
-      <link>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</link>
-      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</guid>
-      <description>一次轻松愉快的新昌一日游，品尝当地特色美食，探访山顶下岩贝村</description>
-      <content:encoded><![CDATA[<p>又是一次极其休闲的江浙沪周边游。</p>
+]]></content:encoded></item><item><title>新昌一日游：碳水美食与下岩贝村</title><link>https://houjoe.me/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</guid><description>一次轻松愉快的新昌一日游，品尝当地特色美食，探访山顶下岩贝村</description><content:encoded><![CDATA[<p>又是一次极其休闲的江浙沪周边游。</p>
 <p>新昌县是绍兴下辖的县城，之前以为是嵊（shèng）州市的一个区，因为地图上来看实在太近了。由于不到两个小时车程就可以从杭州到达新昌县，原本留宿一晚的计划改为了当日往返。</p>
 <p><img alt="新昌县城一角" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2062.webp"></p>
 <p>游玩也很简单，如果你也希望以最放松的方式来体验一次新昌，可以直接参考一下我们的极简计划：首先，直接略过本地标志性景点，大佛寺，对这类景点实在无感。然后，中午吃一吃本地美食，下午去山顶的下岩贝村喝喝咖啡看看风景，晚上再来市区吃一顿，结束，返程即可。美食可以根据自己的饱腹程度和饮食习惯来安排午餐和晚餐。</p>
@@ -963,15 +795,7 @@
 <p><img alt="芋饺" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2147.webp"></p>
 <p><img alt="卤鸡爪" loading="lazy" src="/images/posts/xinchang-one-day-trip-food-and-xiayanbei-village/IMG_2149.webp"></p>
 <p>我觉得这三家美食都挺好的，除了芋饺，而且在查攻略的时候，我们去掉了本地与年糕相关的美食，这个也有很多，可以在小红书关注一下。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>美食是一场发现之旅</title>
-      <link>http://localhost:1313/posts/food-discovery-journey/</link>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/food-discovery-journey/</guid>
-      <description>探索味蕾的边界，从家乡的重口味到世界各地的美食，一场关于味觉的发现之旅</description>
-      <content:encoded><![CDATA[<!-- raw HTML omitted -->
+]]></content:encoded></item><item><title>美食是一场发现之旅</title><link>https://houjoe.me/posts/food-discovery-journey/</link><pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/food-discovery-journey/</guid><description>探索味蕾的边界，从家乡的重口味到世界各地的美食，一场关于味觉的发现之旅</description><content:encoded><![CDATA[<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p><img alt="重口味的老家菜" loading="lazy" src="/images/posts/food-discovery-journey/image-2.webp"></p>
 <p>重口味的老家菜</p>
@@ -987,15 +811,7 @@
 <p><img alt="埃塞俄比亚菜：英吉拉" loading="lazy" src="/images/posts/food-discovery-journey/image-1.webp"></p>
 <p>就如对粤菜的转变一样，我们的味蕾是可以改变的，但这需要抵抗本能的，突破之后，我们可以体验更多。</p>
 <p>我觉得，味蕾就像是兴趣，但兴趣不应该是一种感觉，而是一种过程，因为人不会天生就喜欢所有东西，需要一种缘分，或者引路人。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:1313/posts/it-takes-two-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/it-takes-two-review/</guid>
-      <description>重温《双人成行》的游戏体验，探讨这款合作游戏如何通过互动玩法传递情感价值，以及游戏与现实生活的共鸣。</description>
-      <content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.webp"></p>
+]]></content:encoded></item><item><title>《双人成行》：确实值得再玩一次</title><link>https://houjoe.me/posts/it-takes-two-review/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/it-takes-two-review/</guid><description>重温《双人成行》的游戏体验，探讨这款合作游戏如何通过互动玩法传递情感价值，以及游戏与现实生活的共鸣。</description><content:encoded><![CDATA[<p><img alt="游戏截图" loading="lazy" src="/images/posts/it-takes-two-review/image.webp"></p>
 <p>最近该游戏在 Steam 特价，六十多块就可以买下。</p>
 <p>翻看记录，上一次体验是在三年前的 Xbox 上。如今主机已不在身边，记忆也渐渐模糊，便趁这机会和老婆在 PC 上重温了一遍。</p>
 <p>对于有主机游戏经验的玩家来说，这款游戏其实很友好 —— 引导清晰明了，惩罚机制极其轻松，主要以解密和跳跃为主。游戏中穿插的小游戏更是休闲得不能再休闲。</p>
@@ -1016,15 +832,7 @@
 <p><img alt="游戏截图7" loading="lazy" src="/images/posts/it-takes-two-review/image-7.webp"></p>
 <p><img alt="游戏截图8" loading="lazy" src="/images/posts/it-takes-two-review/image-8.webp"></p>
 <p><img alt="游戏截图9" loading="lazy" src="/images/posts/it-takes-two-review/image-9.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:1313/posts/deadpool-and-wolverine-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/deadpool-and-wolverine-review/</guid>
-      <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>《死侍与金刚狼》的疑问和彩蛋</title><link>https://houjoe.me/posts/deadpool-and-wolverine-review/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/deadpool-and-wolverine-review/</guid><description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description><content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
 <p>首先，确实是粉丝向电影，以致于闪过的超级英雄多到让人充满问号，但是除了死侍与金刚狼，都是四五线之外的超级英雄或者反派。其次，还是挺闹腾的，嘴碎的死侍和一言不合就插人的金刚狼，看完脑子里嗡嗡的。回味来看，觉得这部电影的分数不会太高，一个是因为负担太重了，对观众的要求有些高，而且觉得漫威宇宙真的有些乏味了，不管是爆米花式复仇者还是另类英雄，套路都太多了。</p>
 <p>不过，还是觉得这部电影很欢乐的，太多的梗，让人会心一笑，漫威太懂造梗和彩蛋了。</p></blockquote>
@@ -1069,15 +877,7 @@
 <li>绿巨人：《复仇者联盟》</li>
 <li>超人狼：亨利·卡维尔饰演</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>关于我</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>了解更多关于我的信息</description>
-      <content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
+]]></content:encoded></item><item><title>关于我</title><link>https://houjoe.me/about/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/about/</guid><description>了解更多关于我的信息</description><content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
 <p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>
 <p><code>Coding with AI</code>、<code>Product Manager</code>、<code>喜欢码字</code>、<code>Nas 小白用户</code>、<code>无人机机长</code>、<code>主机游戏玩家</code>、<code>有个流浪猫</code>、<code>江浙沪包游中</code>、<code>骑行新手</code>、<code>顺风车司机</code></p>
 <p>主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。</p>
@@ -1104,15 +904,7 @@
 <p>✨ Type like texting, think like connecting. 希望做一款极简卡片笔记，让你像聊天一样快速记录，像 Logseq 那样自由关联。最终目标是，Capture your idea instantly, let AI handle the rest.</p></blockquote>
 </li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:1313/posts/black-myth-wukong-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/black-myth-wukong-review/</guid>
-      <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
-      <content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
+]]></content:encoded></item><item><title>黑神话悟空：又爱又骂的西游冒险</title><link>https://houjoe.me/posts/black-myth-wukong-review/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/black-myth-wukong-review/</guid><description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description><content:encoded><![CDATA[<p>终于在3周内以接近80小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10分制的情况下，昨天晚上打的正常结局，我给了8分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到8.9分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
 <p>这三周里，一直在游戏群和各路天命人讨论着，B站、小红书、YouTube 的时间线里几乎都是这款游戏的内容推荐，即使在游戏之中，情不自禁处经常爆粗口，骂游戏，骂妖怪，骂地图，但是依然被故事吸引着，这绝对算是一段高光的游戏时刻，对得起这铺天盖地的&quot;过度&quot;宣传。</p>
 <p>通关后再回头看这部游戏，优点和缺点确实都非常明显，如此出圈，但其实并不适合很多人，尤其是之前没有玩过 ARPG 的新入局玩家。一开始打 10 分的媒体，能理解其中的情怀加分，但肯定到不了。</p>
@@ -1157,15 +949,7 @@
 <p>至于专业的游戏评测，这不是我擅长的，无法猜测。只能说，《黑神话悟空》算是我的年度游戏，其带来的游戏体验长度和深度，最为荡气回肠。即使吐槽甚多，缺点明显，但瑕不掩瑜，我依然期待其&quot;未竟&quot;的故事。</p>
 <p>今天已经选择了再入轮回了，不过，我应该不会真的二周目，只是多拿几个成就，这个游戏，就算结束了吧。</p>
 <p><img alt="游戏结尾" loading="lazy" src="/images/posts/black-myth-wukong-review/2358720_20240911221404_1.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:1313/posts/2023-toys-recap/</link>
-      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-toys-recap/</guid>
-      <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
-      <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
+]]></content:encoded></item><item><title>Joe's Recap: 2023 玩物志</title><link>https://houjoe.me/posts/2023-toys-recap/</link><pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/2023-toys-recap/</guid><description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description><content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。                                   <br>
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……                                                                                   <br>
 当我尝试回顾这一年，记忆始终有些嘈杂，至少，五月之前的记忆已变得模糊，好在有相册时间线和之前码出来的一些文章帮助回忆。                                                                                               <br>
 另外，网上闲逛时偶遇了推特上网友分享的某大神每年问自己的 40 个问题，《<a href="https://stephango.com/40-questions">40 questions to ask yourself every year</a>》。边回忆边回答，非常推荐。回顾与盘点的意义在于&quot;存档&quot;，就当做写给未来的自己，等到回溯时不至于混沌一片。</p>
@@ -1245,15 +1029,7 @@
 <h2 id="最后">最后</h2>
 <p>关于软硬件的工具盘点，其实我一直有维护自己的工具包，放在 Whimsical 里。</p>
 <p><a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph">https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph</a></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>NAS 私有云：真国内观影必备</title>
-      <link>http://localhost:1313/posts/nas-private-cloud-guide/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nas-private-cloud-guide/</guid>
-      <description>一篇详尽的 NAS 私有云入门指南：从硬件选购建议到实际应用场景，手把手教你搭建一个功能完备的家庭媒体中心和数据备份系统。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>NAS 私有云：真国内观影必备</title><link>https://houjoe.me/posts/nas-private-cloud-guide/</link><pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/nas-private-cloud-guide/</guid><description>一篇详尽的 NAS 私有云入门指南：从硬件选购建议到实际应用场景，手把手教你搭建一个功能完备的家庭媒体中心和数据备份系统。</description><content:encoded><![CDATA[<blockquote>
 <p>NAS 是指家庭私有存储空间的硬件，使用上可以理解为个人的私有云网盘。</p></blockquote>
 <p>很可惜，我想推荐的 NAS 品牌「极空间」连个推荐码机制都没有，不然这篇文章早写完了，事实证明，用爱发电还是动力不强劲，断断续续拖了至少两个月。</p>
 <h2 id="为什么需要-nas">为什么需要 NAS？</h2>
@@ -1310,15 +1086,7 @@
 <li>如果你想折腾 Docker，最好你懂技术，或者你有一个懂技术的朋友，或者 AI</li>
 <li>重要的信息记得开启双重备份，尤其是相册什么的，影视资源都是容易找到的</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Joe&#39;s Recap:  今天是来杭州一年的日子</title>
-      <link>http://localhost:1313/posts/hangzhou-one-year-recap/</link>
-      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hangzhou-one-year-recap/</guid>
-      <description>在杭州生活一年的感悟：从初来乍到到渐入佳境，分享我对这座城市的印象与思考</description>
-      <content:encoded><![CDATA[<p>按照约定又要开始码字分享了，上一次这个 Recap 系列还是8月8日，计划定期写下去。</p>
+]]></content:encoded></item><item><title>Joe's Recap: 今天是来杭州一年的日子</title><link>https://houjoe.me/posts/hangzhou-one-year-recap/</link><pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/hangzhou-one-year-recap/</guid><description>在杭州生活一年的感悟：从初来乍到到渐入佳境，分享我对这座城市的印象与思考</description><content:encoded><![CDATA[<p>按照约定又要开始码字分享了，上一次这个 Recap 系列还是8月8日，计划定期写下去。</p>
 <p>写这篇分享时，正坐在江西九江市八里湖旁的一个酒店里，随机开始了一个「番茄钟」，也就是一轮的时间，写一写最近的所思所想，码字总是让人能很快安静下来。</p>
 <p>在已经过去的8月与即将结束的9月里，不管是计划内或计划外的行程，长途是一个始终贯穿的主题，比如，「<a href="/posts/south-china-road-trip-review">3200公里的华南之行</a>」，以及当下正处在第二次往返老家的长途行程里，累积行驶将超过1万公里。</p>
 <p><img alt="在从安徽即将进入浙江的服务区里" loading="lazy" src="/images/posts/hangzhou-one-year-recap/Untitled.webp"></p>
@@ -1353,15 +1121,7 @@
 <li>目前开始阅读《埃隆·马斯克传》，进度1%……</li>
 </ul>
 <p><img alt="最近在读的书籍" loading="lazy" src="/images/posts/hangzhou-one-year-recap/Untitled%203.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>超过 3200 公里的华南自驾，写一写感受</title>
-      <link>http://localhost:1313/posts/south-china-road-trip-review/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/south-china-road-trip-review/</guid>
-      <description>此刻我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天也关了它 9 天</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>超过 3200 公里的华南自驾，写一写感受</title><link>https://houjoe.me/posts/south-china-road-trip-review/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/south-china-road-trip-review/</guid><description>此刻我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天也关了它 9 天</description><content:encoded><![CDATA[<blockquote>
 <p>此刻，我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天，也关了它 9 天。</p></blockquote>
 <p>原本我以为最终行程可能接近 2800 公里，没想到，汇总了一下实际导航里程，超过 3240 公里，下图中从杭州到广州的的长环为实际行程轨迹图，主要在浙江、江西、广东、福建华南四省。</p>
 <p><img alt="行程轨迹图" loading="lazy" src="/images/posts/south-china-road-trip-review/image-10.webp"></p>
@@ -1445,15 +1205,7 @@
 <h3 id="开图是一种乐趣">开图是一种乐趣</h3>
 <p>我很喜欢高德地图的足迹功能，这也是坚决不用车自带导航的原因，就像当年的迷雾地图，每到一个地方点亮一片区域，希望有朝一日可以点亮中国所有的城市，这既是地图导航也是记录本身。</p>
 <p>而且不只是地图上的点亮，只有真切到了一个城市或者区域，原本在地图上只是一个点的地方，才会突然变得立体起来，比如汕头，比如深圳，比如泉州，不再只是一个名字，一堆标签，而是实实在在的建筑、美食和人气，想想，仅仅只是能作为一个观察者，已经感到非常幸运了。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Joe&#39;s Recap：8月以前</title>
-      <link>http://localhost:1313/posts/joe-recap-8-month-before/</link>
-      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/joe-recap-8-month-before/</guid>
-      <description>这一篇是写给 Newsletter 通道的文章，欢迎订阅关注</description>
-      <content:encoded><![CDATA[<p>没想到已经8月了，再过四个月今年就结束了，上一次推送还是2月份，之后，即使更新了一些文章，也没有再推送过，主要是很多写的内容不适合推给所有人，不打扰反而更好。</p>
+]]></content:encoded></item><item><title>Joe's Recap：8月以前</title><link>https://houjoe.me/posts/joe-recap-8-month-before/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/joe-recap-8-month-before/</guid><description>这一篇是写给 Newsletter 通道的文章，欢迎订阅关注</description><content:encoded><![CDATA[<p>没想到已经8月了，再过四个月今年就结束了，上一次推送还是2月份，之后，即使更新了一些文章，也没有再推送过，主要是很多写的内容不适合推给所有人，不打扰反而更好。</p>
 <p>不过，我自己还是希望实现最初码字的愿望，让文字的分享成为日常习惯，至少可以每隔一段时间写一写之前时间的总结，就像面对一群朋友时的侃大山。</p>
 <h2 id="1-最近的心态变化">1. 最近的心态变化</h2>
 <h3 id="-以不变应万变">→ 以不变应万变</h3>
@@ -1492,15 +1244,7 @@
 <p>这部分不用多说，虽败家，但仍然推荐，还有一篇想写给 Nas，但还在清单里，先立 flag。</p>
 <p><a href="/posts/why-not-buy-tesla">为什么不推荐买特斯拉</a></p>
 <p><a href="/posts/steam-deck-review">发布一年多，终于入手了 Steam Deck</a></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>《塞尔达传说·王国之泪》游记（涉及剧透）</title>
-      <link>http://localhost:1313/posts/tears-of-the-kingdom-review/</link>
-      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tears-of-the-kingdom-review/</guid>
-      <description>这篇游记是记录在海拉鲁大陆这个开放世界的探索之旅纯记录分享没啥价值</description>
-      <content:encoded><![CDATA[<p>端午节正好错峰不出行，杭州的天气也是不适合出门，更适合宅着，于是，在家没日没夜的游戏开图，本想等着海拉鲁大陆都用步行探索一遍，奈何游戏地图太大，决定一口气推完最后一个主剧情，先救一下公主。</p>
+]]></content:encoded></item><item><title>《塞尔达传说·王国之泪》游记（涉及剧透）</title><link>https://houjoe.me/posts/tears-of-the-kingdom-review/</link><pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/tears-of-the-kingdom-review/</guid><description>这篇游记是记录在海拉鲁大陆这个开放世界的探索之旅纯记录分享没啥价值</description><content:encoded><![CDATA[<p>端午节正好错峰不出行，杭州的天气也是不适合出门，更适合宅着，于是，在家没日没夜的游戏开图，本想等着海拉鲁大陆都用步行探索一遍，奈何游戏地图太大，决定一口气推完最后一个主剧情，先救一下公主。</p>
 <p><img loading="lazy" src="/images/posts/tears-of-the-kingdom-review/image-1.webp"></p>
 <p>不过，救完公主还是有些怅然若失，尤其是当所有剧情结束之后，游戏又只能回到打 Boss 之前的存档，有点不想读档再开了（当然，肯定是暂时的）。加上之前的游戏历史，这片海拉鲁大陆几乎都没有怎么安宁过，一直都在重复着大魔王的剧情，且不说还有一个海拉鲁流氓。</p>
 <p>很好奇，为啥不能像《战神·诸神黄昏》一样，留一个大结局后的世界，让这个世界留一丝祥和，还是有好多事情可以继续做的。</p>
@@ -1542,15 +1286,7 @@
 <h1 id="最后的最后">最后的最后</h1>
 <p>王国之泪绝对是我目前玩过游戏里排至，它是部分超越《旷野之息》的存在。</p>
 <p>玩一场游戏有一种沉浸式体验一个完整故事的经历，与主角一起走向一种结束，类似的感觉在《荒野大镖客2》《战神·诸神黄昏》《战神4》《光环系列》《艾尔登法环》《GTA V》《Stray》里都能发现。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>台(tāi)州游记</title>
-      <link>http://localhost:1313/posts/taizhou-travel-notes/</link>
-      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/taizhou-travel-notes/</guid>
-      <description>台州，江浙沪包游计划清单上的一个点，从天台山道教学院到台州府城，一次即兴而随性的周末自驾之旅。</description>
-      <content:encoded><![CDATA[<p>台州还是值得写一篇游记的，只是这个不能当做攻略看，我们一般出行比较随意，找一个目的地之后，以即兴发挥为主。</p>
+]]></content:encoded></item><item><title>台(tāi)州游记</title><link>https://houjoe.me/posts/taizhou-travel-notes/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/taizhou-travel-notes/</guid><description>台州，江浙沪包游计划清单上的一个点，从天台山道教学院到台州府城，一次即兴而随性的周末自驾之旅。</description><content:encoded><![CDATA[<p>台州还是值得写一篇游记的，只是这个不能当做攻略看，我们一般出行比较随意，找一个目的地之后，以即兴发挥为主。</p>
 <p>台州，原本只是江浙沪包游计划清单上的一个点，结果在地图和小红书里搜罗的时候，发现台州可玩的地方比较分散，熟称散装台州，靠海与不靠海的部分相差大概有两个小时左右的车程，最终选了其中稍近的一点作为周末可去的部分，也就是这次的台州临海市「台州府城」，而查询路线的过程中又发现了之前收藏的一个台州天台山地点「浙江道教学院」，也就顺道加了一个途经点。</p>
 <p>自驾旅程分为好几个部分。</p>
 <h2 id="-天台山道教学院">→ 天台山道教学院</h2>
@@ -1590,15 +1326,7 @@
 <p><img alt="树荫中弯弯的城墙" loading="lazy" src="/images/posts/taizhou-travel-notes/taizhou0005.webp"></p>
 <p>树荫中弯弯的城墙</p>
 <p><img alt="城墙的8个「敌台」之一" loading="lazy" src="/images/posts/taizhou-travel-notes/taizhou0011.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>为什么不推荐买特斯拉</title>
-      <link>http://localhost:1313/posts/why-not-recommend-tesla/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/why-not-recommend-tesla/</guid>
-      <description>从一个特斯拉车主的角度，分享半年一万公里的使用体验，以及为什么我反而不推荐购买特斯拉</description>
-      <content:encoded><![CDATA[<p><img alt="特斯拉里程表显示一万公里里程碑" loading="lazy" src="/images/posts/why-not-recommend-tesla/tesla-dashboard.webp"></p>
+]]></content:encoded></item><item><title>为什么不推荐买特斯拉</title><link>https://houjoe.me/posts/why-not-recommend-tesla/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/why-not-recommend-tesla/</guid><description>从一个特斯拉车主的角度，分享半年一万公里的使用体验，以及为什么我反而不推荐购买特斯拉</description><content:encoded><![CDATA[<p><img alt="特斯拉里程表显示一万公里里程碑" loading="lazy" src="/images/posts/why-not-recommend-tesla/tesla-dashboard.webp"></p>
 <p>断断续续开车，到今天（2023年05月25日），正好表显一万公里了，从22年10月份购买特斯拉 Model Y 到现在，除了中间的的一个月因为新冠感染滞留在英国，基本每周都在出行，实现我们的&quot;江浙沪包游&quot;计划。</p>
 <p>在半年跑满一万公里之后，感觉已经足够可以分享一下使用特斯拉电动汽车的体验。</p>
 <p>不过，以下带有偏见，谨慎阅读。</p>
@@ -1641,15 +1369,7 @@
 <p>有一年夏天突发奇想，花了两个小时在武汉骑共享单车环湖了一圈，之后开始喜欢这个有趣的运动方式，当时就在想，如果有车，一定要在车后备箱放上自行车，有湖有岛就环一圈。今年四月终于说服老婆，在后备箱放了两辆折叠自行车，出行基本都带着，如果周末无其他安排就随便找个湖或者岛骑行一次。</p>
 <h2 id="5说走就走的露营">（5）说走就走的露营</h2>
 <p>得益于车超大空间，包括后备箱、后备箱的底备箱以及前备箱，我们在车上一直存放着被子、天幕、野餐垫、两把椅子、折叠桌、工兵铲、露营灯等不同露营装备。而且，电车相对燃油车有一个小的优点，可以直接车里长时间开车空调休息，不管外面天气如何，可以实现恒温通风的效果。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>一个产品经理的自我修行</title>
-      <link>http://localhost:1313/posts/product-manager-self-cultivation/</link>
-      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/product-manager-self-cultivation/</guid>
-      <description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>一个产品经理的自我修行</title><link>https://houjoe.me/posts/product-manager-self-cultivation/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/product-manager-self-cultivation/</guid><description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description><content:encoded><![CDATA[<blockquote>
 <p>这篇文章写给自己，工作和生活都需要一些简单可运行的规则。</p></blockquote>
 <p>对一个产品经理来说，或者宽泛一些，对一个普通搬砖工而言，不管是在公司之间的跳动还是在一个公司内部不同团队之间的变动，都会带来工作方式和工作习惯的冲击。但不管外部如何变化，我需要一个可以相对笃定的个人工作规则（Simple Rules），这样可以集中更多精力在具体事务上。</p>
 <h2 id="规则1面向工作的斯多葛主义">规则1：面向工作的斯多葛主义</h2>
@@ -1703,15 +1423,7 @@
 <hr>
 <blockquote>
 <p>以上规则都是从日常琐碎事务中提炼出来的，希望通过文章的方式将这些隐性经验显性化，不一定对，也不一定表达准确，我会持续完善，有不同意见可以留言哦。</p></blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>好的问题能自动驱动我们获得答案</title>
-      <link>http://localhost:1313/posts/good-questions-drive-answers/</link>
-      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/good-questions-drive-answers/</guid>
-      <description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description>
-      <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a></p>
+]]></content:encoded></item><item><title>好的问题能自动驱动我们获得答案</title><link>https://houjoe.me/posts/good-questions-drive-answers/</link><pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/good-questions-drive-answers/</guid><description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description><content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a></p>
 <p>flomo 的新年特刊推文（flomo 是一款卡片笔记工具）</p>
 <blockquote>
 <p>好的问题能自动驱动我们获得答案</p></blockquote>
@@ -1734,15 +1446,7 @@
 <p>记录问题的时候建议记录一下触发这个问题的动机，这样可以让自己在处理的时候，仍然可以保留较强的积极性，坚持做完；</p>
 <p>处理问题的时候，第一性原理很重要，回到问题最本质的部分，这样不会被其呈现的当前心态所迷惑，而且一旦回归本质，往往会有更多选择；</p>
 <p>每个问题都值得拥有一个「工作台」，这个「工作台」不是真的工作台，我喜欢为每个问题配置一个笔记或者文档，相关信息放置其中，主要是因为，很多时候处理一些问题，时间上并不是连贯的，这这些「工作台」不仅可以让这些问题随时都可以继续，还可以在处理之后，随时都可以回溯；</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>在延吉的二日游记</title>
-      <link>http://localhost:1313/posts/yanji-two-days-trip/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/yanji-two-days-trip/</guid>
-      <description>一次从北京到延吉的周末美食之旅，探访了中国最大的朝鲜族聚集地，品尝了地道的朝鲜美食，并意外造访了中朝边境小城图们。</description>
-      <content:encoded><![CDATA[<p>写游记的时候，正在图们北站（23号下午5点半）。</p>
+]]></content:encoded></item><item><title>在延吉的二日游记</title><link>https://houjoe.me/posts/yanji-two-days-trip/</link><pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/yanji-two-days-trip/</guid><description>一次从北京到延吉的周末美食之旅，探访了中国最大的朝鲜族聚集地，品尝了地道的朝鲜美食，并意外造访了中朝边境小城图们。</description><content:encoded><![CDATA[<p>写游记的时候，正在图们北站（23号下午5点半）。</p>
 <p><img alt="图们北站" loading="lazy" src="/images/posts/yanji-two-days-trip/image-8.webp"></p>
 <p>没想到，四点多的时候，东北的天已经几乎完全黑了下来，肉眼可见的速度。而最近的回延吉的高铁是在晚上7点，一个半小时的间隙，不如趁热在手机上码码字…</p>
 <h2 id="去延吉序">去延吉（序）</h2>
@@ -1810,15 +1514,7 @@
 <h2 id="行程还未结束">行程还未结束</h2>
 <p>还有一天，美食还会继续…
 北京昌平区已经新增几例确诊，有点担忧了，特别订阅了&quot;国务院客户端&quot;小程序里从延吉到北京的防疫政策变动，希望一切顺利。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>哪些东西/事情打开了你的新世界大门</title>
-      <link>http://localhost:1313/posts/things-that-opened-new-world/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/things-that-opened-new-world/</guid>
-      <description>回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。</description>
-      <content:encoded><![CDATA[<p><img alt="平凡的世界" loading="lazy" src="/images/posts/things-that-opened-new-world/image-1.webp"></p>
+]]></content:encoded></item><item><title>哪些东西/事情打开了你的新世界大门</title><link>https://houjoe.me/posts/things-that-opened-new-world/</link><pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/things-that-opened-new-world/</guid><description>回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。</description><content:encoded><![CDATA[<p><img alt="平凡的世界" loading="lazy" src="/images/posts/things-that-opened-new-world/image-1.webp"></p>
 <p>这是一个最近偶然蹦到脑海里的问题，原本以为可以在知乎里提出一个如此优秀的问题，结果证明了&quot;太阳底下无新鲜事&quot;的预言，知乎快速给我匹配了重复的问题，最后我选择其中一个来分享一下自己的新世界敲门砖们，希望可以遇到有着同样经历的小伙伴。</p>
 <p>重新审视这个问题的时候，我发现敲门砖的对象，也就是这些新世界们有很多维度，有物质的也有精神的，也有不一样的思考角度的，虽然现在看来，它们的存在已经理所当然，但最初敲开时的惊心动魄还是历历在目。</p>
 <h2 id="平凡的世界-2008">平凡的世界 2008</h2>
@@ -1855,15 +1551,7 @@
 <p>我觉得，这是一切启智的开端，是书本上无法教授的部分，往常的学习里更多是面向其他对象的思考和推演，当有一天，发现&quot;矛头&quot;可以对向自己的时候，仿佛柳暗花明新一村，只是，就像我无法解释自己如何以及何时产生的&quot;自我意识&quot;那样，我也不清楚何时开始更频繁去尝试自省或反观自己，不过，一旦开始，自己可以真的理解并遵从更多&quot;理性&quot;，对自己这个新世界更愿意尝试&quot;自定义设置&quot;，而不是无意识得遵从过往的文化或者基因的传承。</p>
 <p><img alt="自省" loading="lazy" src="/images/posts/things-that-opened-new-world/image-11.webp"></p>
 <p>新世界或大或小，敲门砖还有很多，哪怕只是一张全币种的 Visa 卡，也可以打开一些新世界，更不用说，那些已经在用的 Google 搜索、Telegram 和自己的护照，只是有些现在盖棺定论还为时尚早，或者敲开的新世界不够浓墨重彩。不过，回顾新世界的敲门砖这件事最大的意义，其实是尝试归纳之前新世界们隐藏的盲点，即不易于被发现的原因，以此来发现更多有趣的新世界，不过，最核心的是，要持续保持旺盛的好奇心。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>2019 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</guid>
-      <description>分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。</description>
-      <content:encoded><![CDATA[<p>能够经历过时间轮换并依然活用在手机和背包里的软件与硬件才是年度玩物，借着 2020 的开始，决定分享一下 2019 年的「玩物志」，之前经常在微信群和 Telegram 群分享好用有趣的 App，那些都是增量，今天分享的是 2019 存量。</p>
+]]></content:encoded></item><item><title>2019 玩物志：年度软件与硬件盘点</title><link>https://houjoe.me/posts/2019-toys-and-gadgets-recap/</link><pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/2019-toys-and-gadgets-recap/</guid><description>分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。</description><content:encoded><![CDATA[<p>能够经历过时间轮换并依然活用在手机和背包里的软件与硬件才是年度玩物，借着 2020 的开始，决定分享一下 2019 年的「玩物志」，之前经常在微信群和 Telegram 群分享好用有趣的 App，那些都是增量，今天分享的是 2019 存量。</p>
 <h2 id="年度最喜欢的硬件"><strong>年度最喜欢的硬件</strong></h2>
 <h3 id="switch"><strong>Switch</strong></h3>
 <p>已经入手了 PS4 和 Switch 主机游戏之后，扪心自问，Switch 的价值依然高于 PS4，大概是因为 Switch 才是真正独乐乐不如众乐乐的代言人，玩 Switch 的好友更愿意一起分享海拉尔大陆的各种见闻，而且游戏生态更为娱乐化，不像 PS4 那么严肃，打开率更高，玩 Switch 可以让客厅更有趣，可以和女朋友或者朋友一起通力合作，推荐《Broforce》、《Unravel 2》和《超级马里奥赛车》，千万不要玩《分手厨房》。而众人推捧的《塞尔达传说》适合单人孤独得游玩，然后让你喜欢上 Switch 。强烈推荐《健身环大冒险》，肥宅也可以健身起来的神奇，任天堂让人欢乐的游戏设计让人佩服。</p>
@@ -1917,15 +1605,7 @@
 <h3 id="百度网盘"><strong>百度网盘</strong></h3>
 <p>我不用百度网盘同步，主要是我不太相信国内的任何云存储服务，但是这个挡不住目前百度网盘成为影视剧存储中心的地位，详细可以参考之前的一篇文章 《<a href="http://mp.weixin.qq.com/s?__biz=MzIxNTU3MjcyMA==&amp;mid=2247483847&amp;idx=1&amp;sn=ddf448dd8ed0d943d0b53dfdbebd1a5a&amp;chksm=97970858a0e0814e653d41f342622f4bbf1b1d4f5c641c61289b1489bfaf66ce361593d234bb&amp;scene=21#wechat_redirect">如何利用百度网盘打造私人影视库</a>》，写得更详细。</p>
 <p><img alt="百度网盘" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/baidupan.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>回忆：已经被遗忘的十五撵毛狗</title>
-      <link>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</guid>
-      <description>探寻和记录湖北地区一个消失的元宵节传统习俗 —— 十五撵毛狗，通过实地走访和文献查证，试图还原这个曾经让孩子们兴奋不已的民间活动。</description>
-      <content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>回忆：已经被遗忘的十五撵毛狗</title><link>https://houjoe.me/posts/memories-of-forgotten-mao-gou/</link><pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/memories-of-forgotten-mao-gou/</guid><description>探寻和记录湖北地区一个消失的元宵节传统习俗 —— 十五撵毛狗，通过实地走访和文献查证，试图还原这个曾经让孩子们兴奋不已的民间活动。</description><content:encoded><![CDATA[<blockquote>
 <p>本文最初发布于2018年3月，后备份到 Notion</p></blockquote>
 <p>本应该在正月十五的时候写下这篇文章，奈何，我在正月十六才开始看元宵节的电视节目，但晚到的元宵节还是勾起了我的回忆。小时候在老家，过年都没有元宵节热闹，虽然「初一拜父母，初二拜丈母，初三初四拜舅姑」，但「十五撵毛狗儿」更适合孩子们玩耍。</p>
 <p>之前，在每年的正月十五，天黑之后，家家户户的孩子们都会点着火把出门，走向河边的大堤上。火把是由废旧轮胎绑在木棍上做成的。在河堤上，小孩子们和大孩子们只是起哄式的走来走去，甚至与隔壁村的孩子们互相追逐，但很少会斗殴。作为汉族人，围着篝火跳舞并不是我们的强项。记忆中，漫山遍野都是火把，大概只有「激情燃烧的岁月」可以形容当时的亢奋。当初，我心中一直有一个疑问，毛狗是什么？真的有么？会咬人么？跟偷吃月亮的那个狗有啥关系？</p>
@@ -1944,15 +1624,7 @@
 <p>想再变成孩子一次……</p>
 <h2 id="后记">后记</h2>
 <p>在朋友圈分享了文章之后，在微信好友的提醒下，又以关键词「赶毛狗」尝试搜索了一下，原来这个在恩施土家族是一个更为风行的传统。不过，土家族的赶毛狗更为正式一些，与宜昌秭归一样，会搭一个毛狗棚来烧。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>坐着火车去俄罗斯联邦（多图预警）</title>
-      <link>http://localhost:1313/posts/train-journey-to-russia/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/train-journey-to-russia/</guid>
-      <description>一趟特殊的火车旅行：从北京出发，穿越蒙古国，抵达俄罗斯联邦的布里亚特共和国，最终到达贝加尔湖畔。一路上有着独特的风景、有趣的人和难忘的经历。</description>
-      <content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
+]]></content:encoded></item><item><title>坐着火车去俄罗斯联邦（多图预警）</title><link>https://houjoe.me/posts/train-journey-to-russia/</link><pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/train-journey-to-russia/</guid><description>一趟特殊的火车旅行：从北京出发，穿越蒙古国，抵达俄罗斯联邦的布里亚特共和国，最终到达贝加尔湖畔。一路上有着独特的风景、有趣的人和难忘的经历。</description><content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
 <p>这是一篇迟来的游记，2017年9月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地——贝加尔湖畔。</p>
 <h2 id="9月27日-登上国际列车k3">9月27日 登上国际列车K3</h2>
 <p>还未上车就发生了一点不愉快的事情，我们为在火车上的3天预备的头发免洗喷雾被安检员扣下，因为「喷雾无法带上火车」，不过，比起前面一位大叔带的菜刀、扳手，我们的违禁品还算非常低调了。另外，我感觉这次火车上车的地方与我们上次坐车去丹东前往朝鲜的上车点很类似。（点击查看 <a href="https://zhuanlan.zhihu.com/p/20715850">朝鲜四日行纪录</a>）</p>
@@ -2036,15 +1708,7 @@
 <p>另外，我们到了伊尔库茨克之后，苹果地图上显示的是布里亚特共和国，首都是乌兰乌德，应该是到了俄罗斯之后朦胧中经过的大城市，而这个地方的原住民是蒙古人后裔，相当于我们从北京到伊尔库茨克，基本在泛「蒙古」区域游玩，内蒙古、蒙古国和布里亚特人的俄罗斯联邦。</p>
 <p>最后，想说一下俄语，很有意思的是，老家的方言有一种特殊的卷舌音，这个卷舌音在俄语中用得非常多，这让我模仿俄语发音信手拈来，这种奇妙的连接让我自己忍俊不禁。这时，想起了胡日尔村房东的狗，名字叫吉娜，但是为了更有俄语的感觉，重音尽量在「ji」上，四声，用力，哈哈哈。</p>
 <p><img alt="黑色的吉娜" loading="lazy" src="/images/posts/train-journey-to-russia/image-10.webp"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>那些曾经让自己怦然心动的科技瞬间</title>
-      <link>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</link>
-      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</guid>
-      <description>回忆那些曾经让我惊艳的科技体验瞬间，从第一部手机到移动互联网时代，记录着科技给生活带来的点点惊喜。</description>
-      <content:encoded><![CDATA[<p>写这个文章是为了尝试精准回忆一下那些现在看来理所当然却在以前让自己怦然心动的科技体验瞬间。不得不说，越来越难被惊艳到了，当越来越多的惊喜变为日常，就像吃完了川菜再去品味粤菜一样，寡然无味，或者像回顾过去的港片，才发现好多喜剧电影的演技和剧情无比拙劣。不过，写作是为了重忆初心，就像回忆童年，多半都是美好的。</p>
+]]></content:encoded></item><item><title>那些曾经让自己怦然心动的科技瞬间</title><link>https://houjoe.me/posts/tech-moments-that-touched-my-heart/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://houjoe.me/posts/tech-moments-that-touched-my-heart/</guid><description>回忆那些曾经让我惊艳的科技体验瞬间，从第一部手机到移动互联网时代，记录着科技给生活带来的点点惊喜。</description><content:encoded><![CDATA[<p>写这个文章是为了尝试精准回忆一下那些现在看来理所当然却在以前让自己怦然心动的科技体验瞬间。不得不说，越来越难被惊艳到了，当越来越多的惊喜变为日常，就像吃完了川菜再去品味粤菜一样，寡然无味，或者像回顾过去的港片，才发现好多喜剧电影的演技和剧情无比拙劣。不过，写作是为了重忆初心，就像回忆童年，多半都是美好的。</p>
 <p>真正的科技是从一部手机开始。</p>
 <p>家里的第一部手机，目测应该是2003年左右，当时其实还在着迷于村子里日益流行起来的卫星锅电视，突然远在广州的舅舅寄给我们家一台旧手机，作为「电话」来联系，小小的黑白屏幕，却像个新时代的窗口，一下子跨过了固定电话，只是我已经忘记了那款手机的样式。当时觉得手机功能极其复杂，很多层级的菜单，而真正回忆起来，在现在人的眼中，其，就是个功能机，只比BP机复杂一点。</p>
 <p>第一次被电脑游戏所震撼，是在表姐的带领下，当时去了当公务员的姨夫所在办公室，表姐会玩一个钓鱼的游戏，而我更喜欢暴力摩托，这个过程经常发生在午饭后的时间，偶尔还会有人站在我身后与我一起使劲，像看足球一样，场内和场外都异常兴奋。游戏的画面完全碾压了小霸王，愈发觉得「电脑的神奇」。不过，游戏中最大的限制是，没有罪恶都市游戏里的那种自由，直到后来，我迷上了后者。</p>
@@ -2063,7 +1727,4 @@
 <p><img alt="微信群聊" loading="lazy" src="/images/posts/tech-moments-that-touched-my-heart/image-5.webp"></p>
 <p>如果说近期那些让人为之一动的科技，只能是大家习以为常的微信群。一开始只是亲戚们用微信群发偶然形成的一个临时群，形成之后立刻又被删除。后来我直接创建了一个固定的微信群。最初是兴奋的，后来沉寂了一段时间，不知从何开始，微信群开始作为广播定期做亲戚间的聚会以及长辈们之间的寒暄。而且，我发现了一个规律，老家微信群的活跃度与小龙虾的季节正相关。</p>
 <p>从今年开始，爸妈已经开始学会了用微信，从视频或者音频通话，逐渐升级为照片分享，每一次我都保存着，期待下一次回忆。</p>
-]]></content:encoded>
-    </item>
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>
