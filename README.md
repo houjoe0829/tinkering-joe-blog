@@ -284,7 +284,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 2. **运行压缩脚本**：
 
    ```bash
-   python scripts/compress_images.py
+   python3 scripts/compress_images.py
    ```
 
    这会在项目根目录创建 `static_compressed` 目录，存放压缩后的文件。
@@ -300,7 +300,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 4. **更新图片引用**：
 
    ```bash
-   python scripts/update_image_refs.py
+   python3 scripts/update_image_refs.py
    ```
 
    这一步会自动将所有 Markdown 文件中的图片引用更新为 WebP 格式。
@@ -309,7 +309,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 5. **预览要删除的原始文件**：
 
    ```bash
-   python scripts/clean_original_images.py
+   python3 scripts/clean_original_images.py
    ```
 
    这一步会显示哪些原始文件将被删除，以及可以节省的空间大小。
@@ -317,7 +317,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
 6. **确认无误后删除原始文件**：
 
    ```bash
-   python scripts/clean_original_images.py --execute
+   python3 scripts/clean_original_images.py --execute
    ```
 
    这一步会删除已经转换为 WebP 格式的原始图片文件，但会保留网站图标相关文件。

@@ -27,7 +27,7 @@ author: 'Joe'
 
 > 流程图原始地址：[how-to-run-the-process](https://whimsical.com/how-to-run-the-process-NDcj7MbeCYb3YWB7sAubkt)
 
-![The Mom Test 对话流程](/images/the-mom-test-process-flow.png)
+![The Mom Test 对话流程](/images/the-mom-test-process-flow.webp)
 
 ## 妈妈测试 Mom Test
 
