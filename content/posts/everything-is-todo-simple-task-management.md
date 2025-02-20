@@ -3,7 +3,7 @@ author: "Joe"
 date: "2021-08-04T23:45:00+08:00"
 description: "一种简单易用的事务管理方法：Everything is Todo"
 draft: false
-tags: ["折腾软硬件", "软件推荐"]
+tags: ["折腾软硬件"]
 title: "Everything is Todo：简单易上手的事务管理理念"
 ---
 
