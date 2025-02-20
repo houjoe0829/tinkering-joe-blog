@@ -23,7 +23,7 @@ title: "产品经理入门书籍的推荐"
 
 ## 需求调研入门
 
-[《The Mom Test》读书笔记](https://houjoe.notion.site/The-Mom-Test-b7107c8ce7e74f7b86a7259b10c458d3?pvs=4)
+[《The Mom Test》读书笔记](/posts/the-mom-test-reading-notes)
 
 ## 需求文档撰写
 
