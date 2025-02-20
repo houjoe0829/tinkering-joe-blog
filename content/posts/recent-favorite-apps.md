@@ -17,7 +17,7 @@ author: "Joe"
 
 另外，最近感觉其正在商业化，已经推出了插件，逐渐在向更专业的方向演进着。
 
-![Markdown Nice 编辑器界面](/images/posts/recent-favorite-apps/markdown-nice.png)
+![Markdown Nice 编辑器界面](/images/posts/recent-favorite-apps/markdown-nice.webp)
 
 网址：[https://mdnice.com/](https://mdnice.com/)
 
@@ -25,7 +25,7 @@ author: "Joe"
 
 这是一个仅支持 Mac 端的一个免费工具，开启之后像是微信开启了上帝视角，你可以知晓谁退群了，谁撤回了什么消息，还可以强制 Mac 端微信切换成正在内测的黑夜模式。另外，还支持微信多开，自动回复设置，包括设置智能回复的语言库。
 
-![微信小助手功能界面](/images/posts/recent-favorite-apps/wechat-helper.png)
+![微信小助手功能界面](/images/posts/recent-favorite-apps/wechat-helper.webp)
 
 网址：[https://www.waerfa.com/wechatextension-for-wechat-mac-version](https://www.waerfa.com/wechatextension-for-wechat-mac-version)
 
@@ -35,7 +35,7 @@ author: "Joe"
 
 另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。
 
-![DeepL 翻译界面](/images/posts/recent-favorite-apps/deepl.png)
+![DeepL 翻译界面](/images/posts/recent-favorite-apps/deepl.webp)
 
 网址：[https://www.deepl.com/translator](https://www.deepl.com/translator)
 
@@ -43,6 +43,6 @@ author: "Joe"
 
 不管是从网址拼写还是从界面上来看，都非常质朴，但是相比之前用过的电子书查询网站有很多优势，比如没有太多骗人的套路，支持中英文书籍，书库很全，是真的很全。
 
-![电子书资源网站界面](/images/posts/recent-favorite-apps/ebook-site.png)
+![电子书资源网站界面](/images/posts/recent-favorite-apps/ebook-site.webp)
 
 网址：[https://b-ok.cc/](https://b-ok.cc/) 

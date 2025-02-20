@@ -2383,20 +2383,20 @@
 <p>如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 <a href="http://mdnice.com">mdnice.com</a> 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。</p>
 <p>也就是你只需要，导出为 .md 文件，导入到此文件到编辑器，选择好适合的主题，简单再修一修排版，就可以复制走了。</p>
 <p>另外，最近感觉其正在商业化，已经推出了插件，逐渐在向更专业的方向演进着。</p>
-<p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.png"></p>
+<p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.webp"></p>
 <p>网址：<a href="https://mdnice.com/">https://mdnice.com/</a></p>
 <h2 id="开启上帝视角的微信微信小助手">开启上帝视角的微信：微信小助手</h2>
 <p>这是一个仅支持 Mac 端的一个免费工具，开启之后像是微信开启了上帝视角，你可以知晓谁退群了，谁撤回了什么消息，还可以强制 Mac 端微信切换成正在内测的黑夜模式。另外，还支持微信多开，自动回复设置，包括设置智能回复的语言库。</p>
-<p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.png"></p>
+<p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.webp"></p>
 <p>网址：<a href="https://www.waerfa.com/wechatextension-for-wechat-mac-version">https://www.waerfa.com/wechatextension-for-wechat-mac-version</a></p>
 <h2 id="翻译能力超强的助手deepl">翻译能力超强的助手：DeepL</h2>
 <p>之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概20多个工单。</p>
 <p>另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。</p>
-<p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.png"></p>
+<p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.webp"></p>
 <p>网址：<a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a></p>
 <h2 id="质朴而强大的免费电子书资源网站">质朴而强大的免费电子书资源网站</h2>
 <p>不管是从网址拼写还是从界面上来看，都非常质朴，但是相比之前用过的电子书查询网站有很多优势，比如没有太多骗人的套路，支持中英文书籍，书库很全，是真的很全。</p>
-<p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.png"></p>
+<p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.webp"></p>
 <p>网址：<a href="https://b-ok.cc/">https://b-ok.cc/</a></p>
 ]]></content:encoded>
     </item>
@@ -2660,29 +2660,29 @@
       <content:encoded><![CDATA[<h2 id="越来越强大的-notion">越来越强大的 Notion</h2>
 <p>近期 Notion 的更新让我再一次心动起来，我在印象笔记、Evernote、Bear Note 以及 Notion 里都存有大量笔记，方便我每次的喜新厌旧，这一次也不例外。</p>
 <p>这批次的更新中，排名第一的是，终于支持了中日韩文字的搜索。对于 Notion 而言，由于其嵌套关系的文档呈现形式，没有搜索的 Notion 是之前抛弃它的主要理由，远大于「没有离线」以及没有 API 接口，因为层级复杂且没有一个地方可以浏览到所有的内容，无法搜索就像内容困死在了里面。新的搜索里，中文搜索不再只能从开头匹配，而且可以快速切换最近查看的笔记，还可增加更多的过滤条件来精准搜索。搜索完成之后，现在的 Notion 已经成为一个相对成熟的中文文档编辑与管理工具。</p>
-<p><img alt="Notion 的新搜索功能" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search.png"></p>
-<p><img alt="Notion 的搜索过滤条件" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search-filter.png"></p>
+<p><img alt="Notion 的新搜索功能" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search.webp"></p>
+<p><img alt="Notion 的搜索过滤条件" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-search-filter.webp"></p>
 <p>排名第二的更新是强化移动端的快速搜索和快速新建，在任意页面可以一键直达。</p>
-<p><img alt="Notion 移动端的快速操作（配图来自官网）" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-mobile.png"></p>
+<p><img alt="Notion 移动端的快速操作（配图来自官网）" loading="lazy" src="/images/posts/recent-app-discoveries-005/notion-mobile.webp"></p>
 <p>除以上以外，Notion 还支持在线流程图工具 Whimsical 的文档嵌入预览，但是，看了一下价格，还是放弃了，比 Notion 还要贵上许多，继续用我的 iThoughtsX。</p>
 <p>Notion 注册链接： <a href="https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d">https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3d</a></p>
 <h2 id="浏览器的新选择chrome-内核的-edge">浏览器的新选择：Chrome 内核的 Edge</h2>
 <p>微软终于发布了正式版 Chromium 内核浏览器 Edge，支持 Windows 7、8、8.1、10 和 macOS，支持全部现有的 Chrome 扩展。假如未来 Chrome 内核的插件上架了微软应用商店，希望可以解决很多国内的用户无法访问 Chrome App Store 的问题。</p>
-<p><img alt="新版 Edge 浏览器界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/edge-chromium.png"></p>
+<p><img alt="新版 Edge 浏览器界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/edge-chromium.webp"></p>
 <p>官网下载：<a href="https://www.microsoft.com/en-us/edge">https://www.microsoft.com/en-us/edge</a></p>
 <h2 id="让上网不孤单的-relaychat-chrome-插件">让上网不孤单的 RelayChat Chrome 插件</h2>
 <p>安装这个插件之后，你可以在任何网页打开聊天窗口与全世界各地的网友实时沟通，目前人还是有一些少，尝鲜为主。</p>
-<p><img alt="RelayChat 插件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/relaychat.png"></p>
+<p><img alt="RelayChat 插件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/relaychat.webp"></p>
 <p>官网地址：<a href="https://relaychat.app/">https://relaychat.app/</a></p>
 <h2 id="沙雕有趣的桌面宠物desktop-goose-桌面鹅">沙雕有趣的桌面宠物：Desktop Goose 桌面鹅</h2>
 <p>上一次的桌面宠物还是 QQ 宠物（已下架），看到这个，有一种浓浓的岁月感。这款 Desktop Goose 支持 macOS 和 Windows，安装启动之后，桌面会出现一只闲逛的鹅，还有叫声和跟随其后的脚印。</p>
-<p><img alt="Desktop Goose 桌面宠物" loading="lazy" src="/images/posts/recent-app-discoveries-005/desktop-goose.png"></p>
+<p><img alt="Desktop Goose 桌面宠物" loading="lazy" src="/images/posts/recent-app-discoveries-005/desktop-goose.webp"></p>
 <p>这只鹅不只是闲逛，还会定期从桌面边缘拖出一个带有内容的窗口，我收集了一些放在下面，而且，你如果一旦关闭窗口，它会立马冲刺过去，叼住你的鼠标拖拽逃逸。</p>
-<p><img alt="拖着窗口的鹅" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-window.png"></p>
-<p><img alt="鹅的消息 1" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-1.png"></p>
-<p><img alt="鹅的消息 2" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-2.png"></p>
-<p><img alt="鹅的消息 3" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-3.png"></p>
-<p><img alt="鹅的消息 4" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-4.png"></p>
+<p><img alt="拖着窗口的鹅" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-window.webp"></p>
+<p><img alt="鹅的消息 1" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-1.webp"></p>
+<p><img alt="鹅的消息 2" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-2.webp"></p>
+<p><img alt="鹅的消息 3" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-3.webp"></p>
+<p><img alt="鹅的消息 4" loading="lazy" src="/images/posts/recent-app-discoveries-005/goose-message-4.webp"></p>
 <p>这篇文章写作期间，我尝试打开了，真的太干扰我写东西了，关闭了吧。突然发现，没有任何地方可以关闭，最后只能在进程管理中强行退出。</p>
 <p>下载链接：<a href="https://samperson.itch.io/desktop-goose">https://samperson.itch.io/desktop-goose</a></p>
 <h2 id="支持订阅-newsletter-的-inoreader">支持订阅 Newsletter 的 Inoreader</h2>
@@ -2693,13 +2693,33 @@
 <li>Product Hunter：<a href="https://www.producthunt.com/">https://www.producthunt.com/</a> 发掘有趣也有用的新 App</li>
 <li>Benedict Evans：<a href="https://www.ben-evans.com/">https://www.ben-evans.com/</a> 关于科技、技术与安全</li>
 </ul>
-<p><img alt="大改版的 Inoreader 界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/inoreader.png"></p>
+<p><img alt="大改版的 Inoreader 界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/inoreader.webp"></p>
 <p>教程可参考官网：<a href="https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html">https://blog.inoreader.com/2020/02/declutter-your-inbox-subscribe-to-email-newsletters-straight-into-inoreader.html</a></p>
 <p>更新之后，再次减少了一个分散的内容查看通道。</p>
 <h2 id="支持全平台设备互相无线投屏的免费应用幕享">支持全平台设备互相无线投屏的免费应用：幕享</h2>
 <p>曾经花钱买了 Airsever 和 Reflector 的我，看到这个强悍的工具，第一时间就分享了。其拥有 Windows、macOS、iOS、Android、Android TV 客户端，支持 AirPlay、Miracast、DLNA 协议，可以在手机与电脑间相互投屏，还能通过 App 控制 Windows 电脑。（来自小众软件）</p>
-<p><img alt="幕享投屏软件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/letsview.png"></p>
+<p><img alt="幕享投屏软件界面" loading="lazy" src="/images/posts/recent-app-discoveries-005/letsview.webp"></p>
 <p>下载：<a href="https://letsview.com/zh/">https://letsview.com/zh/</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>阳光下的阴影：矛盾的逻辑自洽</title>
+      <link>http://localhost:1313/posts/paradox-of-self-consistency/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/paradox-of-self-consistency/</guid>
+      <description>探讨人类在面对矛盾时如何通过逻辑自洽来合理化行为，以及如何避免陷入这种思维陷阱</description>
+      <content:encoded><![CDATA[<p>某天吃了当当网李国庆和俞渝的瓜（是的，这篇文章起源于那天），震惊之余，开始去思考这类争议，我自己的一贯常识，一旦遇到争议就会下意识得去寻找其中的&quot;坏人&quot;，什么小孩才分对错，大人只在乎利益之类的大道理，都是狗屁。长久以来的教育暗示我们，事情还是有&quot;对错&quot;，以及必然有&quot;正确答案&quot;，哪怕剧情反转，也是说明群众在寻找正确答案的路上。</p>
+<p>但是一旦找到&quot;答案&quot;，下一步疑问就是，&ldquo;TA 怎么可以这样&quot;或者&quot;难道他不愧疚么&rdquo;。似乎在正义的世界里，阳光下的阴影是不存在的。</p>
+<p>实际是，日常的生活里，那些细枝末节的正义对面，坏人也会安然自若，甚至，还在苦苦纠结着，&ldquo;主要原因在你，你却不自知&rdquo;。</p>
+<p>突然联想到一句总结的话，&ldquo;你不要指望通过讲道理来改变一个坏人，因为坏人本身，就有一条属于自己的自洽逻辑。&rdquo;</p>
+<p>一个人即使背负过错，也不会持续很长时间。人的自我认知调节能力就像情绪的调节器，为了情绪的稳定，我们总可以合理化一切。就像与一个比自己牛逼的同龄人待久了，情绪会从不服到慢慢承认现实，最后找到一大堆理由说明自己&quot;必然&quot;不如他，运气、勤奋、靠父母，等等，一下子逻辑合理，&ldquo;释然&quot;了很多。</p>
+<p>逻辑自洽般的合理化是一种本能，可以让人活得更舒心，但是，反过来，必要的时候我们需要理解并拆解它，接近事实才是客观认识世界和自我反省的第一步，在寻找真相的路上，那些粉饰出来的障碍，我们需要有能力认清。</p>
+<p>所有的合理都有其适用范围的，当因为信息不对称或者信息封锁，合理性就很容易成立，这也是我们经常提到的传销所使用的策略，不让你与外界联系，疯狂地灌输，加上封闭环境下的&quot;周围人&quot;榜样，即使是良好的教育也会进入逻辑的圈套。不过，传销是一种极端，自我封闭诸如只与周围人沟通而缺少与外界交流的意识，也会形成一个半封闭的氛围，出现我们常会遇到的，在公司内合理，在公司外看起来竟荒诞不羁的怪象。</p>
+<p>缺少足够清晰度的描述也是逻辑自洽的重灾区，经常可见于工作会议抑或公关人员的官宣。如我们所知，语言与逻辑有着你中有我我中有你的互生关系，语言所带来的的文字，与文字所指向的新概念层出不穷，由此产生的文字游戏让人难以捉摸，于是诞生了那句经典台词，&ldquo;最终解释权归本公司所有&rdquo;。我们也经常遇到，通过将 A 类比为 B，然后因为 B 成立，所以 A 成立的最为常见的文字游戏，我们需要认清，即使 B 可以成立，A 也不等于 B。</p>
+<p>有时候遇到的逻辑自洽更为荒诞，我自己出生在乡村，小时候常听到的爸爸妈妈或者左邻右舍唠叨在嘴旁的许多大道理，并不是因为其背后严谨的逻辑，或者是古老经验的传承，仅仅是因为，念起来很押韵，长大了才知道这份道理，让人哭笑不得。</p>
+<p>如果已有的逻辑无法自洽或者合理化，还有一个人类特有的能力来辅助，杜撰意义。&ldquo;杜撰&quot;并不是一个贬义词，因为&quot;意义&quot;本身是有其价值的。曾经读了一本生物学家写的书《人类存在的意义》，通篇的结论就是，没有意义。但是，人类可以创造意义，意义可以聚集群体，形成可继承的人类群体文化。但是&quot;杜撰意义&quot;也不是一个褒义词，当已有逻辑无法自洽时，我们可以编造一些不存在的意义，让行为和事情合理化，这也意味着，我们需要区分，哪些是事实和推理，哪些是强行拐弯的虚假&quot;意义&rdquo;。</p>
+<p>如何尽量避免矛盾的逻辑自洽是一个无尽的答案，目前推荐的是《原则》里提到的做法，分享之前做的读书笔记：如何做到头脑极度开放。</p>
+<p><img alt="如何做到头脑极度开放" loading="lazy" src="/images/posts/paradox-of-self-consistency/mindset-openness.webp"></p>
 ]]></content:encoded>
     </item>
     <item>
