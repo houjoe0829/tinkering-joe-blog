@@ -110,9 +110,6 @@
     <loc>http://localhost:1313/posts/vr-workroom-experience/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2024-02-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/chinese-new-year-2024-recap/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -191,11 +188,23 @@
     <loc>http://localhost:1313/posts/oculus-quest2-vr-review/</loc>
     <lastmod>2021-06-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/from-customer-service-to-product-manager-insights/</loc>
+    <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hometown-food-memories-part1-pork-and-crayfish/</loc>
+    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/thoughts-about-useless-ideas/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/things-that-opened-new-world/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/my-life-as-customer-service-final/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
@@ -211,6 +220,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/reading-addiction-metaphor/</loc>
     <lastmod>2015-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/my-life-as-customer-service/</loc>
+    <lastmod>2015-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
