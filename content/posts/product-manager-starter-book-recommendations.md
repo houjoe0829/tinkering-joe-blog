@@ -23,7 +23,7 @@ title: "产品经理入门书籍的推荐"
 
 ## 需求调研入门
 
-[《The Mom Test》读书笔记](/posts/the-mom-test-du-shu-bi-ji)
+[《The Mom Test》读书笔记](https://houjoe.notion.site/The-Mom-Test-b7107c8ce7e74f7b86a7259b10c458d3?pvs=4)
 
 ## 需求文档撰写
 
@@ -51,7 +51,7 @@ title: "产品经理入门书籍的推荐"
 
 ## 团队协作与沟通
 
-[如何才能《非暴力沟通》](/posts/ru-he-cai-neng-fei-bao-li-gou-tong)
+[如何才能《非暴力沟通》](/posts/nonviolent-communication-reading-notes) 
 
 {{< link "https://book.douban.com/subject/25338822/" "团队协作的五大障碍" >}}
 
@@ -69,4 +69,4 @@ title: "产品经理入门书籍的推荐"
 
 [从 0 到 1 转岗（产品经理）的一些感悟](/posts/from-customer-service-to-product-manager-insights)
 
-[一个产品经理的自我修行](/posts/product-manager-self-cultivation) 
+[一个产品经理的自我修行](/posts/product-manager-self-cultivation)
