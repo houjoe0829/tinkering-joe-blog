@@ -10,4 +10,5 @@ hugo_stats.json
 /backup/
 .venv/
 /draftfiles/
-/static/images_compressed/ 
+/static/images_compressed/
+/temp_notion/ 
