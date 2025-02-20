@@ -205,7 +205,7 @@ AI 将执行以下关键步骤来帮助您更新博客：
       * 使用 `compress_article_images.py` 脚本处理单篇文章的图片：
 
         ```bash
-        python scripts/compress_article_images.py article-name
+        python3 scripts/compress_article_images.py article-name
         ```
 
       * 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
@@ -220,7 +220,23 @@ AI 将执行以下关键步骤来帮助您更新博客：
 
    注意：虽然手动处理会花费更多时间，但能确保更好的质量控制和准确性。对于图片压缩和格式转换，可以使用图形界面工具（如 ImageOptim）来处理。
 
-5. 清理临时文件
+5. **检查交叉引用**：
+   * 使用 grep 或其他搜索工具在所有博客文章中搜索当前文章的相关关键词
+   * 检查其他文章中是否有引用当前文章的链接
+   * 如果发现引用：
+     * 确保链接格式正确（应该是 `/posts/article-name` 格式）
+     * 修正任何指向 Notion 或其他外部平台的旧链接
+     * 更新所有相关文章中的引用
+   * 建议使用以下命令进行搜索：
+     ```bash
+     # 使用 grep 搜索关键词
+     grep -r "关键词" content/posts/
+     
+     # 或者使用项目提供的搜索脚本
+     python3 scripts/grep_search.py "关键词"
+     ```
+
+6. 清理临时文件
    ① **清理原始图片**：
 
      ```bash

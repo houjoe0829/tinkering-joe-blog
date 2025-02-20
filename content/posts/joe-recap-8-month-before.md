@@ -40,7 +40,7 @@ title: "Joe's Recap：8月以前"
 
 这半年，正在从一种追求过于纯粹的离线可用，逐步调整思路，更偏向于 Building life public with tools（这是一个还未写完的想法，下一篇准备写完的文章），其实使用路数变化不大，日记等私密记录，仍然是使用 Bear 来快速记录和标签标记，离线可用且加密，但是，个人知识库和博客，从 Craft 改回 Notion 这种云端工具，这样在未来随时都可以把个人知识库某一块折腾的无用但有趣的内容分享出来，至于为什么放弃了 Craft，缺少 Database 吧。
 
-就像我的个人博客：[Joe 的折腾日记](/posts/about)
+就像我的个人博客：[Joe 的折腾日记](/posts/why-start-blogging)
 
 其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像[这个](https://whimsical.com/s3pm6mwq1RT6jF3WFmTph)。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。
 
@@ -52,7 +52,7 @@ title: "Joe's Recap：8月以前"
 
 自从去年来到杭州，「江浙沪包游」一直是我的核心主题，目前已经从杭州自驾去了舟山、宁波、湖州、台州、金华、千岛湖、南京、上海、绍兴等等，不过，不是所有的地方都会有游记，但也很想都留下想法，下次一定。
 
-[我们在东极岛，天气阴](/posts/dongji-island-tour)
+[我们在东极岛，天气阴](/posts/dongji-island-tour-2022)
 
 [记录绍兴一日游](/posts/shaoxing-one-day-trip-2023)
 
@@ -60,11 +60,11 @@ title: "Joe's Recap：8月以前"
 
 ## 4. 公开的个人游戏库
 
-最近直接在[个人主页](/posts/about)公开分享了[游戏库](/posts/game-library)页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。
+最近直接在[个人主页](/posts/why-start-blogging)公开分享了[游戏库](/posts/game-library)页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。
 
 而这半年的主要游戏时间确实都给了《王国之泪》，而且还只是暂时性结束，预计在下半年的某一个时间点还会继续探索海拉鲁大陆，这种探索的满足感是其他游戏很难提供的。
 
-[《塞尔达传说·王国之泪》游记（涉及剧透）](/posts/zelda-tears-of-the-kingdom)
+[《塞尔达传说·王国之泪》游记（涉及剧透）](/posts/tears-of-the-kingdom-review)
 
 [战神之诸神黄昏](/posts/god-of-war-ragnarok)
 
@@ -82,6 +82,6 @@ title: "Joe's Recap：8月以前"
 
 这部分不用多说，虽败家，但仍然推荐，还有一篇想写给 Nas，但还在清单里，先立 flag。
 
-[为什么不推荐买特斯拉](/posts/why-not-buy-tesla)
+[为什么不推荐买特斯拉](/posts/why-not-recommend-tesla)
 
 [发布一年多，终于入手了 Steam Deck](/posts/steam-deck-review)

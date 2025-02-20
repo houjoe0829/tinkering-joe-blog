@@ -13,7 +13,7 @@ author: "Joe"
 > - 此方案仅适配苹果系设备，不支持 Windows、Android
 > - 科学上网 = 代理软件（Shadowrocket）+ 海外线路
 > - 最强保险依然是，买两家线路，更抗风险，当然，越多越好
-> - 有 QuantumltX 的可以看 [最简约的科学上网方案：Quantumlt X](/posts/quantumult-x-guide/)
+> - 有 QuantumltX 的可以看 [最简约的科学上网方案：Quantumlt X](/posts/quantumult-x-guide)
 
 ![Mac 界面效果](/images/posts/shadowrocket/image1.png)
 

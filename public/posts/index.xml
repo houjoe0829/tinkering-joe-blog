@@ -1440,7 +1440,7 @@
 <p><img alt="AI 助手的使用" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-3.webp"></p>
 <h2 id="3-最近去过的地方">3. 最近去过的地方</h2>
 <p>自从去年来到杭州，「江浙沪包游」一直是我的核心主题，目前已经从杭州自驾去了舟山、宁波、湖州、台州、金华、千岛湖、南京、上海、绍兴等等，不过，不是所有的地方都会有游记，但也很想都留下想法，下次一定。</p>
-<p><a href="/posts/dongji-island-tour">我们在东极岛，天气阴</a></p>
+<p><a href="/posts/dongji-island-tour-2022">我们在东极岛，天气阴</a></p>
 <p><a href="/posts/shaoxing-one-day-trip-2023">记录绍兴一日游</a></p>
 <p><a href="/posts/taizhou-travel-notes">台(tāi)州游记</a></p>
 <h2 id="4-公开的个人游戏库">4. 公开的个人游戏库</h2>
@@ -1457,6 +1457,114 @@
 <p>这部分不用多说，虽败家，但仍然推荐，还有一篇想写给 Nas，但还在清单里，先立 flag。</p>
 <p><a href="/posts/why-not-buy-tesla">为什么不推荐买特斯拉</a></p>
 <p><a href="/posts/steam-deck-review">发布一年多，终于入手了 Steam Deck</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>发布一年多，终于入手了 Steam Deck</title>
+      <link>http://localhost:1313/posts/steam-deck-review/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/steam-deck-review/</guid>
+      <description>在 Steam Deck 发布一年多后的使用体验分享，包括设备优缺点、游戏体验、实用配件以及避坑指南</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Steam Deck 最近达到了一个重要的里程碑：目前有超过1万款游戏被分类为&quot;已测试&quot;或&quot;可游玩&quot;。（来自：<a href="https://www.gamersky.com/news/202306/1612042.shtml">游民星空</a>）</p></blockquote>
+<p>其实，现在是入手 Steam Deck 最好的时机，在发布一年多之后，Steam Deck 已经越过了拓荒期，不仅价格回落，而且，系统和社区本身都已经非常成熟，这里的社区指的是所有互联网上的衍生周边内容。几乎所有可能遇到的已知问题基本都有解决方案，要么是系统修复，要么是第三方插件。</p>
+<h2 id="为什么入手-steam-deck">为什么入手 Steam Deck</h2>
+<p>我已经有 Switch 和 PS5 了，这让我纠结了几个月。大概是因为出行较多之后，决定还是妥协画质，追求移动性，也就是，既要玩 3A 大作，也要带着方便，而 Switch 只是一个塞尔达启动器。</p>
+<p>这之前我尝试过带上 PS5 回老家，即使配上便携显示器，从收纳包里打开到组装完成，已经耗尽兴致，折腾几次就不那么想玩了。</p>
+<p>然后，也尝试过串流 PS5 的方案，局域网还行，非局域网远程游玩非常不现实，画质邋遢，延迟明显，而且需要 5M 每秒的稳定网络环境，撇开是否能保证这么好的网络环境不说，再好的流量卡也经不起这般消耗。这也能反向说明，云游戏真就是一个坑。</p>
+<p>在我真正开始抉择如何选购时，很多人已经在 ROG 的新掌机和 Steam Deck 直接纠结了，但当我真实体验到 ROG 上 Windows 系统的交互之后，一种生生的割裂感，强烈的念头油然而生：真心是不想在掌机上打开 Windows。</p>
+<h2 id="上手的第一印象">上手的第一印象</h2>
+<p><img alt="Steam Deck 的外观" loading="lazy" src="/images/posts/steam-deck-review/deck-appearance.webp"></p>
+<p>确实有些厚重……</p>
+<p>已经习惯了 Switch 掌机形态的我，拿起来就感受到了大一格的尺寸和重量，不过，真实游玩的手感反而还是不错的，这个网上已经有太多人在分享，不用太多赘述。</p>
+<p>对比 Switch，Steam Deck 的开放性真的让人印象深刻：</p>
+<ul>
+<li>从硬件上来看，很容易手动拆卸更换，里面的大部分零件都可以自行更换，包括内存，甚至蛮多人，直接换掉了 Steam Deck 的前后外壳，改为透明主题，不过，仍然在拆卸的时候小心一点。</li>
+<li>从软件上来看，从开机画面开始就可以自定义，手柄布局也可以自定义，还可以直接套用社区贡献者的，再加上一个完整功能的浏览器，基本啥都可以变相实现了。</li>
+</ul>
+<p>对比 Windows，基于 Linux 的 Steam OS 真的是这台设备的灵魂所在，游戏模式下，适配掌机和大屏幕非常简单且流畅，而切换到桌面模式，接上鼠标和键盘基本就是一台 Mini PC。</p>
+<p><img alt="Steam OS 的界面" loading="lazy" src="/images/posts/steam-deck-review/steam-os-ui.webp"></p>
+<p>需要补充的一点，对比最新版 Switch 主机，Steam Deck 的续航真的很差，3A 大作普遍也就1个多小时，只有独立游戏在限制功率的情况下勉强可以达到5小时。不过，我对移动性的诉求其实不在于出去的续航有多长，而是接上充电宝或者电源之后就可以自由选择位置，即可。</p>
+<h2 id="用它做什么">用它做什么？</h2>
+<h3 id="1-设备本身比游戏好玩">1. 设备本身比游戏好玩</h3>
+<p>从到手开始，在 ChatGPT 上询问 Steam Deck 的问题就多了起来。了解各种功能，折腾系统，折腾配件，然后才有了这篇分享。其实这里也暴露一个小的问题，Steam Deck 的上手是有一定门槛的，尤其是对网络环境、Linux 系统，以及开放性带来的一些衍生问题，需要有一定的心理准备，以及我自己在选购的时候，优先找那种技术服务靠谱的。</p>
+<h3 id="2-正式开始-steam-平台游戏之旅">2. 正式开始 Steam 平台游戏之旅</h3>
+<p>我没有真正在 PC 上玩过游戏，这次入 Steam Deck 也是正式开启了我沉默了两年的 Steam 账号。从最近爆火的《潜水员戴夫》开始，不过，很快就抛弃了，主要是有太多无意义的&quot;肝&quot;的过程，然后切换到在清单停留了好久的《脑航员2》。Steam 平台的游戏量惊人，而且有很多有意思的独立游戏，扩充了我的游戏清单。</p>
+<p><img alt="Steam 游戏界面" loading="lazy" src="/images/posts/steam-deck-review/steam-games.webp"></p>
+<h3 id="3-成为-switch-备用机">3. 成为 Switch 备用机</h3>
+<p>我是直接让店家帮我装了 Yuzu 模拟器，确实可以运行王国之泪，但是我在 Switch 上的存档迁移过来有风险，也就只能成为一个备用机。不过，仍然建议游玩正版，来自网友的反馈，模拟器总是有很多奇奇怪怪的小问题，体验一般。</p>
+<p><img alt="Yuzu 模拟器界面" loading="lazy" src="/images/posts/steam-deck-review/yuzu-emulator.webp"></p>
+<h3 id="4-也是家用机顶盒">4. 也是家用机顶盒</h3>
+<p>所有的游戏主机都逃不过被我当做机顶盒的命运，可以打开浏览器的 Xbox 和 Steam Deck 尤甚。不过，由于 Steam Deck 本身的一些特性，更适合。</p>
+<ul>
+<li>Steam Deck 的浏览器是完整功能的，可以自由选择 Chrome、Firefox 等等</li>
+<li>Steam Deck 本身的触控板非常好用</li>
+<li>可以自定义手柄或者掌机按钮，很方便设置一些快捷键，比如一键全屏</li>
+<li>与 Switch 不同，Steam Deck 接上视频输出之后，其自带掌机手柄仍然可以使用</li>
+</ul>
+<p>所以，我在机器上远程登录我的 Nas，以及保存了 YouTube 和 Bilibili 的快速访问，下图为我上周在义乌的酒店播放家里 Nas 上的电影《范海辛》（这个不好看）。</p>
+<p><img alt="在酒店观看 NAS 视频" loading="lazy" src="/images/posts/steam-deck-review/nas-streaming.webp"></p>
+<h3 id="5-居然可以串流-ps5">5. 居然可以串流 PS5</h3>
+<p>这个是我没想到的，Steam Deck 居然可以通过 Chiaki 的软件来实现 PS5 的串流，简直复活了我的 PS5。</p>
+<p>有人可能会问，iPad 和 iPhone 也可以呀，为什么不用。这是因为， Steam Deck 串流之后，自动带上了手柄…… 而且，这个更游戏场景，二合一了，试玩了一下《地平线之西之绝境》，除了偶尔的闪一下，完全无影响。</p>
+<p>于是，我把我的 PS5 从收纳盒里拿出来插电并处于待机状态，方便 Steam Deck 唤醒，《艾尔登法环》、《荒野大镖客》、《GTA5》都在上面。</p>
+<p><img alt="PS5 串流界面" loading="lazy" src="/images/posts/steam-deck-review/ps5-streaming.webp"></p>
+<h2 id="做了哪些设置">做了哪些设置？</h2>
+<p>先安装插件商店 Decky Loader。Decky Loader 是一个由第三方开发者专门为 Steam Deck 开发的插件商店和管理程序，你可以在 Steam OS 的侧边栏中打开 Decky Loader，来轻松实现搜索、下载和管理各种实用的第三方插件。（当然，我直接让店家给我装好了，还是钱好使，省时间，后续插件我就可以自己折腾了）</p>
+<p><a href="https://github.com/SteamDeckHomebrew/decky-loader">Decky Loader GitHub 地址</a></p>
+<table>
+  <thead>
+      <tr>
+          <th>插件/软件</th>
+          <th>用途说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>To Moon 插件</td>
+          <td>实现基于 Clash 的翻墙，终于我的软路由、电脑、手机、主机都实现规则统一了。</td>
+      </tr>
+      <tr>
+          <td>Decky Recorder 插件</td>
+          <td>Steam Deck 自带截图但是没有录屏，这个可以实现 Switch 上录制视频效果</td>
+      </tr>
+      <tr>
+          <td>百度网盘 Linux 版本</td>
+          <td>在桌面模式下安装的，主要方便上传截图和视频，唯一的缺陷是无法像在 Mac 和 PC 那样直接映射本地文件夹，只能手动操作，但是我在我的 Nas 上设置了一个监控，一旦有新的上传，自动下载到我的 Nas 里，也算简化了。<a href="https://www.youtube.com/watch?v=pa0CVwPCFyo">安装教程</a></td>
+      </tr>
+      <tr>
+          <td>Chiaki 串流工具</td>
+          <td>桌面模式下安装，为串流 PS5 服务，<a href="https://www.bilibili.com/read/cv15142226/">教程</a></td>
+      </tr>
+      <tr>
+          <td>Yuzu 模拟器</td>
+          <td>桌面模式下安装，Switch 模拟器，<a href="https://yuzu-emu.org/">官网</a></td>
+      </tr>
+      <tr>
+          <td>Chrome 浏览器</td>
+          <td>桌面模式下安装，啥都可以搞，还可以与自己的浏览器同步</td>
+      </tr>
+  </tbody>
+</table>
+<p>很喜欢 Steam 的一个小功能，桌面模式下安装的软件都可以以「非 Steam 游戏」的方式添加到 Steam 里，于是，在游戏模式下还可以直接打开，不过，记得添加之后，在游戏模式下修改一下启动页的各种宣传图，更好看简洁一些。</p>
+<p><img alt="Steam Deck 桌面模式" loading="lazy" src="/images/posts/steam-deck-review/desktop-mode.webp"></p>
+<h2 id="我的超简单配件">我的超简单配件</h2>
+<p>折腾完一次 Steam Deck 的背壳之后，我就选择尽可能使用原装的东西了，现在的配件只有两个，而且是闲置利用。</p>
+<h3 id="1-原用于-switch-的二合一视频线">1. 原用于 Switch 的二合一视频线</h3>
+<p>之前买了一个给 Switch 的便携底座线，只需要一根线连接电视和 Steam Deck 即可，线路非常简洁，而且便携性很强，而 Steam Deck 接上输出线之后手柄依然可用，出门就很简单了，任何支持 HDMI 的电视都可以一根线接上。</p>
+<p><img alt="二合一视频线" loading="lazy" src="/images/posts/steam-deck-review/video-cable.webp"></p>
+<h3 id="2-闲置的-ps5-手柄">2. 闲置的 PS5 手柄</h3>
+<p>没想到 PS5 手柄的触控板也可以用于 Steam Deck，于是两个闲置手柄也复活了。然后出现一种神奇的场景：PS5 手柄连着 Steam Deck，串流 PS5 在电视上游玩……</p>
+<h2 id="最后一些弯路">最后，一些弯路</h2>
+<ul>
+<li>双系统真的不建议，除却 Windows 在掌机下糟糕的体验，这个硬件跑 Windows 上的游戏，属实有点为难 Steam Deck，但装一下还是推荐的，比较不见棺材不掉泪，折腾就会发现，Steam OS 游戏模式的体验真得很好。</li>
+<li>做好心理准备，Steam OS 的稳定性肯定不如 Switch 和 PS5 之类的，做好熟练重启设备的准备</li>
+<li>换背壳被坑了，一定要看评论，下图这个在淘宝很常见，但是不建议购买，很容易卡住 Steam Deck 的 LT 按键，不是个例。</li>
+</ul>
+<p><img alt="不推荐的背壳" loading="lazy" src="/images/posts/steam-deck-review/bad-case.webp"></p>
+<ul>
+<li>对比 PS5 和 Switch 这类主机，Steam Deck 还是会遇到很多小的不稳定问题，多尝试重启，准没错</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -1629,6 +1737,48 @@
 <p>绍兴菜，呃，一般般吧，过于精致，但是完全不下饭，不写了，但是臭豆腐、生煎包等等路边小吃还是非常值得尝一尝。</p>
 <p>本次最意外的，其实是回杭州路途中经停的安昌古镇，大概是我见过烟火气最足的古镇，没有很多热门景区小铺，大部分都是本地人在吃的本地餐馆，如果不是晚饭已吃，真想加入他们吃一桌，看着就香，先加入清单，以后路过要来单独吃一次。</p>
 <p><img alt="充满烟火气的安昌古镇" loading="lazy" src="/images/posts/shaoxing-one-day-trip-2023/anchang-town.webp"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>我们在东极岛，天气阴</title>
+      <link>http://localhost:1313/posts/dongji-island-tour-2022/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dongji-island-tour-2022/</guid>
+      <description>在阴雨天气中探索东极岛群，品尝当地海鲜美食，记录一次独特的江浙沪周末之旅</description>
+      <content:encoded><![CDATA[<p>东极岛其实不是一个岛，而是好几个岛的总称，包括庙子湖、青浜岛和东福山等等。</p>
+<p>附上东极岛的行程：</p>
+<blockquote>
+<ul>
+<li>10月5日早上开车到舟山普陀区，晚上住在朱家尖，停车在朱家尖民宿附近停车场</li>
+<li>10月6日中午打车朱家尖蜈蚣峙码头，坐船一个半小时到庙子湖，然后直接从庙子湖到东福山（需要现金30/人补这段船票），晚上住宿东福山</li>
+<li>10月7日坐船从东福山到庙子湖，晚上住庙子湖</li>
+<li>10月8日从庙子湖坐船到朱家尖，然后取车，开车回杭州</li>
+</ul></blockquote>
+<p><img alt="东福山的标志白色灯塔" loading="lazy" src="/images/posts/dongji-island-tour-2022/lighthouse.webp"></p>
+<p>我是从坐在东福山的民宿里开始写起这篇游记，屋外不断的狂风和小雨，例行给乘客送行李到码头的店家也开始骂骂咧咧穿上了雨衣。之前曾说，对比这个季节的杭州，大多是烟雨，小而弥散，而东福山几乎是 8 倍速的杭州，大型烟雨从四面八方吹来，原本计划下午再去庙子湖，索性改为上午，匆匆离去。</p>
+<p>轮渡上，可能由于风大，船舶颠簸得更甚一些，很快就能听到周围此起彼伏的呕吐声。</p>
+<p><img alt="轮渡上的呕吐袋" loading="lazy" src="/images/posts/dongji-island-tour-2022/seasick.webp"></p>
+<p>好在，庙子湖的天气虽然也是阴雨，但是是不赶人的那种，甚至兴之所至，我们直接绕着岛徒步了半圈，走过灯塔，走过左右大型墓地的步道，走过庙子湖最老的街区，据说也走过了《后会无期》的取景地，只是未曾发觉。</p>
+<p>庙子湖的老街走起来有一种在九份（台东）的感觉。</p>
+<p><img alt="台湾九份山城（2016年9月）" loading="lazy" src="/images/posts/dongji-island-tour-2022/jiufen-2016.webp"></p>
+<p><a href="https://photos.app.goo.gl/cDMeATy6xt3jiMiC8">点击查看庙子湖全景图片</a>（360 度环绕，由 Google 相册提供支持）</p>
+<p><img alt="庙子湖的全貌图" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-overview.webp"></p>
+<p><img alt="庙子湖的环岛路，非常舒适，强烈建议，全程只需2个半小时" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-road.webp"></p>
+<p><img alt="夜晚下的庙子湖岛，还能听到一阵一阵的 KTV 歌声" loading="lazy" src="/images/posts/dongji-island-tour-2022/miaozi-lake-night.webp"></p>
+<p>这次的东极岛之行，其实是因为海鲜季而触发的行程，比起三亚抑或之前去过的马来西亚邦邦岛，东极诸岛其实不算好看，也没有可以玩耍的海滩，再加上不太好的天气，人文才是岛屿最大的特色。我们一路花费3个半小时从杭州开车到舟山本岛，再坐船一个半小时到东极岛诸岛。</p>
+<p>一路上印象最为深刻的几次海鲜餐，一个是舟山本地比较人气的餐厅「原制原味」，上岛第一餐，本地菜标准之上。一个是最意想不到的位置，在最边远的东福山「阿军大排档」，本没有太高的预期，但菜品的新鲜度和味道的处理都是让我忍不住为其在点评 App 上自来水了一次，套餐价格也非常实惠，对比在朱家尖的海鲜排挡，即使是新鲜的海鲜，带给人的味道主要是腻。</p>
+<p><img alt="本地菜中的「淡菜」，最简单的处理，甚至不放盐" loading="lazy" src="/images/posts/dongji-island-tour-2022/mussels.webp"></p>
+<p><img alt="肥美的「淡菜」，青口贝" loading="lazy" src="/images/posts/dongji-island-tour-2022/green-mussels.webp"></p>
+<p><img alt="阿军大排档的辣炒黑鲷，辣的味道很到位" loading="lazy" src="/images/posts/dongji-island-tour-2022/spicy-fish.webp"></p>
+<p><img alt="阿军大排档的海鲜补货现场" loading="lazy" src="/images/posts/dongji-island-tour-2022/seafood-supply.webp"></p>
+<p>另一个是在庙子湖完全想不到的小街巷里「王妈妈海鲜面」，其实是街巷旁边非常民居的店面，民居到不注意到墙角的名字，几乎不敢相信是一家面店，甚至在走进去之后，也像是去一位村里的亲戚家吃家常菜，面的味道也不是出众到网红的程度，合格且「家常」，老婆在尝了一口给了一句「好家常」的评价，但是，好于很多正规店面。我自己来岛上吃了4-5次海鲜面，大部分的海鲜面馆连腥味都处理不好，或者说，食材的新鲜都无法保证，真的让人扫兴。</p>
+<p><img alt="王妈妈海鲜面门前" loading="lazy" src="/images/posts/dongji-island-tour-2022/wangmama-restaurant.webp"></p>
+<p><img alt="王妈妈家常海鲜面" loading="lazy" src="/images/posts/dongji-island-tour-2022/wangmama-seafood-noodles.webp"></p>
+<p>海鲜面在我心中比重非常高，简单但很少做的惊艳，印象中让我当场飙脏话称赞的只有两次，一次是越南下龙湾的海鲜面，特色的东南亚薄荷味配上包含皮皮虾的海鲜，独具风味。一次是韩国济州岛本地非常小的面馆，面馆老板是本地「海女」（济州岛上传统的女性潜水员），即使我们听不懂，也给我们热情讲着海鲜面的食材来源和制作，人文与味道俱佳。</p>
+<p>在庙子湖的最后一餐，我准备再试试海鲜面，这次点了海鲜炒面，尝一口感觉，终于点对了，本地人做面还是更适合炒面，拿着海鲜炒年糕的方法做海鲜面，当然，以上只是我吃一碗海鲜炒面后看上去合理的猜测。</p>
+<p><img alt="海鲜炒面，海鲜不多，炒面里的鸡蛋让整体更有味，且食材新鲜" loading="lazy" src="/images/posts/dongji-island-tour-2022/fried-seafood-noodles.webp"></p>
+<blockquote>
+<p>这次的东极岛之行其实运气不那么好，天气阴雨，但心情还是很放松，不过，应该只会来这一次，主要是由于，岛上本身不那么耐玩，而且虽然是仅一个半小时的船程，但太值得让人吐槽了，全程船舱封闭不让外出，甚至在回程的途中，索性连内部空调都不开，来回的感觉就是，一坐下就开始头脑昏胀，好让我们「睡」过去，这打消了我们未来带长辈来探险的可能性。</p></blockquote>
 ]]></content:encoded>
     </item>
     <item>
