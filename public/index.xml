@@ -2373,6 +2373,34 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>最近看上了什么 App｜006</title>
+      <link>http://localhost:1313/posts/recent-favorite-apps/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/recent-favorite-apps/</guid>
+      <description>分享几个最近发现的实用工具：Markdown Nice、微信小助手、DeepL 翻译和一个电子书资源网站</description>
+      <content:encoded><![CDATA[<p>好久没有写最近在用或者新发现的有趣 App 了，主要是忙着换工作的事宜，尤其是疫情期间更换工作，一旦节奏找回还是需要尽快重新进入状态。</p>
+<h2 id="markdown-写作者的福音markdown-nice">Markdown 写作者的福音：Markdown Nice</h2>
+<p>如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 <a href="http://mdnice.com">mdnice.com</a> 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。</p>
+<p>也就是你只需要，导出为 .md 文件，导入到此文件到编辑器，选择好适合的主题，简单再修一修排版，就可以复制走了。</p>
+<p>另外，最近感觉其正在商业化，已经推出了插件，逐渐在向更专业的方向演进着。</p>
+<p><img alt="Markdown Nice 编辑器界面" loading="lazy" src="/images/posts/recent-favorite-apps/markdown-nice.png"></p>
+<p>网址：<a href="https://mdnice.com/">https://mdnice.com/</a></p>
+<h2 id="开启上帝视角的微信微信小助手">开启上帝视角的微信：微信小助手</h2>
+<p>这是一个仅支持 Mac 端的一个免费工具，开启之后像是微信开启了上帝视角，你可以知晓谁退群了，谁撤回了什么消息，还可以强制 Mac 端微信切换成正在内测的黑夜模式。另外，还支持微信多开，自动回复设置，包括设置智能回复的语言库。</p>
+<p><img alt="微信小助手功能界面" loading="lazy" src="/images/posts/recent-favorite-apps/wechat-helper.png"></p>
+<p>网址：<a href="https://www.waerfa.com/wechatextension-for-wechat-mac-version">https://www.waerfa.com/wechatextension-for-wechat-mac-version</a></p>
+<h2 id="翻译能力超强的助手deepl">翻译能力超强的助手：DeepL</h2>
+<p>之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概20多个工单。</p>
+<p>另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。</p>
+<p><img alt="DeepL 翻译界面" loading="lazy" src="/images/posts/recent-favorite-apps/deepl.png"></p>
+<p>网址：<a href="https://www.deepl.com/translator">https://www.deepl.com/translator</a></p>
+<h2 id="质朴而强大的免费电子书资源网站">质朴而强大的免费电子书资源网站</h2>
+<p>不管是从网址拼写还是从界面上来看，都非常质朴，但是相比之前用过的电子书查询网站有很多优势，比如没有太多骗人的套路，支持中英文书籍，书库很全，是真的很全。</p>
+<p><img alt="电子书资源网站界面" loading="lazy" src="/images/posts/recent-favorite-apps/ebook-site.png"></p>
+<p>网址：<a href="https://b-ok.cc/">https://b-ok.cc/</a></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>从 0 到 1 转岗（产品经理）的一些感悟</title>
       <link>http://localhost:1313/posts/from-customer-service-to-product-manager-insights/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
@@ -2588,6 +2616,39 @@
 <h3 id="百度网盘"><strong>百度网盘</strong></h3>
 <p>我不用百度网盘同步，主要是我不太相信国内的任何云存储服务，但是这个挡不住目前百度网盘成为影视剧存储中心的地位，详细可以参考之前的一篇文章 《<a href="http://mp.weixin.qq.com/s?__biz=MzIxNTU3MjcyMA==&amp;mid=2247483847&amp;idx=1&amp;sn=ddf448dd8ed0d943d0b53dfdbebd1a5a&amp;chksm=97970858a0e0814e653d41f342622f4bbf1b1d4f5c641c61289b1489bfaf66ce361593d234bb&amp;scene=21#wechat_redirect">如何利用百度网盘打造私人影视库</a>》，写得更详细。</p>
 <p><img alt="百度网盘" loading="lazy" src="/images/posts/2019-toys-and-gadgets-recap/baidupan.webp"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>与不对等的怪物作对</title>
+      <link>http://localhost:1313/posts/fighting-with-unequal-monsters/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fighting-with-unequal-monsters/</guid>
+      <description>在疫情期间，如何作为个人面对这场不对等的战斗，以及如何保持理性思考和生活节奏</description>
+      <content:encoded><![CDATA[<p><img alt="封面图片" loading="lazy" src="/images/posts/fighting-with-unequal-monsters/cover.webp"></p>
+<p>没有日常跟踪热点的写作习惯，与大家一样，前期宅在家里，现在远程办公中。</p>
+<p>武汉肺炎的疫情像是给联系越来越紧密的地球村踩了一个急刹车，马路上几乎清空的车辆与网络上的沸沸扬扬简直两个极端，而北京突然的小雪更让这种对比加高了一度。肺炎开始时，我将 Telegram 某个疫情实时更新的频道通知打开着，每天像是打仗一般，待到对疫情大概有了理解后，逐步开始收拢信息通道，甚至最后关闭了朋友圈。</p>
+<p>长舒一口气。</p>
+<p>呈倍数膨胀的信息数量，几乎让个人的焦虑无处安放，就像李永乐老师在其视频里提到的那样，肺炎的症状是免疫系统针对病毒入侵所产生的过度反应，而面对疫情信息的个人，何尝不是过度反应。</p>
+<p>这是一次不对等的战斗，不可见，传染效率高，还要为其带来的社会负面效应做好准备，按照非典时期的发展规律，一切才刚刚开始。</p>
+<p><strong>作为个人，其实可以做很多事情。</strong></p>
+<p>首先，必须承认现状的发生，面对这一切。如果不深入理解，这确实是一剂鸡汤。承认现状的发生，实际是，不再对由其造成的一切负面影响仍然用「假如」来斤斤计较，而是回归接下来可以做什么，甚至考虑，做什么可以让现在的状况更好，或者去更大的层面来讨论和思考，发生的问题是什么，为什么会产生，有哪些东西需要以后来修改？怎么督促和改进？</p>
+<p>其次，社交媒体再现了什么是光怪陆离与魔幻现实，疫情未达，传言先起，而在这个时间内，我们可以重新审视自己的信息来源和信息获取能力。</p>
+<p>第一，持续积累值得信任的信息来源通道，没有绝对正确的渠道，虽然兼听则明，但也总有可信度更高的通道，或者说，信息真实度的本身其实是多个可信度权重的加成；</p>
+<p>第二，依然不建议使用抖音和快手之类的短视频 App，我希望自己继续保持这种偏见；</p>
+<p>第三，对所有截图（聊天记录）传递来的信息保持谨慎和质疑，不能因为信息逻辑易理解而认定其为真实，二者构不成因果关系；</p>
+<p>第四，识别各渠道营销号，目前主要靠之前做新媒体运营时培养的直觉，有机会单独写一篇攻略，营销号只为流量负责，不为信息真实性；</p>
+<p>第五，将无信息识别能力的微信好友设置为仅聊天，并在微信看一看里屏蔽其推荐；</p>
+<p>第六，以上一切的基础基于最后一条，持续培养和训练自己的逻辑能力，并积累常识；</p>
+<p>那些所有能让你我更接近事实的信息都值得反复咀嚼，比如做做笔记和备忘。在这一次事件中，我真正感受到，读书还是有用的，至少在这些讲解病毒结构和传染性原理时，我们能听懂和理解。太多时候，我们死心塌地相信一个说法，并不是因为自己理性的推理，而在于这个说法恰好落在我们可以理解的能力范围内，成为「事实」。</p>
+<p>然后，尝试理解更多，有些甚至是违反本能的，最怕的是，我们本能地开始相信很多事情，尤其当前恐惧上头的时候。</p>
+<p>理解人性的复杂，有人隐瞒自己病情不报，有人地铁发疯吐痰，有人撕扯医生口罩，等等，任何灾难的发生都会由于人性的复杂而产生本能一时无法理解的举动，他们也有可能在另一时是好人，只是此一时的情境所迫。放慢节奏，不急于盖棺定论。</p>
+<p>理解系统的滞后性，疫情本身作为整场灾难的开始，社会的很多连锁反应会接踵而至，系统会有其应有的响应时间。</p>
+<p>理解目前的混乱是必然的结果，就像很多人怕看到小孩哭一样，此时的负面状态是整个社会应有的反应，不盲目恐慌，甚至可以作为历史的见证者更积极参与其中，或者，起码可以观察这一切。</p>
+<p>最后，找回节奏。</p>
+<p>阻碍我们的不只是远程办公，还有刚过去的春节所带来的假期综合症。两个事情所带来的同一个问题就是，节奏的丢失。连续多日没有规律的假期生活，再加上好不容易上班后开始的远程办公，很多人无法适应这种生活与工作无法分开的节奏。有很多小技巧可以去尝试。</p>
+<p>重新尝试罗列工作与生活周计划，这是我自己比较习惯的计划方式，一周有一个阶段性的开始和结束，又不至于一天太短，做了事情也看不到进度。</p>
+<p>尝试用番茄工作法来切割时间，每半个小时一个工作区间，保持适度的专注。而且，半个小时的「强制」沉浸，可以很快带自己进入到一种「流」的状态。</p>
+<p>重新捡起健身的小任务，感谢任天堂的《健身环大冒险》，每天流汗半小时，等到洗完澡，可以真的「静下来」写写文字，今天是健身的第17天。</p>
 ]]></content:encoded>
     </item>
     <item>
