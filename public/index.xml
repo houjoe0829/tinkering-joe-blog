@@ -574,7 +574,7 @@
 <li>此方案仅适配苹果系设备，不支持 Windows、Android</li>
 <li>科学上网 = 代理软件（Shadowrocket）+ 海外线路</li>
 <li>最强保险依然是，买两家线路，更抗风险，当然，越多越好</li>
-<li>有 QuantumltX 的可以看 <a href="/posts/quantumult-x-guide/">最简约的科学上网方案：Quantumlt X</a></li>
+<li>有 QuantumltX 的可以看 <a href="/posts/quantumult-x-guide">最简约的科学上网方案：Quantumlt X</a></li>
 </ul></blockquote>
 <p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/shadowrocket/image1.png"></p>
 <h2 id="为什么推荐-shadowrocket">为什么推荐 Shadowrocket</h2>
@@ -1190,9 +1190,9 @@
 <p>对于游戏而言，2023 真的是一个值得玩家欢呼的一年，大作频出，卷出了天际。即使作为一个非重度玩家，我也感受到了游戏厂商的满满诚意，奈何分身乏术，只能一部一部玩。</p>
 <ul>
 <li><a href="/posts/tears-of-the-kingdom-review"><strong>《塞尔达传说·王国之泪》游记（涉及剧透）</strong></a> ：尽管很多人转身去了博德之门3，我依然最喜欢王国之泪，最自由的开放世界游戏，没有之一，时不时都想回海拉鲁大陆闲逛一下。</li>
-<li><a href="/posts/spiderman-2-review">漫威蜘蛛侠 2</a>：未曾想到这个会超越《巫师3》在我心目中的位置， 但动作实在太炫酷了，长达 28 小时的电影之旅，让人心潮澎湃。</li>
-<li><a href="/posts/witcher-3-review">巫师3</a>：这是一个老游戏，在两度放弃之后，终于在今年的 Steam Deck 上玩完了，本体和 DLC 的主线剧情和支线剧情让人意犹未尽。</li>
-<li><a href="/posts/god-of-war-ragnarok-review">战神之诸神黄昏</a>：一部稳定发挥的续作，虽然没有太多惊喜，但是，一贯的高水准已经足够，而且，还有一个完美的结局。</li>
+<li><a href="https://www.notion.so/2-35aafb890fa64d08b5e1b8cde2fe5940?pvs=21">漫威蜘蛛侠 2</a> ：未曾想到这个会超越《巫师3》在我心目中的位置， 但动作实在太炫酷了，长达 28 小时的电影之旅，让人心潮澎湃。</li>
+<li><a href="https://www.notion.so/3-2c04f670002241049611f6582cf6c6ba?pvs=21">巫师3</a> ：这是一个老游戏，在两度放弃之后，终于在今年的 Steam Deck 上玩完了，本体和 DLC 的主线剧情和支线剧情让人意犹未尽。</li>
+<li><a href="https://www.notion.so/59e08de7e95b4b2fa76e30d0c2a66a15?pvs=21">战神之诸神黄昏</a> ：一部稳定发挥的续作，虽然没有太多惊喜，但是，一贯的高水准已经足够，而且，还有一个完美的结局。</li>
 </ul>
 <p><img alt="年度游戏" loading="lazy" src="/images/posts/2023-toys-recap/Untitled-2.webp"></p>
 <h3 id="年度影视剧">年度影视剧</h3>
@@ -1463,7 +1463,7 @@
 <p>7月3日在巴厘岛海边远程工作</p>
 <h3 id="-专注与完整性">→ 专注与完整性</h3>
 <p>其实很早在之前写的文章里提到过，也是一直在主动训练的部分，同类型的事情，一次只做一个，专注沉浸，结束了再做下一个，与直觉不同，比起同时开启多个，这样反而可以完成更多，比如游戏、书籍、影视剧等等，可能需要准备的是，一个清单、一份歌单以及一款用来随时30分钟倒计时的 App。</p>
-<p><a href="/posts/let-go-obsession-turn-on-heater">做完一件事，很重要</a></p>
+<p><a href="/posts/finish-one-thing-is-important">做完一件事，很重要</a></p>
 <h3 id="-不完美的中间态">→ 不完美的中间态</h3>
 <p>年初的时候在推上特别写过这个话题。慢慢的，越来越能接受一种笔记的中间态，不过早去美化笔记，而是即用即更新，凌乱是一个必须经历的过程，时间会让积累自然发生。</p>
 <p><img alt="不完美的中间态" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-2.webp"></p>
@@ -1471,7 +1471,7 @@
 <p>这半年，正在从一种追求过于纯粹的离线可用，逐步调整思路，更偏向于 Building life public with tools（这是一个还未写完的想法，下一篇准备写完的文章），其实使用路数变化不大，日记等私密记录，仍然是使用 Bear 来快速记录和标签标记，离线可用且加密，但是，个人知识库和博客，从 Craft 改回 Notion 这种云端工具，这样在未来随时都可以把个人知识库某一块折腾的无用但有趣的内容分享出来，至于为什么放弃了 Craft，缺少 Database 吧。</p>
 <p>就像我的个人博客：<a href="/posts/why-start-blogging">Joe 的折腾日记</a></p>
 <p>其他的，我放弃了本地思维导图工具 MindNode，改为在线白板 Whimsical，可以直接分享思维导图，就像<a href="https://whimsical.com/s3pm6mwq1RT6jF3WFmTph">这个</a>。阅读工具从 iBooks 转到了微信读书，主要是为了更快更稳定的跨设备阅读进度同步。</p>
-<p>更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 <a href="/posts/ola-friend-ai-earphone">Monica</a>。</p>
+<p>更重要的一个小点，没想到，AI 真的融入工作和生活了，ChatGPT 已经成为每天在用个人助手，解决非常多的小疑问，不过，AI 助手已经从 OpenCat 转移到了 <a href="/posts/monica-review">Monica</a>。</p>
 <p><img alt="AI 助手的使用" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-3.webp"></p>
 <h2 id="3-最近去过的地方">3. 最近去过的地方</h2>
 <p>自从去年来到杭州，「江浙沪包游」一直是我的核心主题，目前已经从杭州自驾去了舟山、宁波、湖州、台州、金华、千岛湖、南京、上海、绍兴等等，不过，不是所有的地方都会有游记，但也很想都留下想法，下次一定。</p>
@@ -1479,15 +1479,15 @@
 <p><a href="/posts/shaoxing-one-day-trip-2023">记录绍兴一日游</a></p>
 <p><a href="/posts/taizhou-travel-notes">台(tāi)州游记</a></p>
 <h2 id="4-公开的个人游戏库">4. 公开的个人游戏库</h2>
-<p>最近直接在<a href="/posts/why-start-blogging">个人主页</a>公开分享了<a href="/posts/why-start-blogging">游戏库</a>页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。</p>
+<p>最近直接在<a href="/posts/why-start-blogging">个人主页</a>公开分享了<a href="/posts/game-library">游戏库</a>页面，大概是践行前文提到的 Building life public with tools 的一小步。游戏的过程中，我会收集主题相关的各类信息，游玩后也会写上感想和游戏截图，很适合当其他人问我推荐什么游戏的时候，复制选择其中的链接发给他。</p>
 <p>而这半年的主要游戏时间确实都给了《王国之泪》，而且还只是暂时性结束，预计在下半年的某一个时间点还会继续探索海拉鲁大陆，这种探索的满足感是其他游戏很难提供的。</p>
 <p><a href="/posts/tears-of-the-kingdom-review">《塞尔达传说·王国之泪》游记（涉及剧透）</a></p>
-<p><a href="/posts/god-of-war-ragnarok-review">战神之诸神黄昏</a></p>
-<p><a href="/posts/cyberpunk-2077-hundred-hours-dream">脑航员2</a></p>
-<p><a href="/posts/cyberpunk-2077-hundred-hours-dream">底特律：化身为人</a></p>
+<p><a href="/posts/god-of-war-ragnarok">战神之诸神黄昏</a></p>
+<p><a href="/posts/psychonauts-2">脑航员2</a></p>
+<p><a href="/posts/detroit-become-human">底特律：化身为人</a></p>
 <p><img alt="游戏截图" loading="lazy" src="/images/posts/joe-recap-8-month-before/image-4.webp"></p>
 <h2 id="5-最近看过的书">5. 最近看过的书</h2>
-<p>前半年看的书籍太少了，文章为主，只有一本为了了解马斯克创办马斯克而阅读的<a href="/posts/why-not-recommend-tesla">《特斯拉：埃隆·马斯克的颠覆创新与商业智慧》笔记与摘抄</a>，适合作为了解电车的一个特别的角度，后半年加加油。</p>
+<p>前半年看的书籍太少了，文章为主，只有一本为了了解马斯克创办马斯克而阅读的<a href="/posts/tesla-book-review">《特斯拉：埃隆·马斯克的颠覆创新与商业智慧》笔记与摘抄</a>，适合作为了解电车的一个特别的角度，后半年加加油。</p>
 <h2 id="6-败家的硬件">6. 败家的硬件</h2>
 <p>这部分不用多说，虽败家，但仍然推荐，还有一篇想写给 Nas，但还在清单里，先立 flag。</p>
 <p><a href="/posts/why-not-recommend-tesla">为什么不推荐买特斯拉</a></p>
