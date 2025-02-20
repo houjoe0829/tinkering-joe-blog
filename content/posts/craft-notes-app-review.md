@@ -3,7 +3,7 @@ title: "Craft：一款小众且独特的笔记软件"
 date: "2024-02-20"
 description: "深入探讨 Craft 这款独特的笔记软件，分析其优缺点，以及与 Notion、Evernote 等主流笔记软件的对比"
 draft: false
-tags: ["软件推荐", "折腾软硬件"]
+tags: ["折腾软硬件"]
 author: "Joe"
 ---
 
