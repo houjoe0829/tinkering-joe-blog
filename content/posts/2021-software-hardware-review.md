@@ -19,7 +19,7 @@ title: "2021 玩物志：年度软件与硬件盘点"
 
 ![Notion 界面截图](/images/posts/2021-software-hardware-review/notion-screenshot.webp)
 
-去年年初还沉浸在 Craft 这款笔记软件中（之前写的 [Craft：一款小众且独特的笔记软件](https://www.notion.so/Craft-b640d9f46d574c41b8130da57b05327b?pvs=21)），虽然仍觉得 Craft 很好用，但在综合实力上，Notion 还在最适合我的，不过，关于 Notion 的用法可查看最近写的 [拿 Notion 做什么？不做什么？ ](https://www.notion.so/Notion-792944f70f1641cebb1a924725b56486?pvs=21) 
+去年年初还沉浸在 Craft 这款笔记软件中（之前写的 [Craft：一款小众且独特的笔记软件](/posts/craft-notes-app-review)），虽然仍觉得 Craft 很好用，但在综合实力上，Notion 还在最适合我的，不过，关于 Notion 的用法可查看最近写的 [拿 Notion 做什么？不做什么？ ](https://www.notion.so/Notion-792944f70f1641cebb1a924725b56486?pvs=21) 
 
 在使用 Notion 越来越熟练之后，已经在其构建了属于我自己的「数字花园」，我的工作 Wiki、阅读笔记、产品案例集、个人生活 Wiki、个人博客、游戏记录、软件折腾日志、没什么用的小研究都放在上面。
 

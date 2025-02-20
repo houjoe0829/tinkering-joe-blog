@@ -101,10 +101,16 @@
     <loc>http://localhost:1313/posts/first-time-in-japan/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/craft-notes-app-review/</loc>
+    <lastmod>2024-02-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/emotn-android-tv-exploration/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/vr-workroom-experience/</loc>
+    <lastmod>2024-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/chinese-new-year-2024-recap/</loc>
