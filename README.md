@@ -2,15 +2,6 @@
 
 这个博客使用 Hugo 静态网站生成器构建，并托管在 Cloudflare Pages 上。
 
-## 当前博客构建方式
-
-* **Hugo**: 负责将 Markdown 内容转换为静态网页。
-* **Cloudflare Pages**:  提供网站托管、CDN 加速和自动部署。
-* **GitHub**:  用于存储博客源代码和版本管理。
-* **Giscus**:  提供评论功能，使用 GitHub Discussions 存储评论数据。
-
----
-
 ## 项目目录结构
 
 ```
@@ -41,6 +32,47 @@ discovery-log/
 ├── hugo.yaml           # Hugo 配置文件
 └── README.md          # 项目说明文档
 ```
+
+## 当前博客构建方式
+
+* **Hugo**: 负责将 Markdown 内容转换为静态网页。
+* **Cloudflare Pages**:  提供网站托管、CDN 加速和自动部署。
+* **GitHub**:  用于存储博客源代码和版本管理。
+* **Giscus**:  提供评论功能，使用 GitHub Discussions 存储评论数据。
+
+---
+
+## 本地构建和调试
+
+在您提交更新之前，您可以在本地电脑上预览博客效果，确保一切正常：
+
+1. **安装 Hugo**:  请确保您已经在本机安装了 Hugo (具体安装步骤请参考 [Hugo 官方文档](https://gohugo.io/getting-started/installing/))。
+
+2. **本地预览**:
+    * 运行命令 `hugo server -D`。
+    * Hugo 将会在本地启动一个开发服务器，您可以通过浏览器访问 `http://localhost:1313/` 来预览您的博客。
+
+3. **停止预览**:
+    * 在命令行终端中按下 `Ctrl + C` 即可停止本地 Hugo 开发服务器。
+
+## 日常手动更新博客要注意的点
+
+您只需要关注以下几个步骤即可轻松更新您的博客：
+
+1. **撰写文章**:
+    * 博客文章使用 Markdown 格式编写，请将 Markdown 文件放在 `content/posts/` 目录下。
+    * **文件名命名规范**：
+        * **使用英文**：文件名请使用英文单词，避免使用拼音。
+        * **使用短横线分隔**： 单词之间使用短横线 `-` 分隔，例如 `my-second-post.md` 或 `how-to-insert-image.md`。
+    * 例如，如果您要写一篇名为 `my-second-post.md` 的文章，就将其放在 `content/posts/` 文件夹中。
+
+2. **插入图片**:
+    * 如果您需要在文章中插入图片，请将图片文件放在 `static/images/` 目录下。
+    * 然后在 Markdown 文件中使用 Markdown 语法引用图片，例如 `![图片描述](/images/your-image.jpg)`。
+
+3. **提交更新**:
+    * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
+    * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
 ## 博客样式定制
 
@@ -100,40 +132,39 @@ discovery-log/
     * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
-## 本地构建和调试
 
-在您提交更新之前，您可以在本地电脑上预览博客效果，确保一切正常：
+## 依据 Markdown 文件自动更新博文的说明
 
-1. **安装 Hugo**:  请确保您已经在本机安装了 Hugo (具体安装步骤请参考 [Hugo 官方文档](https://gohugo.io/getting-started/installing/))。
+这些 Markdown 是从 Obsidian 导出的，包括 Markdown 文件和附件，都放在 `draftfiles` 目录下。
 
-2. **本地预览**:
-    * 运行命令 `hugo server -D`。
-    * Hugo 将会在本地启动一个开发服务器，您可以通过浏览器访问 `http://localhost:1313/` 来预览您的博客。
-
-3. **停止预览**:
-    * 在命令行终端中按下 `Ctrl + C` 即可停止本地 Hugo 开发服务器。
-
-## AI 助手依据 Markdown 文件手动更新博客的说明
-
-在这种场景下，我只通过 Markdown 文章提供标题和正文。
-
-AI 将执行以下关键步骤来帮助您更新博客：
+请按照以下关键步骤来帮助更新至当前的 Blog 格式：
 
 1. **接收并理解内容**：AI 助手会仔细阅读并理解您提供的文章标题和正文。
-2. **创建 Markdown 文件**：在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件。
+2. **创建 Markdown 文件**：在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件，要求是英文单词，不要使用拼音。
 3. **添加 Frontmatter**：AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括：
    * `title`：文章标题
-   * `date`：发布日期
-   * `draft`：是否为草稿
+   * `date`：发布日期为今天，请先获取当前日期，不要使用 AI 数据库的日期
+   * `draft`：是否为草稿，默认不是草稿
    * `description`：文章简短描述
-   * `tags`：从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
+   * `tags`：只能从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
    * `author`：作者信息
    每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
    - YAML 对特殊字符非常敏感，特别是在 Front Matter 中
    - 在元数据里，使用纯英文引号包裹 YAML 值
    - 在元数据里，统一使用半角标点符号
 4. **添加文章正文**：AI 会将您提供的文章正文内容复制到 Markdown 文件中。
+5. **添加图片**：
+   - 在 `static/images/posts/` 目录下，创建与文章同名的目录
+   - 将原始图片复制到该目录
+   - 根据图片内容给予有意义的文件名
+   - 使用 `compress_article_images.py` 脚本处理单篇文章的图片：
 
+        ```bash
+        python3 scripts/compress_article_images.py article-name
+        ```
+   - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
+   - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
+   
 ## 使用 AI 助手来处理 Notion Zip 文件
 
 主要是将 Notion 导出的 Zip 文件转换为当前的 Blog 格式，请严格遵守以下处理步骤，不要遗漏，每做完一步自检一次：
