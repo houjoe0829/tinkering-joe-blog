@@ -128,18 +128,29 @@ async function checkAndNotify(env) {
     const newPosts = [];
     for (const item of items) {
       const pubDate = new Date(item.pubDate);
+      console.log('原始文章发布时间:', item.pubDate);
+      console.log('解析后的发布时间:', pubDate.toISOString());
       
-      if (env.IS_TEST_MODE === 'true') {
-        if (pubDate > lastCheckTime) {
-          newPosts.push(item);
-        }
-        continue;
-      }
+      // 将发布时间和上次检查时间都转换为 UTC 时间进行比较
+      const pubDateUTC = new Date(pubDate.getTime() - pubDate.getTimezoneOffset() * 60 * 1000);
+      const lastCheckTimeUTC = new Date(lastCheckTime.getTime() - lastCheckTime.getTimezoneOffset() * 60 * 1000);
+      
+      // 只比较日期部分
+      const pubDateString = pubDateUTC.toISOString().split('T')[0];
+      const lastCheckTimeString = lastCheckTimeUTC.toISOString().split('T')[0];
+      
+      console.log('文章发布日期:', pubDateString);
+      console.log('上次检查日期:', lastCheckTimeString);
       
       const postKey = `sent_${item.link}`;
       const isSent = await env.KV.get(postKey);
       
-      if (pubDate > lastCheckTime && !isSent) {
+      if (pubDateString >= lastCheckTimeString && !isSent) {
+        if (env.IS_TEST_MODE === 'true') {
+          console.log('测试模式：发现新文章');
+        } else {
+          console.log('正常模式：发现新文章');
+        }
         newPosts.push(item);
       }
     }
@@ -156,19 +167,18 @@ ${post.description ? `${post.description.slice(0, 200)}...` : ''}
 🔗 <a href="${post.link}">阅读全文</a>
 
 ${env.IS_TEST_MODE === 'true' ? '⚠️ 测试模式消息' : ''}
-发布时间: ${new Date(post.pubDate).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+发布日期: ${new Date(post.pubDate).toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai' })}
 `;
       
       await sendTelegramMessage(message, env);
       
-      if (env.IS_TEST_MODE !== 'true') {
-        const postKey = `sent_${post.link}`;
-        try {
-          await env.KV.put(postKey, 'true', {expirationTtl: 60 * 60 * 24 * 7});
-          console.log(`已发送文章: ${post.title}`);
-        } catch (kvError) {
-          console.error(`标记文章发送状态失败: ${post.title}`);
-        }
+      // 无论是否测试模式，都设置发送标记
+      const postKey = `sent_${post.link}`;
+      try {
+        await env.KV.put(postKey, 'true', {expirationTtl: 60 * 60 * 24 * 7});
+        console.log(`已发送文章: ${post.title}`);
+      } catch (kvError) {
+        console.error(`标记文章发送状态失败: ${post.title}`);
       }
     }
     
