@@ -36,11 +36,28 @@ function getTimeRange() {
   };
 }
 
+// 解码 HTML 实体
+function decodeHTMLEntities(text) {
+  const entities = {
+    '&quot;': '"',
+    '&apos;': "'",
+    '&#39;': "'",
+    '&lt;': '<',
+    '&gt;': '>',
+    '&amp;': '&',
+    '&nbsp;': ' '
+  };
+  
+  return text.replace(/&[^;]+;/g, entity => {
+    return entities[entity] || entity;
+  });
+}
+
 // 从 XML 中提取标签内容
 function extractTag(xml, tag) {
   const regex = new RegExp(`<${tag}[^>]*>(.*?)<\/${tag}>`, 's');
   const match = xml.match(regex);
-  return match ? match[1].trim() : '';
+  return match ? decodeHTMLEntities(match[1].trim()) : '';
 }
 
 // 解析 RSS XML
