@@ -164,6 +164,7 @@ discovery-log/
         ```
    - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
    - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
+   - 清理原始图片、临时文件
    
 ## 使用 AI 助手来处理 Notion Zip 文件
 
