@@ -25,6 +25,12 @@ hideMeta: true
 - 🐙 **GitHub**：[houjoe0829](https://github.com/houjoe0829) -  我也开始写代码了……
 - 💬 **Wechat**：微信号[houjoe829]  -  请备注来意
 
+## 🔧 我的工具包
+
+<a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph@6HYTAunKLgTWCJ5hUzZL6hoqpkPYA535eqWVFPwb4s8xx3f" target="_blank">👉 点击这里在新窗口查看完整白板</a>
+
+<iframe style="border:none" width="100%" height="300" src="https://whimsical.com/embed/joe-s3pm6mwq1RT6jF3WFmTph@6HYTAunKLgTWCJ5hUzZL6hoqpkPYA535eqWVFPwb4s8xx3f"></iframe>
+
 ## 🌟 Side Projects
 
 - [OmniAudio](https://omniaudio.info/)
