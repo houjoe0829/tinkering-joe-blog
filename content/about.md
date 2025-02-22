@@ -36,7 +36,9 @@ hideMeta: true
 - [OmniAudio](https://omniaudio.info/)
   > 🎧 OmniAudio 是一款 AI 音频内容聚合服务，它可以将各种形式的内容，如网页、Word 文档、Gmail、文本片段、甚至视频和音频文件，转化为 podcast 播客节目，并生成可以直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。
 
-  ![OmniAudio - Turn Anything into Audio You can Listen to](/images/posts/omniaudio-hero.webp)
+  <div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/images/posts/omniaudio-hero.webp" alt="OmniAudio - Turn Anything into Audio You can Listen to" style="max-width: 60%; height: auto;">
+  </div>
 
 - SparkFlow (纯开发练手)
   > ✨ Type like texting, think like connecting. 希望做一款极简卡片笔记，让你像聊天一样快速记录，像 Logseq 那样自由关联。最终目标是，Capture your idea instantly, let AI handle the rest.
