@@ -143,7 +143,7 @@ discovery-log/
 2. **创建 Markdown 文件**：在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件，要求是英文单词，不要使用拼音。
 3. **添加 Frontmatter**：AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括：
    * `title`：文章标题
-   * `date`：发布日期为今天，请先获取当前日期，不要使用 AI 数据库的日期
+   * `date`：发布日期为今天，请使用指令 `$ date +%Y-%m-%d` 获取当前日期，不要使用 AI 数据库的日期
    * `draft`：是否为草稿，默认不是草稿
    * `description`：文章简短描述
    * `tags`：只能从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
@@ -164,7 +164,7 @@ discovery-log/
         ```
    - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
    - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
-   - 清理原始图片、临时文件
+   - 清理原始图片、临时文件，以及 `draftfiles` 目录下的所有文件
    
 ## 使用 AI 助手来处理 Notion Zip 文件
 
