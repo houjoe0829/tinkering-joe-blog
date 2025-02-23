@@ -54,14 +54,22 @@
     {{- end }}
 </div>
 
+<!-- 文章总数统计 -->
+<div id="postCount" class="post-count">
+    ☕️ 当前总共 {{ len (where .Site.RegularPages "Type" "posts") }} 篇博文！
+</div>
+
 <script>
-// 当搜索框有输入时隐藏标签
+// 当搜索框有输入时隐藏标签和文章总数统计
 document.getElementById('searchInput').addEventListener('input', function() {
     const tagCloud = document.getElementById('tagCloud');
+    const postCount = document.getElementById('postCount');
     if (this.value.length > 0) {
         tagCloud.style.display = 'none';
+        postCount.style.display = 'none';
     } else {
         tagCloud.style.display = 'flex';
+        postCount.style.display = 'block';
     }
 });
 </script>

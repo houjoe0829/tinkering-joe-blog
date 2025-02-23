@@ -68,6 +68,16 @@
     opacity: 0.8;
 }
 
+/* 文章总数统计样式 */
+.post-count {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
 /* 导航栏搜索图标对齐 */
 .nav #menu li a {
     display: flex;
