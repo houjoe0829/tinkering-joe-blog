@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/writing-after-zhubai-closure/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</loc>
+    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/ai-programming-the-hardest-20-percent/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/best-local-ai-note-taking-tools/</loc>
@@ -60,9 +66,6 @@
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/ai-chat-lack-compression-history/</loc>
-    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/river-town-book-review/</loc>
