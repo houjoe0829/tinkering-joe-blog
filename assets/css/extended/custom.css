@@ -293,4 +293,37 @@
     .post-references .post-references-list {
         gap: 0.2rem;
     }
+}
+
+/* 网站 favicon 样式 */
+.site-favicon {
+    display: inline-block;
+    margin-left: 10px; /* 增加与标题的间距 */
+    vertical-align: middle; /* 垂直居中 */
+    width: 18px; /* 调整尺寸 */
+    height: 18px;
+    object-fit: contain; /* 确保图标完整显示 */
+    border-radius: 0 !important; /* 强制移除圆角 */
+    -webkit-border-radius: 0 !important; /* Safari 兼容性 */
+    -moz-border-radius: 0 !important; /* Firefox 兼容性 */
+    overflow: visible !important; /* 确保图像不被裁剪 */
+    box-shadow: none !important; /* 移除可能的阴影 */
+    padding: 0 !important; /* 移除内边距 */
+    background: transparent !important; /* 确保背景透明 */
+    border: none !important; /* 移除边框 */
+    transform: none !important; /* 防止变形 */
+    filter: none !important; /* 移除滤镜效果 */
+    clip-path: none !important; /* 移除裁剪路径 */
+    mask: none !important; /* 移除蒙版 */
+    position: relative; /* 使用相对定位 */
+    top: -2px; /* 微调垂直位置，使其与文本更好地对齐 */
+}
+
+@media screen and (max-width: 768px) {
+    .site-favicon {
+        margin-left: 8px; /* 移动端稍微减小间距 */
+        width: 18px; /* 增大移动端尺寸 */
+        height: 18px; /* 增大移动端尺寸 */
+        top: -1.5px; /* 微调垂直位置 */
+    }
 } 
