@@ -2,16 +2,17 @@
 
 {{- if not .Date.IsZero -}}
   {{- $now := now -}}
-  {{- $today := $now.Format "2006-01-02" -}}
-  {{- $yesterday := ($now.AddDate 0 0 -1).Format "2006-01-02" -}}
-  {{- $dayBeforeYesterday := ($now.AddDate 0 0 -2).Format "2006-01-02" -}}
-  {{- $postDate := .Date.Format "2006-01-02" -}}
+  {{- $nowUnix := $now.Unix -}}
+  {{- $dateUnix := .Date.Unix -}}
+  {{- $daySeconds := 86400 -}}
+  {{- $diff := sub $nowUnix $dateUnix -}}
+  {{- $diffDays := div $diff $daySeconds -}}
   
-  {{- if eq $postDate $today -}}
+  {{- if lt $diffDays 1 -}}
     {{- $scratch.Add "meta" (slice (printf "<span title='%s'>今天</span>" (.Date | time.Format "2006-01-02"))) -}}
-  {{- else if eq $postDate $yesterday -}}
+  {{- else if lt $diffDays 2 -}}
     {{- $scratch.Add "meta" (slice (printf "<span title='%s'>昨天</span>" (.Date | time.Format "2006-01-02"))) -}}
-  {{- else if eq $postDate $dayBeforeYesterday -}}
+  {{- else if lt $diffDays 3 -}}
     {{- $scratch.Add "meta" (slice (printf "<span title='%s'>前天</span>" (.Date | time.Format "2006-01-02"))) -}}
   {{- else -}}
     {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "2006-01-02" site.Params.DateFormat)))) -}}

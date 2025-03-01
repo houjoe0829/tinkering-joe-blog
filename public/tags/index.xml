@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Joe 的折腾日记</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:64552/tags/</link>
     <description>Recent content in Tags on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64552/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我有个想法！</title>
-      <link>http://localhost:1313/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</link>
+      <link>http://localhost:64552/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</guid>
+      <guid>http://localhost:64552/tags/%E6%88%91%E6%9C%89%E4%B8%AA%E6%83%B3%E6%B3%95/</guid>
       <description></description>
     </item>
     <item>
       <title>折腾软硬件</title>
-      <link>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</link>
+      <link>http://localhost:64552/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</guid>
+      <guid>http://localhost:64552/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>http://localhost:64552/tags/ai/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://localhost:64552/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>工作感悟</title>
-      <link>http://localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</link>
+      <link>http://localhost:64552/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</guid>
+      <guid>http://localhost:64552/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</guid>
       <description></description>
     </item>
     <item>
       <title>阅读笔记</title>
-      <link>http://localhost:1313/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:64552/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:64552/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>生活感悟</title>
-      <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</link>
+      <link>http://localhost:64552/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</link>
       <pubDate>Thu, 13 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</guid>
+      <guid>http://localhost:64552/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</guid>
       <description></description>
     </item>
     <item>
       <title>书影音的精神角落</title>
-      <link>http://localhost:1313/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3%E7%9A%84%E7%B2%BE%E7%A5%9E%E8%A7%92%E8%90%BD/</link>
+      <link>http://localhost:64552/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3%E7%9A%84%E7%B2%BE%E7%A5%9E%E8%A7%92%E8%90%BD/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3%E7%9A%84%E7%B2%BE%E7%A5%9E%E8%A7%92%E8%90%BD/</guid>
+      <guid>http://localhost:64552/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3%E7%9A%84%E7%B2%BE%E7%A5%9E%E8%A7%92%E8%90%BD/</guid>
       <description></description>
     </item>
     <item>
       <title>现实是个开放世界</title>
-      <link>http://localhost:1313/tags/%E7%8E%B0%E5%AE%9E%E6%98%AF%E4%B8%AA%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</link>
+      <link>http://localhost:64552/tags/%E7%8E%B0%E5%AE%9E%E6%98%AF%E4%B8%AA%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%8E%B0%E5%AE%9E%E6%98%AF%E4%B8%AA%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</guid>
+      <guid>http://localhost:64552/tags/%E7%8E%B0%E5%AE%9E%E6%98%AF%E4%B8%AA%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</guid>
       <description></description>
     </item>
     <item>
       <title>游戏也是场冒险</title>
-      <link>http://localhost:1313/tags/%E6%B8%B8%E6%88%8F%E4%B9%9F%E6%98%AF%E5%9C%BA%E5%86%92%E9%99%A9/</link>
+      <link>http://localhost:64552/tags/%E6%B8%B8%E6%88%8F%E4%B9%9F%E6%98%AF%E5%9C%BA%E5%86%92%E9%99%A9/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B8%B8%E6%88%8F%E4%B9%9F%E6%98%AF%E5%9C%BA%E5%86%92%E9%99%A9/</guid>
+      <guid>http://localhost:64552/tags/%E6%B8%B8%E6%88%8F%E4%B9%9F%E6%98%AF%E5%9C%BA%E5%86%92%E9%99%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>江浙沪包游</title>
-      <link>http://localhost:1313/tags/%E6%B1%9F%E6%B5%99%E6%B2%AA%E5%8C%85%E6%B8%B8/</link>
+      <link>http://localhost:64552/tags/%E6%B1%9F%E6%B5%99%E6%B2%AA%E5%8C%85%E6%B8%B8/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B1%9F%E6%B5%99%E6%B2%AA%E5%8C%85%E6%B8%B8/</guid>
+      <guid>http://localhost:64552/tags/%E6%B1%9F%E6%B5%99%E6%B2%AA%E5%8C%85%E6%B8%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>提升幸福感的好物</title>
-      <link>http://localhost:1313/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</link>
+      <link>http://localhost:64552/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</guid>
+      <guid>http://localhost:64552/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>小城故事</title>
-      <link>http://localhost:1313/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</link>
+      <link>http://localhost:64552/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</link>
       <pubDate>Wed, 27 Nov 2024 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</guid>
+      <guid>http://localhost:64552/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>骑行</title>
-      <link>http://localhost:1313/tags/%E9%AA%91%E8%A1%8C/</link>
+      <link>http://localhost:64552/tags/%E9%AA%91%E8%A1%8C/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E9%AA%91%E8%A1%8C/</guid>
+      <guid>http://localhost:64552/tags/%E9%AA%91%E8%A1%8C/</guid>
       <description></description>
     </item>
   </channel>
