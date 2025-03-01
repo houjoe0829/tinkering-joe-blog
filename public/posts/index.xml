@@ -9,13 +9,14 @@
     <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在哪里写东西：竹白关闭之后</title>
+      <title>何处安放文字：竹白关闭之后</title>
       <link>http://localhost:1313/posts/writing-after-zhubai-closure/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/writing-after-zhubai-closure/</guid>
       <description>在竹白即将关闭的背景下，分享我的写作发布流程，包括微信公众号和个人独立博客的选择与实践。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>竹白是一个一站式创作工具，方便写文章，自动生成个人站点，是少有的支持邮件和微信订阅两种方式的平台，2024 年已经几乎不再更新，而 2025年初即将彻底关闭。</p></blockquote>
+<img src="/images/posts/writing-after-zhubai-closure/竹白下线.png" alt="竹白下线通知" style="width: 50%; margin: 0 auto; display: block;" />
 <p>之前在各种平台尝试写过，今日头条、知乎、网易博客、Notion 站点、QQ 空间、微信公众号、Zine，目前断断续续更新博文已经超过 100 篇。</p>
 <p>当初选择竹白，是觉得相比微信公众号，其编辑器简单易用，而且，既有微信通道的推送（基于小程序），也有邮件订阅，还在未来计划里有支持 RSS  和飞书通道的打算。</p>
 <p>不过，从去年觉察到竹白完全不更新之后，就开始思索新的安家之地，我还是需要一个线上站点，毕竟写写东西本身已经成为了一种家常便饭，就当是社会化聊天，具体可以参考之前写的： <a href="/posts/why-start-blogging">为什么要写 blog？</a> </p>
@@ -27,7 +28,7 @@
 <p>不过，最重要的考量还是，在很多平台都发布过东西，只有微信公众号还保持着写东西的纯粹性，没有那么多干扰，虽然编辑器依然难用，而且现在的公众号已经有了更多写作的形式，可以图文、图片、视频、音频、直播等等。</p>
 <h2 id="21-世纪了为什么还要个人站点">21 世纪了，为什么还要个人站点</h2>
 <p>主要是因为，生活不止是微信，还有更大的世界，而且，微信公众号审核过多，二次编辑受限，可以有一个更为属于自己的自留地，想怎么写就怎么写。</p>
-<p>之前很多内容都放在一个文档工具 Notion 里，也是一个思路，可以参考之前写的 <a href="/posts/how-i-use-notion-2022">拿 Notion 做什么，不做什么</a>  ，但是可自定义的不多，也缺少订阅能力。而个人站点可以实现像素级自定义。以前嫌麻烦懒得搞，有了 AI 之后，所有的障碍都清除了，毕竟建站是编程里最简单的项目了。</p>
+<p>之前很多内容都放在一个文档工具 Notion 里，也是一个思路，可以参考之前写的 <a href="/posts/how-i-use-notion-2022">拿 Notion 做什么，不做什么</a>  ，但是可自定义的不多，也缺少订阅能力，而个人站点可以实现像素级自定义。以前嫌麻烦懒得搞，有了 AI 之后，所有的障碍都清除了，毕竟建站是编程里最简单的项目了。</p>
 <p>从成本上考量，除了个人域名需要购买，几乎没有额外的花销。</p>
 <p>基于 Hugo 来构建静态网站（免费），所有数据托管在 GitHub 仓库（免费），接着嵌入了基于 GitHub discussion 的评论功能（免费），最后自动在 Cloudflare pages 上（免费）部署，加上一年 10 块钱的域名，一个完全自己控制的个人博客就好了。</p>
 <p>你还可以增加更多有趣的控制，比如支持 RSS 订阅。我还基于 Cloudflare Worker 做了一个 Telegram（俗称电报）的自动更新通知，一旦博客有更新，通过 Telegram bot 发布到 Telegram 频道里，这样就有了一个 Telegram 订阅的方式，通用的思路应该还可以实现更多渠道，以后有时间了再折腾。</p>
@@ -41,7 +42,7 @@
 <p>了解这个插件： <a href="https://sunboshi.tech/doc" target="_blank" rel="noopener noreferrer">https://sunboshi.tech/doc</a> </p>
 <p>对于个人站点更新，也是基于一款 Obsidian 的插件&quot;markdown export&quot;。可以将写好的内容导出为包含附件的 Markdown 文件。我只需要将导出的内容移到个人站点的代码仓库，就可以让 AI 按照之前拟定好的规则来自动处理，包括博客文件的创建、元数据生成、图片压缩、图片替换、Sitemap 生成。只要和 AI 沟通好，固定下来规则即可，我把流程脚本写在了仓库的 README 里。</p>
 <blockquote>
-<p>我现在的个人站点源码仓库已经完全开放，你可以直接访问仓库源码 <a href="https://github.com/houjoe0829/tinkering-joe-blog" target="_blank" rel="noopener noreferrer">https://github.com/houjoe0829/tinkering-joe-blog</a>  让 AI 帮你看看怎么复制。</p></blockquote>
+<p>我现在的个人站点源码仓库已经完全开放，你可以直接访问仓库源码 <a href="https://github.com/houjoe0829/tinkering-joe-blog" target="_blank" rel="noopener noreferrer">https://github.com/houjoe0829/tinkering-joe-blog</a>  让 AI 看看怎么复制。</p></blockquote>
 ]]></content:encoded>
     </item>
     <item>
