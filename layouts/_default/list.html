@@ -20,11 +20,14 @@
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = sort $pages "Date" "desc" }}
 {{- else if eq .Kind "term" }}
 {{- $pages = where .Pages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.tags" "intersect" (slice .Data.Term) }}
+{{- $pages = sort $pages "Date" "desc" }}
 {{- else }}
 {{- $pages = .Pages }}
+{{- $pages = sort $pages "Date" "desc" }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}

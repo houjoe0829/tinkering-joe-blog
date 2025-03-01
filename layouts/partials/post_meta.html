@@ -1,0 +1,37 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+  {{- $now := now -}}
+  {{- $today := $now.Format "2006-01-02" -}}
+  {{- $yesterday := ($now.AddDate 0 0 -1).Format "2006-01-02" -}}
+  {{- $dayBeforeYesterday := ($now.AddDate 0 0 -2).Format "2006-01-02" -}}
+  {{- $postDate := .Date.Format "2006-01-02" -}}
+  
+  {{- if eq $postDate $today -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>今天</span>" (.Date | time.Format "2006-01-02"))) -}}
+  {{- else if eq $postDate $yesterday -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>昨天</span>" (.Date | time.Format "2006-01-02"))) -}}
+  {{- else if eq $postDate $dayBeforeYesterday -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>前天</span>" (.Date | time.Format "2006-01-02"))) -}}
+  {{- else -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "2006-01-02" site.Params.DateFormat)))) -}}
+  {{- end -}}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d 分钟" .ReadingTime))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d 字" .WordCount))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}} 
