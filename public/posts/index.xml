@@ -758,10 +758,10 @@
 <p>在这个过程中，工作人员给每个人分发了一小撮棉花。我们绕着遗体转三圈，瞻仰遗容，每转完一圈就磕头，磕头次数与圈数相应：第一圈磕一次，第二圈磕两次，第三圈磕三次。仪式结束后，我们将棉花交还逝者长子，随遗体一同火化。</p>
 <p>告别仪式结束后，遗体会被推出灵堂，用一个带轮子的架子运送。这架子正是我之前去洗手间时，在走廊里看到的那个。当时我就在想，这个架子应该就是……</p>
 <p>遗体火化过程约一小时，随后殡仪馆的守灵仪式便告结束。之后我们带着逝者 &ldquo;回家&rdquo;，车队全程打着双闪。不过，即便回到家中，这也仅仅是守灵的第一夜。带着骨灰的遗物还需在家中继续守灵，更多的亲属会前来告别。待再守一夜后，才会正式入土为安。</p>
-<p><img alt="殡仪馆外景" loading="lazy" src="/images/funeral-home-vigil/IMG_2386.webp"></p>
-<p><img alt="灵堂布置" loading="lazy" src="/images/funeral-home-vigil/IMG_2412.webp"></p>
-<p><img alt="夜晚的生命主题公园" loading="lazy" src="/images/funeral-home-vigil/IMG_2472.webp"></p>
-<p><img alt="告别仪式" loading="lazy" src="/images/funeral-home-vigil/IMG_2475.webp"></p>
+<p><img alt="殡仪馆外景" loading="lazy" src="/images/posts/funeral-home-vigil/IMG_2386.webp"></p>
+<p><img alt="灵堂布置" loading="lazy" src="/images/posts/funeral-home-vigil/IMG_2412.webp"></p>
+<p><img alt="夜晚的生命主题公园" loading="lazy" src="/images/posts/funeral-home-vigil/IMG_2472.webp"></p>
+<p><img alt="告别仪式" loading="lazy" src="/images/posts/funeral-home-vigil/IMG_2475.webp"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -806,7 +806,7 @@
 <li>最强保险依然是，买两家线路，更抗风险，当然，越多越好</li>
 <li>有 QuantumltX 的可以看 <a href="/posts/quantumult-x-guide">最简约的科学上网方案：Quantumlt X</a> </li>
 </ul></blockquote>
-<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/shadowrocket/image1.webp"></p>
+<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/shadowrocket-guide/image1.webp"></p>
 <h2 id="为什么推荐-shadowrocket">为什么推荐 Shadowrocket</h2>
 <ul>
 <li>只需要购买一次，2.99 刀（超便宜），即可在 Apple 苹果系设备上使用</li>
@@ -837,7 +837,7 @@
 <p>💡 一句话就是：添加节点订阅 + 节点分组 + 配置文件</p></blockquote>
 <h3 id="1添加节点订阅">（1）添加节点订阅</h3>
 <p>一般各大机场都会针对 Shadowrocket 出单独的订阅链接，比如我上面提到的两家都有，登录至直接导入到 Shadowrocket 就可以的。</p>
-<p><img alt="添加订阅" loading="lazy" src="/images/posts/shadowrocket/image2.webp"></p>
+<p><img alt="添加订阅" loading="lazy" src="/images/posts/shadowrocket-guide/image2.webp"></p>
 <h3 id="2导入配置">（2）导入配置</h3>
 <blockquote>
 <p>⚠️ 下载或者导入配置之后记得选择使用该配置哦</p></blockquote>
@@ -855,11 +855,11 @@
 </ul>
 <h3 id="3节点分组">（3）节点分组</h3>
 <p>这里主要是设定一个全局测速的自动节点，针对所有可用的节点，可以汇总多家机场。</p>
-<p><img alt="节点分组" loading="lazy" src="/images/posts/shadowrocket/image3.webp"></p>
+<p><img alt="节点分组" loading="lazy" src="/images/posts/shadowrocket-guide/image3.webp"></p>
 <p>在首页 - 全局路由 - 分组里，开启简单模式，增加分组之后，如果不改或者空着就会默认选中所有的节点，这里建议加上筛选，因为机场有些节点是不可用的，容易干扰，尤其是那些用来显示流量的。</p>
 <p>筛选的正则表达式是这样的即可，主要排除一些无效节点（这个真的很重要哦）。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>^(?!.*(流量 | 套餐 | 当前网址 | 海外用户)).*
-</span></span></code></pre></div><p><img alt="筛选设置" loading="lazy" src="/images/posts/shadowrocket/image4.webp"></p>
+</span></span></code></pre></div><p><img alt="筛选设置" loading="lazy" src="/images/posts/shadowrocket-guide/image4.webp"></p>
 <h3 id="4一些零碎设置">（4）一些零碎设置</h3>
 <ul>
 <li>在全局路由里，一定要将代理设置为 &ldquo;按配置&rdquo;，不然很容易全局代理</li>
@@ -1283,7 +1283,7 @@
 <li>科学上网 = 代理软件（QuantumultX） + 海外线路</li>
 <li>最强保险是，买两家线路，更抗风险</li>
 </ul></blockquote>
-<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/quantumult-x/image1.webp"></p>
+<p><img alt="Mac 界面效果" loading="lazy" src="/images/posts/quantumult-x-guide/image1.webp"></p>
 <h2 id="为什么推荐-quantumult-x">为什么推荐 Quantumult X</h2>
 <ul>
 <li>Quantumult X 只需要购买一次，7.99 刀，即可在 Apple 苹果系设备上使用</li>
@@ -1324,7 +1324,7 @@
 </ul>
 <blockquote>
 <p>⬇️ 配置文件样例</p></blockquote>
-<p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x/image2.webp"></p>
+<p><img alt="配置示例" loading="lazy" src="/images/posts/quantumult-x-guide/image2.webp"></p>
 <p><a href="/conf/quantumult_20240722182237.conf">配置文件下载</a> </p>
 <ul>
 <li>如截图，在配置文件里的 [server_remote] 模块，替换为自己的机场链接，链接需选择机场提供的的 &ldquo;QuantumltX 订阅链接&rdquo;</li>
@@ -4412,7 +4412,7 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
 <h3 id="在意识先行之后如何执行这套有价值的对话流程呢">在意识先行之后，如何执行这套有价值的对话流程呢？</h3>
 <blockquote>
 <p>流程图原始地址：<a href="https://whimsical.com/how-to-run-the-process-NDcj7MbeCYb3YWB7sAubkt" target="_blank" rel="noopener noreferrer">how-to-run-the-process</a> </p></blockquote>
-<p><img alt="The Mom Test 对话流程" loading="lazy" src="/images/the-mom-test-process-flow.webp"></p>
+<p><img alt="The Mom Test 对话流程" loading="lazy" src="/images/posts/the-mom-test-reading-notes/the-mom-test-process-flow.webp"></p>
 <h2 id="妈妈测试-mom-test">妈妈测试 Mom Test</h2>
 <p>People say you shouldn&rsquo;t ask your mom whether your business is a good idea. That&rsquo;s technically true, but it misses the point. You shouldn&rsquo;t ask anyone whether your business is a good idea. At least not in those words. Your mom will lie to you the most (just &lsquo;cuz she loves you), but it&rsquo;s a bad question and invites everyone to lie to you at least a little.</p>
 <blockquote>
