@@ -10,7 +10,7 @@ author: "Joe"
 
 > 竹白是一个一站式创作工具，方便写文章，自动生成个人站点，是少有的支持邮件和微信订阅两种方式的平台，2024 年已经几乎不再更新，而 2025 年初即将彻底关闭。
 
-<img src="/images/posts/writing-after-zhubai-closure/ 竹白下线.webp" alt="竹白下线通知" style="width: 50%; margin: 0 auto; display: block;" />
+<img src="/images/posts/writing-after-zhubai-closure/竹白下线.webp" alt="竹白下线通知" style="width: 50%; margin: 0 auto; display: block;" />
 
 之前在各种平台尝试写过，今日头条、知乎、网易博客、Notion 站点、QQ 空间、微信公众号、Zine，目前断断续续更新博文已经超过 100 篇。
 

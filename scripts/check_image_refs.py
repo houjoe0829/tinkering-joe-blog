@@ -9,7 +9,15 @@ def find_image_refs(md_file):
     with open(md_file, 'r', encoding='utf-8') as f:
         content = f.read()
     # 匹配 Markdown 图片语法
-    return re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content)
+    markdown_refs = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content)
+    
+    # 匹配 HTML 图片标签
+    html_refs = re.findall(r'<img\s+[^>]*src="([^"]+)"[^>]*>', content)
+    
+    # 将 HTML 图片引用转换为与 Markdown 格式相同的元组格式 (alt_text, image_path)
+    html_tuples = [(f"HTML图片", ref) for ref in html_refs]
+    
+    return markdown_refs + html_tuples
 
 def check_image_exists(image_path):
     """检查图片文件是否存在"""
