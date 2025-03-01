@@ -47,7 +47,7 @@
     
     {{- $sortedTags := sort (sort $tags "name") "count" "desc" }}
     {{- range $tagInfo := $sortedTags }}
-    <a href="/tags/{{ $tagInfo.urlizedName }}/" class="tag-link">
+    <a href="/tags/{{ $tagInfo.name | urlize }}/" class="tag-link">
         <span class="tag-name">{{ $tagInfo.name }}</span>
         <span class="tag-count">{{ $tagInfo.count }}</span>
     </a>
