@@ -7,7 +7,7 @@ tags: ["游戏也是场冒险"]
 author: "Joe"
 ---
 
-![赛博朋克2077游戏截图](/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp)
+![赛博朋克 2077 游戏截图](/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp)
 
 年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。
 
@@ -21,22 +21,22 @@ author: "Joe"
 
 2077 跟《巫师 3》的游玩感受非常像，游戏本身的战斗没有什么难度，主要靠剧情和画面吸引，而且主线流程比之《巫师 3》体量更小，支线反而是一如既往的多而深刻，塑造了很多有趣甚至有些荒诞的 NPC，甚至可以用暴论来说，整个夜之城是被支线盘活的。加上还有一个高于本体水平的 DLC《往日之影》，直到玩到最后，都是层层嵌套的人性试炼，是那种很有张力，细致琢磨又格外能理解的人性考验。
 
-![游戏截图1](/images/posts/cyberpunk-2077-hundred-hours-dream/image-1.webp)
+![游戏截图 1](/images/posts/cyberpunk-2077-hundred-hours-dream/image-1.webp)
 
-游戏里的主线剧情很简单，主角 V 在一次任务中意外获得了一个神秘芯片，里面存储着传奇佣兵强尼·银手的意识，但这个芯片正在慢慢侵蚀 V 的大脑，如果不想办法，V 将会被强尼·银手的意识完全取代。在寻找解决方案的过程中，V 和强尼·银手从最初的敌对到慢慢理解，最后成为了互相信任的朋友。
+游戏里的主线剧情很简单，主角 V 在一次任务中意外获得了一个神秘芯片，里面存储着传奇佣兵强尼・银手的意识，但这个芯片正在慢慢侵蚀 V 的大脑，如果不想办法，V 将会被强尼・银手的意识完全取代。在寻找解决方案的过程中，V 和强尼・银手从最初的敌对到慢慢理解，最后成为了互相信任的朋友。
 
-![游戏截图2](/images/posts/cyberpunk-2077-hundred-hours-dream/image-2.webp)
+![游戏截图 2](/images/posts/cyberpunk-2077-hundred-hours-dream/image-2.webp)
 
 游戏的支线任务同样精彩，每个任务都有其独特的故事和人物。从帮助警探调查连环杀人案，到协助出租车公司处理失控的 AI 出租车，再到参与地下格斗比赛，这些任务不仅丰富了游戏体验，更展现了夜之城的方方面面。
 
-![游戏截图3](/images/posts/cyberpunk-2077-hundred-hours-dream/image-3.webp)
+![游戏截图 3](/images/posts/cyberpunk-2077-hundred-hours-dream/image-3.webp)
 
 DLC《往日之影》则带来了全新的故事线，玩家将探索一个神秘的太空赌场，遇到新的角色和挑战。这个扩展包不仅在剧情上有所突破，在游戏性上也增加了许多新元素，是对主游戏的完美补充。
 
-![游戏截图4](/images/posts/cyberpunk-2077-hundred-hours-dream/image-4.webp)
+![游戏截图 4](/images/posts/cyberpunk-2077-hundred-hours-dream/image-4.webp)
 
 总的来说，《赛博朋克 2077》是一款值得投入时间的游戏。虽然它可能不是最完美的开放世界游戏，但它的故事、角色和世界观都非常出色。如果你能克服最初的上手难度，你会发现这是一场令人难忘的数字化冒险。
 
 最后，我想说的是，这款游戏最大的魅力在于它展现的不仅仅是一个科技发达的未来世界，更是一面映照人性的镜子。在这个充满义体改造和数字幻象的世界里，最珍贵的依然是人与人之间的真诚关系。
 
-![游戏截图5](/images/posts/cyberpunk-2077-hundred-hours-dream/image-5.webp) 
+![游戏截图 5](/images/posts/cyberpunk-2077-hundred-hours-dream/image-5.webp)

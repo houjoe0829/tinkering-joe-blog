@@ -6,6 +6,21 @@ description: "重温《双人成行》的游戏体验，探讨这款合作游戏
 tags: ["游戏也是场冒险"]
 author: "Joe"
 ---
+---
+
+![游戏截图3](/images/posts/it-takes-two-review/image-3.webp)
+
+![游戏截图4](/images/posts/it-takes-two-review/image-4.webp)
+
+![游戏截图5](/images/posts/it-takes-two-review/image-5.webp)
+
+![游戏截图6](/images/posts/it-takes-two-review/image-6.webp)
+
+![游戏截图7](/images/posts/it-takes-two-review/image-7.webp)
+
+![游戏截图8](/images/posts/it-takes-two-review/image-8.webp)
+
+![游戏截图9](/images/posts/it-takes-two-review/image-9.webp)
 
 ![游戏截图](/images/posts/it-takes-two-review/image.webp)
 
@@ -32,19 +47,3 @@ author: "Joe"
 回到游戏内外，就像游戏里的小梅和科迪，当双方没有一起合作可以做的事情，并且失去各自热爱的事情时，终将变成情感淡漠的开始，这点我还是深表理解的。
 
 游戏，也是可以一起做的事情……
-
----
-
-![游戏截图3](/images/posts/it-takes-two-review/image-3.webp)
-
-![游戏截图4](/images/posts/it-takes-two-review/image-4.webp)
-
-![游戏截图5](/images/posts/it-takes-two-review/image-5.webp)
-
-![游戏截图6](/images/posts/it-takes-two-review/image-6.webp)
-
-![游戏截图7](/images/posts/it-takes-two-review/image-7.webp)
-
-![游戏截图8](/images/posts/it-takes-two-review/image-8.webp)
-
-![游戏截图9](/images/posts/it-takes-two-review/image-9.webp)

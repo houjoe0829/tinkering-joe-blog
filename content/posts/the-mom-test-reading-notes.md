@@ -16,7 +16,7 @@ author: 'Joe'
 1. 每个与我们对话的人都在不同程度的欺骗我们，越亲近的人越是如此
 2. 没有直接送到嘴边的事实，好的事实都是需要在对话里花精力挖掘出来的，也是这本书的价值
 3. 用户拥有问题，但不一定清楚问题的本质是什么，而我们有义务搞清楚问题是什么，并提供对应的解决方案
-4. 对话是为了获取具体发生的事实，而不是未来的观点，所以，不能相信用户说"这个我未来会付钱"
+4. 对话是为了获取具体发生的事实，而不是未来的观点，所以，不能相信用户说 "这个我未来会付钱"
 5. 对话本身就是对人性的挑战，除了对话的人爱撒谎，我们自己也总是比想象中更想要获得认可，这会导致获得很多虚假的恭维
 6. 拥有很多想法是创业者的日常，但往往急于行动，而不是追寻想法背后的动机和目的
 7. 很多人不太会处理用户的反馈，可以理解用户的想法，但不要遵从
@@ -27,7 +27,7 @@ author: 'Joe'
 
 > 流程图原始地址：[how-to-run-the-process](https://whimsical.com/how-to-run-the-process-NDcj7MbeCYb3YWB7sAubkt)
 
-![The Mom Test 对话流程](/images/the-mom-test-process-flow.webp)
+![The Mom Test 对话流程](/images/posts/the-mom-test-reading-notes/the-mom-test-process-flow.webp)
 
 ## 妈妈测试 Mom Test
 
@@ -49,7 +49,7 @@ The Mom Test（的核心）
 2. Ask about specifics in the past instead of generics or opinions about the future 询问过去的具体事项，而不是关于未来的概括或意见
 3. Talk less and listen more 少说多听
 
-被称为"妈妈测试"，因为它会引出一些连你的妈妈都无法对你撒谎的问题。
+被称为 "妈妈测试"，因为它会引出一些连你的妈妈都无法对你撒谎的问题。
 
 Rule of thumb: Customer conversations are bad by default. It's your job to fix them.
 
@@ -67,7 +67,7 @@ Rule of thumb: Anything involving the future is an over-optimistic lie.
 
 > 很多时候，我都觉得，人们并不知道自己的问题本质是什么，他们只知道问题的表象，我们要知道的是表象和表象的 Context 是什么。
 
-好的故事应该"展示，而不是告诉"。
+好的故事应该 "展示，而不是告诉"。
 
 > 最好的方式是，站在用户旁边，让用户演示一下，实在不行可以录屏，但是尽量避免用户转述。
 
@@ -75,23 +75,23 @@ Rule of thumb: Watching someone do a task will show you where the problems and i
 
 经验法则：观察他人执行任务将向你展示问题和低效之处的真正所在，而非顾客认为的所在。
 
-> **其实就是观察别人做了什么，而不是说了什么**
+> ** 其实就是观察别人做了什么，而不是说了什么 **
 
 Rule of thumb: If they haven't looked for ways of solving it already, they're not going to look for (or buy) yours.
 
 经验法则：如果他们还没有寻找解决办法，那么他们也不会寻找（或购买）你的解决方案。
 
-> **说明这个问题并不重要。**
+> ** 说明这个问题并不重要。**
 
 一如既往地，询问他们目前的做法，而不是他们认为将来可能会做的事情。
 
-要问的问题是关于你的客户的生活：**他们的问题、关心的事情、限制和目标**。你谦卑而真诚地收集尽可能多的关于他们的信息，然后自己进行有远见的解决方案。一旦你迈出了这一步，你通过承诺和进步来确认它是正确的（并加以完善）
+要问的问题是关于你的客户的生活：** 他们的问题、关心的事情、限制和目标 **。你谦卑而真诚地收集尽可能多的关于他们的信息，然后自己进行有远见的解决方案。一旦你迈出了这一步，你通过承诺和进步来确认它是正确的（并加以完善）
 
 It boils down to this: you aren't allowed to tell them what their problem is, and in return, they aren't allowed to tell you what to build. They own the problem, you own the solution.
 
 归根结底就是这样：你不能告诉他们问题是什么，而他们也不能告诉你要建造什么。他们拥有问题，你拥有解决方案。
 
-> **用户拥有问题，而我们拥有构建方案的能力。**
+> ** 用户拥有问题，而我们拥有构建方案的能力。**
 
 ## 避免坏数据 - Avoiding bad data
 
@@ -99,7 +99,7 @@ Unfortunately, they're almost certainly lying. Not necessarily intentionally. Th
 
 很不幸，他们几乎肯定在撒谎。不一定是有意的。他们可能想要支持你或保护你的感受。或者是你的兴奋感影响了他们。
 
-> **你交谈的人可能为了表达对你的支持而欺骗你。**
+> ** 你交谈的人可能为了表达对你的支持而欺骗你。**
 
 一旦你开始注意到，通过回避恭维、锚定废话和深入探究思想，重新回到正轨是很容易的。
 
@@ -119,23 +119,23 @@ Even if they really do like it, that data is still worthless. For example, ventu
 
 为了进行一次良好的对话，你并不需要得到你想要听到的结果。你只需要找到真相。
 
-> **交谈是为了获取真相，极有可能听到自己不想听到的结果。**
+> ** 交谈是为了获取真相，极有可能听到自己不想听到的结果。**
 
 Sometimes it's easier to spot the symptoms than to notice the original compliment.
 
 忽略赞美应该很容易，但事实并非如此。我们非常渴望听到赞美，以至于常常被欺骗，将其视为积极的数据点而非空洞的谎言。有时候，更容易察觉到症状，而不是注意到最初的赞美。
 
-> **赞美往往很虚空，缺少事实的支撑。**
+> ** 赞美往往很虚空，缺少事实的支撑。**
 
 忽略赞美应该很容易，但事实并非如此。我们非常渴望听到赞美，以至于常常被欺骗，将其视为积极的数据点而非空洞的谎言。
 
-> **对于我们自己，我们比我们想象中更想听到赞美，这也说明，本能的我们会忍不住去提及自己的想法。**
+> ** 对于我们自己，我们比我们想象中更想听到赞美，这也说明，本能的我们会忍不住去提及自己的想法。**
 
-当有人开始谈论他们"总是"、"通常"、"从不"或"会"做什么时，他们只是在给你提供一些泛泛而谈的假设性内容。遵循《妈妈的测试》的原则，将他们带回到过去的具体情况中。询问他们上次发生的时间，让他们向你描述一下，他们是如何解决的，还尝试了什么其他方法。
+当有人开始谈论他们 "总是"、"通常"、"从不" 或 "会" 做什么时，他们只是在给你提供一些泛泛而谈的假设性内容。遵循《妈妈的测试》的原则，将他们带回到过去的具体情况中。询问他们上次发生的时间，让他们向你描述一下，他们是如何解决的，还尝试了什么其他方法。
 
-> **其实也是在避免泛泛而谈**
+> ** 其实也是在避免泛泛而谈 **
 
-最糟糕的引发废话的问题是："你会这样做吗？"当然他们可能会。某一天。但这并不意味着他们会这样做。
+最糟糕的引发废话的问题是："你会这样做吗？" 当然他们可能会。某一天。但这并不意味着他们会这样做。
 
 > 这句话问的也是未来。
 
@@ -143,7 +143,7 @@ Sometimes it's easier to spot the symptoms than to notice the original complimen
 
 你需要具体说明以突出边缘情况。
 
-> **锚定是以废话为锚点，探索更具体的事实**
+> ** 锚定是以废话为锚点，探索更具体的事实 **
 
 为了接近这个真相，你只需要拒绝他们的泛泛之论、偶然的抱怨和空洞的承诺。相反，将他们锚定在他们已经过的生活和他们已经采取的行动上。
 
@@ -151,13 +151,13 @@ Sometimes it's easier to spot the symptoms than to notice the original complimen
 
 把它们写下来，但不要急于把它们添加到你的待办事项列表中。创业公司的重点是专注并执行一个可扩展的想法，而不是追随每一个好主意。
 
-> **这就是日常最常遇到的问题，不要急于添加到待办，而是先写下来，Review 之后再做定夺，Review 是了解想法背后的动机和目的，急于行动总是反复。**
+> ** 这就是日常最常遇到的问题，不要急于添加到待办，而是先写下来，Review 之后再做定夺，Review 是了解想法背后的动机和目的，急于行动总是反复。**
 
 当你听到一个请求时，你的工作是理解背后的动机。你可以通过深入探究问题来找到根本原因。为什么他们要以这种方式做？为什么他们想要这个功能？他们在没有这个功能的情况下是如何应对的？深入挖掘。
 
 > 即使是自己的请求也是如此，这些都是直觉上的想法。
 
-**挖掘功能请求的常见问题，适合给客服和运营同学**
+** 挖掘功能请求的常见问题，适合给客服和运营同学 **
 
 Questions to dig into feature requests:
 
@@ -185,4 +185,4 @@ Questions to dig into emotional signals:
 
 Rule of thumb: Ideas and feature requests should be understood, but not obeyed.
 
-经验法则：理解意见和功能请求，但不必遵从。 
+经验法则：理解意见和功能请求，但不必遵从。

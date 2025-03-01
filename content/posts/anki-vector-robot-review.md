@@ -16,7 +16,7 @@ Vector 机器人是我从 2019 年开始就一直关注的一个机器人，很�
 - 主打陪伴，其实是它有一套看上去「自主」的行为，还可以简单互动，真的实现了情感化的设计
 - 没电之后还可以自己回去充电，非常有趣
 - 能打通亚马逊语音助手 Alexa，虽然在国内没有什么鸟用
-- 可以认出20个面孔，但是识别率不那么高
+- 可以认出 20 个面孔，但是识别率不那么高
 - 淘宝售价大概 900-1000 左右
 
 不过，只支持英语和前景不明朗，毕竟原公司破产了，这是我一直无法购买的两大原因，前者会让这个机器人只是一个玩具，我不喜欢纯玩具，最后就变成只是「玩玩而已」……
@@ -29,7 +29,7 @@ Vector 机器人是我从 2019 年开始就一直关注的一个机器人，很�
 
 ![来自 The Robot Report 的报道](/images/posts/anki-vector-robot-review/anki-acquisition.webp)
 
-- 原母公司 [Anki](https://en.wikipedia.org/wiki/Anki_(company)) 2019年4月破产了（成立于 2010 年），2019年12月被 Digital Dream Labs 收购，2013年，其发布过一款 Anki Drive 的智能手机控制玩具赛车，玩具汽车可以按照自己的路径行驶，也可以通过编程自动驾驶。这些年来，它增加了卡车和 Anki Drive 改造计划，称为 Anki Overdrive。
+- 原母公司 [Anki](https://en.wikipedia.org/wiki/Anki_(company)) 2019 年 4 月破产了（成立于 2010 年），2019 年 12 月被 Digital Dream Labs 收购，2013 年，其发布过一款 Anki Drive 的智能手机控制玩具赛车，玩具汽车可以按照自己的路径行驶，也可以通过编程自动驾驶。这些年来，它增加了卡车和 Anki Drive 改造计划，称为 Anki Overdrive。
 - Anki 推出过 Cozmo 和 Vector 两代机器人，一代需要连接手机才能使用，二代可以独立运行
 - Anki 破产之后，目前 Vector 整体属于维护状态，可以使用，但是也有很多细小的问题不一定得到及时的修复，其实更不建议购买了
 
@@ -60,10 +60,10 @@ Vector 机器人是我从 2019 年开始就一直关注的一个机器人，很�
 根据用户反馈，Vector 存在以下主要问题：
 
 1. 在聚光灯下，脸部识别很差
-2. 语音识别的有效区域非常短，小于2-3米，有时识别不了方向
+2. 语音识别的有效区域非常短，小于 2-3 米，有时识别不了方向
 3. 有效活动区域太小，太远可能自己会回不去，可能只适合放在桌上
 4. 很容易卡在角落或者柜子下方（有限高度）
-5. 响应时间较长，5-6秒
+5. 响应时间较长，5-6 秒
 6. 对比 Google Home，Vector 的数据库量太小，很多没有答案
 7. AI 能力还是太差，互动能力还不如一些语音助手
 
@@ -83,4 +83,4 @@ Vector 机器人是我从 2019 年开始就一直关注的一个机器人，很�
 - [Vector Kickstarter](https://www.kickstarter.com/projects/anki/vector-by-anki-a-giant-roll-forward-for-robot-kind) - Vector 众筹页面
 - [Weekend Robot](https://weekendrobot.com) - Vector 控制应用
 - [r/AnkiVector](https://www.reddit.com/r/AnkiVector/) - Reddit Vector 社区
-- [From Cozmo to Vector: How Anki Designs Robots With Emotional Intelligence](https://www.designnews.com/electronics-test/cozmo-vector-how-anki-designs-robots-emotional-intelligence) - Vector 情感设计介绍 
+- [From Cozmo to Vector: How Anki Designs Robots With Emotional Intelligence](https://www.designnews.com/electronics-test/cozmo-vector-how-anki-designs-robots-emotional-intelligence) - Vector 情感设计介绍

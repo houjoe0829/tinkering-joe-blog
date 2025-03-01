@@ -7,19 +7,20 @@ tags: ["工作感悟"]
 title: "产品经理入门书籍的推荐"
 ---
 
+
 这里主要回答针对产品经理入门的书籍推荐，纯个人经验出发，仅供参考。
 
 ## 整体入门
 
-{{< link "https://book.douban.com/subject/20428922/" "学会提问" >}}
+{{<link "https://book.douban.com/subject/20428922/" "学会提问">}}
 
-{{< link "https://book.douban.com/subject/24697776/" "批判性思维工具（原书第3版）" >}}
+{{<link "https://book.douban.com/subject/24697776/" "批判性思维工具（原书第 3 版）">}}
 
-{{< link "https://book.douban.com/subject/4723970/" "人人都是产品经理" >}}
+{{<link "https://book.douban.com/subject/4723970/" "人人都是产品经理">}}
 
-{{< link "https://book.douban.com/subject/11445674/" "产品经理修炼之道" >}}
+{{<link "https://book.douban.com/subject/11445674/" "产品经理修炼之道">}}
 
-{{< link "https://book.douban.com/subject/5914587/" "启示录" >}}
+{{<link "https://book.douban.com/subject/5914587/" "启示录">}}
 
 ## 需求调研入门
 
@@ -33,37 +34,37 @@ title: "产品经理入门书籍的推荐"
 
 ## 设计入门
 
-{{< link "https://book.douban.com/subject/26742341/" "设计心理学" >}}
+{{<link "https://book.douban.com/subject/26742341/" "设计心理学">}}
 
-{{< link "https://book.douban.com/subject/6523997/" "用户体验要素" >}}
+{{<link "https://book.douban.com/subject/6523997/" "用户体验要素">}}
 
 ## 数据分析入门
 
-{{< link "https://book.douban.com/subject/26278639/" "精益数据分析" >}}
+{{<link "https://book.douban.com/subject/26278639/" "精益数据分析">}}
 
-{{< link "https://book.douban.com/subject/20381154/" "深入浅出数据分析" >}}
+{{<link "https://book.douban.com/subject/20381154/" "深入浅出数据分析">}}
 
 ## 运营与增长入门
 
-{{< link "https://book.douban.com/subject/27193454/" "引爆用户增长" >}}
+{{<link "https://book.douban.com/subject/27193454/" "引爆用户增长">}}
 
-{{< link "https://book.douban.com/subject/27593848/" "增长黑客" >}}
+{{<link "https://book.douban.com/subject/27593848/" "增长黑客">}}
 
 ## 团队协作与沟通
 
-[如何才能《非暴力沟通》](/posts/nonviolent-communication-reading-notes) 
+[如何才能《非暴力沟通》](/posts/nonviolent-communication-reading-notes)
 
-{{< link "https://book.douban.com/subject/25338822/" "团队协作的五大障碍" >}}
+{{<link "https://book.douban.com/subject/25338822/" "团队协作的五大障碍">}}
 
 ## 产研与项目管理
 
-{{< link "https://book.douban.com/subject/6011928/" "写给大家看的项目管理书" >}}
+{{<link "https://book.douban.com/subject/6011928/" "写给大家看的项目管理书">}}
 
-{{< link "https://book.douban.com/subject/26803452/" "敏捷项目管理" >}}
+{{<link "https://book.douban.com/subject/26803452/" "敏捷项目管理">}}
 
-{{< link "https://book.douban.com/subject/27132072/" "OKR工作法" >}}
+{{<link "https://book.douban.com/subject/27132072/" "OKR 工作法">}}
 
-{{< link "https://book.douban.com/subject/30419555/" "持续交付2.0" >}}
+{{<link "https://book.douban.com/subject/30419555/" "持续交付 2.0">}}
 
 ## 其他
 

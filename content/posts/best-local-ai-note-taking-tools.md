@@ -7,13 +7,13 @@ tags: ["折腾软硬件", "AI"]
 author: "Joe"
 ---
 
-看到[歸藏老师](https://x.com/op7418/status/1891827233423012308)在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。
+看到 [歸藏老师](https://x.com/op7418/status/1891827233423012308) 在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。
 
 ![Twitter 截图](/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp)
 
 我自己最近除了将个人博客从 Notion 搬到了个人站点 houjoe.me，也将日常笔记从 Notion 迁到了 Obsidian，主要是用 Cursor 这类 AI 编程工具多了之后，Coding with AI 的正反馈让我也更希望 Note-Taking with AI。
 
-其实，一般代码仓库里都有一个最大的"笔记"，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。
+其实，一般代码仓库里都有一个最大的 "笔记"，README.md，可以理解为一个方便快速上手代码仓库的 Markdown 备忘录。
 
 而且，近期为了让 AI 能够精准且充分理解需求上下文，我在另一个实验性产品的代码仓库里，直接新建了 Docs 文件夹，然后将 PRD 以 Markdown 文件的形式放在里面，这样就可以更愉快地让 AI 精细化干活了。
 
@@ -61,4 +61,4 @@ Cursor 这类 IDE 工具毕竟是为代码而生的，有一定门槛，需要�
 
 与普通笔记不一样，用代码编辑器来新增 Markdown 文件是需要这样的格式：name.md
 
-这样一来，我们就有了一个真 Local first（本地优先）的 AI 笔记方案。 
+这样一来，我们就有了一个真 Local first（本地优先）的 AI 笔记方案。

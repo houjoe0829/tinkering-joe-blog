@@ -11,7 +11,7 @@ author: "Joe"
 
 ## Markdown 写作者的福音：Markdown Nice
 
-如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择—— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 [mdnice.com](http://mdnice.com) 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。
+如果你和我一样会使用一些 Markdown 或者类 Markdown 工具来撰写公众号长文，比如 Ulysses、Notion、Bear 之类的，每次可能都要纠结如何转换 Markdown 格式为富文本状态。之前有很多人用 Markdown Here 插件来转换，现在，有了新的选择 —— Markdown Nice，有即开即用的网页版，直接在浏览器地址栏输入 [mdnice.com](http://mdnice.com) 即可进入，支持导入 .md 文件，或者直接复制 Markdown 格式的内容，在渲染之后，可选择复制到微信公众号或者知乎平台。
 
 也就是你只需要，导出为 .md 文件，导入到此文件到编辑器，选择好适合的主题，简单再修一修排版，就可以复制走了。
 
@@ -31,7 +31,7 @@ author: "Joe"
 
 ## 翻译能力超强的助手：DeepL
 
-之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概20多个工单。
+之前一直用谷歌翻译和欧路词典，一般将要翻译的文本丢进去，然后再在自己的文档里逐个纠正。DeepL 的优势在于，我丢进去的文本，很多翻译结果我几乎可以直接使用，这也大大提高了我给日常使用的海外软件提 Bug 的热情，比如 Notion，最近几天连续提了十几个 Bug 和产品功能期望，累积给他们提了大概 20 多个工单。
 
 另外，DeepL 支持 Windows 和 macOS 两个平台，安装之后可以连续两次使用复制快捷键 CMD+C 的话，可自动翻译选中的文本。
 
@@ -45,4 +45,4 @@ author: "Joe"
 
 ![电子书资源网站界面](/images/posts/recent-favorite-apps/ebook-site.webp)
 
-网址：[https://b-ok.cc/](https://b-ok.cc/) 
+网址：[https://b-ok.cc/](https://b-ok.cc/)

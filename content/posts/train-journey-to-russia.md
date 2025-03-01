@@ -9,11 +9,11 @@ author: "Joe"
 
 ![俄罗斯火车之旅](/images/posts/train-journey-to-russia/image-38.webp)
 
-这是一篇迟来的游记，2017年9月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地——贝加尔湖畔。
+这是一篇迟来的游记，2017 年 9 月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地 —— 贝加尔湖畔。
 
-## 9月27日 登上国际列车K3
+## 9 月 27 日 登上国际列车 K3
 
-还未上车就发生了一点不愉快的事情，我们为在火车上的3天预备的头发免洗喷雾被安检员扣下，因为「喷雾无法带上火车」，不过，比起前面一位大叔带的菜刀、扳手，我们的违禁品还算非常低调了。另外，我感觉这次火车上车的地方与我们上次坐车去丹东前往朝鲜的上车点很类似。（点击查看 [朝鲜四日行纪录](https://zhuanlan.zhihu.com/p/20715850)）
+还未上车就发生了一点不愉快的事情，我们为在火车上的 3 天预备的头发免洗喷雾被安检员扣下，因为「喷雾无法带上火车」，不过，比起前面一位大叔带的菜刀、扳手，我们的违禁品还算非常低调了。另外，我感觉这次火车上车的地方与我们上次坐车去丹东前往朝鲜的上车点很类似。（点击查看 [朝鲜四日行纪录](https://zhuanlan.zhihu.com/p/20715850)）
 
 ![北京站](/images/posts/train-journey-to-russia/image-35.webp)
 
@@ -21,9 +21,9 @@ author: "Joe"
 
 ![草原风光](/images/posts/train-journey-to-russia/image-29.webp)
 
-## 9月27日夜晚 二连浩特出关
+## 9 月 27 日夜晚 二连浩特出关
 
-火车在出境前会在内蒙古二连浩特停4个小时左右，主要是因为出境的火车需要在这里更换车轨（中国与俄罗斯蒙古的车轨宽度不一样），而我们可以在二连浩特大量采购接下来几天火车上的午餐和水，甚至兑换一些蒙古币。在北京兑换蒙古币需要提前在中国银行预约，但是在二连浩特，这些几乎不需要考虑，直接问超市的老板就可以的。在这里，我们买到了接下来几天让我们幸福感爆棚的自加热米饭，不夸张的说，这应该是我们回到北京之前吃到的最好的美食，强烈推荐。
+火车在出境前会在内蒙古二连浩特停 4 个小时左右，主要是因为出境的火车需要在这里更换车轨（中国与俄罗斯蒙古的车轨宽度不一样），而我们可以在二连浩特大量采购接下来几天火车上的午餐和水，甚至兑换一些蒙古币。在北京兑换蒙古币需要提前在中国银行预约，但是在二连浩特，这些几乎不需要考虑，直接问超市的老板就可以的。在这里，我们买到了接下来几天让我们幸福感爆棚的自加热米饭，不夸张的说，这应该是我们回到北京之前吃到的最好的美食，强烈推荐。
 
 ![二连浩特候车室](/images/posts/train-journey-to-russia/image-23.webp)
 
@@ -33,23 +33,23 @@ author: "Joe"
 
 火车换轨：
 
-![火车换轨场景1](/images/posts/train-journey-to-russia/image-20.webp)
+![火车换轨场景 1](/images/posts/train-journey-to-russia/image-20.webp)
 
-![火车换轨场景2](/images/posts/train-journey-to-russia/image-44.webp)
+![火车换轨场景 2](/images/posts/train-journey-to-russia/image-44.webp)
 
-## 9月28日 蒙古国边境扎门乌德
+## 9 月 28 日 蒙古国边境扎门乌德
 
-凌晨两点多换完车轨，然后火车慢悠悠穿过那片漆黑的国境线，实在太困了，看了一眼门外的扎门乌德又匆匆睡去，凌晨3点52分的时候又醒了，我打开窗看了一下天空，满天繁星……这个时候，顺手打开手机录了一段火车敲击铁轨的声音。
+凌晨两点多换完车轨，然后火车慢悠悠穿过那片漆黑的国境线，实在太困了，看了一眼门外的扎门乌德又匆匆睡去，凌晨 3 点 52 分的时候又醒了，我打开窗看了一下天空，满天繁星…… 这个时候，顺手打开手机录了一段火车敲击铁轨的声音。
 
 ![清晨的蒙古](/images/posts/train-journey-to-russia/image-43.webp)
 
-早上8点43分的时候，醒了，窗外如内蒙古一般，呈现着应季的荒芜感，草都已经枯黄了。从进入蒙古国南边开始，一直到蒙古国首都乌兰巴托，都是这样的景色。
+早上 8 点 43 分的时候，醒了，窗外如内蒙古一般，呈现着应季的荒芜感，草都已经枯黄了。从进入蒙古国南边开始，一直到蒙古国首都乌兰巴托，都是这样的景色。
 
-![蒙古草原1](/images/posts/train-journey-to-russia/image-9.webp)
+![蒙古草原 1](/images/posts/train-journey-to-russia/image-9.webp)
 
-![蒙古草原2](/images/posts/train-journey-to-russia/image-27.webp)
+![蒙古草原 2](/images/posts/train-journey-to-russia/image-27.webp)
 
-![蒙古草原3](/images/posts/train-journey-to-russia/image-1.webp)
+![蒙古草原 3](/images/posts/train-journey-to-russia/image-1.webp)
 
 下午两点到达蒙古乌兰巴托，火车停留了一个小时，令人感到不解的是，火车站没有进站和出站，自由出行，除了偶尔会走过的蒙古国警察。
 
@@ -61,17 +61,17 @@ author: "Joe"
 
 ![蒙古风景](/images/posts/train-journey-to-russia/image-26.webp)
 
-## 9月28日夜间 过关进入俄罗斯
+## 9 月 28 日夜间 过关进入俄罗斯
 
 每次穿过国境线都是漫长的等待，所幸都是在夜晚，昏昏沉沉中配合着蒙古和俄罗斯边防警察的查验工作，似乎很快就结束了，不过，马上又陷入沉睡，再次醒来已经到了贝加尔湖畔，朦朦胧胧中路过了一个繁华的俄罗斯都市，已然遗忘。
 
-![俄罗斯边境1](/images/posts/train-journey-to-russia/image-45.webp)
+![俄罗斯边境 1](/images/posts/train-journey-to-russia/image-45.webp)
 
-![俄罗斯边境2](/images/posts/train-journey-to-russia/image-3.webp)
+![俄罗斯边境 2](/images/posts/train-journey-to-russia/image-3.webp)
 
-![俄罗斯边境3](/images/posts/train-journey-to-russia/image-21.webp)
+![俄罗斯边境 3](/images/posts/train-journey-to-russia/image-21.webp)
 
-## 9月29日 俄罗斯伊尔库茨克到小镇利斯特维扬卡
+## 9 月 29 日 俄罗斯伊尔库茨克到小镇利斯特维扬卡
 
 下火车就找到了来接我们的俄罗斯司机，司机一言不发，全靠手语与我们交流，然后飚着车就前往小镇利斯特维扬卡，虽然之前对俄罗斯的飙车已经有所耳闻，但是如此过山车一样的路上高速行驶，真实体验还是很吓人的。路上还遇到了其他出车祸的车，虽然是死了人，司机也只是瞟一眼盖着的白布，继续淡定开过。
 
@@ -79,13 +79,13 @@ author: "Joe"
 
 ![俄罗斯司机](/images/posts/train-journey-to-russia/image-11.webp)
 
-![贝加尔湖1](/images/posts/train-journey-to-russia/image-39.webp)
+![贝加尔湖 1](/images/posts/train-journey-to-russia/image-39.webp)
 
-![贝加尔湖2](/images/posts/train-journey-to-russia/image-13.webp)
+![贝加尔湖 2](/images/posts/train-journey-to-russia/image-13.webp)
 
-## 9月30日 坐小巴去奥尔洪岛上的胡日尔村
+## 9 月 30 日 坐小巴去奥尔洪岛上的胡日尔村
 
-去伊尔库茨克的路上毫无悬念再次遇到了别人的车祸，车辆前半部分已毁，车外下着小雨，我们的司机依然呼啸而过，没有一丝眷念。上午9点55分，我们坐上了去奥尔洪岛的小巴，全车就我们两个中国人。
+去伊尔库茨克的路上毫无悬念再次遇到了别人的车祸，车辆前半部分已毁，车外下着小雨，我们的司机依然呼啸而过，没有一丝眷念。上午 9 点 55 分，我们坐上了去奥尔洪岛的小巴，全车就我们两个中国人。
 
 ![前往奥尔洪岛的小巴](/images/posts/train-journey-to-russia/image-14.webp)
 
@@ -97,9 +97,9 @@ author: "Joe"
 
 下午三点才到奥尔洪岛上的胡日尔村，想起了腾格尔的《天堂》，蓝蓝的天空，太近的天空
 
-![胡日尔村1](/images/posts/train-journey-to-russia/image-32.webp)
+![胡日尔村 1](/images/posts/train-journey-to-russia/image-32.webp)
 
-![胡日尔村2](/images/posts/train-journey-to-russia/image-42.webp)
+![胡日尔村 2](/images/posts/train-journey-to-russia/image-42.webp)
 
 景点之一：萨满石
 
@@ -109,9 +109,9 @@ author: "Joe"
 
 ![落日下的小巴](/images/posts/train-journey-to-russia/image-37.webp)
 
-## 10月1日 奥尔洪岛北线一日游
+## 10 月 1 日 奥尔洪岛北线一日游
 
-早餐是住的客栈附带的增值业务，由一位本地的老奶奶制作，有汤有米饭还有鱼，丰盛至极，只需要多花20块钱，消费太亲民了。
+早餐是住的客栈附带的增值业务，由一位本地的老奶奶制作，有汤有米饭还有鱼，丰盛至极，只需要多花 20 块钱，消费太亲民了。
 
 ![早餐](/images/posts/train-journey-to-russia/image-22.webp)
 
@@ -125,33 +125,33 @@ author: "Joe"
 
 ![奔跑的小皮卡](/images/posts/train-journey-to-russia/image-18.webp)
 
-北线最吸引我的其实并不是那些看多的风景，而是由很帅很帅的司机小哥在突然下雪的中午给我们做的篝火野餐，虽然只有鱼汤和面包，但是太暖和了，我很想说感谢，可惜小哥除了微笑就剩我听不懂的俄语。在这里，我必须吐槽Google翻译，从进入俄罗斯开始，没有翻译过几句靠谱的俄语，太气人了。
+北线最吸引我的其实并不是那些看多的风景，而是由很帅很帅的司机小哥在突然下雪的中午给我们做的篝火野餐，虽然只有鱼汤和面包，但是太暖和了，我很想说感谢，可惜小哥除了微笑就剩我听不懂的俄语。在这里，我必须吐槽 Google 翻译，从进入俄罗斯开始，没有翻译过几句靠谱的俄语，太气人了。
 
 ![司机兼大厨的俄罗斯小哥](/images/posts/train-journey-to-russia/image-30.webp)
 
-![野餐1](/images/posts/train-journey-to-russia/image-2.webp)
+![野餐 1](/images/posts/train-journey-to-russia/image-2.webp)
 
-![野餐2](/images/posts/train-journey-to-russia/image-5.webp)
+![野餐 2](/images/posts/train-journey-to-russia/image-5.webp)
 
 奥尔洪岛最北端
 
-![奥尔洪岛最北端1](/images/posts/train-journey-to-russia/image-41.webp)
+![奥尔洪岛最北端 1](/images/posts/train-journey-to-russia/image-41.webp)
 
-![奥尔洪岛最北端2](/images/posts/train-journey-to-russia/image-12.webp)
+![奥尔洪岛最北端 2](/images/posts/train-journey-to-russia/image-12.webp)
 
 等到下午回来，又是晚霞笼罩的胡日尔村，而且明显感觉到中国游客越来越多了，已经在超市看到了大量的旅行团，此时有点想回家了，错峰出行是我们的旅行宗旨。
 
 ![晚霞下的苏联小皮卡](/images/posts/train-journey-to-russia/image-7.webp)
 
-## 10月2日 返回伊尔库茨克
+## 10 月 2 日 返回伊尔库茨克
 
-由于飞机是10月3日凌晨，我们决定返回到伊尔库茨克市区后先寄存行李，然后在市区溜达一下，逛一逛繁华的马克思大街。
+由于飞机是 10 月 3 日凌晨，我们决定返回到伊尔库茨克市区后先寄存行李，然后在市区溜达一下，逛一逛繁华的马克思大街。
 
 ![伊市的有轨电车](/images/posts/train-journey-to-russia/image-40.webp)
 
 ![伊尔库茨克的标志](/images/posts/train-journey-to-russia/image-34.webp)
 
-到了晚上，按照Google地图的提示，我们直接坐着公交车前往机场，这一次的主要出行我们尽量选择了公共交通，虽然有些忐忑，好在司机非常的热情，快到站之前就跟我们用听不懂的语言表达「快要到了」
+到了晚上，按照 Google 地图的提示，我们直接坐着公交车前往机场，这一次的主要出行我们尽量选择了公共交通，虽然有些忐忑，好在司机非常的热情，快到站之前就跟我们用听不懂的语言表达「快要到了」
 
 ![满车俄罗斯人的公交车](/images/posts/train-journey-to-russia/image-31.webp)
 
@@ -163,9 +163,9 @@ author: "Joe"
 
 游记是不太好写的，写实过多就像流水账一样，不如在最后讲一讲整体的感受。
 
-首先，此次的旅行除了火车，其他都是次要的，所以火车的行程基本占据了一半，而在火车上并不是我们预想的那么无聊，因为大部分乘客包括一部分前往乌兰巴托打工的中国人，都很健谈并且乐意交流，我遇到了北京晚报的一个记者，他要坐车前往圣彼得堡，总共6天。遇到了一个专门做旅游的记者兼老板，准备从北京一直通过火车到达伦敦。遇到了来自西澳大利亚的牙科夫妇，享受着他们无数次旅行中的一次。一位刚从印度回来的蒙古小伙，只是无法理解，为何从印度回来，英语还这么差。一大群前往乌兰巴托的打工者，谈着「一带一路」。
+首先，此次的旅行除了火车，其他都是次要的，所以火车的行程基本占据了一半，而在火车上并不是我们预想的那么无聊，因为大部分乘客包括一部分前往乌兰巴托打工的中国人，都很健谈并且乐意交流，我遇到了北京晚报的一个记者，他要坐车前往圣彼得堡，总共 6 天。遇到了一个专门做旅游的记者兼老板，准备从北京一直通过火车到达伦敦。遇到了来自西澳大利亚的牙科夫妇，享受着他们无数次旅行中的一次。一位刚从印度回来的蒙古小伙，只是无法理解，为何从印度回来，英语还这么差。一大群前往乌兰巴托的打工者，谈着「一带一路」。
 
-其次，伊尔库茨克其实属于三四线城市，整体的旅游业并不发达，即使在最核心的胡日尔村，村子是有着自己生活的，教堂、学校和闲逛的牛。整个消费非常低，一顿饭两个人只花了70块钱，除了极少数地方有中文标识，大部分地方是让游客睁眼瞎的。
+其次，伊尔库茨克其实属于三四线城市，整体的旅游业并不发达，即使在最核心的胡日尔村，村子是有着自己生活的，教堂、学校和闲逛的牛。整个消费非常低，一顿饭两个人只花了 70 块钱，除了极少数地方有中文标识，大部分地方是让游客睁眼瞎的。
 
 ![胡日尔村的牛](/images/posts/train-journey-to-russia/image-4.webp)
 
@@ -173,4 +173,4 @@ author: "Joe"
 
 最后，想说一下俄语，很有意思的是，老家的方言有一种特殊的卷舌音，这个卷舌音在俄语中用得非常多，这让我模仿俄语发音信手拈来，这种奇妙的连接让我自己忍俊不禁。这时，想起了胡日尔村房东的狗，名字叫吉娜，但是为了更有俄语的感觉，重音尽量在「ji」上，四声，用力，哈哈哈。
 
-![黑色的吉娜](/images/posts/train-journey-to-russia/image-10.webp) 
+![黑色的吉娜](/images/posts/train-journey-to-russia/image-10.webp)

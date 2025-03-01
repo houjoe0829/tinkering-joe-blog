@@ -9,7 +9,7 @@ title: "How To Find Product Market Fit"
 
 > 这是 David Rusenko 关于如何寻找产品市场契合（PMF）的分享。
 
-{{< youtube 0LNQxT9LvM0 >}}
+{{<youtube 0LNQxT9LvM0>}}
 
 Go To Market 以及其中的 PMF 是我自己近期持续在了解的一个话题，这个视频确实也是近期看到的非常有料而且扎实的一个分享，值得至少做个简单的阅读笔记来加深一下记忆，不过，建议看一遍原视频，只有一个小时，并且 YouTube 上已经分了章节。
 
@@ -40,7 +40,7 @@ David 把 YC 的 PMF 定义修正了一下，从 "Make Something People Want" �
 
 ## 如何才能找到 PMF
 
-不得不提到，Weebly 花了18个月才找到所谓的 PMF，也是分享结束之后观众特别提问到的地方，为啥可以坚持这么久不放弃。而在这18个月里，Weebly 其实在就 How to build a Remarkable Product 验证自己的猜想， 重复了下面的步骤至少27次之多。
+不得不提到，Weebly 花了 18 个月才找到所谓的 PMF，也是分享结束之后观众特别提问到的地方，为啥可以坚持这么久不放弃。而在这 18 个月里，Weebly 其实在就 How to build a Remarkable Product 验证自己的猜想， 重复了下面的步骤至少 27 次之多。
 
 ![寻找 PMF 的步骤](/images/posts/how-to-find-product-market-fit/finding-pmf-steps.webp)
 
@@ -48,7 +48,7 @@ David 把 YC 的 PMF 定义修正了一下，从 "Make Something People Want" �
 
 ## 什么是 Listen to Problem
 
-倾听用户是一个看上去简单，但实际上需要做得更多的过程。"一匹更快的马"经常被人提起，分享中也提到了，但却甚少有人真的知道怎么来面对这样的用户交流，我们之前有一个沟通的初始规则，即「用户是不可信的」，主要是因为未经训练的任何人很难清洗描述出自己的诉求，这个就需要交流的过程中耐心的询问：与他们交流，Listen to their problems，了解他们的痛点，而非他们提出的方案。
+倾听用户是一个看上去简单，但实际上需要做得更多的过程。"一匹更快的马" 经常被人提起，分享中也提到了，但却甚少有人真的知道怎么来面对这样的用户交流，我们之前有一个沟通的初始规则，即「用户是不可信的」，主要是因为未经训练的任何人很难清洗描述出自己的诉求，这个就需要交流的过程中耐心的询问：与他们交流，Listen to their problems，了解他们的痛点，而非他们提出的方案。
 
 ## 如何为 PMF 设定任务优先级
 
@@ -73,4 +73,4 @@ David 把 YC 的 PMF 定义修正了一下，从 "Make Something People Want" �
 
 ![PMF 的关键指标](/images/posts/how-to-find-product-market-fit/pmf-metrics.webp)
 
-![找到 PMF 的标志](/images/posts/how-to-find-product-market-fit/pmf-found.webp) 
+![找到 PMF 的标志](/images/posts/how-to-find-product-market-fit/pmf-found.webp)

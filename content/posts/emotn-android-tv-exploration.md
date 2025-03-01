@@ -39,7 +39,7 @@ title: "由 Emotn 开始的国产安卓电视折腾日记"
 
 Netflix 对设备要求很高，只有经过验证的设备才能安装最通用的 Netflix TV 版本，国产电视基本不可能，推荐安装 Emotn 里那个叫做 Netflix for Pad 的版本，不过，我的电视遥控器适配不是很好，有些小瑕疵，比如无法通过遥控器来播放指定集数，一怒之下，卸载了。
 
-> 更新（2021年12月7日）：没有更好的选择，为了可以看 Netflix，还是用了 Netflix for Pad 的版本。
+> 更新（2021 年 12 月 7 日）：没有更好的选择，为了可以看 Netflix，还是用了 Netflix for Pad 的版本。
 
 ### 虎牙 TV 3.12.1 版本
 
@@ -47,7 +47,7 @@ Netflix 对设备要求很高，只有经过验证的设备才能安装最通用
 
 ![虎牙 TV 版停止运营通知](/images/posts/emotn-android-tv-exploration/huya-tv-notice.webp)
 
-> 更新（2021年12月4日）：虎牙 TV 版停止运营了
+> 更新（2021 年 12 月 4 日）：虎牙 TV 版停止运营了
 
 ### 哔哩哔哩视频 1.6.2 版本
 
@@ -60,8 +60,8 @@ Netflix 对设备要求很高，只有经过验证的设备才能安装最通用
 [Kodi 官网](https://kodi.tv/)
 
 推荐观看以下 YouTube 视频来了解 Kodi：
-- [KODI是什么？KODI能做什么？这期做个介绍，随便辟辟谣。](https://www.youtube.com/watch?v=XEHoepm-ivg)
-- [【KODI应该这么玩】](https://www.youtube.com/playlist?list=PLTI5d7Gwez7pdJ_S-AV1tDrFFdwRly_e4)
+- [KODI 是什么？KODI 能做什么？这期做个介绍，随便辟辟谣。](https://www.youtube.com/watch?v=XEHoepm-ivg)
+- [【KODI 应该这么玩】](https://www.youtube.com/playlist?list=PLTI5d7Gwez7pdJ_S-AV1tDrFFdwRly_e4)
 
 ![Kodi 界面预览](/images/posts/emotn-android-tv-exploration/kodi-interface.webp)
 
@@ -78,6 +78,6 @@ Netflix 对设备要求很高，只有经过验证的设备才能安装最通用
 
 推荐观看以下 YouTube 视频来了解软路由：
 - [划重点！入手软路由前你必须要了解的事情！！！](https://www.youtube.com/watch?v=NwJtD_JBfeI)
-- [揭秘openwrt三大神器！clash ssrplus passwall 速度测试！软路由openwrt lede科学上网插件](https://www.youtube.com/watch?v=jwd7wvqcDYY)
+- [揭秘 openwrt 三大神器！clash ssrplus passwall 速度测试！软路由 openwrt lede 科学上网插件](https://www.youtube.com/watch?v=jwd7wvqcDYY)
 
-科学上网线路服务商是 AgentNEO，能看 Netflix，稳定，链接：[https://agneo.co/?rc=epng2diu](https://agneo.co/?rc=epng2diu) 
+科学上网线路服务商是 AgentNEO，能看 Netflix，稳定，链接：[https://agneo.co/?rc=epng2diu](https://agneo.co/?rc=epng2diu)

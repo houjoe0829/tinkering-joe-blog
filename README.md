@@ -572,6 +572,49 @@ python3 scripts/check_tags.py
 4. 缺少 Front Matter 的文件列表
 5. 标签为空的文件列表
 
+
+## 自动化排版检查工具
+
+为了确保博客文章符合中英文排版规范，我们提供了一个自动化检查工具。这个工具基于 pangu.py，可以自动检测并修正中英文之间的空格问题。
+
+### 安装依赖
+
+```bash
+pip install pangu colorama
+```
+
+### 使用方法
+
+1. **检查所有文章并显示需要修正的内容**：
+
+```bash
+python3 scripts/check_spacing.py
+```
+
+2. **自动修正所有文章的排版问题**：
+
+```bash
+python3 scripts/check_spacing.py --fix
+```
+
+3. **只检查指定文件**：
+
+```bash
+python3 scripts/check_spacing.py --file content/posts/your-article.md
+```
+
+4. **检查并修正指定文件**：
+
+```bash
+python3 scripts/check_spacing.py --file content/posts/your-article.md --fix
+```
+
+### 注意事项
+
+- 该工具会保留 Front Matter 不变，只处理文章正文部分
+- 工具会显示具体的修改差异，方便您查看修改内容
+- 建议在提交新文章前运行此工具，确保排版规范一致
+
 ## 许可证说明
 
 本仓库采用双重许可证模式：

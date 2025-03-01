@@ -7,9 +7,10 @@ tags: ["折腾软硬件", "我有个想法！"]
 author: "Joe"
 ---
 
-> 竹白是一个一站式创作工具，方便写文章，自动生成个人站点，是少有的支持邮件和微信订阅两种方式的平台，2024 年已经几乎不再更新，而 2025年初即将彻底关闭。
 
-<img src="/images/posts/writing-after-zhubai-closure/竹白下线.webp" alt="竹白下线通知" style="width: 50%; margin: 0 auto; display: block;" />
+> 竹白是一个一站式创作工具，方便写文章，自动生成个人站点，是少有的支持邮件和微信订阅两种方式的平台，2024 年已经几乎不再更新，而 2025 年初即将彻底关闭。
+
+<img src="/images/posts/writing-after-zhubai-closure/ 竹白下线.webp" alt="竹白下线通知" style="width: 50%; margin: 0 auto; display: block;" />
 
 之前在各种平台尝试写过，今日头条、知乎、网易博客、Notion 站点、QQ 空间、微信公众号、Zine，目前断断续续更新博文已经超过 100 篇。
 
@@ -47,16 +48,16 @@ author: "Joe"
 
 ## 我的写作发布流程
 
-我自己有一套比较简单的固定写作发布流程，主要是让自己可以更专注在"写"这件事情上。
+我自己有一套比较简单的固定写作发布流程，主要是让自己可以更专注在 "写" 这件事情上。
 
 ![我的写作发布流程](/images/posts/writing-after-zhubai-closure/writing-workflow.webp)
 
 首先，所有博文内容的撰写基于通用标记语言 Markdown，用文档工具 Obsidian 来写。
 
-对于公众号来说，基于一个"复制到公众号"的 Obsidian 插件，选择好样式之后，复制并粘贴到公众号，剩下的我很少调整了，只是图片需要重新上传，不过，也有解决方案，以后再折腾折腾。
+对于公众号来说，基于一个 "复制到公众号" 的 Obsidian 插件，选择好样式之后，复制并粘贴到公众号，剩下的我很少调整了，只是图片需要重新上传，不过，也有解决方案，以后再折腾折腾。
 
-了解这个插件： https://sunboshi.tech/doc 
+了解这个插件： https://sunboshi.tech/doc
 
-对于个人站点更新，也是基于一款 Obsidian 的插件"markdown export"。可以将写好的内容导出为包含附件的 Markdown 文件。我只需要将导出的内容移到个人站点的代码仓库，就可以让 AI 按照之前拟定好的规则来自动处理，包括博客文件的创建、元数据生成、图片压缩、图片替换、Sitemap 生成。只要和 AI 沟通好，固定下来规则即可，我把流程脚本写在了仓库的 README 里。
+对于个人站点更新，也是基于一款 Obsidian 的插件 "markdown export"。可以将写好的内容导出为包含附件的 Markdown 文件。我只需要将导出的内容移到个人站点的代码仓库，就可以让 AI 按照之前拟定好的规则来自动处理，包括博客文件的创建、元数据生成、图片压缩、图片替换、Sitemap 生成。只要和 AI 沟通好，固定下来规则即可，我把流程脚本写在了仓库的 README 里。
 
-> 我现在的个人站点源码仓库已经完全开放，你可以直接访问仓库源码 https://github.com/houjoe0829/tinkering-joe-blog 让 AI 看看怎么复制。 
+> 我现在的个人站点源码仓库已经完全开放，你可以直接访问仓库源码 https://github.com/houjoe0829/tinkering-joe-blog 让 AI 看看怎么复制。

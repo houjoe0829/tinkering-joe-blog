@@ -7,6 +7,7 @@ tags: ["折腾软硬件"]
 title: "最近看上了什么 App | 005"
 ---
 
+
 ## 越来越强大的 Notion
 
 近期 Notion 的更新让我再一次心动起来，我在印象笔记、Evernote、Bear Note 以及 Notion 里都存有大量笔记，方便我每次的喜新厌旧，这一次也不例外。
@@ -39,7 +40,7 @@ Notion 注册链接： [https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3
 
 ![RelayChat 插件界面](/images/posts/recent-app-discoveries-005/relaychat.webp)
 
-官网地址：[https://relaychat.app/](https://relaychat.app/) 
+官网地址：[https://relaychat.app/](https://relaychat.app/)
 
 ## 沙雕有趣的桌面宠物：Desktop Goose 桌面鹅
 
@@ -84,4 +85,4 @@ Notion 注册链接： [https://www.notion.so/?r=a6d6483ed7c247a384536471cdd4ec3
 
 ![幕享投屏软件界面](/images/posts/recent-app-discoveries-005/letsview.webp)
 
-下载：[https://letsview.com/zh/](https://letsview.com/zh/) 
+下载：[https://letsview.com/zh/](https://letsview.com/zh/)
