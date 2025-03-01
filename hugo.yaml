@@ -5,6 +5,7 @@ title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 buildFuture: true  # 允许显示未来日期的文章
+timeZone: "Asia/Shanghai"  # 设置时区为北京时间
 
 # Markdown 渲染配置
 markup:
@@ -38,7 +39,6 @@ outputs:
 
 params:
   DateFormat: "2006-01-02"  # 设置日期格式为 YYYY-MM-DD
-  timeZone: "Asia/Shanghai"  # 设置时区为北京时间
   author:
     name: "Joe"
   description: "记录学习、思考和生活感悟"

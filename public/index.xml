@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Joe 的折腾日记</title>
-    <link>http://localhost:59513/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Joe 的折腾日记</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:59513/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>何处安放文字：竹白关闭之后</title>
-      <link>http://localhost:59513/posts/writing-after-zhubai-closure/</link>
-      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/writing-after-zhubai-closure/</guid>
+      <link>http://localhost:1313/posts/writing-after-zhubai-closure/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/writing-after-zhubai-closure/</guid>
       <description>在竹白即将关闭的背景下，分享我的写作发布流程，包括微信公众号和个人独立博客的选择与实践。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>竹白是一个一站式创作工具，方便写文章，自动生成个人站点，是少有的支持邮件和微信订阅两种方式的平台，2024 年已经几乎不再更新，而 2025 年初即将彻底关闭。</p></blockquote>
@@ -47,9 +47,9 @@
     </item>
     <item>
       <title>AI 编程最难的 20%：精细化修改</title>
-      <link>http://localhost:59513/posts/ai-programming-the-hardest-20-percent/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/ai-programming-the-hardest-20-percent/</guid>
+      <link>http://localhost:1313/posts/ai-programming-the-hardest-20-percent/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ai-programming-the-hardest-20-percent/</guid>
       <description>探讨 AI 编程中最具挑战性的 20% 工作：如何将粗糙的&amp;#39;毛坯房&amp;#39;打磨成精细的&amp;#39;产品&amp;#39;，以及在这个过程中的关键考验和未来展望</description>
       <content:encoded><![CDATA[<p>二八原则，也适用于 AI 编程了。</p>
 <blockquote>
@@ -102,9 +102,9 @@
     </item>
     <item>
       <title>最好的本地 AI 笔记软件：Obsidian &#43; Cursor</title>
-      <link>http://localhost:59513/posts/best-local-ai-note-taking-tools/</link>
-      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/best-local-ai-note-taking-tools/</guid>
+      <link>http://localhost:1313/posts/best-local-ai-note-taking-tools/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/best-local-ai-note-taking-tools/</guid>
       <description>探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案</description>
       <content:encoded><![CDATA[<p>看到 <a href="https://x.com/op7418/status/1891827233423012308" target="_blank" rel="noopener noreferrer">歸藏老师</a>  在 Twitter 上提到了这个，真的是与最近的使用感受非常类似。</p>
 <p><img alt="Twitter 截图" loading="lazy" src="/images/posts/best-local-ai-note-taking-tools/twitter-screenshot.webp"></p>
@@ -138,9 +138,9 @@
     </item>
     <item>
       <title>《心流》：这本书其实和幸福有关</title>
-      <link>http://localhost:59513/posts/flow-book-about-happiness/</link>
-      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/flow-book-about-happiness/</guid>
+      <link>http://localhost:1313/posts/flow-book-about-happiness/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/flow-book-about-happiness/</guid>
       <description>《心流：最优体验心理学》读书笔记，探讨如何从日常事务中获得更多幸福体验</description>
       <content:encoded><![CDATA[<p>豆瓣评分：8.2</p>
 <p>传送门：<a href="https://book.douban.com/subject/27186106/" target="_blank" rel="noopener noreferrer">https://book.douban.com/subject/27186106/</a> </p>
@@ -177,9 +177,9 @@
     </item>
     <item>
       <title>为什么要写 blog？</title>
-      <link>http://localhost:59513/posts/why-start-blogging/</link>
-      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/why-start-blogging/</guid>
+      <link>http://localhost:1313/posts/why-start-blogging/</link>
+      <pubDate>Thu, 13 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/why-start-blogging/</guid>
       <description>探讨为什么要写博客，以及写作如何帮助我们更好地思考、记录和分享</description>
       <content:encoded><![CDATA[<blockquote>
 <p>最近为了测试 AI 的能力边界，写代码比较多，Coding with AI 了好几天，现在需要换换脑子码码字。</p></blockquote>
@@ -246,9 +246,9 @@
     </item>
     <item>
       <title>《黑神话：哪吒》，确实好看（有剧透）</title>
-      <link>http://localhost:59513/posts/nezha-movie-review/</link>
-      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/nezha-movie-review/</guid>
+      <link>http://localhost:1313/posts/nezha-movie-review/</link>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/nezha-movie-review/</guid>
       <description>深度影评：《黑神话：哪吒》IMAX观后感，含剧透预警，解析电影亮点与不足，对比前作与原作，探讨影片背后的文化内涵。</description>
       <content:encoded><![CDATA[<p>注意，以下皆为剧透：</p>
 <p>昨天先在家陪老婆重温了一遍《哪吒 1》，依旧觉得第一部中规中矩，不差但也称不上出色。而第二部，我们特别选择了 IMAX 版本，可谓脱胎换骨，故事格局更大，各种场面量大管饱，战斗爽快，情节也变得更为暗黑起来。</p>
@@ -264,9 +264,9 @@
     </item>
     <item>
       <title>黄山半日游：云里雾里的工笔画</title>
-      <link>http://localhost:59513/posts/huangshan-half-day-tour/</link>
-      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/huangshan-half-day-tour/</guid>
+      <link>http://localhost:1313/posts/huangshan-half-day-tour/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/huangshan-half-day-tour/</guid>
       <description>一次短暂而难忘的黄山之旅，在云雾缭绕中感受工笔画般的山水，体验独特的黄山松，以及分享实用的登山建议。</description>
       <content:encoded><![CDATA[<p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。
 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……</p>
@@ -296,9 +296,9 @@
     </item>
     <item>
       <title>赛博朋克 2077：一场一百多小时的梦</title>
-      <link>http://localhost:59513/posts/cyberpunk-2077-hundred-hours-dream/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/cyberpunk-2077-hundred-hours-dream/</guid>
+      <link>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/</guid>
       <description>一场历时一个多月、超过105小时的赛博朋克2077游戏体验，从最初的犹豫到最终的沉浸，这是一次关于未来世界、人性考验和游戏艺术的深度探索。</description>
       <content:encoded><![CDATA[<p><img alt="赛博朋克 2077 游戏截图" loading="lazy" src="/images/posts/cyberpunk-2077-hundred-hours-dream/image.webp"></p>
 <p>年前的 12 月 26 日已经开始重新尝试游玩，到节前的时候，主线就差不多通关了，春节期间又尝试了多结局，包括 DLC，到了昨天（1 月 31 日）几乎完成了所有的支线和委托，总共一个月多一点， 105 小时的时长，虽然奖牌仍然只获得了 60%，姑且算作完整通关。</p>
@@ -321,9 +321,9 @@
     </item>
     <item>
       <title>扑克牌&#34;干瞪眼&#34;的规则</title>
-      <link>http://localhost:59513/posts/poker-game-rules/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/poker-game-rules/</guid>
+      <link>http://localhost:1313/posts/poker-game-rules/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/poker-game-rules/</guid>
       <description>一个简单易上手的扑克牌游戏规则介绍，适合2-6人参与的聚会娱乐活动，包含详细的准备步骤、出牌规则和胜负判定说明。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。</p></blockquote>
@@ -412,9 +412,9 @@
     </item>
     <item>
       <title>AI 聊天缺少压缩历史对话的能力</title>
-      <link>http://localhost:59513/posts/ai-chat-lack-compression-history/</link>
-      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/ai-chat-lack-compression-history/</guid>
+      <link>http://localhost:1313/posts/ai-chat-lack-compression-history/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ai-chat-lack-compression-history/</guid>
       <description>探讨当前 AI 聊天工具在处理长对话时，因缺乏历史对话压缩能力而导致的问题，并提出改进建议，以提升用户体验和沟通效率。</description>
       <content:encoded><![CDATA[<p>最近在和 AI 聊天时，经常碰到这样的提示：&ldquo;对话即将达到长度上限，建议创建新对话继续&rdquo;。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。</p>
 <p>作为一个技术小白，我经常需要和 AI 反复调整，用不同的方式解释我的需求。有时是因为我自己表达不够清楚，有时是因为 AI 的理解出现偏差。每一轮的尝试和纠正，都在不断积累对话长度。等到好不容易让 AI 理解了我的想法，准备进入更深入的讨论时，却不得不面对 &ldquo;创建新对话&rdquo; 的选择，或者要接受 AI 开始循环抽风的可能。这意味着之前建立的理解和共识都要重新开始。</p>
@@ -426,9 +426,9 @@
     </item>
     <item>
       <title>《江城》：看一本书认识一座城</title>
-      <link>http://localhost:59513/posts/river-town-book-review/</link>
-      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/river-town-book-review/</guid>
+      <link>http://localhost:1313/posts/river-town-book-review/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/river-town-book-review/</guid>
       <description>通过何伟的《江城》，我认识了一座从未去过的城市，感受到了一个外国人眼中的中国生活。</description>
       <content:encoded><![CDATA[<p><img alt="《江城》书籍封面" loading="lazy" src="/images/posts/river-town-book-review/book-cover.webp"></p>
 <p>算是 2025 年读完的第一本书，也是读完何伟（原名彼得・海斯勒）的第二本。</p>
@@ -444,9 +444,9 @@
     </item>
     <item>
       <title>镇江小城，极简半日游</title>
-      <link>http://localhost:59513/posts/zhenjiang-half-day-tour/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/zhenjiang-half-day-tour/</guid>
+      <link>http://localhost:1313/posts/zhenjiang-half-day-tour/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/zhenjiang-half-day-tour/</guid>
       <description>一次临时起意的镇江半日游，探访金山寺、西津渡古街，品尝镇江三怪，感受这座小城的历史韵味。</description>
       <content:encoded><![CDATA[<p><img alt="镇江城景" loading="lazy" src="/images/posts/zhenjiang-half-day-tour/image-1.webp"></p>
 <p>来镇江并非什么深思熟虑的计划，只是因为有事要去南京，由于实在去过太多次，老婆临时加了这个途径点。</p>
@@ -489,9 +489,9 @@
     </item>
     <item>
       <title>2024 玩物志：那些提升幸福感的好物</title>
-      <link>http://localhost:59513/posts/2024-favorite-things/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/2024-favorite-things/</guid>
+      <link>http://localhost:1313/posts/2024-favorite-things/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2024-favorite-things/</guid>
       <description>2024年度好物盘点，从软件到硬件，从日常用品到精神食粮，记录那些提升生活品质的美好事物。</description>
       <content:encoded><![CDATA[<p>原本还在写上次海南自驾的游记，突然意识到阳历新年即将到来，又到了年度盘点的赶工时间。其实，每年都会早早创建这类任务，也一直在零零散散地补充内容，但若不是到了最后一天，又怎能算是 2024 玩物志呢？</p>
 <p>每一次年度盘点，既像是为过去一年做个归档，又像是在混乱的回忆中塑造出一种秩序，让这一年变得更有条理，更易于铭记。玩物志里的 &ldquo;物&rdquo;，代表着生活中的好物，有软件也有硬件，还有属于精神角落的书籍、电影和游戏。它们中有些是日常相伴，有些则陪我们走过了一段较长的时光。</p>
@@ -583,9 +583,9 @@
     </item>
     <item>
       <title>《豺狼的日子》，2024年能排前3的美剧</title>
-      <link>http://localhost:59513/posts/masters-of-the-air-tv-series-review/</link>
-      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/masters-of-the-air-tv-series-review/</guid>
+      <link>http://localhost:1313/posts/masters-of-the-air-tv-series-review/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/masters-of-the-air-tv-series-review/</guid>
       <description>《豺狼的日子》美剧观后感：埃迪·雷德梅恩主演的精彩表现与剧集评价</description>
       <content:encoded><![CDATA[<div class="bookmark-container">
   <a class="bookmark-link" href="https://movie.douban.com/subject/36323224/" target="_blank" rel="noopener noreferrer">
@@ -615,9 +615,9 @@
     </item>
     <item>
       <title>想看看《749局》到底有多烂！</title>
-      <link>http://localhost:59513/posts/movie-749-bureau-review/</link>
-      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/movie-749-bureau-review/</guid>
+      <link>http://localhost:1313/posts/movie-749-bureau-review/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/movie-749-bureau-review/</guid>
       <description>带着好奇心观看了备受争议的电影《749局》，分享个人观感与思考，探讨影片的优缺点及其特效设计。</description>
       <content:encoded><![CDATA[<div class="bookmark-container">
   <a class="bookmark-link" href="https://movie.douban.com/subject/26747919/" target="_blank" rel="noopener noreferrer">
@@ -646,9 +646,9 @@
     </item>
     <item>
       <title>自驾和骑行的新伴侣：AI 耳机</title>
-      <link>http://localhost:59513/posts/ola-friend-ai-earphone/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/ola-friend-ai-earphone/</guid>
+      <link>http://localhost:1313/posts/ola-friend-ai-earphone/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ola-friend-ai-earphone/</guid>
       <description>体验 Ola Friend AI 耳机的使用感受，从开放式耳机的需求出发，探讨它在自驾和骑行场景下的优缺点，以及 AI 助手如何改变我们的日常生活。</description>
       <content:encoded><![CDATA[<p>第一次感觉，很多想知道的东西，真的可以唾手可得。这极大地满足了我的好奇心，虽然我问的问题都是些没什么意义的，但于当时的自己而言，很有趣呀。</p>
 <p>&ldquo;豆包豆包，江门有什么好吃的好玩的&rdquo;</p>
@@ -690,9 +690,9 @@
     </item>
     <item>
       <title>放下执念，打开取暖器</title>
-      <link>http://localhost:59513/posts/let-go-obsession-turn-on-heater/</link>
-      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/let-go-obsession-turn-on-heater/</guid>
+      <link>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/let-go-obsession-turn-on-heater/</guid>
       <description>从对抗寒冷到接纳取暖设备，记录一次放下执念的心路历程，以及如何在寒冷天气中提升工作效率和生活幸福感。</description>
       <content:encoded><![CDATA[<p>我已经打定主意，不想再把精力消耗在对抗寒冷这件事上了。回想过去，这场与严寒的较量又赢得了什么？&ldquo;算你厉害&rdquo;，还是一句 &ldquo;你真不怕冷！&rdquo; 的称赞呢？似乎无甚意义。</p>
 <p>今天的杭州，气温徘徊在 10 度左右。我索性直接打开了电暖器，很快，有些冷意的工作间变得舒坦起来。这便是电暖器的过人之处，可快速升温。适温下，在电脑前码码字，画画图，浑身舒畅，思绪也终于能够专注在有生产力的事情上。
@@ -708,9 +708,9 @@
     </item>
     <item>
       <title>《寻路中国》：一个老外眼中剧变的中国</title>
-      <link>http://localhost:59513/posts/country-driving-book-review/</link>
-      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/country-driving-book-review/</guid>
+      <link>http://localhost:1313/posts/country-driving-book-review/</link>
+      <pubDate>Wed, 27 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/country-driving-book-review/</guid>
       <description>《寻路中国》书评：一位外国记者深入观察 2006 年左右中国社会变迁的真实记录，从长城自驾游到温州制造业，展现了一个局外人对剧变时期中国的独特洞察。</description>
       <content:encoded><![CDATA[<div class="bookmark-container">
   <a class="bookmark-link" href="https://book.douban.com/subject/5414391/" target="_blank" rel="noopener noreferrer">
@@ -738,9 +738,9 @@
     </item>
     <item>
       <title>在殡仪馆守灵的一晚上</title>
-      <link>http://localhost:59513/posts/funeral-home-vigil/</link>
-      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/funeral-home-vigil/</guid>
+      <link>http://localhost:1313/posts/funeral-home-vigil/</link>
+      <pubDate>Wed, 27 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/funeral-home-vigil/</guid>
       <description>一次特殊的守灵经历，记录现代殡葬礼仪的变迁，以及对生命告别仪式的思考。</description>
       <content:encoded><![CDATA[<p>逝者为大，我无意有任何冒犯，只是觉得殡葬相关的事情，似乎总是在一个阴影地带，充满了禁忌，谈不得，生怕显得晦气，但我觉得这是一个很有趣的经历，想在参与之外，认真讲一讲这个其实不那么晦气的故事。</p>
 <p>小时候虽然经历过丧事，但唯一参与的流程是太奶奶去世时，当遗体从屋里抬出，所有亲属跪下告别的那一段。其他流程都会刻意避开小孩，即便我们好奇地问起，大人们也总是拐弯抹角，用各种敷衍的说辞来解释，让人觉得既困惑又烦闷。</p>
@@ -766,9 +766,9 @@
     </item>
     <item>
       <title>数字时代的生存清单</title>
-      <link>http://localhost:59513/posts/digital-age-survival-checklist/</link>
-      <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/digital-age-survival-checklist/</guid>
+      <link>http://localhost:1313/posts/digital-age-survival-checklist/</link>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/digital-age-survival-checklist/</guid>
       <description>在数字时代，我们需要未雨绸缪，准备一些必要的工具和知识，以保持与世界的连接</description>
       <content:encoded><![CDATA[<p>这个清单不是为了逃离什么，而是为了与世界连接。在看不见的角落里，一些改变总是在悄然发生。它不是实体的阻隔，而是一种潜移默化的收紧。慢慢我们会发现，很多东西原来还可以，突然就不行了，这种外在的封闭还会渗透到内心，让思维出现一道无形的墙，甚至我们自己都难以察觉这种变化。</p>
 <p>所以，有些东西需要未雨绸缪，提前准备，清单很简单，关键在自己。</p>
@@ -792,9 +792,9 @@
     </item>
     <item>
       <title>性价比最高的科学上网方案：Shadowrocket</title>
-      <link>http://localhost:59513/posts/shadowrocket-guide/</link>
-      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/shadowrocket-guide/</guid>
+      <link>http://localhost:1313/posts/shadowrocket-guide/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/shadowrocket-guide/</guid>
       <description>一个简单但完整的 Shadowrocket 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -872,9 +872,9 @@
     </item>
     <item>
       <title>产品经理入门书籍的推荐</title>
-      <link>http://localhost:59513/posts/product-manager-starter-book-recommendations/</link>
-      <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/product-manager-starter-book-recommendations/</guid>
+      <link>http://localhost:1313/posts/product-manager-starter-book-recommendations/</link>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/product-manager-starter-book-recommendations/</guid>
       <description>一份个人总结的产品经理入门书籍推荐清单</description>
       <content:encoded><![CDATA[<p>这里主要回答针对产品经理入门的书籍推荐，纯个人经验出发，仅供参考。</p>
 <h2 id="整体入门">整体入门</h2>
@@ -1152,9 +1152,9 @@
     </item>
     <item>
       <title>最实用的技能之一：做一本双语电子书</title>
-      <link>http://localhost:59513/posts/how-to-make-bilingual-ebook/</link>
-      <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/how-to-make-bilingual-ebook/</guid>
+      <link>http://localhost:1313/posts/how-to-make-bilingual-ebook/</link>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-make-bilingual-ebook/</guid>
       <description>介绍如何使用沉浸式翻译插件和 ChatGPT，将英文电子书转换为双语对照版本，让阅读不再受语言限制。</description>
       <content:encoded><![CDATA[<p>这是最近最有用的技能了。</p>
 <p>由于看书比较杂，为了跨过语言的障碍，扩大看书的选择范围，真正实现看书无国界，开始尝试翻译只有英文资源或者中文翻译较差的书籍。</p>
@@ -1181,9 +1181,9 @@
     </item>
     <item>
       <title>《异形：夺命舰》，终于去看了</title>
-      <link>http://localhost:59513/posts/alien-romulus-movie-review/</link>
-      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/alien-romulus-movie-review/</guid>
+      <link>http://localhost:1313/posts/alien-romulus-movie-review/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/alien-romulus-movie-review/</guid>
       <description>《异形：夺命舰》影评：一部复古未来主义风格的科幻惊悚片，在熟悉的套路中寻找新意</description>
       <content:encoded><![CDATA[<div class="bookmark-container">
   <a class="bookmark-link" href="https://movie.douban.com/subject/35792500/" target="_blank" rel="noopener noreferrer">
@@ -1219,9 +1219,9 @@
     </item>
     <item>
       <title>说走就走的骑行</title>
-      <link>http://localhost:59513/posts/cycling-adventure/</link>
-      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/cycling-adventure/</guid>
+      <link>http://localhost:1313/posts/cycling-adventure/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/cycling-adventure/</guid>
       <description>从一圈只能骑行10公里开始，到现在已经骑行超过2000公里，穿行了15个城市。这是一个关于如何培养骑行兴趣，以及骑行给生活带来改变的故事。</description>
       <content:encoded><![CDATA[<p>现在，每到一个地方，如果不骑行压过，心情就像有了便宜却不得占的懊悔，少了一种功德上的圆满，比如下雨的洛阳，比如时间不允许的烟台养马岛……</p>
 <p><img alt="骑行装备" loading="lazy" src="/images/posts/cycling-adventure/image-17674.webp"></p>
@@ -1271,9 +1271,9 @@
     </item>
     <item>
       <title>最简约的科学上网方案：Quantumlt X</title>
-      <link>http://localhost:59513/posts/quantumult-x-guide/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/quantumult-x-guide/</guid>
+      <link>http://localhost:1313/posts/quantumult-x-guide/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/quantumult-x-guide/</guid>
       <description>一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>⚠️ 注意：</p>
@@ -1347,9 +1347,9 @@
     </item>
     <item>
       <title>3000 公里的山东半岛，自驾与骑行</title>
-      <link>http://localhost:59513/posts/shandong-peninsula-travel-notes/</link>
-      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/shandong-peninsula-travel-notes/</guid>
+      <link>http://localhost:1313/posts/shandong-peninsula-travel-notes/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/shandong-peninsula-travel-notes/</guid>
       <description>一次横跨山东半岛的自驾与骑行之旅，探索了青岛、荣成、淄博等城市，体验了当地美食和风土人情</description>
       <content:encoded><![CDATA[<p>距离五月底去山东半岛已经过去良久，但是最近似乎没有多少写东西的兴致，导致许多想写的内容都是下笔即无神，只能写写严肃性的工作内容。</p>
 <p>不过，最近杭州开始了非常烦人的梅雨季，户外出行骤然减少，也被迫腾出一些时间来料理收件箱里的待办事项，包括记录一下这次的山东之行。</p>
@@ -1414,9 +1414,9 @@
     </item>
     <item>
       <title>居然是第一次去日本</title>
-      <link>http://localhost:59513/posts/first-time-in-japan/</link>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/first-time-in-japan/</guid>
+      <link>http://localhost:1313/posts/first-time-in-japan/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/first-time-in-japan/</guid>
       <description>一次意外的日本初体验，从东京到大阪，从富士山到任天堂乐园，记录一个游戏玩家眼中的日本之旅。</description>
       <content:encoded><![CDATA[<p>从大阪回到杭州后，终于结束了 5 天的日本之旅，由于长时间徒步和站立导致后腰部肌肉拉伤，在家躺了接近两天才开始写这一周的日本游记，也不知道最初哪里来的自信，还信誓旦旦想着最后两天再去一次韩国釜山。</p>
 <p>而连我们自己都没有想到，这其实是我们第一次去日本，在东亚出行了那么多国家和地区，但一直秉承着先去发展中国家再去发达国家的穷游策略，日本被排到了清单的最后，甚至，连朝鲜、蒙古都在好几年前去了。</p>
@@ -1474,9 +1474,9 @@
     </item>
     <item>
       <title>Craft：一款小众且独特的笔记软件</title>
-      <link>http://localhost:59513/posts/craft-notes-app-review/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/craft-notes-app-review/</guid>
+      <link>http://localhost:1313/posts/craft-notes-app-review/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/craft-notes-app-review/</guid>
       <description>深入探讨 Craft 这款独特的笔记软件，分析其优缺点，以及与 Notion、Evernote 等主流笔记软件的对比</description>
       <content:encoded><![CDATA[<p><a href="https://www.craft.do/" target="_blank" rel="noopener noreferrer">Craft | A fresh take on documents</a> </p>
 <p>Craft 官网</p>
@@ -1565,9 +1565,9 @@
     </item>
     <item>
       <title>记录一次 VR Workroom 的体验</title>
-      <link>http://localhost:59513/posts/vr-workroom-experience/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/vr-workroom-experience/</guid>
+      <link>http://localhost:1313/posts/vr-workroom-experience/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vr-workroom-experience/</guid>
       <description>记录一次在 Meta 的 Horizon Workroom 中体验 VR 会议的经历，分享了配置过程、使用体验以及对未来 VR 应用的思考</description>
       <content:encoded><![CDATA[<p>一次机缘巧合的情况下，提前体验了一次「元宇宙」，与一众网友在 Meta（原 Facebook）出品的 Horizon Workroom 中开了一次线上 VR 版本的会议。会议本身虽然没有什么实质性的内容，但值得记录一下，算是人类初期对「元宇宙」的观光旅游团之一，方便未来自己有机会自我嘲讽一番。</p>
 <p><img alt="VR 会议的截图" loading="lazy" src="/images/posts/vr-workroom-experience/Untitled-3.webp"></p>
@@ -1618,9 +1618,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap：过年那些事儿</title>
-      <link>http://localhost:59513/posts/chinese-new-year-2024-recap/</link>
-      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/chinese-new-year-2024-recap/</guid>
+      <link>http://localhost:1313/posts/chinese-new-year-2024-recap/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/chinese-new-year-2024-recap/</guid>
       <description>春节回老家的一些感受和思考，以及路上的见闻</description>
       <content:encoded><![CDATA[<p>从自驾返回杭州开始，已经慢慢构思着这篇文章的大纲，也算是自驾的乐趣之一。回程 1200 公里左右，我们把行程变成了三天两晚的边走边逛，原本准备去江西南昌尝一尝瓦罐汤，不过，省会城市周边的高速现状让我们不得不改了线路，改为绕道安徽安庆，途径黄山市宏村，再返回杭州，不算辛苦的奔波。</p>
 <h2 id="湖北的大雪与冻雨">湖北的大雪与冻雨</h2>
@@ -1679,9 +1679,9 @@
     </item>
     <item>
       <title>新昌一日游：碳水美食与下岩贝村</title>
-      <link>http://localhost:59513/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</link>
-      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</guid>
+      <link>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/xinchang-one-day-trip-food-and-xiayanbei-village/</guid>
       <description>一次轻松愉快的新昌一日游，品尝当地特色美食，探访山顶下岩贝村</description>
       <content:encoded><![CDATA[<p>又是一次极其休闲的江浙沪周边游。</p>
 <p>新昌县是绍兴下辖的县城，之前以为是嵊（shèng）州市的一个区，因为地图上来看实在太近了。由于不到两个小时车程就可以从杭州到达新昌县，原本留宿一晚的计划改为了当日往返。</p>
@@ -1711,9 +1711,9 @@
     </item>
     <item>
       <title>美食是一场发现之旅</title>
-      <link>http://localhost:59513/posts/food-discovery-journey/</link>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/food-discovery-journey/</guid>
+      <link>http://localhost:1313/posts/food-discovery-journey/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/food-discovery-journey/</guid>
       <description>探索味蕾的边界，从家乡的重口味到世界各地的美食，一场关于味觉的发现之旅</description>
       <content:encoded><![CDATA[<aside>
 💡 这是一篇与 AI 协作一起写完的文章，第一次尝试。
@@ -1736,9 +1736,9 @@
     </item>
     <item>
       <title>《双人成行》：确实值得再玩一次</title>
-      <link>http://localhost:59513/posts/it-takes-two-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/it-takes-two-review/</guid>
+      <link>http://localhost:1313/posts/it-takes-two-review/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/it-takes-two-review/</guid>
       <description>重温《双人成行》的游戏体验，探讨这款合作游戏如何通过互动玩法传递情感价值，以及游戏与现实生活的共鸣。</description>
       <content:encoded><![CDATA[<hr>
 <p><img alt="游戏截图3" loading="lazy" src="/images/posts/it-takes-two-review/image-3.webp"></p>
@@ -1765,9 +1765,9 @@
     </item>
     <item>
       <title>《死侍与金刚狼》的疑问和彩蛋</title>
-      <link>http://localhost:59513/posts/deadpool-and-wolverine-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/deadpool-and-wolverine-review/</guid>
+      <link>http://localhost:1313/posts/deadpool-and-wolverine-review/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/deadpool-and-wolverine-review/</guid>
       <description>解答《死侍与金刚狼》预告片中的各种疑问，揭秘隐藏的彩蛋和客串角色。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>先说评价：</p>
@@ -1818,9 +1818,9 @@
     </item>
     <item>
       <title>关于我</title>
-      <link>http://localhost:59513/about/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/about/</guid>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
       <description>了解更多关于我的信息</description>
       <content:encoded><![CDATA[<h2 id="-个人简介">👨‍💻 个人简介</h2>
 <p>我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.</p>
@@ -1858,9 +1858,9 @@
     </item>
     <item>
       <title>黑神话悟空：又爱又骂的西游冒险</title>
-      <link>http://localhost:59513/posts/black-myth-wukong-review/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/black-myth-wukong-review/</guid>
+      <link>http://localhost:1313/posts/black-myth-wukong-review/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/black-myth-wukong-review/</guid>
       <description>一场80小时的游戏旅程，在黑神话悟空中体验充满诚意的西游世界，分享这款备受瞩目的国产游戏带来的欢乐与遗憾。</description>
       <content:encoded><![CDATA[<p>终于在 3 周内以接近 80 小时的游玩时长，完成一周目的隐藏结局。这也体现出主机游戏的优势了，可以玩完的游戏旅程，正好在此刻为其存个档。</p>
 <p>10 分制的情况下，昨天晚上打的正常结局，我给了 8 分，中规中矩的收尾。但是今天隐藏结局打完，我忍不住给到 8.9 分，尤其是对战二郎神的部分，虽说 BOSS 是最恶心的，但整个过程很痛快，该揍的都揍了一遍，结尾还会奖励额外的剧情动画和音乐。</p>
@@ -1911,9 +1911,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap: 2023 玩物志</title>
-      <link>http://localhost:59513/posts/2023-toys-recap/</link>
-      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/2023-toys-recap/</guid>
+      <link>http://localhost:1313/posts/2023-toys-recap/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2023-toys-recap/</guid>
       <description>2023年度个人软硬件工具、游戏、影视、旅行等生活记录的年终总结，记录那些改变生活的好物与难忘的经历。</description>
       <content:encoded><![CDATA[<p>原本计划在跨年前写完这篇年终盘点，奈何在南京跨年，酒吧没有我的位置，陪一只狗在路边待了许久。期间，在朋友家写了一会儿，在手机上写了一会儿，又在酒店继续写，直到年后也没有真正写完。
 为了省事，我已经把每年的年度软硬件盘点、定期的 Recap（回顾系列）以及 2023 年度复盘合在了一起。人懒了之后，果然什么都可以干得出来……
@@ -1999,9 +1999,9 @@
     </item>
     <item>
       <title>漫威蜘蛛侠 2，我的年度游戏之一</title>
-      <link>http://localhost:59513/posts/marvel-spiderman-2-game-review/</link>
-      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/marvel-spiderman-2-game-review/</guid>
+      <link>http://localhost:1313/posts/marvel-spiderman-2-game-review/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/marvel-spiderman-2-game-review/</guid>
       <description>漫威蜘蛛侠2是一款优点突出、短板不明显的游戏，拥有超越电影般的画面和流畅的游戏体验，是我的年度游戏之一</description>
       <content:encoded><![CDATA[<p>自我评分: ⭐️⭐️⭐️⭐️⭐️</p>
 <div class="bookmark-container">
@@ -2076,9 +2076,9 @@
     </item>
     <item>
       <title>NAS 私有云：真国内观影必备</title>
-      <link>http://localhost:59513/posts/nas-private-cloud-guide/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/nas-private-cloud-guide/</guid>
+      <link>http://localhost:1313/posts/nas-private-cloud-guide/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/nas-private-cloud-guide/</guid>
       <description>一篇详尽的 NAS 私有云入门指南：从硬件选购建议到实际应用场景，手把手教你搭建一个功能完备的家庭媒体中心和数据备份系统。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>NAS 是指家庭私有存储空间的硬件，使用上可以理解为个人的私有云网盘。</p></blockquote>
@@ -2141,9 +2141,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap:  今天是来杭州一年的日子</title>
-      <link>http://localhost:59513/posts/hangzhou-one-year-recap/</link>
-      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/hangzhou-one-year-recap/</guid>
+      <link>http://localhost:1313/posts/hangzhou-one-year-recap/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hangzhou-one-year-recap/</guid>
       <description>在杭州生活一年的感悟：从初来乍到到渐入佳境，分享我对这座城市的印象与思考</description>
       <content:encoded><![CDATA[<p>按照约定又要开始码字分享了，上一次这个 Recap 系列还是 8 月 8 日，计划定期写下去。</p>
 <p>写这篇分享时，正坐在江西九江市八里湖旁的一个酒店里，随机开始了一个「番茄钟」，也就是一轮的时间，写一写最近的所思所想，码字总是让人能很快安静下来。</p>
@@ -2184,9 +2184,9 @@
     </item>
     <item>
       <title>超过 3200 公里的华南自驾，写一写感受</title>
-      <link>http://localhost:59513/posts/south-china-road-trip-review/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/south-china-road-trip-review/</guid>
+      <link>http://localhost:1313/posts/south-china-road-trip-review/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/south-china-road-trip-review/</guid>
       <description>此刻我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天也关了它 9 天</description>
       <content:encoded><![CDATA[<blockquote>
 <p>此刻，我们家的猫强行睡在我的电脑旁边，人不能随便走动，一离开就开始骂骂咧咧，毕竟这次自驾花了 9 天，也关了它 9 天。</p></blockquote>
@@ -2276,9 +2276,9 @@
     </item>
     <item>
       <title>Joe&#39;s Recap：8月以前</title>
-      <link>http://localhost:59513/posts/joe-recap-8-month-before/</link>
-      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/joe-recap-8-month-before/</guid>
+      <link>http://localhost:1313/posts/joe-recap-8-month-before/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/joe-recap-8-month-before/</guid>
       <description>这一篇是写给 Newsletter 通道的文章，欢迎订阅关注</description>
       <content:encoded><![CDATA[<p>没想到已经 8 月了，再过四个月今年就结束了，上一次推送还是 2 月份，之后，即使更新了一些文章，也没有再推送过，主要是很多写的内容不适合推给所有人，不打扰反而更好。</p>
 <p>不过，我自己还是希望实现最初码字的愿望，让文字的分享成为日常习惯，至少可以每隔一段时间写一写之前时间的总结，就像面对一群朋友时的侃大山。</p>
@@ -2323,9 +2323,9 @@
     </item>
     <item>
       <title>发布一年多，终于入手了 Steam Deck</title>
-      <link>http://localhost:59513/posts/steam-deck-review/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/steam-deck-review/</guid>
+      <link>http://localhost:1313/posts/steam-deck-review/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/steam-deck-review/</guid>
       <description>在 Steam Deck 发布一年多后的使用体验分享，包括设备优缺点、游戏体验、实用配件以及避坑指南</description>
       <content:encoded><![CDATA[<blockquote>
 <p>Steam Deck 最近达到了一个重要的里程碑：目前有超过 1 万款游戏被分类为 &ldquo;已测试&rdquo; 或 &ldquo;可游玩&rdquo;。（来自：<a href="https://www.gamersky.com/news/202306/1612042.shtml" target="_blank" rel="noopener noreferrer">游民星空</a> ）</p></blockquote>
@@ -2431,9 +2431,9 @@
     </item>
     <item>
       <title>做完一件事，很重要</title>
-      <link>http://localhost:59513/posts/importance-of-task-completion/</link>
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/importance-of-task-completion/</guid>
+      <link>http://localhost:1313/posts/importance-of-task-completion/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/importance-of-task-completion/</guid>
       <description>探讨了在当今信息爆炸时代，如何专注于完成一件事的重要性，以及避免陷入任务切换的陷阱</description>
       <content:encoded><![CDATA[<p>现在想做和可以做的事情越来越多了，旅行清单、游戏清单、影视剧清单、好奇心清单、写作清单等等，随着时间几乎各种想做的清单都在不断变长。</p>
 <p>我自己经常会陷入到一种混沌任务的状态，就像小时候拿着遥控器对着电视不断换台，总觉得下一个会更有趣，一遍又一遍循环后，什么影视剧也没有看到，全是 &ldquo;欣赏&rdquo; 切来切去的广告。而现在，这一切变成了不断切换清单里的任务，看看哪个更喜欢，哪个可以更容易完成，最后把时间浪费在切换中。</p>
@@ -2456,9 +2456,9 @@
     </item>
     <item>
       <title>How To Find Product Market Fit</title>
-      <link>http://localhost:59513/posts/how-to-find-product-market-fit/</link>
-      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/how-to-find-product-market-fit/</guid>
+      <link>http://localhost:1313/posts/how-to-find-product-market-fit/</link>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-find-product-market-fit/</guid>
       <description>Weebly CEO David Rusenko 分享如何寻找产品市场契合度（PMF）的经验和洞察</description>
       <content:encoded><![CDATA[<blockquote>
 <p>这是 David Rusenko 关于如何寻找产品市场契合（PMF）的分享。</p></blockquote>
@@ -2511,9 +2511,9 @@
     </item>
     <item>
       <title>《塞尔达传说·王国之泪》游记（涉及剧透）</title>
-      <link>http://localhost:59513/posts/tears-of-the-kingdom-review/</link>
-      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/tears-of-the-kingdom-review/</guid>
+      <link>http://localhost:1313/posts/tears-of-the-kingdom-review/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/tears-of-the-kingdom-review/</guid>
       <description>这篇游记是记录在海拉鲁大陆这个开放世界的探索之旅纯记录分享没啥价值</description>
       <content:encoded><![CDATA[<p>端午节正好错峰不出行，杭州的天气也是不适合出门，更适合宅着，于是，在家没日没夜的游戏开图，本想等着海拉鲁大陆都用步行探索一遍，奈何游戏地图太大，决定一口气推完最后一个主剧情，先救一下公主。</p>
 <p><img loading="lazy" src="/images/posts/tears-of-the-kingdom-review/image-1.webp"></p>
@@ -2561,9 +2561,9 @@
     </item>
     <item>
       <title>台(tāi)州游记</title>
-      <link>http://localhost:59513/posts/taizhou-travel-notes/</link>
-      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/taizhou-travel-notes/</guid>
+      <link>http://localhost:1313/posts/taizhou-travel-notes/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/taizhou-travel-notes/</guid>
       <description>台州，江浙沪包游计划清单上的一个点，从天台山道教学院到台州府城，一次即兴而随性的周末自驾之旅。</description>
       <content:encoded><![CDATA[<p>台州还是值得写一篇游记的，只是这个不能当做攻略看，我们一般出行比较随意，找一个目的地之后，以即兴发挥为主。</p>
 <p>台州，原本只是江浙沪包游计划清单上的一个点，结果在地图和小红书里搜罗的时候，发现台州可玩的地方比较分散，熟称散装台州，靠海与不靠海的部分相差大概有两个小时左右的车程，最终选了其中稍近的一点作为周末可去的部分，也就是这次的台州临海市「台州府城」，而查询路线的过程中又发现了之前收藏的一个台州天台山地点「浙江道教学院」，也就顺道加了一个途经点。</p>
@@ -2609,9 +2609,9 @@
     </item>
     <item>
       <title>为什么不推荐买特斯拉</title>
-      <link>http://localhost:59513/posts/why-not-recommend-tesla/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/why-not-recommend-tesla/</guid>
+      <link>http://localhost:1313/posts/why-not-recommend-tesla/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/why-not-recommend-tesla/</guid>
       <description>从一个特斯拉车主的角度，分享半年一万公里的使用体验，以及为什么我反而不推荐购买特斯拉</description>
       <content:encoded><![CDATA[<p><img alt="特斯拉里程表显示一万公里里程碑" loading="lazy" src="/images/posts/why-not-recommend-tesla/tesla-dashboard.webp"></p>
 <p>断断续续开车，到今天（2023 年 05 月 25 日），正好表显一万公里了，从 22 年 10 月份购买特斯拉 Model Y 到现在，除了中间的的一个月因为新冠感染滞留在英国，基本每周都在出行，实现我们的 &ldquo;江浙沪包游&rdquo; 计划。</p>
@@ -2660,9 +2660,9 @@
     </item>
     <item>
       <title>记录绍兴一日游</title>
-      <link>http://localhost:59513/posts/shaoxing-one-day-trip-2023/</link>
-      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/shaoxing-one-day-trip-2023/</guid>
+      <link>http://localhost:1313/posts/shaoxing-one-day-trip-2023/</link>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/shaoxing-one-day-trip-2023/</guid>
       <description>探索绍兴老城区的水乡风貌，品味黄酒文化，记录一次充满惊喜的江浙沪周末游</description>
       <content:encoded><![CDATA[<p>昨天太累了，忘了文字记录一下绍兴一日游。</p>
 <p>绍兴属于我们江浙沪包游计划的一个，对，这是一个我们希望在杭州的可预见的一长段时间里逐个开车走过的区域。毕竟，宇宙那么大，先拟定一个小目标，欢迎推荐各种江浙沪区域的游玩点。</p>
@@ -2683,9 +2683,9 @@
     </item>
     <item>
       <title>2022 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:59513/posts/2022-gadget-review-software-and-hardware/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/2022-gadget-review-software-and-hardware/</guid>
+      <link>http://localhost:1313/posts/2022-gadget-review-software-and-hardware/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2022-gadget-review-software-and-hardware/</guid>
       <description>2022年那些让生活更美好的软件与硬件清单，从 Evernote 到特斯拉 Model Y，记录那些改变生活的工具</description>
       <content:encoded><![CDATA[<p>先说：新年快乐，2022 年辛苦了</p>
 <p>这是动荡但也还是足够有趣的一年，以后有兴致了再单独码字聊一聊这个。</p>
@@ -2747,9 +2747,9 @@
     </item>
     <item>
       <title>我们在东极岛，天气阴</title>
-      <link>http://localhost:59513/posts/dongji-island-tour-2022/</link>
-      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/dongji-island-tour-2022/</guid>
+      <link>http://localhost:1313/posts/dongji-island-tour-2022/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/dongji-island-tour-2022/</guid>
       <description>在阴雨天气中探索东极岛群，品尝当地海鲜美食，记录一次独特的江浙沪周末之旅</description>
       <content:encoded><![CDATA[<p>东极岛其实不是一个岛，而是好几个岛的总称，包括庙子湖、青浜岛和东福山等等。</p>
 <p>附上东极岛的行程：</p>
@@ -2789,9 +2789,9 @@
     </item>
     <item>
       <title>拿 Notion 做什么？不做什么</title>
-      <link>http://localhost:59513/posts/how-i-use-notion-2022/</link>
-      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/how-i-use-notion-2022/</guid>
+      <link>http://localhost:1313/posts/how-i-use-notion-2022/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-i-use-notion-2022/</guid>
       <description>分享我的 Notion 使用心得：如何将 Notion 打造成个人资料库和数字花园，以及哪些场景不适合使用 Notion</description>
       <content:encoded><![CDATA[<p>其实本文是之前准备撰写的「第二大脑与数字花园」的延伸，原本是基于笔记软件 Craft 的一种使用梳理，可能因为懒，导致这个主题的构思孕育失败，而且已经从 Craft 又回到了 Notion，正好，最近好几位朋友问我是如何使用 Notion 的，一时冲动，就借题发挥了一下。</p>
 <p>从最早 2016 年开始接触使用 Notion，现在基本围绕 Notion 形成了一套稳定的使用方法，这套方法在之前使用 Craft、Evernote 等笔记工具的时候也基本都可以正常运转，只是不同工具的效率不太一样，与自己的契合度也不同。</p>
@@ -2851,9 +2851,9 @@
     </item>
     <item>
       <title>记录一次实习急救员的培训上线</title>
-      <link>http://localhost:59513/posts/first-aid-training-experience/</link>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/first-aid-training-experience/</guid>
+      <link>http://localhost:1313/posts/first-aid-training-experience/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/first-aid-training-experience/</guid>
       <description>参加美国心脏协会 AHA 的急救课程培训经历，分享急救知识和个人感悟</description>
       <content:encoded><![CDATA[<p><img alt="培训现场（北京某地）" loading="lazy" src="/images/posts/first-aid-training-experience/training-site.webp"></p>
 <p>培训现场（北京某地）</p>
@@ -2885,9 +2885,9 @@
     </item>
     <item>
       <title>一个产品经理的自我修行</title>
-      <link>http://localhost:59513/posts/product-manager-self-cultivation/</link>
-      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/product-manager-self-cultivation/</guid>
+      <link>http://localhost:1313/posts/product-manager-self-cultivation/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/product-manager-self-cultivation/</guid>
       <description>13条简单可执行的产品经理工作准则，从斯多葛主义到实践技巧，探讨如何在产品管理中保持专业性和持续成长。</description>
       <content:encoded><![CDATA[<hr>
 <blockquote>
@@ -2947,9 +2947,9 @@
     </item>
     <item>
       <title>好的问题能自动驱动我们获得答案</title>
-      <link>http://localhost:59513/posts/good-questions-drive-answers/</link>
-      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/good-questions-drive-answers/</guid>
+      <link>http://localhost:1313/posts/good-questions-drive-answers/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/good-questions-drive-answers/</guid>
       <description>探讨问题的意义：问题代表机会、改善空间、认知盲区、风险控制以及聚焦启发。同时分享如何发现更多问题，以及如何有效地处理这些问题。</description>
       <content:encoded><![CDATA[<p><a href="https://mp.weixin.qq.com/s/9A_XLmUTRAYRKtfnow3_Rw" target="_blank" rel="noopener noreferrer">flomo weekly vol.37 - 用 flomo 记录一年后，自己发生了什么变化（新年特刊）</a> </p>
 <p>flomo 的新年特刊推文（flomo 是一款卡片笔记工具）</p>
@@ -2978,9 +2978,9 @@
     </item>
     <item>
       <title>灵感、创造力与系统革新</title>
-      <link>http://localhost:59513/posts/inspiration-creativity-and-system-innovation/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/inspiration-creativity-and-system-innovation/</guid>
+      <link>http://localhost:1313/posts/inspiration-creativity-and-system-innovation/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/inspiration-creativity-and-system-innovation/</guid>
       <description>《离经叛道》读书笔记：探讨创新的本质、风险和落地，以及如何在组织中推进创新</description>
       <content:encoded><![CDATA[<h1 id="灵感创造力与系统革新">灵感、创造力与系统革新</h1>
 <blockquote>
@@ -3069,9 +3069,9 @@
     </item>
     <item>
       <title>2021 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:59513/posts/2021-software-hardware-review/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/2021-software-hardware-review/</guid>
+      <link>http://localhost:1313/posts/2021-software-hardware-review/</link>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2021-software-hardware-review/</guid>
       <description>2021年度最喜欢的软件和硬件盘点，主要以在生活中占据不可替代的地位为主</description>
       <content:encoded><![CDATA[<p>这是一篇从 2021 年开始写，居然写到跨年的文章。</p>
 <p>之前在即刻社区看到最喜欢的三个产品的主题，三个太少，不适合三心二意的我，不如自己盘点一下这一年最喜欢的软件和硬件，主要以在生活中占据不可替代的地位为主，软件居多。</p>
@@ -3143,9 +3143,9 @@
     </item>
     <item>
       <title>PIM 工具 Ecco Pro 的软件考古</title>
-      <link>http://localhost:59513/posts/ecco-pro-software-archaeology/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/ecco-pro-software-archaeology/</guid>
+      <link>http://localhost:1313/posts/ecco-pro-software-archaeology/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ecco-pro-software-archaeology/</guid>
       <description>探索 20 世纪 90 年代的个人信息管理工具 Ecco Pro，一个超前设计但最终被微软 Outlook 击败的软件</description>
       <content:encoded><![CDATA[<p><a href="https://twitter.com/coolXiao/status/1471728963412463617?s=20" target="_blank" rel="noopener noreferrer">「20 年前的 Roam」激发了我的好奇心</a> </p>
 <h2 id="基本介绍">基本介绍</h2>
@@ -3300,9 +3300,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>由 Emotn 开始的国产安卓电视折腾日记</title>
-      <link>http://localhost:59513/posts/emotn-android-tv-exploration/</link>
-      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/emotn-android-tv-exploration/</guid>
+      <link>http://localhost:1313/posts/emotn-android-tv-exploration/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/emotn-android-tv-exploration/</guid>
       <description>探索 Emotn 这款免费无广告的 Android TV 应用商店，以及如何在国产安卓电视上安装和使用各种流媒体应用</description>
       <content:encoded><![CDATA[<p><img alt="Emotn 商店效果图" loading="lazy" src="/images/posts/emotn-android-tv-exploration/emotn-store.webp"></p>
 <p>目录 ⬇️</p>
@@ -3355,9 +3355,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>在延吉的二日游记</title>
-      <link>http://localhost:59513/posts/yanji-two-days-trip/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/yanji-two-days-trip/</guid>
+      <link>http://localhost:1313/posts/yanji-two-days-trip/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/yanji-two-days-trip/</guid>
       <description>一次从北京到延吉的周末美食之旅，探访了中国最大的朝鲜族聚集地，品尝了地道的朝鲜美食，并意外造访了中朝边境小城图们。</description>
       <content:encoded><![CDATA[<p>写游记的时候，正在图们北站（23 号下午 5 点半）。</p>
 <p><img alt="图们北站" loading="lazy" src="/images/posts/yanji-two-days-trip/image-8.webp"></p>
@@ -3463,9 +3463,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>关于兴趣的 Aha moment（顿悟时刻）</title>
-      <link>http://localhost:59513/posts/interest-aha-moment/</link>
-      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/interest-aha-moment/</guid>
+      <link>http://localhost:1313/posts/interest-aha-moment/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/interest-aha-moment/</guid>
       <description>探讨兴趣培养中的顿悟时刻（Aha moment），以及如何主动创造这些契机</description>
       <content:encoded><![CDATA[<p>什么是顿悟时刻？</p>
 <p>也叫 Aha moment，是用户在产品里经过一系列行为之后感受到了产品价值的时刻。</p>
@@ -3485,9 +3485,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>Everything is Todo：简单易上手的事务管理理念</title>
-      <link>http://localhost:59513/posts/everything-is-todo-simple-task-management/</link>
+      <link>http://localhost:1313/posts/everything-is-todo-simple-task-management/</link>
       <pubDate>Wed, 04 Aug 2021 23:45:00 +0800</pubDate>
-      <guid>http://localhost:59513/posts/everything-is-todo-simple-task-management/</guid>
+      <guid>http://localhost:1313/posts/everything-is-todo-simple-task-management/</guid>
       <description>一种简单易用的事务管理方法：Everything is Todo</description>
       <content:encoded><![CDATA[<p>一直在尝试寻找一种简单、灵活易上手且不会带来压迫感的事务管理方法，并且希望这个方法和工具以人的意志为中心，不本末倒置。</p>
 <p>生活已经碎片化了，这几乎是不争的共识，无论多么用力将碎片的时间拼成一整块，比如用番茄工作法，对于我，最后都会放弃。因为，大部分人的生活和工作都是与人协作，不单独取决于个人。</p>
@@ -3623,9 +3623,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>聊一聊最近买的 VR 设备：Oculus Quest 2</title>
-      <link>http://localhost:59513/posts/oculus-quest2-vr-review/</link>
-      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/oculus-quest2-vr-review/</guid>
+      <link>http://localhost:1313/posts/oculus-quest2-vr-review/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/oculus-quest2-vr-review/</guid>
       <description>分享我使用 Oculus Quest 2 VR 设备的体验，包括它的优点和局限性</description>
       <content:encoded><![CDATA[<p>半个小时的 VR 乒乓球，已经满头大汗，可惜远程联机的小伙伴都不说话，只能通过手势来简单交流。</p>
 <p><img alt="2021 年 6 月 4 日下单的 Oculus Quest 2" loading="lazy" src="/images/posts/oculus-quest2-vr-review/order-date.webp"></p>
@@ -3651,9 +3651,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>生活手记：与本能和情绪共处</title>
-      <link>http://localhost:59513/posts/living-with-instincts-and-emotions/</link>
-      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/living-with-instincts-and-emotions/</guid>
+      <link>http://localhost:1313/posts/living-with-instincts-and-emotions/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/living-with-instincts-and-emotions/</guid>
       <description>从滑雪经历出发，探讨如何与本能和情绪共处，以及如何在日常生活中突破本能的限制</description>
       <content:encoded><![CDATA[<p><img alt="滑雪场景" loading="lazy" src="/images/posts/living-with-instincts-and-emotions/skiing-scene.webp"></p>
 <p>老实说，这个主题的想法我是从第一次滑雪的时候萌生的。</p>
@@ -3684,9 +3684,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>最近看上了什么 App｜006</title>
-      <link>http://localhost:59513/posts/recent-favorite-apps/</link>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/recent-favorite-apps/</guid>
+      <link>http://localhost:1313/posts/recent-favorite-apps/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/recent-favorite-apps/</guid>
       <description>分享几个最近发现的实用工具：Markdown Nice、微信小助手、DeepL 翻译和一个电子书资源网站</description>
       <content:encoded><![CDATA[<p>好久没有写最近在用或者新发现的有趣 App 了，主要是忙着换工作的事宜，尤其是疫情期间更换工作，一旦节奏找回还是需要尽快重新进入状态。</p>
 <h2 id="markdown-写作者的福音markdown-nice">Markdown 写作者的福音：Markdown Nice</h2>
@@ -3712,9 +3712,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>从 0 到 1 转岗（产品经理）的一些感悟</title>
-      <link>http://localhost:59513/posts/from-customer-service-to-product-manager-insights/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/from-customer-service-to-product-manager-insights/</guid>
+      <link>http://localhost:1313/posts/from-customer-service-to-product-manager-insights/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/from-customer-service-to-product-manager-insights/</guid>
       <description>从客服到产品经理的转岗经历分享，记录了这段近两年的心路历程和重要感悟</description>
       <content:encoded><![CDATA[<p><img alt="从客服到产品经理的转岗之路" loading="lazy" src="/images/posts/from-customer-service-to-product-manager-insights/cover.webp"></p>
 <p>疫情逐渐解禁了，这两天开始与朋友们各种小聚，前两天和一个学弟朋友聊到转岗的事宜，正好从这次工作阶段性结束开始，趁着时机对这次接近两年的转岗经历（从运营客服到产品经理）做一次总结。平常，我自己确实很少直接写产品经理工作相关的文章，主要是对自己的认知积累不是特别自信，还是先积累到自己的笔记里，而且，离我自己想象中的「产品专家」确实还有一段漫长的路，任重而道远。</p>
@@ -3761,9 +3761,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>小县城的美食写意（一）：杀猪菜与小龙虾</title>
-      <link>http://localhost:59513/posts/hometown-food-memories-part1-pork-and-crayfish/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/hometown-food-memories-part1-pork-and-crayfish/</guid>
+      <link>http://localhost:1313/posts/hometown-food-memories-part1-pork-and-crayfish/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hometown-food-memories-part1-pork-and-crayfish/</guid>
       <description>回忆老家的两道特色美食：杀猪菜与小龙虾，以及它们背后的故事</description>
       <content:encoded><![CDATA[<p>原本想在昨天晚上就开始写这篇文章，奈何出去吃了一顿大餐，茶足饭饱无所思的情况下，对任何美食都失去了记忆。早在一两个月前已经开始酝酿这个稿子了，想法到想法的成熟总需要一段无意识的培育期，这也符合我自己一贯的拖延特征。</p>
 <p>标题为「美食写意」是因为，离家太久，记忆总会让美食发酵，有些保真至今，有些早已失真到九霄云外。也或者，美食也是千人千面，我想讲述的也只能是我的一面之词，当然，这里的「美食」只是食物的代名词，美食不一定美味。</p>
@@ -3784,9 +3784,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>随想：无用的想法们</title>
-      <link>http://localhost:59513/posts/thoughts-about-useless-ideas/</link>
-      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/thoughts-about-useless-ideas/</guid>
+      <link>http://localhost:1313/posts/thoughts-about-useless-ideas/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/thoughts-about-useless-ideas/</guid>
       <description>关于那些看似无用的想法的价值和生命周期的思考</description>
       <content:encoded><![CDATA[<p>夜深人静的时候，试着就一个无用的想法在 iPad 上写写画画了好久，在力所能及的范围内理清了逻辑，随手又丢进了笔记里，这大概是第 N 次重蹈覆辙。</p>
 <p>我不太喜欢限制自己的胡思乱想，** 一开始的想法都是无用的、廉价的甚至非常拙劣的，这需要自知之明，但是想法的诞生都是伴随一到两个方向上的亮点 **，不过早评价想法，反而应该努力助其在当时尽可能完善，完善其构思，完善其与现有个人其他记录的连接与分类关系。</p>
@@ -3814,9 +3814,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>哪些东西/事情打开了你的新世界大门</title>
-      <link>http://localhost:59513/posts/things-that-opened-new-world/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/things-that-opened-new-world/</guid>
+      <link>http://localhost:1313/posts/things-that-opened-new-world/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/things-that-opened-new-world/</guid>
       <description>回顾生命中那些打开新世界大门的关键事物和时刻，从《平凡的世界》到移动搜索，从电子地图到任天堂 Switch，每一个都带来了新的视角和体验。</description>
       <content:encoded><![CDATA[<p><img alt="平凡的世界" loading="lazy" src="/images/posts/things-that-opened-new-world/image-1.webp"></p>
 <p>这是一个最近偶然蹦到脑海里的问题，原本以为可以在知乎里提出一个如此优秀的问题，结果证明了 &ldquo;太阳底下无新鲜事&rdquo; 的预言，知乎快速给我匹配了重复的问题，最后我选择其中一个来分享一下自己的新世界敲门砖们，希望可以遇到有着同样经历的小伙伴。</p>
@@ -3859,9 +3859,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>2019 玩物志：年度软件与硬件盘点</title>
-      <link>http://localhost:59513/posts/2019-toys-and-gadgets-recap/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/2019-toys-and-gadgets-recap/</guid>
+      <link>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2019-toys-and-gadgets-recap/</guid>
       <description>分享 2019 年最喜欢的硬件和软件，包括 Switch、AirPods、iPad Pro、戴森吸尘器等硬件，以及闲鱼、Kindle、Telegram、Todoist 等软件与服务。</description>
       <content:encoded><![CDATA[<p>能够经历过时间轮换并依然活用在手机和背包里的软件与硬件才是年度玩物，借着 2020 的开始，决定分享一下 2019 年的「玩物志」，之前经常在微信群和 Telegram 群分享好用有趣的 App，那些都是增量，今天分享的是 2019 存量。</p>
 <h2 id="-年度最喜欢的硬件-">** 年度最喜欢的硬件 **</h2>
@@ -3921,9 +3921,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>与不对等的怪物作对</title>
-      <link>http://localhost:59513/posts/fighting-with-unequal-monsters/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/fighting-with-unequal-monsters/</guid>
+      <link>http://localhost:1313/posts/fighting-with-unequal-monsters/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/fighting-with-unequal-monsters/</guid>
       <description>在疫情期间，如何作为个人面对这场不对等的战斗，以及如何保持理性思考和生活节奏</description>
       <content:encoded><![CDATA[<p><img alt="封面图片" loading="lazy" src="/images/posts/fighting-with-unequal-monsters/cover.webp"></p>
 <p>没有日常跟踪热点的写作习惯，与大家一样，前期宅在家里，现在远程办公中。</p>
@@ -3954,9 +3954,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>最近看上了什么 App | 005</title>
-      <link>http://localhost:59513/posts/recent-app-discoveries-005/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/recent-app-discoveries-005/</guid>
+      <link>http://localhost:1313/posts/recent-app-discoveries-005/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/recent-app-discoveries-005/</guid>
       <description>本期推荐了 Notion 的重大更新、新版 Edge 浏览器、RelayChat 插件、Desktop Goose 桌面宠物、Inoreader 和幕享投屏工具等应用。</description>
       <content:encoded><![CDATA[<h2 id="越来越强大的-notion">越来越强大的 Notion</h2>
 <p>近期 Notion 的更新让我再一次心动起来，我在印象笔记、Evernote、Bear Note 以及 Notion 里都存有大量笔记，方便我每次的喜新厌旧，这一次也不例外。</p>
@@ -4005,9 +4005,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>阳光下的阴影：矛盾的逻辑自洽</title>
-      <link>http://localhost:59513/posts/paradox-of-self-consistency/</link>
-      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/paradox-of-self-consistency/</guid>
+      <link>http://localhost:1313/posts/paradox-of-self-consistency/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/paradox-of-self-consistency/</guid>
       <description>探讨人类在面对矛盾时如何通过逻辑自洽来合理化行为，以及如何避免陷入这种思维陷阱</description>
       <content:encoded><![CDATA[<p>某天吃了当当网李国庆和俞渝的瓜（是的，这篇文章起源于那天），震惊之余，开始去思考这类争议，我自己的一贯常识，一旦遇到争议就会下意识得去寻找其中的 &ldquo;坏人&rdquo;，什么小孩才分对错，大人只在乎利益之类的大道理，都是狗屁。长久以来的教育暗示我们，事情还是有 &ldquo;对错&rdquo;，以及必然有 &ldquo;正确答案&rdquo;，哪怕剧情反转，也是说明群众在寻找正确答案的路上。</p>
 <p>但是一旦找到 &ldquo;答案&rdquo;，下一步疑问就是，&ldquo;TA 怎么可以这样&rdquo; 或者 &ldquo;难道他不愧疚么&rdquo;。似乎在正义的世界里，阳光下的阴影是不存在的。</p>
@@ -4025,9 +4025,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>Anki 出品的 Vector 机器人是个啥？智能么？</title>
-      <link>http://localhost:59513/posts/anki-vector-robot-review/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/anki-vector-robot-review/</guid>
+      <link>http://localhost:1313/posts/anki-vector-robot-review/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/anki-vector-robot-review/</guid>
       <description>深入了解 Anki Vector 机器人的功能、特点、现状以及为什么这个有趣的产品最终走向了困境</description>
       <content:encoded><![CDATA[<p><img alt="Vector 机器人" loading="lazy" src="/images/posts/anki-vector-robot-review/vector-robot.webp"></p>
 <p>Vector 机器人是我从 2019 年开始就一直关注的一个机器人，很喜欢这个讨巧的产品设计：</p>
@@ -4091,9 +4091,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>睡觉其实是件很有故事的事情</title>
-      <link>http://localhost:59513/posts/stories-about-sleeping-places/</link>
-      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/stories-about-sleeping-places/</guid>
+      <link>http://localhost:1313/posts/stories-about-sleeping-places/</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/stories-about-sleeping-places/</guid>
       <description>从汉江夜宿到简易树屋，从屋顶到拖拉机车厢，回忆那些有趣的睡觉经历</description>
       <content:encoded><![CDATA[<blockquote>
 <p>这篇文章写了接近五个月，断断续续，直到今天回到老家才再次续上。此时屋外一改白天鸡鸣鸟叫，只剩零零星星的蝈蝈和风吹树叶的沙沙声，寂静到让我立马顿悟了这深夜的 &ldquo;深&rdquo;。</p></blockquote>
@@ -4127,9 +4127,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>工作手记：流程、规则与灵活度</title>
-      <link>http://localhost:59513/posts/thoughts-on-workflow-rules-and-flexibility/</link>
-      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/thoughts-on-workflow-rules-and-flexibility/</guid>
+      <link>http://localhost:1313/posts/thoughts-on-workflow-rules-and-flexibility/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/thoughts-on-workflow-rules-and-flexibility/</guid>
       <description>探讨工作中流程与规则的重要性，以及如何在规范和灵活性之间找到平衡点</description>
       <content:encoded><![CDATA[<p>有时，做事确实不能太机会主义，就像写文章，似乎总是在等待一个完美的契机，一个有位子的地铁座位，恰到好处不冷不热的体感温度。但事与愿违，地铁总是拥挤不堪，暖气在人流中被逐渐放大，聒噪，闷热，不想敲击手里的虚拟键盘，还是，直接开始写吧。</p>
 <p>本期想聊一聊工作中常见的「流程与规则」，极端的流程与规则诸如经常被诟病的政府部门，需要证明你爸是你爸，文件一式三份，不过，政府部门的流程也在逐步简化，包括流程云端化，甚至在微信中可以一次办理很多业务。但是，如我们所见，即使流程在优化，在精简，但无法被消除，长久以来的矛盾也是如此，一种个体的我们与一对多的政府流程之间的持续冲突，个体会有很多不同的情况甚至特例，但流程不是针对个人的，很大意义上是针对一个群体，我们对于流程的怨念也就可以归纳为宏观与微观的认知冲突。</p>
@@ -4151,9 +4151,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>如何才能《非暴力沟通》</title>
-      <link>http://localhost:59513/posts/nonviolent-communication-reading-notes/</link>
+      <link>http://localhost:1313/posts/nonviolent-communication-reading-notes/</link>
       <pubDate>Wed, 18 Sep 2019 17:17:00 +0800</pubDate>
-      <guid>http://localhost:59513/posts/nonviolent-communication-reading-notes/</guid>
+      <guid>http://localhost:1313/posts/nonviolent-communication-reading-notes/</guid>
       <description>这是我第三次重读这本书，第一次读之前，我对自己天然习得的野路子沟通能力信心满满，虽不至口吐莲花，但与人沟通也应该是游刃有余。然而，读之后觉得，沟通真的是一件值得重新学习的人生技巧之一，于是，不仅开始重新审视日常沟通，也逐步调整和培养作为产品经理这样的中介角色应有的非暴力沟通意识。</description>
       <content:encoded><![CDATA[<p>这是我第三次重读这本书，第一次读之前，我对自己天然习得的野路子沟通能力信心满满，虽不至口吐莲花，但与人沟通也应该是游刃有余。然而，读之后觉得，沟通真的是一件值得重新学习的人生技巧之一，于是，不仅开始重新审视日常沟通，也逐步调整和培养作为产品经理这样的中介角色应有的非暴力沟通意识。</p>
 <p>很多人说，「大道理我都懂」，但我个人认为，这句话只能算是「大道理我都看过」，真正懂的大道理应该是揉碎了，换成自己的语言塞到自己的意识里，此番操作虽然不会让人立马脱胎换骨，但至少可以形成冲击并转化一点点，这一次，我准备再速读一次，并写下我的理解，也希望可以顺手帮到一些人。</p>
@@ -4195,9 +4195,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>最近在做啥？</title>
-      <link>http://localhost:59513/posts/recent-life-updates-2019-09/</link>
-      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/recent-life-updates-2019-09/</guid>
+      <link>http://localhost:1313/posts/recent-life-updates-2019-09/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/recent-life-updates-2019-09/</guid>
       <description>分享近期的生活动态，包括玩塞尔达传说的心得、未完成的写作计划，以及最近常用的软件推荐。</description>
       <content:encoded><![CDATA[<p>好久没有写过长文了，准备再间歇性发作一会儿，聊聊近期的动态。</p>
 <h1 id="最近沉迷在塞尔达传说">最近沉迷在塞尔达传说</h1>
@@ -4242,9 +4242,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>2019 年春节随记：年复一年的吐槽和变化</title>
-      <link>http://localhost:59513/posts/chinese-new-year-2019-reflections/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/chinese-new-year-2019-reflections/</guid>
+      <link>http://localhost:1313/posts/chinese-new-year-2019-reflections/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/chinese-new-year-2019-reflections/</guid>
       <description>记录了一个北漂青年回到湖北农村老家过年的所见所闻，以及对家乡变迁的思考。</description>
       <content:encoded><![CDATA[<p>（以下皆为我主观观察，仅代表我的周围）</p>
 <p>我的老家在湖北某个县城的乡村里，冬天的冷不能靠数据来说话（数据上确实没有北京冷），但就是冷，如果没有取暖器材，只能窝在被子里，曾想，如果解决了方言识别的问题的话，我觉得智能音箱会是老家冬天最适合的小家电，只用动口不用动手。</p>
@@ -4269,9 +4269,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>全资料还原《寂静之地》的怪物</title>
-      <link>http://localhost:59513/posts/a-quiet-place-monster-analysis/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/a-quiet-place-monster-analysis/</guid>
+      <link>http://localhost:1313/posts/a-quiet-place-monster-analysis/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/a-quiet-place-monster-analysis/</guid>
       <description>一部怪物类电影是否真的惊悚，可以从观影后是否「心有余悸」来一窥真相。本文将全面分析《寂静之地》中的怪物：它们的来源、外形特征、习性以及弱点。</description>
       <content:encoded><![CDATA[<p>一部怪物类电影是否真的惊悚，可以从观影后是否「心有余悸」来一窥真相。</p>
 <p>当我 8 点钟从电影院走出来，独自一人穿过黑漆漆的街道时，这部电影给我的惊悚已经消逝，即使回忆来看，其中的惊吓也不过是国产片那种一惊一乍的套路，再加上满天飞的剧情漏洞和无处不在的温情，一散场即出戏了：不够惊悚，一部打着怪物幌子的温情片。</p>
@@ -4338,9 +4338,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>其实，我是一个客服（终篇）</title>
-      <link>http://localhost:59513/posts/my-life-as-customer-service-final/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/my-life-as-customer-service-final/</guid>
+      <link>http://localhost:1313/posts/my-life-as-customer-service-final/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-life-as-customer-service-final/</guid>
       <description>三年后的客服工作总结，分享客服工作中的流程化、系统化思维和经验</description>
       <content:encoded><![CDATA[<p>有知乎的网友看到了我三年前的文章 <a href="/posts/my-life-as-customer-service">其实，我是一个客服</a> ，已经过去太久，回复完他的评论，突然有了更多想要去说的话，正好将此篇文章作为已经离开的这个岗位的总结，随便聊一聊，仅供参考。</p>
 <blockquote>
@@ -4404,9 +4404,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>回忆：已经被遗忘的十五撵毛狗</title>
-      <link>http://localhost:59513/posts/memories-of-forgotten-mao-gou/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/memories-of-forgotten-mao-gou/</guid>
+      <link>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/memories-of-forgotten-mao-gou/</guid>
       <description>探寻和记录湖北地区一个消失的元宵节传统习俗 —— 十五撵毛狗，通过实地走访和文献查证，试图还原这个曾经让孩子们兴奋不已的民间活动。</description>
       <content:encoded><![CDATA[<blockquote>
 <p>本文最初发布于 2018 年 3 月，后备份到 Notion</p></blockquote>
@@ -4431,9 +4431,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>《The Mom Test》读书笔记</title>
-      <link>http://localhost:59513/posts/the-mom-test-reading-notes/</link>
-      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/the-mom-test-reading-notes/</guid>
+      <link>http://localhost:1313/posts/the-mom-test-reading-notes/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/the-mom-test-reading-notes/</guid>
       <description>如何与客户交谈并了解你的商业想法是否可行, 即使每个人都在说谎</description>
       <content:encoded><![CDATA[<p>这本书是我在《小而美：持续盈利的经营法则》里看到的引用，本来没有特别在意。尤其是在没有看副标题之前，其像《穷爸爸富爸爸》那样劝退了我，直到某个机缘巧合的再次推荐，我重新找到了这本书，试看了一下。</p>
 <p>这是一个聚焦在很小一点上的书籍，主要是介绍如何与潜在客户（或者用户）通过对话获得关于自己 Business 的真实反馈，与我自己之前做客服的经历也有相通之处，很适合需要经常做市场调研或者用户访谈的人群，比如创业者或者产品设计。</p>
@@ -4569,9 +4569,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>《假如给我三天光明》读后感</title>
-      <link>http://localhost:59513/posts/three-days-to-see-book-review/</link>
-      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/three-days-to-see-book-review/</guid>
+      <link>http://localhost:1313/posts/three-days-to-see-book-review/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/three-days-to-see-book-review/</guid>
       <description>《假如给我三天光明》读后感：一个既盲又聋的人是如何学习和理解这个世界的</description>
       <content:encoded><![CDATA[<p><img alt="海伦・凯勒肖像" loading="lazy" src="/images/posts/three-days-to-see-book-review/helen-keller-portrait.webp"></p>
 <p>先附上一段海伦凯勒的演讲片段，来自一个又盲又聋的人。</p>
@@ -4611,9 +4611,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>用了 6 年的印象笔记是什么样子的？</title>
-      <link>http://localhost:59513/posts/six-years-with-evernote/</link>
-      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/six-years-with-evernote/</guid>
+      <link>http://localhost:1313/posts/six-years-with-evernote/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/six-years-with-evernote/</guid>
       <description>从一个普通用户的角度，分享使用印象笔记6年来的心得体会和实际应用场景</description>
       <content:encoded><![CDATA[<p><img alt="Evernote Logo" loading="lazy" src="/images/posts/six-years-with-evernote/evernote-logo.webp"></p>
 <p>这篇文章是为了在专栏里更新之前还是学生时作答的知乎问题：印象笔记（Evernote）有哪些常见的用途？ <a href="https://www.zhihu.com/question/20418504/answer/15083561" target="_blank" rel="noopener noreferrer">https://www.zhihu.com/question/20418504/answer/15083561</a> </p>
@@ -4667,9 +4667,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>过年了，我所喜欢的中国式回家</title>
-      <link>http://localhost:59513/posts/chinese-new-year-homecoming-thoughts/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/chinese-new-year-homecoming-thoughts/</guid>
+      <link>http://localhost:1313/posts/chinese-new-year-homecoming-thoughts/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/chinese-new-year-homecoming-thoughts/</guid>
       <description>从排斥到接纳，一个互联网从业者对中国式回家的重新思考</description>
       <content:encoded><![CDATA[<p><img alt="回家路上的风景" loading="lazy" src="/images/posts/chinese-new-year-homecoming-thoughts/IMG_7749.webp"></p>
 <p>唉，有猫真的挺影响写东西的，两只猫在客厅上演着《猫和老鼠》似的追逐戏，我甚至能听到一只猫在拐弯时 &ldquo;漂移&rdquo; 的声音，难以平静…… 一篇文章写了很久很久</p>
@@ -4716,9 +4716,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>坐着火车去俄罗斯联邦（多图预警）</title>
-      <link>http://localhost:59513/posts/train-journey-to-russia/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/train-journey-to-russia/</guid>
+      <link>http://localhost:1313/posts/train-journey-to-russia/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/train-journey-to-russia/</guid>
       <description>一趟特殊的火车旅行：从北京出发，穿越蒙古国，抵达俄罗斯联邦的布里亚特共和国，最终到达贝加尔湖畔。一路上有着独特的风景、有趣的人和难忘的经历。</description>
       <content:encoded><![CDATA[<p><img alt="俄罗斯火车之旅" loading="lazy" src="/images/posts/train-journey-to-russia/image-38.webp"></p>
 <p>这是一篇迟来的游记，2017 年 9 月底的时候，作为在北京的最后一次出行，我和女朋友选择了一趟最特殊的火车旅行：坐着国际列车，穿过蒙古国，前往属于俄罗斯联邦的布里亚特共和国，到达最终目的地 —— 贝加尔湖畔。</p>
@@ -4808,9 +4808,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>可以替代 Chrome 的极品浏览器：Vivaldi</title>
-      <link>http://localhost:59513/posts/vivaldi-browser-review/</link>
-      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/vivaldi-browser-review/</guid>
+      <link>http://localhost:1313/posts/vivaldi-browser-review/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vivaldi-browser-review/</guid>
       <description>一款兼容 Chrome 使用习惯和插件，同时拥有独特个性的浏览器</description>
       <content:encoded><![CDATA[<h1 id="可以替代-chrome-的极品浏览器vivaldi">可以替代 Chrome 的极品浏览器：Vivaldi</h1>
 <p>之前一个比较喜欢的播客《IT 公论》里有一个我非常认同的观点，浏览器才是互联网真正的窗口，自由，任意连接。甚至，浏览器也是很多人上班时使用频次和时间仅次于社交应用的软件。从二零零几年开始逐步使用 Chrome 之后，我的主流浏览器都没有怎么变更过，不管自己对 Chrome 有多么的审美疲劳，Chrome 似乎总是以简洁有效，让其他花里胡哨的浏览器退后一边。而由于「马太效应」，愈来愈大的市场占有量让更多的网站调试人员反过来也专门为 Chrome 来适配。</p>
@@ -4862,9 +4862,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>假如我有超能力：克制</title>
-      <link>http://localhost:59513/posts/if-i-have-superpowers-2017/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/if-i-have-superpowers-2017/</guid>
+      <link>http://localhost:1313/posts/if-i-have-superpowers-2017/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/if-i-have-superpowers-2017/</guid>
       <description>一篇关于超能力与自我克制的思考，从电影《超人》和《环形使者》谈起，探讨能力与道德的关系。</description>
       <content:encoded><![CDATA[<p>我曾无数次幻想自己是一个超人，是不是现在的生活会翻天覆地，至少可以肆无忌惮的教训惹了我的小人，利用超能力 &ldquo;多赚点钱&rdquo;，去拯救世界，去各地游玩，去秘密干掉那些所谓的 &ldquo;坏人&rdquo;，这是我所设想的剧情。</p>
 <p>但情况可能不会是这样，因为超能力一般是与生俱来，如果从小就有，我可能不会这么平静的上完小学，甚至出生没多久被当作妖怪被村民打死，即使上了初中，一旦我知道自己的独特之处，奈何要安分的上学，那时的古惑仔最缺我这样的人，最有实力的帮派最终会成为我的，为何要干好事？不如坏事痛快，想想最新的那个《超人》中，人类是多么得忌惮自己无法控制的事情，在缺少了教育和心性之后，我会拿什么压住所谓的超能力，最后的剧情不会再是大圆满，而是一个骄傲的超人如何在毁掉半个世界之后再被人类给灭掉，于是会再诞生另外一个上帝和 &ldquo;魔鬼&rdquo; 的故事，而我就是那个撒旦。</p>
@@ -4876,9 +4876,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>那些曾经让自己怦然心动的科技瞬间</title>
-      <link>http://localhost:59513/posts/tech-moments-that-touched-my-heart/</link>
-      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/tech-moments-that-touched-my-heart/</guid>
+      <link>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/tech-moments-that-touched-my-heart/</guid>
       <description>回忆那些曾经让我惊艳的科技体验瞬间，从第一部手机到移动互联网时代，记录着科技给生活带来的点点惊喜。</description>
       <content:encoded><![CDATA[<p>写这个文章是为了尝试精准回忆一下那些现在看来理所当然却在以前让自己怦然心动的科技体验瞬间。不得不说，越来越难被惊艳到了，当越来越多的惊喜变为日常，就像吃完了川菜再去品味粤菜一样，寡然无味，或者像回顾过去的港片，才发现好多喜剧电影的演技和剧情无比拙劣。不过，写作是为了重忆初心，就像回忆童年，多半都是美好的。</p>
 <p>真正的科技是从一部手机开始。</p>
@@ -4903,9 +4903,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>生活到底需不需要心灵鸡汤？</title>
-      <link>http://localhost:59513/posts/do-we-need-chicken-soup-for-soul/</link>
-      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/do-we-need-chicken-soup-for-soul/</guid>
+      <link>http://localhost:1313/posts/do-we-need-chicken-soup-for-soul/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/do-we-need-chicken-soup-for-soul/</guid>
       <description>一篇关于心灵鸡汤的反思，探讨我们是否应该完全排斥所谓的&amp;#39;鸡汤&amp;#39;，以及如何在其中找到真正有价值的内容。</description>
       <content:encoded><![CDATA[<p>本来准备如日常习惯那样睡觉了，却在睡前刷微博的时候看到一句让我足以反思自己生活的话，暂且称之为「真理」。</p>
 <blockquote>
@@ -4936,9 +4936,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>10 款旅行必备的手机App（私房推荐）</title>
-      <link>http://localhost:59513/posts/essential-travel-apps-recommendations/</link>
-      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/essential-travel-apps-recommendations/</guid>
+      <link>http://localhost:1313/posts/essential-travel-apps-recommendations/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/essential-travel-apps-recommendations/</guid>
       <description>分享一些实用的旅行必备手机应用，让你的旅行更加便捷和舒适。</description>
       <content:encoded><![CDATA[<p><img alt="九份风景" loading="lazy" src="/images/posts/essential-travel-apps-recommendations/cover-jiufen.webp"></p>
 <p>我自己出行一般主要是手机和钱包，基本可以帮助解决一切问题，拍照、支付、获取信息和联络。</p>
@@ -4983,9 +4983,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>朝鲜四日行纪录</title>
-      <link>http://localhost:59513/posts/northkorea-fourdays-journey-record/</link>
-      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/northkorea-fourdays-journey-record/</guid>
+      <link>http://localhost:1313/posts/northkorea-fourdays-journey-record/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/northkorea-fourdays-journey-record/</guid>
       <description>2016年4月的朝鲜之行，记录了一段特殊的旅程和独特的见闻</description>
       <content:encoded><![CDATA[<h1 id="出发">出发</h1>
 <p>今天是 2016 年 4 月 2 日，写于正在朝鲜境内行驶的火车上，火车正以大货车的速度行驶着，一直以来火车都是 &ldquo;况且～况且～况且&rdquo; 得造句手法，此刻却换成了吱呀吱呀吱呀的奇怪声音，一响就是一路，6 个人，5 个人都睡着了，剩下我一个人琢磨着文字，趁没有列车员，猛地偷拍了两张窗外。</p>
@@ -5105,9 +5105,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>伪大厨的做菜日记</title>
-      <link>http://localhost:59513/posts/amateur-chef-cooking-diary/</link>
-      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/amateur-chef-cooking-diary/</guid>
+      <link>http://localhost:1313/posts/amateur-chef-cooking-diary/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/amateur-chef-cooking-diary/</guid>
       <description>分享作为一个业余厨师的烹饪经历，探讨做菜的乐趣、菜谱的解构与重构，以及家乡味道的传承与变迁。</description>
       <content:encoded><![CDATA[<p>我并不是一个大厨，虽然脑袋大脖子粗，可我既不是大款也不是伙夫。在这个塑造形象极其容易的年代，几个朋友圈就可以赚来大厨的美称，而且这个称呼早已沦为礼貌性用语，我也经常叫服务员美女或者帅哥来着，好听却不能当真。</p>
 <p>下厨最辛苦的其实是最开始的那段时间，不只是要忍受自己的手忙脚乱，更要忍受周围人的嫌弃，就像一个用惯 Windows 的人突然转到了 Mac 平台，连复制粘贴都不会，鄙视在其他人眼里是油然而生的。</p>
@@ -5128,9 +5128,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>一种像不爱读书的病</title>
-      <link>http://localhost:59513/posts/reading-addiction-metaphor/</link>
-      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/reading-addiction-metaphor/</guid>
+      <link>http://localhost:1313/posts/reading-addiction-metaphor/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/reading-addiction-metaphor/</guid>
       <description>关于我对效率工具使用态度的转变，以及对软件使用习惯的一些思考</description>
       <content:encoded><![CDATA[<p>如果一个人经常找别人推荐书单，多半这个人并不爱读书，这是一种偏见，但我会一直这样坚信。不过，这篇文章不是要聊读书，而是另外一种病。</p>
 <p>与此类似的另一种是，有人会经常找他人推荐软件或者在应用商店淘金，这样的人也多半不算真正意义上使用软件，而是像消费八卦新闻一样，好奇尝鲜，当然，这也是我的偏见。</p>
@@ -5153,9 +5153,9 @@ NetManage 声称 Outlook 杀死了 Ecco Pro</p>
     </item>
     <item>
       <title>其实，我是一个客服</title>
-      <link>http://localhost:59513/posts/my-life-as-customer-service/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59513/posts/my-life-as-customer-service/</guid>
+      <link>http://localhost:1313/posts/my-life-as-customer-service/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-life-as-customer-service/</guid>
       <description>分享我作为一名互联网产品客服的工作经验和感悟，探讨如何更好地理解和解决用户问题</description>
       <content:encoded><![CDATA[<p>和之前的一些文章一样，这也是一篇顺便写的随想，因为要给新加入的同事做入门引导，在整理的过程中突然有了写下工作总结的兴致，其实，那么久了，我一直就是一个客服。</p>
 <p>说起来，大多数人对于 &ldquo;客服&rdquo; 的理解与我们自己对于 &ldquo;客服&rdquo; 的感知有很大不同，这与用户遇到的问题和我们自己对于其问题的不同理解有着异曲同工之妙，属于同一印象在不同脑海里画面的直接冲突。我不能和家里人介绍我的工作是客服，因为他们脑海里固有的客服认知足以抹杀长久以来培养起的那份骄傲，&ldquo;我家娃儿在外就是个搞客服的，太不争气了！&quot;。</p>
