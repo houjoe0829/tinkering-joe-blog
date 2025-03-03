@@ -1,22 +1,8 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
-  {{- $now := now -}}
-  {{- $nowUnix := $now.Unix -}}
-  {{- $dateUnix := .Date.Unix -}}
-  {{- $daySeconds := 86400 -}}
-  {{- $diff := sub $nowUnix $dateUnix -}}
-  {{- $diffDays := div $diff $daySeconds -}}
-  
-  {{- if lt $diffDays 1 -}}
-    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>今天</span>" (.Date | time.Format "2006-01-02"))) -}}
-  {{- else if lt $diffDays 2 -}}
-    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>昨天</span>" (.Date | time.Format "2006-01-02"))) -}}
-  {{- else if lt $diffDays 3 -}}
-    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>前天</span>" (.Date | time.Format "2006-01-02"))) -}}
-  {{- else -}}
-    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "2006-01-02" site.Params.DateFormat)))) -}}
-  {{- end -}}
+  {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+  {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
@@ -35,4 +21,49 @@
 
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
-{{- end -}} 
+{{- end -}}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  // 初始更新
+  updateDateDisplay();
+  
+  // 每天凌晨更新一次
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  setTimeout(() => {
+    updateDateDisplay();
+    // 之后每24小时更新一次
+    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }, timeUntilMidnight);
+});
+</script> 
