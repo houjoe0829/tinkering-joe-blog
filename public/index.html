@@ -170,6 +170,63 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
+    <h2>《离岛》：探访日本边缘小岛的隐秘生活
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>书籍的全名是《离岛：于偏僻之地重建生活》
+《离岛：于偏僻之地重建生活》豆瓣链接 https://book.douban.com/subject/36754484/ 读这本书之前，我的认知里，能快速想到的日本是东京、大阪、镰仓、北海道…… 读完又多了一些特别的记忆点，五岛、佐渡、隐岐群岛，这些都是在地图边边角角的地方，这三个地方各有特色。
+...</p>
+  </div>
+  <footer class="entry-footer"><span class='post-date' data-date='2025-03-03' title='2025-03-03'>2025-03-03</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Joe<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  
+  updateDateDisplay();
+  
+  
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  setTimeout(() => {
+    updateDateDisplay();
+    
+    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }, timeUntilMidnight);
+});
+</script> </footer>
+  <a class="entry-link" aria-label="post link to 《离岛》：探访日本边缘小岛的隐秘生活" href="http://localhost:1313/posts/remote-island-life-rebuilding/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>何处安放文字：竹白关闭之后
     </h2>
   </header>
@@ -681,65 +738,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script> </footer>
   <a class="entry-link" aria-label="post link to 扑克牌&#34;干瞪眼&#34;的规则" href="http://localhost:1313/posts/poker-game-rules/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>AI 聊天缺少压缩历史对话的能力
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>最近在和 AI 聊天时，经常碰到这样的提示：“对话即将达到长度上限，建议创建新对话继续”。有时甚至还没看到这个提示，就发现 AI 已经开始遗忘之前讨论的重要细节。
-...</p>
-  </div>
-  <footer class="entry-footer"><span class='post-date' data-date='2025-01-23' title='2025-01-23'>2025-01-23</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Joe<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const postDates = document.querySelectorAll('.post-date');
-  
-  function updateDateDisplay() {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    
-    postDates.forEach(span => {
-      const dateStr = span.getAttribute('data-date');
-      const postDate = new Date(dateStr);
-      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
-      
-      const diffTime = Math.abs(today - postDateOnly);
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      
-      let displayText = dateStr;
-      if (diffDays === 0) {
-        displayText = '今天';
-      } else if (diffDays === 1) {
-        displayText = '昨天';
-      } else if (diffDays === 2) {
-        displayText = '前天';
-      }
-      
-      span.textContent = displayText;
-    });
-  }
-  
-  
-  updateDateDisplay();
-  
-  
-  const now = new Date();
-  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  const timeUntilMidnight = tomorrow - now;
-  
-  setTimeout(() => {
-    updateDateDisplay();
-    
-    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
-  }, timeUntilMidnight);
-});
-</script> </footer>
-  <a class="entry-link" aria-label="post link to AI 聊天缺少压缩历史对话的能力" href="http://localhost:1313/posts/ai-chat-lack-compression-history/"></a>
-</article>
 </div>
 <footer class="page-footer" id="load-more-container">
-  <button id="load-more" class="next" data-total-posts="96">
+  <button id="load-more" class="next" data-total-posts="97">
     查看更多
   </button>
 </footer>
