@@ -103,9 +103,37 @@ hideMeta: true
 
 ## 🌟 Side Projects
 
-- [OmniAudio](https://omniaudio.info/)
-  > 🎧 OmniAudio 是一款 AI 音频内容聚合服务，它可以将各种形式的内容，如网页文章、文档，转化为私人播客，并生成可以直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。
+<div class="projects-container">
+  <a href="https://omniaudio.info/" class="toolkit-card project-card">
+    <div class="card-content">
+      <h3>🎧 OmniAudio</h3>
+      <p>AI 音频内容聚合服务，将网页文章、文档转化为私人播客，生成可直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p>
+      <span class="read-more">访问网站 →</span>
+    </div>
+  </a>
+  
+  <a href="https://instantai.houjoe.me/" class="toolkit-card project-card">
+    <div class="card-content">
+      <h3>🤖 Instant AI</h3>
+      <p>一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型。</p>
+      <span class="read-more">访问网站 →</span>
+    </div>
+  </a>
+</div>
 
-- [Instant AI](https://instantai.houjoe.me/)
-  > 🤖 一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型。
+<style>
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.project-card {
+  background-color: var(--card-background, #fff);
+  border: 1px solid var(--border-color, #eaeaea);
+}
+
+/* 已有的 .toolkit-card 样式会被继承使用 */
+</style>
 
