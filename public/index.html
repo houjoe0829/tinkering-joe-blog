@@ -170,6 +170,62 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
+    <h2>在用的软硬件工具包
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 主要是定期理一理自己在用的工具，方便断舍离，减少分心，会一直更新。
+软件部分 记录与文档 公开站点： 个人独立站点 ：非微信渠道的个人博客，支持 RSS 和 Telegram 频道 微信公众号：当做微信渠道信息发布平台，国内互动 Day One ：记录零碎且私密的想法，尤其是可以读取照片的时间和地点 Obsidian ：写作与资料存档，尤其是写作，可与 Cursor 搭配 浏览器 Chrome：无聊但稳定的浏览器 任务管理和日程 滴答清单 ：超高性价比，而且任务管理、日历、番茄钟，均有 阅读相关 NetNewsWire ：统一 RSS、Newsletter、Telegram 频道的阅读器，iCloud 同步 微信读书：体验最好的中文阅读器，尤其是字体，但是 AI 一般 Twitter：关注各路大神，也是个人博客的分发通道 YouTube Channel：已经是我的个人电视 滴答清单：也用滴答清单放置待看清单 Pocket Casts ：跨平台的播客 App OmniAudio ：将网页等转为播客来听 小红书：已经成为国内搜索引擎的替代 音乐 YouTube Music：主要是不需要额外付费，我已经有 YouTube 会员 极空间的极音乐：本地下载 500GB 的歌曲，适合日常背景音乐来听 Mac 启动器 Hapigo ：对中文的 App 很友好，可以拼音搜索，还可以快捷唤出 AI 窗口、截图等等 AI 与翻译助手 豆包 ：适合回答&#34;是什么&#34;的问题，可以快速耳机唤醒 Instant AI ：简单的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek Cursor ：AI 编程 影视剧观看 极空间影视：依赖极空间 Nas 自带的外网穿透，可以直连机器远程观影，可以参考我之前写的《NAS 私有云：真国内观影必备》 ...</p>
+  </div>
+  <footer class="entry-footer"><span class='post-date' data-date='2025-03-14' title='2025-03-14'>2025-03-14</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Joe<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  
+  updateDateDisplay();
+  
+  
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  setTimeout(() => {
+    updateDateDisplay();
+    
+    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }, timeUntilMidnight);
+});
+</script> </footer>
+  <a class="entry-link" aria-label="post link to 在用的软硬件工具包" href="http://localhost:1313/posts/current-software-hardware-toolkit/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>《离岛》：探访日本边缘小岛的隐秘生活
     </h2>
   </header>
@@ -680,67 +736,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script> </footer>
   <a class="entry-link" aria-label="post link to 赛博朋克 2077：一场一百多小时的梦" href="http://localhost:1313/posts/cyberpunk-2077-hundred-hours-dream/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>扑克牌&#34;干瞪眼&#34;的规则
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 📌 这个扑克牌游戏易上手很欢乐，尤其适合聚会或者节日聚会，不过不要沉迷哦。没想到我会发布这个内容。
-怎么准备呢？ ** 人数 **：2-6 人（常见 3 人）。
-** 牌数 **：使用 1 副扑克（含大小王，共 54 张）
-...</p>
-  </div>
-  <footer class="entry-footer"><span class='post-date' data-date='2025-01-29' title='2025-01-29'>2025-01-29</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Joe<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const postDates = document.querySelectorAll('.post-date');
-  
-  function updateDateDisplay() {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    
-    postDates.forEach(span => {
-      const dateStr = span.getAttribute('data-date');
-      const postDate = new Date(dateStr);
-      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
-      
-      const diffTime = Math.abs(today - postDateOnly);
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      
-      let displayText = dateStr;
-      if (diffDays === 0) {
-        displayText = '今天';
-      } else if (diffDays === 1) {
-        displayText = '昨天';
-      } else if (diffDays === 2) {
-        displayText = '前天';
-      }
-      
-      span.textContent = displayText;
-    });
-  }
-  
-  
-  updateDateDisplay();
-  
-  
-  const now = new Date();
-  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  const timeUntilMidnight = tomorrow - now;
-  
-  setTimeout(() => {
-    updateDateDisplay();
-    
-    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
-  }, timeUntilMidnight);
-});
-</script> </footer>
-  <a class="entry-link" aria-label="post link to 扑克牌&#34;干瞪眼&#34;的规则" href="http://localhost:1313/posts/poker-game-rules/"></a>
-</article>
 </div>
 <footer class="page-footer" id="load-more-container">
-  <button id="load-more" class="next" data-total-posts="98">
+  <button id="load-more" class="next" data-total-posts="99">
     查看更多
   </button>
 </footer>
