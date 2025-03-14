@@ -46,7 +46,27 @@ hideMeta: true
 </div>
 
 <style>
-.toolkit-container {
+:root {
+  --card-background: #fff;
+  --border-color: #eaeaea;
+  --text-color: #333;
+  --shadow-color: rgba(0,0,0,0.1);
+  --shadow-hover-color: rgba(0,0,0,0.15);
+  --primary-color: #0066cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-background: #2d2d2d;
+    --border-color: #444;
+    --text-color: #e0e0e0;
+    --shadow-color: rgba(0,0,0,0.3);
+    --shadow-hover-color: rgba(0,0,0,0.4);
+    --primary-color: #5c9eff;
+  }
+}
+
+.toolkit-container, .projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -58,17 +78,17 @@ hideMeta: true
   min-width: 250px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px var(--shadow-color);
   transition: all 0.3s ease;
   text-decoration: none;
-  color: inherit;
-  background-color: var(--card-background, #fff);
-  border: 1px solid var(--border-color, #eaeaea);
+  color: var(--text-color);
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
 }
 
 .toolkit-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px var(--shadow-hover-color);
 }
 
 .card-content {
@@ -79,17 +99,19 @@ hideMeta: true
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.4rem;
+  color: var(--text-color);
 }
 
 .card-content p {
   margin-bottom: 15px;
   opacity: 0.8;
+  color: var(--text-color);
 }
 
 .read-more {
   display: inline-block;
   font-weight: 500;
-  color: var(--primary-color, #0066cc);
+  color: var(--primary-color);
 }
 
 @media (max-width: 650px) {
@@ -120,20 +142,4 @@ hideMeta: true
     </div>
   </a>
 </div>
-
-<style>
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.project-card {
-  background-color: var(--card-background, #fff);
-  border: 1px solid var(--border-color, #eaeaea);
-}
-
-/* 已有的 .toolkit-card 样式会被继承使用 */
-</style>
 
