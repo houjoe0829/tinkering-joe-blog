@@ -27,9 +27,79 @@ hideMeta: true
 
 ## 🔧 我的工具包
 
-<a href="https://whimsical.com/joe-s3pm6mwq1RT6jF3WFmTph@6HYTAunKLgTWCJ5hUzZL6hoqpkPYA535eqWVFPwb4s8xx3f" target="_blank">👉 点击这里在新窗口查看完整内容</a>
+<div class="toolkit-container">
+  <a href="/posts/current-software-hardware-toolkit/" class="toolkit-card">
+    <div class="card-content">
+      <h3>📱 软件工具</h3>
+      <p>我日常使用的各类软件工具，包括记录与文档、浏览器、任务管理、阅读、音乐、AI 助手等</p>
+      <span class="read-more">查看详情 →</span>
+    </div>
+  </a>
+  
+  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="toolkit-card">
+    <div class="card-content">
+      <h3>💻 硬件装备</h3>
+      <p>我的随身和随车硬件装备，包括电脑、耳机、手机、无人机、折叠自行车等</p>
+      <span class="read-more">查看详情 →</span>
+    </div>
+  </a>
+</div>
 
-<iframe style="border:none" width="100%" height="300" src="https://whimsical.com/embed/joe-s3pm6mwq1RT6jF3WFmTph@6HYTAunKLgTWCJ5hUzZL6hoqpkPYA535eqWVFPwb4s8xx3f"></iframe>
+<style>
+.toolkit-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.toolkit-card {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--card-background, #fff);
+  border: 1px solid var(--border-color, #eaeaea);
+}
+
+.toolkit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card-content p {
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.read-more {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--primary-color, #0066cc);
+}
+
+@media (max-width: 650px) {
+  .toolkit-card {
+    flex: 100%;
+  }
+}
+</style>
+
+<p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少分心。</p>
 
 ## 🌟 Side Projects
 
