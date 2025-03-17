@@ -3,21 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/current-software-hardware-toolkit/</loc>
-    <lastmod>2025-03-14T00:00:00+08:00</lastmod>
+    <loc>http://localhost:1313/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</loc>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/traditional-banquet-culture/</loc>
+    <lastmod>2025-03-17T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E8%BD%AF%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2025-03-14T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E5%A5%BD%E7%89%A9/</loc>
+    <lastmod>2025-03-14T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/current-software-hardware-toolkit/</loc>
     <lastmod>2025-03-14T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/remote-island-life-rebuilding/</loc>
@@ -51,9 +60,6 @@
     <lastmod>2025-02-16T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/why-start-blogging/</loc>
-    <lastmod>2025-02-13T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2025-02-13T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/nezha-movie-review/</loc>
@@ -108,9 +114,6 @@
     <lastmod>2024-11-27T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/funeral-home-vigil/</loc>
-    <lastmod>2024-11-27T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%B0%8F%E5%9F%8E%E6%95%85%E4%BA%8B/</loc>
     <lastmod>2024-11-27T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/digital-age-survival-checklist/</loc>
