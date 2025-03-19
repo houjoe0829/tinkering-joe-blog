@@ -2,13 +2,13 @@
 title: "关于我"
 date: 2024-02-10
 draft: false
-description: "了解更多关于我的信息"
+description: "了解更多关于 Joe 的信息"
 hideMeta: true
 ---
 
-## 👨‍💻 个人简介
+## 👨‍💻 自我介绍
 
-我是 Joe，不知名的产品经理，主业与兴趣都是设计各类生产力工具.
+我是 Joe，不知名的产品经理，主业与兴趣都是设计各类 ToC 或者 ToB 生产力工具.
 
 `Coding with AI`、`Product Manager`、`喜欢码字`、`Nas 小白用户`、`无人机机长`、`主机游戏玩家`、`有个流浪猫`、`江浙沪包游中`、`骑行新手`、`顺风车司机`
 
@@ -25,7 +25,9 @@ hideMeta: true
 - 🐙 **GitHub**：[houjoe0829](https://github.com/houjoe0829) -  我也开始写代码了……
 - 💬 **Wechat**：微信号[houjoe829]  -  请备注来意
 
-## 🔧 我的工具包
+## 🔧 我的日常工具包
+
+<p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>
 
 <div class="toolkit-container">
   <a href="/posts/current-software-hardware-toolkit/" class="toolkit-card">
@@ -121,7 +123,6 @@ hideMeta: true
 }
 </style>
 
-<p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少分心。</p>
 
 ## 🌟 Side Projects
 
@@ -129,7 +130,7 @@ hideMeta: true
   <a href="https://omniaudio.info/" class="toolkit-card project-card">
     <div class="card-content">
       <h3>🎧 OmniAudio</h3>
-      <p>AI 音频内容聚合服务，将网页文章、文档转化为私人播客，生成可直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p>
+      <p>AI 稍后再听服务，将网页文章、文档转化为私人播客，生成可直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p>
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
@@ -137,7 +138,7 @@ hideMeta: true
   <a href="https://instantai.houjoe.me/" class="toolkit-card project-card">
     <div class="card-content">
       <h3>🤖 Instant AI</h3>
-      <p>一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型。</p>
+      <p>一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型，完全免费。</p>
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
