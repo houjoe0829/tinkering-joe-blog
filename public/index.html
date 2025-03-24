@@ -170,6 +170,62 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
+    <h2>最近很喜欢的 7 件小物品：从厨房到数码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在去往北京的高铁上，网络不是很好，适合离线写写东西。正好想分享一下最近购置的一些小物品，不论大小，也不论贵重，以是否能够改善生活体验为准。
+第一件，厨房三角过滤网，12.5 元 经常洗碗的人比较了解，洗碗一般有两道工序，物理预处理和洗洁精清洗。默认情况下，洗掉的残渣会被洗碗池的下水口挡住，于是就会出现每次最厌烦的流程，徒手清洁下水口，尤其是捞卡着的剩饭剩菜。过滤网可以大幅规避这个操作，只需要每次将碗具放进洗手池时冲洗并将水倒入过滤网就可以，当然，清洗的过程中也可以，而且，过滤网一般比下水口有更大的承载量，不用担心总是溢出。 清洗过滤网很简单，拿起来倒入垃圾桶，或者硬扣一下。 ...</p>
+  </div>
+  <footer class="entry-footer"><span class='post-date' data-date='2025-03-24' title='2025-03-24'>2025-03-24</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Joe<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  
+  updateDateDisplay();
+  
+  
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  setTimeout(() => {
+    updateDateDisplay();
+    
+    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }, timeUntilMidnight);
+});
+</script> </footer>
+  <a class="entry-link" aria-label="post link to 最近很喜欢的 7 件小物品：从厨房到数码" href="http://localhost:1313/posts/favorite-items-improve-life/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>逐渐消亡的流水席
     </h2>
   </header>
@@ -680,65 +736,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script> </footer>
   <a class="entry-link" aria-label="post link to 《黑神话：哪吒》，确实好看（有剧透）" href="http://localhost:1313/posts/nezha-movie-review/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>黄山半日游：云里雾里的工笔画
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>此刻已经离开黄山，由于春节返程高峰，决定在淳安县汾口镇停留一晚上，这是个神奇的镇子，所有的夜市摊贩都是清一色的烧烤，像是育碧游戏里刷出的 NPC，重复度高得令人咋舌。 坐在酒店的椅子上，虽然很困，也要决意挤出时间来记录些许感受……
-...</p>
-  </div>
-  <footer class="entry-footer"><span class='post-date' data-date='2025-02-03' title='2025-02-03'>2025-02-03</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Joe<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const postDates = document.querySelectorAll('.post-date');
-  
-  function updateDateDisplay() {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    
-    postDates.forEach(span => {
-      const dateStr = span.getAttribute('data-date');
-      const postDate = new Date(dateStr);
-      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
-      
-      const diffTime = Math.abs(today - postDateOnly);
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      
-      let displayText = dateStr;
-      if (diffDays === 0) {
-        displayText = '今天';
-      } else if (diffDays === 1) {
-        displayText = '昨天';
-      } else if (diffDays === 2) {
-        displayText = '前天';
-      }
-      
-      span.textContent = displayText;
-    });
-  }
-  
-  
-  updateDateDisplay();
-  
-  
-  const now = new Date();
-  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  const timeUntilMidnight = tomorrow - now;
-  
-  setTimeout(() => {
-    updateDateDisplay();
-    
-    setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
-  }, timeUntilMidnight);
-});
-</script> </footer>
-  <a class="entry-link" aria-label="post link to 黄山半日游：云里雾里的工笔画" href="http://localhost:1313/posts/huangshan-half-day-tour/"></a>
-</article>
 </div>
 <footer class="page-footer" id="load-more-container">
-  <button id="load-more" class="next" data-total-posts="100">
+  <button id="load-more" class="next" data-total-posts="101">
     查看更多
   </button>
 </footer>
