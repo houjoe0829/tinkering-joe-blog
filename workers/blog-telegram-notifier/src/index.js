@@ -241,7 +241,7 @@ async function checkAndNotify(env) {
         await env.KV.put(postKey, JSON.stringify({
           executionId: executionId,
           time: new Date().toISOString()
-        }), {expirationTtl: 60 * 60 * 24 * 7});
+        }), {expirationTtl: 60 * 60 * 24 * 30}); // 30天过期
         console.log(`已标记文章为已发送: ${post.title}`);
         
         // 添加随机延迟，进一步防止并发问题
