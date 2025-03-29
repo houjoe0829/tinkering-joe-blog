@@ -26,8 +26,8 @@
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
     <follow_challenge>
-      <feedId>11207598210883788</feedId>
-      <userId>6234936110135092</userId>
+      <feedId>112075982108837888</feedId>
+      <userId>62349361101350912</userId>
     </follow_challenge>
     {{ range $pages }}
     <item>
