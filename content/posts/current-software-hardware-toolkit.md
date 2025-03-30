@@ -1,5 +1,5 @@
 ---
-title: "正在使用的软硬件工具包"
+title: "正在使用的软硬件工具包梳理"
 date: 2025-03-14
 draft: false
 description: "定期整理自己在用的软硬件工具，方便断舍离，减少分心。"
@@ -15,8 +15,9 @@ author: "Joe"
 - 公开站点： 至于为什么要有个个人站点，可点击 [《为什么要写 blog？》](/posts/why-start-blogging/)
 	- [**个人独立站点**](https://houjoe.me/)：非微信渠道的个人博客，支持 RSS 和 Telegram 频道
 	- 微信公众号：当做微信渠道信息发布平台，国内互动
+	- 小红书：只分享数码与硬件
 - [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受
-- [Craft](https://www.craft.do/)：Work 和 Research 工作台，支持离线，移动端体验友好
+- [Craft](https://www.craft.do/)：Work 和 Research 工作台，支持离线，移动端友好
 - [Whimsical](https://whimsical.com/)：主要用来画原型图和流程图了，缺少移动端
 
 ### 2️⃣ 浏览器
