@@ -15,23 +15,25 @@ author: "Joe"
 - 公开站点： 至于为什么要有个个人站点，可点击 [《为什么要写 blog？》](/posts/why-start-blogging/)
 	- [**个人独立站点**](https://houjoe.me/)：非微信渠道的个人博客，支持 RSS 和 Telegram 频道
 	- 微信公众号：当做微信渠道信息发布平台，国内互动
-- [Day One](https://dayoneapp.com/)：记录零碎且私密的想法，尤其是可以读取照片的时间和地点
-- [Obsidian](https://obsidian.md/)：写作与资料存档，尤其是写作，可与 Cursor 搭配
+- [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点
+- [Craft](https://www.craft.do/)：笔记与文档工作台，支持离线，移动端体验友好
+- [Whimsical](https://whimsical.com/)：主要用来画原型图和流程图了，缺少移动端
 
 ### 2️⃣ 浏览器
-- Chrome：无聊但稳定
+- Chrome：无聊但真的稳定，兜兜转转，真的不如坚持用 Chrome。
 
 ### 3️⃣ 任务管理
 - [滴答清单](https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=)：超高性价比，而且任务管理、日历、番茄钟，均有
 
 ### 4️⃣ 阅读相关
-- [NetNewsWire](https://netnewswire.com/)：统一 RSS、Newsletter、Telegram 频道的阅读器，iCloud 同步
-- 微信读书：体验最好的中文阅读器，尤其是字体，但是 AI 一般
-- Twitter：关注各路大神，也是个人博客的分发通道
-- YouTube Channel：已经是我的个人电视
+> 不一定是看书才是阅读，一切需要理解的东西都是阅读。
+- [Follow](https://follow.is/)：可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News
+- 微信读书：体验最好的中文阅读器，尤其是字体
+- Twitter：关注各路大神
+- YouTube：已经是我的个人电视，先用 Follow 订阅重要的
 - 滴答清单：也用滴答清单放置待看清单
-- [Pocket Casts](https://pocketcasts.com/)：跨平台的播客 App
-- [OmniAudio](https://omniaudio.info/)：将网页等转为播客来听
+- [Pocket Casts](https://pocketcasts.com/)：跨平台的播客 App，支持 iOS、Android、Web 等等
+- [OmniAudio](https://omniaudio.info/)：将网页等转为播客来稍后再听
 - 小红书：已经成为国内搜索引擎的替代
 
 ### 5️⃣ 听歌
@@ -41,7 +43,7 @@ author: "Joe"
 ### 6️⃣ AI 与翻译助手
 - [豆包](https://www.doubao.com/chat/)：适合回答"是什么"的问题，可以快速耳机唤醒
 - [Instant AI](https://instantai.houjoe.me/)：简单的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek
-- [Cursor](https://www.cursor.com/)：AI 编程
+- [Cursor](https://www.cursor.com/)：AI 编程的工具
 
 ### 7️⃣ 影视剧观看
 - 极空间影视：依赖极空间 Nas 自带的外网穿透，可以直连机器远程观影，可以参考我之前写的[《NAS 私有云：真国内观影必备》](/posts/nas-private-cloud-guide/)
@@ -79,7 +81,7 @@ author: "Joe"
 - **手电筒**：既是手电筒，也是警示灯，可以疯狂闪的那种
 - **小米充气宝**：给自行车和汽车都可以充电
 - **迪卡侬快速露营帐篷**：就是进入迪卡侬店里摆在门口的那一款，单人可以操作，简单方便
-- **野餐垫**：普普通通的野餐垫
+- **野餐垫**：普普通通的野餐垫，可以躺着睡觉
 - **露营被子**：偶尔应急睡一睡觉
 - **工兵铲**：偶尔应急用一用
-- **露营椅**：也是迪卡侬那一款折叠的 L 型，主要是适合户外玩电脑 
+- **折叠露营椅**：也是迪卡侬那一款折叠的 L 型，主要是适合户外玩电脑 
