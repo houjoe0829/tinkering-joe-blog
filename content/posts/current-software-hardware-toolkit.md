@@ -15,8 +15,8 @@ author: "Joe"
 - 公开站点： 至于为什么要有个个人站点，可点击 [《为什么要写 blog？》](/posts/why-start-blogging/)
 	- [**个人独立站点**](https://houjoe.me/)：非微信渠道的个人博客，支持 RSS 和 Telegram 频道
 	- 微信公众号：当做微信渠道信息发布平台，国内互动
-- [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点
-- [Craft](https://www.craft.do/)：笔记与文档工作台，支持离线，移动端体验友好
+- [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受
+- [Craft](https://www.craft.do/)：Work 和 Research 工作台，支持离线，移动端体验友好
 - [Whimsical](https://whimsical.com/)：主要用来画原型图和流程图了，缺少移动端
 
 ### 2️⃣ 浏览器
@@ -26,7 +26,7 @@ author: "Joe"
 - [滴答清单](https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=)：超高性价比，而且任务管理、日历、番茄钟，均有
 
 ### 4️⃣ 阅读相关
-> 不一定是看书才是阅读，一切需要理解的东西都是阅读。
+> 一切需要理解的东西都是阅读。
 - [Follow](https://follow.is/)：可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News
 - 微信读书：体验最好的中文阅读器，尤其是字体
 - Twitter：关注各路大神
@@ -66,11 +66,11 @@ author: "Joe"
 ## 硬件部分
 
 ### 随身部分
-- **MacBook Pro 14 寸电脑**：14寸的屏幕刚刚好，13寸太小，15寸太大
-- **索尼降噪耳机 XM5**：适合在外咖啡厅远程工作和开会
+- **MacBook Pro 14 寸电脑**：14寸的屏幕刚刚好，13寸太小，15寸太大，就是比 Air 重了些
+- **索尼降噪耳机 XM5**：适合在外咖啡厅远程工作和开会，降噪靠谱
 - **iPhone 16 Pro**：用不了 Pro Max 了，这个尺寸也是刚刚好
 - **豆包的 Ola friend 耳机**：特意为了它写个文章：[《自驾和骑行的新伴侣：AI 耳机》](/posts/ola-friend-ai-earphone/)，主要是为了自驾和骑行的时候用豆包
-- **Anker 二合一快充**：电脑、手机、iPad、手表等所有设备的充电器和充电宝
+- **Anker 二合一快充**：电脑、手机、iPad、手表、Steam Deck 等所有设备的充电器和充电宝二合一
 - **Amazfit GTR 4**：运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表
 - **指甲刀**：始终保持敲键盘永远很舒服的指甲长度
 - **iPad mini**：最佳电子书阅读器，在这个 AI 盛行的时代，不太建议电纸书，输入和处理都不够
