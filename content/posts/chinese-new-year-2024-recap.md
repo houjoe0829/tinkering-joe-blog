@@ -3,7 +3,7 @@ author: "Joe"
 date: 2024-02-17
 description: "春节回老家的一些感受和思考，以及路上的见闻"
 draft: false
-tags: ["小城故事"]
+tags: ["小城故事", "现实是个开放世界"]
 title: "Joe's Recap：过年那些事儿"
 ---
 
