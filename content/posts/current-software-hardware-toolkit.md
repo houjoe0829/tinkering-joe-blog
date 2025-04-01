@@ -68,6 +68,7 @@ author: "Joe"
 - [Irvue](https://apps.apple.com/us/app/irvue/id1039633667?mt=12)：免费随机壁纸，可设置定时更换
 - [PopClip](https://www.popclip.app/)：Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作
 - [Linear mouse](https://linearmouse.app/zh-CN/)：Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了
+- [Trickster](https://www.apparentsoft.com/trickster)：不用打开 Finder 的情况下，方便快速调用最近的文件
 
 ## 硬件部分
 
