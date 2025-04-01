@@ -64,6 +64,11 @@ author: "Joe"
 - Shadowrocket：可参考[《性价比最高的科学上网方案：Shadowrocket》](/posts/shadowrocket-guide/)，另外也会使用 QuantumltX 备用，可参考[《最简约的科学上网方案：Quantumlt X》](/posts/quantumult-x-guide/)
 - Clash Verge：在我的 Windows 游戏主机上使用，[GitHub 项目地址](https://github.com/clash-verge-rev/clash-verge-rev)
 
+### 1️⃣1️⃣ Mac 端工具
+- [Irvue](https://apps.apple.com/us/app/irvue/id1039633667?mt=12)：免费随机壁纸，可设置定时更换
+- [PopClip](https://www.popclip.app/)：Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作
+- [Linear mouse](https://linearmouse.app/zh-CN/)：Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了
+
 ## 硬件部分
 
 ### 随身部分
