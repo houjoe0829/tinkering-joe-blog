@@ -61,8 +61,8 @@ author: "Joe"
 ![极空间影视界面](/images/posts/current-software-hardware-toolkit/nas-movie-interface.webp)
 
 ### 8️⃣ 同步与备份
-- 极空间 Nas：备份照片、视频和文件
-- Resilio Sync：用来同步游戏主机里的游戏截图到 Nas 里的极相册
+- (极空间 Nas)[https://www.zspace.cn/]：备份照片、视频和文件
+- (Resilio Sync)[https://www.resilio.com/sync/]：免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册
 - Google Photo：多年来的图片备份工具，即使有 Nas 也不放弃
 
 ### 9️⃣ 地图与导航
@@ -73,12 +73,17 @@ author: "Joe"
 - Shadowrocket：可参考[《性价比最高的科学上网方案：Shadowrocket》](/posts/shadowrocket-guide/)，另外也会使用 QuantumltX 备用，可参考[《最简约的科学上网方案：Quantumlt X》](/posts/quantumult-x-guide/)
 - Clash Verge：在我的 Windows 游戏主机上使用，[GitHub 项目地址](https://github.com/clash-verge-rev/clash-verge-rev)
 
-### 1️⃣1️⃣ Mac 端工具
+### 1️⃣1️⃣ 截图工具
+- [CleanshotX](https://cleanshot.com/): 可以涵盖截图、录屏、OCR 的全能截图软件，还好看
+
+### 1️⃣2️⃣ Mac 端小众工具
 - [Irvue](https://apps.apple.com/us/app/irvue/id1039633667?mt=12)：免费随机壁纸，可设置定时更换
 - [PopClip](https://www.popclip.app/)：Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作
 - [Linear mouse](https://linearmouse.app/zh-CN/)：Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了
 - [Trickster](https://www.apparentsoft.com/trickster)：不用打开 Finder 的情况下，方便快速调用最近的文件
 - [Downie 4](https://www.downie.cn/)：主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩
+- [Ice](https://icemenubar.app/)：Menubar 管理工具 Bartender 的最佳平替
+- [Hapigo](https://www.hapigo.com/): 免费的 Mac 启动器，还可以完成截图、AI 等功能
 
 ## 硬件部分
 
