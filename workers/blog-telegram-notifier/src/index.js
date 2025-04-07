@@ -71,10 +71,19 @@ function parseRSS(xml) {
   
   return items.map(item => {
     const itemXml = item[1];
+    const pubDateStr = extractTag(itemXml, 'pubDate');
+    // 解析时间时保留时区信息
+    const pubDate = new Date(pubDateStr);
+    console.log('解析文章时间:', {
+      original: pubDateStr,
+      parsed: pubDate.toISOString(),
+      timezone: pubDate.getTimezoneOffset()
+    });
+    
     return {
       title: extractTag(itemXml, 'title'),
       link: extractTag(itemXml, 'link'),
-      pubDate: extractTag(itemXml, 'pubDate'),
+      pubDate: pubDate,
       description: extractTag(itemXml, 'description').replace(/<\/?[^>]+(>|$)/g, '')
     };
   });
@@ -199,9 +208,15 @@ async function checkAndNotify(env) {
     // 筛选最近7天内发布的文章
     const newPosts = [];
     for (const item of items) {
-      const pubDate = new Date(item.pubDate);
-      console.log('原始文章发布时间:', item.pubDate);
-      console.log('解析后的发布时间:', pubDate.toISOString());
+      const pubDate = item.pubDate; // 已经是 Date 对象
+      console.log('检查文章时间:', {
+        title: item.title,
+        pubDate: pubDate.toISOString(),
+        timeRange: {
+          start: timeRange.start.toISOString(),
+          end: timeRange.end.toISOString()
+        }
+      });
       
       // 检查文章是否在最近7天内发布
       if (pubDate >= timeRange.start && pubDate <= timeRange.end) {
@@ -237,11 +252,14 @@ async function checkAndNotify(env) {
           continue;
         }
         
-        // 标记为已发送
+        // 标记为已发送，移除过期时间
         await env.KV.put(postKey, JSON.stringify({
           executionId: executionId,
-          time: new Date().toISOString()
-        }), {expirationTtl: 60 * 60 * 24 * 30}); // 30天过期
+          time: new Date().toISOString(),
+          postTitle: post.title,
+          postLink: post.link,
+          pubDate: post.pubDate.toISOString()
+        }));
         console.log(`已标记文章为已发送: ${post.title}`);
         
         // 添加随机延迟，进一步防止并发问题
