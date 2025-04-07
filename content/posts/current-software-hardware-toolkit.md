@@ -61,8 +61,8 @@ author: "Joe"
 ![极空间影视界面](/images/posts/current-software-hardware-toolkit/nas-movie-interface.webp)
 
 ### 8️⃣ 同步与备份
-- (极空间 Nas)[https://www.zspace.cn/]：备份照片、视频和文件
-- (Resilio Sync)[https://www.resilio.com/sync/]：免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册
+- [极空间 Nas(https://www.zspace.cn/)：备份照片、视频和文件
+- [Resilio Sync](https://www.resilio.com/sync/)：免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册
 - Google Photo：多年来的图片备份工具，即使有 Nas 也不放弃
 
 ### 9️⃣ 地图与导航
