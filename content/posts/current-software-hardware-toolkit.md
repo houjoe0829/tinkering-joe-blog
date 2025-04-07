@@ -22,6 +22,15 @@ author: "Joe"
 
 ### 2️⃣ 浏览器
 - Chrome：无聊但真的稳定，兜兜转转，真的不如坚持用 Chrome。
+- 不管怎么换浏览器，都要装的浏览器扩展
+  - [OneTab](https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)：一键清掉所有的 Tabs
+  - [AITDK SEO](https://chromewebstore.google.com/detail/aitdk-seo-extension-traff/hhfkpjffbhledfpkhhcoidplcebgdgbk): 快速查看一个网站的 SEO 数据
+  - [1Password](https://1password.com/)：这个应该不用赘述，配合密码管理软件 1Password
+  - [Elmo Chat](https://chromewebstore.google.com/detail/elmo-chat-your-ai-web-cop/ipnlcfhfdicbfbchfoihipknbaeenenm)：快速总结网页，免费
+  - [OmniAudio](https://chromewebstore.google.com/detail/omniaudio-web-article-to/dahkpjmanmlkiiccnkgeahfldjpabobp)：快速将网页变成稍后再听的播客
+  - [Douban Book+](https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj)：在豆瓣书籍页面显示其可下载的在线资源网站
+  - [沉浸式翻译](https://chromewebstore.google.com/detail/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：能生成双语对照阅读的插件
+  - [滴答清单](https://chromewebstore.google.com/detail/diankknpkndanachmlckaikddgcehkod)：将网页添加到 Todo 的工具
 
 ### 3️⃣ 任务管理
 - [滴答清单](https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=)：超高性价比，而且任务管理、日历、番茄钟，均有
@@ -31,7 +40,7 @@ author: "Joe"
 - [Follow](https://follow.is/)：可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News
 - 微信读书：体验最好的中文阅读器，尤其是字体
 - Twitter：关注各路大神
-- YouTube：已经是我的个人电视，先用 Follow 订阅重要的
+- YouTube：什么都能找到，还能字幕翻译
 - 滴答清单：也用滴答清单放置待看清单
 - [Pocket Casts](https://pocketcasts.com/)：跨平台的播客 App，支持 iOS、Android、Web 等等
 - [OmniAudio](https://omniaudio.info/)：将网页等转为播客来稍后再听
@@ -69,6 +78,7 @@ author: "Joe"
 - [PopClip](https://www.popclip.app/)：Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作
 - [Linear mouse](https://linearmouse.app/zh-CN/)：Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了
 - [Trickster](https://www.apparentsoft.com/trickster)：不用打开 Finder 的情况下，方便快速调用最近的文件
+- [Downie 4](https://www.downie.cn/)：主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩
 
 ## 硬件部分
 
