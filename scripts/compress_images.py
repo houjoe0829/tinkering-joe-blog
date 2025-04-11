@@ -45,6 +45,7 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
                 cmd = [
                     'magick',
                     input_path,
+                    '-auto-orient',  # 自动处理方向
                     '-strip',  # 移除元数据
                     '-quality', str(quality),  # 设置压缩质量
                     '-resize', '1920x1920>',  # 限制最大尺寸，保持比例
