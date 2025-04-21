@@ -1,88 +1,77 @@
 {{- define "main" }}
+{{/* 直接定义主内容区域，不使用 PaperMod 的文章结构 */}}
+<!-- Photo Sphere Viewer 依赖 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+<!-- 导航条插件（可选，但包含标题等） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.js"></script>
 
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title entry-hint-parent">
-      {{ .Title }} {{/* Title from content file */}}
-      {{- if .Draft }}
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-      {{- end }}
-    </h1>
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}} {{/* Keep metadata like date */}}
-      {{/* Translation list, edit link, canonical might not be needed */}}
-      {{/* {{- partial "translation_list.html" . -}} */}}
-      {{/* {{- partial "edit_post.html" . -}} */}}
-      {{/* {{- partial "post_canonical.html" . -}} */}}
-    </div>
-    {{- end }}
-  </header>
+<!-- 全景照片查看器容器，占满整个视口 -->
+<div id="viewer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000;"></div>
 
-  {{/* Cover image handling - can be the thumbnail? Or specific cover? Decide later */}}
-  {{/* {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }} */}}
-  {{/* {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }} */}}
+<!-- 初始化全景照片查看器 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取原始路径，去除可能的引号
+    let panoramaUrl = "{{ .Params.panorama_image }}";
+    const pageTitle = "{{ .Title }}";
+    
+    // 确保路径是绝对路径
+    if (panoramaUrl && panoramaUrl.startsWith('/')) {
+      panoramaUrl = window.location.origin + panoramaUrl;
+    }
+    
+    console.log('全景照片完整路径:', panoramaUrl);
 
-  {{/* TOC might not be relevant for panorama page */}}
-  {{/* {{- if (.Param "ShowToc") }} */}}
-  {{/* {{- partial "toc.html" . }} */}}
-  {{/* {{- end }} */}}
-
-  {{/* Main content area - Phase 2 will put the panorama viewer here */}}
-  <div class="post-content">
-    <p>全景照片加载中...</p> {{/* Placeholder for viewer */}}
-    {{/* Display description from front matter below the viewer? */}}
-    {{- if .Description }}
-    <p>{{ .Description }}</p>
-    {{- end }}
-    {{/* Original content display logic - keep for now if needed */}}
-    {{/* {{- if .Content }} */}}
-    {{/*   {{- if not (.Param "disableAnchoredHeadings") }} */}}
-    {{/*   {{- partial "anchored_headings.html" .Content -}} */}}
-    {{/*   {{- else }}{{ .Content }}{{ end }} */}}
-    {{/* {{- end }} */}}
-  </div>
-
-  <footer class="post-footer">
-    {{/* Tags might be relevant? Keep for now */}}
-    {{- if .Params.tags }}
-    <div class="post-tags">
-      {{ range .Params.tags }}
-      {{- $tag := . }}
-      {{- $tagCount := 0 }}
-      {{- range $.Site.RegularPages }}
-        {{- if in .Params.tags $tag }}
-          {{- $tagCount = add $tagCount 1 }}
-        {{- end }}
-      {{- end }}
-      <a href="/tags/{{ $tag | urlize }}/" class="tag-link">
-        <span class="tag-name">{{ $tag }}</span>
-        <span class="tag-count">{{ $tagCount }}</span>
-      </a>
-      {{ end }}
-    </div>
-    {{- end }}
-
-    {{/* Nav links, share buttons, references are likely not needed for sky-eye single page */}}
-    {{/* {{- if (.Param "ShowPostNavLinks") }} */}}
-    {{/* {{- partial "post_nav_links.html" . }} */}}
-    {{/* {{- end }} */}}
-    {{/* {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }} */}}
-    {{/* {{- partial "share_icons.html" . -}} */}}
-    {{/* {{- end }} */}}
-    {{/* Back references logic removed */}}
-  </footer>
-
-  {{/* Comments might not be needed, disable for now */}}
-  {{/* {{- if (.Param "comments") }} */}}
-  {{/* {{- partial "comments.html" . }} */}}
-  {{/* {{- end }} */}}
-</article>
+    if (!panoramaUrl) {
+      console.error('未在页面元数据中找到 "panorama_image" URL。');
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          加载失败：未在页面元数据中找到 'panorama_image' URL。
+        </div>`;
+      return;
+    }
+    
+    // 创建查看器实例，使用更简单的配置
+    try {
+      const viewer = new PhotoSphereViewer.Viewer({
+        container: document.getElementById('viewer'),
+        panorama: panoramaUrl,
+        caption: pageTitle,
+        navbar: ['zoom', 'caption', 'fullscreen'],
+        defaultZoomLvl: 50,
+        minFov: 30,
+        maxFov: 120,
+        loadingTxt: '全景照片加载中...',
+        size: {
+          width: '100%',
+          height: '100%'
+        }
+      });
+      
+      // 添加错误事件监听器
+      viewer.addEventListener('error', function(e) {
+        console.error('全景照片加载失败:', e);
+        document.getElementById('viewer').innerHTML = `
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+            <p>加载失败：${e.message}</p>
+            <p>图片路径：${panoramaUrl}</p>
+            <p>测试图片是否可访问：</p>
+            <img src="${panoramaUrl}" style="max-width: 300px; max-height: 150px;" onerror="this.onerror=null;this.src='';this.alt='图片加载失败，路径可能错误';" />
+            <p>如果上面能看到图片，说明图片路径正确，但格式可能有问题</p>
+          </div>`;
+      });
+    } catch (error) {
+      console.error('创建查看器失败:', error);
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          <p>创建查看器失败：${error.message}</p>
+          <p>图片路径：${panoramaUrl}</p>
+        </div>`;
+    }
+  });
+</script>
 
 {{- end }}{{/* end main */}}
