@@ -21,6 +21,9 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
     # 不转换为 WebP 的特殊文件
     protected_files = ('favicon', 'apple-touch-icon', 'android-chrome')
     
+    # 排除的目录（这些目录下的图片不会被处理）
+    excluded_dirs = ['sky-eye']  # 天空之眼目录下的图片会单独处理
+    
     # 遍历输入目录
     for root, _, files in os.walk(input_dir):
         for file in files:
@@ -28,6 +31,11 @@ def compress_images(input_dir, output_dir, quality=85, convert_to_webp=False):
                 # 构建输入输出路径
                 input_path = os.path.join(root, file)
                 relative_path = os.path.relpath(input_path, input_dir)
+                
+                # 检查是否在排除目录中
+                if any(excluded_dir in relative_path for excluded_dir in excluded_dirs):
+                    print(f'跳过天空之眼图片: {relative_path}')
+                    continue
                 
                 # 判断是否需要转换为 WebP
                 should_convert = convert_to_webp and not any(pf in file.lower() for pf in protected_files)

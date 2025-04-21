@@ -44,7 +44,7 @@
   {{/* Add thumbnail image if available in front matter */}}
   {{- with .Params.thumbnail }}
   <div class="entry-thumbnail">
-    <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" /> {{/* Use absURL for correct path */}}
+    <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" style="border-radius: 8px;" /> {{/* Use absURL for correct path */}}
   </div>
   {{- end }}
   {{/* Cover image handling can be added later if needed */}}
@@ -84,14 +84,70 @@
 {{- end }}
 </div>
 
-{{/* Pagination/Load More - Keep the structure for Phase 3 */}}
+{{/* Pagination/Load More with implementation */}}
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer" id="load-more-container">
-  {{/* Placeholder, load more logic will be implemented later */}}
-  <button id="load-more" class="next" data-total-posts="{{ len $pages }}">
+  <button id="load-more" class="next" data-current-page="1" data-total-pages="{{ $paginator.TotalPages }}">
     加载更多
   </button>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('load-more');
+    if (loadMoreBtn) {
+      let currentPage = parseInt(loadMoreBtn.getAttribute('data-current-page'));
+      const totalPages = parseInt(loadMoreBtn.getAttribute('data-total-pages'));
+      
+      loadMoreBtn.addEventListener('click', function() {
+        if (currentPage < totalPages) {
+          currentPage++;
+          // 显示加载中状态
+          loadMoreBtn.textContent = '加载中...';
+          loadMoreBtn.disabled = true;
+          
+          // 构建下一页的URL
+          const nextPageUrl = window.location.pathname + '?page=' + currentPage;
+          
+          // 使用fetch API获取下一页内容
+          fetch(nextPageUrl)
+            .then(response => response.text())
+            .then(html => {
+              // 创建一个临时元素来解析HTML
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(html, 'text/html');
+              
+              // 获取新页面中的文章
+              const newPosts = doc.querySelectorAll('.posts .post-entry');
+              
+              // 获取当前页面的文章容器
+              const postsContainer = document.querySelector('.posts');
+              
+              // 将新文章添加到容器中
+              newPosts.forEach(post => {
+                postsContainer.appendChild(document.importNode(post, true));
+              });
+              
+              // 更新按钮状态
+              loadMoreBtn.textContent = '加载更多';
+              loadMoreBtn.disabled = false;
+              loadMoreBtn.setAttribute('data-current-page', currentPage);
+              
+              // 如果已经是最后一页，隐藏按钮
+              if (currentPage >= totalPages) {
+                loadMoreBtn.style.display = 'none';
+              }
+            })
+            .catch(error => {
+              console.error('加载更多内容时出错:', error);
+              loadMoreBtn.textContent = '加载失败，请重试';
+              loadMoreBtn.disabled = false;
+            });
+        }
+      });
+    }
+  });
+</script>
 {{- end }}
 
 {{/* Add JavaScript for relative date display, copied from post_meta.html */}}
