@@ -5,5 +5,4 @@ description: "清晨的莫干山，云雾缭绕，山峦起伏，远处的阳光
 thumbnail: "/images/sky-eye/moganshan-yunhai-thumb.jpg"  # 缩略图路径
 panorama_image: "/images/sky-eye/optimized/moganshan-yunhai.webp"   # 优化后的全景图路径
 draft: false
-tags: ["浙江", "莫干山", "云海", "日出"]
 --- 

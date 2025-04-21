@@ -74,6 +74,19 @@ discovery-log/
     * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
+## 如何添加“天空之眼”图片
+
+1. 将原始图片（包括缩略图和全景图）放到 `static/images/sky-eye/` 目录下。
+2. 执行命令：
+   ```bash
+   hugo new content/sky-eye/<文件名>.md --kind sky-eye
+   ```
+3. 打开新生成的 Markdown 文件，仅需填写：
+   - `title`：图片标题
+   - `description`：图片描述
+
+   其他字段（`date`、`thumbnail`、`panorama_image`）已由模板自动生成。
+
 ## 博客样式定制
 
 ### 主题管理说明
@@ -164,69 +177,7 @@ discovery-log/
         ```
    - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
    - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
-   - 清理原始图片、临时文件，以及 `draftfiles` 目录下的所有文件
-   
-## 使用 AI 助手来处理 Notion Zip 文件
-
-主要是将 Notion 导出的 Zip 文件转换为当前的 Blog 格式，请严格遵守以下处理步骤，不要遗漏，每做完一步自检一次：
-
-1. **Notion Zip 准备**：
-   * 将 Notion 导出的 Zip 文件放入项目根目录的 `draftfiles` 目录中
-
-2. **解压缩处理**：
-
-   ```bash
-   python3 scripts/extract_zip_utf8.py
-   ```
-
-   * 脚本会将 ZIP 文件解压到 `temp_notion` 目录
-   * 自动处理文件名编码问题
-
-3. **手动内容处理**：
-   * 检查并手动修正文章的英文名，确保符合以下规范：
-     * 使用纯英文单词，不要使用拼音（重要）
-     * 单词之间用短横线（-）连接
-     * 所有字母小写
-     * 文件名应该清晰表达文章主题
-     * 示例：
-       * ✅ `chinese-new-year-2024-recap.md`
-       * ✅ `my-first-coding-experience.md`
-       * ❌ `joe-recap-guo-nian.md`（不要使用拼音）
-       * ❌ `My-First-Post.md`（不要使用大写）
-       * ❌ `post1.md`（不够具体）
-   * 创建并完善 Front Matter 元数据：
-     * 确保所有必需字段都已填写
-     * 标签必须从预定义列表中选择（参考"博客元数据格式规范"章节中的标签列表）
-     * 不要创建新的标签
-   * 检查并修复文章格式
-
-4. **处理文章和图片**：
-   建议采用手动方式处理文章和图片，以确保更高的质量和准确性：
-
-   ① **文章处理**：
-      * 仔细阅读原文，理解内容和时间线
-      * 创建新的 Markdown 文件，使用规范的有意义的英文名，如：`content/posts/taizhou-travel-notes.md`
-      * 保留文章内容里的原始链接，不要擅自修改
-      * 手动编写 Front Matter，确保：
-        * 标题、描述准确，使用原文标题，不要生成新的标题
-        * 日期使用 Notion zip 数据里的原始创建日期，因为 Notion zip 是旧的内容迁移。
-          * 现在已经是 2025 年，不要以 AI 数据库更新日期来判定。
-        * 标签分类合理
-        * 作者信息正确
-
-   ② **图片处理**：
-      * 在 `static/images/posts/` 下创建与文章同名的目录
-      * 将原始图片复制到该目录
-      * 根据图片内容给予有意义的文件名
-      * 使用 `compress_article_images.py` 脚本处理单篇文章的图片：
-
-        ```bash
-        python3 scripts/compress_article_images.py article-name
-        ```
-
-      * 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
-      * 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
-      * 注意：这里不要使用 `compress_images.py`，它是用于全站图片批量处理的
+   - 注意：这里不要使用 `compress_images.py`，它是用于全站图片批量处理的
 
    ③ **最终检查**：
       * 确认所有图片都能正确显示
