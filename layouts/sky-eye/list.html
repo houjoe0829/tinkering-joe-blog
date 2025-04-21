@@ -1,0 +1,161 @@
+{{- define "main" }}
+
+{{/* sky-eye list page does not use profile mode */}}
+
+<header class="page-header">
+  {{/* Enable breadcrumbs for consistency */}}
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1> {{/* Title now comes from _index.md */}}
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- else }}
+  <div class="post-description">
+    在这里浏览使用无人机拍摄的全景照片。
+  </div>
+  {{- end }}
+</header>
+
+{{/* Logic to get pages specific to sky-eye section */}}
+{{- $pages := where site.RegularPages "Section" "sky-eye" }}
+{{/* Sort by date, newest first, consistent with PRD */}}
+{{- $pages = sort $pages "Date" "desc" }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<div class="posts">
+{{/* Keep the loop and article structure for now, will adjust display in later phases */}}
+{{- range $index, $page := $paginator.Pages }}
+
+{{- $class := "post-entry" }}
+
+{{/* No special styling for first entry needed for sky-eye */}}
+
+<article class="{{ $class }}">
+  {{/* Add thumbnail image if available in front matter */}}
+  {{- with .Params.thumbnail }}
+  <div class="entry-thumbnail">
+    <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" /> {{/* Use absURL for correct path */}}
+  </div>
+  {{- end }}
+  {{/* Cover image handling can be added later if needed */}}
+  {{/* {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} */}}
+  {{/* {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} */}}
+  <header class="entry-header">
+    <h2>
+      {{- .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h2>
+  </header>
+  {{/* Display description from front matter */}}
+  {{- if .Description }}
+  <div class="entry-content">
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
+  </div>
+  {{- else if .Summary }}
+   <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{/* Keep footer for date/metadata, match homepage date display */}}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{/* Remove author and reading time for sky-eye list items */}}
+    {{/* {{- partial "post_meta.html" . -}} */}}
+    {{/* Display only date, replicating logic from post_meta.html */}}
+    {{- if not .Date.IsZero -}}
+      {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+      <span class='post-date' data-date='{{ $dateStr }}' title='{{ $dateStr }}'>{{ $dateStr }}</span>
+    {{- end }}
+  </footer>
+  {{- end }}
+  {{/* Link to the single page */}}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+</div>
+
+{{/* Pagination/Load More - Keep the structure for Phase 3 */}}
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer" id="load-more-container">
+  {{/* Placeholder, load more logic will be implemented later */}}
+  <button id="load-more" class="next" data-total-posts="{{ len $pages }}">
+    加载更多
+  </button>
+</footer>
+{{- end }}
+
+{{/* Add JavaScript for relative date display, copied from post_meta.html */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      // Ensure date string is valid before creating Date object
+      if (!dateStr || isNaN(new Date(dateStr).getTime())) {
+        console.error('Invalid date string found:', dateStr, 'for element:', span);
+        return; // Skip this element if date is invalid
+      }
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      // Check for potential NaN if dates are invalid
+      if (isNaN(diffTime)) {
+        console.error('Date difference calculation resulted in NaN for:', dateStr);
+        return; 
+      }
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  // Initial update
+  // Add a small delay to ensure elements are fully rendered, especially if loaded async
+  setTimeout(updateDateDisplay, 100); 
+  
+  // Schedule daily update
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  // Ensure timeUntilMidnight is positive before setting timeout
+  if (timeUntilMidnight > 0) {
+      setTimeout(() => {
+        updateDateDisplay();
+        // Set interval for subsequent updates
+        setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+      }, timeUntilMidnight);
+  } else {
+      // If calculated time is negative or zero, update immediately and set interval
+      updateDateDisplay(); 
+      setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }
+});
+</script>
+
+{{- end }}{{- /* end main */ -}}

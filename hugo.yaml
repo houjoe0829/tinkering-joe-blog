@@ -109,6 +109,10 @@ menu:
       name: ""
       url: "/search/"
       weight: 5
+    - identifier: "sky-eye"
+      name: "天空之眼"
+      url: "/sky-eye/"
+      weight: 8
     - identifier: "posts"
       name: "文章"
       url: "/posts/"

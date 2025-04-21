@@ -1,0 +1,88 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }} {{/* Title from content file */}}
+      {{- if .Draft }}
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+      {{- end }}
+    </h1>
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}} {{/* Keep metadata like date */}}
+      {{/* Translation list, edit link, canonical might not be needed */}}
+      {{/* {{- partial "translation_list.html" . -}} */}}
+      {{/* {{- partial "edit_post.html" . -}} */}}
+      {{/* {{- partial "post_canonical.html" . -}} */}}
+    </div>
+    {{- end }}
+  </header>
+
+  {{/* Cover image handling - can be the thumbnail? Or specific cover? Decide later */}}
+  {{/* {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }} */}}
+  {{/* {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }} */}}
+
+  {{/* TOC might not be relevant for panorama page */}}
+  {{/* {{- if (.Param "ShowToc") }} */}}
+  {{/* {{- partial "toc.html" . }} */}}
+  {{/* {{- end }} */}}
+
+  {{/* Main content area - Phase 2 will put the panorama viewer here */}}
+  <div class="post-content">
+    <p>全景照片加载中...</p> {{/* Placeholder for viewer */}}
+    {{/* Display description from front matter below the viewer? */}}
+    {{- if .Description }}
+    <p>{{ .Description }}</p>
+    {{- end }}
+    {{/* Original content display logic - keep for now if needed */}}
+    {{/* {{- if .Content }} */}}
+    {{/*   {{- if not (.Param "disableAnchoredHeadings") }} */}}
+    {{/*   {{- partial "anchored_headings.html" .Content -}} */}}
+    {{/*   {{- else }}{{ .Content }}{{ end }} */}}
+    {{/* {{- end }} */}}
+  </div>
+
+  <footer class="post-footer">
+    {{/* Tags might be relevant? Keep for now */}}
+    {{- if .Params.tags }}
+    <div class="post-tags">
+      {{ range .Params.tags }}
+      {{- $tag := . }}
+      {{- $tagCount := 0 }}
+      {{- range $.Site.RegularPages }}
+        {{- if in .Params.tags $tag }}
+          {{- $tagCount = add $tagCount 1 }}
+        {{- end }}
+      {{- end }}
+      <a href="/tags/{{ $tag | urlize }}/" class="tag-link">
+        <span class="tag-name">{{ $tag }}</span>
+        <span class="tag-count">{{ $tagCount }}</span>
+      </a>
+      {{ end }}
+    </div>
+    {{- end }}
+
+    {{/* Nav links, share buttons, references are likely not needed for sky-eye single page */}}
+    {{/* {{- if (.Param "ShowPostNavLinks") }} */}}
+    {{/* {{- partial "post_nav_links.html" . }} */}}
+    {{/* {{- end }} */}}
+    {{/* {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }} */}}
+    {{/* {{- partial "share_icons.html" . -}} */}}
+    {{/* {{- end }} */}}
+    {{/* Back references logic removed */}}
+  </footer>
+
+  {{/* Comments might not be needed, disable for now */}}
+  {{/* {{- if (.Param "comments") }} */}}
+  {{/* {{- partial "comments.html" . }} */}}
+  {{/* {{- end }} */}}
+</article>
+
+{{- end }}{{/* end main */}}
