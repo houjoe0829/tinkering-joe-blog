@@ -1,0 +1,9 @@
+{
+  "title": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "date": "{{ .Date }}",
+  "location": "{{ .Params.location }}",
+  "coordinates": "{{ .Params.coordinates }}",
+  "thumbnail": "{{ .Params.thumbnail }}",
+  "panorama_image": "{{ .Params.panorama_image }}"
+}

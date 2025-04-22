@@ -1,0 +1,128 @@
+{{ define "main" }}
+<!-- Photo Sphere Viewer 依赖 - 使用 4.8.1 版本 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uevent@2.0.0/browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.js"></script>
+
+<!-- 返回首页按钮 -->
+<a href="/sky-eye/" class="back-to-details" title="返回天空之眼首页">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5"></path>
+    <path d="M12 19l-7-7 7-7"></path>
+  </svg>
+  <span>返回首页</span>
+</a>
+
+<!-- 全景照片查看器容器，占满整个视口 -->
+<div id="viewer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000;"></div>
+
+<style>
+  .back-to-details {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-details:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .back-to-details svg {
+    width: 16px;
+    height: 16px;
+  }
+</style>
+
+<!-- 初始化全景照片查看器 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 显示错误信息
+    function showError(message) {
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          <p>${message}</p>
+          <a href="/sky-eye/" style="color: #0066cc; margin-top: 10px; display: inline-block;">返回天空之眼首页</a>
+        </div>`;
+    }
+    
+    // 尝试创建全景查看器
+    try {
+      // 硬编码几个全景照片的信息，用于测试
+      const panoramas = {
+        'moganshan-yunhai': {
+          title: '莫干山云海',
+          panorama_image: '/images/sky-eye/optimized/moganshan-yunhai.webp'
+        }
+        // 可以添加更多全景照片
+      };
+      
+      // 从 URL 中获取全景照片 ID
+      const path = window.location.pathname;
+      const matches = path.match(/\/sky-eye-view\/(.+?)\/?$/);
+      const panoramaID = matches ? matches[1] : null;
+      
+      if (!panoramaID) {
+        showError('未指定全景照片 ID');
+        return;
+      }
+      
+      // 获取全景照片信息
+      const panorama = panoramas[panoramaID];
+      if (!panorama) {
+        showError(`未找到 ID 为 "${panoramaID}" 的全景照片`);
+        return;
+      }
+      
+      // 获取全景图片路径和标题
+      let panoramaUrl = panorama.panorama_image;
+      const pageTitle = panorama.title;
+      
+      // 确保路径是绝对路径
+      if (panoramaUrl && panoramaUrl.startsWith('/')) {
+        panoramaUrl = window.location.origin + panoramaUrl;
+      }
+      
+      console.log('全景照片完整路径:', panoramaUrl);
+      
+      // 创建查看器实例
+      const viewer = new PhotoSphereViewer({
+        container: document.getElementById('viewer'),
+        panorama: panoramaUrl,
+        caption: pageTitle,
+        navbar: ['zoom', 'caption', 'fullscreen'],
+        time_anim: false,  // 禁用自动旋转
+        default_fov: 70,   // 默认视角
+        min_fov: 30,       // 最小视角
+        max_fov: 120,      // 最大视角
+        loading_txt: '全景照片加载中...'
+      });
+      
+      // 添加错误事件监听器
+      viewer.on('error', function(e) {
+        console.error('全景照片加载失败:', e);
+        showError(`加载失败：${e}<br>图片路径：${panoramaUrl}`);
+      });
+      
+      // 更新返回按钮链接
+      document.querySelector('.back-to-details').href = `/sky-eye/${panoramaID}/`;
+      document.querySelector('.back-to-details').title = `返回${pageTitle}详情页`;
+      document.querySelector('.back-to-details span').textContent = '返回详情页';
+      
+    } catch (error) {
+      console.error('创建查看器失败:', error);
+      showError(`创建查看器失败：${error.message}`);
+    }
+  });
+</script>
+{{ end }}

@@ -1,3 +1,129 @@
-{{ define "main" }}
-  {{ partial "sky-eye-single.html" . }}
-{{ end }}
+{{- define "main" }}
+<!-- Photo Sphere Viewer 依赖 - 使用 4.8.1 版本 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uevent@2.0.0/browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.js"></script>
+
+<!-- 返回详情页按钮 -->
+<div id="back-button-container"></div>
+
+<!-- 全景照片查看器容器，占满整个视口 -->
+<div id="viewer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000;"></div>
+
+<style>
+  .back-to-details {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-details:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .back-to-details svg {
+    width: 16px;
+    height: 16px;
+  }
+</style>
+
+<!-- 初始化全景照片查看器 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 从 URL 查询参数中获取全景照片 ID
+    const urlParams = new URLSearchParams(window.location.search);
+    const panoramaID = urlParams.get('id');
+    
+    if (!panoramaID) {
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          加载失败：未指定全景照片 ID。
+        </div>`;
+      return;
+    }
+    
+    // 设置返回按钮
+    document.getElementById('back-button-container').innerHTML = `
+      <a href="/sky-eye/${panoramaID}/" class="back-to-details" title="返回详情页">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5"></path>
+          <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+        <span>返回</span>
+      </a>
+    `;
+    
+    // 请求全景照片数据
+    fetch(`/sky-eye/${panoramaID}/index.json`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP 错误！状态码: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // 获取全景图片路径和标题
+        let panoramaUrl = data.panorama_image || '';
+        const pageTitle = data.title || '全景照片';
+        
+        // 确保路径是绝对路径
+        if (panoramaUrl && panoramaUrl.startsWith('/')) {
+          panoramaUrl = window.location.origin + panoramaUrl;
+        }
+        
+        console.log('全景照片完整路径:', panoramaUrl);
+
+        if (!panoramaUrl) {
+          throw new Error('未找到全景照片路径');
+        }
+        
+        // 创建查看器实例
+        const viewer = new PhotoSphereViewer({
+          container: document.getElementById('viewer'),
+          panorama: panoramaUrl,
+          caption: pageTitle,
+          navbar: ['zoom', 'caption', 'fullscreen'],
+          time_anim: false,  // 禁用自动旋转
+          default_fov: 70,   // 默认视角
+          min_fov: 30,       // 最小视角
+          max_fov: 120,      // 最大视角
+          loading_txt: '全景照片加载中...'
+        });
+        
+        // 添加错误事件监听器
+        viewer.on('error', function(e) {
+          console.error('全景照片加载失败:', e);
+          document.getElementById('viewer').innerHTML = `
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+              <p>加载失败：${e}</p>
+              <p>图片路径：${panoramaUrl}</p>
+              <p>测试图片是否可访问：</p>
+              <img src="${panoramaUrl}" style="max-width: 300px; max-height: 150px;" onerror="this.onerror=null;this.src='';this.alt='图片加载失败，路径可能错误';" />
+              <p>如果上面能看到图片，说明图片路径正确，但格式可能有问题</p>
+            </div>`;
+        });
+      })
+      .catch(error => {
+        console.error('获取全景照片数据失败:', error);
+        document.getElementById('viewer').innerHTML = `
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+            <p>加载失败：${error.message}</p>
+            <p>请确保您提供了正确的全景照片 ID</p>
+            <a href="/sky-eye/" style="color: #0066cc; margin-top: 10px; display: inline-block;">返回天空之眼首页</a>
+          </div>`;
+      });
+  });
+</script>
+
+{{- end }}

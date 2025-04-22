@@ -1,11 +1,11 @@
 {{/* 直接定义主内容区域，不使用 PaperMod 的文章结构 */}}
-<!-- Photo Sphere Viewer 依赖 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+<!-- Photo Sphere Viewer 依赖 - 使用特定版本以确保兼容性 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.js"></script>
 <!-- 导航条插件（可选，但包含标题等） -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.js"></script>
 
 <!-- 返回详情页按钮 -->
 <a href="{{ replace .RelPermalink "/view/" "" }}" class="back-to-details" title="返回详情页">
@@ -69,28 +69,41 @@
       return;
     }
     
-    // 创建查看器实例，使用更简单的配置
+    // 创建查看器实例，使用兼容 PhotoSphereViewer 5.x 版本的配置
     try {
+      // 检查 PhotoSphereViewer 是否已正确加载
+      if (typeof PhotoSphereViewer === 'undefined') {
+        throw new Error('PhotoSphereViewer 库未正确加载，请检查网络连接或刷新页面');
+      }
+      
+      // 初始化查看器
       const viewer = new PhotoSphereViewer.Viewer({
         container: document.getElementById('viewer'),
         panorama: panoramaUrl,
         caption: pageTitle,
-        navbar: ['zoom', 'caption', 'fullscreen'],
-        defaultZoomLvl: 50,
+        navbar: [
+          'autorotate', 
+          'zoom', 
+          'caption', 
+          'fullscreen'
+        ],
+        defaultZoomLvl: 0,  // 默认不缩放
         minFov: 30,
         maxFov: 120,
         loadingTxt: '全景照片加载中...',
-        size: {
-          width: '100%',
-          height: '100%'
-        }
+        touchmoveTwoFingers: true,  // 移动设备上需要两指手势才能移动图片
+        mousewheelCtrlKey: true,  // 需要按住 Ctrl 才能使用鼠标滚轮缩放
       });
       
-      // 可选：添加标记插件，用于显示标题等信息
-      const markersPlugin = viewer.getPlugin(PhotoSphereViewer.MarkersPlugin);
-      if (markersPlugin) {
-        // 可以在这里添加标记，例如标题或其他信息点
-      }
+      // 添加加载完成事件
+      viewer.addEventListener('ready', function() {
+        console.log('全景照片加载完成');
+      });
+      
+      // 添加错误处理
+      viewer.addEventListener('error', function(e) {
+        console.error('全景照片加载错误:', e);
+      });
       
     } catch (error) {
       console.error('初始化全景照片查看器时出错:', error);

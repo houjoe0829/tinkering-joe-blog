@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天空之眼全景查看器</title>
+  
+  <!-- 使用 Pannellum 作为全景查看器替代方案 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    #panorama {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100; /* 提高z-index确保在Pannellum控件之上 */
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      font-size: 14px;
+    }
+    
+    .back-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .back-button svg {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .error-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      text-align: center;
+      color: #721c24;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      z-index: 1;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    
+    .error-message a {
+      color: #0066cc;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- 返回按钮 -->
+  <a id="back-button" href="/" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5"></path>
+      <path d="M12 19l-7-7 7-7"></path>
+    </svg>
+    <span>返回详情页</span>
+  </a>
+  
+  <!-- 全景照片查看器容器 -->
+  <div id="panorama"></div>
+  
+  <!-- 错误信息容器 -->
+  <div id="error-container" style="display: none;" class="error-message"></div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 显示错误信息
+      function showError(message) {
+        const errorContainer = document.getElementById('error-container');
+        errorContainer.innerHTML = `
+          <p>${message}</p>
+          <a href="/sky-eye/">返回天空之眼首页</a>
+        `;
+        errorContainer.style.display = 'block';
+        document.getElementById('panorama').style.display = 'none';
+      }
+      
+      // 从 URL 查询参数中获取全景照片路径和标题
+      const urlParams = new URLSearchParams(window.location.search);
+      const panoramaPath = urlParams.get('panorama');
+      const pageTitle = urlParams.get('title') || '全景照片';
+      const returnUrl = urlParams.get('return') || '/sky-eye/';
+      
+      // 设置返回按钮
+      document.getElementById('back-button').href = decodeURIComponent(returnUrl);
+      
+      if (!panoramaPath) {
+        showError('未指定全景照片路径');
+        return;
+      }
+      
+      // 构建完整的全景照片 URL
+      let panoramaUrl = decodeURIComponent(panoramaPath);
+      if (panoramaUrl.startsWith('/')) {
+        panoramaUrl = window.location.origin + panoramaUrl;
+      }
+      
+      console.log('全景照片完整路径:', panoramaUrl);
+      
+      // 使用 Pannellum 创建全景查看器
+      try {
+        pannellum.viewer('panorama', {
+          type: 'equirectangular',
+          panorama: panoramaUrl,
+          autoLoad: true,
+          title: decodeURIComponent(pageTitle),
+          showFullscreenCtrl: true,
+          showZoomCtrl: true,
+          keyboardZoom: true,
+          mouseZoom: true,
+          draggable: true,
+          disableKeyboardCtrl: false,
+          showControls: true,
+          hfov: 100,
+          compass: false,
+          northOffset: 0,
+          preview: '',
+          previewTitle: '加载中...',
+          previewAuthor: '',
+          horizonPitch: 0,
+          horizonRoll: 0,
+          minHfov: 30,
+          maxHfov: 120,
+          escapeHTML: true,
+          crossOrigin: 'anonymous',
+          hotSpotDebug: false
+        });
+      } catch (error) {
+        console.error('创建查看器失败:', error);
+        showError(`创建查看器失败：${error.message}`);
+      }
+    });
+  </script>
+</body>
+</html>
