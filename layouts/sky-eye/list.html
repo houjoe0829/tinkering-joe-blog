@@ -91,27 +91,52 @@
 {{/* Pagination/Load More with implementation */}}
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer" id="load-more-container">
-  <button id="load-more" class="next" data-current-page="1" data-total-pages="{{ $paginator.TotalPages }}">
+  <button id="load-more" class="next" data-total-pages="{{ $paginator.TotalPages }}">
     加载更多
   </button>
 </footer>
+
+<style>
+  /* 加载完成提示样式 */
+  .no-more {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const loadMoreBtn = document.getElementById('load-more');
     if (loadMoreBtn) {
-      let currentPage = parseInt(loadMoreBtn.getAttribute('data-current-page'));
+      // 初始化为2，因为第1页是初始加载的内容
+      let currentPage = 2;
       const totalPages = parseInt(loadMoreBtn.getAttribute('data-total-pages'));
       
+      // 如果总页数小于等于1，隐藏加载更多按钮
+      if (totalPages <= 1) {
+        loadMoreBtn.style.display = 'none';
+        return;
+      }
+      
       loadMoreBtn.addEventListener('click', function() {
-        if (currentPage < totalPages) {
-          currentPage++;
+        if (currentPage <= totalPages) {
           // 显示加载中状态
           loadMoreBtn.textContent = '加载中...';
           loadMoreBtn.disabled = true;
           
           // 构建下一页的URL
-          const nextPageUrl = window.location.pathname + '?page=' + currentPage;
+          let nextPageUrl;
+          let currentPath = window.location.pathname;
+          
+          // 确保路径结尾没有斜杠
+          if (currentPath.endsWith('/')) {
+            currentPath = currentPath.slice(0, -1);
+          }
+          
+          // 使用 /page/数字/ 格式的 URL，与首页保持一致
+          nextPageUrl = `${currentPath}/page/${currentPage}/`;
           
           // 使用fetch API获取下一页内容
           fetch(nextPageUrl)
@@ -135,17 +160,33 @@
               // 更新按钮状态
               loadMoreBtn.textContent = '加载更多';
               loadMoreBtn.disabled = false;
-              loadMoreBtn.setAttribute('data-current-page', currentPage);
               
-              // 如果已经是最后一页，隐藏按钮
-              if (currentPage >= totalPages) {
-                loadMoreBtn.style.display = 'none';
+              // 递增页码，准备下一次加载
+              currentPage++;
+              
+              // 如果已经是最后一页，显示加载完成提示
+              if (currentPage > totalPages) {
+                // 获取天空之眼文章总数
+                const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                // 显示加载完成提示
+                const loadMoreContainer = document.getElementById('load-more-container');
+                loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
               }
             })
             .catch(error => {
               console.error('加载更多内容时出错:', error);
-              loadMoreBtn.textContent = '加载失败，请重试';
-              loadMoreBtn.disabled = false;
+              // 如果是404错误，说明已经没有更多页面了
+              if (error.message && error.message.includes('404')) {
+                // 获取天空之眼文章总数
+                const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                // 显示加载完成提示
+                const loadMoreContainer = document.getElementById('load-more-container');
+                loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+              } else {
+                // 其他错误，显示重试按钮
+                loadMoreBtn.textContent = '加载失败，请重试';
+                loadMoreBtn.disabled = false;
+              }
             });
         }
       });
