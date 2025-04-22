@@ -15,14 +15,17 @@
     <div class="sky-eye-detail">
       <!-- 缩略图区域，点击进入全景浏览 -->
       <div class="sky-eye-thumbnail-container">
-        <a href="{{ .RelPermalink }}view/" title="点击进入沉浸式360度查看">
-          <div class="sky-eye-thumbnail">
+        <div class="sky-eye-thumbnail">
+          <a href="{{ .RelPermalink }}view/" title="点击进入沉浸式360度查看">
             <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
             <div class="sky-eye-thumbnail-prompt">
+              <div class="prompt-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
               <span>点击进入沉浸式360度查看</span>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
 
       <!-- 详情信息区域 -->
@@ -30,19 +33,26 @@
 
         <!-- 拍摄时间 -->
         {{- if .Date }}
-        <div class="sky-eye-date">
-          <h3>拍摄时间</h3>
+        <div class="sky-eye-info-item sky-eye-date">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            拍摄时间
+          </h3>
           <p>{{ .Date.Format "2006年01月02日 15:04:05" }}</p>
         </div>
         {{- end }}
 
         <!-- 地点信息 -->
         {{- if .Params.location }}
-        <div class="sky-eye-location">
-          <h3>拍摄地点</h3>
+        <div class="sky-eye-info-item sky-eye-location">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            拍摄地点
+          </h3>
           <p>{{ .Params.location }}</p>
           {{- if .Params.coordinates }}
           <a href="https://maps.google.com/?q={{ .Params.coordinates }}" target="_blank" rel="noopener noreferrer" class="sky-eye-map-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
             在 Google Map 查看
           </a>
           {{- end }}
@@ -78,7 +88,8 @@
   .sky-eye-detail {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
   }
 
   .sky-eye-thumbnail-container {
@@ -88,15 +99,15 @@
 
   .sky-eye-thumbnail {
     position: relative;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
 
   .sky-eye-thumbnail img {
     width: 100%;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
 
   .sky-eye-thumbnail-prompt {
@@ -104,72 +115,188 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    backdrop-filter: blur(4px);
+  }
+
+  .prompt-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .prompt-icon svg {
+    color: white;
+    width: 24px;
+    height: 24px;
   }
 
   .sky-eye-thumbnail-prompt span {
     color: white;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    padding: 0.5rem 1rem;
   }
 
   .sky-eye-thumbnail:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   .sky-eye-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+    background-color: var(--entry);
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .sky-eye-info-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+
+  .sky-eye-info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .sky-eye-info h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
     color: var(--primary);
+    display: flex;
+    align-items: center;
+  }
+
+  .sky-eye-info h3 svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  .sky-eye-info p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .sky-eye-map-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
     background-color: var(--primary);
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .sky-eye-map-link svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
   }
 
   .sky-eye-map-link:hover {
     background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .sky-eye-related-posts ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .sky-eye-related-posts li {
+    margin-bottom: 0.7rem;
+    position: relative;
+    padding-left: 1.2rem;
+  }
+
+  .sky-eye-related-posts li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  .sky-eye-related-posts a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .sky-eye-related-posts a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
   }
 
   /* 响应式设计 */
   @media (min-width: 768px) {
     .sky-eye-detail {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: stretch;
+      min-height: 320px;
     }
 
     .sky-eye-thumbnail-container {
-      flex: 0 0 60%;
+      flex: 0 0 65%;
+      display: flex;
+    }
+    
+    .sky-eye-thumbnail {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .sky-eye-thumbnail a {
+      height: 100%;
+      display: block;
+    }
+    
+    .sky-eye-thumbnail img {
+      height: 100%;
+      object-fit: cover;
     }
 
     .sky-eye-info {
-      flex: 0 0 40%;
-      padding-left: 2rem;
+      flex: 0 0 35%;
+      margin-left: 2rem;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .sky-eye-thumbnail-prompt {
+      padding: 12px 0;
+    }
+    
+    .sky-eye-thumbnail-prompt span {
+      font-size: 1rem;
+    }
+    
+    .prompt-icon svg {
+      width: 20px;
+      height: 20px;
     }
   }
 </style>
