@@ -29,7 +29,7 @@ title: "我们在东极岛，天气阴"
 
 ![台湾九份山城（2016 年 9 月）](/images/posts/dongji-island-tour-2022/jiufen-2016.webp)
 
-[点击查看庙子湖全景图片](https://photos.app.goo.gl/cDMeATy6xt3jiMiC8)（360 度环绕，由 Google 相册提供支持）
+{{< sky-eye-embed id="dongji-miaozi-lake-island" title="东极岛的庙子湖全景图片" >}}
 
 ![庙子湖的全貌图](/images/posts/dongji-island-tour-2022/miaozi-lake-overview.webp)
 

@@ -1,0 +1,87 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+{{- $skyEyePage := site.GetPage (printf "sky-eye/%s" $id) -}}
+
+<div class="sky-eye-embed">
+  <a href="{{ $skyEyePage.RelPermalink }}" title="{{ $title | default $skyEyePage.Title }}">
+    <div class="sky-eye-embed-thumbnail">
+      <img src="{{ $skyEyePage.Params.thumbnail }}" alt="{{ $title | default $skyEyePage.Title }}" loading="lazy">
+      <div class="sky-eye-embed-prompt">
+        <div class="prompt-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+        </div>
+        <span>查看360°全景图片</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  .sky-eye-embed {
+    margin: 2rem 0;
+  }
+  
+  .sky-eye-embed-thumbnail {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sky-eye-embed-thumbnail img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .sky-eye-embed-prompt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    backdrop-filter: blur(4px);
+  }
+  
+  .sky-eye-embed-prompt .prompt-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sky-eye-embed-prompt .prompt-icon svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .sky-eye-embed-prompt span {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .sky-eye-embed-thumbnail:hover img {
+    transform: scale(1.03);
+  }
+  
+  @media (max-width: 767px) {
+    .sky-eye-embed-prompt {
+      padding: 12px 0;
+    }
+    
+    .sky-eye-embed-prompt span {
+      font-size: 1rem;
+    }
+    
+    .sky-eye-embed-prompt .prompt-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+</style>
