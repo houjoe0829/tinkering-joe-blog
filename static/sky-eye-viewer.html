@@ -24,6 +24,23 @@
       background-color: #000;
     }
     
+    /* 隐藏左下角的加载信息和 by 文字 */
+    .pnlm-load-box,
+    .pnlm-lbar,
+    .pnlm-lbox,
+    .pnlm-title,
+    .pnlm-author {
+      display: none !important;
+    }
+    
+    /* 自定义控制按钮位置 */
+    .pnlm-controls-container {
+      bottom: 10px !important;
+      left: 10px !important;
+      right: auto !important;
+      top: auto !important;
+    }
+    
     .back-button {
       position: fixed;
       top: 20px;
@@ -142,7 +159,7 @@
           compass: false,
           northOffset: 0,
           preview: '',
-          previewTitle: '加载中...',
+          previewTitle: '',
           previewAuthor: '',
           horizonPitch: 0,
           horizonRoll: 0,
@@ -150,7 +167,15 @@
           maxHfov: 120,
           escapeHTML: true,
           crossOrigin: 'anonymous',
-          hotSpotDebug: false
+          hotSpotDebug: false,
+          autoRotate: 0,
+          author: '',
+          // 自定义字符串，去除 by 文字
+          strings: {
+            loadButtonLabel: '点击加载全景',
+            loadingLabel: '加载中...',
+            bylineLabel: '%s'  // 将 "by %s" 改为只显示作者名，不显示 "by"
+          }
         });
       } catch (error) {
         console.error('创建查看器失败:', error);
