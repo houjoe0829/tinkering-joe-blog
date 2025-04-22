@@ -6,15 +6,9 @@
   {{/* Enable breadcrumbs for consistency */}}
   {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1> {{/* Title now comes from _index.md */}}
-  {{- if .Description }}
   <div class="post-description">
-    {{ .Description }}
+    感谢陪伴我快五年的大疆 Mavic Air 2，已经习惯每次到一个地方都会用无人机拍一张全景图片作为记录，目前可以发出来的总共 {{ len (where site.RegularPages "Section" "sky-eye") }} 张。
   </div>
-  {{- else }}
-  <div class="post-description">
-    在这里浏览使用无人机拍摄的全景照片。
-  </div>
-  {{- end }}
 </header>
 
 {{/* Logic to get pages specific to sky-eye section */}}
