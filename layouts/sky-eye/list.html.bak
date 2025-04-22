@@ -1,0 +1,505 @@
+{{- define "main" }}
+
+{{/* sky-eye list page does not use profile mode */}}
+
+<header class="page-header">
+  {{/* Enable breadcrumbs for consistency */}}
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1> {{/* Title now comes from _index.md */}}
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- else }}
+  <div class="post-description">
+    在这里浏览使用无人机拍摄的全景照片。
+  </div>
+  {{- end }}
+</header>
+
+{{/* Logic to get pages specific to sky-eye section */}}
+{{- $pages := where site.RegularPages "Section" "sky-eye" }}
+{{/* Sort by date, newest first, consistent with PRD */}}
+{{- $pages = sort $pages "Date" "desc" }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<div class="posts">
+{{/* Keep the loop and article structure for now, will adjust display in later phases */}}
+{{- range $index, $page := $paginator.Pages }}
+
+{{- $class := "post-entry" }}
+
+{{/* No special styling for first entry needed for sky-eye */}}
+
+<article class="{{ $class }}">
+  {{/* Add thumbnail image if available in front matter */}}
+  {{- with .Params.thumbnail }}
+  <div class="entry-thumbnail">
+    <a href="{{ $page.RelPermalink }}" title="{{ $page.Title }}">
+      <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" style="border-radius: 8px;" /> {{/* Use absURL for correct path */}}
+    </a>
+  </div>
+  {{- end }}
+  {{/* Cover image handling can be added later if needed */}}
+  {{/* {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} */}}
+  {{/* {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} */}}
+  <header class="entry-header">
+    <h2>
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        {{- .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </a>
+    </h2>
+  </header>
+  {{/* Display description from front matter */}}
+  {{- if .Description }}
+  <div class="entry-content">
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
+  </div>
+  {{- else if .Summary }}
+   <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{/* Keep footer for date/metadata, match homepage date display */}}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{/* Remove author and reading time for sky-eye list items */}}
+    {{/* {{- partial "post_meta.html" . -}} */}}
+    {{/* Display only date, replicating logic from post_meta.html */}}
+    {{- if not .Date.IsZero -}}
+      {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+      <span class='post-date' data-date='{{ $dateStr }}' title='{{ $dateStr }}'>{{ $dateStr }}</span>
+    {{- end }}
+  </footer>
+  {{- end }}
+  {{/* Link to the single page */}}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+</div>
+
+{{/* Pagination/Load More with implementation */}}
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer" id="load-more-container">
+  <button id="load-more" class="next" data-total-pages="{{ $paginator.TotalPages }}">
+    加载更多
+  </button>
+</footer>
+
+<style>
+  /* 加载完成提示样式 */
+  .no-more {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('load-more');
+    if (loadMoreBtn) {
+      // 初始化为2，因为第1页是初始加载的内容
+      let currentPage = 2;
+      
+      // 添加点击事件
+      loadMoreBtn.addEventListener('click', function() {
+        // 显示加载中状态
+        loadMoreBtn.textContent = '加载中...';
+        loadMoreBtn.disabled = true;
+        
+        // 构建下一页URL
+        const nextPageUrl = `/sky-eye/page/${currentPage}/`;
+        console.log('尝试加载页面:', nextPageUrl);
+        
+        // 设置超时控制
+        const timeoutPromise = new Promise((_, reject) => {
+          setTimeout(() => reject(new Error('请求超时')), 8000);
+        });
+        
+        // 发起请求获取下一页内容
+        const fetchPromise = fetch(nextPageUrl, {
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+          }
+        });
+        
+        // 使用Promise.race来处理超时
+        Promise.race([fetchPromise, timeoutPromise])
+          .then(response => {
+            if (!response.ok) {
+              if (response.status === 404) {
+                console.log('下一页不存在，显示加载完成提示');
+                // 获取当前已加载的文章数
+                const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                // 显示加载完成提示
+                const loadMoreContainer = document.getElementById('load-more-container');
+                loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+                return null;
+              } else {
+                throw new Error(`HTTP错误! 状态码: ${response.status}`);
+          const fetchTimeout = 8000; // 8秒超时
+          let timeoutId = null;
+          
+          // 创建一个超时处理函数
+          const timeoutPromise = new Promise((_, reject) => {
+            timeoutId = setTimeout(() => {
+              reject(new Error('请求超时'));
+            }, fetchTimeout);
+          });
+          
+          // 创建 fetch 请求
+          const fetchPromise = fetch(nextPageUrl, {
+            headers: {
+              'Cache-Control': 'no-cache',
+              'Pragma': 'no-cache'
+            }
+          });
+          
+          // 使用 Promise.race 竞争超时和请求
+          Promise.race([fetchPromise, timeoutPromise])
+            .then(response => {
+              // 清除超时计时器
+              if (timeoutId) clearTimeout(timeoutId);
+              
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+              }
+              return response.text();
+            })
+            .then(html => {
+              try {
+                // 检查返回的HTML是否为空
+                if (!html || html.trim() === '') {
+                  throw new Error('返回的HTML内容为空');
+                }
+                
+                // 添加调试信息，输出返回的HTML的前1000个字符
+                console.log('返回的HTML前1000个字符:', html.substring(0, 1000));
+                
+                // 创建一个临时元素来解析HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // 获取新页面中的文章容器
+                const newPostsContainer = doc.querySelector('.posts');
+                console.log('文章容器是否存在:', !!newPostsContainer);
+                if (!newPostsContainer) {
+                  // 输出整个HTML结构以便调试
+                  console.log('页面结构:', doc.body.innerHTML.substring(0, 500));
+                  // 尝试使用其他选择器
+                  const alternativeContainers = [
+                    doc.querySelector('main'),
+                    doc.querySelector('.post-content'),
+                    doc.querySelector('article')
+                  ];
+                  console.log('备选容器存在情况:', alternativeContainers.map(c => !!c));
+                  
+                  throw new Error('无法找到文章容器');
+                }
+                
+                // 获取新页面中的文章，尝试多种选择器
+                let newPosts = newPostsContainer.querySelectorAll('.post-entry');
+                console.log('使用.post-entry选择器找到的文章数:', newPosts.length);
+                
+                // 如果没有找到，尝试其他选择器
+                if (newPosts.length === 0) {
+                  const alternativeSelectors = ['article', '.entry', 'div > article'];
+                  for (const selector of alternativeSelectors) {
+                    const altPosts = newPostsContainer.querySelectorAll(selector);
+                    console.log(`使用${selector}选择器找到的文章数:`, altPosts.length);
+                    if (altPosts.length > 0) {
+                      newPosts = altPosts;
+                      console.log('使用替代选择器找到文章');
+                      break;
+                    }
+                  }
+                }
+                
+                if (newPosts.length === 0) {
+                  throw new Error('未找到新的文章');
+                }
+                
+                // 获取当前页面的文章容器
+                const postsContainer = document.querySelector('.posts');
+                if (!postsContainer) {
+                  throw new Error('无法找到当前页面的文章容器');
+                }
+                
+                // 将新文章添加到容器中
+                console.log('开始添加新文章到容器中');
+                console.log('当前容器中的文章数:', postsContainer.querySelectorAll('.post-entry').length);
+                console.log('容器的可见性:', getComputedStyle(postsContainer).display);
+                
+                // 添加标记以识别新添加的文章
+                const newArticlesContainer = document.createElement('div');
+                newArticlesContainer.className = 'new-articles-container';
+                newArticlesContainer.style.border = '2px dashed red';
+                newArticlesContainer.style.padding = '10px';
+                newArticlesContainer.style.margin = '20px 0';
+                newArticlesContainer.innerHTML = '<h3 style="color:red">新加载的内容</h3>';
+                
+                try {
+                  // 先将新文章添加到临时容器
+                  newPosts.forEach((post, index) => {
+                    console.log(`正在添加第${index+1}篇文章`);
+                    // 添加标记以识别新文章
+                    const articleHtml = post.outerHTML;
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = articleHtml;
+                    const newArticle = tempDiv.firstChild;
+                    
+                    // 添加样式以便于识别
+                    newArticle.style.position = 'relative';
+                    const marker = document.createElement('span');
+                    marker.textContent = `新文章 #${index+1}`;
+                    marker.style.position = 'absolute';
+                    marker.style.top = '0';
+                    marker.style.right = '0';
+                    marker.style.background = 'red';
+                    marker.style.color = 'white';
+                    marker.style.padding = '5px';
+                    marker.style.zIndex = '999';
+                    newArticle.appendChild(marker);
+                    
+                    newArticlesContainer.appendChild(newArticle);
+                    console.log(`第${index+1}篇文章添加到临时容器成功`);
+                  });
+                  
+                  // 将临时容器添加到页面中
+                  postsContainer.appendChild(newArticlesContainer);
+                  console.log('临时容器已添加到页面中');
+                  
+                  // 强制重绘
+                  setTimeout(() => {
+                    console.log('强制重绘后检查新容器是否可见');
+                    console.log('新容器的可见性:', getComputedStyle(newArticlesContainer).display);
+                    console.log('新容器的高度:', newArticlesContainer.offsetHeight);
+                    console.log('新容器的位置:', newArticlesContainer.getBoundingClientRect().top);
+                    
+                    // 在确认内容可见后更新按钮状态
+                    if (newArticlesContainer.offsetHeight > 0) {
+                      // 更新按钮状态
+                      loadMoreBtn.textContent = '加载更多';
+                      loadMoreBtn.disabled = false;
+                      
+                      // 递增页码，准备下一次加载
+                      currentPage++;
+                      
+                      // 详细记录当前状态
+                      console.log('当前状态检查:');
+                      console.log('- 当前页码:', currentPage);
+                      console.log('- 总页数:', totalPages);
+                      console.log('- 已加载文章数:', document.querySelectorAll('.posts .post-entry').length);
+                      
+                      // 先检查当前页码和总页数的关系
+                      if (currentPage > totalPages) {
+                        console.log('基于页码判断：已经超过总页数，应该显示完成提示');
+                      } else {
+                        console.log('基于页码判断：还有更多页面可加载');
+                      }
+                      
+                      // 尝试获取下一页的URL
+                      const nextPageUrl = `/sky-eye/page/${currentPage}/`;
+                      console.log('将检查下一页URL:', nextPageUrl);
+                      
+                      // 使用异步函数来检查页面是否存在
+                      (async function() {
+                        try {
+                          console.log('开始发送请求检查下一页...');
+                          const response = await fetch(nextPageUrl);
+                          console.log('收到响应，状态码:', response.status);
+                          
+                          if (response.status === 404) {
+                            // 如果下一页不存在，显示加载完成提示
+                            console.log('下一页不存在，显示完成提示');
+                            const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                            const loadMoreContainer = document.getElementById('load-more-container');
+                            loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+                          } else {
+                            // 下一页存在，保持加载更多按钮
+                            console.log('下一页存在，保持加载更多按钮可见');
+                            // 尝试获取页面内容以确认是否有文章
+                            const text = await response.text();
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(text, 'text/html');
+                            const postsOnNextPage = doc.querySelectorAll('.post-entry');
+                            console.log('下一页文章数量:', postsOnNextPage.length);
+                            
+                            if (postsOnNextPage.length === 0) {
+                              console.log('下一页没有文章，显示完成提示');
+                              const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                              const loadMoreContainer = document.getElementById('load-more-container');
+                              loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+                            }
+                          }
+                        } catch (error) {
+                          console.error('检查下一页时出错:', error);
+                          // 发生错误时，保持加载更多按钮可见
+                          console.log('发生错误，保持加载更多按钮可见');
+                        }
+                      })();
+                      console.log('按钮状态已更新');
+                    } else {
+                      console.error('新容器高度为0，内容可能不可见');
+                      // 尝试强制显示
+                      newArticlesContainer.style.display = 'block';
+                      newArticlesContainer.style.visibility = 'visible';
+                      newArticlesContainer.style.opacity = '1';
+                    }
+                  }, 500);
+                  
+                  console.log('所有新文章已添加到容器中');
+                } catch (appendError) {
+                  console.error('添加文章时出错:', appendError);
+                  // 尝试备用方法添加内容
+                  try {
+                    console.log('尝试备用方法添加内容');
+                    const newHtml = `<div class="new-articles-container" style="border:2px dashed blue;padding:10px;margin:20px 0"><h3 style="color:blue">新加载的内容(备用方法)</h3>${Array.from(newPosts).map(post => post.outerHTML).join('')}</div>`;
+                    postsContainer.insertAdjacentHTML('beforeend', newHtml);
+                    console.log('备用方法添加成功');
+                  } catch (fallbackError) {
+                    console.error('备用方法也失败:', fallbackError);
+                    throw fallbackError;
+                  }
+                }
+                
+                // 更新按钮状态
+                loadMoreBtn.textContent = '加载更多';
+                loadMoreBtn.disabled = false;
+                
+                // 递增页码，准备下一次加载
+                currentPage++;
+                
+                // 如果已经是最后一页，显示加载完成提示
+                if (currentPage > totalPages) {
+                  // 获取天空之眼文章总数
+                  const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                  // 显示加载完成提示
+                  const loadMoreContainer = document.getElementById('load-more-container');
+                  loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+                }
+              } catch (parseError) {
+                // 处理HTML解析错误
+                console.error('解析HTML时出错:', parseError);
+                throw parseError; // 将错误传递给catch块处理
+              }
+            })
+            .catch(error => {
+              console.error('加载更多内容时出错:', error);
+              
+              // 清除超时计时器（如果还存在）
+              if (timeoutId) clearTimeout(timeoutId);
+              
+              // 处理不同类型的错误
+              if (error.message && error.message.includes('请求超时')) {
+                // 超时错误
+                loadMoreBtn.textContent = '加载超时，请重试';
+                loadMoreBtn.disabled = false;
+              } else if (error.message && (error.message.includes('404') || 
+                     error.message.includes('未找到新的文章') || 
+                     error.message.includes('无法找到文章容器') ||
+                     error.message.includes('返回的HTML内容为空'))) {
+                // 404错误或内容相关错误，表明已经没有更多页面
+                const totalItems = document.querySelectorAll('.posts .post-entry').length;
+                const loadMoreContainer = document.getElementById('load-more-container');
+                loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+              } else {
+                // 其他错误，显示重试按钮
+                loadMoreBtn.textContent = '加载失败，请重试';
+                loadMoreBtn.disabled = false;
+              }
+            });
+            
+          // 添加一个额外的安全机制，确保按钮不会永远处于加载状态
+          setTimeout(() => {
+            if (loadMoreBtn.disabled && loadMoreBtn.textContent === '加载中...') {
+              loadMoreBtn.textContent = '加载失败，请重试';
+              loadMoreBtn.disabled = false;
+              console.warn('安全机制触发：恢复按钮状态');
+            }
+          }, 10000); // 10秒后强制恢复按钮状态
+        }
+      });
+    }
+  });
+</script>
+{{- end }}
+
+{{/* Add JavaScript for relative date display, copied from post_meta.html */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      // Ensure date string is valid before creating Date object
+      if (!dateStr || isNaN(new Date(dateStr).getTime())) {
+        console.error('Invalid date string found:', dateStr, 'for element:', span);
+        return; // Skip this element if date is invalid
+      }
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      // Check for potential NaN if dates are invalid
+      if (isNaN(diffTime)) {
+        console.error('Date difference calculation resulted in NaN for:', dateStr);
+        return; 
+      }
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  // Initial update
+  // Add a small delay to ensure elements are fully rendered, especially if loaded async
+  setTimeout(updateDateDisplay, 100); 
+  
+  // Schedule daily update
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  // Ensure timeUntilMidnight is positive before setting timeout
+  if (timeUntilMidnight > 0) {
+      setTimeout(() => {
+        updateDateDisplay();
+        // Set interval for subsequent updates
+        setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+      }, timeUntilMidnight);
+  } else {
+      // If calculated time is negative or zero, update immediately and set interval
+      updateDateDisplay(); 
+      setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }
+});
+</script>
+
+{{- end }}{{- /* end main */ -}}

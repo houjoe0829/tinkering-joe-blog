@@ -1,0 +1,264 @@
+{{- define "main" }}
+
+{{/* sky-eye list page does not use profile mode */}}
+
+<header class="page-header">
+  {{/* Enable breadcrumbs for consistency */}}
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1> {{/* Title now comes from _index.md */}}
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- else }}
+  <div class="post-description">
+    在这里浏览使用无人机拍摄的全景照片。
+  </div>
+  {{- end }}
+</header>
+
+{{/* Logic to get pages specific to sky-eye section */}}
+{{- $pages := where site.RegularPages "Section" "sky-eye" }}
+{{/* Sort by date, newest first, consistent with PRD */}}
+{{- $pages = sort $pages "Date" "desc" }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<div class="posts">
+{{/* Keep the loop and article structure for now, will adjust display in later phases */}}
+{{- range $index, $page := $paginator.Pages }}
+
+{{- $class := "post-entry" }}
+
+{{/* No special styling for first entry needed for sky-eye */}}
+
+<article class="{{ $class }}">
+  {{/* Add thumbnail image if available in front matter */}}
+  {{- with .Params.thumbnail }}
+  <div class="entry-thumbnail">
+    <a href="{{ $page.RelPermalink }}" title="{{ $page.Title }}">
+      <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" style="border-radius: 8px;" /> {{/* Use absURL for correct path */}}
+    </a>
+  </div>
+  {{- end }}
+  {{/* Cover image handling can be added later if needed */}}
+  {{/* {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} */}}
+  {{/* {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} */}}
+  <header class="entry-header">
+    <h2>
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        {{- .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </a>
+    </h2>
+  </header>
+  {{/* Display description from front matter */}}
+  {{- if .Description }}
+  <div class="entry-content">
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
+  </div>
+  {{- else if .Summary }}
+   <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{/* Keep footer for date/metadata, match homepage date display */}}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{/* Remove author and reading time for sky-eye list items */}}
+    {{/* {{- partial "post_meta.html" . -}} */}}
+    {{/* Display only date, replicating logic from post_meta.html */}}
+    {{- if not .Date.IsZero -}}
+      {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+      <span class='post-date' data-date='{{ $dateStr }}' title='{{ $dateStr }}'>{{ $dateStr }}</span>
+    {{- end }}
+  </footer>
+  {{- end }}
+  {{/* Link to the single page */}}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+</div>
+
+{{/* Pagination/Load More with implementation */}}
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer" id="load-more-container">
+  <button id="load-more" class="next" data-total-pages="{{ $paginator.TotalPages }}">
+    加载更多
+  </button>
+</footer>
+
+<style>
+  /* 加载完成提示样式 */
+  .no-more {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('load-more');
+    if (loadMoreBtn) {
+      // 初始化为2，因为第1页是初始加载的内容
+      let currentPage = 2;
+      const totalPages = parseInt(loadMoreBtn.getAttribute('data-total-pages'));
+      let isLoading = false; // 添加加载状态标记
+      
+      // 如果总页数小于等于1，隐藏加载更多按钮
+      if (totalPages <= 1) {
+        loadMoreBtn.style.display = 'none';
+        return;
+      }
+      
+      // 加载更多内容的函数
+      function loadMoreContent() {
+        // 调试信息：记录函数调用
+        console.log('loadMoreContent函数被调用，当前页码：', currentPage, '，加载状态：', isLoading ? '正在加载' : '未加载');
+        
+        // 如果正在加载或者已经超过总页数，则不执行
+        if (isLoading || currentPage > totalPages) {
+          console.log('由于正在加载或已超过总页数，不执行加载');
+          return;
+        }
+        
+        // 设置加载状态
+        isLoading = true;
+        loadMoreBtn.textContent = '加载中...';
+        loadMoreBtn.disabled = true;
+        
+        // 构建下一页的URL
+        let nextPageUrl;
+        
+        // 使用基本路径构建URL，避免路径嵌套
+        const basePath = '/sky-eye';
+        nextPageUrl = `${basePath}/page/${currentPage}/`;
+        
+        // 使用fetch API获取下一页内容
+        fetch(nextPageUrl)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then(html => {
+            // 创建一个临时元素来解析HTML
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // 获取新页面中的文章
+            const newPosts = doc.querySelectorAll('.posts .post-entry');
+            
+            // 如果已经是最后一页，显示加载完成提示
+            if (currentPage > totalPages) {
+              // 获取天空之眼文章总数
+              const totalItems = document.querySelectorAll('.posts .post-entry').length;
+              // 显示加载完成提示
+              const loadMoreContainer = document.getElementById('load-more-container');
+              loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+            }
+          })
+          .catch(error => {
+            console.error('加载更多内容时出错:', error);
+            
+            // 重置加载状态
+            isLoading = false;
+            
+            // 如果是404错误，说明已经没有更多页面了
+            if (error.message && error.message.includes('404') || error.message.includes('status: 404')) {
+              // 获取天空之眼文章总数
+              const totalItems = document.querySelectorAll('.posts .post-entry').length;
+              // 显示加载完成提示
+              const loadMoreContainer = document.getElementById('load-more-container');
+              loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalItems} 张全景照片！</p>`;
+            } else {
+              // 其他错误，显示重试按钮
+              loadMoreBtn.textContent = '加载失败，请重试';
+              loadMoreBtn.disabled = false;
+            }
+          });
+      }
+      
+      // 只在点击按钮时加载更多
+      loadMoreBtn.addEventListener('click', loadMoreContent);
+    }
+  });
+</script>
+{{- end }}
+
+{{/* Add JavaScript for relative date display, copied from post_meta.html */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postDates = document.querySelectorAll('.post-date');
+  
+  function updateDateDisplay() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    postDates.forEach(span => {
+      const dateStr = span.getAttribute('data-date');
+      // Ensure date string is valid before creating Date object
+      if (!dateStr || isNaN(new Date(dateStr).getTime())) {
+        console.error('Invalid date string found:', dateStr, 'for element:', span);
+        return; // Skip this element if date is invalid
+      }
+      const postDate = new Date(dateStr);
+      const postDateOnly = new Date(postDate.getFullYear(), postDate.getMonth(), postDate.getDate());
+      
+      const diffTime = Math.abs(today - postDateOnly);
+      // Check for potential NaN if dates are invalid
+      if (isNaN(diffTime)) {
+        console.error('Date difference calculation resulted in NaN for:', dateStr);
+        return; 
+      }
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let displayText = dateStr;
+      if (diffDays === 0) {
+        displayText = '今天';
+      } else if (diffDays === 1) {
+        displayText = '昨天';
+      } else if (diffDays === 2) {
+        displayText = '前天';
+      }
+      
+      span.textContent = displayText;
+    });
+  }
+  
+  // Initial update
+  // Add a small delay to ensure elements are fully rendered, especially if loaded async
+  setTimeout(updateDateDisplay, 100); 
+  
+  // Schedule daily update
+  const now = new Date();
+  const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  const timeUntilMidnight = tomorrow - now;
+  
+  // Ensure timeUntilMidnight is positive before setting timeout
+  if (timeUntilMidnight > 0) {
+      setTimeout(() => {
+        updateDateDisplay();
+        // Set interval for subsequent updates
+        setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+      }, timeUntilMidnight);
+  } else {
+      // If calculated time is negative or zero, update immediately and set interval
+      updateDateDisplay(); 
+      setInterval(updateDateDisplay, 24 * 60 * 60 * 1000);
+  }
+});
+</script>
+
+{{- end }}{{- /* end main */ -}}
