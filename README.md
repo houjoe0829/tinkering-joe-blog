@@ -7,15 +7,23 @@
 ```
 discovery-log/
 ├── archetypes/          # Hugo 文章模板
+│   └── sky-eye.md      # 天空之眼文章模板
 ├── assets/              # 自定义样式和资源文件
 │   └── css/
 │       └── extended/
 │           └── custom.css
 ├── content/             # 博客文章内容
-│   └── posts/          # 所有博客文章
+│   ├── posts/          # 普通博客文章
+│   └── sky-eye/        # 天空之眼全景照片文章
 ├── data/               # Hugo 数据文件
+├── docs/               # 项目文档
+│   └── draft/          # 需求文档和设计草稿
 ├── i18n/               # 国际化文件
 ├── layouts/            # 自定义布局模板
+│   ├── _default/       # 默认布局
+│   ├── partials/       # 页面组件
+│   ├── shortcodes/     # 短代码
+│   └── sky-eye/        # 天空之眼布局模板
 ├── public/             # Hugo 生成的静态网站文件
 ├── resources/          # Hugo 缓存资源
 ├── scripts/            # 工具脚本目录
@@ -25,10 +33,18 @@ discovery-log/
 │   ├── clean_original_images.py      # 清理原始图片
 │   └── update_image_refs.py          # 更新图片引用
 ├── static/             # 静态资源文件
-│   └── images/        # 图片资源
-│       └── posts/     # 文章图片
+│   ├── conf/           # 配置文件
+│   ├── downloads/      # 下载资源
+│   ├── images/         # 图片资源
+│   │   ├── posts/      # 文章图片
+│   │   └── sky-eye/    # 天空之眼图片
+│   │       └── optimized/ # 优化后的全景照片
+│   └── js/             # JavaScript 文件
+├── temp_files/         # 临时文件目录（处理全景照片）
 ├── themes/             # Hugo 主题
-├── draftfiles/        # Notion 导出的 ZIP 文件
+│   └── PaperMod/       # 当前使用的主题
+├── workers/            # Cloudflare Workers 脚本
+├── .gitignore          # Git 忽略文件
 ├── hugo.yaml           # Hugo 配置文件
 └── README.md          # 项目说明文档
 ```
