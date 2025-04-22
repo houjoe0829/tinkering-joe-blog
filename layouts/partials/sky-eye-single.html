@@ -1,0 +1,103 @@
+{{/* 直接定义主内容区域，不使用 PaperMod 的文章结构 */}}
+<!-- Photo Sphere Viewer 依赖 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+<!-- 导航条插件（可选，但包含标题等） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.js"></script>
+
+<!-- 返回详情页按钮 -->
+<a href="{{ replace .RelPermalink "/view/" "" }}" class="back-to-details" title="返回详情页">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5"></path>
+    <path d="M12 19l-7-7 7-7"></path>
+  </svg>
+  <span>返回</span>
+</a>
+
+<!-- 全景照片查看器容器，占满整个视口 -->
+<div id="viewer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000;"></div>
+
+<style>
+  .back-to-details {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-details:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .back-to-details svg {
+    width: 16px;
+    height: 16px;
+  }
+</style>
+
+<!-- 初始化全景照片查看器 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取原始路径，去除可能的引号
+    let panoramaUrl = "{{ .Params.panorama_image }}";
+    const pageTitle = "{{ .Title }}";
+    
+    // 确保路径是绝对路径
+    if (panoramaUrl && panoramaUrl.startsWith('/')) {
+      panoramaUrl = window.location.origin + panoramaUrl;
+    }
+    
+    console.log('全景照片完整路径:', panoramaUrl);
+
+    if (!panoramaUrl) {
+      console.error('未在页面元数据中找到 "panorama_image" URL。');
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          加载失败：未在页面元数据中找到 'panorama_image' URL。
+        </div>`;
+      return;
+    }
+    
+    // 创建查看器实例，使用更简单的配置
+    try {
+      const viewer = new PhotoSphereViewer.Viewer({
+        container: document.getElementById('viewer'),
+        panorama: panoramaUrl,
+        caption: pageTitle,
+        navbar: ['zoom', 'caption', 'fullscreen'],
+        defaultZoomLvl: 50,
+        minFov: 30,
+        maxFov: 120,
+        loadingTxt: '全景照片加载中...',
+        size: {
+          width: '100%',
+          height: '100%'
+        }
+      });
+      
+      // 可选：添加标记插件，用于显示标题等信息
+      const markersPlugin = viewer.getPlugin(PhotoSphereViewer.MarkersPlugin);
+      if (markersPlugin) {
+        // 可以在这里添加标记，例如标题或其他信息点
+      }
+      
+    } catch (error) {
+      console.error('初始化全景照片查看器时出错:', error);
+      document.getElementById('viewer').innerHTML = `
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
+          加载失败：${error.message || '初始化全景照片查看器时出错'}
+        </div>`;
+    }
+  });
+</script>

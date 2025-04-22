@@ -18,7 +18,7 @@
         <a href="{{ .RelPermalink }}view/" title="点击进入沉浸式360度查看">
           <div class="sky-eye-thumbnail">
             <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
-            <div class="sky-eye-thumbnail-prompt">
+            <div class="sky-eye-thumbnail-overlay">
               <span>点击进入沉浸式360度查看</span>
             </div>
           </div>
@@ -27,6 +27,13 @@
 
       <!-- 详情信息区域 -->
       <div class="sky-eye-info">
+        <!-- 描述信息 -->
+        {{- if .Description }}
+        <div class="sky-eye-description">
+          <h3>描述</h3>
+          <p>{{ .Description }}</p>
+        </div>
+        {{- end }}
 
         <!-- 拍摄时间 -->
         {{- if .Date }}
@@ -99,24 +106,32 @@
     transition: transform 0.3s ease;
   }
 
-  .sky-eye-thumbnail-prompt {
+  .sky-eye-thumbnail-overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
-  .sky-eye-thumbnail-prompt span {
+  .sky-eye-thumbnail-overlay span {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+  }
+
+  .sky-eye-thumbnail:hover .sky-eye-thumbnail-overlay {
+    opacity: 1;
   }
 
   .sky-eye-thumbnail:hover img {
@@ -174,67 +189,4 @@
   }
 </style>
 
-<!-- 初始化全景照片查看器 -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // 获取原始路径，去除可能的引号
-    let panoramaUrl = "{{ .Params.panorama_image }}";
-    const pageTitle = "{{ .Title }}";
-    
-    // 确保路径是绝对路径
-    if (panoramaUrl && panoramaUrl.startsWith('/')) {
-      panoramaUrl = window.location.origin + panoramaUrl;
-    }
-    
-    console.log('全景照片完整路径:', panoramaUrl);
-
-    if (!panoramaUrl) {
-      console.error('未在页面元数据中找到 "panorama_image" URL。');
-      document.getElementById('viewer').innerHTML = `
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
-          加载失败：未在页面元数据中找到 'panorama_image' URL。
-        </div>`;
-      return;
-    }
-    
-    // 创建查看器实例，使用更简单的配置
-    try {
-      const viewer = new PhotoSphereViewer.Viewer({
-        container: document.getElementById('viewer'),
-        panorama: panoramaUrl,
-        caption: pageTitle,
-        navbar: ['zoom', 'caption', 'fullscreen'],
-        defaultZoomLvl: 50,
-        minFov: 30,
-        maxFov: 120,
-        loadingTxt: '全景照片加载中...',
-        size: {
-          width: '100%',
-          height: '100%'
-        }
-      });
-      
-      // 添加错误事件监听器
-      viewer.addEventListener('error', function(e) {
-        console.error('全景照片加载失败:', e);
-        document.getElementById('viewer').innerHTML = `
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
-            <p>加载失败：${e.message}</p>
-            <p>图片路径：${panoramaUrl}</p>
-            <p>测试图片是否可访问：</p>
-            <img src="${panoramaUrl}" style="max-width: 300px; max-height: 150px;" onerror="this.onerror=null;this.src='';this.alt='图片加载失败，路径可能错误';" />
-            <p>如果上面能看到图片，说明图片路径正确，但格式可能有问题</p>
-          </div>`;
-      });
-    } catch (error) {
-      console.error('创建查看器失败:', error);
-      document.getElementById('viewer').innerHTML = `
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; text-align: center; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; z-index: 1;">
-          <p>创建查看器失败：${error.message}</p>
-          <p>图片路径：${panoramaUrl}</p>
-        </div>`;
-    }
-  });
-</script>
-
-{{- end }}{{/* end main */}}
+{{- end }}

@@ -44,7 +44,9 @@
   {{/* Add thumbnail image if available in front matter */}}
   {{- with .Params.thumbnail }}
   <div class="entry-thumbnail">
-    <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" style="border-radius: 8px;" /> {{/* Use absURL for correct path */}}
+    <a href="{{ $page.RelPermalink }}" title="{{ $page.Title }}">
+      <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" width="800" style="border-radius: 8px;" /> {{/* Use absURL for correct path */}}
+    </a>
   </div>
   {{- end }}
   {{/* Cover image handling can be added later if needed */}}
@@ -52,8 +54,10 @@
   {{/* {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} */}}
   <header class="entry-header">
     <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        {{- .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </a>
     </h2>
   </header>
   {{/* Display description from front matter */}}
