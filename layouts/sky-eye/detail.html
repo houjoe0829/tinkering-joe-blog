@@ -154,16 +154,32 @@
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--primary);
+    background-color: #4a6fa5; /* 更换为柔和的蓝灰色，不使用var(--primary) */
     color: white;
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
   .sky-eye-map-link:hover {
-    background-color: var(--secondary);
+    background-color: #5d84bc; /* 悬停时使用稍浅的蓝色 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 夜间模式下的Google Map按钮样式 */
+  .dark .sky-eye-map-link {
+    background-color: #4b5563; /* 使用更柔和的深灰色作为夜间模式下的背景色 */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 在夜间模式下增强阴影效果 */
+  }
+
+  .dark .sky-eye-map-link:hover {
+    background-color: #6b7280; /* 悬停时使用稍浅的灰色 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 在夜间模式下增强悬浮时的阴影 */
   }
 
   .sky-eye-related-posts ul {
