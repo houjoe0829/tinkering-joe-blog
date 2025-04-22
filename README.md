@@ -93,35 +93,42 @@ discovery-log/
 ## 如何添加“天空之眼”图片
 
 ### 添加新的全景图片
+1. 准备图片
+把原始全景图片放到 temp_files 目录下，建议保留原始文件名（如无人机拍摄的文件通常自带日期和编号）。
+2. 提供信息
+图片标题（必填）
+图片描述（必填）
+拍摄地点（可选）
+经纬度坐标（可选，如果图片自带GPS信息可自动读取）
+3. 自动或手动处理
+系统或您自己将自动完成以下操作：
 
-1. 将原始全景图片放到 `temp_files` 目录下。
-2. 提供以下信息：
-   - 图片标题
-   - 图片描述
-   - 拍摄地点（可选）
-   - 经纬度坐标（可选）
+（1）读取照片信息
+用 exiftool 工具读取图片的拍摄时间和GPS坐标（如有）。
+示例命令：exiftool -DateTimeOriginal -GPSLatitude -GPSLongitude -c "%.6f" 图片路径
+（2）图片处理
+用 ImageMagick 生成两种图片文件：
+优化后的WebP全景图（6000x3000，85%质量）：
+magick 原始图片路径 -resize 6000x3000 -quality 85 static/images/sky-eye/optimized/文件名.webp
+缩略图（800x400，85%质量）：
+magick 原始图片路径 -resize 800x400 -quality 85 static/images/sky-eye/文件名-thumb.jpg
+（3）文件管理
+在 content/sky-eye/ 下创建 Markdown 文件，文件名用英文短横线风格。
+Markdown 文件内容示例（需填入实际信息）：
 
-系统将自动完成以下工作：
-
-#### 1. 读取照片信息
-- 从图片EXIF数据中读取拍摄日期和时间（精确到秒）
-- 提取其他可用的元数据信息
-
-#### 2. 图片处理
-- 生成缩略图和优化后的 WebP 格式全景图
-- 根据 `docs/draft/sky-eye-feature-prd.md` 中的规范优化全景图片：
-  - 调整分辨率：将原始 8192x4096 分辨率调整为 6000x3000
-  - 转换为 WebP 格式：在保持相同质量的情况下减小文件大小约 37%
-  - 质量控制：使用 85% 的质量设置，在文件大小和图像质量之间取得平衡
-  - 优化效果：将原始图片压缩约 93%，显著提高加载速度
-
-#### 3. 文件管理
-- 将处理后的图片移动到 `static/images/sky-eye/` 目录
-- 创建对应的 Markdown 文件，并填充所有必要信息：
-  - 标题和描述
-  - 精确的拍摄时间（格式：2006年01月02日 15:04:05）
-  - 地点信息和经纬度坐标（用于详情页和Google地图链接）
-- 删除原始图片以节省空间
+---
+title: "图片标题"
+date: YYYY-MM-DDThh:mm:ss+08:00
+description: "图片描述"
+thumbnail: "/images/sky-eye/文件名-thumb.jpg"
+panorama_image: "/images/sky-eye/optimized/文件名.webp"
+location: "拍摄地点"
+coordinates: "纬度,经度"
+draft: false
+---
+（4）清理
+删除 temp_files 下的原始图片，节省空间。
+示例命令：rm temp_files/原始图片文件名
 
 ### 在文章中引用天空之眼全景图片
 
