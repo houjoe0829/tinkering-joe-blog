@@ -21,11 +21,7 @@ tags: ["江浙沪包游", "现实是个开放世界"]
 
 只是，门卫不让进，毕竟是学校。缘分已尽之后，我们只能给这个奇怪到有点奇异的山顶拍拍全景图，山顶、水库、道教学校、环湖路……
 
-[New item by Joe Hou](https://photos.app.goo.gl/42tAFgMjPWWpGcfY8)
-
-这个是 360 全景，可以旋转查看
-
-![天台山道教学院全景](/images/posts/taizhou-travel-notes/taizhou0003.webp)
+{{< sky-eye-embed id="zhejiang-taoist-college" title="浙江道教学院全景图" >}}
 
 如果想要去上学，需要各地道观的推荐，不用幻想了。
 
@@ -51,9 +47,7 @@ tags: ["江浙沪包游", "现实是个开放世界"]
 
 来之前我想象过有城墙的城市，全国太多样板了，真肉身到了县城之后，发现还是挺不一样的。
 
-[New item by Joe Hou](https://photos.app.goo.gl/GNuer7QoWhZpKsy47)
-
-台州府全景（紫阳街上空）
+{{< sky-eye-embed id="taizhou-ancient-city" title="台州府城全景图" >}}
 
 台州府城，依河而建，是由古城墙、湖和山包围起来的古城区，城墙大概占五分之三，真的是环了一大圈，从城墙地图就可以看出来，全程走完需要一个半小时。中间空的部分是古城区，右侧是其东湖，右下侧是巾山，而城墙的最南端连接的是美食一条街「紫阳街」。
 
