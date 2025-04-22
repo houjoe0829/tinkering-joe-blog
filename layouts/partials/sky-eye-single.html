@@ -1,11 +1,15 @@
 {{/* 直接定义主内容区域，不使用 PaperMod 的文章结构 */}}
+<!-- 
+注意：以下代码已不再使用，当前全景查看器使用 static/sky-eye-viewer.html 中的 Pannellum 2.5.6 实现
+
 <!-- Photo Sphere Viewer 依赖 - 使用特定版本以确保兼容性 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.css"/> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.1.4/index.min.js"></script> -->
 <!-- 导航条插件（可选，但包含标题等） -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.css"/> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5.1.4/index.min.js"></script> -->
+-->
 
 <!-- 返回详情页按钮 -->
 <a href="{{ replace .RelPermalink "/view/" "" }}" class="back-to-details" title="返回详情页">
@@ -69,6 +73,8 @@
       return;
     }
     
+    // 注意：以下代码已不再使用，当前全景查看器使用 static/sky-eye-viewer.html 中的 Pannellum 2.5.6 实现
+    /*
     // 创建查看器实例，使用兼容 PhotoSphereViewer 5.x 版本的配置
     try {
       // 检查 PhotoSphereViewer 是否已正确加载
@@ -104,7 +110,9 @@
       viewer.addEventListener('error', function(e) {
         console.error('全景照片加载错误:', e);
       });
+    */
       
+    /*
     } catch (error) {
       console.error('初始化全景照片查看器时出错:', error);
       document.getElementById('viewer').innerHTML = `
@@ -112,5 +120,8 @@
           加载失败：${error.message || '初始化全景照片查看器时出错'}
         </div>`;
     }
+    */
+    
+    // 注意：这个文件已不再使用，当前全景查看器使用 static/sky-eye-viewer.html 中的 Pannellum 2.5.6 实现
   });
 </script>

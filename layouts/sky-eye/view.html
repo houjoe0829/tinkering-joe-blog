@@ -1,9 +1,13 @@
 {{- define "main" }}
+<!-- 
+注意：以下代码已不再使用，当前全景查看器使用 static/sky-eye-viewer.html 中的 Pannellum 2.5.6 实现
+
 <!-- Photo Sphere Viewer 依赖 - 使用 4.8.1 版本 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uevent@2.0.0/browser.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.css"/> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/uevent@2.0.0/browser.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.js"></script> -->
+-->
 
 <!-- 返回详情页按钮 -->
 <div id="back-button-container"></div>
@@ -88,6 +92,8 @@
           throw new Error('未找到全景照片路径');
         }
         
+        // 注意：以下代码已不再使用，当前全景查看器使用 static/sky-eye-viewer.html 中的 Pannellum 2.5.6 实现
+        /*
         // 创建查看器实例
         const viewer = new PhotoSphereViewer({
           container: document.getElementById('viewer'),
@@ -100,7 +106,11 @@
           max_fov: 120,      // 最大视角
           loading_txt: '全景照片加载中...'
         });
+        */
         
+        // 由于这个文件已不再使用，这里只是保留了代码结构作为参考
+        
+        /*
         // 添加错误事件监听器
         viewer.on('error', function(e) {
           console.error('全景照片加载失败:', e);
@@ -114,6 +124,7 @@
             </div>`;
         });
       })
+      /*
       .catch(error => {
         console.error('获取全景照片数据失败:', error);
         document.getElementById('viewer').innerHTML = `
@@ -122,6 +133,8 @@
             <p>请确保您提供了正确的全景照片 ID</p>
             <a href="/sky-eye/" style="color: #0066cc; margin-top: 10px; display: inline-block;">返回天空之眼首页</a>
           </div>`;
+      });
+      */
       });
   });
 </script>
