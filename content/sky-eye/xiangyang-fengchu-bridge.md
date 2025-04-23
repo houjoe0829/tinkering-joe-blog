@@ -5,6 +5,6 @@ description: "汉江上两座大桥之间，左边是铁路公路两用的汉江
 thumbnail: "/images/sky-eye/xiangyang-fengchu-bridge-thumb.jpg"
 panorama_image: "/images/sky-eye/optimized/xiangyang-fengchu-bridge.webp"
 location: "湖北省襄阳市汉江"
-coordinates: "32.032958,112.152481"
+coordinates: "32.032958, 112.152481"
 draft: false
 ---
