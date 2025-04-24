@@ -10,7 +10,18 @@ hideMeta: true
 
 我是 Joe，不知名的产品经理，主业与兴趣都是设计各类 ToC 或者 ToB 生产力工具.
 
-`Coding with AI`、`Product Manager`、`喜欢码字`、`Nas 小白用户`、`无人机机长`、`主机游戏玩家`、`有个流浪猫`、`江浙沪包游中`、`骑行新手`、`顺风车司机`
+<div class="tags-container">
+  <span class="tag" data-color="blue"><i class="tag-icon">💻</i>Coding with AI</span>
+  <span class="tag" data-color="purple"><i class="tag-icon">📊</i>Product Manager</span>
+  <span class="tag" data-color="green"><i class="tag-icon">📝</i>喜欢码字</span>
+  <span class="tag" data-color="orange"><i class="tag-icon">🗄️</i>Nas 小白用户</span>
+  <span class="tag" data-color="red"><i class="tag-icon">🚁</i>无人机机长</span>
+  <span class="tag" data-color="blue"><i class="tag-icon">🎮</i>主机游戏玩家</span>
+  <span class="tag" data-color="purple"><i class="tag-icon">🐱</i>有个流浪猫</span>
+  <span class="tag" data-color="green"><i class="tag-icon">🏙️</i>江浙沪包游中</span>
+  <span class="tag" data-color="orange"><i class="tag-icon">🚲</i>骑行新手</span>
+  <span class="tag" data-color="red"><i class="tag-icon">🚗</i>顺风车司机</span>
+</div>
 
 主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。
 
@@ -65,6 +76,20 @@ hideMeta: true
   --hardware-dark-gradient: linear-gradient(135deg, #4a235a, #512e5f);
   --audio-dark-gradient: linear-gradient(135deg, #5d4037, #6d4c41);
   --ai-dark-gradient: linear-gradient(135deg, #1b5e20, #2e7d32);
+  
+  /* 标签颜色变量 */
+  --tag-blue: #2196f3;
+  --tag-purple: #9c27b0;
+  --tag-green: #4caf50;
+  --tag-orange: #ff9800;
+  --tag-red: #f44336;
+  
+  /* 暗色模式标签颜色 */
+  --tag-blue-dark: #1976d2;
+  --tag-purple-dark: #7b1fa2;
+  --tag-green-dark: #388e3c;
+  --tag-orange-dark: #f57c00;
+  --tag-red-dark: #d32f2f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -225,6 +250,91 @@ hideMeta: true
 @media (max-width: 768px) {
   .bento-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* 个人标签样式 */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tag[data-color="blue"] {
+  background-color: var(--tag-blue);
+}
+
+.tag[data-color="purple"] {
+  background-color: var(--tag-purple);
+}
+
+.tag[data-color="green"] {
+  background-color: var(--tag-green);
+}
+
+.tag[data-color="orange"] {
+  background-color: var(--tag-orange);
+}
+
+.tag[data-color="red"] {
+  background-color: var(--tag-red);
+}
+
+.tag-icon {
+  margin-right: 6px;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tag[data-color="blue"] {
+    background-color: var(--tag-blue-dark);
+  }
+  
+  .tag[data-color="purple"] {
+    background-color: var(--tag-purple-dark);
+  }
+  
+  .tag[data-color="green"] {
+    background-color: var(--tag-green-dark);
+  }
+  
+  .tag[data-color="orange"] {
+    background-color: var(--tag-orange-dark);
+  }
+  
+  .tag[data-color="red"] {
+    background-color: var(--tag-red-dark);
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+  .tags-container {
+    gap: 8px;
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    font-size: 0.8rem;
   }
 }
 </style>
