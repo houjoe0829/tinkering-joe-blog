@@ -29,18 +29,20 @@ hideMeta: true
 
 <p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>
 
-<div class="toolkit-container">
-  <a href="/posts/current-software-hardware-toolkit/" class="toolkit-card">
+<div class="bento-container">
+  <a href="/posts/current-software-hardware-toolkit/" class="bento-card software">
     <div class="card-content">
-      <h3>📱 软件工具</h3>
+      <div class="card-icon">📱</div>
+      <h3>软件工具</h3>
       <p>我日常使用的各类软件工具，包括记录与文档、浏览器、任务管理、阅读、音乐、AI 助手等</p>
       <span class="read-more">查看详情 →</span>
     </div>
   </a>
   
-  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="toolkit-card">
+  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="bento-card hardware">
     <div class="card-content">
-      <h3>💻 硬件装备</h3>
+      <div class="card-icon">💻</div>
+      <h3>硬件装备</h3>
       <p>我的随身和随车硬件装备，包括电脑、耳机、手机、无人机、折叠自行车等</p>
       <span class="read-more">查看详情 →</span>
     </div>
@@ -52,73 +54,177 @@ hideMeta: true
   --card-background: #fff;
   --border-color: #eaeaea;
   --text-color: #333;
-  --shadow-color: rgba(0,0,0,0.1);
-  --shadow-hover-color: rgba(0,0,0,0.15);
+  --shadow-color: rgba(0,0,0,0.08);
+  --shadow-hover-color: rgba(0,0,0,0.12);
   --primary-color: #0066cc;
+  --software-gradient: linear-gradient(135deg, #e0f7fa, #bbdefb);
+  --hardware-gradient: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  --audio-gradient: linear-gradient(135deg, #fff8e1, #ffecb3);
+  --ai-gradient: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  --software-dark-gradient: linear-gradient(135deg, #0d4b63, #0a3d62);
+  --hardware-dark-gradient: linear-gradient(135deg, #4a235a, #512e5f);
+  --audio-dark-gradient: linear-gradient(135deg, #5d4037, #6d4c41);
+  --ai-dark-gradient: linear-gradient(135deg, #1b5e20, #2e7d32);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --card-background: #2d2d2d;
-    --border-color: #444;
+    --card-background: #1f1f1f;
+    --border-color: #333;
     --text-color: #e0e0e0;
-    --shadow-color: rgba(0,0,0,0.3);
-    --shadow-hover-color: rgba(0,0,0,0.4);
+    --shadow-color: rgba(0,0,0,0.2);
+    --shadow-hover-color: rgba(0,0,0,0.3);
     --primary-color: #5c9eff;
   }
 }
 
-.toolkit-container, .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0;
+.bento-container, .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
 }
 
-.toolkit-card {
-  flex: 1;
-  min-width: 250px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px var(--shadow-color);
-  transition: all 0.3s ease;
+.bento-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: visible;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: none;
   color: var(--text-color);
-  background-color: var(--card-background);
-  border: 1px solid var(--border-color);
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  padding-bottom: 1px; /* 添加额外的底部内边距 */
 }
 
-.toolkit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px var(--shadow-hover-color);
+.bento-card {
+  background: var(--card-background);
+}
+
+.bento-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.bento-card.software::before {
+  background: var(--software-gradient);
+}
+
+.bento-card.hardware::before {
+  background: var(--hardware-gradient);
+}
+
+.bento-card.audio-project::before {
+  background: var(--audio-gradient);
+}
+
+.bento-card.ai-project::before {
+  background: var(--ai-gradient);
+}
+
+.bento-card {
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bento-card.software::before {
+    background: var(--software-dark-gradient);
+  }
+  
+  .bento-card.hardware::before {
+    background: var(--hardware-dark-gradient);
+  }
+  
+  .bento-card.audio-project::before {
+    background: var(--audio-dark-gradient);
+  }
+  
+  .bento-card.ai-project::before {
+    background: var(--ai-dark-gradient);
+  }
+  
+  .bento-card {
+    color: #fff;
+  }
+}
+
+.bento-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px var(--shadow-hover-color);
+}
+
+/* 添加伪元素创建边框效果 */
+.bento-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: transparent;
+  z-index: -1;
 }
 
 .card-content {
-  padding: 20px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .card-content h3 {
   margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  color: var(--text-color);
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .card-content p {
-  margin-bottom: 15px;
-  opacity: 0.8;
-  color: var(--text-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  flex-grow: 1;
 }
 
 .read-more {
   display: inline-block;
   font-weight: 500;
-  color: var(--primary-color);
+  margin-top: auto;
+  padding: 6px 0;
+  position: relative;
 }
 
-@media (max-width: 650px) {
-  .toolkit-card {
-    flex: 100%;
+.read-more:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.bento-card:hover .read-more:after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bento-container {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -126,18 +232,20 @@ hideMeta: true
 
 ## 🌟 Side Projects
 
-<div class="projects-container">
-  <a href="https://omniaudio.info/" class="toolkit-card project-card">
+<div class="bento-container projects-container">
+  <a href="https://omniaudio.info/" class="bento-card audio-project">
     <div class="card-content">
-      <h3>🎧 OmniAudio</h3>
+      <div class="card-icon">🎧</div>
+      <h3>OmniAudio</h3>
       <p>AI 稍后再听服务，将网页文章、文档转化为私人播客，生成可直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p>
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
   
-  <a href="https://instantai.houjoe.me/" class="toolkit-card project-card">
+  <a href="https://instantai.houjoe.me/" class="bento-card ai-project">
     <div class="card-content">
-      <h3>🤖 Instant AI</h3>
+      <div class="card-icon">🤖</div>
+      <h3>Instant AI</h3>
       <p>一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型，完全免费。</p>
       <span class="read-more">访问网站 →</span>
     </div>
