@@ -24,13 +24,77 @@
       background-color: #000;
     }
     
-    /* 隐藏左下角的加载信息和 by 文字 */
+    /* 隐藏原始的加载信息和 by 文字 */
     .pnlm-load-box,
-    .pnlm-lbar,
-    .pnlm-lbox,
     .pnlm-title,
     .pnlm-author {
       display: none !important;
+    }
+    
+    /* 自定义加载提示样式 */
+    #loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    
+    #loading-text {
+      margin-bottom: 20px;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    
+    /* 动画效果容器 */
+    .loading-animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+    
+    /* 动画效果样式 - 类似 Loading 2 */
+    .line {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+      border-radius: 15px;
+      background-color: #4b9cdb;
+      animation: loadingB 1.5s ease-in-out infinite;
+    }
+    
+    .line:nth-child(1) {
+      animation-delay: 0s;
+    }
+    
+    .line:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+    
+    .line:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    
+    @keyframes loadingB {
+      0% {
+        width: 15px;
+      }
+      50% {
+        width: 35px;
+      }
+      100% {
+        width: 15px;
+      }
     }
     
     /* 自定义控制按钮位置 */
@@ -106,6 +170,16 @@
   <!-- 错误信息容器 -->
   <div id="error-container" style="display: none;" class="error-message"></div>
   
+  <!-- 自定义加载提示 -->
+  <div id="loading-container">
+    <div id="loading-text">图片加载中...</div>
+    <div class="loading-animation">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+  
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // 显示错误信息
@@ -151,9 +225,33 @@
       const defaultHfov = isMobileDevice() ? 60 : 100;
       console.log('设备类型:', isMobileDevice() ? '移动设备' : 'PC设备', '视场角:', defaultHfov);
       
+      // 创建图片预加载并显示动画
+      const img = new Image();
+      let loadingContainer = document.getElementById('loading-container');
+      
+      // 图片加载完成后隐藏加载提示
+      img.onload = function() {
+        // 给用户一个短暂的动画完成时间，然后隐藏加载提示
+        setTimeout(function() {
+          loadingContainer.style.display = 'none';
+        }, 500);
+        
+        initPannellum();
+      };
+      
+      // 图片加载失败处理
+      img.onerror = function() {
+        showError('全景图片加载失败，请检查图片路径是否正确');
+        loadingContainer.style.display = 'none';
+      };
+      
+      // 开始加载图片
+      img.src = panoramaUrl;
+      
       // 使用 Pannellum 创建全景查看器
-      try {
-        pannellum.viewer('panorama', {
+      function initPannellum() {
+        try {
+          pannellum.viewer('panorama', {
           type: 'equirectangular',
           panorama: panoramaUrl,
           autoLoad: true,
@@ -190,6 +288,8 @@
       } catch (error) {
         console.error('创建查看器失败:', error);
         showError(`创建查看器失败：${error.message}`);
+        loadingContainer.style.display = 'none';
+      }
       }
     });
   </script>
