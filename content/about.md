@@ -360,5 +360,14 @@ hideMeta: true
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
+  
+  <a href="https://copyurl.houjoe.me/" class="bento-card software">
+    <div class="card-content">
+      <div class="card-icon">🔗</div>
+      <h3>CopyURL</h3>
+      <p>一款浏览器插件，支持快速将网页链接复制为多种格式并可检测移除链接里的追踪码，方便网页链接的分享。</p>
+      <span class="read-more">访问网站 →</span>
+    </div>
+  </a>
 </div>
 
