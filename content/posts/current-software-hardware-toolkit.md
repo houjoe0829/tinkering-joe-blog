@@ -19,6 +19,7 @@ author: "Joe"
 - [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受
 - [Notion](https://www.notion.so/)：算作个人 Wiki，但是已经不用 Notion 来建站了。
 - [Whimsical](https://whimsical.com/)：白板工具，主要用来梳理想法画原型图和流程图了，缺少移动端是个遗憾，但是好用且可完全免费使用
+- [Google Drive](https://workspace.google.com/products/drive/)：在需求探索阶段，我会用 Gemini 和 Google Docs 来写初始方案设计，也搭建了 MCP Server，可以让 Windsurf 也快速读取。
 
 ### 2️⃣ 浏览器
 - Chrome：无聊但真的稳定，兜兜转转，真的不如坚持用 Chrome。
