@@ -17,8 +17,8 @@ author: "Joe"
 	- 微信公众号：当做微信渠道信息发布平台，国内互动
 	- 小红书：只分享数码与硬件
 - [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受
-- [Notion](https://www.notion.so/)：Work 和 Research 工作台，算作个人 Wiki，但是已经不用 Notion 来建站了。
-- [Whimsical](https://whimsical.com/)：主要用来画原型图和流程图了，缺少移动端是个遗憾。
+- [Notion](https://www.notion.so/)：算作个人 Wiki，但是已经不用 Notion 来建站了。
+- [Whimsical](https://whimsical.com/)：白板工具，主要用来梳理想法画原型图和流程图了，缺少移动端是个遗憾，但是好用且可完全免费使用
 
 ### 2️⃣ 浏览器
 - Chrome：无聊但真的稳定，兜兜转转，真的不如坚持用 Chrome。
@@ -34,11 +34,11 @@ author: "Joe"
   - [CopyURL](https://chromewebstore.google.com/detail/copyurl-title-link-format/ocmgjlfbnlldclhibengfmabcbgimhhl)：复制当前网页的标题和链接，以想要的格式分享，这个也是我自己做的
 
 ### 3️⃣ 任务管理
-- [滴答清单](https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=)：超高性价比，而且任务管理、日历、番茄钟，均有
+- [滴答清单](https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=)：超高性价比，而且任务管理、日历、番茄钟，均有，始终找不到更好的替代品。
 
 ### 4️⃣ 阅读相关
 > 一切需要理解的东西都是阅读。
-- [Follow](https://follow.is/)：可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News
+- [Follow](https://follow.is/)：可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News，缺点还是小 bug 较多。
 - 微信读书：体验最好的中文阅读器，尤其是字体
 - Twitter：关注各路大神
 - YouTube：什么都能找到，还能字幕翻译
@@ -52,8 +52,10 @@ author: "Joe"
 
 ### 6️⃣ AI 与翻译助手
 - [豆包](https://www.doubao.com/chat/)：适合回答"是什么"的问题，可以快速耳机唤醒
-- [Instant AI](https://instantai.houjoe.me/)：简单的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek
-- [Windsurf](https://windsurf.com/)：AI 编程的工具
+- [Instant AI](https://instantai.houjoe.me/)：极简风格的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek API，这个也是我自己写的。
+- [Windsurf](https://windsurf.com/refer?referral_code=cd31deea80)：目前我觉得最信任的 Vibe Coding 工具，比 Cursor 稳定、体验好，且价格便宜。
+- [Gemini](https://gemini.com/)：Gemini 最近本身发力，Deep Research 很好用，以及与既有 Google Drive 的深度整合，体验越来越好。
+- 
 
 ### 7️⃣ 影视剧观看
 - 极空间影视：依赖极空间 Nas 自带的外网穿透，可以直连机器远程观影，可以参考我之前写的[《NAS 私有云：真国内观影必备》](/posts/nas-private-cloud-guide/)
@@ -95,7 +97,7 @@ author: "Joe"
 - **豆包的 Ola friend 耳机**：特意为了它写个文章：[《自驾和骑行的新伴侣：AI 耳机》](/posts/ola-friend-ai-earphone/)，主要是为了自驾和骑行的时候用豆包
 - **Anker 二合一快充**：电脑、手机、iPad、手表、Steam Deck 等所有设备的充电器和充电宝二合一
 - **Amazfit GTR 4**：运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表
-- **指甲刀**：始终保持敲键盘永远很舒服的指甲长度
+- **电动指甲刀**：始终保持敲键盘永远很舒服的指甲长度，电动的，打磨更快更均匀
 - **iPad mini**：最佳电子书阅读器，在这个 AI 盛行的时代，不太建议电纸书，输入和处理都不够
 - **随身 WiFi**：iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等
 
