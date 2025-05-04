@@ -82,8 +82,9 @@ author: "Joe"
 - [Linear mouse](https://linearmouse.app/zh-CN/)：Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了
 - [Trickster](https://www.apparentsoft.com/trickster)：不用打开 Finder 的情况下，方便快速调用最近的文件
 - [Downie 4](https://www.downie.cn/)：主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩
-- [Ice](https://icemenubar.app/)：Menubar 管理工具 Bartender 的最佳平替
-- [Hapigo](https://www.hapigo.com/): 免费的 Mac 启动器，还可以完成截图、AI 等功能
+- [Ice](https://icemenubar.app/)：Menubar 管理工具 Bartender 的最佳平替，完全免费
+- [Raycast](https://www.raycast.com/): 免费的 Mac 启动器，比系统自带的 spotlight 搜索功能性能好也强大
+- [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)：Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理。
 
 ## 硬件部分
 
