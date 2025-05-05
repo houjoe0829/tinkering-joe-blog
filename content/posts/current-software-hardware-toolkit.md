@@ -17,8 +17,8 @@ author: "Joe"
 	- 微信公众号：当做微信渠道信息发布平台，国内互动
 	- 小红书：只分享数码与硬件
 - [Day One](https://dayoneapp.com/)：日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受
-- [Notion](https://www.notion.so/)：算作个人 Wiki，但是已经不用 Notion 来建站了。
-- [Whimsical](https://whimsical.com/)：白板工具，主要用来梳理想法画原型图和流程图了，缺少移动端是个遗憾，但是好用且可完全免费使用
+- [Notion](https://www.notion.so/)：算作个人 Wiki 的目录，可以连接 Google drive 和 Whimsical，像是文档的连接器。
+- [Whimsical](https://whimsical.com/)：白板工具，主要用来梳理想法画原型图和流程图了，缺少移动端是个遗憾，但是好用且可免费使用。
 - [Google Drive](https://workspace.google.com/products/drive/)：在需求探索阶段，我会用 Gemini 和 Google Docs 来写初始方案设计，也搭建了 MCP Server，可以让 Windsurf 也快速读取。
 
 ### 2️⃣ 浏览器
@@ -55,8 +55,8 @@ author: "Joe"
 - [豆包](https://www.doubao.com/chat/)：适合回答"是什么"的问题，可以快速耳机唤醒
 - [Instant AI](https://instantai.houjoe.me/)：极简风格的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek API，这个也是我自己写的。
 - [Windsurf](https://windsurf.com/refer?referral_code=cd31deea80)：目前我觉得最信任的 Vibe Coding 工具，比 Cursor 稳定、体验好，且价格便宜。
-- [Gemini](https://gemini.com/)：Gemini 最近本身发力，Deep Research 很好用，以及与既有 Google Drive 的深度整合，体验越来越好。
-- 
+- [Gemini](https://gemini.com/)：Gemini 最近本身发力，Deep Research 很好用。
+- [Claude](https://claude.ai/)：Claude 依然是我最喜欢的主力 AI，主要是其回答更言之有物，最近加了搜索功能，还打通了 Google Drive，可以快速访问文件。
 
 ### 7️⃣ 影视剧观看
 - 极空间影视：依赖极空间 Nas 自带的外网穿透，可以直连机器远程观影，可以参考我之前写的[《NAS 私有云：真国内观影必备》](/posts/nas-private-cloud-guide/)
