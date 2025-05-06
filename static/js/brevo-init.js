@@ -64,16 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 调用 Brevo API 显示订阅表单
     if (window.Brevo) {
-      // 尝试不同的触发方式
+      // 使用 Brevo 的内置弹窗 API
       window.Brevo.push(['trigger', 'newsletter_subscription']);
-      // 如果上面的方式不起作用，尝试直接打开 Brevo 框架页面
-      setTimeout(function() {
-        window.open('/brevo-frame.html', '_blank', 'width=500,height=600');
-      }, 500);
     } else {
       console.error('Brevo SDK 未正确加载');
-      // 如果 Brevo SDK 未加载，直接打开 Brevo 框架页面
-      window.open('/brevo-frame.html', '_blank', 'width=500,height=600');
     }
   }
 });
