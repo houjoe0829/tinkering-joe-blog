@@ -1,5 +1,17 @@
 // Brevo 邮件订阅功能初始化
 document.addEventListener('DOMContentLoaded', function() {
+  // 手动触发页面浏览事件，帮助 Brevo 检测网站活动
+  if (window.Brevo) {
+    window.Brevo.push(['page_view']);
+    console.log('手动触发 Brevo 页面浏览事件');
+    
+    // 模拟用户交互，触发更多事件
+    setTimeout(function() {
+      window.Brevo.push(['track', 'page_viewed', { page_name: window.location.pathname }]);
+      console.log('触发自定义事件：page_viewed');
+    }, 2000);
+  }
+
   // 查找“通过邮件订阅”菜单项
   // 首先尝试查找菜单标识符
   let newsletterLinks = document.querySelectorAll('a[href="#"][data-id="newsletter"], li[data-id="newsletter"] a');
