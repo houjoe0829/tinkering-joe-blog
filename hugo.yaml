@@ -50,8 +50,6 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   
-
-  
   # 评论系统配置
   comments: true
   giscus:
