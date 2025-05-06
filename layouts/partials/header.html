@@ -140,8 +140,15 @@
                     {{- range .Children }}
                     <li>
                         <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+                            {{- if eq .Identifier "rss" }}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                            {{- else if eq .Identifier "telegram" }}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            {{- else if eq .Identifier "email" }}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            {{- end }}
                             {{- .Name -}}
-                            {{- if (findRE "://" .URL) }}&nbsp;
+                            {{- if and (findRE "://" .URL) (ne .Identifier "telegram") (ne .Identifier "email") }}&nbsp;
                             <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
                                 <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
@@ -212,6 +219,12 @@
                         <a href="https://t.me/blogofjoe" title="Telegram 订阅">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                             Telegram 订阅
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sibforms.com/serve/MUIFAM-lZgDepwQnhfKiP2138nlel3uC1i5sx-bKZALGGvfASZ5TG85ynlHE8jBUwTaHFV0LHWz76OvL9iFF1srm9fDsERwGDHDVLt0XYaN-rBzqezlXubvXpr_Hphp7zPBNbxUeKJwTklkpikF3bhx3pC-6oiNOzT18fVwLb1xYN9sBTsLqUTVs1_Atbhqj2iRUl57qJM0gOZTy" title="邮件订阅">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            邮件订阅
                         </a>
                     </li>
                 </ul>
