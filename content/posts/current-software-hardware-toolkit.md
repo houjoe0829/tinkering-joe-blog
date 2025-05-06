@@ -57,6 +57,7 @@ author: "Joe"
 - [Windsurf](https://windsurf.com/refer?referral_code=cd31deea80)：目前我觉得最信任的 Vibe Coding 工具，比 Cursor 稳定、体验好，且价格便宜。
 - [Gemini](https://gemini.com/)：Gemini 最近本身发力，Deep Research 很好用。
 - [Claude](https://claude.ai/)：Claude 依然是我最喜欢的主力 AI，主要是其回答更言之有物，最近加了搜索功能，还打通了 Google Drive，可以快速访问文件。
+- [Bob Translate](https://bobtranslate.com/)：一款好用的翻译软件，方便快捷唤起，且支持 Popclip 插件，可以快速翻译选中的文字。
 
 ### 7️⃣ 影视剧观看
 - 极空间影视：依赖极空间 Nas 自带的外网穿透，可以直连机器远程观影，可以参考我之前写的[《NAS 私有云：真国内观影必备》](/posts/nas-private-cloud-guide/)
