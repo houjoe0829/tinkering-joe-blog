@@ -1,3 +1,13 @@
 <!-- Brevo 邮件订阅功能集成 -->
-<script id="brevo-sdk" src="https://cdn.brevo.com/js/sdk-loader.js"></script>
+<script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+<script>
+    // Version: 2.0
+    window.Brevo = window.Brevo || [];
+    Brevo.push([
+        "init",
+        {
+        client_key: "mljwaeg6k0piy3hjf3jojegu"
+        }
+    ]);
+</script>
 <script src="/js/brevo-init.js"></script>
