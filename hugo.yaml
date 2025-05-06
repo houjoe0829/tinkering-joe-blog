@@ -137,4 +137,10 @@ menu:
       url: "https://t.me/blogofjoe"
       weight: 32
       parent: "subscribe"
-      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>' 
+      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>'
+    - identifier: "email"
+      name: "通过邮件订阅"
+      url: "https://sibforms.com/serve/MUIFAM-lZgDepwQnhfKiP2138nlel3uC1i5sx-bKZALGGvfASZ5TG85ynlHE8jBUwTaHFV0LHWz76OvL9iFF1srm9fDsERwGDHDVLt0XYaN-rBzqezlXubvXpr_Hphp7zPBNbxUeKJwTklkpikF3bhx3pC-6oiNOzT18fVwLb1xYN9sBTsLqUTVs1_Atbhqj2iRUl57qJM0gOZTy"
+      weight: 33
+      parent: "subscribe"
+      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>'
