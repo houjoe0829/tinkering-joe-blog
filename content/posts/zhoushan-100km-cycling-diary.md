@@ -13,7 +13,7 @@ tags: ["骑行", "现实是个开放世界"]
 
 但舟山本岛（不含朱家尖部分），有个特殊的吸引力，环一圈，恰好在 100 公里左右，而 100 是骑行的一个槛，这也是我把舟山本岛加入骑行愿望清单的理由之一。
 
-![骑行路线规划](/images/posts/zhoushan-100km-cycling-diary/cycling-route-planning.webp)
+![全部骑行的里程](/images/posts/zhoushan-100km-cycling-diary/cycling-route-planning.webp)
 
 此次挑战依然是小轮折叠车，4+2 骑行最适合的就是说走就走的骑行，从杭州出发两个半小时就到了。
 
@@ -31,7 +31,7 @@ tags: ["骑行", "现实是个开放世界"]
 
 路上还遇到一位公路车的哥们，大家都是佝偻着身子缓慢爬行，均速差不多 11 公里每小时。
 
-![顶着大风骑行](/images/posts/zhoushan-100km-cycling-diary/cycling-against-wind.webp)
+![顶着大风骑行的背影](/images/posts/zhoushan-100km-cycling-diary/cycling-against-wind.webp)
 
 而且我查了一下，舟山的3-5月是冷暖气流交汇，风大且多变，6-9月是大风和局部强降雨，只剩秋季了，但那个时候的气温不一定适合骑行。
 
@@ -47,9 +47,9 @@ tags: ["骑行", "现实是个开放世界"]
 
 沿途的海岛景色真的中规中矩，最集中的风光主要出现在普陀区附近。本岛东侧与东北侧基本是工厂、码头、采石场以及少量村子，西北侧会有很多城镇。比较推荐的是靠近普陀区的滨海大道了，位于西南侧，绿道干净，像公园一样，还有不少渔船停泊在港口。
 
-![普陀区滨海大道的景色](/images/posts/zhoushan-100km-cycling-diary/putuo-coastal-road.webp)
+![普陀区东南角](/images/posts/zhoushan-100km-cycling-diary/putuo-coastal-road.webp)
 
-![渔港停泊的渔船](/images/posts/zhoushan-100km-cycling-diary/fishing-boats.webp)
+![舟山西北侧的村子](/images/posts/zhoushan-100km-cycling-diary/fishing-boats.webp)
 
 ### 还有一个坑是百度地图给的
 
@@ -65,7 +65,7 @@ tags: ["骑行", "现实是个开放世界"]
 
 ### 还不错的海鲜疙瘩汤
 
-每次到沿海地方，我总会尝试一碗当地的海鲜面，不过舟山的海鲜面略显逊色，用的是挂面，口感偏软，整体风味也比较家常，缺少一些惊喜感，在东极岛也吃了一次 [我们在东极岛，天气阴](/posts/dongji-island-tour-2022) 。这次改为吃本地的面疙瘩，形状像虾头，从成品来看，依然比较朴素没那么多花里胡哨的，符合本地清淡的风格，但味道不错，海鲜没有额外的腥味，汤也合口，可能是骑饿了，但比较神奇的地方是，不管是面疙瘩还是海鲜面，都是超大一碗，汤远盖过了食材，需要碗底捞着吃。
+每次到沿海地方，我总会尝试一碗当地的海鲜面，不过舟山的海鲜面略显逊色，用的是挂面，口感偏软，整体风味也比较家常，缺少一些惊喜感，在东极岛也吃了一次（[我们在东极岛，天气阴](/posts/dongji-island-tour-2022)）。这次改为吃本地的面疙瘩，形状像虾头，从成品来看，依然比较朴素没那么多花里胡哨的，符合本地清淡的风格，但味道不错，海鲜没有额外的腥味，汤也合口，可能是骑饿了，但比较神奇的地方是，不管是面疙瘩还是海鲜面，都是超大一碗，汤远盖过了食材，需要碗底捞着吃。
 
 ![海鲜疙瘩汤的特写](/images/posts/zhoushan-100km-cycling-diary/seafood-soup.webp)
 
