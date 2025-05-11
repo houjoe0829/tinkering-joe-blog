@@ -4,6 +4,7 @@ import shutil
 from pathlib import Path
 import re
 from datetime import datetime
+import sys
 
 def extract_notion_metadata(content):
     """从 Notion 导出的内容中提取创建时间
@@ -83,85 +84,121 @@ def clean_notion_metadata(content):
     
     return content.strip() + '\n'
 
+def decode_filename(name):
+    """尝试多种编码方式解码文件名
+    
+    Args:
+        name: 原始文件名
+    
+    Returns:
+        解码后的文件名
+    """
+    encodings = ['utf-8', 'cp437', 'gbk', 'gb18030']
+    
+    # 如果已经是 UTF-8，直接返回
+    try:
+        name.encode('utf-8').decode('utf-8')
+        return name
+    except UnicodeEncodeError:
+        pass
+    
+    # 尝试不同的编码
+    for enc in encodings:
+        try:
+            if enc == 'cp437':
+                # ZIP 文件特殊处理
+                decoded = name.encode('cp437').decode('utf-8')
+            else:
+                # 其他编码直接尝试
+                decoded = name.encode('cp437').decode(enc)
+            return decoded
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            continue
+    
+    # 如果所有尝试都失败，返回原始名称并打印警告
+    print(f"警告：无法正确解码文件名 '{name}'，将使用原始名称")
+    return name
+
 def main():
     """主函数，处理 Notion 导出的 ZIP 文件
     只提取标题、正文、创建日期和图片
     """
+    # 检查命令行参数
+    if len(sys.argv) != 2:
+        print("用法: python3 extract_zip_utf8.py <zip文件路径>")
+        sys.exit(1)
+    
+    zip_path = Path(sys.argv[1])
+    if not zip_path.exists():
+        print(f"错误：找不到文件 {zip_path}")
+        sys.exit(1)
+    
     # 创建临时目录
     temp_dir = Path('temp_notion')
     temp_dir.mkdir(exist_ok=True)
     
-    # 查找 draftfiles 目录中的 ZIP 文件
-    zip_files = list(Path('draftfiles').glob('*.zip'))
+    print(f"正在解压文件: {zip_path}")
     
-    for zip_path in zip_files:
-        print(f"正在解压文件: {zip_path}")
+    # 解压 ZIP 文件
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        # 获取所有 Markdown 文件和图片文件
+        markdown_files = [f for f in zip_ref.namelist() if f.endswith('.md')]
+        image_files = [f for f in zip_ref.namelist() if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp'))]
         
-        # 解压 ZIP 文件
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-            # 获取所有 Markdown 文件和图片文件
-            markdown_files = [f for f in zip_ref.namelist() if f.endswith('.md')]
-            image_files = [f for f in zip_ref.namelist() if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp'))]
+        # 处理 Markdown 文件
+        for md_file in markdown_files:
+            # 解码文件名（处理中文）
+            decoded_name = decode_filename(md_file)
+            print(f"正在处理文章: {decoded_name}")
             
-            # 处理 Markdown 文件
-            for md_file in markdown_files:
-                # 解码文件名（处理中文）
+            # 读取文件内容
+            try:
+                content = zip_ref.read(md_file).decode('utf-8')
+            except UnicodeDecodeError:
                 try:
-                    # 尝试使用 UTF-8 解码
-                    decoded_name = md_file.encode('cp437').decode('utf-8')
-                except UnicodeEncodeError:
-                    # 如果失败，假设文件名已经是 UTF-8
-                    decoded_name = md_file
-                except Exception as e:
-                    print(f"警告：无法解码文件名 '{md_file}': {e}")
-                    continue
-                
-                print(f"正在处理文章: {decoded_name}")
-                
-                # 读取文件内容
-                try:
-                    content = zip_ref.read(md_file).decode('utf-8')
+                    content = zip_ref.read(md_file).decode('gbk')
                 except UnicodeDecodeError:
                     try:
-                        content = zip_ref.read(md_file).decode('gbk')
+                        content = zip_ref.read(md_file).decode('gb18030')
                     except UnicodeDecodeError:
                         print(f"错误：无法解码文件内容 '{decoded_name}'")
                         continue
-                
-                # 提取创建时间
-                created_time = extract_notion_metadata(content)
-                if not created_time:
-                    print(f"警告：无法从文件中提取创建时间，将使用当前时间")
-                    created_time = datetime.now().strftime('%Y-%m-%d')
-                
-                # 清理 Notion 元数据，只保留标题和正文
-                content = clean_notion_metadata(content)
-                
-                # 保存处理后的文件
-                output_path = temp_dir / decoded_name
-                # 确保父目录存在
-                output_path.parent.mkdir(parents=True, exist_ok=True)
-                output_path.write_text(content, encoding='utf-8')
-                
-                # 在文件开头添加创建时间的注释
-                with open(output_path, 'r+', encoding='utf-8') as f:
-                    content = f.read()
-                    f.seek(0)
-                    f.write(f"<!-- Created: {created_time} -->\n\n{content}")
             
-            # 提取所有图片文件
-            for img_file in image_files:
-                try:
-                    # 创建目标目录
-                    img_path = Path(img_file)
-                    target_dir = temp_dir / img_path.parent
-                    target_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    # 解压图片文件
-                    zip_ref.extract(img_file, temp_dir)
-                    print(f"已提取图片: {img_file}")
-                except Exception as e:
-                    print(f"警告：提取图片失败 '{img_file}': {e}")
+            # 提取创建时间
+            created_time = extract_notion_metadata(content)
+            if not created_time:
+                print(f"警告：无法从文件中提取创建时间，将使用当前时间")
+                created_time = datetime.now().strftime('%Y-%m-%d')
+            
+            # 清理 Notion 元数据，只保留标题和正文
+            content = clean_notion_metadata(content)
+            
+            # 保存处理后的文件
+            output_path = temp_dir / Path(decoded_name).name
+            # 确保父目录存在
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_path.write_text(content, encoding='utf-8')
+            
+            # 在文件开头添加创建时间的注释
+            with open(output_path, 'r+', encoding='utf-8') as f:
+                content = f.read()
+                f.seek(0)
+                f.write(f"<!-- Created: {created_time} -->\n\n{content}")
+        
+        # 提取所有图片文件到扁平结构
+        for img_file in image_files:
+            try:
+                # 解码文件名
+                decoded_name = decode_filename(img_file)
+                # 只使用文件名部分，不保留路径
+                target_path = temp_dir / Path(decoded_name).name
+                
+                # 提取图片文件
+                with zip_ref.open(img_file) as source, open(target_path, 'wb') as target:
+                    shutil.copyfileobj(source, target)
+                print(f"已提取图片: {decoded_name}")
+            except Exception as e:
+                print(f"警告：提取图片失败 '{img_file}': {e}")
     
     print("\n解压和基础处理完成！")
     print("\n后续步骤：")
