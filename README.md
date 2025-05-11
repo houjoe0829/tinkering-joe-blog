@@ -90,7 +90,7 @@ discovery-log/
     * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
-## 如何添加“天空之眼”图片
+## 如何添加"天空之眼"图片
 
 ### 添加新的全景图片
 1. 准备图片
@@ -144,7 +144,7 @@ draft: false
 - `id`：天空之眼全景图片的文件名（不包含扩展名）
 - `title`：可选，显示的标题，如果不提供则使用原始标题
 
-嵌入后的效果是一个带有“查看360°全景图片”提示的缩略图，点击后进入天空之眼详情页。
+嵌入后的效果是一个带有"查看360°全景图片"提示的缩略图，点击后进入天空之眼详情页。
 
 ## 博客样式定制
 
@@ -204,10 +204,97 @@ draft: false
     * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
+## 依据 Notion ZIP 压缩包来更新博文的规则
 
-## 依据 Markdown 文件自动更新博文的说明
+这些 Markdown 和附件通常是从 Notion 导出的 ZIP 压缩包，建议将 ZIP 文件先放在 `temp_files` 目录下。
 
-这些 Markdown 是从 Obsidian 导出的，包括 Markdown 文件和附件，都放在 `draftfiles` 目录下。
+请按照以下关键步骤来帮助更新至当前的 Blog 格式：
+
+1.  **接收并解压 Notion ZIP 包**：
+    *   AI 助手会接收您提供的 Notion ZIP 文件名。
+    *   使用 `scripts/extract_zip_utf8.py` 脚本来解压 ZIP 文件。这个脚本会处理文件名中的特殊字符，并将内容解压到 `temp_notion/以ZIP包名命名的目录/`。
+        ```bash
+        python3 scripts/extract_zip_utf8.py temp_files/你的Notion导出.zip
+        ```
+    *   AI 助手会浏览解压后的文件，通常包含一个主 Markdown 文件和存放附件（图片等）的文件夹。
+
+2.  **确定文章标题和主 Markdown 文件**：
+    *   AI 助手会根据解压后的文件名或内容，和您一起确认主 Markdown 文件及其文章标题。
+
+3.  **创建 Markdown 文件**：
+    *   在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件（文件名要求是英文单词，用短横线分隔，不要使用拼音）。
+
+4.  **添加 Frontmatter**：
+    *   AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括：
+        *   `title`：文章标题（来自 Notion 或您提供）
+        *   `date`：发布日期为今天，请使用指令 `$ date +%Y-%m-%d` 获取当前日期，不要使用 AI 数据库的日期
+        *   `draft`：是否为草稿，默认 `false`
+        *   `description`：文章简短描述（可从 Notion 内容提取或您提供）
+        *   `tags`：只能从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
+        *   `author`：作者信息 (默认为 "Joe")
+    *   每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
+    *   YAML 对特殊字符非常敏感，特别是在 Front Matter 中。
+    *   在元数据里，使用纯英文引号包裹 YAML 值。
+    *   在元数据里，统一使用半角标点符号。
+
+5.  **添加并调整文章正文**：
+    *   AI 会将主 Notion Markdown 文件中的正文内容复制到新创建的博客 Markdown 文件中。
+    *   **重要**：AI 会协助检查并修正 Notion 特有的 Markdown 格式，例如：
+        *   移除或转换 Notion 内部链接。
+        *   调整 Callout、Toggle 等 Notion 特有块的显示，使其符合标准 Markdown 或博客主题支持的格式。
+        *   清理不必要的 HTML 标签或样式。
+
+6.  **处理并添加图片**：
+    *   在 `static/images/posts/` 目录下，创建与文章同名（英文文件名）的目录。
+    *   AI 会将 Notion 导出的图片（通常在解压后的附件目录中）复制到这个新创建的图片目录中。
+    *   AI 会根据图片内容为图片文件进行有意义的重命名（英文，短横线分隔）。
+    *   使用 `compress_article_images.py` 脚本处理该文章的图片：
+        ```bash
+        python3 scripts/compress_article_images.py article-name
+        ```
+        这里的 `article-name` 是指不带 `.md` 后缀的英文文章文件名。
+    *   将压缩后的图片从 `static/images_compressed/posts/article-name/` 目录移动或复制到 `static/images/posts/article-name/` 目录下。
+    *   运行 `update_image_refs.py` 脚本，将文章中的图片引用更新为指向 `static/images/posts/article-name/` 下的 WebP 图片。或者，AI 会手动调整 Markdown 文件中的图片路径，确保它们指向正确的相对路径，例如：`![图片描述](/images/posts/article-name/image-name.webp)`。
+
+7.  **最终检查**：
+    *   确认所有图片都能正确显示。
+    *   检查文章格式是否规范，特别是列表、引用、代码块等。
+    *   确保图片描述准确且有意义。
+    *   验证文章元数据的准确性，特别是标签是否符合预定义列表。
+
+8.  **检查交叉引用**：
+    *   与处理 Obsidian 文件类似，使用 grep 或项目提供的搜索脚本在所有博客文章中搜索当前文章的相关关键词。
+        ```bash
+        grep -r "关键词" content/posts/
+        # 或者
+        python3 scripts/grep_search.py "关键词"
+        ```
+    *   检查其他文章中是否有引用当前文章的链接。
+    *   如果发现引用，确保链接格式正确（应为 `/posts/article-name` 格式），修正任何指向 Notion 平台的旧链接，并更新所有相关文章中的引用。
+    *   AI 不会主动新增引用，仅修正已发现的错误或不当引用。
+
+9.  **清理原始图片**：
+    *   运行 `clean_original_images.py` 脚本来预览并删除已转换为 WebP 且已备份的原始图片（位于 `static/images/posts/article-name/` 目录下，非 WebP 格式的图片）。
+        ```bash
+        # 预览要删除的原始图片文件
+        python3 scripts/clean_original_images.py
+        # 确认无误后删除原始图片文件
+        python3 scripts/clean_original_images.py --execute
+        ```
+    *   注意：此脚本主要针对全局图片清理，对于单篇文章，确保只清理对应文章目录下的原始图片。通常 `compress_article_images.py` 和 `update_image_refs.py` 处理后，原始图片（如 .jpg, .png）仍在 `static/images/posts/article-name/`，这些是需要被 `clean_original_images.py` 清理的。
+
+10. **清理所有临时文件**：
+    *   清理 Notion 解压的临时目录：`rm -rf temp_notion/以ZIP包名命名的目录` (请替换为实际目录名)
+    *   清理图片压缩过程中生成的临时目录：`rm -rf static/images_compressed/posts/article-name`
+    *   清理 `temp_files` 目录中已处理的 Notion ZIP 文件：`rm -f temp_files/你的Notion导出.zip` (请替换为实际文件名)
+
+11. **最后，运行自检清单**：
+    *   首先，再次确认文章的标签是否都出自预定义的标签列表。
+    *   其次，回顾操作记录，确保所有相关的临时文件和目录都已清理干净。
+
+## 依据 Obsidian Markdown 文件来更新博文的规则
+
+这些 Markdown 是从 Obsidian 导出的，包括 Markdown 文件和附件，都放在 `temp_files` 目录下。
 
 请按照以下关键步骤来帮助更新至当前的 Blog 格式：
 
@@ -279,7 +366,7 @@ draft: false
 7. **清理所有临时文件**：
    * 清理临时解压目录：`rm -rf temp_notion/*`
    * 清理临时压缩图片：`rm -rf static/images_compressed/posts/article-name`
-   * 清理已处理的 Notion zip 文件：`rm -f draftfiles/*.zip`
+   * 清理已处理的草稿 zip 文件：`rm -f temp_files/*.zip`
 
 8. 最后，运行自检清单
    首先，一定要先读一下预定义的标签列表，看看标签是否出自列表
@@ -355,7 +442,7 @@ draft: false
    ```bash
    # 清理 Notion 处理的临时文件
    rm -rf temp_notion
-   rm -f draftfiles/*.zip
+   rm -f temp_files/*.zip
    
    # 清理图片压缩的临时目录
    rm -rf static_compressed
