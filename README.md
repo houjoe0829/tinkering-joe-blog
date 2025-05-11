@@ -204,7 +204,7 @@ draft: false
     * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
     * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
-## 依据 Notion ZIP 压缩包来更新博文的规则
+## 依据导出的 Notion ZIP 压缩包来更新博文的规则
 
 这些 Markdown 和附件通常是从 Notion 导出的 ZIP 压缩包，建议将 ZIP 文件先放在 `temp_files` 目录下。
 
@@ -246,15 +246,29 @@ draft: false
 
 6.  **处理并添加图片**：
     *   在 `static/images/posts/` 目录下，创建与文章同名（英文文件名）的目录。
-    *   AI 会将 Notion 导出的图片（通常在解压后的附件目录中）复制到这个新创建的图片目录中。
-    *   AI 会根据图片内容为图片文件进行有意义的重命名（英文，短横线分隔）。
-    *   使用 `compress_article_images.py` 脚本处理该文章的图片：
+    *   将 Notion 导出的图片（通常在解压后的附件目录中）直接复制到这个新创建的图片目录中。
+    *   **重要：不要手动重命名图片文件，也不要手动修改 Markdown 中的图片引用路径**。
+    *   按顺序执行以下命令处理图片：
         ```bash
+        # 1. 压缩并转换图片为 WebP 格式
         python3 scripts/compress_article_images.py article-name
+
+        # 2. 更新文章中的图片引用为 WebP 格式
+        python3 scripts/update_image_refs.py
+
+        # 3. 将压缩后的图片移动到正确位置
+        cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
+
+        # 4. 清理原始图片文件
+        python3 scripts/clean_original_images.py --execute
+
+        # 5. 清理临时文件
+        rm -rf static/images_compressed/posts/article-name
         ```
-        这里的 `article-name` 是指不带 `.md` 后缀的英文文章文件名。
-    *   将压缩后的图片从 `static/images_compressed/posts/article-name/` 目录移动或复制到 `static/images/posts/article-name/` 目录下。
-    *   运行 `update_image_refs.py` 脚本，将文章中的图片引用更新为指向 `static/images/posts/article-name/` 下的 WebP 图片。或者，AI 会手动调整 Markdown 文件中的图片路径，确保它们指向正确的相对路径，例如：`![图片描述](/images/posts/article-name/image-name.webp)`。
+    *   注意事项：
+        * 所有图片最终会统一为 WebP 格式
+        * 图片引用路径会自动更新为 `/images/posts/article-name/image-name.webp` 格式
+        * 在执行清理前，确保 WebP 图片已经正确生成
 
 7.  **最终检查**：
     *   确认所有图片都能正确显示。
@@ -720,3 +734,44 @@ python3 scripts/check_spacing.py --file content/posts/your-article.md --fix
 2. **代码部分**：所有代码文件采用 [MIT](https://opensource.org/licenses/MIT) 许可证。
 
 详细的许可说明请查看 [LICENSE.md](LICENSE.md) 文件。
+
+## 图片处理的标准流程
+
+为了确保博客图片的一致性和质量，请严格按照以下步骤处理图片：
+
+### 1. 准备工作
+- 确保原始图片已经放在正确的目录：`static/images/posts/article-name/`
+- **不要手动重命名图片文件**，让脚本来处理格式转换
+- **不要手动修改 Markdown 中的图片引用**，让脚本来更新
+
+### 2. 执行图片处理（按顺序执行）
+```bash
+# 1. 压缩并转换图片为 WebP 格式
+python3 scripts/compress_article_images.py article-name
+
+# 2. 更新文章中的图片引用为 WebP 格式
+python3 scripts/update_image_refs.py
+
+# 3. 将压缩后的图片移动到正确位置
+cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
+
+# 4. 清理原始图片文件
+python3 scripts/clean_original_images.py --execute
+
+# 5. 清理临时文件
+rm -rf static/images_compressed/posts/article-name
+```
+
+### 3. 注意事项
+- 脚本会自动处理图片压缩和格式转换
+- 脚本会保护网站图标等特殊图片文件
+- 所有图片最终会统一为 WebP 格式
+- 图片引用路径统一为 `/images/posts/article-name/image-name.webp`
+- 在执行清理前，确保 WebP 图片已经正确生成
+
+### 4. 图片命名建议
+虽然文件名最终会被脚本处理，但建议在准备原始图片时遵循以下命名规范：
+- 使用有意义的英文名称
+- 使用短横线分隔单词
+- 避免使用空格和特殊字符
+- 示例：`cycling-route-overview.jpg` 而不是 `image1.jpg`
