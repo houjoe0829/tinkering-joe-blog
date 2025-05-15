@@ -2,6 +2,9 @@
 
 这个博客使用 Hugo 静态网站生成器构建，并托管在 Cloudflare Pages 上。
 
+- 博客官方地址是：[https://houjoe.me/](https://houjoe.me/)
+- Cloudflare 的原始地址是：[https://discovery-log.pages.dev/](https://discovery-log.pages.dev/)
+
 ## 项目目录结构
 
 ```
