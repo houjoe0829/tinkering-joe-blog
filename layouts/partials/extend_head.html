@@ -1,3 +1,9 @@
 <!-- 自定义 JavaScript 文件 -->
 {{- $relativeDate := resources.Get "js/relative-date.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $relativeDate.RelPermalink }}" integrity="{{ $relativeDate.Data.Integrity }}" crossorigin="anonymous"></script>
+
+<!-- 加载更多文章功能 -->
+{{- if .IsHome }}
+  {{- $loadMore := resources.Get "js/load-more.js" | resources.Minify | resources.Fingerprint "sha512" }}
+  <script src="{{ $loadMore.RelPermalink }}" integrity="{{ $loadMore.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end }}
