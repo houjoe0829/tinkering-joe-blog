@@ -38,7 +38,7 @@ hideMeta: true
 
 ## 📒 我写的东西
 
-<p class="writing-description">以下是我博客里的所有标签及其对应的内容数量：</p>
+<p class="writing-description">以下是我博客里的内容目录：</p>
 
 {{< tag-cloud >}}
 
@@ -46,8 +46,8 @@ hideMeta: true
 
 <p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>
 
-<div class="bento-container">
-  <a href="/posts/current-software-hardware-toolkit/" class="bento-card software">
+<div class="bento-container toolkit-cards">
+  <a href="/posts/current-software-hardware-toolkit/" class="bento-card software toolkit-card">
     <div class="card-content">
       <div class="card-icon">📱</div>
       <h3>软件工具</h3>
@@ -56,7 +56,7 @@ hideMeta: true
     </div>
   </a>
   
-  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="bento-card hardware">
+  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="bento-card hardware toolkit-card">
     <div class="card-content">
       <div class="card-icon">💻</div>
       <h3>硬件装备</h3>
@@ -67,21 +67,65 @@ hideMeta: true
 </div>
 
 <style>
+/* 为工具包卡片添加特殊样式 */
+.toolkit-cards .toolkit-card::before {
+  opacity: 0.25 !important; /* 降低背景不透明度 */
+}
+
+.toolkit-cards .toolkit-card {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important;
+  border: 1px solid rgba(0,0,0,0.05);
+  max-height: 220px;
+}
+
+.toolkit-cards .toolkit-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+.toolkit-cards .card-content {
+  padding: 12px !important;
+}
+
+.toolkit-cards .card-icon {
+  font-size: 1.5rem !important;
+  margin-bottom: 8px !important;
+}
+
+.toolkit-cards .card-content h3 {
+  font-size: 1.1rem !important;
+  margin-bottom: 6px !important;
+}
+
+.toolkit-cards .card-content p {
+  font-size: 0.9rem !important;
+  line-height: 1.3 !important;
+  margin-bottom: 8px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toolkit-cards .toolkit-card {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+}
+</style>
+
+<style>
 :root {
   --card-background: #fff;
   --border-color: #eaeaea;
   --text-color: #333;
-  --shadow-color: rgba(0,0,0,0.08);
-  --shadow-hover-color: rgba(0,0,0,0.12);
+  --shadow-color: rgba(0,0,0,0.04);
+  --shadow-hover-color: rgba(0,0,0,0.08);
   --primary-color: #0066cc;
-  --software-gradient: linear-gradient(135deg, #e0f7fa, #bbdefb);
-  --hardware-gradient: linear-gradient(135deg, #f3e5f5, #e1bee7);
-  --audio-gradient: linear-gradient(135deg, #fff8e1, #ffecb3);
-  --ai-gradient: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-  --software-dark-gradient: linear-gradient(135deg, #0d4b63, #0a3d62);
-  --hardware-dark-gradient: linear-gradient(135deg, #4a235a, #512e5f);
-  --audio-dark-gradient: linear-gradient(135deg, #5d4037, #6d4c41);
-  --ai-dark-gradient: linear-gradient(135deg, #1b5e20, #2e7d32);
+  --software-gradient: linear-gradient(135deg, rgba(224, 247, 250, 0.4), rgba(187, 222, 251, 0.4));
+  --hardware-gradient: linear-gradient(135deg, rgba(243, 229, 245, 0.4), rgba(225, 190, 231, 0.4));
+  --audio-gradient: linear-gradient(135deg, rgba(255, 248, 225, 0.4), rgba(255, 236, 179, 0.4));
+  --ai-gradient: linear-gradient(135deg, rgba(232, 245, 233, 0.4), rgba(200, 230, 201, 0.4));
+  --software-dark-gradient: linear-gradient(135deg, rgba(13, 75, 99, 0.4), rgba(10, 61, 98, 0.4));
+  --hardware-dark-gradient: linear-gradient(135deg, rgba(74, 35, 90, 0.4), rgba(81, 46, 95, 0.4));
+  --audio-dark-gradient: linear-gradient(135deg, rgba(93, 64, 55, 0.4), rgba(109, 76, 65, 0.4));
+  --ai-dark-gradient: linear-gradient(135deg, rgba(27, 94, 32, 0.4), rgba(46, 125, 50, 0.4));
   
   /* 标签颜色变量 */
   --tag-blue: #2196f3;
@@ -188,8 +232,8 @@ hideMeta: true
 }
 
 .bento-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 30px var(--shadow-hover-color);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 20px var(--shadow-hover-color);
 }
 
 /* 添加伪元素创建边框效果 */
@@ -203,7 +247,7 @@ hideMeta: true
 }
 
 .card-content {
-  padding: 24px;
+  padding: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -212,21 +256,22 @@ hideMeta: true
 }
 
 .card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
 .card-content h3 {
   margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 .card-content p {
-  margin-bottom: 20px;
-  line-height: 1.6;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-size: 0.95rem;
   flex-grow: 1;
 }
 
