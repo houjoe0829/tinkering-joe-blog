@@ -36,6 +36,12 @@ hideMeta: true
 - 🐙 **GitHub**：[houjoe0829](https://github.com/houjoe0829) -  我也开始写代码了……
 - 💬 **Wechat**：微信号[houjoe829]  -  请备注来意
 
+## 📒 我写的东西
+
+<p class="writing-description">以下是我博客里的所有标签及其对应的内容数量：</p>
+
+{{< tag-cloud >}}
+
 ## 🔧 我的日常工具包
 
 <p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>

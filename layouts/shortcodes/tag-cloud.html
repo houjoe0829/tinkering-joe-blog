@@ -1,0 +1,27 @@
+<!-- 标签云 shortcode -->
+<div id="aboutTagCloud" class="post-tags">
+  {{- $tags := slice }}
+  {{- range $name, $taxonomy := .Site.Taxonomies.tags }}
+    {{- /* 获取原始标签名称 */ -}}
+    {{- $originalName := "" }}
+    {{- range $taxonomy }}
+      {{- range .Page.Params.tags }}
+        {{- if eq (. | urlize) ($name | urlize) }}
+          {{- $originalName = . }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- if $originalName }}
+      {{- $tagInfo := dict "name" $originalName "urlizedName" $name "count" (len $taxonomy) }}
+      {{- $tags = $tags | append $tagInfo }}
+    {{- end }}
+  {{- end }}
+  
+  {{- $sortedTags := sort (sort $tags "name") "count" "desc" }}
+  {{- range $tagInfo := $sortedTags }}
+  <a href="/tags/{{ $tagInfo.name | urlize }}/" class="tag-link">
+    <span class="tag-name">{{ $tagInfo.name }}</span>
+    <span class="tag-count">{{ $tagInfo.count }}</span>
+  </a>
+  {{- end }}
+</div>
