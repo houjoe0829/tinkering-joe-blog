@@ -31,7 +31,13 @@ function initLoadMore() {
 function showCompletionMessage() {
     const loadMoreContainer = document.getElementById('load-more-container');
     if (!loadMoreContainer) return;
-    loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalPosts} 篇博文！</p>`;
+    
+    // 获取想法的数量
+    const loadMoreBtn = document.getElementById('load-more');
+    const totalThoughts = loadMoreBtn ? loadMoreBtn.getAttribute('data-total-thoughts') : 0;
+    
+    // 显示包含博文和想法数量的完成消息
+    loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalPosts} 篇博文，${totalThoughts} 条想法！</p>`;
 }
 
 // 设置加载状态

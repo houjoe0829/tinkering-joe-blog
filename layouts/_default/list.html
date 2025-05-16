@@ -110,7 +110,7 @@
 
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer" id="load-more-container">
-  <button id="load-more" class="next" data-total-posts="{{ len $pages }}">
+  <button id="load-more" class="next" data-total-posts="{{ len $pages }}" data-total-thoughts="{{ len (where .Site.RegularPages "Section" "thoughts") }}">
     查看更多
   </button>
 </footer>
