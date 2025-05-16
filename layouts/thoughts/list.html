@@ -14,15 +14,32 @@
 <div class="posts thoughts-list">
   {{- range $index, $page := $paginator.Pages }}
   <article class="post-entry thought-entry">
+    <header class="entry-header">
+      <div class="thought-icon">
+        <svg class="icon" viewBox="0 0 1024 1024" width="20" height="20" fill="currentColor">
+          <path d="M512 32C247.04 32 32 224 32 464A410.24 410.24 0 0 0 172.48 768L160 965.12a25.28 25.28 0 0 0 39.04 22.4l168-112A528.64 528.64 0 0 0 512 896c264.96 0 480-192 480-432S776.96 32 512 32z m-144 608c-72 0-118.72-53.12-118.72-135.04A216 216 0 0 1 416 289.92a36.8 36.8 0 0 1 45.44 17.6c6.4 17.6-8.64 32-26.56 39.04a142.72 142.72 0 0 0-96 88 100.16 100.16 0 0 1 147.2 93.44A107.84 107.84 0 0 1 368 640z m288 0c-72.32 0-119.04-53.12-119.04-135.04a216.32 216.32 0 0 1 167.68-215.04a36.48 36.48 0 0 1 45.44 17.6c6.4 16.96-8.32 32-26.56 39.04a142.4 142.4 0 0 0-96 88 100.16 100.16 0 0 1 147.2 93.44 107.52 107.52 0 0 1-117.76 112z"/>
+        </svg>
+      </div>
+    </header>
     <div class="entry-content">
-      <p>{{ .Content }}</p>
+      {{ .Content }}
     </div>
     {{- if not (.Param "hideMeta") }}
     <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
+      {{- $scratch := newScratch }}
+      {{- if not .Date.IsZero -}}
+        {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+        {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
+      {{- end }}
+      
+      {{- with ($scratch.Get "meta") }}
+      <span class="meta-item">
+        {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+      </span>
+      {{- end }}
     </footer>
     {{- end }}
-    <a class="entry-link" aria-label="thought link to {{ .Date.Format "2006-01-02" }}" href="{{ .Permalink }}"></a>
+    <a class="entry-link" aria-label="thought link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
   </article>
   {{- end }}
 </div>
