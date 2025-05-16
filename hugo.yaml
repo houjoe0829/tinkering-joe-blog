@@ -48,6 +48,7 @@ params:
   ShowShareButtons: true
   ShowToc: true
   ShowBreadCrumbs: true
+  mainSections: ["posts", "thoughts"]  # 首页显示博文和随思录内容
   ShowCodeCopyButtons: true
   
   # 评论系统配置
@@ -109,14 +110,18 @@ menu:
       name: ""
       url: "/search/"
       weight: 5
+    - identifier: "thoughts"
+      name: "随思录"
+      url: "/thoughts/"
+      weight: 8
+    - identifier: "posts"
+      name: "博文"
+      url: "/posts/"
+      weight: 10
     - identifier: "sky-eye"
       name: "天空之眼"
       url: "/sky-eye/"
-      weight: 8
-    - identifier: "posts"
-      name: "文章"
-      url: "/posts/"
-      weight: 10
+      weight: 15
     - identifier: "about"
       name: "关于我"
       url: "/about/"

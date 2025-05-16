@@ -1,0 +1,38 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>随思录</h1>
+  <div class="post-description">
+    记录那些介于Twitter动态与Blog长文之间的想法
+  </div>
+</header>
+
+{{- $pages := where .RegularPages "Type" "thoughts" }}
+{{- $paginator := .Paginate $pages 10 }}
+
+<div class="posts thoughts-list">
+  {{- range $index, $page := $paginator.Pages }}
+  <article class="post-entry thought-entry">
+    <div class="entry-content">
+      <p>{{ .Content }}</p>
+    </div>
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="thought link to {{ .Date.Format "2006-01-02" }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer" id="load-more-container">
+  <button id="load-more" class="next" data-total-posts="{{ len $pages }}">
+    查看更多
+  </button>
+</footer>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

@@ -48,27 +48,59 @@
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
-{{- else if $index }}
-{{- $class = "post-entry" }}
+{{- else if eq .Type "thoughts" }}
+  {{- $class = printf "%s %s" $class "thought-entry" }}
 {{- end }}
 
 <article class="{{ $class }}">
   {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
   <header class="entry-header">
+    {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
+    {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
+    <div class="thought-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </div>
+    {{- else }}
     <h2>
       {{- .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h2>
+    {{- end }}
   </header>
-  {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
+    {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
+      {{ .Content }}
+    {{- else if (ne (.Param "hideSummary") true) }}
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- end }}
   </div>
-  {{- end }}
   {{- if not (.Param "hideMeta") }}
   <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
+    {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
+    {{- if $.IsHome }}
+      <!-- 首页上的所有条目，不显示作者信息 -->
+      {{- $scratch := newScratch }}
+      {{- if not .Date.IsZero -}}
+        {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+        {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
+      {{- end }}
+      
+      {{- if and (ne .Type "thoughts") (not $isFirstEntry) (.Param "ShowReadingTime") -}}
+        {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d 分钟" .ReadingTime))) }}
+      {{- end }}
+      
+      {{- with ($scratch.Get "meta") }}
+      <span class="meta-item">
+        {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+      </span>
+      {{- end }}
+    {{- else }}
+      {{- partial "post_meta.html" . -}}
+    {{- end }}
   </footer>
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>

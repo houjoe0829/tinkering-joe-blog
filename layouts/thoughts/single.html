@@ -1,0 +1,52 @@
+{{- define "main" }}
+
+<article class="post-single thought-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <div class="post-meta">
+      <!-- 随思录自定义元信息，不显示阅读时间和作者信息 -->
+      {{- $scratch := newScratch }}
+      {{- if not .Date.IsZero -}}
+        {{- $dateStr := .Date | time.Format "2006-01-02" -}}
+        {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
+      {{- end }}
+      {{- with ($scratch.Get "meta") }}
+      <span class="meta-item">
+        {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+      </span>
+      {{- end }}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

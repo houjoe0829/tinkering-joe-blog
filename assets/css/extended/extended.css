@@ -1,5 +1,35 @@
 /* 优化博客文章详情页布局间距 */
 
+/* 随思录样式 */
+.thought-entry {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--primary);
+}
+
+:root[data-theme="dark"] .thought-entry {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.thought-entry .entry-content {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.thought-icon {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.thought-entry .entry-footer {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
 /* 调整面包屑导航的间距 */
 .breadcrumbs {
     margin-bottom: 2rem;
@@ -124,6 +154,56 @@
     gap: 0.8rem;
     height: var(--header-height);
     overflow: visible;
+}
+
+/* 随思录样式 */
+.thought-entry {
+    background-color: var(--entry);
+    border-radius: 10px;
+    border-left: 4px solid #4a6fa5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dark .thought-entry {
+    border-left: 4px solid #6d8cb7;
+}
+
+.thought-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thought-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #4a6fa5;
+}
+
+.dark .thought-icon {
+    color: #6d8cb7;
+}
+
+.thought-entry .entry-content {
+    margin: 0;
+    padding: 0;
+}
+
+.thought-single .post-header {
+    margin-bottom: 20px;
+}
+
+/* 首页混合展示样式 */
+.posts .thought-entry .entry-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.posts .thought-entry .entry-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
 .nav #menu li {

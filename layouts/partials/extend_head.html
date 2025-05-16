@@ -1,0 +1,3 @@
+<!-- 自定义 JavaScript 文件 -->
+{{- $relativeDate := resources.Get "js/relative-date.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $relativeDate.RelPermalink }}" integrity="{{ $relativeDate.Data.Integrity }}" crossorigin="anonymous"></script>

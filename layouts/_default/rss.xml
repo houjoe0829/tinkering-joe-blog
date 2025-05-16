@@ -6,7 +6,9 @@
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
-{{- $pages = where $pages "Section" "posts" -}}
+{{- $postPages := where $pages "Section" "posts" -}}
+{{- $thoughtPages := where $pages "Section" "thoughts" -}}
+{{- $pages = $postPages | union $thoughtPages -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
