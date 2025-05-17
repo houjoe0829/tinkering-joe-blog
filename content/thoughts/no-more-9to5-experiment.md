@@ -1,6 +1,6 @@
 ---
 date: 2025-05-18T00:19:57+08:00
-tags: ["没用的念想"]
+tags: ["没用的念想", "Vibe Coding"]
 showInHome: true
 draft: false
 ---
