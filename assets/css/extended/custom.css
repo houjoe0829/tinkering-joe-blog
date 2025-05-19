@@ -328,4 +328,49 @@
         height: 18px; /* 增大移动端尺寸 */
         top: -1.5px; /* 微调垂直位置 */
     }
+}
+
+/* 首页随思录样式调整 */
+.posts .thought-entry {
+    margin-top: 20px;  /* 为随思录添加上边距 */
+}
+
+.posts .thought-entry .entry-content p {
+    margin: 0;  /* 移除随思录内容段落的默认边距 */
+}
+
+.posts .thought-entry .entry-content > *:first-child {
+    margin-top: 0;  /* 移除内容第一个元素的上边距 */
+}
+
+.posts .thought-entry .entry-content > *:last-child {
+    margin-bottom: 0;  /* 移除内容最后一个元素的下边距 */
+}
+
+/* 首页第一个随思录条目特殊样式 */
+.first-entry.thought-entry {
+    margin-bottom: 30px;  /* 增加与下面内容的间距 */
+}
+
+/* 确保随思录图片在首页正确显示 */
+.posts .thought-entry .entry-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* 确保移动端适配 */
+@media screen and (max-width: 768px) {
+    .posts .thought-entry {
+        margin-top: 15px;
+    }
+    
+    .first-entry.thought-entry {
+        margin-bottom: 25px;
+    }
+    
+    .posts .thought-entry .entry-content img {
+        margin: 10px 0;
+    }
 } 
