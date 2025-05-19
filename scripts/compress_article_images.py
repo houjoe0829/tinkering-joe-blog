@@ -69,15 +69,24 @@ def compress_image(input_path, output_path, max_size=(1920, 1920), quality=85):
     except Exception as e:
         print(f"处理图片出错 {input_path}: {str(e)}")
 
-def process_article_images(article_name):
+def process_article_images(article_path):
     """处理指定文章的所有图片
     
     Args:
-        article_name: 文章的英文名称
+        article_path: 文章的完整路径
     """
+    # 从文章路径中提取文章类型和名称
+    path_parts = article_path.split('/')
+    if len(path_parts) < 2:
+        print(f"错误：无效的文章路径: {article_path}")
+        sys.exit(1)
+        
+    article_type = path_parts[-2]  # posts 或 thoughts
+    article_name = path_parts[-1].replace('.md', '')
+    
     # 构建源目录和目标目录
-    source_dir = f"static/images/posts/{article_name}"
-    target_dir = f"static/images_compressed/posts/{article_name}"
+    source_dir = f"static/images/{article_type}/{article_name}"
+    target_dir = f"static/images_compressed/{article_type}/{article_name}"
     
     # 检查源目录是否存在
     if not os.path.exists(source_dir):
@@ -115,8 +124,9 @@ def process_article_images(article_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("使用方法: python compress_article_images.py <article-name>")
-        print("示例: python compress_article_images.py 2019-toys-and-gadgets-recap")
+        print("使用方法: python compress_article_images.py <article-path>")
+        print("示例: python compress_article_images.py content/posts/my-article.md")
+        print("      python compress_article_images.py content/thoughts/my-thought.md")
         sys.exit(1)
     
     article_name = sys.argv[1]
