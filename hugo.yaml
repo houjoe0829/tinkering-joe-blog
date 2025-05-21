@@ -48,7 +48,7 @@ params:
   ShowShareButtons: true
   ShowToc: true
   ShowBreadCrumbs: true
-  mainSections: ["posts", "thoughts"]  # 首页显示博文和随思录内容
+  mainSections: ["posts", "thoughts", "sky-eye"]  # 首页显示博文、随思录和天空之眼内容
   ShowCodeCopyButtons: true
   
   # 评论系统配置
