@@ -1,7 +1,7 @@
 ---
 date: 2025-05-18T00:19:57+08:00
 description: "阐述作者在2025年进行\"不再9到5\"实验的思考，以及在AI时代背景下，进行个人项目如个人博客、OmniAudio和AI客户端的尝试与感悟。"
-tags: ["没用的念想", "Vibe Coding"]
+tags: ["我有个想法！", "Vibe Coding"]
 showInHome: true
 draft: false
 ---
