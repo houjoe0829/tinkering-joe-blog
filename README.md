@@ -242,10 +242,12 @@ draft: false
 
 请按照以下关键步骤来帮助更新至当前的 Blog 格式：
 
-1.  **接收并解压 Notion ZIP 包**：
-    *   AI 助手会接收您提供的 Notion ZIP 文件名。
-    *   使用 `scripts/extract_zip_utf8.py` 脚本来解压 ZIP 文件。这个脚本会处理文件名中的特殊字符，并将内容解压到 `temp_notion/以ZIP包名命名的目录/`。
+1.  **定位并解压 Notion ZIP 包**：
+    *   当用户指示处理 Notion ZIP 文件时，AI 助手将假定 `temp_files` 目录下已存在**唯一一个**待处理的 Notion ZIP 压缩包。
+    *   AI 助手会自动扫描 `temp_files` 目录，找出该 ZIP 文件。
+    *   然后使用 `scripts/extract_zip_utf8.py` 脚本来解压 ZIP 文件。这个脚本会处理文件名中的特殊字符，并将内容解压到 `temp_notion/以ZIP包名命名的目录/`。
         ```bash
+        # AI 会自动替换 "你的Notion导出.zip" 为实际扫描到的文件名
         python3 scripts/extract_zip_utf8.py temp_files/你的Notion导出.zip
         ```
     *   AI 助手会浏览解压后的文件，通常包含一个主 Markdown 文件和存放附件（图片等）的文件夹。
