@@ -32,15 +32,15 @@ title: "33 号远征队通关了"
 
 如果你看还没有玩过游戏，强烈推荐看蕾雅的视频。
 
-[YouTube 版本 →](https://www.youtube.com/watch?v=pMqTbEu_Nyk)
+- [YouTube 版本 →](https://www.youtube.com/watch?v=pMqTbEu_Nyk)
 
-[B 站版本吧 →](https://www.bilibili.com/video/BV1FiLwzhE6B/?spm_id_from=333.337.search-card.all.click&vd_source=3d6d7a7ae4a2d2e8de580a7bb2c42778)
+- [B 站版本吧 →](https://www.bilibili.com/video/BV1FiLwzhE6B/?spm_id_from=333.337.search-card.all.click&vd_source=3d6d7a7ae4a2d2e8de580a7bb2c42778)
 
 如果你玩过，也强烈推荐蕾雅的另一个视频。
 
-[YouTube 版本 →](https://www.youtube.com/watch?v=9MPiOdLaNac)
+- [YouTube 版本 →](https://www.youtube.com/watch?v=9MPiOdLaNac)
 
-[B 站版本吧 →](https://www.bilibili.com/video/BV1AiEsz6EBM/?spm_id_from=333.337.search-card.all.click&vd_source=3d6d7a7ae4a2d2e8de580a7bb2c42778)
+- [B 站版本吧 →](https://www.bilibili.com/video/BV1AiEsz6EBM/?spm_id_from=333.337.search-card.all.click&vd_source=3d6d7a7ae4a2d2e8de580a7bb2c42778)
 
 也得说一下，这个游戏肯定是有缺点的，剧情挖坑了很多，基本都埋上了，但很多都在支线里，这是清理支线的乐趣，不过，故事本身的讲述太隐晦了，加上故事本身的结构，前期极度懵逼状态，需要克服一下，最后会有非常多的反转，但剧情绝对是加分项，是那种即使你放下了手柄，也会放不下游戏里的那个世界……
 
