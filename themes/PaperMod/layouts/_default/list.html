@@ -65,16 +65,14 @@
 {{- end }}
 
 {{- if eq $page.Type "thoughts" }}
-{{- $class = (printf "%s thought-entry" $class) }}
-{{- end }}
-
+  {{- partial "thought_card.html" . -}}
+{{- else }}
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
-    {{- if eq $page.Type "thoughts" }}
     {{/* Icon removed, leaving this block empty for thoughts type to prevent title rendering */}}
-    {{- else }}
+    {{/* For non-thoughts, the original header logic is kept */}}
     <h2 class="entry-hint-parent">
       {{- .Title }}
       {{- if .Draft }}
@@ -86,15 +84,8 @@
       </span>
       {{- end }}
     </h2>
-    {{- end }}
   </header>
-  {{- if eq $page.Type "thoughts" }}
-  <div class="entry-content">
-    {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
-    {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
-    <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 200 }}...{{ end }}</p>
-  </div>
-  {{- else if (ne ($page.Param "hideSummary") true) }}
+  {{- if (ne ($page.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ $page.Summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
   </div>
