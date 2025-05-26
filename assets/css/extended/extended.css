@@ -132,6 +132,57 @@
     font-weight: 600;
 }
 
+/* 搜索页面底部字数统计样式 */
+.search-stats {
+    text-align: center;
+    color: var(--content);
+    font-size: 0.9rem;
+    margin: 2rem auto 1.5rem;
+    padding: 1.5rem 2rem;
+    max-width: 600px;
+    opacity: 0.95;
+    font-weight: 500;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    position: relative;
+    font-style: italic;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 深色模式下的背景 */
+:root[data-theme="dark"] .search-stats,
+.dark .search-stats {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-stats::before {
+    content: '"';
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: var(--primary);
+    opacity: 0.4;
+    font-family: serif;
+    line-height: 1;
+}
+
+.search-stats .word-count-highlight {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.search-stats .count-highlight {
+    color: var(--primary);
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
     .content-stats {
@@ -143,6 +194,24 @@
     .content-stats .stats-current-year {
         margin: 0.6rem 0;
         line-height: 1.5;
+    }
+    
+    .search-stats {
+        font-size: 0.85rem;
+        margin: 1.5rem auto 1rem;
+        padding: 1.2rem 1.5rem;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+    
+    .search-stats::before {
+        top: 0.3rem;
+        left: 0.8rem;
+        font-size: 1.5rem;
+    }
+    
+    .search-stats .word-count-highlight {
+        font-size: 0.9rem;
     }
 }
 

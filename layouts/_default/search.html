@@ -54,8 +54,8 @@
     {{- end }}
 </div>
 
-<!-- 内容统计 Dashboard -->
-<div id="contentStats" class="content-stats">
+<!-- 字数统计 -->
+<div id="contentStats" class="search-stats">
     {{- /* 读取字数统计数据 */ -}}
     {{- $wordCountData := .Site.Data.word_count -}}
     
@@ -88,19 +88,11 @@
         {{- end -}}
     {{- end -}}
     
-    <!-- 总体统计 -->
-    <div class="stats-total">
-        📊 总共创作了 <span class="word-count">{{ if $wordCountData }}{{ $wordCountData.total.word_count_formatted }}{{ else }}计算中...{{ end }}</span> 万字，包含 {{ $totalPosts }} 篇博文，{{ $totalThoughts }} 条想法，以及 {{ $totalSkyEye }} 张全景图片！
-    </div>
-    
-    <!-- 今年统计 -->
-    <div class="stats-current-year">
-        🎯 今年已创作 <span class="word-count-year">{{ if $wordCountData }}{{ $wordCountData.this_year.word_count_formatted }}{{ else }}计算中...{{ end }}</span> 万字，包含 {{ $thisYearPosts }} 篇博文，{{ $thisYearThoughts }} 条想法，以及 {{ $thisYearSkyEye }} 张全景图片！
-    </div>
+    🎯 日拱一卒，今年已码了 <span class="word-count-highlight">{{ if $wordCountData }}{{ $wordCountData.this_year.word_count_formatted }}{{ else }}计算中...{{ end }}/{{ if $wordCountData }}{{ $wordCountData.total.word_count_formatted }}{{ else }}计算中...{{ end }}</span> 万字，包含 <span class="count-highlight">{{ $thisYearPosts }}/{{ $totalPosts }}</span> 篇博文，<span class="count-highlight">{{ $thisYearThoughts }}/{{ $totalThoughts }}</span> 条想法，以及 <span class="count-highlight">{{ $thisYearSkyEye }}/{{ $totalSkyEye }}</span> 张全景图片！
 </div>
 
 <script>
-// 当搜索框有输入时隐藏标签和内容统计
+// 当搜索框有输入时隐藏标签和字数统计
 document.getElementById('searchInput').addEventListener('input', function() {
     const tagCloud = document.getElementById('tagCloud');
     const contentStats = document.getElementById('contentStats');
