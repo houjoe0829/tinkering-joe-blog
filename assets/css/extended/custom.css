@@ -356,6 +356,16 @@
 
 .posts .thought-entry .entry-content p {
     margin: 0;  /* 移除随思录内容段落的默认边距 */
+    /* Add these new styles for 3-line truncation */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* You might need to adjust line-height or a fixed height if it doesn't perfectly show 3 lines.
+       For now, let's assume existing line-height is fine or we can adjust later.
+       Example: line-height: 1.4em; height: 4.2em; (3 * 1.4em)
+    */
 }
 
 .posts .thought-entry .entry-content > *:first-child {
@@ -392,4 +402,42 @@
     .posts .thought-entry .entry-content img {
         margin: 10px 0;
     }
+}
+
+/* Thought Tag Styles */
+.thought-entry .entry-footer {
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-between; /* Push date to left and tags to right */
+    align-items: center; /* Vertically align items if they have different heights */
+    flex-wrap: wrap; /* Allow items to wrap on small screens if necessary */
+}
+
+.thought-tags-list {
+    /* float: right; /* Remove float, flexbox will handle positioning */ */
+    margin-left: auto; /* Push to the right if footer is flex container */
+    text-align: right;
+}
+
+.thought-tags-list .thought-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    color: var(--tag-color, var(--secondary)); /* Use theme tag color, fallback to secondary */
+    background-color: var(--tag-bg, var(--code-bg)); /* Use theme tag background, fallback to code-bg */
+    border: 1px solid var(--tag-border-color, var(--border)); /* Use theme tag border, fallback to general border */
+    border-radius: var(--radius);
+    text-decoration: none;
+    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
+}
+
+.thought-tags-list .thought-tag:hover {
+    color: var(--tag-hover-color, var(--primary)); /* Use theme tag hover color, fallback to primary */
+    background-color: var(--tag-hover-bg, var(--hover-bg)); /* Use theme tag hover background, fallback to hover-bg */
+    border-color: var(--tag-hover-border-color, var(--primary)); /* Use theme tag hover border, fallback to primary */
+}
+
+/* Ensure the date meta-item doesn't take full width if footer is flex */
+.thought-entry .entry-footer .meta-item:first-child {
+    /* No specific style needed if justify-content: space-between is working well */
 } 

@@ -93,11 +93,7 @@
     <header class="entry-header">
       {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
       {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
-       <div class="thought-icon">
-        <svg class="icon" viewBox="0 0 1024 1024" width="20" height="20" fill="currentColor">
-          <path d="M512 32C247.04 32 32 224 32 464A410.24 410.24 0 0 0 172.48 768L160 965.12a25.28 25.28 0 0 0 39.04 22.4l168-112A528.64 528.64 0 0 0 512 896c264.96 0 480-192 480-432S776.96 32 512 32z m-144 608c-72 0-118.72-53.12-118.72-135.04A216 216 0 0 1 416 289.92a36.8 36.8 0 0 1 45.44 17.6c6.4 17.6-8.64 32-26.56 39.04a142.72 142.72 0 0 0-96 88 100.16 100.16 0 0 1 147.2 93.44A107.84 107.84 0 0 1 368 640z m288 0c-72.32 0-119.04-53.12-119.04-135.04a216.32 216.32 0 0 1 167.68-215.04a36.48 36.48 0 0 1 45.44 17.6c6.4 16.96-8.32 32-26.56 39.04a142.4 142.4 0 0 0-96 88 100.16 100.16 0 0 1 147.2 93.44 107.52 107.52 0 0 1-117.76 112z"/>
-        </svg>
-      </div>
+        {{/* Icon removed. This block is now empty. */}}
       {{- else }}
       <h2>
         {{- .Title }}
@@ -106,9 +102,10 @@
       {{- end }}
     </header>
     <div class="entry-content">
-      {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
-      {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
-        {{ .Content }}
+      {{- if eq .Type "thoughts" }} 
+        {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
+        {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
+        <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 200 }}...{{ end }}</p>
       {{- else if (ne (.Param "hideSummary") true) }}
         {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
         {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
@@ -135,6 +132,18 @@
           {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
         </span>
         {{- end }}
+
+        {{- if eq .Type "thoughts" }}
+          {{- if .Params.tags }}
+          <span class="meta-item thought-tags-list" style="float: right;">
+              {{- range $i, $tag := .Params.tags -}}
+                {{- if $i -}}&nbsp;{{- end -}}
+                <a href="{{ (urlize $tag) | absLangURL | printf "/tags/%s" }}" class="thought-tag">{{ $tag }}</a>
+              {{- end -}}
+          </span>
+          {{- end }}
+        {{- end }}
+
       {{- else }}
         {{- partial "post_meta.html" . -}}
       {{- end }}
