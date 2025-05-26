@@ -22,7 +22,9 @@
       </div>
     </header>
     <div class="entry-content">
-      {{ .Content }}
+      {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
+      {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
+      <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 150 }}...{{ end }}</p>
     </div>
     {{- if not (.Param "hideMeta") }}
     <footer class="entry-footer">

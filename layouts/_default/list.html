@@ -110,7 +110,9 @@
       {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
         {{ .Content }}
       {{- else if (ne (.Param "hideSummary") true) }}
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
+        {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
+        <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 150 }}...{{ end }}</p>
       {{- end }}
     </div>
     {{- if not (.Param "hideMeta") }}
