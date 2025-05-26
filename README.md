@@ -787,16 +787,24 @@ title: "博客文章元数据格式指南"
 
 ### 1. Bookmark 样式链接
 
-适用于需要突出显示的重要外部链接，使用 `link` shortcode：
+适用于需要突出显示的重要外部链接，使用 `link` shortcode。从 2025-05-26 起，此 shortcode 支持可选的第三个参数作为摘要。
 
+使用方法：
 ```markdown
-{{< link "https://example.com" "链接标题" >}}
+{{< link "URL" "链接标题" "可选的摘要内容" >}}
 ```
 
 这会渲染出一个美观的 Bookmark 卡片，包含：
 - 链接标题
+- 摘要内容（如果第三个参数提供）
 - 完整 URL
-- 视觉指示器（外部链接图标）
+- 视觉指示器（链接图标，而非之前的外部链接图标）
+
+一个实际的效果可以参考 `content/thoughts/reinventing-the-wheel-reflections.md` 中的链接。
+例如，该文件中使用了如下 shortcode：
+```markdown
+{{< link "https://endler.dev/2025/reinvent-the-wheel/" "Reinvent the Wheel" "One of the most harmful pieces of advice is to not reinvent the wheel." >}}
+```
 
 使用场景：
 - 文章主要推荐的外部资源

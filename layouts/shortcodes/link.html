@@ -1,17 +1,20 @@
 {{- $url := .Get 0 -}}
 {{- $title := .Get 1 | default $url -}}
+{{- $description := .Get 2 -}}
 <div class="bookmark-container">
   <a class="bookmark-link" href="{{ $url }}" target="_blank" rel="noopener noreferrer">
     <div class="bookmark-content">
       <div class="bookmark-title">{{ $title }}</div>
+      {{- if $description -}}
+      <div class="bookmark-description">{{ $description }}</div>
+      {{- end -}}
       <div class="bookmark-url">{{ $url }}</div>
     </div>
     <div class="bookmark-icon">
       <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="24" width="24">
-        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-        <path d="M15 3h6v6"></path>
-        <path d="M10 14L21 3"></path>
+        <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"></path>
+        <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.72-1.71"></path>
       </svg>
     </div>
   </a>

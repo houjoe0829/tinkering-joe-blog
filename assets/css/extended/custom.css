@@ -251,6 +251,27 @@
   color: var(--secondary);
 }
 
+/* 添加 Bookmark 摘要样式 */
+.bookmark-description {
+  font-size: 0.85em; /* 字体缩小到大约85% */
+  color: #555;     /* 深灰色文字 */
+  margin-top: 4px;  /* 和标题之间增加一点上边距 */
+  margin-bottom: 4px; /* 和URL之间增加一点下边距 */
+  /* 为了防止过长的摘要撑破布局，可以添加以下样式 */
+  white-space: normal; /* 允许换行 */
+  word-break: break-word; /* 允许在单词内换行 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 最多显示2行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 深色模式下的摘要样式 */
+.dark .bookmark-description {
+  color: #aaa; /* 浅灰色，适应深色背景 */
+}
+
 /* 引用博文部分样式 */
 .post-references {
     margin-top: 2rem;
@@ -270,8 +291,6 @@
     color: var(--secondary);
     margin-left: 0.5rem;
 }
-
-
 
 /* 只设置列表容器的间距 */
 .post-references .post-references-list {
