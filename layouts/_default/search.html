@@ -54,22 +54,59 @@
     {{- end }}
 </div>
 
-<!-- 文章总数统计 -->
-<div id="postCount" class="post-count">
-    ☕️ 当前总共 {{ len (where .Site.RegularPages "Type" "posts") }} 篇博文，{{ len (where .Site.RegularPages "Section" "thoughts") }} 条想法，以及 {{ len (where site.RegularPages "Section" "sky-eye") }} 张全景图片！
+<!-- 内容统计 Dashboard -->
+<div id="contentStats" class="content-stats">
+    {{- /* 计算总体统计 */ -}}
+    {{- $totalPosts := len (where .Site.RegularPages "Type" "posts") -}}
+    {{- $totalThoughts := len (where .Site.RegularPages "Section" "thoughts") -}}
+    {{- $totalSkyEye := len (where site.RegularPages "Section" "sky-eye") -}}
+    
+    {{- /* 计算今年统计 */ -}}
+    {{- $currentYear := now.Year -}}
+    {{- $thisYearPosts := 0 -}}
+    {{- $thisYearThoughts := 0 -}}
+    {{- $thisYearSkyEye := 0 -}}
+    
+    {{- range where .Site.RegularPages "Type" "posts" -}}
+        {{- if eq (.Date.Year) $currentYear -}}
+            {{- $thisYearPosts = add $thisYearPosts 1 -}}
+        {{- end -}}
+    {{- end -}}
+    
+    {{- range where .Site.RegularPages "Section" "thoughts" -}}
+        {{- if eq (.Date.Year) $currentYear -}}
+            {{- $thisYearThoughts = add $thisYearThoughts 1 -}}
+        {{- end -}}
+    {{- end -}}
+    
+    {{- range where .Site.RegularPages "Section" "sky-eye" -}}
+        {{- if eq (.Date.Year) $currentYear -}}
+            {{- $thisYearSkyEye = add $thisYearSkyEye 1 -}}
+        {{- end -}}
+    {{- end -}}
+    
+    <!-- 总体统计 -->
+    <div class="stats-total">
+        📊 总共创作了 <span class="word-count">计算中...</span> 万字，包含 {{ $totalPosts }} 篇博文，{{ $totalThoughts }} 条想法，以及 {{ $totalSkyEye }} 张全景图片！
+    </div>
+    
+    <!-- 今年统计 -->
+    <div class="stats-current-year">
+        🎯 今年已创作 <span class="word-count-year">计算中...</span> 万字，包含 {{ $thisYearPosts }} 篇博文，{{ $thisYearThoughts }} 条想法，以及 {{ $thisYearSkyEye }} 张全景图片！
+    </div>
 </div>
 
 <script>
-// 当搜索框有输入时隐藏标签和文章总数统计
+// 当搜索框有输入时隐藏标签和内容统计
 document.getElementById('searchInput').addEventListener('input', function() {
     const tagCloud = document.getElementById('tagCloud');
-    const postCount = document.getElementById('postCount');
+    const contentStats = document.getElementById('contentStats');
     if (this.value.length > 0) {
         tagCloud.style.display = 'none';
-        postCount.style.display = 'none';
+        contentStats.style.display = 'none';
     } else {
         tagCloud.style.display = 'flex';
-        postCount.style.display = 'block';
+        contentStats.style.display = 'block';
     }
 });
 </script>

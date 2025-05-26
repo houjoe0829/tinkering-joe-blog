@@ -110,14 +110,40 @@
     opacity: 0.8;
 }
 
-/* 文章总数统计样式 */
-.post-count {
+/* 内容统计 Dashboard 样式 */
+.content-stats {
     text-align: center;
     color: var(--secondary);
     font-size: 0.9rem;
     margin: 1.5rem 0;
     opacity: 0.8;
     font-weight: 500;
+}
+
+.content-stats .stats-total,
+.content-stats .stats-current-year {
+    margin: 0.8rem 0;
+    line-height: 1.6;
+}
+
+.content-stats .word-count,
+.content-stats .word-count-year {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .content-stats {
+        font-size: 0.85rem;
+        margin: 1.2rem 0;
+    }
+    
+    .content-stats .stats-total,
+    .content-stats .stats-current-year {
+        margin: 0.6rem 0;
+        line-height: 1.5;
+    }
 }
 
 /* 导航栏搜索图标对齐 */
