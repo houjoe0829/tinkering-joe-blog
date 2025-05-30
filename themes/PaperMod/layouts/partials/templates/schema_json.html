@@ -53,7 +53,7 @@
     {
       "@type": "ListItem",
       "position": {{len $bc_list}},
-      "name": {{ .Name }},
+      "name": {{ if .Title }}{{ .Title | jsonify }}{{ else if eq .Section "thoughts" }}{{ .Date.Format "2006-01-02" | jsonify }}{{ else }}"页面"{{ end }},
       "item": {{ .Permalink | safeHTML }}
     }
   ]
