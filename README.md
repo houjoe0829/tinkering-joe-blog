@@ -962,7 +962,7 @@ rm -rf static/images_compressed/posts/article-name
 - **字数统计**：自动统计中文字符数和英文单词数
 - **内容分类**：分别统计博文、随思录和全景图片数量
 - **时间维度**：提供总体统计和今年统计两个维度
-- **自动化**：构建时自动更新，无需手动维护
+- **完全自动化**：通过 Git Pre-commit Hook 实现无感知自动更新
 
 ### 统计规则
 
@@ -979,6 +979,30 @@ rm -rf static/images_compressed/posts/article-name
 - HTML 标签
 - 全景图片中的文字（按需求排除）
 
+### 自动化机制
+
+#### Git Pre-commit Hook（推荐，完全自动化）
+项目已配置 Git Pre-commit Hook，实现字数统计的完全自动化：
+
+**工作原理**：
+- 每次执行 `git commit` 时自动触发
+- 智能检测：只有当 `content/` 目录有变更时才运行
+- 自动更新字数统计数据并加入本次提交
+- 完全无感知，不需要手动操作
+
+**使用方法**：
+```bash
+# 正常的 Git 工作流，字数统计会自动更新
+git add content/thoughts/your-new-thought.md
+git commit -m "新增 Thought"
+# Hook 会自动检测内容变更，更新字数统计，并将更新后的数据文件加入提交
+```
+
+**智能特性**：
+- 环境检测：如果虚拟环境或依赖不存在，会优雅跳过（不阻止提交）
+- 静默运行：不会干扰正常的 Git 工作流
+- 高效执行：只在有内容变更时运行，避免无意义的更新
+
 ### 使用方法
 
 #### 开发环境
@@ -993,8 +1017,8 @@ rm -rf static/images_compressed/posts/article-name
 ./scripts/build.sh
 ```
 
-#### 手动更新字数统计
-如果只需要更新字数统计数据：
+#### 手动更新字数统计（可选）
+如果只需要手动更新字数统计数据：
 ```bash
 # 激活虚拟环境
 source .venv/bin/activate
@@ -1004,7 +1028,7 @@ cd scripts
 python3 generate_word_count_data.py
 ```
 
-#### 单独处理文章
+#### 单独处理文章（调试用）
 如果需要查看单篇文章的字数统计：
 ```bash
 source .venv/bin/activate
@@ -1016,7 +1040,7 @@ python3 scripts/word_count.py --file content/posts/article-name.md
 1. **数据预处理**：Python 脚本解析 Markdown 文件，清理文本内容，计算字数
 2. **数据存储**：统计结果保存为 `data/word_count.json` 供 Hugo 读取
 3. **前端展示**：搜索页面模板读取数据文件并渲染统计信息
-4. **自动化**：构建脚本确保每次构建前都会更新统计数据
+4. **自动化**：Git Pre-commit Hook + 构建脚本确保数据始终最新
 
 ### 查看统计结果
 
@@ -1025,3 +1049,9 @@ python3 scripts/word_count.py --file content/posts/article-name.md
 - 🎯 今年统计：今年创作的字数和内容数量
 
 统计数据会以万字为单位显示，方便阅读。
+
+### 注意事项
+
+- **推荐使用 Git Hook**：这是最便捷的方式，完全无需手动操作
+- **Cloudflare 构建**：由于 Cloudflare Pages 只运行 `hugo` 命令，字数统计数据需要通过 Git 提交来保持同步
+- **数据一致性**：Git Hook 确保每次提交内容时，字数统计数据都是最新的
