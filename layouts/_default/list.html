@@ -103,11 +103,11 @@
     </header>
     <div class="entry-content">
       {{- if eq .Type "thoughts" }} 
-        {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
+        {{ $cleanedContent := .RawContent | replaceRE "\\{\\{<\\s*link\\s+[^>]*>\\}\\}" "" }}
         {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
         <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 200 }}...{{ end }}</p>
       {{- else if (ne (.Param "hideSummary") true) }}
-        {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
+        {{ $cleanedContent := .RawContent | replaceRE "\\{\\{<\\s*link\\s+[^>]*>\\}\\}" "" }}
         {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
         <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 150 }}...{{ end }}</p>
       {{- end }}
