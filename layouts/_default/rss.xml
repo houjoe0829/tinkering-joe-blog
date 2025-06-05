@@ -40,9 +40,15 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>
-        {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
-        {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
-        {{ $summary | html }}
+        {{- $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" -}}
+        {{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
+        {{- $truncatedContent := $plainContent | truncate 200 -}}
+        {{- $isContentTruncated := gt (len $plainContent) 200 -}}
+        {{- if $isContentTruncated -}}
+          {{ $truncatedContent }}…<a href="{{ .Permalink }}" target="_blank">查看全文</a>
+        {{- else -}}
+          {{ $truncatedContent | html }}
+        {{- end -}}
       </description>
     </item>
     {{ end }}
