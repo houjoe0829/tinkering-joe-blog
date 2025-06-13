@@ -69,10 +69,14 @@
     {{- $references := slice }}
     {{- range .Site.RegularPages }}
       {{- if or 
-          (strings.Contains .RawContent $currentPath) 
-          (strings.Contains .RawContent $currentPathNoSlash)
-          (strings.Contains .RawContent (printf "@%s.md" $currentFile))
-          (strings.Contains .RawContent (printf "/posts/%s" $currentFile)) }}
+          (strings.Contains .RawContent (printf "(@%s.md)" $currentFile))
+          (strings.Contains .RawContent (printf "('%s')" $currentPath))
+          (strings.Contains .RawContent (printf "'%s'" $currentPathNoSlash))
+          (strings.Contains .RawContent (printf "(\"%s\")" $currentPath))
+          (strings.Contains .RawContent (printf "\"%s\"" $currentPathNoSlash))
+          (strings.Contains .RawContent (printf "(%s)" $currentPath))
+          (strings.Contains .RawContent (printf "(%s)" $currentPathNoSlash))
+      }}
         {{- if ne .RelPermalink $currentPath }}
           {{- $references = $references | append . }}
         {{- end }}
