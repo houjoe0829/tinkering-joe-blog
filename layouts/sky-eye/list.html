@@ -7,7 +7,7 @@
   {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}<span style="display: inline-block; margin-left: 4px;"><img src="/images/sky-eye/drone.svg" alt="无人机" class="title-drone-icon" style="height: 30px; width: auto; vertical-align: middle;"/></span></h1>
   <div class="post-description">
-    感谢陪伴我快五年的大疆 Mavic Air 2，已经习惯每次到一个地方都会用无人机拍一张全景图片作为记录，目前可以分享的总共 {{ len (where site.RegularPages "Section" "sky-eye") }} 个地方。
+    {{ .Description }}目前可以分享的总共 {{ len (where site.RegularPages "Section" "sky-eye") }} 个地方。
   </div>
 </header>
 
