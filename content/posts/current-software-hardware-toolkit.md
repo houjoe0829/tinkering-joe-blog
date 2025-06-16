@@ -21,12 +21,11 @@ author: "Joe"
 - [Whimsical](https://whimsical.com/)：白板工具，主要用画思维导图、原型图和流程图，缺少移动端是个遗憾，但是好用且可免费使用。
 
 ### 2️⃣ 浏览器
-- Chrome：无聊但真的稳定，兜兜转转，真的不如坚持用 Chrome。
+- Dia 浏览器：等不到 Google 来为 Chrome 加上 Gemini 了，需要一个 AI 版本的浏览器来消化现在的网页内容
 - 不管怎么换浏览器，都要装的浏览器扩展
   - [OneTab](https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)：一键清掉所有的 Tabs
   - [AITDK SEO](https://chromewebstore.google.com/detail/aitdk-seo-extension-traff/hhfkpjffbhledfpkhhcoidplcebgdgbk): 快速查看一个网站的 SEO 数据
   - [1Password](https://1password.com/)：这个应该不用赘述，配合密码管理软件 1Password
-  - [Elmo Chat](https://chromewebstore.google.com/detail/elmo-chat-your-ai-web-cop/ipnlcfhfdicbfbchfoihipknbaeenenm)：快速总结网页，免费
   - [OmniAudio](https://chromewebstore.google.com/detail/omniaudio-web-article-to/dahkpjmanmlkiiccnkgeahfldjpabobp)：快速将网页变成稍后再听的播客
   - [Douban Book+](https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj)：在豆瓣书籍页面显示其可下载的在线资源网站
   - [沉浸式翻译](https://chromewebstore.google.com/detail/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：能生成双语对照阅读的插件
@@ -50,6 +49,7 @@ author: "Joe"
 
 ### 5️⃣ 听歌
 - 极空间的极音乐：本地下载 500GB 的歌曲，适合日常背景音乐来听
+- QQ 音乐：作为备选
 
 ### 6️⃣ AI 与翻译助手
 - [豆包](https://www.doubao.com/chat/)：适合回答"是什么"的问题，可以快速耳机唤醒，参考[《自驾和骑行的新伴侣：AI 耳机》](/posts/ola-friend-ai-earphone/)
@@ -93,7 +93,7 @@ author: "Joe"
 ## 硬件部分
 
 ### 随身部分
-- **MacBook Pro 14 寸电脑**：14寸的屏幕刚刚好，13寸太小，15寸太大，就是比 Air 重了些
+- **MacBook Air**：下定决心从 Pro 切换回了 Air，虽然只轻了 360 克左右，但是明显轻便很多
 - **索尼降噪耳机 XM5**：适合在外咖啡厅远程工作和开会，降噪靠谱
 - **iPhone 16 Pro**：用不了 Pro Max 了，这个尺寸也是刚刚好
 - **豆包的 Ola friend 耳机**：特意为了它写个文章：[《自驾和骑行的新伴侣：AI 耳机》](/posts/ola-friend-ai-earphone/)，主要是为了自驾和骑行的时候用豆包
@@ -101,7 +101,7 @@ author: "Joe"
 - **Amazfit GTR 4**：运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表
 - **指甲刀**：始终保持敲键盘永远很舒服的指甲长度
 - **iPad mini**：最佳电子书阅读器，在这个 AI 盛行的时代，不太建议电纸书，输入和处理都不够
-- **随身 WiFi**：iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等
+- **随身 WiFi**：iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作。
 
 ### 随车部分
 - **Mavic Air 2 无人机**：无人机电池永远在这里充着电
