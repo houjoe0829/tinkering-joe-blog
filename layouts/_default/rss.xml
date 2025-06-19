@@ -40,12 +40,19 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>
-        {{- $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" -}}
+        {{- $cleanedContent := .RawContent -}}
+        {{- $cleanedContent = $cleanedContent | replaceRE "{{< .*? >}}" "" -}}
+        {{- $cleanedContent = $cleanedContent | replaceRE "!\\[.*?\\]\\(.*?\\)" "" -}}
+        {{- $cleanedContent = $cleanedContent | replaceRE "\\[.*?\\]\\(.*?\\)" "" -}}
+        {{- $cleanedContent = $cleanedContent | replaceRE "^\\s*#+ .*?$" "" -}}
+        {{- $cleanedContent = $cleanedContent | replaceRE "\\n\\s*\\n" " " -}}
         {{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
+        {{- $plainContent = $plainContent | replaceRE "^\\s+" "" -}}
+        {{- $plainContent = $plainContent | replaceRE "\\s+" " " -}}
         {{- $truncatedContent := $plainContent | truncate 200 -}}
         {{- $isContentTruncated := gt (len $plainContent) 200 -}}
         {{- if $isContentTruncated -}}
-          {{ $truncatedContent }}…<a href="{{ .Permalink }}" target="_blank">查看全文</a>
+          {{ $truncatedContent }}… &lt;a href="{{ .Permalink }}" target="_blank"&gt;查看全文&lt;/a&gt;
         {{- else -}}
           {{ $truncatedContent | html }}
         {{- end -}}
