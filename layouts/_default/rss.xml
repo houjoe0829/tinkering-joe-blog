@@ -10,6 +10,7 @@
 {{- $thoughtPages := where $pages "Section" "thoughts" -}}
 {{- $skyEyePages := where $pages "Section" "sky-eye" -}}
 {{- $pages = $postPages | union $thoughtPages | union $skyEyePages -}}
+{{- $pages = $pages.ByDate.Reverse -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
