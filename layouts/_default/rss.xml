@@ -8,7 +8,8 @@
 {{- end -}}
 {{- $postPages := where $pages "Section" "posts" -}}
 {{- $thoughtPages := where $pages "Section" "thoughts" -}}
-{{- $pages = $postPages | union $thoughtPages -}}
+{{- $skyEyePages := where $pages "Section" "sky-eye" -}}
+{{- $pages = $postPages | union $thoughtPages | union $skyEyePages -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
@@ -40,21 +41,33 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>
-        {{- $cleanedContent := .RawContent -}}
-        {{- $cleanedContent = $cleanedContent | replaceRE "{{< .*? >}}" "" -}}
-        {{- $cleanedContent = $cleanedContent | replaceRE "!\\[.*?\\]\\(.*?\\)" "" -}}
-        {{- $cleanedContent = $cleanedContent | replaceRE "\\[.*?\\]\\(.*?\\)" "" -}}
-        {{- $cleanedContent = $cleanedContent | replaceRE "^\\s*#+ .*?$" "" -}}
-        {{- $cleanedContent = $cleanedContent | replaceRE "\\n\\s*\\n" " " -}}
-        {{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
-        {{- $plainContent = $plainContent | replaceRE "^\\s+" "" -}}
-        {{- $plainContent = $plainContent | replaceRE "\\s+" " " -}}
-        {{- $truncatedContent := $plainContent | truncate 200 -}}
-        {{- $isContentTruncated := gt (len $plainContent) 200 -}}
-        {{- if $isContentTruncated -}}
-          {{ $truncatedContent }}… &lt;a href="{{ .Permalink }}" target="_blank"&gt;查看全文&lt;/a&gt;
+        {{- if eq .Section "sky-eye" -}}
+          {{- /* 天空之眼内容的特殊处理 */ -}}
+          {{- with .Params.description -}}
+            {{ . | html }}
+          {{- end -}}
+          {{- with .Params.thumbnail -}}
+            &lt;br/&gt;&lt;img src="{{ $.Site.BaseURL }}{{ . }}" alt="{{ $.Title }}" style="max-width: 100%; height: auto;"/&gt;
+          {{- end -}}
+          &lt;br/&gt;&lt;a href="{{ .Permalink }}" target="_blank"&gt;点击可沉浸式查看全景图片&lt;/a&gt;
         {{- else -}}
-          {{ $truncatedContent | html }}
+          {{- /* 其他内容类型（posts 和 thoughts）的处理 */ -}}
+          {{- $cleanedContent := .RawContent -}}
+          {{- $cleanedContent = $cleanedContent | replaceRE "{{< .*? >}}" "" -}}
+          {{- $cleanedContent = $cleanedContent | replaceRE "!\\[.*?\\]\\(.*?\\)" "" -}}
+          {{- $cleanedContent = $cleanedContent | replaceRE "\\[.*?\\]\\(.*?\\)" "" -}}
+          {{- $cleanedContent = $cleanedContent | replaceRE "^\\s*#+ .*?$" "" -}}
+          {{- $cleanedContent = $cleanedContent | replaceRE "\\n\\s*\\n" " " -}}
+          {{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
+          {{- $plainContent = $plainContent | replaceRE "^\\s+" "" -}}
+          {{- $plainContent = $plainContent | replaceRE "\\s+" " " -}}
+          {{- $truncatedContent := $plainContent | truncate 200 -}}
+          {{- $isContentTruncated := gt (len $plainContent) 200 -}}
+          {{- if $isContentTruncated -}}
+            {{ $truncatedContent }}… &lt;a href="{{ .Permalink }}" target="_blank"&gt;查看全文&lt;/a&gt;
+          {{- else -}}
+            {{ $truncatedContent | html }}
+          {{- end -}}
         {{- end -}}
       </description>
     </item>
