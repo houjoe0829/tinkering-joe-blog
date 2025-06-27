@@ -441,3 +441,7 @@
 .thought-entry .entry-footer .meta-item:first-child {
     /* No specific style needed if justify-content: space-between is working well */
 } 
+/* 取消链接与后续中文字符之间的自动空格 */
+.post-content a {
+    margin-right: 0 !important;
+}

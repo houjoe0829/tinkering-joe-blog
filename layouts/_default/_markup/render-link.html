@@ -1,4 +1,4 @@
 {{- $url := .Destination -}}
 {{- $text := .Text -}}
 {{- $title := .Title -}}
-<a href="{{ $url }}"{{ with $title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $text }}</a> 
+<a href="{{ $url }}"{{ with $title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $text }}</a>
