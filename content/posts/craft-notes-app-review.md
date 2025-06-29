@@ -7,9 +7,7 @@ tags: ["折腾软硬件"]
 author: "Joe"
 ---
 
-[Craft | A fresh take on documents](https://www.craft.do/)
-
-Craft 官网
+{{< link "https://www.craft.do/" "Craft | Personal Space for Notes, Tasks, and Big Ideas" "一款小众且独特的笔记软件" >}}
 
 此文原来在 Craft 里撰写，可直接 [点击访问](https://www.craft.do/s/ObkasdnAiZtDfX)
 
