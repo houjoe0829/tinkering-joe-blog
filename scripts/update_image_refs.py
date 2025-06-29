@@ -8,8 +8,8 @@ def update_image_references(content_dir):
     参数:
         content_dir: 内容目录路径
     """
-    # 图片引用的正则表达式
-    image_pattern = r'!\[([^\]]*)\]\(([^)]+\.(jpg|jpeg|png))\)'
+    # 图片引用的正则表达式（更宽松的匹配，包含特殊字符）
+    image_pattern = r'!\[([^\]]*)\]\(([^)]*\.(jpg|jpeg|png|JPG|JPEG|PNG))\)'
     
     # 遍历所有 Markdown 文件
     for root, _, files in os.walk(content_dir):
@@ -22,27 +22,35 @@ def update_image_references(content_dir):
                     content = f.read()
                 
                 # 查找所有图片引用
-                matches = re.finditer(image_pattern, content)
+                matches = list(re.finditer(image_pattern, content))
                 modified = False
                 
-                # 替换图片引用
-                for match in matches:
+                # 从后往前替换，避免位置偏移问题
+                for match in reversed(matches):
                     alt_text = match.group(1)
                     image_path = match.group(2)
-                    ext = match.group(3)
+                    ext = match.group(3).lower()
                     
-                    # 构建新的图片路径
-                    new_image_path = image_path.replace(ext, 'webp')
+                    # 构建新的图片路径（替换扩展名为 webp）
+                    new_image_path = re.sub(r'\.(jpg|jpeg|png)$', '.webp', image_path, flags=re.IGNORECASE)
                     
                     # 检查新的图片文件是否存在
-                    absolute_new_path = os.path.join(os.path.dirname(file_path), '..', '..', 'static', new_image_path.lstrip('/'))
+                    if image_path.startswith('/'):
+                        # 绝对路径，从 static 开始
+                        absolute_new_path = os.path.join('static', new_image_path.lstrip('/'))
+                    else:
+                        # 相对路径
+                        absolute_new_path = os.path.join(os.path.dirname(file_path), new_image_path)
+                    
                     if os.path.exists(absolute_new_path):
                         # 替换图片引用
                         old_ref = f'![{alt_text}]({image_path})'
                         new_ref = f'![{alt_text}]({new_image_path})'
                         content = content.replace(old_ref, new_ref)
                         modified = True
-                        print(f'在 {file} 中更新图片引用: {image_path} -> {new_image_path}')
+                        print(f'在 {file} 中更新图片引用: {os.path.basename(image_path)} -> {os.path.basename(new_image_path)}')
+                    else:
+                        print(f'警告：WebP 文件不存在: {absolute_new_path}')
                 
                 # 如果文件被修改，保存更新
                 if modified:
@@ -50,6 +58,11 @@ def update_image_references(content_dir):
                         f.write(content)
 
 if __name__ == '__main__':
-    content_dir = 'content/posts'  # Markdown 文件目录
-    update_image_references(content_dir)
+    # 更新 posts 和 thoughts 目录
+    for content_type in ['posts', 'thoughts']:
+        content_dir = f'content/{content_type}'
+        if os.path.exists(content_dir):
+            print(f'正在更新 {content_type} 目录...')
+            update_image_references(content_dir)
+    
     print('所有图片引用更新完成！') 
