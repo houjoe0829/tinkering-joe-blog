@@ -1,9 +1,9 @@
 {
   "total": {
     "word_count_formatted": "20.1",
-    "word_count_raw": 200605,
-    "chinese_chars": 194258,
-    "english_words": 6347,
+    "word_count_raw": 200611,
+    "chinese_chars": 194263,
+    "english_words": 6348,
     "posts_count": 118,
     "thoughts_count": 10
   },
@@ -18,9 +18,9 @@
   "posts": {
     "count": 118,
     "word_count_formatted": "19.7",
-    "word_count_raw": 196735,
-    "chinese_chars": 190515,
-    "english_words": 6220
+    "word_count_raw": 196741,
+    "chinese_chars": 190520,
+    "english_words": 6221
   },
   "thoughts": {
     "count": 10,
