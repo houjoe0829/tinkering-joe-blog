@@ -31,6 +31,7 @@ VALID_TAGS = {
     "生活感悟",         # 生活相关的感悟
     "骑行",            # 骑行相关的内容
     "AI",             # 与 AI 相关的内容
+    "Vibe Coding",     # 与 AI 编程相关的感悟
 }
 
 class TagChecker:

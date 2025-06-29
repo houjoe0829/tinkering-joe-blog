@@ -3,7 +3,7 @@ title: "将网页变成桌面应用的6种方式"
 date: 2025-01-19
 draft: false
 description: "介绍6种将网页工具转换为桌面应用的方法，包括Chrome快捷方式、MenubarX、Slidepad等，以及推荐的网页工具清单。"
-tags: ["折腾软硬件", "生产力工具"]
+tags: ["折腾软硬件"]
 author: "Joe"
 ---
 
