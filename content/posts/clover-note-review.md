@@ -11,7 +11,7 @@ title: "当文档遇上了白板：Clover Note"
 
 ![Clover Note 界面展示](/images/posts/clover-note-review/v2-e2f8e441ef422f56be893d98fc505c50_1440w.webp)
 
-我是尝试深度使用 Clover 之后开始写的这篇文章，如同之前发现 [Craft 笔记](https://www.notion.so/Craft-b640d9f46d574c41b8130da57b05327b?pvs=21)一样，Clover 也是一款有很大潜力的小众笔记软件，从2020年第一次发现它到现在，一年多的时间里已经走过一个大的阶段，目前符合我们常说的老话，好的产品优秀得各式各样，Clover 就有着自己非常明显的风格特色，当然，也有些许不足。
+我是尝试深度使用 Clover 之后开始写的这篇文章，如同之前发现 [Craft 笔记](/posts/craft-notes-app-review)一样，Clover 也是一款有很大潜力的小众笔记软件，从2020年第一次发现它到现在，一年多的时间里已经走过一个大的阶段，目前符合我们常说的老话，好的产品优秀得各式各样，Clover 就有着自己非常明显的风格特色，当然，也有些许不足。
 
 ## 先介绍 Clover 是什么？
 
