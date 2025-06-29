@@ -132,7 +132,192 @@
     font-weight: 600;
 }
 
-/* 搜索页面底部字数统计样式 */
+/* Dashboard 容器样式 */
+.dashboard-container {
+    max-width: 900px;
+    margin: 3rem auto 2rem;
+    padding: 0 1rem;
+}
+
+/* Dashboard 标题区域 */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0;
+}
+
+
+
+/* 分类统计网格 */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* 统计卡片 */
+.stat-card {
+    background: var(--entry);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-accent);
+    transition: height 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card:hover::before {
+    height: 6px;
+}
+
+.writing-card {
+    --card-accent: #8b5cf6;
+}
+
+.posts-card {
+    --card-accent: #10b981;
+}
+
+.thoughts-card {
+    --card-accent: #6366f1;
+}
+
+.skyeye-card {
+    --card-accent: #f59e0b;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+}
+
+.card-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--primary);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.mini-progress {
+    width: 100%;
+    height: 4px;
+    background-color: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    background: var(--card-accent);
+    border-radius: 2px;
+    transition: width 1.2s ease-out;
+}
+
+/* 深色模式适配 */
+:root[data-theme="dark"] .stat-card,
+.dark .stat-card {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="dark"] .stat-card:hover,
+.dark .stat-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        padding: 0 0.75rem;
+        margin: 2rem auto 1.5rem;
+    }
+    
+    .dashboard-title {
+        font-size: 1.2rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1.25rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-container > * {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.dashboard-container > *:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-container > *:nth-child(2) { animation-delay: 0.2s; }
+
+/* 搜索页面底部字数统计样式 - 保留作为备用 */
 .search-stats {
     text-align: center;
     color: var(--content);

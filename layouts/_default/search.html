@@ -55,7 +55,7 @@
 </div>
 
 <!-- 字数统计 -->
-<div id="contentStats" class="search-stats">
+<div id="contentStats" class="dashboard-container">
     {{- /* 读取字数统计数据 */ -}}
     {{- $wordCountData := .Site.Data.word_count -}}
     
@@ -88,11 +88,77 @@
         {{- end -}}
     {{- end -}}
     
-    🎯 日拱一卒，今年已码了 <span class="word-count-highlight">{{ if $wordCountData }}{{ $wordCountData.this_year.word_count_formatted }}{{ else }}计算中...{{ end }}/{{ if $wordCountData }}{{ $wordCountData.total.word_count_formatted }}{{ else }}计算中...{{ end }}</span> 万字，包含 <span class="count-highlight">{{ $thisYearPosts }}/{{ $totalPosts }}</span> 篇博文，<span class="count-highlight">{{ $thisYearThoughts }}/{{ $totalThoughts }}</span> 条想法，以及 <span class="count-highlight">{{ $thisYearSkyEye }}/{{ $totalSkyEye }}</span> 张全景图片！
+    <!-- Dashboard 标题 -->
+    <div class="dashboard-header">
+        <h2 class="dashboard-title">创作统计</h2>
+    </div>
+    
+    <!-- 分类统计卡片 -->
+    <div class="dashboard-grid">
+        <!-- 码字统计 -->
+        <div class="stat-card writing-card">
+            <div class="card-header">
+                <span class="card-icon">✍️</span>
+                <h4>码字</h4>
+            </div>
+            <div class="card-content">
+                <div class="stat-number">{{ if $wordCountData }}{{ $wordCountData.this_year.word_count_formatted }}/{{ $wordCountData.total.word_count_formatted }}{{ else }}计算中...{{ end }}</div>
+                <div class="stat-label">今年/总共 (万字)</div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" style="width: {{ if and $wordCountData $wordCountData.total.word_count_raw (gt $wordCountData.total.word_count_raw 0) }}{{ div (mul $wordCountData.this_year.word_count_raw 100) $wordCountData.total.word_count_raw }}{{ else }}0{{ end }}%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 博文统计 -->
+        <div class="stat-card posts-card">
+            <div class="card-header">
+                <span class="card-icon">📝</span>
+                <h4>博文</h4>
+            </div>
+            <div class="card-content">
+                <div class="stat-number">{{ $thisYearPosts }}/{{ $totalPosts }}</div>
+                <div class="stat-label">今年/总共</div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" style="width: {{ if gt $totalPosts 0 }}{{ div (mul $thisYearPosts 100) $totalPosts }}{{ else }}0{{ end }}%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 想法统计 -->
+        <div class="stat-card thoughts-card">
+            <div class="card-header">
+                <span class="card-icon">💭</span>
+                <h4>想法</h4>
+            </div>
+            <div class="card-content">
+                <div class="stat-number">{{ $thisYearThoughts }}/{{ $totalThoughts }}</div>
+                <div class="stat-label">今年/总共</div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" style="width: {{ if gt $totalThoughts 0 }}{{ div (mul $thisYearThoughts 100) $totalThoughts }}{{ else }}0{{ end }}%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 全景图片统计 -->
+        <div class="stat-card skyeye-card">
+            <div class="card-header">
+                <span class="card-icon">📸</span>
+                <h4>全景图片</h4>
+            </div>
+            <div class="card-content">
+                <div class="stat-number">{{ $thisYearSkyEye }}/{{ $totalSkyEye }}</div>
+                <div class="stat-label">今年/总共</div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" style="width: {{ if gt $totalSkyEye 0 }}{{ div (mul $thisYearSkyEye 100) $totalSkyEye }}{{ else }}0{{ end }}%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
-// 当搜索框有输入时隐藏标签和字数统计
+// 当搜索框有输入时隐藏标签和统计信息
 document.getElementById('searchInput').addEventListener('input', function() {
     const tagCloud = document.getElementById('tagCloud');
     const contentStats = document.getElementById('contentStats');
