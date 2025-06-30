@@ -449,45 +449,7 @@ hideMeta: true
   </a>
 </div>
 
-## 💝 支持我
 
-<p class="support-description">已入住爱发电，可以通过爱发电赞助我的写作，赞助者名单将显示在个人博客里。</p>
-
-<div class="bento-container support-container">
-  <a href="https://afdian.com/a/houjoe" class="bento-card support-card">
-    <div class="card-content">
-      <div class="card-icon">❤️</div>
-      <h3>爱发电赞助</h3>
-      <p>如果我的内容对你有帮助，欢迎通过爱发电支持我的创作。你的支持是我持续写作和分享的动力！</p>
-      <span class="read-more">前往赞助 →</span>
-    </div>
-  </a>
-</div>
-
-<style>
-/* 支持卡片样式 */
-.support-container .support-card::before {
-  background: linear-gradient(135deg, rgba(255, 182, 193, 0.4), rgba(255, 105, 180, 0.4));
-}
-
-@media (prefers-color-scheme: dark) {
-  .support-container .support-card::before {
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.4), rgba(160, 82, 45, 0.4));
-  }
-}
-
-.support-container .support-card {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.support-description {
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: var(--text-color);
-}
-</style>
 
 <style>
 .toolkit-table {
