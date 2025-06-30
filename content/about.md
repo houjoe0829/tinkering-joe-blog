@@ -31,12 +31,37 @@ hideMeta: true
 
 如果有任何问题、合作想法或只是想打个招呼，欢迎通过以下方式找到我：
 
-| 平台 | 联系方式 | 备注 |
-|------|----------|------|
-| 📧 **Email** | [houqiao829@gmail.com](mailto:houqiao829@gmail.com) | - |
-| 🐦 **Twitter** | [@houjoe1](https://x.com/houjoe1) | 更新比较随意，私信开放！ |
-| 🐙 **GitHub** | [houjoe0829](https://github.com/houjoe0829) | 我也开始写代码了…… |
-| 💬 **Wechat** | 微信号[houjoe829] | 请备注来意 |
+<table class="toolkit-table contact-table">
+<thead>
+<tr>
+<th>平台</th>
+<th>联系方式</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📧 <strong>Email</strong></td>
+<td><a href="mailto:houqiao829@gmail.com">houqiao829@gmail.com</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>🐦 <strong>Twitter</strong></td>
+<td><a href="https://x.com/houjoe1">@houjoe1</a></td>
+<td>更新比较随意，私信开放！</td>
+</tr>
+<tr>
+<td>🐙 <strong>GitHub</strong></td>
+<td><a href="https://github.com/houjoe0829">houjoe0829</a></td>
+<td>我也开始写代码了……</td>
+</tr>
+<tr>
+<td>💬 <strong>Wechat</strong></td>
+<td>微信号[houjoe829]</td>
+<td>请备注来意</td>
+</tr>
+</tbody>
+</table>
 
 ## 📒 我写的东西
 
@@ -461,6 +486,68 @@ hideMeta: true
   font-size: 1rem;
   margin-bottom: 20px;
   color: var(--text-color);
+}
+</style>
+
+<style>
+.toolkit-table {
+  width: fit-content;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e1e5e9;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.toolkit-table th {
+  padding: 12px;
+  border: 1px solid #e1e5e9;
+  background-color: #f1f3f4;
+  font-weight: bold;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.toolkit-table td {
+  padding: 10px;
+  border: 1px solid #e1e5e9;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.toolkit-table td:first-child {
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+
+.toolkit-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.toolkit-table tr:hover td:first-child {
+  background-color: #e8f0fe;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toolkit-table {
+    border-color: #333;
+  }
+  .toolkit-table th {
+    background-color: #2c2c2c;
+    border-color: #333;
+  }
+  .toolkit-table td {
+    border-color: #333;
+  }
+  .toolkit-table td:first-child {
+    background-color: #252525;
+  }
+  .toolkit-table tr:hover {
+    background-color: #2a2a2a;
+  }
+  .toolkit-table tr:hover td:first-child {
+    background-color: #1c3a5e;
+  }
 }
 </style>
 

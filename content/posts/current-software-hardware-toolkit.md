@@ -9,9 +9,8 @@ author: "Joe"
 
 <style>
 .toolkit-table {
-  width: 100%;
+  width: fit-content;
   max-width: 100%;
-  table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #e1e5e9;
   margin: 20px 0;
@@ -27,15 +26,6 @@ author: "Joe"
   box-sizing: border-box;
 }
 
-.toolkit-table th:first-child {
-  white-space: nowrap;
-  width: 30% !important;
-}
-
-.toolkit-table th:last-child {
-  width: 70% !important;
-}
-
 .toolkit-table td {
   padding: 10px;
   border: 1px solid #e1e5e9;
@@ -47,11 +37,6 @@ author: "Joe"
   white-space: nowrap;
   background-color: #f8f9fa;
   font-weight: 500;
-  width: 30% !important;
-}
-
-.toolkit-table td:last-child {
-  width: 70% !important;
 }
 
 .toolkit-table tr:hover {
@@ -60,6 +45,28 @@ author: "Joe"
 
 .toolkit-table tr:hover td:first-child {
   background-color: #e8f0fe;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toolkit-table {
+    border-color: #333;
+  }
+  .toolkit-table th {
+    background-color: #2c2c2c;
+    border-color: #333;
+  }
+  .toolkit-table td {
+    border-color: #333;
+  }
+  .toolkit-table td:first-child {
+    background-color: #252525;
+  }
+  .toolkit-table tr:hover {
+    background-color: #2a2a2a;
+  }
+  .toolkit-table tr:hover td:first-child {
+    background-color: #1c3a5e;
+  }
 }
 </style>
 
