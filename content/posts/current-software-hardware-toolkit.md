@@ -1,5 +1,5 @@
 ---
-title: "正在使用的软硬件工具包梳理"
+title: "我的极简数字生活：一份持续更新的软硬件清单"
 date: 2025-03-14
 draft: false
 description: "定期整理自己在用的软硬件工具，方便断舍离，减少分心。"
@@ -87,15 +87,11 @@ author: "Joe"
 <tbody>
 <tr>
 <td><strong>个人独立站点</strong></td>
-<td>非微信渠道的个人博客，支持 RSS 和 Telegram 频道。至于为什么要有个个人站点，可点击 <a href="/posts/why-start-blogging/">《为什么要写 blog？》</a></td>
+<td>非微信渠道的个人博客，支持 RSS 和 Telegram 频道。至于为什么要有个个人站点，可参考之前写的 <a href="/posts/why-start-blogging/">《为什么要写 blog？》</a></td>
 </tr>
 <tr>
 <td><strong>微信公众号</strong></td>
 <td>当做微信渠道信息发布平台，国内互动</td>
-</tr>
-<tr>
-<td><strong>小红书</strong></td>
-<td>只分享数码与硬件</td>
 </tr>
 <tr>
 <td><a href="https://dayoneapp.com/">Day One</a></td>
@@ -103,11 +99,11 @@ author: "Joe"
 </tr>
 <tr>
 <td><a href="https://www.notion.so/">Notion</a></td>
-<td>算作个人 Wiki 的目录，可以连接 Google drive 和 Whimsical，像是文档的连接器</td>
+<td>算作个人 Wiki 的目录，可以连接 Whimsical，可与 ChatGPT Mac 端直接协作</td>
 </tr>
 <tr>
 <td><a href="https://whimsical.com/">Whimsical</a></td>
-<td>白板工具，主要用画思维导图、原型图和流程图，缺少移动端是个遗憾，但是好用且可免费使用</td>
+<td>白板工具，各种画图，比如思维导图、原型图和流程图，缺少移动端是个遗憾，但是好用且可免费使用</td>
 </tr>
 </tbody>
 </table>
@@ -128,7 +124,7 @@ author: "Joe"
 <tbody>
 <tr>
 <td><strong>Dia 浏览器</strong></td>
-<td>等不到 Google 来为 Chrome 加上 Gemini 了，需要一个 AI 版本的浏览器来消化现在的网页内容</td>
+<td>等不到 Google 来为 Chrome 加上 Gemini 了，需要一个 AI 版本的浏览器来帮助理解现在的网页内容</td>
 </tr>
 </tbody>
 </table>
@@ -196,10 +192,6 @@ author: "Joe"
 <td><a href="https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=">滴答清单</a></td>
 <td>超高性价比，而且任务管理、日历、番茄钟，均有，始终找不到更好的替代品</td>
 </tr>
-<tr>
-<td><strong>Things3 + Forest 专注森林 + 日历</strong></td>
-<td>偶尔也会用这个组合来替代</td>
-</tr>
 </tbody>
 </table>
 
@@ -233,7 +225,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong>YouTube</strong></td>
-<td>什么都能找到，还能字幕翻译</td>
+<td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
 <td><strong>滴答清单</strong></td>
@@ -241,7 +233,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><a href="https://pocketcasts.com/">Pocket Casts</a></td>
-<td>跨平台的播客 App，支持 iOS、Android、Web 等等</td>
+<td>跨平台的播客 App，支持 iOS、Android、Web 等等，不用小宇宙，因为听得比较杂</td>
 </tr>
 <tr>
 <td><a href="https://omniaudio.info/">OmniAudio</a></td>
@@ -308,10 +300,6 @@ author: "Joe"
 <tr>
 <td><a href="https://bobtranslate.com/">Bob Translate</a></td>
 <td>一款好用的翻译软件，方便快捷唤起，且支持 Popclip 插件，可以快速翻译选中的文字</td>
-</tr>
-<tr>
-<td><a href="https://gemini.com/">Gemini</a></td>
-<td>Gemini 最近本身发力，Deep Research 很好用，但只作为备用了。虽然 Gemini 与 Google 全套的深度和广度无人能及，但没有 Mac 端，自己的网页版难用</td>
 </tr>
 <tr>
 <td><a href="https://instantai.houjoe.me/">Instant AI</a></td>
@@ -526,7 +514,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong>iPhone 16 Pro</strong></td>
-<td>用不了 Pro Max 了，这个尺寸也是刚刚好</td>
+<td>用不了 Pro Max 了，这个尺寸和重量也是刚刚好</td>
 </tr>
 <tr>
 <td><strong>豆包的 Ola friend 耳机</strong></td>
