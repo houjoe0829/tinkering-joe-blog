@@ -88,6 +88,7 @@ author: "Joe"
 - [Downie 4](https://www.downie.cn/)：主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩
 - [Ice](https://icemenubar.app/)：Menubar 管理工具 Bartender 的最佳平替，完全免费
 - [Raycast](https://www.raycast.com/): 免费的 Mac 启动器，比系统自带的 spotlight 搜索功能性能好也强大
+- [Rectangle](https://rectangleapp.com/)：窗口管理工具，支持快捷键或者自定义触发位置来实现自定义的窗口尺寸和位置，免费完全够用
 - [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)：Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理。
 
 ## 硬件部分
