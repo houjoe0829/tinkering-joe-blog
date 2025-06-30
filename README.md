@@ -203,6 +203,86 @@ draft: false
 
 这种递减的设计确保了标题层级的清晰视觉区分。
 
+### 表格样式规范
+
+为了解决表格宽度超出内容，导致右侧出现不必要的空白和边框的问题，我们采用 `width: fit-content` 样式来让表格宽度自适应内容。
+
+**通用表格样式类**:
+所有需要自适应宽度的表格，都应使用 `toolkit-table` 类。
+
+**HTML 结构示例**:
+```html
+<table class="toolkit-table">
+  <!-- thead, tbody, tr, th, td -->
+</table>
+```
+
+**CSS 核心代码**:
+以下是 `.toolkit-table` 的核心样式，可以直接在 Markdown 文件的 `<style>` 标签中使用。这段代码也包含了对暗色模式的适配。
+
+```css
+.toolkit-table {
+  width: fit-content;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e1e5e9;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.toolkit-table th {
+  padding: 12px;
+  border: 1px solid #e1e5e9;
+  background-color: #f1f3f4;
+  font-weight: bold;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.toolkit-table td {
+  padding: 10px;
+  border: 1px solid #e1e5e9;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.toolkit-table td:first-child {
+  white-space: nowrap;
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+
+.toolkit-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.toolkit-table tr:hover td:first-child {
+  background-color: #e8f0fe;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toolkit-table {
+    border-color: #333;
+  }
+  .toolkit-table th {
+    background-color: #2c2c2c;
+    border-color: #333;
+  }
+  .toolkit-table td {
+    border-color: #333;
+  }
+  .toolkit-table td:first-child {
+    background-color: #252525;
+  }
+  .toolkit-table tr:hover {
+    background-color: #2a2a2a;
+  }
+  .toolkit-table tr:hover td:first-child {
+    background-color: #1c3a5e;
+  }
+}
+```
+
 ### 样式修改经验
 
 1. **样式优先级**:
