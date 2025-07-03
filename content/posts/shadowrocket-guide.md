@@ -27,24 +27,24 @@ author: "Joe"
 - 配置全平台通用，节点线路资源和代理规则可分开管理，很方便添加多家机场节点
 - 网络活动抓包很容易看懂，而且可以根据网络自己再添加不同的规则，比 QuantumultX 其实更简单
 
-[‎Shadowrocket 官方下载链接](https://apps.apple.com/hk/app/shadowrocket/id932747118)
+{{< link "https://apps.apple.com/hk/app/shadowrocket/id932747118" "Shadowrocket 官方下载链接" "iOS/macOS 平台最受欢迎的代理工具，支持多种协议，配置简单" >}}
 
 ## 如何购买 Shadowrocket
 
 - 需要国外的 Apple ID 才可以下载这个代理工具
 - 如果没有的话，万能的淘宝吧
-- 另外也可以在 Google 搜索，我感觉最近淘宝封锁的厉害，很难找到
+- 另外也可以在 Google 搜索，我感觉最近淘宝封锁的厉害，不一定找得到，多试试不同关键词
 
 ## 关于机场服务推荐
 
 软件只是代理工具，真正使用还搭配线路。
 
-最强保险当然是买两家线路，或者一家机场，但有很多地区的线路节点，分摊风险。
-
+最强保险是买两家线路，或者一家机场，但有很多地区的线路节点那种，分摊风险，可以搜一搜，一大堆，以下是我自己用了好几年的两家：
 - 稳定且速度快的一家 [https://agneo.co/?rc=epng2diu](https://agneo.co/?rc=epng2diu)
 - 性价比较高的一家 [https://renzhe.cloud/auth/register?code=ciDE](https://renzhe.cloud/auth/register?code=ciDE)
-- 不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问
-- 整体而言，一般建议买一个月试一试，亲身体验一下，以上两家我都用了三年以上，网上也有其他的很多，可以都找一找。
+  - 不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问
+
+整体而言，一般建议买一个月试一试，亲身体验一下，网上也有其他的很多，可以都找一找。
 
 ## 一步一步配置 Shadowrocket
 
@@ -62,9 +62,9 @@ author: "Joe"
 
 直接在添加配置里输入这个粘贴这个下载链接即可：[https://shadowrocket-rules-joe.pages.dev/shadowrocket-rules.conf](https://shadowrocket-rules-joe.pages.dev/shadowrocket-rules.conf)
 
-> 💡 补充说明：配置规则的源码托管在 [GitHub 仓库](https://github.com/houjoe0829/shadowrocket-rules-joe)，有兴趣的朋友可以基于此进行定制修改。
+> 💡 补充说明：配置规则的源码托管在 [GitHub 仓库](https://github.com/houjoe0829/shadowrocket-rules-joe)，有兴趣的朋友可以基于此进行定制修改，无任何限制。
 
-网上有超级多 Shadowrocket 的配置分享，可以搜一搜，我自己的风格是尽可能简化：
+网上也有超级多 Shadowrocket 的配置分享，可以搜一搜，我自己的风格是尽可能简化：
 
 - 整体规则用 Cursor 来生成和维护
 - 尽可能简化规则，不必要的都删除掉，越简单越能减少网络玄学问题
@@ -76,9 +76,9 @@ author: "Joe"
 - Apple、微软也增加了单独的策略组，均 Direct
 - 这个规则是带自动更新的，下载之后可以随时更新，或者开启自动配置更新
 
-### （3）节点分组
+### （3）开启节点分组
 
-这里主要是设定一个全局测速的自动节点，针对所有可用的节点，可以汇总多家机场。
+这里的目标是设定一个全局测速的自动节点，可以汇总多家机场的所有可用节点，稳定性更强。
 
 ![节点分组](/images/posts/shadowrocket-guide/image3.webp)
 
