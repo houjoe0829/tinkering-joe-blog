@@ -60,18 +60,21 @@ author: "Joe"
 
 > ⚠️ 下载或者导入配置之后记得选择使用该配置哦
 
-配置文件在这个链接里：[https://github.com/houjoe0829/shadowrocket-rules-joe](https://github.com/houjoe0829/shadowrocket-rules-joe)，或者，直接在添加配置里输入我这个配置下载链接即可：[https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf](https://raw.githubusercontent.com/houjoe0829/shadowrocket-rules-joe/refs/heads/main/shadowrocket%20rules.conf)
+直接在添加配置里输入这个粘贴这个下载链接即可：[https://shadowrocket-rules-joe.pages.dev/shadowrocket-rules.conf](https://shadowrocket-rules-joe.pages.dev/shadowrocket-rules.conf)
 
-网上有超级多 Shadowrocket 的配置分享，我自己也分享我自己的，风格还是一如既往尽可能简化：
+> 💡 补充说明：配置规则的源码托管在 [GitHub 仓库](https://github.com/houjoe0829/shadowrocket-rules-joe)，有兴趣的朋友可以基于此进行定制修改。
 
-- 整体规则用 Claude AI 来生成
+网上有超级多 Shadowrocket 的配置分享，可以搜一搜，我自己的风格是尽可能简化：
+
+- 整体规则用 Cursor 来生成和维护
 - 尽可能简化规则，不必要的都删除掉，越简单越能减少网络玄学问题
 - 为节点按地区分区，这很重要，这样方便特定网址走特定地区，比如 Spotify、AI 等
 - 每个地区分组自动测速
-- 为 AI 单独增加策略组，已经添加了 ChatGPT、Claude、Gemini 等 AI
+- 为 AI 单独增加策略组，已经添加了 ChatGPT、Claude、Gemini 等 AI，并且随着 AI 发展会持续增加
 - 为 Social Channel 增加了策略组
 - 为海外视频会议单独设置了策略组
 - Apple、微软也增加了单独的策略组，均 Direct
+- 这个规则是带自动更新的，下载之后可以随时更新，或者开启自动配置更新
 
 ### （3）节点分组
 
