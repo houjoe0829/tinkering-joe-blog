@@ -357,6 +357,13 @@ draft: false
         *   移除或转换 Notion 内部链接。
         *   调整 Callout、Toggle 等 Notion 特有块的显示，使其符合标准 Markdown 或博客主题支持的格式。
         *   清理不必要的 HTML 标签或样式。
+    *   **图片 Caption 处理**：如果 Notion 导出的文件中包含图片 Caption 文案，需要按以下格式在博客中显示：
+        ```html
+        <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+        <em>Caption 文案内容</em>
+        </div>
+        ```
+        *   Caption 样式说明：居中显示、浅灰色（#666）、字体稍小（0.9em）、与图片贴近（margin-top: -10px）
 
 6.  **处理并添加图片**：
     *   在 `static/images/posts/` 目录下，创建与文章同名（英文文件名）的目录。
@@ -420,85 +427,7 @@ draft: false
     *   首先，再次确认文章的标签是否都出自预定义的标签列表。
     *   其次，回顾操作记录，确保所有相关的临时文件和目录都已清理干净。
 
-## 依据 Obsidian Markdown 文件来更新博文的规则
 
-这些 Markdown 是从 Obsidian 导出的，包括 Markdown 文件和附件，都放在 `temp_files` 目录下。
-
-请按照以下关键步骤来帮助更新至当前的 Blog 格式：
-
-1. **接收并理解内容**：AI 助手会仔细阅读并理解您提供的文章标题和正文。
-2. **创建 Markdown 文件**：在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件，要求是英文单词，不要使用拼音。
-3. **添加 Frontmatter**：AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括：
-   * `title`：文章标题
-   * `date`：发布日期为今天，请使用指令 `$ date +%Y-%m-%d` 获取当前日期，不要使用 AI 数据库的日期
-   * `draft`：是否为草稿，默认不是草稿
-   * `description`：文章简短描述
-   * `tags`：只能从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
-   * `author`：作者信息
-   每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
-   - YAML 对特殊字符非常敏感，特别是在 Front Matter 中
-   - 在元数据里，使用纯英文引号包裹 YAML 值
-   - 在元数据里，统一使用半角标点符号
-4. **添加文章正文**：AI 会将您提供的文章正文内容复制到 Markdown 文件中。
-5. **添加图片**：
-   - 在 `static/images/posts/` 目录下，创建与文章同名的目录
-   - 将原始图片复制到该目录
-   - 根据图片内容给予有意义的文件名
-   - 使用 `compress_article_images.py` 脚本处理单篇文章的图片：
-
-        ```bash
-        python3 scripts/compress_article_images.py article-name
-        ```
-   - 将压缩后的图片从 `static/images_compressed/posts/article-name/` 复制到 `static/images/posts/article-name/`
-   - 运行 `update_image_refs.py` 更新文章中的图片引用为 WebP 格式
-   - 注意：这里不要使用 `compress_images.py`，它是用于全站图片批量处理的
-
-   ③ **最终检查**：
-      * 确认所有图片都能正确显示
-      * 检查文章格式是否规范
-      * 确保图片描述准确且有意义
-      * 验证文章元数据的准确性
-
-   注意：虽然手动处理会花费更多时间，但能确保更好的质量控制和准确性。对于图片压缩和格式转换，可以使用图形界面工具（如 ImageOptim）来处理。
-
-5. **检查交叉引用**：
-   * 使用 grep 或其他搜索工具在所有博客文章中搜索当前文章的相关关键词
-   * 检查其他文章中是否有引用当前文章的链接
-   * 如果发现引用：
-     * 确保链接格式正确（应该是 `/posts/article-name` 格式）
-     * 修正任何指向 Notion 或其他外部平台的旧链接
-     * 更新所有相关文章中的引用
-   * 但是，不要自己新增引用，只修正错误
-   * 建议使用以下命令进行搜索：
-     ```bash
-     # 使用 grep 搜索关键词
-     grep -r "关键词" content/posts/
-     
-     # 或者使用项目提供的搜索脚本
-     python3 scripts/grep_search.py "关键词"
-     ```
-
-6. 清理原始图片，不要忘了
-
-     ```bash
-     # 预览要删除的原始图片文件
-     python3 scripts/clean_original_images.py
-     
-     # 确认无误后删除原始图片文件
-     python3 scripts/clean_original_images.py --execute
-     ```
-
-   * 这一步会删除已经转换为 WebP 格式的原始图片文件
-   * 注意：网站图标文件（如 android-chrome-*.png、apple-touch-icon.png 等）会自动保护，不会被删除
-
-7. **清理所有临时文件**：
-   * 清理临时解压目录：`rm -rf temp_notion/*`
-   * 清理临时压缩图片：`rm -rf static/images_compressed/posts/article-name`
-   * 清理已处理的草稿 zip 文件：`rm -f temp_files/*.zip`
-
-8. 最后，运行自检清单
-   首先，一定要先读一下预定义的标签列表，看看标签是否出自列表
-   其次，看看操作记录是否清理了所有的临时文件
 
 ## 手动增加 Thought (随想) 的方法
 
@@ -531,6 +460,12 @@ Thought (随想) 是一种更简短、随性的内容形式，通常没有正式
 
 3.  **添加内容**：
     *   在 Frontmatter下方粘贴或撰写您的 Thought 内容。
+    *   **图片 Caption 处理**：如果内容中包含图片 Caption 文案，需要按以下格式显示：
+        ```html
+        <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+        <em>Caption 文案内容</em>
+        </div>
+        ```
 
 4.  **处理图片 (如果需要)**：
     *   如果 Thought 中包含图片，首先在 `static/images/thoughts/` 目录下，创建与 Thought Markdown 文件名对应的目录（例如，如果 Markdown 文件是 `my-random-thought.md`，则图片目录为 `static/images/thoughts/my-random-thought/`）。将原始图片放入此目录。
