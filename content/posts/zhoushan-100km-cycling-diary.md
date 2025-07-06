@@ -4,7 +4,7 @@ title: "舟山环岛 100 公里骑行日记"
 date: 2025-05-11
 draft: false
 description: "一次说走就走的舟山环岛骑行，体验风与海的挑战"
-tags: ["骑行", "现实是个开放世界"]
+tags: ["4+2 骑行中", "现实是个开放世界"]
 ---
 
 ![舟山环岛骑行路线图](/images/posts/zhoushan-100km-cycling-diary/cycling-route-overview.webp)
