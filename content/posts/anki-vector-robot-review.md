@@ -3,7 +3,7 @@ title: "Anki 出品的 Vector 机器人是个啥？智能么？"
 date: 2019-11-12
 draft: false
 description: "深入了解 Anki Vector 机器人的功能、特点、现状以及为什么这个有趣的产品最终走向了困境"
-tags: ["折腾软硬件", "AI"]
+tags: ["折腾软硬件", "AI 相关"]
 author: "Joe"
 ---
 

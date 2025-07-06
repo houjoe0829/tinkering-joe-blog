@@ -3,7 +3,7 @@ author: "Joe"
 date: "2025-05-22"
 description: "记录了在工作和生活中，凡事先问 AI 已经成为一种固定习惯，并分享了使用 AI 的各种场景和心得，以及如何更好地与 AI 协作。"
 draft: false
-tags: ["AI", "工作感悟"]
+tags: ["AI 相关", "工作感悟"]
 title: "凡事先问 AI"
 ---
 
