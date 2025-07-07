@@ -6,7 +6,11 @@
     <h1 class="post-title">{{ .Title }}</h1>
     {{- if .Description }}
     <div class="post-description">
-      {{ .Description }}
+      {{- $description := .Description -}}
+      {{- $description = strings.TrimSpace $description -}}
+      {{- $description = replaceRE "\\n\\s*\\n" "</p><p>" $description -}}
+      {{- $description = printf "<p>%s</p>" $description -}}
+      {{ $description | safeHTML }}
     </div>
     {{- end }}
   </header>
@@ -113,6 +117,16 @@
 
 <!-- 添加样式 -->
 <style>
+  /* 天空之眼描述段落样式 */
+  .post-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .post-description p:last-child {
+    margin-bottom: 0;
+  }
+
   .sky-eye-detail {
     display: flex;
     flex-direction: column;
