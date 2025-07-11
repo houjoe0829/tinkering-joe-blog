@@ -93,11 +93,11 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>个人独立站点</strong></td>
+<td><strong><a href="https://houjoe.me">个人独立站点</a></strong></td>
 <td>非微信渠道的个人博客，支持 RSS 和 Telegram 频道。至于为什么要有个个人站点，可参考之前写的 <a href="/posts/why-start-blogging/">《为什么要写 blog？》</a></td>
 </tr>
 <tr>
-<td><strong>微信公众号</strong></td>
+<td><strong><a href="/wechat">微信公众号</a></strong></td>
 <td>当做微信渠道信息发布平台，国内互动</td>
 </tr>
 <tr>
