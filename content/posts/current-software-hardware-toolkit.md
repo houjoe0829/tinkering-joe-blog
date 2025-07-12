@@ -280,7 +280,7 @@ author: "Joe"
 
 <div style="text-align: center">
 
-### ❻ AI 与翻译助手
+### ❻ AI 与学习
 
 </div>
 
@@ -293,24 +293,24 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.doubao.com/chat/">豆包</a></td>
-<td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
+<td><a href="https://chatgpt.com/">ChatGPT</a></td>
+<td>在 Claude 对我的 IP 不太友好之后，发现 ChatGPT Mac 客户端是所有 AI 里做得最丝滑到位的</td>
 </tr>
 <tr>
 <td><a href="https://www.cursor.com/">Cursor</a></td>
 <td>经常在 Cursor 和 Windsurf 两家之间切换，因为都经常遇到阻塞使用的毛病</td>
 </tr>
 <tr>
-<td><a href="https://chatgpt.com/">ChatGPT</a></td>
-<td>在 Claude 对我的 IP 不太友好之后，发现 ChatGPT Mac 客户端是所有 AI 里做得最丝滑到位的</td>
+<td><a href="https://www.doubao.com/chat/">豆包</a></td>
+<td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
 </tr>
 <tr>
 <td><a href="https://bobtranslate.com/">Bob Translate</a></td>
 <td>一款好用的翻译软件，方便快捷唤起，且支持 Popclip 插件，可以快速翻译选中的文字</td>
 </tr>
 <tr>
-<td><a href="https://instantai.houjoe.me/">Instant AI</a></td>
-<td>极简风格的多模型聚合的 AI 客户端，主要用 Claude 和 DeepSeek API，这个也是我自己做的</td>
+<td><a href="https://www.duolingo.com/">多邻国</a></td>
+<td>最近喜欢上的碎片化学习方式，用来学习日语，比之前自主学日语能坚持下去</td>
 </tr>
 </tbody>
 </table>
