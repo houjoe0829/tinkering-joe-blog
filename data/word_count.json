@@ -1,26 +1,26 @@
 {
   "total": {
-    "word_count_formatted": "20.3",
-    "word_count_raw": 202902,
-    "chinese_chars": 196402,
-    "english_words": 6500,
-    "posts_count": 119,
+    "word_count_formatted": "20.4",
+    "word_count_raw": 203818,
+    "chinese_chars": 197309,
+    "english_words": 6509,
+    "posts_count": 120,
     "thoughts_count": 12
   },
   "this_year": {
-    "word_count_formatted": "4.1",
-    "word_count_raw": 41425,
-    "chinese_chars": 39929,
-    "english_words": 1496,
-    "posts_count": 29,
+    "word_count_formatted": "4.2",
+    "word_count_raw": 42341,
+    "chinese_chars": 40836,
+    "english_words": 1505,
+    "posts_count": 30,
     "thoughts_count": 11
   },
   "posts": {
-    "count": 119,
-    "word_count_formatted": "19.8",
-    "word_count_raw": 198280,
-    "chinese_chars": 191934,
-    "english_words": 6346
+    "count": 120,
+    "word_count_formatted": "19.9",
+    "word_count_raw": 199196,
+    "chinese_chars": 192841,
+    "english_words": 6355
   },
   "thoughts": {
     "count": 12,
