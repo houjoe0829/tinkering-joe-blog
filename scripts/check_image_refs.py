@@ -37,6 +37,15 @@ def check_image_exists(image_path):
     
     # 检查文件是否存在（原始路径或解码后的路径）
     exists = os.path.exists(full_path) or os.path.exists(decoded_full_path)
+    
+    # 如果不存在，尝试添加 .webp 扩展名
+    if not exists and not image_path.endswith('.webp'):
+        webp_path = os.path.join('static', (image_path + '.webp').lstrip('/'))
+        decoded_webp_path = os.path.join('static', (decoded_path + '.webp').lstrip('/'))
+        exists = os.path.exists(webp_path) or os.path.exists(decoded_webp_path)
+        if exists:
+            return True, webp_path if os.path.exists(webp_path) else decoded_webp_path
+    
     return exists, full_path if os.path.exists(full_path) else decoded_full_path
 
 def main():
