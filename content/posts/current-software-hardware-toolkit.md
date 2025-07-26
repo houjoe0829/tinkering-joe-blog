@@ -268,12 +268,12 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>极空间的极音乐</strong></td>
-<td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
+<td><strong>QQ 音乐</strong></td>
+<td>目前已经是主力了，虽然广告依然很多。</td>
 </tr>
 <tr>
-<td><strong>QQ 音乐</strong></td>
-<td>作为备选</td>
+<td><strong>极空间的极音乐</strong></td>
+<td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
 </tr>
 </tbody>
 </table>
@@ -294,11 +294,11 @@ author: "Joe"
 <tbody>
 <tr>
 <td><a href="https://chatgpt.com/">ChatGPT</a></td>
-<td>在 Claude 对我的 IP 不太友好之后，发现 ChatGPT Mac 客户端是所有 AI 里做得最丝滑到位的</td>
+<td>原本是把 ChatGPT 当做 Claude 替代品，现在发现除了代码以外，ChatGPT 的生成质量都好于 Claude，而且可以和 Notion 很好地打通</td>
 </tr>
 <tr>
 <td><a href="https://www.cursor.com/">Cursor</a></td>
-<td>经常在 Cursor 和 Windsurf 两家之间切换，因为都经常遇到阻塞使用的毛病</td>
+<td>Cursor 用习惯了，工具是次要的，主要还是要构建有用的东西。</td>
 </tr>
 <tr>
 <td><a href="https://www.doubao.com/chat/">豆包</a></td>
@@ -528,11 +528,11 @@ author: "Joe"
 <td>特意为了它写个文章：<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a>，主要是为了自驾和骑行的时候用豆包</td>
 </tr>
 <tr>
-<td><strong>Anker 二合一快充</strong></td>
-<td>电脑、手机、iPad、手表、Steam Deck 等所有设备的充电器和充电宝二合一</td>
+<td><strong>Remax 二合一快充</strong></td>
+<td>还是钟爱自带 AC 插脚的二合一充电宝，这次换了个 2万毫安电芯容量的，不过，更喜欢的是最近开始流行的抽拉线，不用额外带线，还让随身物品更整洁。</td>
 </tr>
 <tr>
-<td><strong>Amazfit GTR 4</strong></td>
+<td><strong>Amazfit Active Edge</strong></td>
 <td>运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表</td>
 </tr>
 <tr>
@@ -542,6 +542,10 @@ author: "Joe"
 <tr>
 <td><strong>iPad mini</strong></td>
 <td>最佳电子书阅读器，在这个 AI 盛行的时代，不太建议电纸书，输入和处理都不够</td>
+</tr>
+<tr>
+<td><strong>无印良品保冷杯</strong></td>
+<td>非常喜欢喝冷水，终于找到一款兼顾多用途的保冷杯，既是骑行水壶 600ml，也是随行杯，特殊的设计，可以把买的瑞幸咖啡倒入其中，保冷一下午。</td>
 </tr>
 <tr>
 <td><strong>随身 WiFi</strong></td>
