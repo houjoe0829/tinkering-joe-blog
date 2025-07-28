@@ -53,21 +53,19 @@
           &lt;br/&gt;&lt;a href="{{ .Permalink }}" target="_blank"&gt;点击可沉浸式查看全景图片&lt;/a&gt;
         {{- else -}}
           {{- /* 其他内容类型（posts 和 thoughts）的处理 */ -}}
-          {{- $cleanedContent := .RawContent -}}
-          {{- $cleanedContent = $cleanedContent | replaceRE "{{< .*? >}}" "" -}}
-          {{- $cleanedContent = $cleanedContent | replaceRE "!\\[.*?\\]\\(.*?\\)" "" -}}
-          {{- $cleanedContent = $cleanedContent | replaceRE "\\[.*?\\]\\(.*?\\)" "" -}}
-          {{- $cleanedContent = $cleanedContent | replaceRE "^\\s*#+ .*?$" "" -}}
-          {{- $cleanedContent = $cleanedContent | replaceRE "\\n\\s*\\n" " " -}}
-          {{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
-          {{- $plainContent = $plainContent | replaceRE "^\\s+" "" -}}
+          {{- /* 使用 .Plain 获得纯文本内容，避免处理复杂的 shortcode */ -}}
+          {{- $plainContent := .Plain -}}
+          {{- /* 清理多余的空白字符 */ -}}
           {{- $plainContent = $plainContent | replaceRE "\\s+" " " -}}
+          {{- $plainContent = $plainContent | replaceRE "^\\s+" "" -}}
+          {{- $plainContent = $plainContent | replaceRE "\\s+$" "" -}}
+          {{- /* 创建摘要 */ -}}
           {{- $truncatedContent := $plainContent | truncate 200 -}}
           {{- $isContentTruncated := gt (len $plainContent) 200 -}}
           {{- if $isContentTruncated -}}
             {{ $truncatedContent }}… &lt;a href="{{ .Permalink }}" target="_blank"&gt;查看全文&lt;/a&gt;
           {{- else -}}
-            {{ $truncatedContent | html }}
+            {{ $plainContent | html }}
           {{- end -}}
         {{- end -}}
       </description>
