@@ -10,6 +10,8 @@ timeZone: "Asia/Shanghai"  # 设置时区为北京时间
 # Markdown 渲染配置
 markup:
   goldmark:
+    extensions:
+      typographer: false
     renderer:
       unsafe: true  # 允许在 Markdown 中渲染 HTML
 
