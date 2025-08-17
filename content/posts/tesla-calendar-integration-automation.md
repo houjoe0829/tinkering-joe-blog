@@ -23,6 +23,8 @@ title: "让特斯拉行程无缝接入日历"
 
 只需要借助 Teslamate 获取行驶数据，再将行程变为发生的日程，自动同步到日历里，这个数据就真的有用起来了，因为，日历是每天都会查看的，当然，主要是针对我个人。如之前所说，可以精准知晓某一天，什么时间段，从什么地方开往什么地方，当时的温度，消耗的续航里程，而这一切，一旦部署，完全自动化，创建的日程还分秒不差，准确反映现实。
 
+![CleanShot 2025-08-17 at 14.26.44@2x.jpg](/images/posts/tesla-calendar-integration-automation/CleanShot%202025-08-17%20at%2014.26.44@2x.webp)
+
 整套自动化大概的实现方式是：在 VPS（虚拟服务器）上部署 Teslamate 获取车机数据，再用 Python 脚本将数据转换为需要的日程信息，最后在 VPS 上构建出带有密码验证的 iCal 日历订阅链接即可。
 
 <img src="/images/posts/tesla-calendar-integration-automation/CleanShot_2025-08-17_at_13.51.192x.webp" alt="CleanShot 2025-08-17 at 13.51.19@2x.jpg" style="width: 60%; max-width: 600px; height: auto; display: block; margin: 0 auto;" />
