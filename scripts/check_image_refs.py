@@ -9,7 +9,28 @@ def find_image_refs(md_file):
     with open(md_file, 'r', encoding='utf-8') as f:
         content = f.read()
     # 匹配 Markdown 图片语法
-    markdown_refs = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content)
+    # 修复：允许路径中包含括号，匹配平衡的括号
+    markdown_refs = []
+    pattern = r'!\[([^\]]*)\]\('
+    for match in re.finditer(pattern, content):
+        alt_text = match.group(1)
+        start_pos = match.end()
+        
+        # 手动查找匹配的闭合括号，处理嵌套括号
+        paren_count = 1
+        path_end = start_pos
+        for i in range(start_pos, len(content)):
+            if content[i] == '(':
+                paren_count += 1
+            elif content[i] == ')':
+                paren_count -= 1
+                if paren_count == 0:
+                    path_end = i
+                    break
+        
+        if paren_count == 0:  # 找到了匹配的括号
+            image_path = content[start_pos:path_end]
+            markdown_refs.append((alt_text, image_path))
     
     # 匹配 HTML 图片标签
     html_refs = re.findall(r'<img\s+[^>]*src="([^"]+)"[^>]*>', content)
