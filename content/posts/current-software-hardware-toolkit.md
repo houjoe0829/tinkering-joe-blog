@@ -197,7 +197,7 @@ author: "Joe"
 <tbody>
 <tr>
 <td><a href="https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=">滴答清单</a></td>
-<td>超高性价比，而且任务管理、日历、番茄钟，均有，始终找不到更好的替代品</td>
+<td>超高性价比的任务管理工具，我把所有的日程都汇总在这里来管理</td>
 </tr>
 </tbody>
 </table>
@@ -268,10 +268,6 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>QQ 音乐</strong></td>
-<td>目前已经是主力了，虽然广告依然很多。</td>
-</tr>
-<tr>
 <td><strong>极空间的极音乐</strong></td>
 <td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
 </tr>
@@ -340,7 +336,7 @@ author: "Joe"
 
 <div style="text-align: center">
 
-### ❽ 同步与备份
+### ❽ 同步与远程
 
 </div>
 
@@ -363,6 +359,10 @@ author: "Joe"
 <tr>
 <td><strong>Google Photo</strong></td>
 <td>多年来的图片备份工具，即使有 Nas 也不放弃</td>
+</tr>
+<tr>
+<td><a href="https://sunlogin.oray.com/">向日葵远程控制</a></td>
+<td>用来远程访问另一台备用电脑，这样出门只用带一台就可以了</td>
 </tr>
 </tbody>
 </table>
@@ -407,8 +407,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Shadowrocket</strong></td>
-<td>可参考<a href="/posts/shadowrocket-guide/">《性价比最高的科学上网方案：Shadowrocket》</a>，另外也会使用 QuantumltX 备用，可参考<a href="/posts/quantumult-x-guide/">《最简约的科学上网方案：Quantumlt X》</a></td>
+<td><strong>QuantumltX</strong></td>
+<td>可参考<a href="/posts/quantumult-x-guide/">《最简约的科学上网方案：Quantumlt X》</a>，备用工具是 Shadowrocket，可参考<a href="/posts/shadowrocket-guide/">《性价比最高的科学上网方案：Shadowrocket》</a></td>
 </tr>
 <tr>
 <td><strong>Clash Verge</strong></td>
@@ -541,7 +541,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong>iPad mini</strong></td>
-<td>最佳电子书阅读器，在这个 AI 盛行的时代，不太建议电纸书，输入和处理都不够</td>
+<td>最佳电子书阅读器，也是电脑用累了之后，捧在手里的屏幕</td>
 </tr>
 <tr>
 <td><strong>无印良品保冷杯</strong></td>
