@@ -1,16 +1,16 @@
 {
   "total": {
     "word_count_formatted": "21.3",
-    "word_count_raw": 212834,
-    "chinese_chars": 206156,
+    "word_count_raw": 212841,
+    "chinese_chars": 206163,
     "english_words": 6678,
     "posts_count": 123,
     "thoughts_count": 16
   },
   "this_year": {
     "word_count_formatted": "5.1",
-    "word_count_raw": 51357,
-    "chinese_chars": 49683,
+    "word_count_raw": 51364,
+    "chinese_chars": 49690,
     "english_words": 1674,
     "posts_count": 33,
     "thoughts_count": 15
@@ -18,8 +18,8 @@
   "posts": {
     "count": 123,
     "word_count_formatted": "20.7",
-    "word_count_raw": 207073,
-    "chinese_chars": 200581,
+    "word_count_raw": 207080,
+    "chinese_chars": 200588,
     "english_words": 6492
   },
   "thoughts": {
