@@ -1,10 +1,10 @@
 ---
 author: "Joe"
 date: 2025-08-22
-description: "5000公里自驾之旅，从杭州到三亚的时光机系列，记录沿途的风景、美食和体验"
+description: "5000 公里自驾之旅，从杭州到三亚的时光机系列，记录沿途的风景、美食和体验"
 draft: false
 tags: ["现实是个开放世界"]
-title: "时光机：5000公里自驾，从杭州到三亚"
+title: "时光机：5000 公里自驾，从杭州到三亚"
 ---
 
 ![CleanShot 2025-08-03 at 14.20.51@2x.jpg](/images/posts/time-machine-5000km-road-trip-hangzhou-to-sanya/CleanShot_2025-08-03_at_14.20.512x.webp)
