@@ -371,27 +371,45 @@ draft: false
     *   在 `static/images/posts/` 目录下，创建与文章同名（英文文件名）的目录。
     *   将 Notion 导出的图片（通常在解压后的附件目录中）直接复制到这个新创建的图片目录中。
     *   **重要：不要手动重命名图片文件，也不要手动修改 Markdown 中的图片引用路径**。
-    *   按顺序执行以下命令处理图片：
+    *   按顺序执行以下命令处理图片（**注意使用完整文件路径**）：
         ```bash
-        # 1. 压缩并转换图片为 WebP 格式
-        python3 scripts/compress_article_images.py article-name
+        # 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
+        python3 scripts/compress_article_images.py content/posts/article-name.md
 
-        # 2. 更新文章中的图片引用为 WebP 格式
-        python3 scripts/update_image_refs.py
-
-        # 3. 将压缩后的图片移动到正确位置
+        # 2. 将压缩后的图片移动到正确位置
         cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
 
-        # 4. 清理原始图片文件
+        # 3. 更新文章中的图片引用为 WebP 格式 (运行两次确保完全更新)
+        python3 scripts/update_image_refs.py
+        python3 scripts/update_image_refs.py
+
+        # 4. 清理带空格的图片文件名 (如果存在)
+        # 检查是否有类似 "image 1.webp" 这样的文件需要重命名
+        ls static/images/posts/article-name/ | grep " "
+        # 如有需要，手动重命名：
+        # cd static/images/posts/article-name
+        # mv "image 1.webp" "image1.webp"
+        # mv "image 2.webp" "image2.webp"
+        # ...
+
+        # 5. 再次运行引用更新以处理重命名的文件
+        python3 scripts/update_image_refs.py
+
+        # 6. 清理原始图片文件
         python3 scripts/clean_original_images.py --execute
 
-        # 5. 清理临时文件
+        # 7. 清理临时文件
         rm -rf static/images_compressed/posts/article-name
         ```
-    *   注意事项：
-        * 所有图片最终会统一为 WebP 格式
-        * 图片引用路径会自动更新为 `/images/posts/article-name/image-name.webp` 格式
-        * 在执行清理前，确保 WebP 图片已经正确生成
+    *   **常见问题及解决方案**：
+        * **脚本路径错误**：必须使用完整文件路径 `content/posts/article-name.md`，不能只使用文章名
+        * **图片引用更新不完全**：需要运行 `update_image_refs.py` 多次，特别是在移动图片文件后
+        * **文件名包含空格**：Notion 导出的图片可能包含空格，压缩后需要手动重命名
+        * **WebP 文件不存在警告**：在移动图片文件前运行更新脚本会出现此警告，属于正常现象
+    *   **验证步骤**：
+        * 使用 `python3 scripts/check_image_refs.py` 检查所有图片引用是否有效
+        * 确认 `static/images/posts/article-name/` 目录下只有 `.webp` 格式的图片
+        * 所有图片最终会统一为 WebP 格式，引用路径为 `/images/posts/article-name/image-name.webp` 格式
 
 7.  **最终检查**：
     *   确认所有图片都能正确显示。
@@ -537,21 +555,34 @@ Thought (随想) 是一种更简短、随性的内容形式，通常没有正式
     *   在 `static/images/thoughts/` 目录下，创建与 Thought Markdown 文件名对应的目录（即 `thought-file-name`）。
     *   将 Notion 导出的图片（通常在解压后的附件目录中）直接复制到这个新创建的图片目录中 (`static/images/thoughts/thought-file-name/`)。
     *   **重要：不要手动重命名图片文件，也不要手动修改 Markdown 中的图片引用路径**，脚本会自动处理。
-    *   按顺序执行以下命令处理图片 (将 `thought-file-name` 替换为实际的文件名，不含扩展名)：
+    *   按顺序执行以下命令处理图片（**注意使用完整文件路径**）：
         ```bash
-        # 1. 压缩并转换图片为 WebP 格式
-        python3 scripts/compress_article_images.py thoughts/thought-file-name
+        # 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
+        python3 scripts/compress_article_images.py content/thoughts/thought-file-name.md
 
-        # 2. 更新 Thought 中的图片引用为 WebP 格式 (全局更新)
-        python3 scripts/update_image_refs.py
-
-        # 3. 将压缩后的图片移动到正确位置
+        # 2. 将压缩后的图片移动到正确位置
         cp -r static/images_compressed/thoughts/thought-file-name/* static/images/thoughts/thought-file-name/
 
-        # 4. 清理原始图片文件 (全局清理)
+        # 3. 更新 Thought 中的图片引用为 WebP 格式 (运行两次确保完全更新)
+        python3 scripts/update_image_refs.py
+        python3 scripts/update_image_refs.py
+
+        # 4. 清理带空格的图片文件名 (如果存在)
+        # 检查是否有类似 "image 1.webp" 这样的文件需要重命名
+        ls static/images/thoughts/thought-file-name/ | grep " "
+        # 如有需要，手动重命名：
+        # cd static/images/thoughts/thought-file-name
+        # mv "image 1.webp" "image1.webp"
+        # mv "image 2.webp" "image2.webp"
+        # ...
+
+        # 5. 再次运行引用更新以处理重命名的文件
+        python3 scripts/update_image_refs.py
+
+        # 6. 清理原始图片文件 (全局清理)
         python3 scripts/clean_original_images.py --execute
 
-        # 5. 清理本次压缩产生的临时文件
+        # 7. 清理本次压缩产生的临时文件
         rm -rf static/images_compressed/thoughts/thought-file-name
         ```
 
@@ -943,19 +974,25 @@ python3 scripts/check_spacing.py --file content/posts/your-article.md --fix
 
 ### 2. 执行图片处理（按顺序执行）
 ```bash
-# 1. 压缩并转换图片为 WebP 格式
-python3 scripts/compress_article_images.py article-name
+# 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
+python3 scripts/compress_article_images.py content/posts/article-name.md
 
-# 2. 更新文章中的图片引用为 WebP 格式
-python3 scripts/update_image_refs.py
-
-# 3. 将压缩后的图片移动到正确位置
+# 2. 将压缩后的图片移动到正确位置
 cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
 
-# 4. 清理原始图片文件
+# 3. 更新文章中的图片引用为 WebP 格式 (运行两次确保完全更新)
+python3 scripts/update_image_refs.py
+python3 scripts/update_image_refs.py
+
+# 4. 清理带空格的图片文件名 (如果存在)
+# 检查是否有类似 "image 1.webp" 这样的文件需要重命名
+ls static/images/posts/article-name/ | grep " " || echo "无需重命名"
+# 如有需要，手动重命名后再次运行引用更新
+
+# 5. 清理原始图片文件
 python3 scripts/clean_original_images.py --execute
 
-# 5. 清理临时文件
+# 6. 清理临时文件
 rm -rf static/images_compressed/posts/article-name
 ```
 
