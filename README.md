@@ -320,132 +320,17 @@ draft: false
 
 ## 依据导出的 Notion ZIP 压缩包来更新博文的规则
 
-这些 Markdown 和附件通常是从 Notion 导出的 ZIP 压缩包，建议将 ZIP 文件先放在 `temp_files` 目录下。
+从 Notion 导出的 ZIP 压缩包需要经过标准化的处理流程才能转换为博客文章。
 
-请按照以下关键步骤来帮助更新至当前的 Blog 格式：
+**详细的处理规则和操作步骤请参考：**
+📋 [`docs/specs/notion_zip_processing_workflow.md`](docs/specs/notion_zip_processing_workflow.md)
 
-1.  **定位并解压 Notion ZIP 包**：
-    *   当用户指示处理 Notion ZIP 文件时，AI 助手将假定 `temp_files` 目录下已存在**唯一一个**待处理的 Notion ZIP 压缩包。
-    *   AI 助手会自动扫描 `temp_files` 目录，找出该 ZIP 文件。
-    *   然后使用 `scripts/extract_zip_utf8.py` 脚本来解压 ZIP 文件。这个脚本会处理文件名中的特殊字符，并将内容解压到 `temp_notion/以ZIP包名命名的目录/`。
-        ```bash
-        # AI 会自动替换 "你的Notion导出.zip" 为实际扫描到的文件名
-        python3 scripts/extract_zip_utf8.py temp_files/你的Notion导出.zip
-        ```
-    *   AI 助手会浏览解压后的文件，通常包含一个主 Markdown 文件和存放附件（图片等）的文件夹。
-
-2.  **确定文章标题和主 Markdown 文件**：
-    *   AI 助手会根据解压后的文件名或内容，和您一起确认主 Markdown 文件及其文章标题。
-
-3.  **创建 Markdown 文件**：
-    *   在 `content/posts/` 目录下，AI 会创建一个以文章标题命名的 Markdown 文件（文件名要求是英文单词，用短横线分隔，不要使用拼音）。
-
-4.  **添加 Frontmatter**：
-    *   AI 会在新文件的开头添加必要的 Frontmatter 元数据，包括：
-        *   `title`：文章标题（来自 Notion 或您提供）
-        *   `date`：发布日期为今天，请使用指令 `$ date +%Y-%m-%d` 获取当前日期，不要使用 AI 数据库的日期
-        *   `draft`：是否为草稿，默认 `false`
-        *   `description`：文章简短描述（可从 Notion 内容提取或您提供）
-        *   `tags`：只能从预定义标签列表中选择合适的标签（参考"博客元数据格式规范"章节中的标签列表）
-        *   `author`：作者信息 (默认为 "Joe")
-    *   每次生成新的博客文件时，请参考 `@nezha-movie-review.md` 文件的格式和元数据进行修正。
-    *   YAML 对特殊字符非常敏感，特别是在 Front Matter 中。
-    *   在元数据里，使用纯英文引号包裹 YAML 值。
-    *   在元数据里，统一使用半角标点符号。
-
-5.  **添加并调整文章正文**：
-    *   AI 会将主 Notion Markdown 文件中的正文内容复制到新创建的博客 Markdown 文件中。
-    *   **重要**：AI 会协助检查并修正 Notion 特有的 Markdown 格式，例如：
-        *   移除或转换 Notion 内部链接。
-        *   调整 Callout、Toggle 等 Notion 特有块的显示，使其符合标准 Markdown 或博客主题支持的格式。
-        *   清理不必要的 HTML 标签或样式。
-    *   **图片 Caption 处理**：如果 Notion 导出的文件中包含图片 Caption 文案，需要按以下格式在博客中显示：
-        ```html
-        <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
-        <em>Caption 文案内容</em>
-        </div>
-        ```
-        *   Caption 样式说明：居中显示、浅灰色（#666）、字体稍小（0.9em）、与图片贴近（margin-top: -10px）
-
-6.  **处理并添加图片**：
-    *   在 `static/images/posts/` 目录下，创建与文章同名（英文文件名）的目录。
-    *   将 Notion 导出的图片（通常在解压后的附件目录中）直接复制到这个新创建的图片目录中。
-    *   **重要：不要手动重命名图片文件，也不要手动修改 Markdown 中的图片引用路径**。
-    *   按顺序执行以下命令处理图片（**注意使用完整文件路径**）：
-        ```bash
-        # 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
-        python3 scripts/compress_article_images.py content/posts/article-name.md
-
-        # 2. 将压缩后的图片移动到正确位置
-        cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
-
-        # 3. 更新文章中的图片引用为 WebP 格式 (运行两次确保完全更新)
-        python3 scripts/update_image_refs.py
-        python3 scripts/update_image_refs.py
-
-        # 4. 清理带空格的图片文件名 (如果存在)
-        # 检查是否有类似 "image 1.webp" 这样的文件需要重命名
-        ls static/images/posts/article-name/ | grep " "
-        # 如有需要，手动重命名：
-        # cd static/images/posts/article-name
-        # mv "image 1.webp" "image1.webp"
-        # mv "image 2.webp" "image2.webp"
-        # ...
-
-        # 5. 再次运行引用更新以处理重命名的文件
-        python3 scripts/update_image_refs.py
-
-        # 6. 清理原始图片文件
-        python3 scripts/clean_original_images.py --execute
-
-        # 7. 清理临时文件
-        rm -rf static/images_compressed/posts/article-name
-        ```
-    *   **常见问题及解决方案**：
-        * **脚本路径错误**：必须使用完整文件路径 `content/posts/article-name.md`，不能只使用文章名
-        * **图片引用更新不完全**：需要运行 `update_image_refs.py` 多次，特别是在移动图片文件后
-        * **文件名包含空格**：Notion 导出的图片可能包含空格，压缩后需要手动重命名
-        * **WebP 文件不存在警告**：在移动图片文件前运行更新脚本会出现此警告，属于正常现象
-    *   **验证步骤**：
-        * 使用 `python3 scripts/check_image_refs.py` 检查所有图片引用是否有效
-        * 确认 `static/images/posts/article-name/` 目录下只有 `.webp` 格式的图片
-        * 所有图片最终会统一为 WebP 格式，引用路径为 `/images/posts/article-name/image-name.webp` 格式
-
-7.  **最终检查**：
-    *   确认所有图片都能正确显示。
-    *   检查文章格式是否规范，特别是列表、引用、代码块等。
-    *   确保图片描述准确且有意义。
-    *   验证文章元数据的准确性，特别是标签是否符合预定义列表。
-
-8.  **检查交叉引用**：
-    *   与处理 Obsidian 文件类似，使用 grep 或项目提供的搜索脚本在所有博客文章中搜索当前文章的相关关键词。
-        ```bash
-        grep -r "关键词" content/posts/
-        # 或者
-        python3 scripts/grep_search.py "关键词"
-        ```
-    *   检查其他文章中是否有引用当前文章的链接。
-    *   如果发现引用，确保链接格式正确（应为 `/posts/article-name` 格式），修正任何指向 Notion 平台的旧链接，并更新所有相关文章中的引用。
-    *   AI 不会主动新增引用，仅修正已发现的错误或不当引用。
-
-9.  **清理原始图片**：
-    *   运行 `clean_original_images.py` 脚本来预览并删除已转换为 WebP 且已备份的原始图片（位于 `static/images/posts/article-name/` 目录下，非 WebP 格式的图片）。
-        ```bash
-        # 预览要删除的原始图片文件
-        python3 scripts/clean_original_images.py
-        # 确认无误后删除原始图片文件
-        python3 scripts/clean_original_images.py --execute
-        ```
-    *   注意：此脚本主要针对全局图片清理，对于单篇文章，确保只清理对应文章目录下的原始图片。通常 `compress_article_images.py` 和 `update_image_refs.py` 处理后，原始图片（如 .jpg, .png）仍在 `static/images/posts/article-name/`，这些是需要被 `clean_original_images.py` 清理的。
-
-10. **清理所有临时文件**：
-    *   清理 Notion 解压的临时目录：`rm -rf temp_notion/以ZIP包名命名的目录` (请替换为实际目录名)
-    *   清理图片压缩过程中生成的临时目录：`rm -rf static/images_compressed/posts/article-name`
-    *   清理 `temp_files` 目录中已处理的 Notion ZIP 文件：`rm -f temp_files/你的Notion导出.zip` (请替换为实际文件名)
-
-11. **最后，运行自检清单**：
-    *   首先，再次确认文章的标签是否都出自预定义的标签列表。
-    *   其次，回顾操作记录，确保所有相关的临时文件和目录都已清理干净。
+该文档包含完整的工作流程，涵盖：
+- 文件解压和内容转换
+- 元数据配置规范
+- 图片处理和优化
+- 质量检查和验证
+- 清理和维护步骤
 
 
 
@@ -511,97 +396,12 @@ Thought (随想) 是一种更简短、随性的内容形式，通常没有正式
 
 ### 2. 通过 Notion 导出的 ZIP 文件
 
-如果您从 Notion 导出 Thought 内容为 ZIP 文件，可以参考以下步骤，这与处理普通博文的 Notion ZIP 文件类似，但针对 Thought 的特性有所调整：
+如果您从 Notion 导出 Thought 内容为 ZIP 文件，处理流程与普通博文类似，但需要注意 Thought 的特殊性（如标题可以留空）。
 
-1.  **接收并解压 Notion ZIP 包**：
-    *   将 Notion ZIP 文件放在 `temp_files` 目录下。
-    *   使用 `scripts/extract_zip_utf8.py` 脚本解压：
-        ```bash
-        python3 scripts/extract_zip_utf8.py temp_files/你的Notion导出.zip
-        ```
-    *   内容会解压到 `temp_notion/以ZIP包名命名的目录/`。
+**详细的处理规则和操作步骤请参考：**
+📋 [`docs/specs/notion_zip_processing_workflow.md`](docs/specs/notion_zip_processing_workflow.md)
 
-2.  **确定主 Markdown 文件**：
-    *   在解压后的文件中找到主 Markdown 文件。
-
-3.  **创建 Markdown 文件**：
-    *   在 `content/thoughts/` 目录下创建一个 Markdown 文件。 （如果 `content/thoughts/` 目录不存在，请先创建它。）
-    *   **文件名命名规范**：使用英文单词和短横线，例如根据内容命名，如 `a-quick-reflection.md` 或 `notion-thought.md`。将其记为 `thought-file-name.md`。
-
-4.  **添加 Frontmatter**：
-    *   在新文件开头添加元数据：
-        *   `date`：发布日期（例如，可在终端运行 `$ date +%Y-%m-%d` 获取当天日期后填入）
-        *   `draft`: `false` (除非确实是草稿)
-        *   `description`：Thought 的简短描述。
-        *   `tags`：**必须**从 "Blog 元数据格式规范" 中预定义的标签列表选择。
-        *   `author`: "Joe"
-    *   示例：
-        ```yaml
-        ---
-        author: "Joe"
-        date: "2024-03-15"
-        description: "从 Notion 导入的随想"
-        draft: false
-        tags: ["生活感悟"]
-        title: ""
-        ---
-        ```
-
-5.  **添加并调整文章正文**：
-    *   将 Notion Markdown 文件中的正文内容复制到新创建的 Thought Markdown 文件 (`content/thoughts/thought-file-name.md`) 中。
-    *   修正 Notion 特有的 Markdown 格式（如内部链接、Callout 等），使其符合标准 Markdown。
-
-6.  **处理并添加图片**：
-    *   在 `static/images/thoughts/` 目录下，创建与 Thought Markdown 文件名对应的目录（即 `thought-file-name`）。
-    *   将 Notion 导出的图片（通常在解压后的附件目录中）直接复制到这个新创建的图片目录中 (`static/images/thoughts/thought-file-name/`)。
-    *   **重要：不要手动重命名图片文件，也不要手动修改 Markdown 中的图片引用路径**，脚本会自动处理。
-    *   按顺序执行以下命令处理图片（**注意使用完整文件路径**）：
-        ```bash
-        # 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
-        python3 scripts/compress_article_images.py content/thoughts/thought-file-name.md
-
-        # 2. 将压缩后的图片移动到正确位置
-        cp -r static/images_compressed/thoughts/thought-file-name/* static/images/thoughts/thought-file-name/
-
-        # 3. 更新 Thought 中的图片引用为 WebP 格式 (运行两次确保完全更新)
-        python3 scripts/update_image_refs.py
-        python3 scripts/update_image_refs.py
-
-        # 4. 清理带空格的图片文件名 (如果存在)
-        # 检查是否有类似 "image 1.webp" 这样的文件需要重命名
-        ls static/images/thoughts/thought-file-name/ | grep " "
-        # 如有需要，手动重命名：
-        # cd static/images/thoughts/thought-file-name
-        # mv "image 1.webp" "image1.webp"
-        # mv "image 2.webp" "image2.webp"
-        # ...
-
-        # 5. 再次运行引用更新以处理重命名的文件
-        python3 scripts/update_image_refs.py
-
-        # 6. 清理原始图片文件 (全局清理)
-        python3 scripts/clean_original_images.py --execute
-
-        # 7. 清理本次压缩产生的临时文件
-        rm -rf static/images_compressed/thoughts/thought-file-name
-        ```
-
-7.  **最终检查**：
-    *   确认所有图片都能正确显示。
-    *   检查文章格式是否规范，特别是列表、引用、代码块等。
-    *   确保图片描述准确且有意义。
-    *   验证文章元数据的准确性，特别是标签是否符合预定义列表。
-
-8.  **检查交叉引用 (如果适用)**：
-    *   Thought 可能较少被其他长文正式引用。如果需要，可使用 `grep -r "关键词" content/` 或 `python3 scripts/grep_search.py "关键词"` 在所有内容中搜索相关关键词，检查并修正链接。
-
-9.  **清理所有临时文件**：
-    *   清理 Notion 解压的临时目录：`rm -rf temp_notion/以ZIP包名命名的目录` (请替换为实际目录名)
-    *   清理 `temp_files` 目录中已处理的 Notion ZIP 文件：`rm -f temp_files/你的Notion导出.zip` (请替换为实际文件名)
-
-10. **自检清单**：
-    *   首先，再次确认文章的标签是否都出自预定义的标签列表。
-    *   其次，回顾操作记录，确保所有相关的临时文件和目录都已清理干净。
+该文档包含针对 thoughts 类型内容的完整处理流程。
 
 ## 全局图片压缩的方法
 
