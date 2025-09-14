@@ -19,10 +19,9 @@ discovery-log/
 │   ├── posts/          # 普通博客文章
 │   └── sky-eye/        # 天空之眼全景照片文章
 ├── data/               # Hugo 数据文件
-├── docs/               # 项目文档（PRD、技术笔记、问题复盘）
-│   ├── prd/            # 产品需求文档（命名：[状态]_主题名.md）
-│   ├── note/           # 技术/设计笔记（命名：[状态]_主题名.md）
-│   └── issue-log/      # 重大问题排查与复盘（命名：[状态]_主题名.md）
+├── docs/               # 项目文档管理
+│   ├── specs/          # 已固化的需求与技术实现规范
+│   └── staging/        # 过渡区：从想法到执行的方案（命名：[状态].主题名.md）
 ├── i18n/               # 国际化文件
 ├── layouts/            # 自定义布局模板
 │   ├── _default/       # 默认布局
@@ -76,247 +75,48 @@ discovery-log/
 3. **停止预览**:
     * 在命令行终端中按下 `Ctrl + C` 即可停止本地 Hugo 开发服务器。
 
-## 日常手动更新博客要注意的点
+## 博客内容类型
 
-您只需要关注以下几个步骤即可轻松更新您的博客：
+本博客支持三种不同类型的内容：**博文**（深度文章）、**天空之眼**（360° 全景图片）和**想法**（简短随想）。每种类型都有其独特的特点、用途和管理方式。
 
-1. **撰写文章**:
-    * 博客文章使用 Markdown 格式编写，请将 Markdown 文件放在 `content/posts/` 目录下。
-    * **文件名命名规范**：
-        * **使用英文**：文件名请使用英文单词，避免使用拼音。
-        * **使用短横线分隔**： 单词之间使用短横线 `-` 分隔，例如 `my-second-post.md` 或 `how-to-insert-image.md`。
-    * 例如，如果您要写一篇名为 `my-second-post.md` 的文章，就将其放在 `content/posts/` 文件夹中。
+**详细的内容类型说明请参考：**
+📋 [`docs/specs/content_types_overview.md`](docs/specs/content_types_overview.md)
 
-2. **插入图片**:
-    * 如果您需要在文章中插入图片，请将图片文件放在 `static/images/` 目录下。
-    * 然后在 Markdown 文件中使用 Markdown 语法引用图片，例如 `![图片描述](/images/your-image.jpg)`。
+该文档包含完整的内容类型规范，涵盖：
+- 三种内容类型的详细定义和特征
+- 适用场景和最佳实践
+- 技术规格和处理流程
+- 存储位置和命名规范
+- 新增内容类型的考虑要素
 
-3. **提交更新**:
-    * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
-    * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
+## 内容交叉引用系统
 
-## 如何添加"天空之眼"图片
+博客中的三种内容类型（博文、天空之眼、想法）之间可以互相引用和关联，形成丰富的内容网络。系统支持直接引用、标签关联、时间关联等多种关系类型，并提供智能的相关内容推荐。
 
-### 添加新的全景图片
-1. 准备图片
-把原始全景图片放到 temp_files 目录下，建议保留原始文件名（如无人机拍摄的文件通常自带日期和编号）。
-2. 提供信息
-图片标题（必填）
-图片描述（必填）
-拍摄地点（可选）
-经纬度坐标（可选，如果图片自带GPS信息可自动读取）
-3. 自动或手动处理
-系统或您自己将自动完成以下操作：
+**详细的交叉引用系统规范请参考：**
+📋 [`docs/specs/content_cross_reference_system.md`](docs/specs/content_cross_reference_system.md)
 
-（1）读取照片信息
-用 exiftool 工具读取图片的拍摄时间和GPS坐标（如有）。
-示例命令：exiftool -DateTimeOriginal -GPSLatitude -GPSLongitude -c "%.6f" 图片路径
-（2）图片处理
-用 ImageMagick 生成两种图片文件：
-优化后的WebP全景图（6000x3000，85%质量）：
-magick 原始图片路径 -resize 6000x3000 -quality 85 static/images/sky-eye/optimized/文件名.webp
-缩略图（800x400，85%质量）：
-magick 原始图片路径 -resize 800x400 -quality 85 static/images/sky-eye/文件名-thumb.jpg
-（3）文件管理
-在 content/sky-eye/ 下创建 Markdown 文件，文件名用英文短横线风格。
-Markdown 文件内容示例（需填入实际信息）：
-
----
-title: "图片标题"
-date: YYYY-MM-DDThh:mm:ss+08:00
-description: "图片描述"
-thumbnail: "/images/sky-eye/文件名-thumb.jpg"
-panorama_image: "/images/sky-eye/optimized/文件名.webp"
-location: "拍摄地点"
-coordinates: "纬度,经度"
-draft: false
----
-（4）清理
-删除 temp_files 下的原始图片，节省空间。
-示例命令：rm temp_files/原始图片文件名
-
-### 在文章中引用天空之眼全景图片
-
-您可以在博客文章中引用天空之眼的全景图片，并实现嵌入式显示。这样用户可以直接在文章中查看全景图片的缩略图，并通过点击进入详情页。
-
-使用方法：
-
-```markdown
-{{</* sky-eye-embed id="dongji-miaozi-lake-island" title="东极岛的庙子湖全景图片" */>}}
-```
-
-参数说明：
-- `id`：天空之眼全景图片的文件名（不包含扩展名）
-- `title`：可选，显示的标题，如果不提供则使用原始标题
-
-嵌入后的效果是一个带有"查看360°全景图片"提示的缩略图，点击后进入天空之眼详情页。
-
-## 新增内容类型的处理（例如：文章、随思录、天空之眼）
-
-当博客需要引入新的内容类型时，为了确保其在网站的各个位置都能正确且美观地展示，您需要检查和调整以下相关的模板文件和配置。核心是考虑新内容在不同展示场景下的呈现效果：
-
-**1. 内容定义与结构：**
-
-*   **内容原型 (`archetypes/你的新类型.md`)**: 定义新类型内容的默认元数据。
-*   **内容目录 (`content/你的新类型/`)**: 为新类型内容创建专属存放目录。
-
-**2. 主要展示场景与对应模板：**
-
-*   **首页 - 第一个条目 (`layouts/index.html`)**: 如果首页第一个条目有特殊样式，需确保新类型能正确应用。
-*   **首页 - 非第一个条目 (`layouts/index.html` 及相关的局部模板如 `partials/entry.html` 或 `partials/post_card.html`)**: 确保新类型在标准列表项中正确显示。
-*   **内容类型专属列表页 (`layouts/你的新类型/list.html`)**: 例如 `/thoughts/` 或 `/sky-eye/` 页面的列表展示。
-*   **内容类型专属单页 (`layouts/你的新类型/single.html`)**: 单个内容详情页的展示，例如 `/thoughts/my-first-thought/`。
-*   **搜索结果页 (`layouts/_default/search.html` 或相关局部模板)**: 确保新类型内容在搜索结果中能被正确显示，并更新统计信息（如果适用）。
-*   **标签/分类列表页 (`layouts/taxonomy/terms.html` 或 `layouts/_default/terms.html` 及相关局部模板)**: 当通过标签或分类浏览时，新类型内容应能正确列出和展示。
-*   **相关内容/反向链接 (通常在 `single.html` 或其局部模板中)**: 如果有此功能，确保新类型被正确处理。
-
-**3. 其他相关配置与调整：**
-
-*   **导航菜单 (通常在 `hugo.yaml` 或 `layouts/partials/header.html` 中)**: 如果需要，在主导航中添加入口。
-*   **RSS 订阅 (`layouts/_default/rss.xml` 或类型专属 RSS)**: 如果希望新内容加入 RSS。
-*   **自定义样式 (`assets/css/extended/custom.css`)**: 如果新类型需要独特的视觉样式。
-*   **README.md (本文档)**: 记录新内容类型的特殊创建或管理流程。
-
-通过检查以上各个方面，可以帮助您在添加新内容类型时，更系统地完成所有必要的修改。
-
+该文档包含完整的交叉引用系统指南，涵盖：
+- 四种关系类型和引用方式详解
+- 相关内容推荐算法和显示逻辑
+- Hugo 模板实现和前端交互增强
+- 显示样式规范和性能优化
+- 内容策略建议和监控分析
 
 ## 博客样式定制
 
-### 主题管理说明
+本博客基于 Hugo PaperMod 主题构建，并进行了自定义样式调整以实现极简风格。包含标题规范、表格样式、响应式设计等完整的样式体系。
 
-博客使用了 PaperMod 主题。从 2025-02-20 起，主题代码已经从 git submodule 转换为普通文件，以简化管理和定制，构建属于自己的极简风格。
+**详细的样式定制规范请参考：**
+📋 [`docs/specs/blog_styling_guide.md`](docs/specs/blog_styling_guide.md)
 
-### 样式定制说明
+该文档包含完整的样式定制指南，涵盖：
+- 主题管理和自定义样式位置
+- 标题和表格的详细样式规范
+- 样式开发最佳实践和调试技巧
+- 响应式设计和暗色模式适配
+- 主题定制扩展和维护方法
 
-博客使用了 PaperMod 主题，并进行了一些自定义样式调整。所有的自定义样式都在 `assets/css/extended/custom.css` 文件中。
-
-### 标题样式规范
-
-为了保持整个博客的视觉一致性，我们采用了以下标题大小规范：
-
-1. **文章标题**: 24px（与首页博客列表标题大小保持一致）
-2. **文章内容标题**:
-   * h1: 24px（与文章标题相同）
-   * h2: 22px（比 h1 小 2px）
-   * h3: 20px（比 h2 小 2px）
-   * h4: 18px（比 h3 小 2px）
-   * h5: 16px（比 h4 小 2px）
-   * h6: 14px（比 h5 小 2px）
-
-这种递减的设计确保了标题层级的清晰视觉区分。
-
-### 表格样式规范
-
-为了解决表格宽度超出内容，导致右侧出现不必要的空白和边框的问题，我们采用 `width: fit-content` 样式来让表格宽度自适应内容。
-
-**通用表格样式类**:
-所有需要自适应宽度的表格，都应使用 `toolkit-table` 类。
-
-**HTML 结构示例**:
-```html
-<table class="toolkit-table">
-  <!-- thead, tbody, tr, th, td -->
-</table>
-```
-
-**CSS 核心代码**:
-以下是 `.toolkit-table` 的核心样式，可以直接在 Markdown 文件的 `<style>` 标签中使用。这段代码也包含了对暗色模式的适配。
-
-```css
-.toolkit-table {
-  width: fit-content;
-  max-width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #e1e5e9;
-  margin: 20px 0;
-  box-sizing: border-box;
-}
-
-.toolkit-table th {
-  padding: 12px;
-  border: 1px solid #e1e5e9;
-  background-color: #f1f3f4;
-  font-weight: bold;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.toolkit-table td {
-  padding: 10px;
-  border: 1px solid #e1e5e9;
-  vertical-align: top;
-  box-sizing: border-box;
-}
-
-.toolkit-table td:first-child {
-  white-space: nowrap;
-  background-color: #f8f9fa;
-  font-weight: 500;
-}
-
-.toolkit-table tr:hover {
-  background-color: #f5f5f5;
-}
-
-.toolkit-table tr:hover td:first-child {
-  background-color: #e8f0fe;
-}
-
-@media (prefers-color-scheme: dark) {
-  .toolkit-table {
-    border-color: #333;
-  }
-  .toolkit-table th {
-    background-color: #2c2c2c;
-    border-color: #333;
-  }
-  .toolkit-table td {
-    border-color: #333;
-  }
-  .toolkit-table td:first-child {
-    background-color: #252525;
-  }
-  .toolkit-table tr:hover {
-    background-color: #2a2a2a;
-  }
-  .toolkit-table tr:hover td:first-child {
-    background-color: #1c3a5e;
-  }
-}
-```
-
-### 样式修改经验
-
-1. **样式优先级**:
-   * 在 `custom.css` 中修改样式时，如果发现样式不生效，可能是选择器优先级不够。
-   * 使用更具体的选择器（如 `.post-header .post-title`）或添加 `!important` 来提高优先级。
-
-2. **响应式设计**:
-   * 使用 `@media` 查询来适配移动端显示。
-   * 移动端（<768px）通常需要调整字体大小和间距。
-
-3. **统一性原则**:
-   * 保持相同类型元素的样式一致，如所有页面的标题大小。
-   * 使用变量和规律性的数值（如标题大小每级减小 2px）来维护样式的统一性。
-
-## 日常手动更新博客要注意的点
-
-您只需要关注以下几个步骤即可轻松更新您的博客：
-
-1. **撰写文章**:
-    * 博客文章使用 Markdown 格式编写，请将 Markdown 文件放在 `content/posts/` 目录下。
-    * **文件名命名规范**：
-        * **使用英文**：文件名请使用英文单词，避免使用拼音。
-        * **使用短横线分隔**： 单词之间使用短横线 `-` 分隔，例如 `my-second-post.md` 或 `how-to-insert-image.md`。
-    * 例如，如果您要写一篇名为 `my-second-post.md` 的文章，就将其放在 `content/posts/` 文件夹中。
-
-2. **插入图片**:
-    * 如果您需要在文章中插入图片，请将图片文件放在 `static/images/` 目录下。
-    * 然后在 Markdown 文件中使用 Markdown 语法引用图片，例如 `![图片描述](/images/your-image.jpg)`。
-
-3. **提交更新**:
-    * 完成文章撰写和图片添加后，将 `content/posts/` 和 `static/images/` 目录下的更改提交到 GitHub 仓库。
-    * Cloudflare Pages 会自动检测到 GitHub 仓库的更新，并重新构建和部署您的博客。
 
 ## 依据导出的 Notion ZIP 压缩包来更新博文的规则
 
@@ -336,207 +136,45 @@ draft: false
 
 ## 手动增加 Thought (随想) 的方法
 
-Thought (随想) 是一种更简短、随性的内容形式，通常没有正式的标题。您可以通过以下两种方式添加 Thought：
+Thought (随想) 是一种更简短、随性的内容形式，通常没有正式的标题。您可以通过直接创建 Markdown 文件或从 Notion 导出 ZIP 文件两种方式添加 Thought。
 
-### 1. 直接粘贴内容
+**详细的创建规则和操作步骤请参考：**
+📋 [`docs/specs/thoughts_creation_workflow.md`](docs/specs/thoughts_creation_workflow.md)
 
-如果您想快速记录一些文字，可以直接创建一个 Markdown 文件：
-
-1.  **创建 Markdown 文件**：
-    *   在 `content/thoughts/` 目录下创建一个新的 `.md` 文件。 
-    *   **文件名命名规范**：建议使用简短描述，确保英文且用短横线分隔，例如 `my-random-thought.md`。
-
-2.  **添加 Frontmatter (元数据)**：
-    *   在文件开头添加必要的 Frontmatter。由于 Thought 没有正式标题，`title` 字段需要去掉。
-    *   **重要**：`tags` 必须从本文档 "Blog 元数据格式规范" 章节中预定义的标签列表选择。
-    *   获取当前日期给 `date` 字段，可以在终端运行 `$ date +%Y-%m-%d`。
-    *   示例：
-        ```yaml
-        ---
-        author: "Joe"
-        date: "2024-03-15"  # 使用实际日期
-        description: "这里填写对这个 Thought 的简短描述" 
-        draft: false
-        tags: ["生活感悟"] # 从预定义列表选择
-        title: "" # Thought 通常没有标题，可以留空
-        ---
-        ```
-        *   请参照 "Blog 元数据格式规范" 确保其他元数据（如 `author`, `description`, `draft`）的正确性，并使用英文引号包裹字符串类型的值。
-
-3.  **添加内容**：
-    *   在 Frontmatter下方粘贴或撰写您的 Thought 内容。
-    *   **图片 Caption 处理**：如果内容中包含图片 Caption 文案，需要按以下格式显示：
-        ```html
-        <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
-        <em>Caption 文案内容</em>
-        </div>
-        ```
-
-4.  **处理图片 (如果需要)**：
-    *   如果 Thought 中包含图片，首先在 `static/images/thoughts/` 目录下，创建与 Thought Markdown 文件名对应的目录（例如，如果 Markdown 文件是 `my-random-thought.md`，则图片目录为 `static/images/thoughts/my-random-thought/`）。将原始图片放入此目录。
-    *   然后按照以下步骤处理图片 (假设 Thought 的文件名为 `thought-file-name.md`，对应图片目录 `thought-file-name`)：
-        ```bash
-        # 1. 压缩并转换图片为 WebP 格式 (将 thought-file-name 替换为实际的文件名，不含扩展名)
-        python3 scripts/compress_article_images.py thoughts/thought-file-name
-
-        # 2. 更新文章中的图片引用为 WebP 格式 (此脚本会扫描并更新所有引用)
-        python3 scripts/update_image_refs.py
-
-        # 3. 将压缩后的图片移动到正确位置
-        # 注意：compress_article_images.py 会将图片输出到 static/images_compressed/thoughts/thought-file-name/
-        cp -r static/images_compressed/thoughts/thought-file-name/* static/images/thoughts/thought-file-name/
-
-        # 4. 清理原始图片文件 (此脚本会全局扫描并清理可被 WebP 替代的原始图)
-        python3 scripts/clean_original_images.py --execute
-
-        # 5. 清理本次压缩产生的临时文件
-        rm -rf static/images_compressed/thoughts/thought-file-name
-        ```
-    *   **注意**：执行 `compress_article_images.py` 时，参数 `thoughts/thought-file-name` 指的是图片存放的相对路径和目录名。请确保这些脚本存在且具有执行权限。
-
-### 2. 通过 Notion 导出的 ZIP 文件
-
-如果您从 Notion 导出 Thought 内容为 ZIP 文件，处理流程与普通博文类似，但需要注意 Thought 的特殊性（如标题可以留空）。
-
-**详细的处理规则和操作步骤请参考：**
-📋 [`docs/specs/notion_zip_processing_workflow.md`](docs/specs/notion_zip_processing_workflow.md)
-
-该文档包含针对 thoughts 类型内容的完整处理流程。
+该文档包含完整的 Thoughts 创建工作流程，涵盖：
+- 文件创建和命名规范
+- Front Matter 配置要求
+- 图片处理和优化流程
+- 标签规范和质量检查
+- 最佳实践和常见问题
 
 ## 全局图片压缩的方法
 
-为了优化网站加载速度和存储空间，我们需要定期对图片进行压缩处理和 WebP 转换。以下是具体的压缩流程：
+为了优化网站加载速度和存储空间，博客需要定期对图片进行压缩处理和 WebP 转换。这个过程包括压缩、格式转换、引用更新和清理等多个步骤。
 
-### 压缩工具和参数
+**详细的压缩规则和操作步骤请参考：**
+📋 [`docs/specs/global_image_compression_workflow.md`](docs/specs/global_image_compression_workflow.md)
 
-- 使用项目根目录下的 `compress_images.py` 脚本进行图片压缩和 WebP 转换
-* 脚本会自动处理 `static` 目录下的所有图片（包括子目录）
-* 网站图标相关文件（favicon、apple-touch-icon、android-chrome）会保持原格式
-* 压缩参数：
-  * 质量：85%（可在脚本中调整 quality 参数）
-  * 最大尺寸：1920x1920（保持原比例）
-  * 自动移除图片元数据
-  * 自动转换为 WebP 格式（PNG 使用无损压缩，JPG 使用有损压缩）
-
-### 完整压缩流程
-
-1. **安装依赖**：
-
-   ```bash
-   brew install imagemagick
-   ```
-
-2. **运行压缩脚本**：
-
-   ```bash
-   python3 scripts/compress_images.py
-   ```
-
-   这会在项目根目录创建 `static_compressed` 目录，存放压缩后的文件。
-
-3. **复制压缩后的文件**：
-
-   ```bash
-   cp -r static_compressed/* static/
-   ```
-
-   这一步会将压缩后的文件复制回原目录，同时保留原始文件作为备份。
-
-4. **更新图片引用**：
-
-   ```bash
-   python3 scripts/update_image_refs.py
-   ```
-
-   这一步会自动将所有 Markdown 文件中的图片引用更新为 WebP 格式。
-   例如：`![示例图片](/images/example.jpg)` 会被更新为 `![示例图片](/images/example.webp)`
-
-5. **预览要删除的原始文件**：
-
-   ```bash
-   python3 scripts/clean_original_images.py
-   ```
-
-   这一步会显示哪些原始文件将被删除，以及可以节省的空间大小。
-
-6. **确认无误后删除原始文件**：
-
-   ```bash
-   python3 scripts/clean_original_images.py --execute
-   ```
-
-   这一步会删除已经转换为 WebP 格式的原始图片文件，但会保留网站图标相关文件。
-
-7. **清理临时文件**：
-
-   ```bash
-   # 清理 Notion 处理的临时文件
-   rm -rf temp_notion
-   rm -f temp_files/*.zip
-   
-   # 清理图片压缩的临时目录
-   rm -rf static_compressed
-   rm -rf static/images_compressed
-   ```
+该文档包含完整的全局图片压缩工作流程，涵盖：
+- 压缩工具配置和参数设置
+- 完整的 6 步压缩流程
+- 环境准备和依赖安装
+- 自动化脚本和批量处理
+- 质量检查和故障排除
 
 ## 图片引用的自检方法
 
-为了确保博客中的所有图片引用都是有效的，我们提供了一个专门的检查脚本。这个工具可以帮助您：
-1. 检测所有 Markdown 文件中的图片引用
-2. 验证每个图片文件是否存在
-3. 识别外部链接和失效的图片引用
+博客提供了专门的图片引用验证工具，可以检测所有 Markdown 文件中的图片引用有效性，验证文件存在性，识别外部链接和失效引用，确保内容完整性。
 
-### 运行检查
+**详细的图片引用验证规范请参考：**
+📋 [`docs/specs/image_reference_validation.md`](docs/specs/image_reference_validation.md)
 
-使用以下命令运行图片引用检查：
-
-```bash
-python3 scripts/check_image_refs.py
-```
-
-### 检查内容
-
-脚本会检查以下内容：
-1. **Markdown 文件**：扫描 `content` 目录下所有的 `.md` 文件
-2. **图片引用**：查找所有使用 Markdown 图片语法的引用 `![alt text](/path/to/image)`
-3. **文件存在性**：验证每个引用的图片在 `static` 目录中是否存在
-4. **URL 编码处理**：自动处理包含空格或特殊字符的文件名
-5. **外部链接识别**：区分并标记外部图片链接（以 http:// 或 https:// 开头）
-
-### 检查结果
-
-脚本会输出详细的检查报告，包括：
-1. 每个文件的检查结果
-2. 成功的图片引用（显示为绿色）
-3. 失败的图片引用（显示为红色）
-4. 外部链接（单独列出）
-
-### 统计信息
-
-检查完成后会显示统计信息：
-- 检查的 Markdown 文件总数
-- 发现的图片引用总数
-- 外部链接数量
-- 失效的图片引用数量
-
-### 常见问题处理
-
-1. **找不到图片文件**：
-   * 检查文件是否已经转换为 WebP 格式
-   * 验证文件路径是否正确
-   * 确认文件名大小写是否匹配
-
-2. **URL 编码问题**：
-   * 检查文件名中的空格是否正确编码
-   * 验证特殊字符是否正确处理
-   * 考虑重命名文件，避免使用特殊字符
-
-3. **批量修复**：
-   * 使用 `update_image_refs.py` 更新图片引用
-   * 使用 `compress_images.py` 处理图片格式
-   * 使用 `clean_original_images.py` 清理原始图片
-
-通过定期运行图片引用检查，可以及时发现和解决潜在的问题，确保博客内容的完整性和可访问性。
+该文档包含完整的图片引用验证指南，涵盖：
+- 验证工具使用方法和检查内容详解
+- 常见问题和解决方案
+- 批量修复工具和自动化集成
+- 性能优化和最佳实践
+- 团队协作和维护流程
 
 ## Blog 元数据格式规范
 
@@ -634,48 +272,17 @@ title: "博客文章元数据格式指南"
 
 ## 链接样式规范
 
-为了提供更好的阅读体验，博客支持两种链接样式：
+博客支持两种不同的链接样式：Bookmark 样式（卡片式重点链接）和普通链接（标准 Markdown 链接）。每种样式都有其特定的适用场景和使用方法。
 
-### 1. Bookmark 样式链接
+**详细的链接样式规范请参考：**
+📋 [`docs/specs/link_styling_guide.md`](docs/specs/link_styling_guide.md)
 
-适用于需要突出显示的重要外部链接，使用 `link` shortcode。从 2025-05-26 起，此 shortcode 支持可选的第三个参数作为摘要。
-
-使用方法：
-```markdown
-{{< link "URL" "链接标题" "可选的摘要内容" >}}
-```
-
-这会渲染出一个美观的 Bookmark 卡片，包含：
-- 链接标题
-- 摘要内容（如果第三个参数提供）
-- 完整 URL
-- 视觉指示器（链接图标，而非之前的外部链接图标）
-
-一个实际的效果可以参考 `content/thoughts/reinventing-the-wheel-reflections.md` 中的链接。
-例如，该文件中使用了如下 shortcode：
-```markdown
-{{< link "https://endler.dev/2025/reinvent-the-wheel/" "Reinvent the Wheel" "One of the most harmful pieces of advice is to not reinvent the wheel." >}}
-```
-
-使用场景：
-- 文章主要推荐的外部资源
-- 需要特别强调的参考资料
-- 独立成段的重要链接
-
-### 2. 普通链接
-
-适用于行内引用或列表中的链接，使用标准 Markdown 语法：
-
-```markdown
-[文章标题](/posts/article-name)
-[外部链接标题](https://example.com)
-```
-
-使用场景：
-- 文章间的内部引用
-- 列表项中的链接
-- 段落内的行内链接
-- 参考资料列表中的链接
+该文档包含完整的链接样式指南，涵盖：
+- 两种链接样式的详细说明和使用方法
+- 适用场景和选择指南
+- 技术实现细节和样式定制
+- 可访问性考虑和性能优化
+- 维护更新和常见问题解答
 
 
 ## 全局标签检查的方法
@@ -754,6 +361,22 @@ python3 scripts/check_spacing.py --file content/posts/your-article.md --fix
 - 工具会显示具体的修改差异，方便您查看修改内容
 - 建议在提交新文章前运行此工具，确保排版规范一致
 
+
+
+## 博客内容统计 Dashboard
+
+博客支持自动化的内容统计功能，可以在搜索页面查看创作成果，包括字数统计、内容分类和年度统计。通过 Git Pre-commit Hook 实现完全自动化的数据更新。
+
+**详细的统计功能规范请参考：**
+📋 [`docs/specs/content_statistics_dashboard.md`](docs/specs/content_statistics_dashboard.md)
+
+该文档包含完整的内容统计系统指南，涵盖：
+- 功能特性和统计规则详解
+- Git Pre-commit Hook 自动化机制
+- 技术实现架构和数据结构
+- 部署配置和使用指南
+- 性能优化和扩展定制方法
+
 ## 许可证说明
 
 本仓库采用双重许可证模式：
@@ -762,153 +385,3 @@ python3 scripts/check_spacing.py --file content/posts/your-article.md --fix
 2. **代码部分**：所有代码文件采用 [MIT](https://opensource.org/licenses/MIT) 许可证。
 
 详细的许可说明请查看 [LICENSE.md](LICENSE.md) 文件。
-
-## 图片处理的标准流程
-
-为了确保博客图片的一致性和质量，请严格按照以下步骤处理图片：
-
-### 1. 准备工作
-- 确保原始图片已经放在正确的目录：`static/images/posts/article-name/`
-- **不要手动重命名图片文件**，让脚本来处理格式转换
-- **不要手动修改 Markdown 中的图片引用**，让脚本来更新
-
-### 2. 执行图片处理（按顺序执行）
-```bash
-# 1. 压缩并转换图片为 WebP 格式 (使用完整路径)
-python3 scripts/compress_article_images.py content/posts/article-name.md
-
-# 2. 将压缩后的图片移动到正确位置
-cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
-
-# 3. 更新文章中的图片引用为 WebP 格式 (运行两次确保完全更新)
-python3 scripts/update_image_refs.py
-python3 scripts/update_image_refs.py
-
-# 4. 清理带空格的图片文件名 (如果存在)
-# 检查是否有类似 "image 1.webp" 这样的文件需要重命名
-ls static/images/posts/article-name/ | grep " " || echo "无需重命名"
-# 如有需要，手动重命名后再次运行引用更新
-
-# 5. 清理原始图片文件
-python3 scripts/clean_original_images.py --execute
-
-# 6. 清理临时文件
-rm -rf static/images_compressed/posts/article-name
-```
-
-### 3. 注意事项
-- 脚本会自动处理图片压缩和格式转换
-- 脚本会保护网站图标等特殊图片文件
-- 所有图片最终会统一为 WebP 格式
-- 图片引用路径统一为 `/images/posts/article-name/image-name.webp`
-- 在执行清理前，确保 WebP 图片已经正确生成
-
-### 4. 图片命名建议
-虽然文件名最终会被脚本处理，但建议在准备原始图片时遵循以下命名规范：
-- 使用有意义的英文名称
-- 使用短横线分隔单词
-- 避免使用空格和特殊字符
-- 示例：`cycling-route-overview.jpg` 而不是 `image1.jpg`
-
-## 博客内容统计 Dashboard
-
-博客现在支持自动化的内容统计功能，可以在搜索页面查看创作成果，包括字数统计和年度统计。
-
-### 功能特性
-
-- **字数统计**：自动统计中文字符数和英文单词数
-- **内容分类**：分别统计博文、随思录和全景图片数量
-- **时间维度**：提供总体统计和今年统计两个维度
-- **完全自动化**：通过 Git Pre-commit Hook 实现无感知自动更新
-
-### 统计规则
-
-#### 字数统计包含：
-- 正文内容
-- 代码块内容
-- 引用文本内容
-- 图片 Alt 文本
-
-#### 字数统计排除：
-- Markdown 语法标记（如 `#`、`**`、`[]()` 等）
-- 链接 URL（保留链接显示文本）
-- Front matter 元数据
-- HTML 标签
-- 全景图片中的文字（按需求排除）
-
-### 自动化机制
-
-#### Git Pre-commit Hook（推荐，完全自动化）
-项目已配置 Git Pre-commit Hook，实现字数统计的完全自动化：
-
-**工作原理**：
-- 每次执行 `git commit` 时自动触发
-- 智能检测：只有当 `content/` 目录有变更时才运行
-- 自动更新字数统计数据并加入本次提交
-- 完全无感知，不需要手动操作
-
-**使用方法**：
-```bash
-# 正常的 Git 工作流，字数统计会自动更新
-git add content/thoughts/your-new-thought.md
-git commit -m "新增 Thought"
-# Hook 会自动检测内容变更，更新字数统计，并将更新后的数据文件加入提交
-```
-
-**智能特性**：
-- 环境检测：如果虚拟环境或依赖不存在，会优雅跳过（不阻止提交）
-- 静默运行：不会干扰正常的 Git 工作流
-- 高效执行：只在有内容变更时运行，避免无意义的更新
-
-### 使用方法
-
-#### 开发环境
-使用自动化开发脚本，会在启动前更新字数统计：
-```bash
-./scripts/dev.sh
-```
-
-#### 生产构建
-使用自动化构建脚本，会在构建前更新字数统计：
-```bash
-./scripts/build.sh
-```
-
-#### 手动更新字数统计（可选）
-如果只需要手动更新字数统计数据：
-```bash
-# 激活虚拟环境
-source .venv/bin/activate
-
-# 生成字数统计数据
-cd scripts
-python3 generate_word_count_data.py
-```
-
-#### 单独处理文章（调试用）
-如果需要查看单篇文章的字数统计：
-```bash
-source .venv/bin/activate
-python3 scripts/word_count.py --file content/posts/article-name.md
-```
-
-### 技术实现
-
-1. **数据预处理**：Python 脚本解析 Markdown 文件，清理文本内容，计算字数
-2. **数据存储**：统计结果保存为 `data/word_count.json` 供 Hugo 读取
-3. **前端展示**：搜索页面模板读取数据文件并渲染统计信息
-4. **自动化**：Git Pre-commit Hook + 构建脚本确保数据始终最新
-
-### 查看统计结果
-
-访问博客的搜索页面即可查看内容统计 Dashboard，包括：
-- 📊 总体统计：总字数、博文数、随思录数、全景图片数
-- 🎯 今年统计：今年创作的字数和内容数量
-
-统计数据会以万字为单位显示，方便阅读。
-
-### 注意事项
-
-- **推荐使用 Git Hook**：这是最便捷的方式，完全无需手动操作
-- **Cloudflare 构建**：由于 Cloudflare Pages 只运行 `hugo` 命令，字数统计数据需要通过 Git 提交来保持同步
-- **数据一致性**：Git Hook 确保每次提交内容时，字数统计数据都是最新的
