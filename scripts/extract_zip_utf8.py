@@ -119,6 +119,57 @@ def decode_filename(name):
     print(f"警告：无法正确解码文件名 '{name}'，将使用原始名称")
     return name
 
+def extract_nested_zip(zip_path, temp_dir):
+    """处理可能的嵌套ZIP文件
+    
+    Args:
+        zip_path: ZIP文件路径
+        temp_dir: 临时目录
+    
+    Returns:
+        实际需要处理的ZIP文件路径
+    """
+    print(f"正在检查文件: {zip_path}")
+    
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        file_list = zip_ref.namelist()
+        
+        # 检查是否只包含一个ZIP文件（嵌套ZIP的情况）
+        if len(file_list) == 1 and file_list[0].lower().endswith('.zip'):
+            nested_zip_name = file_list[0]
+            print(f"发现嵌套ZIP文件: {nested_zip_name}")
+            
+            # 提取嵌套的ZIP文件
+            nested_zip_path = temp_dir / Path(nested_zip_name).name
+            with zip_ref.open(nested_zip_name) as nested_zip, open(nested_zip_path, 'wb') as output:
+                shutil.copyfileobj(nested_zip, output)
+            
+            print(f"已提取嵌套ZIP文件到: {nested_zip_path}")
+            return nested_zip_path
+        
+        # 如果不是嵌套ZIP，返回原始路径
+        return zip_path
+
+def normalize_filename(filename):
+    """标准化文件名，移除空格和特殊字符
+    
+    Args:
+        filename: 原始文件名
+    
+    Returns:
+        标准化后的文件名
+    """
+    # 获取文件名和扩展名
+    name_part = Path(filename).stem
+    ext_part = Path(filename).suffix
+    
+    # 替换空格为无空格，移除特殊字符
+    name_part = name_part.replace(' ', '')
+    # 移除或替换其他可能有问题的字符
+    name_part = re.sub(r'[^\w\-_]', '', name_part)
+    
+    return f"{name_part}{ext_part}"
+
 def main():
     """主函数，处理 Notion 导出的 ZIP 文件
     只提取标题、正文、创建日期和图片
@@ -137,13 +188,19 @@ def main():
     temp_dir = Path('temp_notion')
     temp_dir.mkdir(exist_ok=True)
     
-    print(f"正在解压文件: {zip_path}")
+    # 处理可能的嵌套ZIP文件
+    actual_zip_path = extract_nested_zip(zip_path, temp_dir)
+    
+    print(f"正在解压文件: {actual_zip_path}")
     
     # 解压 ZIP 文件
-    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    with zipfile.ZipFile(actual_zip_path, 'r') as zip_ref:
         # 获取所有 Markdown 文件和图片文件
         markdown_files = [f for f in zip_ref.namelist() if f.endswith('.md')]
         image_files = [f for f in zip_ref.namelist() if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp'))]
+        
+        print(f"发现 {len(markdown_files)} 个Markdown文件")
+        print(f"发现 {len(image_files)} 个图片文件")
         
         # 处理 Markdown 文件
         for md_file in markdown_files:
@@ -186,21 +243,66 @@ def main():
                 f.write(f"<!-- Created: {created_time} -->\n\n{content}")
         
         # 提取所有图片文件到扁平结构
+        image_name_mapping = {}  # 记录原始文件名到标准化文件名的映射
+        
         for img_file in image_files:
             try:
                 # 解码文件名
                 decoded_name = decode_filename(img_file)
                 # 只使用文件名部分，不保留路径
-                target_path = temp_dir / Path(decoded_name).name
+                original_filename = Path(decoded_name).name
+                
+                # 标准化文件名（移除空格等）
+                normalized_filename = normalize_filename(original_filename)
+                target_path = temp_dir / normalized_filename
+                
+                # 记录文件名映射关系
+                image_name_mapping[original_filename] = normalized_filename
                 
                 # 提取图片文件
                 with zip_ref.open(img_file) as source, open(target_path, 'wb') as target:
                     shutil.copyfileobj(source, target)
-                print(f"已提取图片: {decoded_name}")
+                
+                if original_filename != normalized_filename:
+                    print(f"已提取图片: {decoded_name} -> {normalized_filename}")
+                else:
+                    print(f"已提取图片: {decoded_name}")
             except Exception as e:
                 print(f"警告：提取图片失败 '{img_file}': {e}")
+        
+        # 更新Markdown文件中的图片引用
+        if image_name_mapping:
+            print("\n正在更新Markdown文件中的图片引用...")
+            for md_file in temp_dir.glob('*.md'):
+                try:
+                    content = md_file.read_text(encoding='utf-8')
+                    updated = False
+                    
+                    for original_name, normalized_name in image_name_mapping.items():
+                        if original_name != normalized_name and original_name in content:
+                            content = content.replace(original_name, normalized_name)
+                            updated = True
+                            print(f"  在 {md_file.name} 中更新: {original_name} -> {normalized_name}")
+                    
+                    if updated:
+                        md_file.write_text(content, encoding='utf-8')
+                        
+                except Exception as e:
+                    print(f"警告：更新图片引用失败 '{md_file}': {e}")
+    
+    # 清理嵌套ZIP文件（如果有的话）
+    if actual_zip_path != zip_path:
+        try:
+            actual_zip_path.unlink()
+            print(f"已清理嵌套ZIP文件: {actual_zip_path}")
+        except Exception as e:
+            print(f"警告：清理嵌套ZIP文件失败: {e}")
     
     print("\n解压和基础处理完成！")
+    print(f"处理结果：")
+    print(f"  - Markdown文件: {len(markdown_files)} 个")
+    print(f"  - 图片文件: {len(image_files)} 个")
+    print(f"  - 输出目录: {temp_dir}")
     print("\n后续步骤：")
     print("1. 手动修改文件名，确保符合规范")
     print("2. 手动处理图片（复制、重命名、压缩）")
