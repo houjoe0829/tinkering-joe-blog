@@ -13,7 +13,7 @@ title: ""
 
 我对 Codex 的定位是，其无法作为主力。按照我的浅薄经验，任何只有一家 AI 大模型的 Vibe Coding 工具，都无法独当一面，容易走入死胡同。但 Codex 还是很适合做前期需求澄清与小功能点的实现尝试。
 
-目前的使用上，我在 Cursor Mac 端里安装了 Codex 插件，并在手机上将 Codex 的网页版添加到了桌面，因为 ChatGPT iOS 端里的 Codex 只能执行编码任务，没有询问的选项，Cursor 手机版的 Background Agent 也是如此。不过，这里我更吐槽的是 GitHub Copilot，作为 GitHub 自家产品，居然在对话里无法访问我的私有代码仓库，大大的不解。
+目前的使用上，我在 Cursor Mac 端里安装了 Codex 插件，并在手机上将 Codex 的网页版添加到了桌面，因为 ChatGPT iOS 端里的 Codex 只能执行编码任务，没有询问的选项，Cursor 手机版的 Background Agent 也是如此。不过，这里我更想吐槽的是 GitHub Copilot，作为 GitHub 自家产品，居然在对话里无法访问我的私有代码仓库，大大的不解。
 
 很多时候，我只是想先通过对话来逐步弄明白想法的可行性以及执行方案的逻辑完备性，毕竟我不会真正的编程。而这个过程就像 AI 的深度思考一样，前期越 Solid，后期 AI 表现越佳，但之前只能在电脑上做，现在手机 Codex 就可以。
 
