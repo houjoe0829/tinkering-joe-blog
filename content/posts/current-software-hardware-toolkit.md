@@ -461,10 +461,6 @@ author: "Joe"
 <td>Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作</td>
 </tr>
 <tr>
-<td><a href="https://linearmouse.app/zh-CN/">Linear mouse</a></td>
-<td>Mac 上免费的鼠标调节功能，支持罗技鼠标，这样不用下官方臃肿的安装包了</td>
-</tr>
-<tr>
 <td><a href="https://www.apparentsoft.com/trickster">Trickster</a></td>
 <td>不用打开 Finder 的情况下，方便快速调用最近的文件</td>
 </tr>
@@ -487,6 +483,10 @@ author: "Joe"
 <tr>
 <td><a href="https://folivora.ai/keyboardcleantool">KeyboardCleanTool</a></td>
 <td>Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理</td>
+</tr>
+<tr>
+<td><a href="https://github.com/noah-nuebling/mac-mouse-fix/">Mac Mouse Fix</a></td>
+<td>免费的修改鼠标按键功能的工具，针对任意鼠标</td>
 </tr>
 </tbody>
 </table>
