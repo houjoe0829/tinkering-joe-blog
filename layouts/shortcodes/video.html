@@ -1,0 +1,42 @@
+{{- $src := .Get "src" -}}
+{{- $poster := .Get "poster" -}}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $autoplay := .Get "autoplay" | default false -}}
+{{- $muted := .Get "muted" | default false -}}
+{{- $loop := .Get "loop" | default false -}}
+
+<div class="video-container" style="margin: 2rem 0;">
+  <video 
+    width="{{ $width }}" 
+    controls
+    {{ if $poster }}poster="{{ $poster }}"{{ end }}
+    {{ if $autoplay }}autoplay{{ end }}
+    {{ if $muted }}muted{{ end }}
+    {{ if $loop }}loop{{ end }}
+    preload="metadata"
+    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+  >
+    <source src="{{ $src }}" type="video/mp4">
+    您的浏览器不支持视频播放。请更新您的浏览器或<a href="{{ $src }}" target="_blank">点击这里下载视频</a>。
+  </video>
+</div>
+
+<style>
+  .video-container {
+    text-align: center;
+  }
+  
+  .video-container video {
+    transition: transform 0.2s ease;
+  }
+  
+  .video-container video:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .video-container {
+      margin: 1rem 0;
+    }
+  }
+</style>
