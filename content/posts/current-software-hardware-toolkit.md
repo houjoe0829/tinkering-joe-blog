@@ -171,10 +171,6 @@ author: "Joe"
 <td>能生成双语对照阅读的插件</td>
 </tr>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/diankknpkndanachmlckaikddgcehkod">滴答清单</a></td>
-<td>将网页添加到 Todo 的工具</td>
-</tr>
-<tr>
 <td><a href="https://chromewebstore.google.com/detail/copyurl-title-link-format/ocmgjlfbnlldclhibengfmabcbgimhhl">CopyURL</a></td>
 <td>复制当前网页的标题和链接，以想要的格式分享，这个也是我自己做的</td>
 </tr>
@@ -196,8 +192,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://dida365.com/promotion/inviteFriends/wechatRefer?c=3&p=78778oes&t=0&code=071Rldll2vD2df4sGBnl2FrRr13RldlV&state=">滴答清单</a></td>
-<td>超高性价比的任务管理工具，我把所有的日程都汇总在这里来管理</td>
+<td><a href="https://culturedcode.com/things/">Things3</a></td>
+<td>最简约的 Todo 管理工具，再配合上我自己写的 Calendar Hub，可以将各种日历、特斯拉行车记录、Strava 运动、专注计时全都显示在系统日历上，也会显示在 Things3 上</td>
 </tr>
 </tbody>
 </table>
@@ -219,8 +215,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://follow.is/">Follow</a></td>
-<td>可以订阅一切想订阅的，除了 RSS，还可以 YouTube、哔哩哔哩、Hacker News，缺点还是小 bug 较多</td>
+<td><a href="https://reederapp.com/">Reeder Classic</a></td>
+<td>RSS 订阅工具，经典可用，而且原生很流畅</td>
 </tr>
 <tr>
 <td><strong>微信读书</strong></td>
@@ -235,8 +231,8 @@ author: "Joe"
 <td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
-<td><strong>滴答清单</strong></td>
-<td>也用滴答清单放置待看清单</td>
+<td><strong>Things3</strong></td>
+<td>也用 Things3 放置待看清单</td>
 </tr>
 <tr>
 <td><a href="https://pocketcasts.com/">Pocket Casts</a></td>
@@ -270,6 +266,10 @@ author: "Joe"
 <tr>
 <td><strong>极空间的极音乐</strong></td>
 <td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
+</tr>
+<tr>
+<td><strong>随机电台</strong></td>
+<td>自己糊得一个，部署在 Nas 上，随机播放一个外语电台，当做背景音乐</td>
 </tr>
 </tbody>
 </table>
@@ -550,6 +550,10 @@ author: "Joe"
 <tr>
 <td><strong>随身 WiFi</strong></td>
 <td>iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作</td>
+</tr>
+<tr>
+<td><strong>Delux 折叠鼠标</strong></td>
+<td>可参考<a href="/posts/foldable-mouse-review/">《比较喜欢的一款可折叠收纳的鼠标》</a>，从罗技 MX Master 3S 换到这款平替，最主要是便携性，折叠后只有 AirPods 充电盒大小，适合经常外出的远程办公场景</td>
 </tr>
 </tbody>
 </table>
