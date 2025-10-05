@@ -40,6 +40,35 @@
 .breadcrumbs {
     margin-bottom: 2rem;
     opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumbs__item,
+.breadcrumbs__separator {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.breadcrumbs__separator {
+    color: var(--secondary);
+}
+
+.breadcrumbs__item {
+    color: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.breadcrumbs__item:hover {
+    color: var(--primary);
+}
+
+.breadcrumbs__item--current {
+    color: var(--secondary);
+    font-weight: 500;
 }
 
 /* 调整文章标题的间距 */

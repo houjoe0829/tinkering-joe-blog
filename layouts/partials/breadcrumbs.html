@@ -1,19 +1,70 @@
 {{- if (.Param "ShowBreadCrumbs") -}}
-<div class="breadcrumbs">
-    {{- $url := replace .Parent.Permalink (printf "%s" site.Home.Permalink) "" }}
-    {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
+<div class="breadcrumbs" aria-label="breadcrumbs">
+    {{- $pages := slice -}}
+    {{- range (.Ancestors.Reverse) -}}
+        {{- if not .IsHome -}}
+            {{- $pages = $pages | append . -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if not .IsHome -}}
+        {{- $pages = $pages | append . -}}
+    {{- end -}}
 
-    <a href="{{ "" | absLangURL }}">首页</a>
-    {{- $scratch := newScratch }}
-    {{- range $index, $element := split $lang_url "/" }}
+    {{- $crumbs := slice (dict "title" "首页" "url" ("" | absLangURL) "current" false) -}}
+    {{- $lastIndex := sub (len $pages) 1 -}}
+    {{- range $index, $page := $pages -}}
+        {{- $isLast := eq $index $lastIndex -}}
+        {{- $label := $page.LinkTitle -}}
+        {{- if not (strings.TrimSpace $label) -}}
+            {{- $label = $page.Title -}}
+        {{- end -}}
+        {{- if not (strings.TrimSpace $label) -}}
+            {{- $label = $page.Name -}}
+        {{- end -}}
+        {{- if not (strings.TrimSpace $label) -}}
+            {{- with $page.File -}}
+                {{- $label = .TranslationBaseName -}}
+            {{- end -}}
+        {{- end -}}
 
-    {{- $scratch.Add "path" (printf "%s/" $element )}}
-    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+        {{- if eq $page.Kind "section" -}}
+            {{- if eq $page.Section "thoughts" -}}
+                {{- $label = "随思录" -}}
+            {{- else if eq $page.Section "posts" -}}
+                {{- $label = "博文" -}}
+            {{- else if eq $page.Section "sky-eye" -}}
+                {{- $label = "天空之眼" -}}
+            {{- end -}}
+        {{- else if and $isLast (eq $page.Section "thoughts") -}}
+            {{- if not (strings.TrimSpace $label) -}}
+                {{- if not $page.Date.IsZero -}}
+                    {{- $label = $page.Date | time.Format "2006-01-02" -}}
+                {{- else -}}
+                    {{- $label = $page.File.TranslationBaseName -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
 
-    {{- if (and ($bc_pg) (gt (len . ) 0))}}
-    {{- print "&nbsp;»&nbsp;" | safeHTML -}}<a href="{{ $bc_pg.Permalink }}">{{ if eq $bc_pg.Section "thoughts" }}随思录{{ else }}{{ $bc_pg.Name }}{{ end }}</a>
-    {{- end }}
+        {{- if and $isLast (not (strings.TrimSpace $label)) -}}
+            {{- if not $page.Date.IsZero -}}
+                {{- $label = $page.Date | time.Format "2006-01-02" -}}
+            {{- else -}}
+                {{- with $page.File -}}
+                    {{- $label = .TranslationBaseName -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
 
+        {{- $crumbs = $crumbs | append (dict "title" $label "url" (cond (lt $index $lastIndex) $page.Permalink nil) "current" $isLast) -}}
+    {{- end -}}
+
+    {{- range $index, $crumb := $crumbs -}}
+        {{- if gt $index 0 }}<span class="breadcrumbs__separator" aria-hidden="true">»</span>{{ end -}}
+        {{- if $crumb.current -}}
+            <span class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">{{ $crumb.title }}</span>
+        {{- else -}}
+            <a class="breadcrumbs__item" href="{{ $crumb.url }}">{{ $crumb.title }}</a>
+        {{- end -}}
     {{- end -}}
 </div>
 {{- end -}}
