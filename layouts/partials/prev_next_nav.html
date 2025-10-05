@@ -1,0 +1,49 @@
+{{- $ctx := .context | default . }}
+{{- $outerClass := .outerClass | default "" }}
+{{- with $ctx.CurrentSection }}
+  {{- $pages := sort .RegularPages "Date" "desc" }}
+  {{- if gt (len $pages) 1 }}
+    {{- $currentIndex := -1 }}
+    {{- $filePath := "" }}
+    {{- with $ctx.File }}
+      {{- $filePath = .Path }}
+    {{- end }}
+    {{- range $index, $page := $pages }}
+      {{- if and $filePath (eq $page.File.Path $filePath) }}
+        {{- $currentIndex = $index }}
+      {{- end }}
+    {{- end }}
+    {{- if ge $currentIndex 0 }}
+      {{- $scratch := newScratch }}
+      {{- if gt $currentIndex 0 }}
+        {{- $scratch.Set "prev" (index $pages (sub $currentIndex 1)) }}
+      {{- end }}
+      {{- $nextIndex := add $currentIndex 1 }}
+      {{- if lt $nextIndex (len $pages) }}
+        {{- $scratch.Set "next" (index $pages $nextIndex) }}
+      {{- end }}
+      {{- $prev := $scratch.Get "prev" }}
+      {{- $next := $scratch.Get "next" }}
+      {{- if or $prev $next }}
+        {{- $navClass := "content-nav" }}
+        {{- if $outerClass }}
+          {{- $navClass = printf "%s %s" $navClass $outerClass }}
+        {{- end }}
+        <nav class="{{ $navClass }}" aria-label="前后导航">
+          {{- with $prev }}
+          <a class="content-nav-link prev" href="{{ .RelPermalink }}">
+            <span class="content-nav-label">← 上一个</span>
+            <span class="content-nav-title">{{ .Title }}</span>
+          </a>
+          {{- end }}
+          {{- with $next }}
+          <a class="content-nav-link next" href="{{ .RelPermalink }}">
+            <span class="content-nav-label">下一个 →</span>
+            <span class="content-nav-title">{{ .Title }}</span>
+          </a>
+          {{- end }}
+        </nav>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}

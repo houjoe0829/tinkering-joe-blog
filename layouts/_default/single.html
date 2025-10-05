@@ -55,7 +55,8 @@
       {{ end }}
     </div>
     {{- end }}
-    {{- if (.Param "ShowPostNavLinks") }}
+    {{- $showNav := (.Param "ShowPostNavLinks") | default true }}
+    {{- if $showNav }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}

@@ -1,0 +1,6 @@
+{{- $ctx := . }}
+{{- $section := $ctx.Section }}
+{{- $mainSections := site.Params.mainSections | default (slice "posts" "thoughts") }}
+{{- if and $section (in $mainSections $section) }}
+  {{- partial "prev_next_nav.html" (dict "context" $ctx "outerClass" "post-nav") }}
+{{- end }}
