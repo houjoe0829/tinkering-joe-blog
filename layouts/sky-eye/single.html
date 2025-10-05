@@ -66,6 +66,42 @@
       </div>
     </div>
   </div>
+
+  {{- $siblings := sort (.CurrentSection.RegularPages) "Date" "desc" }}
+  {{- $scratchNav := newScratch }}
+  {{- $scratchNav.Set "currentIndex" -1 }}
+  {{- $current := . }}
+  {{- range $index, $page := $siblings }}
+    {{- if eq $page.File.Path $current.File.Path }}
+      {{- $scratchNav.Set "currentIndex" $index }}
+    {{- end }}
+  {{- end }}
+  {{- $currentIndex := $scratchNav.Get "currentIndex" }}
+  {{- if and (ge $currentIndex 0) (gt $currentIndex 0) }}
+    {{- $scratchNav.Set "prev" (index $siblings (sub $currentIndex 1)) }}
+  {{- end }}
+  {{- $nextIndex := add $currentIndex 1 }}
+  {{- if and (ge $currentIndex 0) (lt $nextIndex (len $siblings)) }}
+    {{- $scratchNav.Set "next" (index $siblings $nextIndex) }}
+  {{- end }}
+  {{- $prev := $scratchNav.Get "prev" }}
+  {{- $next := $scratchNav.Get "next" }}
+  {{- if or $prev $next }}
+  <nav class="sky-eye-nav" aria-label="天空之眼前后导航">
+    {{- with $prev }}
+    <a class="sky-eye-nav-link prev" href="{{ .RelPermalink }}">
+      <span class="sky-eye-nav-label">← 上一个</span>
+      <span class="sky-eye-nav-title">{{ .Title }}</span>
+    </a>
+    {{- end }}
+    {{- with $next }}
+    <a class="sky-eye-nav-link next" href="{{ .RelPermalink }}">
+      <span class="sky-eye-nav-label">下一个 →</span>
+      <span class="sky-eye-nav-title">{{ .Title }}</span>
+    </a>
+    {{- end }}
+  </nav>
+  {{- end }}
   
   <!-- 相关文章部分 -->
   {{- $currentID := .File.BaseFileName }}
@@ -270,6 +306,56 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 在夜间模式下增强悬浮时的阴影 */
   }
 
+  .sky-eye-nav {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 1.6rem 0 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .sky-eye-nav-link {
+    flex: 1 1 240px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--entry);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .sky-eye-nav-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
+  }
+
+  .sky-eye-nav-label {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .sky-eye-nav-title {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--primary);
+    word-break: break-word;
+  }
+
+  .sky-eye-nav-link.next {
+    margin-left: auto;
+    align-items: flex-end;
+    text-align: right;
+  }
+
   /* 相关文章样式使用博客文章中的反向引用样式 */
   
   /* 全屏全景查看器样式 */
@@ -359,6 +445,31 @@
     .prompt-icon svg {
       width: 20px;
       height: 20px;
+    }
+
+    .sky-eye-nav {
+      flex-direction: column;
+      gap: 0.65rem;
+      margin: 1.3rem 0 1rem;
+    }
+
+    .sky-eye-nav-link,
+    .sky-eye-nav-link.next {
+      margin-left: 0;
+      align-items: flex-start;
+      text-align: left;
+      padding: 0.8rem 1rem;
+      gap: 0.3rem;
+      flex: none;
+      width: 100%;
+    }
+
+    .sky-eye-nav-label {
+      font-size: 0.78rem;
+    }
+
+    .sky-eye-nav-title {
+      font-size: 1rem;
     }
   }
   
