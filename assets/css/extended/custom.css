@@ -761,6 +761,12 @@ var {
     cursor: default;
 }
 
+.thought-entry.expanded .entry-content,
+.thought-entry.expanded .entry-header,
+.thought-entry.expanded .entry-footer {
+    pointer-events: auto;
+}
+
 /* 操作按钮容器 */
 .thought-entry .thought-actions {
     display: flex;
