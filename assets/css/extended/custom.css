@@ -499,7 +499,6 @@
 
 /* 只有真正的交互元素允许点击事件 */
 .thought-entry .expand-btn,
-.thought-entry .collapse-btn,
 .thought-entry .detail-link-btn,
 .thought-entry .entry-footer a,
 .thought-entry .thought-tag,
@@ -679,56 +678,6 @@
     align-items: center;
 }
 
-/* 收起按钮样式 */
-.thought-entry .collapse-btn {
-    display: inline-block;
-    padding: 6px 12px;
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    color: var(--content);
-    font-size: 0.9em;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    transition: all 0.2s ease-in-out;
-}
-
-.thought-entry .collapse-btn:hover {
-    background: var(--tertiary);
-    border-color: var(--primary);
-}
-
-.thought-entry .collapse-btn:focus {
-    outline: 2px solid var(--primary);
-    outline-offset: 2px;
-}
-
-/* 进入详情页按钮样式 */
-.thought-entry .detail-link-btn {
-    display: inline-block;
-    padding: 6px 16px;
-    background: var(--tertiary);
-    border: 1px solid transparent;
-    border-radius: var(--radius);
-    color: var(--content);
-    font-size: 0.9em;
-    text-decoration: none;
-    position: relative;
-    z-index: 2;
-    transition: all 0.2s ease-in-out;
-}
-
-.thought-entry .detail-link-btn:hover {
-    background: var(--primary);
-    color: var(--theme);
-}
-
-.thought-entry .detail-link-btn:focus {
-    outline: 2px solid var(--primary);
-    outline-offset: 2px;
-}
-
 /* 完整内容中的图片样式 */
 .thought-entry .content-full img {
     max-width: 100%;
@@ -754,7 +703,6 @@
 @media (prefers-reduced-motion: reduce) {
     .thought-entry .content-full,
     .thought-entry .expand-btn,
-    .thought-entry .collapse-btn,
     .thought-entry .detail-link-btn {
         transition: none;
     }
@@ -768,7 +716,6 @@
         align-items: stretch;
     }
     
-    .thought-entry .collapse-btn,
     .thought-entry .detail-link-btn {
         width: 100%;
         text-align: center;
@@ -784,8 +731,7 @@
 }
 
 /* 降级方案 - 无 JavaScript 环境 */
-.no-js .thought-entry .expand-btn,
-.no-js .thought-entry .collapse-btn {
+.no-js .thought-entry .expand-btn {
     display: none;
 }
 

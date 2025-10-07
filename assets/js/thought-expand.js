@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   thoughtCards.forEach(card => {
     const expandBtn = card.querySelector('.expand-btn');
-    const collapseBtn = card.querySelector('.collapse-btn');
-    const entryLink = card.querySelector('.entry-link');
+    const detailLinkBtn = card.querySelector('.detail-link-btn');
     
     // 如果没有展开按钮，说明内容未溢出，无需交互
     if (!expandBtn) return;
@@ -34,25 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(() => scrollToCard(card), 50);
     });
     
-    // 收起逻辑
-    if (collapseBtn) {
-      collapseBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        
-        card.classList.remove('expanded');
-        expandBtn.setAttribute('aria-expanded', 'false');
-        
-        // 停止所有多媒体播放
-        stopMedia(card);
-        
-        // 保持卡片顶部在视口内
-        setTimeout(() => scrollToCard(card), 50);
-      });
-    }
-    
     // 键盘支持
-    [expandBtn, collapseBtn].forEach(btn => {
+    [expandBtn].forEach(btn => {
       if (!btn) return;
       
       btn.addEventListener('keydown', function(e) {
@@ -64,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 阻止「进入详情页」按钮触发整卡链接
-    const detailLinkBtn = card.querySelector('.detail-link-btn');
     if (detailLinkBtn) {
       detailLinkBtn.addEventListener('click', function(e) {
         e.stopPropagation();
@@ -83,25 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         img.src = img.dataset.src;
         img.removeAttribute('data-src');
       }
-    });
-  }
-  
-  /**
-   * 停止多媒体播放
-   * 在收起时停止所有音视频播放
-   */
-  function stopMedia(card) {
-    const videos = card.querySelectorAll('.content-full video');
-    const audios = card.querySelectorAll('.content-full audio');
-    
-    videos.forEach(v => {
-      v.pause();
-      v.currentTime = 0;
-    });
-    
-    audios.forEach(a => {
-      a.pause();
-      a.currentTime = 0;
     });
   }
   
@@ -151,4 +113,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-

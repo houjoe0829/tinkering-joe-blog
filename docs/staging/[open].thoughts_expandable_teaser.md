@@ -95,8 +95,9 @@
     <!-- 完整版本（默认隐藏） -->
     <div class="content-full" style="display: none;">
       {{ .Content }}
-      <button class="collapse-btn">收起</button>
-      <a href="{{ .Permalink }}" class="detail-link-btn">进入详情页</a>
+      <div class="thought-actions">
+        <a href="{{ .Permalink }}" class="expand-btn detail-link-btn">进入详情页</a>
+      </div>
     </div>
   </div>
   
@@ -160,20 +161,7 @@
 }
 ```
 
-4. **进入详情页按钮样式**：
-```css
-.thought-entry .detail-link-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 16px;
-  background: var(--tertiary);
-  border-radius: 6px;
-  color: var(--content);
-  text-decoration: none;
-  position: relative;
-  z-index: 2;
-}
-```
+4. **进入详情页按钮样式**：复用 `.expand-btn` 样式，让「进入详情页」与「展开想法」保持一致，无需额外定义。
 
 5. **响应 prefers-reduced-motion**：
 ```css
@@ -195,8 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   thoughtCards.forEach(card => {
     const expandBtn = card.querySelector('.expand-btn');
-    const collapseBtn = card.querySelector('.collapse-btn');
-    const entryLink = card.querySelector('.entry-link');
+    const detailLinkBtn = card.querySelector('.detail-link-btn');
     
     if (!expandBtn) return; // 内容未溢出，无需交互
     
@@ -215,29 +202,20 @@ document.addEventListener('DOMContentLoaded', function() {
       scrollToCard(card);
     });
     
-    // 收起逻辑
-    collapseBtn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      e.preventDefault();
-      
-      card.classList.remove('expanded');
-      expandBtn.setAttribute('aria-expanded', 'false');
-      
-      // 停止所有多媒体播放
-      stopMedia(card);
-      
-      scrollToCard(card);
+    // 键盘支持
+    expandBtn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        expandBtn.click();
+      }
     });
     
-    // 键盘支持
-    [expandBtn, collapseBtn].forEach(btn => {
-      btn.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          btn.click();
-        }
+    // 阻止「进入详情页」触发整卡链接
+    if (detailLinkBtn) {
+      detailLinkBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
       });
-    });
+    }
   });
   
   // 懒加载图片
@@ -249,20 +227,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // 停止多媒体播放
-  function stopMedia(card) {
-    const videos = card.querySelectorAll('video');
-    const audios = card.querySelectorAll('audio');
-    
-    videos.forEach(v => v.pause());
-    audios.forEach(a => a.pause());
-  }
-  
   // 滚动到卡片顶部
   function scrollToCard(card) {
     const rect = card.getBoundingClientRect();
-    if (rect.top < 0) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const headerOffset = 60;
+    if (rect.top < headerOffset) {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetScroll = scrollTop + rect.top - headerOffset - 20;
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
     }
   }
 });
@@ -314,8 +289,7 @@ function checkOverflow(element) {
 
 ```css
 /* 无 JS 环境下隐藏交互按钮 */
-.no-js .expand-btn,
-.no-js .collapse-btn {
+.no-js .expand-btn {
   display: none;
 }
 ```
