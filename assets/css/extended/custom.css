@@ -527,6 +527,193 @@
 .thought-entry .entry-footer .meta-item:first-child {
     /* No specific style needed if justify-content: space-between is working well */
 } 
+
+/* ========================================
+   Thoughts 展开/收起功能样式
+   ======================================== */
+
+/* 预览态内容容器 */
+.thought-entry .content-preview {
+    position: relative;
+}
+
+/* 预览态内容样式 - 保持三行截断 */
+.thought-entry .content-preview p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5em; /* 给展开按钮留出空间 */
+}
+
+/* 展开按钮样式 */
+.thought-entry .expand-btn {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 4px 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    z-index: 2; /* 高于 entry-link */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.thought-entry .expand-btn:hover {
+    opacity: 0.7;
+}
+
+.thought-entry .expand-btn:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* 完整内容区域样式 */
+.thought-entry .content-full {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* 展开状态下的样式切换 */
+.thought-entry.expanded .content-preview {
+    display: none;
+}
+
+.thought-entry.expanded .content-full {
+    display: block !important;
+}
+
+/* 展开态下禁用整卡链接 */
+.thought-entry.expanded .entry-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* 操作按钮容器 */
+.thought-entry .thought-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    align-items: center;
+}
+
+/* 收起按钮样式 */
+.thought-entry .collapse-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--content);
+    font-size: 0.9em;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.thought-entry .collapse-btn:hover {
+    background: var(--tertiary);
+    border-color: var(--primary);
+}
+
+.thought-entry .collapse-btn:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* 进入详情页按钮样式 */
+.thought-entry .detail-link-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--tertiary);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--content);
+    font-size: 0.9em;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.thought-entry .detail-link-btn:hover {
+    background: var(--primary);
+    color: var(--theme);
+}
+
+.thought-entry .detail-link-btn:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* 完整内容中的图片样式 */
+.thought-entry .content-full img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* 完整内容中的段落样式 */
+.thought-entry .content-full p {
+    margin: 0.8em 0;
+}
+
+.thought-entry .content-full p:first-child {
+    margin-top: 0;
+}
+
+.thought-entry .content-full p:last-child {
+    margin-bottom: 0;
+}
+
+/* 响应 prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .thought-entry .content-full,
+    .thought-entry .expand-btn,
+    .thought-entry .collapse-btn,
+    .thought-entry .detail-link-btn {
+        transition: none;
+    }
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .thought-entry .thought-actions {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    
+    .thought-entry .collapse-btn,
+    .thought-entry .detail-link-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .thought-entry .expand-btn {
+        /* 移动端展开按钮显示为块级，便于点击 */
+        display: block;
+        margin-top: 0.5em;
+        margin-left: 0;
+        padding: 0.3em 0;
+    }
+}
+
+/* 降级方案 - 无 JavaScript 环境 */
+.no-js .thought-entry .expand-btn,
+.no-js .thought-entry .collapse-btn {
+    display: none;
+}
+
 /* 取消链接与后续中文字符之间的自动空格 */
 .post-content a {
     margin-right: 0 !important;

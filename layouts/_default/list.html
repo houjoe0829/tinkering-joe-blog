@@ -43,14 +43,16 @@
 <div class="posts">
 {{- range $index, $page := $paginator.Pages }}
 
-{{- $class := "post-entry" }}
-
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if eq .Type "thoughts" }}
-  {{- $class = printf "%s %s" $class "thought-entry" }}
-{{- end }}
+{{- if eq .Type "thoughts" }}
+  {{/* Thoughts 类型使用专用的 partial，它已经包含 <article> 标签 */}}
+  {{- partial "thought_card.html" . -}}
+{{- else }}
+  {{/* 其他类型保持原有逻辑 */}}
+  {{- $class := "post-entry" }}
+  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+  {{- $class = "first-entry" }}
+  {{- end }}
 
 <article class="{{ $class }}">
   {{- if eq .Type "sky-eye" }}
@@ -87,26 +89,17 @@
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 
-{{- else }} {{/* 对于非 sky-eye 类型，保持原有逻辑 */}}
+{{- else }} {{/* 对于其他类型（posts），保持原有逻辑 */}}
     {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
     {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
     <header class="entry-header">
-      {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
-      {{- if and (eq .Type "thoughts") (not $isFirstEntry) }}
-        {{/* Icon removed. This block is now empty. */}}
-      {{- else }}
       <h2>
         {{- .Title }}
         {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
       </h2>
-      {{- end }}
     </header>
     <div class="entry-content">
-      {{- if eq .Type "thoughts" }} 
-        {{ $cleanedContent := .RawContent | replaceRE "\\{\\{<\\s*link\\s+[^>]*>\\}\\}" "" }}
-        {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
-        <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 200 }}...{{ end }}</p>
-      {{- else if (ne (.Param "hideSummary") true) }}
+      {{- if (ne (.Param "hideSummary") true) }}
         {{ $cleanedContent := .RawContent | replaceRE "\\{\\{<\\s*link\\s+[^>]*>\\}\\}" "" }}
         {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
         <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 150 }}...{{ end }}</p>
@@ -114,7 +107,6 @@
     </div>
     {{- if not (.Param "hideMeta") }}
     <footer class="entry-footer">
-      {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
       {{- if $.IsHome }}
         <!-- 首页上的所有条目，不显示作者信息 -->
         {{- $scratch := newScratch }}
@@ -123,7 +115,8 @@
           {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
         {{- end }}
         
-        {{- if and (ne .Type "thoughts") (ne .Type "sky-eye") (not $isFirstEntry) (.Param "ShowReadingTime") -}}
+        {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
+        {{- if and (not $isFirstEntry) (.Param "ShowReadingTime") -}}
           {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d 分钟" .ReadingTime))) }}
         {{- end }}
         
@@ -132,18 +125,6 @@
           {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
         </span>
         {{- end }}
-
-        {{- if eq .Type "thoughts" }}
-          {{- if .Params.tags }}
-          <span class="meta-item thought-tags-list" style="float: right;">
-              {{- range $i, $tag := .Params.tags -}}
-                {{- if $i -}}&nbsp;{{- end -}}
-                <a href="{{ (urlize $tag) | absLangURL | printf "/tags/%s" }}" class="thought-tag">{{ $tag }}</a>
-              {{- end -}}
-          </span>
-          {{- end }}
-        {{- end }}
-
       {{- else }}
         {{- partial "post_meta.html" . -}}
       {{- end }}
@@ -152,7 +133,8 @@
     <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
   {{- end }}
 </article>
-{{- end }}
+{{- end }}{{/* end if thoughts/sky-eye/posts */}}
+{{- end }}{{/* end range */}}
 </div>
 
 {{- if gt $paginator.TotalPages 1 }}

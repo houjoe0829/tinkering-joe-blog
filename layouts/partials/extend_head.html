@@ -2,6 +2,10 @@
 {{- $relativeDate := resources.Get "js/relative-date.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $relativeDate.RelPermalink }}" integrity="{{ $relativeDate.Data.Integrity }}" crossorigin="anonymous"></script>
 
+<!-- Thoughts 展开/收起功能 -->
+{{- $thoughtExpand := resources.Get "js/thought-expand.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $thoughtExpand.RelPermalink }}" integrity="{{ $thoughtExpand.Data.Integrity }}" crossorigin="anonymous"></script>
+
 <!-- 加载更多文章功能 -->
 {{- if .IsHome }}
   {{- $loadMore := resources.Get "js/load-more.js" | resources.Minify | resources.Fingerprint "sha512" }}

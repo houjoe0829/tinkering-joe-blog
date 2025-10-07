@@ -1,10 +1,33 @@
-<article class="post-entry thought-entry">
+{{- $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" -}}
+{{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
+{{- $needsExpand := gt (len $plainContent) 200 -}}
+{{- $summary := $plainContent | truncate 200 -}}
+
+<article class="post-entry thought-entry" data-thought-id="{{ .File.UniqueID }}">
   <header class="entry-header">
   </header>
   <div class="entry-content">
-    {{ $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" }}
-    {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 200 }}
-    <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 200 }}...{{ end }}</p>
+    {{- if $needsExpand -}}
+    <!-- 摘要版本（默认显示） -->
+    <div class="content-preview">
+      <p>{{ $summary }}...</p>
+      <button class="expand-btn" aria-expanded="false" aria-label="展开想法内容">展开想法</button>
+    </div>
+    
+    <!-- 完整版本（默认隐藏） -->
+    <div class="content-full" style="display: none;">
+      {{ .Content }}
+      <div class="thought-actions">
+        <button class="collapse-btn" aria-label="收起想法内容">收起</button>
+        <a href="{{ .Permalink }}" class="detail-link-btn">进入详情页</a>
+      </div>
+    </div>
+    {{- else -}}
+    <!-- 内容未溢出，直接显示完整内容 -->
+    <div class="content-preview">
+      {{ .Content }}
+    </div>
+    {{- end -}}
   </div>
   {{- if not (.Param "hideMeta") }}
   <footer class="entry-footer">
