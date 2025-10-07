@@ -1,329 +1,54 @@
-# Thoughts 列表展开交互 - 产品需求文档（PRD）
+# Thoughts 列表展开交互 - 实现说明（Open Draft）
 
-## 1. 项目概述
-- 当前 Thoughts 卡片在首页、标签页、相关文章推荐等列表位置仅展示三行内容，超出部分没有直接的延伸阅读入口，读者必须跳转详情页。
-- 本次迭代希望引入可展开/收起的交互，让读者在列表位置快速阅读全文，同时保留卡片紧凑布局与现有标签区域。
+> 基于 2025-10-07 的当前代码状态整理，记录已落地的行为与仍未覆盖的待办项，供后续验收或二次迭代参考。
 
-## 2. 目标与成功指标
-- 提升 Thoughts 卡片的可读性，增加列表位置的完读率。
-- 控制页面信息密度，保障卡片展开后依然整洁有序。
-- 次级指标：读者在展开后点击详情页按钮的转化率、展开与收起操作的完成率。
+## 1. 实现概述
+- Thoughts 卡片在首页、标签页、归档等列表中默认展示 3 行预览文本，并附带 `展开想法 ↓` 按钮。
+- 点击按钮后卡片在原位置展开，展示完整 Markdown 内容、图片以及底部的 `进入详情页 →` 链接。
+- 当前版本为「只展开不收起」，用户刷新或重新进入页面才会恢复预览态。
 
-## 3. 范围界定
-### 3.1 In Scope
-- 首页混合流中的 Thoughts 卡片。
-- 标签页、归档页、相关文章推荐区域里出现的 Thoughts 卡片。
-- 桌面端与移动端的视觉与交互统一实现。
+## 2. 关键体验与交互
+- **预览态**：模板以 200 个字符为阈值截取摘要（追加省略号），CSS 继续使用 `-webkit-line-clamp: 3` 控制三行；字数不足时直接渲染全文且隐藏按钮。
+- **展开行为**：按钮使用 `<button>` 元素；点击、Enter 或 Space 会：
+  - 为卡片添加 `.expanded` 类，隐藏预览并展示完整内容容器；
+  - 将 `aria-expanded` 设置为 `true`，按钮文案保持 `展开想法 ↓`；
+  - 触发懒加载，立即为可见的 `data-src` 图片补全 `src`；
+  - 延迟约 50ms 触发滚动，确保卡片顶端回到视口，顶部预留 60px 导航高度。
+- **详情入口**：展开态底部出现 `进入详情页 →` 链接，并阻止冒泡避免触发整卡链接。
+- **整卡链接**：收起态保留透明 `.entry-link` 覆盖层；展开后通过 CSS 关闭其 `pointer-events`，让正文与按钮可交互。
+- **降级表现**：`<html>` 初始包含 `no-js`；脚本加载后替换为 `js`。无 JS 环境下按钮隐藏、内容保持三行、整卡链接仍可点击。
 
-### 3.2 Out of Scope
-- Blog（文章）卡片的展示逻辑与样式。
-- Thoughts 详情页本身的内容结构与评论功能。
+## 3. 技术实现要点
+- **模板 (`layouts/partials/thought_card.html`)**：
+  - 通过 `replaceRE` 去除 `{{< link >}}` 短代码，再 `plainify` 与 `htmlUnescape` 计算字符长度；判定 `len > 200` 时输出预览/全文双容器。
+  - 为文章元素添加 `data-thought-id`，并在全文容器中包裹 `.thought-body.post-content` 与 `.thought-actions`。
+- **脚本 (`assets/js/thought-expand.js`)**：
+  - DOMContentLoaded 后初始化所有 `.thought-entry`，为每个卡片绑定展开、键盘触发、防止冒泡等逻辑。
+  - `lazyLoadImages` 会将 `.content-full img[data-src]` 的 `data-src` 赋值给 `src` 并移除属性；同时注册 `IntersectionObserver` 在卡片进入视口前 50px 提前加载。
+  - `scrollToCard` 依据卡片 `getBoundingClientRect()` 与当前滚动位置进行平滑滚动，顶部固定补偿 60px 并额外留出 20px 间距。
+- **样式 (`assets/css/extended/custom.css`)**：
+  - 定义 `.content-preview` 的三行截断、按钮样式、展开态显隐、图片尺寸与 `.thought-actions` 布局。
+  - `.thought-entry.expanded` 下禁用 `.entry-link` 指针事件，并恢复正文区域的交互。
+  - 针对 `prefers-reduced-motion` 移除过渡动画，移动端调大字体与点击区域。
+- **资源注入 (`layouts/partials/extend_head.html`)**：
+  - 通过 Hugo Pipes 压缩与指纹 `assets/js/thought-expand.js`，所有页面均加载该脚本。
 
-## 4. 体验设计
-### 4.1 默认预览态
-- 文本通过 CSS 限制在三行展示，样式与当前实现一致。
-- 若正文不足三行，保持原样，无额外交互控件。
-- 卡片右下角的标签、发布日期等元素位置不变。
+## 4. 可访问性与性能
+- 展开按钮与详情链接均可 Tab 聚焦，并支持 Enter/Space。展开后焦点保持在原按钮，未额外移动。
+- 图片懒加载依赖作者在 Markdown 中赋予 `data-src`；未设置时将直接加载。
+- `IntersectionObserver` 提升图片加载效率；旧浏览器不支持时仍在展开瞬间补齐 `src`。
+- 默认仍保留整卡链接导航，满足键盘与屏幕阅读器使用者的跳转需求。
 
-### 4.2 展开态
-- 当正文被截断时，在第三行末尾追加 `展开想法` 交互。
-- 点击后卡片在原位置展开，展示完整 Markdown 内容（不含评论）。
-- Thoughts 中的图片、音频、视频等多媒体元素在展开状态下原样呈现，以促使作者主动控制篇幅。
-- 展开后交互文案切换为 `收起`，再次点击恢复三行摘要。
-- 展开/收起时保持卡片宽度不变，避免影响周围布局；滚动位置尽量保持卡片顶端在视口内。
+## 5. 与初版 PRD 的差异
+- 尚未提供「收起」能力，也未实现展开后的文案切换或多媒体收起策略。
+- 摘要阈值基于 200 字符而非严格的三行检测，文本溢出的判定来自模板层字符长度。
+- `进入详情页` 仍为文本样式链接（复用 `.detail-link-btn`），未额外增强成按钮视觉。
+- 未覆盖深链直接展开、初始状态判定等拓展场景。
 
-### 4.3 收起态
-- `收起` 点击后恢复三行限制，同时隐藏 `进入详情页` 按钮，仅保留原卡片的跳转方式。
-- 若用户在展开态操作多媒体（如播放音频），收起时需要明确定义状态（默认直接停止播放）。
+## 6. 后续观察与建议
+- 若需要收起功能，可在现有脚本上改为 toggle 模式并同步按钮文案与 `aria-expanded`。
+- 可评估在生成阶段统一为图片添加 `data-src` 以降低内容维护成本。
+- 顶部 60px 滚动补偿与导航高度耦合，若导航调整需同步修改脚本常量。
+- 建议补充移动端与辅助技术的正式验收记录，并确认多媒体播放的收起策略。
 
-### 4.4 详情页入口
-- 展开态下，在正文底部与标签区域之间新增按钮样式的 `进入详情页` 入口。
-- 按钮点击后按照现有逻辑跳转到该 Thought 的详情页。
-
-## 5. 交互细节
-- 展开/收起动画时长不超过 200ms，过渡曲线建议使用 ease-in-out。
-- `展开想法`、`收起`、`进入详情页` 均需支持键盘 Tab 聚焦与 Enter/Space 触发。
-- 当键盘用户展开内容时，应确保焦点留在触发控件上，避免焦点意外跳转。
-- 若页面加载时卡片已在展开状态（未来可能的深链场景），需要正确渲染按钮与标签位置。
-
-## 6. 视觉与排版要求
-- `展开想法`/`收起` 的文案样式需与正文区分（颜色或下划线），但保持同一行内展示；若存在省略号，置于控件前。
-- `进入详情页` 采用按钮视觉，建议使用次级按钮（副按钮）样式，以免与主要 CTA 冲突。
-- 展开后卡片右下角标签区域仍固定在卡片底部；必要时为标签区域设置定位或撑开容器高度，避免被正文或按钮覆盖。
-- 多媒体的最大宽度与卡片宽度一致，超出需自动缩放；高度可按原比例显示，可选懒加载或占位图以优化性能。
-
-## 7. 内容与多媒体策略
-- Thoughts 作者可继续使用 Markdown 插入图片、音频、视频；列表中默认不屏蔽多媒体。
-- 推荐对图片启用懒加载，对音视频提供静态封面或播放控件，防止首屏阻塞。
-- 若多媒体加载失败，需保留占位符并可点击进入详情页查看完整内容。
-
-## 8. 技术实现要点
-
-### 8.1 当前架构分析
-**存在的技术障碍：**
-1. Hugo 模板当前只输出截断的纯文本摘要（200 字符），完整的 Markdown 渲染内容未包含在 HTML 中
-2. 卡片使用透明链接覆盖层（`.entry-link`）实现整卡可点击，会拦截内部按钮点击事件
-3. 内容使用 CSS `-webkit-line-clamp: 3` 控制三行显示，但没有完整内容可供展开
-
-**涉及的文件：**
-- `layouts/partials/thought_card.html` - Thoughts 卡片模板
-- `layouts/_default/list.html` - 列表页模板
-- `assets/css/extended/custom.css` - 自定义样式（443-455 行）
-- `assets/js/` - 需新增交互脚本
-
-### 8.2 Hugo 模板层改造
-
-**修改 `thought_card.html`：**
-1. 同时输出摘要和完整渲染内容两个版本：
-   - 摘要版本：保持当前逻辑，用于默认预览态
-   - 完整版本：使用 `.Content` 输出完整 Markdown 渲染结果，默认隐藏
-2. 在模板中判断内容是否超过三行：
-   - 计算 `plainify` 后的字符数或行数
-   - 只在内容溢出时添加「展开想法」按钮
-3. 为卡片添加唯一标识（如 `data-thought-id`）以便 JS 定位
-
-**示例结构：**
-```html
-<article class="thought-entry" data-thought-id="{{ .File.UniqueID }}">
-  <div class="entry-content">
-    <!-- 摘要版本（默认显示） -->
-    <div class="content-preview">
-      <p>{{ $summary }}...</p>
-      <button class="expand-btn" aria-expanded="false">展开想法</button>
-    </div>
-    
-    <!-- 完整版本（默认隐藏） -->
-    <div class="content-full" style="display: none;">
-      {{ .Content }}
-      <div class="thought-actions">
-        <a href="{{ .Permalink }}" class="expand-btn detail-link-btn">进入详情页</a>
-      </div>
-    </div>
-  </div>
-  
-  <footer class="entry-footer">
-    <!-- 标签和日期 -->
-  </footer>
-  
-  <!-- 只在收起状态下启用整卡链接 -->
-  <a class="entry-link" href="{{ .Permalink }}"></a>
-</article>
-```
-
-### 8.3 CSS 样式调整
-
-**修改 `custom.css` 中的 Thoughts 相关样式：**
-
-1. **预览态样式**（保持三行截断）：
-```css
-.thought-entry .content-preview p {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-```
-
-2. **展开按钮样式**：
-```css
-.thought-entry .expand-btn {
-  display: inline;
-  color: var(--primary);
-  text-decoration: underline;
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: inherit;
-  cursor: pointer;
-  position: relative;
-  z-index: 2; /* 高于 entry-link */
-}
-```
-
-3. **完整内容样式**：
-```css
-.thought-entry .content-full {
-  /* 展开动画 */
-  transition: opacity 0.2s ease-in-out;
-}
-
-.thought-entry.expanded .content-preview {
-  display: none;
-}
-
-.thought-entry.expanded .content-full {
-  display: block;
-}
-
-/* 展开态下禁用整卡链接 */
-.thought-entry.expanded .entry-link {
-  pointer-events: none;
-}
-```
-
-4. **进入详情页按钮样式**：复用 `.expand-btn` 样式，让「进入详情页」与「展开想法」保持一致，无需额外定义。
-
-5. **响应 prefers-reduced-motion**：
-```css
-@media (prefers-reduced-motion: reduce) {
-  .thought-entry .content-full {
-    transition: none;
-  }
-}
-```
-
-### 8.4 JavaScript 交互逻辑
-
-**新建 `assets/js/thought-expand.js`：**
-
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-  // 初始化所有 Thoughts 卡片
-  const thoughtCards = document.querySelectorAll('.thought-entry');
-  
-  thoughtCards.forEach(card => {
-    const expandBtn = card.querySelector('.expand-btn');
-    const detailLinkBtn = card.querySelector('.detail-link-btn');
-    
-    if (!expandBtn) return; // 内容未溢出，无需交互
-    
-    // 展开逻辑
-    expandBtn.addEventListener('click', function(e) {
-      e.stopPropagation(); // 阻止事件冒泡到 entry-link
-      e.preventDefault();
-      
-      card.classList.add('expanded');
-      expandBtn.setAttribute('aria-expanded', 'true');
-      
-      // 懒加载图片
-      lazyLoadImages(card);
-      
-      // 保持卡片顶部在视口内
-      scrollToCard(card);
-    });
-    
-    // 键盘支持
-    expandBtn.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        expandBtn.click();
-      }
-    });
-    
-    // 阻止「进入详情页」触发整卡链接
-    if (detailLinkBtn) {
-      detailLinkBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-      });
-    }
-  });
-  
-  // 懒加载图片
-  function lazyLoadImages(card) {
-    const images = card.querySelectorAll('.content-full img[data-src]');
-    images.forEach(img => {
-      img.src = img.dataset.src;
-      img.removeAttribute('data-src');
-    });
-  }
-  
-  // 滚动到卡片顶部
-  function scrollToCard(card) {
-    const rect = card.getBoundingClientRect();
-    const headerOffset = 60;
-    if (rect.top < headerOffset) {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const targetScroll = scrollTop + rect.top - headerOffset - 20;
-      window.scrollTo({
-        top: targetScroll,
-        behavior: 'smooth'
-      });
-    }
-  }
-});
-```
-
-### 8.5 内容溢出检测
-
-**在 Hugo 模板中判断是否需要展开按钮：**
-
-```go
-{{- $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" -}}
-{{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
-{{- $needsExpand := gt (len $plainContent) 200 -}}
-
-{{- if $needsExpand -}}
-  <!-- 显示展开按钮 -->
-{{- end -}}
-```
-
-或在 JavaScript 中动态检测：
-```javascript
-// 检测内容是否超过三行
-function checkOverflow(element) {
-  return element.scrollHeight > element.clientHeight;
-}
-```
-
-### 8.6 性能优化
-
-1. **图片懒加载**：
-   - 完整内容中的图片使用 `data-src` 属性
-   - 展开时才加载图片资源
-   - 使用 `IntersectionObserver` API 进一步优化
-
-2. **内容复用**：
-   - 避免在 HTML 中重复输出相同内容
-   - 考虑使用 `<template>` 标签存储完整内容
-
-3. **首屏优化**：
-   - 只为首屏可见的卡片立即执行 JS 初始化
-   - 其他卡片延迟初始化
-
-### 8.7 降级方案
-
-**无 JavaScript 环境下：**
-1. 不显示「展开想法」按钮
-2. 保持整卡链接可点击，跳转到详情页
-3. 在 CSS 中使用 `:has()` 选择器提供部分支持（现代浏览器）
-
-```css
-/* 无 JS 环境下隐藏交互按钮 */
-.no-js .expand-btn {
-  display: none;
-}
-```
-
-### 8.8 兼容性验证
-
-**需要测试的场景：**
-1. 首页混合流中的 Thoughts 卡片
-2. 标签页列表
-3. 归档页列表
-4. 相关文章推荐区域
-5. 移动端触摸交互
-6. 键盘导航
-7. 屏幕阅读器
-
-**浏览器兼容性：**
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-- 移动端 Safari/Chrome
-
-
-## 9. 可访问性要求
-- 交互控件需使用语义化元素（例如 `<button>`），并提供 ARIA 标签（如 `aria-expanded`）。
-- 动画应尊重 `prefers-reduced-motion` 设置，必要时提供无动画降级。
-- 确保按钮与文本的颜色对比度符合 WCAG AA 标准。
-
-## 10. 验收标准
-- 溢出的 Thoughts 卡片展示 `展开想法`；点击后全文展开并显示按钮样式的 `进入详情页`，再点击 `收起` 恢复三行。
-- 不溢出的 Thoughts 卡片无额外控件，交互与当前一致。
-- 展开态下多媒体内容完整可见，标签区域始终位于卡片右下角。
-- 交互在桌面端与移动端均正常，键盘可操作，动画流畅。
-
-## 11. 未决事项
-1. 多媒体的懒加载方案与占位样式需要与前端开发确认，实现成本与性能收益的平衡。
-2. 展开态播放音视频后收起时是否强制停止播放，需产品/体验确认。
-3. `进入详情页` 按钮的具体层级与尺寸（如是否需要全宽按钮）待视觉设计稿确认。
+> 如需恢复 PRD 视角或迭代更多规范，可在本实现说明基础上补充「后续计划」章节。
