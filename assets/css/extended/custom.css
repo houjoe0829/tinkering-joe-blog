@@ -447,10 +447,6 @@
     -webkit-line-clamp: initial;
 }
 
-.posts .thought-entry .entry-content p {
-    margin: 0;  /* 基线样式，由具体态覆盖 */
-}
-
 /* 首页第一个随思录条目特殊样式 */
 .first-entry.thought-entry {
     margin-bottom: 30px;  /* 增加与下面内容的间距 */
@@ -660,21 +656,16 @@
     border-radius: 6px;
 }
 
-/* 完整内容中的段落样式 */
-.thought-entry .content-full p {
-    display: block;
-    -webkit-line-clamp: initial;
-    -webkit-box-orient: initial;
-    overflow: visible;
-    text-overflow: initial;
-    margin: 0.8em 0;
+/* 完整内容在展开态使用 thought-body 包裹，继承 post-content 样式 */
+.thought-entry .thought-body.post-content {
+    color: var(--content);
 }
 
-.thought-entry .content-full p:first-child {
+.thought-entry .thought-body.post-content > :first-child {
     margin-top: 0;
 }
 
-.thought-entry .content-full p:last-child {
+.thought-entry .thought-body.post-content > :last-child {
     margin-bottom: 0;
 }
 

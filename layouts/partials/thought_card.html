@@ -16,7 +16,9 @@
     
     <!-- 完整版本（默认隐藏） -->
     <div class="content-full" style="display: none;">
-      {{ .Content }}
+      <div class="thought-body post-content">
+        {{ .Content }}
+      </div>
       <div class="thought-actions">
         <button class="collapse-btn" aria-label="收起想法内容">收起</button>
         <a href="{{ .Permalink }}" class="detail-link-btn">进入详情页</a>
