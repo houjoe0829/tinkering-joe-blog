@@ -11,7 +11,7 @@
     <!-- 摘要版本（默认显示） -->
     <div class="content-preview">
       <p>{{ $summary }}...</p>
-      <button class="expand-btn" aria-expanded="false" aria-label="展开想法内容">展开想法</button>
+      <button class="expand-btn" aria-expanded="false" aria-label="展开想法内容">展开想法 ↓</button>
     </div>
     
     <!-- 完整版本（默认隐藏） -->
@@ -20,7 +20,7 @@
         {{ .Content }}
       </div>
       <div class="thought-actions">
-        <a href="{{ .Permalink }}" class="expand-btn detail-link-btn" aria-label="进入想法详情页">进入详情页</a>
+        <a href="{{ .Permalink }}" class="expand-btn detail-link-btn" aria-label="进入想法详情页">进入详情页 →</a>
       </div>
     </div>
     {{- else -}}
