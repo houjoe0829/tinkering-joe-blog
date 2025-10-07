@@ -408,6 +408,12 @@ var {
   margin-top: 2.6rem;
 }
 
+/* Sky Eye cards on the homepage show three lines of description */
+.post-entry .sky-eye-entry-content-wrapper .entry-content {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
 @media screen and (max-width: 767px) {
   .content-nav {
     flex-direction: column;
