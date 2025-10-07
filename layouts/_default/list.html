@@ -49,10 +49,6 @@
 {{- else }}
   {{/* 其他类型保持原有逻辑 */}}
   {{- $class := "post-entry" }}
-  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-  {{- $class = "first-entry" }}
-  {{- end }}
 
 <article class="{{ $class }}">
   {{- if eq .Type "sky-eye" }}
@@ -115,8 +111,7 @@
           {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
         {{- end }}
         
-        {{- $isFirstEntry := and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred) }}
-        {{- if and (not $isFirstEntry) (.Param "ShowReadingTime") -}}
+        {{- if (.Param "ShowReadingTime") -}}
           {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d 分钟" .ReadingTime))) }}
         {{- end }}
         
