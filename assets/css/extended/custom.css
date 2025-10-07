@@ -809,22 +809,27 @@ var {
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
     .thought-entry .thought-actions {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 8px;
-        align-items: stretch;
+        align-items: center;
+        justify-content: flex-start;
     }
     
     .thought-entry .detail-link-btn {
-        width: 100%;
-        text-align: center;
+        width: auto;
+        text-align: left;
     }
     
-    .thought-entry .expand-btn {
-        /* 移动端展开按钮显示为块级，便于点击 */
-        display: block;
-        margin-top: 0.5em;
-        margin-left: 0;
-        padding: 0.3em 0;
+    .thought-entry .expand-btn,
+    .thought-entry .detail-link-btn {
+        font-size: 16px; /* 避免移动端点击时触发自动放大 */
+    }
+    
+    .thought-entry .thought-body.post-content,
+    .thought-entry .thought-body.post-content p {
+        font-size: 16px;
+        line-height: 1.7;
     }
 }
 
