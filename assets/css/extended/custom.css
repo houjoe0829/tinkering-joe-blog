@@ -349,6 +349,20 @@ var {
   color: #aaa; /* 浅灰色，适应深色背景 */
 }
 
+.thought-entry.expanded .bookmark-container {
+  transition: none;
+  cursor: pointer;
+}
+
+.thought-entry.expanded .bookmark-container:hover {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.thought-entry.expanded .bookmark-link {
+  cursor: pointer;
+}
+
 /* 通用上一条下一条导航 */
 .content-nav {
   display: flex;
