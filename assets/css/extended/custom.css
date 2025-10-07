@@ -443,9 +443,9 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    transition: background 0.2s ease;
     border-bottom: 1px solid var(--border);
     overflow: hidden;
+    /* 移除所有过渡效果，避免悬浮时跳动 */
 }
 
 .post-entry.thought-entry::after {
@@ -453,9 +453,9 @@
     position: absolute;
     inset: 0;
     background: transparent;
-    transition: background 0.2s ease;
+    transition: background 0.15s ease;
     pointer-events: none;
-    z-index: 0;
+    z-index: -2;
 }
 
 .post-entry.thought-entry:hover::after,
@@ -464,29 +464,47 @@
     background: color-mix(in srgb, var(--entry) 92%, var(--content) 8%);
 }
 
+/* 内容层在最上层，这样不会被背景遮盖 */
 .post-entry.thought-entry > *:not(.entry-link) {
     position: relative;
-    z-index: 2;
-}
-
-.post-entry.thought-entry > .entry-link {
     z-index: 1;
 }
 
+/* entry-link 在背景之上、内容之下 */
+.post-entry.thought-entry > .entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* 所有文本内容不阻止点击事件，让 entry-link 可以被点击 */
+.thought-entry .entry-content,
+.thought-entry .entry-header,
+.thought-entry .entry-footer {
+    pointer-events: none;
+}
+
+/* 只有真正的交互元素允许点击事件 */
 .thought-entry .expand-btn,
 .thought-entry .collapse-btn,
 .thought-entry .detail-link-btn,
-.thought-entry .thought-actions,
-.thought-entry .entry-footer,
 .thought-entry .entry-footer a,
-.thought-entry .thought-tags-list,
-.thought-entry .entry-content button,
+.thought-entry .thought-tag,
 .thought-entry .entry-content a {
     position: relative;
-    z-index: 3;
+    z-index: 2;
+    pointer-events: auto;
 }
 
 .post-entry.thought-entry:active {
+    transform: none;
+}
+
+/* 确保 Thoughts 卡片悬浮时不产生任何位移或跳动 */
+.post-entry.thought-entry:hover {
     transform: none;
 }
 
@@ -540,7 +558,7 @@
 }
 
 .thought-tags-list {
-    /* float: right; /* Remove float, flexbox will handle positioning */ */
+    /* Remove float, flexbox will handle positioning */
     margin-left: auto; /* Push to the right if footer is flex container */
     text-align: right;
 }
@@ -565,9 +583,7 @@
 }
 
 /* Ensure the date meta-item doesn't take full width if footer is flex */
-.thought-entry .entry-footer .meta-item:first-child {
-    /* No specific style needed if justify-content: space-between is working well */
-} 
+/* No specific style needed if justify-content: space-between is working well */ 
 
 /* ========================================
    Thoughts 展开/收起功能样式
