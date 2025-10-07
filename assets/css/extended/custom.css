@@ -435,6 +435,16 @@
     }
 }
 
+/* 普通博文和天空之眼卡片的悬浮效果 */
+.post-entry:not(.thought-entry):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dark .post-entry:not(.thought-entry):hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 /* 首页随思录样式调整 */
 .post-entry.thought-entry {
     position: relative;
