@@ -6,7 +6,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 3px solid var(--primary);
+    border-left: none;
 }
 
 /* 首页第一个随思录条目的额外样式 */
@@ -17,6 +17,7 @@
 
 :root[data-theme="dark"] .thought-entry {
     background-color: rgba(255, 255, 255, 0.05);
+    border-left: none;
 }
 
 .thought-entry .entry-content {
@@ -481,12 +482,12 @@
 .thought-entry {
     background-color: var(--entry);
     border-radius: 10px;
-    border-left: 4px solid #4a6fa5;
+    border-left: none;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .dark .thought-entry {
-    border-left: 4px solid #6d8cb7;
+    border-left: none;
 }
 
 .thought-entry:hover {
