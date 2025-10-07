@@ -7,49 +7,52 @@ document.addEventListener('DOMContentLoaded', function() {
   // 移除 no-js 类，表示 JavaScript 已加载
   document.documentElement.classList.remove('no-js');
   document.documentElement.classList.add('js');
-  
-  // 初始化所有 Thoughts 卡片
-  const thoughtCards = document.querySelectorAll('.thought-entry');
-  
-  thoughtCards.forEach(card => {
-    const expandBtn = card.querySelector('.expand-btn');
-    const detailLinkBtn = card.querySelector('.detail-link-btn');
-    
-    // 如果没有展开按钮，说明内容未溢出，无需交互
-    if (!expandBtn) return;
-    
-    // 展开逻辑
-    expandBtn.addEventListener('click', function(e) {
-      e.stopPropagation(); // 阻止事件冒泡到 entry-link
-      e.preventDefault();
-      
-      card.classList.add('expanded');
-      expandBtn.setAttribute('aria-expanded', 'true');
-      
-      // 懒加载图片
-      lazyLoadImages(card);
-      
-      // 保持卡片顶部在视口内
-      setTimeout(() => scrollToCard(card), 50);
-    });
-    
-    // 键盘支持
-    [expandBtn].forEach(btn => {
-      if (!btn) return;
-      
-      btn.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          btn.click();
-        }
-      });
-    });
-    
-    // 阻止「进入详情页」按钮触发整卡链接
-    if (detailLinkBtn) {
-      detailLinkBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-      });
+
+  const postsContainer = document.querySelector('.posts');
+  if (!postsContainer) return;
+
+  /**
+   * 使用事件委托处理展开按钮点击
+   * 允许后续加载的卡片自动具备交互能力
+   */
+  postsContainer.addEventListener('click', function(event) {
+    const detailLink = event.target.closest('.thought-entry .detail-link-btn');
+    if (detailLink) {
+      event.stopPropagation();
+      return;
+    }
+
+    const expandBtn = event.target.closest('.thought-entry .expand-btn');
+    if (!expandBtn || expandBtn.classList.contains('detail-link-btn')) return;
+
+    const card = expandBtn.closest('.thought-entry');
+    if (!card) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (card.classList.contains('expanded')) return;
+
+    card.classList.add('expanded');
+    expandBtn.setAttribute('aria-expanded', 'true');
+
+    // 懒加载图片
+    lazyLoadImages(card);
+
+    // 保持卡片顶部在视口内
+    setTimeout(() => scrollToCard(card), 50);
+  });
+
+  /**
+   * 键盘支持：回车 / 空格触发展开
+   */
+  postsContainer.addEventListener('keydown', function(event) {
+    const expandBtn = event.target.closest('.thought-entry .expand-btn');
+    if (!expandBtn || expandBtn.classList.contains('detail-link-btn')) return;
+
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      expandBtn.click();
     }
   });
   
@@ -107,9 +110,27 @@ document.addEventListener('DOMContentLoaded', function() {
       rootMargin: '50px' // 提前 50px 开始加载
     });
     
-    // 观察所有带 data-src 的图片
-    document.querySelectorAll('.thought-entry .content-full img[data-src]').forEach(img => {
-      imageObserver.observe(img);
+    const observeImages = (root) => {
+      root.querySelectorAll('.content-full img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    };
+
+    // 初始观察已有图片
+    observeImages(postsContainer);
+
+    // 监听后续加载的卡片
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          if (node.classList && node.classList.contains('thought-entry')) {
+            observeImages(node);
+          }
+        });
+      });
     });
+
+    mutationObserver.observe(postsContainer, { childList: true });
   }
 });
