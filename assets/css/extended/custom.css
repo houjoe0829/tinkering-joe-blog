@@ -728,7 +728,7 @@ var {
     position: relative;
     z-index: 3; /* 高于 entry-link 和内容 */
     transition: opacity 0.2s ease-in-out;
-    margin-top: 0.2em; /* 与正文保持紧凑间距 */
+    margin-top: -0.4em; /* 使用负值让按钮更紧贴内容 */
     pointer-events: auto;  /* 确保可以点击 */
 }
 
