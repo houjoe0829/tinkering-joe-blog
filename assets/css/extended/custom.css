@@ -1,3 +1,68 @@
+/* ========================================
+   全站字体设置 - 参考 UNTAG 设计
+   ======================================== */
+
+/* 全局字体设置 */
+body,
+html {
+    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
+                 "Source Han Serif SC", "source-han-serif-sc", 
+                 "Times New Roman", "Georgia", serif;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--content);  /* 使用主题的内容颜色变量,确保颜色足够深 */
+}
+
+/* 标题字体增强 */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-header h2 {
+    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
+                 "Source Han Serif SC", "source-han-serif-sc", 
+                 "Times New Roman", "Georgia", serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-rendering: optimizeLegibility;
+}
+
+/* 正文字体 */
+.post-content,
+.entry-content,
+article {
+    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
+                 "Source Han Serif SC", "source-han-serif-sc", 
+                 "Times New Roman", "Georgia", serif;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--content);  /* 确保正文颜色足够深 */
+}
+
+/* 卡片描述文字增强颜色 */
+.post-entry .entry-content,
+.thought-entry .entry-content {
+    color: var(--content);  /* 使用主内容颜色而不是次要颜色 */
+}
+
+.post-entry .entry-content p,
+.thought-entry .entry-content p {
+    color: var(--content);
+}
+
+/* 代码字体保持等宽 */
+code,
+pre,
+kbd,
+samp,
+tt,
+var {
+    font-family: -apple-system, BlinkMacSystemFont, "Menlo", "Monaco", "Consolas", 
+                 "Courier New", monospace;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
 .post-header .post-title {
     font-size: 24px !important;  /* 与首页博客列表标题大小一致 */
     margin-bottom: 2px;
@@ -51,44 +116,56 @@
     }
 }
 
-/* 统一所有页面的标题大小 */
+/* 统一所有页面的标题大小 - 参考 UNTAG 设计 */
 .post-content h1,
 .main .post-content h1 {
     margin: 40px auto 32px;
-    font-size: 24px;
+    font-size: 2.2em;  /* 与 UNTAG 一致 */
+    line-height: 1.4;
 }
 
 .post-content h2,
 .main .post-content h2 {
-    margin: 32px auto 24px;
-    font-size: 22px;
+    margin: 1.5em auto 0.75em;  /* 与 UNTAG 一致 */
+    font-size: 1.5em;
+    line-height: 2em;
 }
 
 .post-content h3,
 .main .post-content h3 {
-    font-size: 20px;
+    margin: 1.25em auto 0.625em;
+    font-size: 1.25em;
+    line-height: 2em;
 }
 
 .post-content h4,
 .main .post-content h4 {
-    font-size: 18px;
+    margin: 1em 0;
+    font-size: 1.125em;
 }
 
 .post-content h5,
 .main .post-content h5 {
-    font-size: 16px;
+    margin: 1em 0;
+    font-size: 1.125em;
 }
 
 .post-content h6,
 .main .post-content h6 {
-    font-size: 14px;
+    margin: 1em 0;
+    font-size: 1.125em;
 }
 
 /* 统一所有页面的正文字体大小 */
 .post-content,
 .post-content p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 2em;  /* 参考 UNTAG 的行高设计,提升阅读舒适度 */
+}
+
+/* 段落间距 */
+.post-content p {
+    margin: 1em 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -456,6 +533,7 @@
     border-bottom: 1px solid var(--border);
     overflow: hidden;
     /* 移除所有过渡效果，避免悬浮时跳动 */
+    isolation: isolate;  /* 创建新的层叠上下文,避免 z-index 冲突 */
 }
 
 .post-entry.thought-entry::after {
@@ -495,6 +573,8 @@
 .thought-entry .entry-header,
 .thought-entry .entry-footer {
     pointer-events: none;
+    position: relative;
+    z-index: 1;  /* 确保内容在正确的层级 */
 }
 
 /* 只有真正的交互元素允许点击事件 */
@@ -504,7 +584,7 @@
 .thought-entry .thought-tag,
 .thought-entry .entry-content a {
     position: relative;
-    z-index: 2;
+    z-index: 3;  /* 提高层级,确保可以点击 */
     pointer-events: auto;
 }
 
@@ -635,9 +715,10 @@
     font-family: inherit;
     cursor: pointer;
     position: relative;
-    z-index: 2; /* 高于 entry-link */
+    z-index: 3; /* 高于 entry-link 和内容 */
     transition: opacity 0.2s ease-in-out;
     margin-top: 0.2em; /* 与正文保持紧凑间距 */
+    pointer-events: auto;  /* 确保可以点击 */
 }
 
 .thought-entry .expand-btn:hover {
@@ -733,6 +814,26 @@
 /* 降级方案 - 无 JavaScript 环境 */
 .no-js .thought-entry .expand-btn {
     display: none;
+}
+
+/* 列表项行高 */
+.post-content li {
+    line-height: 2em;
+}
+
+.post-content li > p {
+    line-height: 2em;
+    margin: 0;
+}
+
+/* 引用块样式优化 */
+.post-content blockquote {
+    line-height: 2em;
+    margin: 0 0 1.5em;
+}
+
+.post-content blockquote > p {
+    margin: 0.5em 0;
 }
 
 /* 取消链接与后续中文字符之间的自动空格 */
