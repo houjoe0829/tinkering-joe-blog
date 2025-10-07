@@ -440,26 +440,15 @@
     margin-top: 20px;  /* 为随思录添加上边距 */
 }
 
+.thought-entry .entry-content {
+    display: block;
+    overflow: visible;
+    -webkit-box-orient: initial;
+    -webkit-line-clamp: initial;
+}
+
 .posts .thought-entry .entry-content p {
-    margin: 0;  /* 移除随思录内容段落的默认边距 */
-    /* Add these new styles for 3-line truncation */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* You might need to adjust line-height or a fixed height if it doesn't perfectly show 3 lines.
-       For now, let's assume existing line-height is fine or we can adjust later.
-       Example: line-height: 1.4em; height: 4.2em; (3 * 1.4em)
-    */
-}
-
-.posts .thought-entry .entry-content > *:first-child {
-    margin-top: 0;  /* 移除内容第一个元素的上边距 */
-}
-
-.posts .thought-entry .entry-content > *:last-child {
-    margin-bottom: 0;  /* 移除内容最后一个元素的下边距 */
+    margin: 0;  /* 基线样式，由具体态覆盖 */
 }
 
 /* 首页第一个随思录条目特殊样式 */
@@ -539,13 +528,21 @@
 
 /* 预览态内容样式 - 保持三行截断 */
 .thought-entry .content-preview p {
-    margin: 0;
+    margin: 0.8em 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 0.5em; /* 给展开按钮留出空间 */
+    margin-bottom: 0.8em; /* 给展开按钮留出空间，同时与展开态保持一致 */
+}
+
+.thought-entry .content-preview p:first-child {
+    margin-top: 0;
+}
+
+.thought-entry .content-preview p:last-child {
+    margin-bottom: 0;
 }
 
 /* 展开按钮样式 */
@@ -563,6 +560,7 @@
     position: relative;
     z-index: 2; /* 高于 entry-link */
     transition: opacity 0.2s ease-in-out;
+    margin-top: 12px; /* 与展开态操作区域保持一致的间距 */
 }
 
 .thought-entry .expand-btn:hover {
@@ -664,6 +662,11 @@
 
 /* 完整内容中的段落样式 */
 .thought-entry .content-full p {
+    display: block;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    overflow: visible;
+    text-overflow: initial;
     margin: 0.8em 0;
 }
 
