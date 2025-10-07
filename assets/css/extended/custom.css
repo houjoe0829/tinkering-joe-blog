@@ -436,8 +436,64 @@
 }
 
 /* 首页随思录样式调整 */
-.posts .thought-entry {
-    margin-top: 20px;  /* 为随思录添加上边距 */
+.post-entry.thought-entry {
+    position: relative;
+    padding: 20px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.post-entry.thought-entry::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    transition: background 0.2s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.post-entry.thought-entry:hover::after,
+.post-entry.thought-entry:focus-within::after {
+    background: var(--border);
+    background: color-mix(in srgb, var(--entry) 92%, var(--content) 8%);
+}
+
+.post-entry.thought-entry > *:not(.entry-link) {
+    position: relative;
+    z-index: 2;
+}
+
+.post-entry.thought-entry > .entry-link {
+    z-index: 1;
+}
+
+.thought-entry .expand-btn,
+.thought-entry .collapse-btn,
+.thought-entry .detail-link-btn,
+.thought-entry .thought-actions,
+.thought-entry .entry-footer,
+.thought-entry .entry-footer a,
+.thought-entry .thought-tags-list,
+.thought-entry .entry-content button,
+.thought-entry .entry-content a {
+    position: relative;
+    z-index: 3;
+}
+
+.post-entry.thought-entry:active {
+    transform: none;
+}
+
+.post-entry:not(.thought-entry) + .post-entry.thought-entry {
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .thought-entry .entry-content {
@@ -556,7 +612,7 @@
     position: relative;
     z-index: 2; /* 高于 entry-link */
     transition: opacity 0.2s ease-in-out;
-    margin-top: 12px; /* 与展开态操作区域保持一致的间距 */
+    margin-top: 0.2em; /* 与正文保持紧凑间距 */
 }
 
 .thought-entry .expand-btn:hover {
@@ -594,7 +650,6 @@
     gap: 12px;
     margin-top: 16px;
     padding-top: 12px;
-    border-top: 1px solid var(--border);
     align-items: center;
 }
 
