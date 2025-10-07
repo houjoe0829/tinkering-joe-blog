@@ -49,7 +49,7 @@
     <span class="meta-item thought-tags-list" style="float: right;">
         {{- range $i, $tag := .Params.tags -}}
           {{- if $i -}}&nbsp;{{- end -}}
-          <a href="{{ (urlize $tag) | absLangURL | printf "/tags/%s" }}" class="thought-tag">{{ $tag }}</a>
+          <a href="/tags/{{ $tag | urlize }}/" class="thought-tag">{{ $tag }}</a>
         {{- end -}}
     </span>
     {{- end }}
