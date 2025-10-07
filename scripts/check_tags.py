@@ -32,6 +32,7 @@ VALID_TAGS = {
     "4+2 骑行中",       # 骑行相关的内容
     "AI 相关",          # 与 AI 相关的内容
     "Vibe Coding",     # 与 AI 编程相关的感悟
+    "博客功能更新",     # 博客功能的更新记录
 }
 
 class TagChecker:
@@ -133,14 +134,16 @@ class TagChecker:
         return "\n".join(report)
 
 def main():
-    # 设置博文目录路径
-    posts_dir = "content/posts"
+    # 设置博文目录路径（包括 posts 和 thoughts）
+    content_dirs = ["content/posts", "content/thoughts"]
     
     # 创建检查器实例
-    checker = TagChecker(posts_dir)
+    checker = TagChecker(content_dirs[0])
     
-    # 执行检查
-    checker.check_all_files()
+    # 检查所有内容目录
+    for content_dir in content_dirs:
+        checker.posts_dir = content_dir
+        checker.check_all_files()
     
     # 生成并打印报告
     report = checker.generate_report()

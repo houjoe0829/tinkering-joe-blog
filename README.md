@@ -224,6 +224,7 @@ title: "文章标题"                                # 标题需要用引号包�
 | `4+2 骑行中` | 骑行相关的内容 |
 | `AI 相关` | 与 AI 相关的内容 |
 | `Vibe Coding` | 与 AI 编程相关的感悟 |
+| `博客功能更新` | 博客功能的更新记录 |
 
 1. **字段顺序**：
    * 建议按照 author、date、description、draft、tags、title 的顺序排列
