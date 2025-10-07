@@ -201,21 +201,37 @@ color: var(--content);
 - 开源免费
 - 覆盖完整的中文字符集
 - 为屏幕显示优化
-- 多数现代操作系统已内置
+- 通过 Google Fonts 提供 Web 字体服务
 
-如果用户系统未安装,会自动回退到 Times New Roman 或 Georgia 等经典衬线字体。
+### Web 字体引入
+
+为确保所有访客都能看到优雅的 Noto Serif SC 字体,本站已引入 Google Fonts Web 字体:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+```
+
+**引入的字重:**
+- 400 (Regular) - 基础字重
+- 500 (Medium) - 正文使用
+- 600 (SemiBold) - 次要强调
+- 700 (Bold) - 标题使用
+- 900 (Black) - 特殊强调
+
+**性能优化:**
+- `preconnect` - 预连接 Google Fonts 服务器,减少延迟
+- `display=swap` - 使用字体交换策略,先显示系统字体,字体加载完成后切换,避免文字闪烁(FOIT)
+- 只加载需要的字重,减少文件大小
+
+这样即使用户系统没有安装 Noto Serif SC,也能通过网络加载获得完整的字体体验。
 
 ## 实现文件
 
 字体配置主要在以下文件中:
 - `/assets/css/extended/custom.css` - 全局字体样式定义
-
-## 未来优化方向
-
-如需确保所有访客都能看到 Noto Serif SC:
-1. 可以通过 Google Fonts 引入 Web 字体
-2. 需权衡页面加载性能与视觉一致性
-3. 建议仅在必要时引入,当前方案已足够
+- `/layouts/partials/extend_head.html` - Google Fonts 引入
 
 ## 参考资源
 

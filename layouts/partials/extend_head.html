@@ -1,3 +1,8 @@
+<!-- Google Fonts - Noto Serif SC -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
 <!-- 自定义 JavaScript 文件 -->
 {{- $relativeDate := resources.Get "js/relative-date.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $relativeDate.RelPermalink }}" integrity="{{ $relativeDate.Data.Integrity }}" crossorigin="anonymous"></script>
