@@ -56,8 +56,11 @@
     
     <div class="entry-text-content" style="flex: 1; margin-right: 15px;">
       <header class="entry-header">
-        <h2>
-          <a href="{{ .Permalink }}" style="color: inherit; text-decoration: none;">{{ .Title }}</a>
+        <h2 class="sky-eye-home-card-title">
+          <a class="sky-eye-home-card-title-link" href="{{ .Permalink }}">
+            {{- .Title -}}
+            <img src="/images/sky-eye/drone.svg" alt="无人机" class="sky-eye-home-card-title-icon"/>
+          </a>
           {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
         </h2>
       </header>
