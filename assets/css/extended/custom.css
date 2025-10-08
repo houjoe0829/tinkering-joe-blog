@@ -469,6 +469,17 @@ var {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .post-entry .entry-header h2 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .post-entry .sky-eye-entry-content-wrapper .entry-header .sky-eye-home-card-title {
+    font-size: 18px;
+  }
+}
+
 /* 引用博文部分样式 */
 .post-references {
     margin-top: 2rem;
