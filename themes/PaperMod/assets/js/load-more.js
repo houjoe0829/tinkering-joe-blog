@@ -5,17 +5,29 @@ const initialPosts = 10; // 初始显示10篇
 let totalPosts = 0;
 let isLoading = false; // 是否正在加载中
 let currentPage = 2; // 从第2页开始加载，因为第1页是初始的10篇
-let currentPath = window.location.pathname; // 获取当前页面路径
+let currentPath = normalizePath(window.location.pathname); // 获取当前页面路径
+let listType = 'mixed'; // 当前列表类型：posts | thoughts | mixed
 
 // 初始化加载更多功能
 function initLoadMore() {
     const loadMoreBtn = document.getElementById('load-more');
     if (!loadMoreBtn) return;
 
+    determineListType();
+
     // 获取总文章数
-    totalPosts = parseInt(loadMoreBtn.getAttribute('data-total-posts'));
-    // 初始已加载的文章数量就是10篇
-    loadedPosts = initialPosts;
+    const totalPostsAttr = loadMoreBtn.getAttribute('data-total-posts');
+    if (!totalPostsAttr) return;
+
+    totalPosts = parseInt(totalPostsAttr, 10);
+    if (Number.isNaN(totalPosts)) return;
+
+    const postsContainer = document.querySelector('.posts');
+    if (postsContainer) {
+        loadedPosts = getEntriesByListType(postsContainer).length;
+    } else {
+        loadedPosts = initialPosts;
+    }
 
     // 如果总文章数小于等于初始显示数量，直接显示加载完成
     if (loadedPosts >= totalPosts) {
@@ -34,10 +46,20 @@ function showCompletionMessage() {
     
     // 获取想法的数量
     const loadMoreBtn = document.getElementById('load-more');
-    const totalThoughts = loadMoreBtn ? loadMoreBtn.getAttribute('data-total-thoughts') : 0;
+    const totalThoughts = loadMoreBtn ? loadMoreBtn.getAttribute('data-total-thoughts') : null;
+
+    let completionText = `☕️ 你已成功解锁全部 ${totalPosts} 篇博文，${totalThoughts || 0} 条想法！`;
+
+    if (listType === 'thoughts') {
+        completionText = `☕️ 你已成功解锁全部 ${totalPosts} 条想法！`;
+    } else if (listType === 'posts') {
+        completionText = `☕️ 你已成功解锁全部 ${totalPosts} 篇博文！`;
+    } else if (totalThoughts === null) {
+        completionText = `☕️ 你已成功解锁全部 ${totalPosts} 篇内容！`;
+    }
     
-    // 显示包含博文和想法数量的完成消息
-    loadMoreContainer.innerHTML = `<p class="no-more">☕️ 你已成功解锁全部 ${totalPosts} 篇博文，${totalThoughts} 条想法！</p>`;
+    // 显示完成消息
+    loadMoreContainer.innerHTML = `<p class="no-more">${completionText}</p>`;
 }
 
 // 设置加载状态
@@ -66,17 +88,7 @@ async function loadMorePosts() {
 
     try {
         // 构建下一页的URL
-        let nextPageUrl;
-        if (currentPath.endsWith('/')) {
-            currentPath = currentPath.slice(0, -1);
-        }
-        
-        // 如果是在标签页面
-        if (currentPath.includes('/tags/')) {
-            nextPageUrl = `${currentPath}/page/${currentPage}/`;
-        } else {
-            nextPageUrl = `/page/${currentPage}/`;
-        }
+        const nextPageUrl = buildNextPageUrl();
 
         const response = await fetch(nextPageUrl);
         
@@ -91,7 +103,7 @@ async function loadMorePosts() {
         const doc = parser.parseFromString(text, 'text/html');
         
         // 获取新文章
-        const newPosts = doc.querySelectorAll('.post-entry');
+        const newPosts = getEntriesByListType(doc);
         
         // 如果没有找到新文章，说明已经到达末尾
         if (newPosts.length === 0) {
@@ -133,4 +145,60 @@ async function loadMorePosts() {
 }
 
 // 页面加载完成后初始化
-document.addEventListener('DOMContentLoaded', initLoadMore); 
+document.addEventListener('DOMContentLoaded', initLoadMore);
+
+/**
+ * 根据当前页面路径构建下一页链接
+ */
+function buildNextPageUrl() {
+    if (!currentPath) {
+        return `/page/${currentPage}/`;
+    }
+    return `${currentPath}/page/${currentPage}/`;
+}
+
+/**
+ * 根据列表类型获取对应的文章节点
+ */
+function getEntriesByListType(root) {
+    if (listType === 'thoughts') {
+        return root.querySelectorAll('.thought-entry');
+    }
+    if (listType === 'posts') {
+        return root.querySelectorAll('.post-entry:not(.thought-entry)');
+    }
+    return root.querySelectorAll('.post-entry');
+}
+
+/**
+ * 去掉路径末尾的斜杠，根路径保持为空字符串
+ */
+function normalizePath(pathname) {
+    if (!pathname || pathname === '/') return '';
+    let normalized = pathname;
+    if (normalized.endsWith('/')) {
+        normalized = normalized.slice(0, -1);
+    }
+    normalized = normalized.replace(/\/page\/\d+$/, '');
+    if (normalized === '') return '';
+    return normalized;
+}
+
+/**
+ * 判断当前列表类型
+ */
+function determineListType() {
+    const postsContainer = document.querySelector('.posts');
+    if (!postsContainer) return;
+
+    const hasThoughts = postsContainer.querySelector('.thought-entry') !== null;
+    const hasRegularPosts = postsContainer.querySelector('.post-entry:not(.thought-entry)') !== null;
+
+    if (hasThoughts && !hasRegularPosts) {
+        listType = 'thoughts';
+    } else if (!hasThoughts && hasRegularPosts) {
+        listType = 'posts';
+    } else {
+        listType = 'mixed';
+    }
+}
