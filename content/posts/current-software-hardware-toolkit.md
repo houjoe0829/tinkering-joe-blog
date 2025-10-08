@@ -93,7 +93,7 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://houjoe.me">个人独立站点</a></strong></td>
+<td><strong><a href="https://houjoe.me">houjoe.me</a></strong></td>
 <td>非微信渠道的个人博客，支持 RSS 和 Telegram 频道。至于为什么要有个个人站点，可参考之前写的 <a href="/posts/why-start-blogging/">《为什么要写 blog？》</a></td>
 </tr>
 <tr>
@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Dia 浏览器</strong></td>
-<td>等不到 Google 来为 Chrome 加上 Gemini 了，需要一个 AI 版本的浏览器来帮助理解现在的网页内容</td>
+<td><strong>Comet 浏览器</strong></td>
+<td>除了一个经常需要验证的小毛病，目前使用最为顺手的，且浏览器基础功能没什么问题的 AI 浏览器</td>
 </tr>
 </tbody>
 </table>
@@ -473,10 +473,6 @@ author: "Joe"
 <td>Menubar 管理工具 Bartender 的最佳平替，完全免费</td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/">Raycast</a></td>
-<td>免费的 Mac 启动器，比系统自带的 spotlight 搜索功能性能好也强大</td>
-</tr>
-<tr>
 <td><a href="https://rectangleapp.com/">Rectangle</a></td>
 <td>窗口管理工具，支持快捷键或者自定义触发位置来实现自定义的窗口尺寸和位置，免费完全够用</td>
 </tr>
@@ -544,10 +540,6 @@ author: "Joe"
 <td>最佳电子书阅读器，也是电脑用累了之后，捧在手里的屏幕</td>
 </tr>
 <tr>
-<td><strong>无印良品保冷杯</strong></td>
-<td>非常喜欢喝冷水，终于找到一款兼顾多用途的保冷杯，既是骑行水壶 600ml，也是随行杯，特殊的设计，可以把买的瑞幸咖啡倒入其中，保冷一下午。</td>
-</tr>
-<tr>
 <td><strong>随身 WiFi</strong></td>
 <td>iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作</td>
 </tr>
@@ -573,8 +565,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Mavic Air 2 无人机</strong></td>
-<td>无人机电池永远在这里充着电</td>
+<td><strong>DJI Mini 5 Pro</strong></td>
+<td>我的第三台无人机，越来越小巧了，继续拍摄我的天空之眼栏目</td>
 </tr>
 <tr>
 <td><strong>大行 P8 折叠自行车</strong></td>
