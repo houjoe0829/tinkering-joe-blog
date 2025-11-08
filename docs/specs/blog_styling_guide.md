@@ -139,6 +139,59 @@
 - **暗色模式**：自动适配系统暗色模式
 - **第一列强调**：第一列背景色不同，字体加粗
 
+### 图片 Caption 样式规范
+
+#### 设计目标
+为图片添加居中显示的说明文字（Caption），使用灰色斜体样式，与正文内容区分开来，提升图片的可读性和说明性。
+
+#### 适用场景
+- 需要为图片添加说明文字
+- 图片来源标注
+- 图片内容描述
+
+#### HTML 结构示例
+```html
+![图片描述](/images/posts/article-name/image.webp)
+
+<div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+<em>这是图片的说明文字</em>
+</div>
+```
+
+#### Markdown 中的使用示例
+```markdown
+![死去之后的重生画面](/images/posts/hades-2-game-review/image2.webp)
+
+<div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+<em>死去之后的重生画面</em>
+</div>
+```
+
+#### 样式说明
+- **文本对齐**：`text-align: center` - 居中显示
+- **文字颜色**：`color: #666` - 灰色，区别于正文
+- **字体大小**：`font-size: 0.9em` - 比正文略小
+- **上边距**：`margin-top: -10px` - 紧贴图片，减少间距
+- **下边距**：`margin-bottom: 20px` - 与下方内容保持适当距离
+- **斜体样式**：`<em>` 标签 - 使用斜体强调这是说明文字
+
+#### 使用注意事项
+1. **紧跟图片**：Caption 的 HTML 代码应紧跟在图片 Markdown 语法之后
+2. **内容简洁**：说明文字应简洁明了，避免过长
+3. **统一格式**：所有图片 Caption 使用相同的样式格式
+4. **可选使用**：不是所有图片都需要 Caption，根据实际需要添加
+
+#### 暗色模式适配
+在暗色模式下，灰色文字（`#666`）在深色背景上可能对比度不够。如需优化，可以在 `custom.css` 中添加：
+
+```css
+@media (prefers-color-scheme: dark) {
+  .post-content div[style*="color: #666"] {
+    color: #999 !important;
+  }
+}
+```
+
 ## 样式开发最佳实践
 
 ### 1. 样式优先级管理
