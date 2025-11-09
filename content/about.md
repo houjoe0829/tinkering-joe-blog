@@ -8,7 +8,7 @@ hideMeta: true
 
 ## 👨‍💻 自我介绍
 
-我是 Joe，不知名的产品经理，主业与兴趣都是设计各类 ToC 或者 ToB 生产力工具.
+我是 Joe，不知名的产品经理，主业与兴趣都是设计各类 ToC 或者 ToB 的生产力工具，目前在做 AI 相关的产品咨询顾问，帮助初创公司设计产品和项目落地。
 
 <div class="tags-container">
   <span class="tag" data-color="blue"><i class="tag-icon">💻</i>Coding with AI</span>
@@ -23,13 +23,13 @@ hideMeta: true
   <span class="tag" data-color="red"><i class="tag-icon">🚗</i>顺风车司机</span>
 </div>
 
-主要涉及的产品领域：编辑器、协同文档、笔记工具、Database、白板，以及 AI。
+长期涉足的产品领域：编辑器、协同文档、笔记工具、白板，以及 AI。
 
 产品经历：[Evernote](https://evernote.com/)、[AFFiNE](https://affine.pro/)、[轻雀文档](https://qingque.cn/products/docs)、[轻雀协作](https://qingque.cn/practice)
 
 ## 📮 找到我
 
-如果有任何问题、合作想法或只是想打个招呼，欢迎通过以下方式找到我。我也有一些闲聊的兴趣群，有意向的话可以添加微信并备注来意，目前还在折腾的兴趣群包括 Note taking 工具、AI、Vibe Coding、主机游戏、休闲骑行等：
+如果有任何工作机会、合作想法或只是想打个招呼，欢迎通过以下方式找到我。我也有一些闲聊的兴趣群，有意向的话可以添加微信并备注来意，目前还在折腾的兴趣群包括 Note taking 工具、AI、Vibe Coding、主机游戏、休闲骑行、无人机交流等：
 
 <table class="toolkit-table contact-table">
 <thead>
@@ -58,7 +58,7 @@ hideMeta: true
 <tr>
 <td>💬 <strong>Wechat</strong></td>
 <td>微信号[houjoe829]</td>
-<td>请备注来意</td>
+<td>请备注来意和多一点自我介绍</td>
 </tr>
 </tbody>
 </table>
