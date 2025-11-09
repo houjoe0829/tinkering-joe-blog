@@ -106,7 +106,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><a href="https://www.notion.so/">Notion</a></td>
-<td>算作个人 Wiki 的目录，可以连接 Whimsical，可与 ChatGPT Mac 端直接协作</td>
+<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Cursor、Windsurf、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
 <tr>
 <td><a href="https://whimsical.com/">Whimsical</a></td>
@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Comet 浏览器</strong></td>
-<td>除了一个经常需要验证的小毛病，目前使用最为顺手的，且浏览器基础功能没什么问题的 AI 浏览器</td>
+<td><strong>Dia 浏览器</strong></td>
+<td>目前体验最好的 AI 浏览器了，稳定性的打磨和很多交互的小心思，目前最喜欢的隐藏 Tabs，干净且优雅。</td>
 </tr>
 </tbody>
 </table>
@@ -146,10 +146,6 @@ author: "Joe"
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall">OneTab</a></td>
-<td>一键清掉所有的 Tabs</td>
-</tr>
 <tr>
 <td><a href="https://chromewebstore.google.com/detail/aitdk-seo-extension-traff/hhfkpjffbhledfpkhhcoidplcebgdgbk">AITDK SEO</a></td>
 <td>快速查看一个网站的 SEO 数据</td>
@@ -192,8 +188,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://culturedcode.com/things/">Things3</a></td>
-<td>最简约的 Todo 管理工具，再配合上我自己写的 Calendar Hub，可以将各种日历、特斯拉行车记录、Strava 运动、专注计时全都显示在系统日历上，也会显示在 Things3 上</td>
+<td><a href="https://dida365.com/">滴答清单</a></td>
+<td>目前最爱的任务管理工具，任务、日历、番茄专注、习惯打卡，多合一。</td>
 </tr>
 </tbody>
 </table>
@@ -231,8 +227,8 @@ author: "Joe"
 <td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
-<td><strong>Things3</strong></td>
-<td>也用 Things3 放置待看清单</td>
+<td><strong>滴答清单</strong></td>
+<td>也用滴答清单放置待看清单</td>
 </tr>
 <tr>
 <td><a href="https://pocketcasts.com/">Pocket Casts</a></td>
@@ -264,6 +260,10 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
+<td><strong>YouTube Music</strong></td>
+<td>之前一直没有想到 YouTube 会员赠送的 YouTube Music 什么都可以听，简直是宝藏</td>
+</tr>
+<tr>
 <td><strong>极空间的极音乐</strong></td>
 <td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
 </tr>
@@ -289,12 +289,16 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
+<td><a href="https://www.notion.so/ai">Notion AI</a></td>
+<td>感觉 Notion AI 可选择 Claude 或者 ChatGPT 之后，可用性在持续增加，现在写方案、整理思考，都可以让 Notion AI 辅助</td>
+</tr>
+<tr>
 <td><a href="https://chatgpt.com/">ChatGPT</a></td>
 <td>原本是把 ChatGPT 当做 Claude 替代品，现在发现除了代码以外，ChatGPT 的生成质量都好于 Claude，而且可以和 Notion 很好地打通</td>
 </tr>
 <tr>
-<td><a href="https://www.cursor.com/">Cursor</a></td>
-<td>Cursor 用习惯了，工具是次要的，主要还是要构建有用的东西。</td>
+<td><a href="https://windsurf.com/">Windsurf</a></td>
+<td>尽管 Codex 已经很厉害，但是仍然需要一个可以精准编辑的 AI 代码编辑器，按照目前的用量来说，Windsurf 性价比更高</td>
 </tr>
 <tr>
 <td><a href="https://www.doubao.com/chat/">豆包</a></td>
@@ -359,10 +363,6 @@ author: "Joe"
 <tr>
 <td><strong>Google Photo</strong></td>
 <td>多年来的图片备份工具，即使有 Nas 也不放弃</td>
-</tr>
-<tr>
-<td><a href="https://sunlogin.oray.com/">向日葵远程控制</a></td>
-<td>用来远程访问另一台备用电脑，这样出门只用带一台就可以了</td>
 </tr>
 </tbody>
 </table>
@@ -524,10 +524,6 @@ author: "Joe"
 <td>特意为了它写个文章：<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a>，主要是为了自驾和骑行的时候用豆包</td>
 </tr>
 <tr>
-<td><strong>Remax 二合一快充</strong></td>
-<td>还是钟爱自带 AC 插脚的二合一充电宝，这次换了个 2万毫安电芯容量的，不过，更喜欢的是最近开始流行的抽拉线，不用额外带线，还让随身物品更整洁。</td>
-</tr>
-<tr>
 <td><strong>Amazfit Active Edge</strong></td>
 <td>运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表</td>
 </tr>
@@ -589,8 +585,8 @@ author: "Joe"
 <td>普普通通的野餐垫，可以躺着睡觉</td>
 </tr>
 <tr>
-<td><strong>露营被子</strong></td>
-<td>偶尔应急睡一睡觉</td>
+<td><strong>自充气床垫</strong></td>
+<td>方便 4+2 骑行时的车内露营</td>
 </tr>
 <tr>
 <td><strong>工兵铲</strong></td>
