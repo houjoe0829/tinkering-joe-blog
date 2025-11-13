@@ -361,7 +361,7 @@ author: "Joe"
 <td>免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册</td>
 </tr>
 <tr>
-<td><strong>Google Photo</strong></td>
+<td><strong>Google Photos</strong></td>
 <td>多年来的图片备份工具，即使有 Nas 也不放弃</td>
 </tr>
 </tbody>
