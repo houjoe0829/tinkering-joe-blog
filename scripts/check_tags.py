@@ -83,6 +83,10 @@ class TagChecker:
     def check_all_files(self) -> None:
         """检查所有博文文件"""
         for file_name in os.listdir(self.posts_dir):
+            # 跳过目录索引文件，这些文件用于聚合页面不需要标签
+            if file_name.startswith('_'):
+                continue
+
             if file_name.endswith('.md'):
                 file_path = os.path.join(self.posts_dir, file_name)
                 self.check_file(file_path)
