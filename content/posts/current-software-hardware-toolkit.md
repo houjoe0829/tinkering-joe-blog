@@ -301,6 +301,10 @@ author: "Joe"
 <td>尽管 Codex 已经很厉害，但是仍然需要一个可以精准编辑的 AI 代码编辑器，按照目前的用量来说，Windsurf 性价比更高</td>
 </tr>
 <tr>
+<td><a href="https://www.lovart.ai">Lovart</a></td>
+<td>经常用 Lovart 做一些内容的配图，免费用量也很慷慨，够我每天使用的额度了。</td>
+</tr>
+<tr>
 <td><a href="https://www.doubao.com/chat/">豆包</a></td>
 <td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
 </tr>
