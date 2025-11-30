@@ -106,7 +106,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><a href="https://www.notion.so/">Notion</a></td>
-<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Cursor、Windsurf、ChatGPT 的上下文，基于官方的 MCP</td>
+<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Cursor、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
 <tr>
 <td><a href="https://whimsical.com/">Whimsical</a></td>
@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Dia 浏览器</strong></td>
-<td>目前体验最好的 AI 浏览器了，稳定性的打磨和很多交互的小心思，目前最喜欢的隐藏 Tabs，干净且优雅。</td>
+<td><strong>ChatGPT Atlas 浏览器</strong></td>
+<td>尽管作为浏览器有很多的缺点，但需要一个 AI 浏览器，只有它可以调用 ChatGPT 里的记忆，更了解我</td>
 </tr>
 </tbody>
 </table>
@@ -211,8 +211,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://reederapp.com/">Reeder Classic</a></td>
-<td>RSS 订阅工具，经典可用，而且原生很流畅</td>
+<td><a href="https://netnewswire.com/">NetNewsWire</a></td>
+<td>Folo 已经自暴自弃了，Reeder Classic 已经不怎么维护了，免费的 NetNewsWire 是最具性价比的选择了</td>
 </tr>
 <tr>
 <td><strong>微信读书</strong></td>
@@ -297,8 +297,8 @@ author: "Joe"
 <td>原本是把 ChatGPT 当做 Claude 替代品，现在发现除了代码以外，ChatGPT 的生成质量都好于 Claude，而且可以和 Notion 很好地打通</td>
 </tr>
 <tr>
-<td><a href="https://windsurf.com/">Windsurf</a></td>
-<td>尽管 Codex 已经很厉害，但是仍然需要一个可以精准编辑的 AI 代码编辑器，按照目前的用量来说，Windsurf 性价比更高</td>
+<td><a href="https://cursor.com">Cursor</a></td>
+<td>由于 Windsurf 不能很顺滑读取 Notion 里的内容，还是换成 Cursor 了。</td>
 </tr>
 <tr>
 <td><a href="https://www.lovart.ai">Lovart</a></td>
@@ -367,6 +367,10 @@ author: "Joe"
 <tr>
 <td><strong>Google Photos</strong></td>
 <td>多年来的图片备份工具，即使有 Nas 也不放弃</td>
+</tr>
+<tr>
+<td><strong>腾讯会议</strong></td>
+<td>最近为腾讯会议付费了，为了更加畅快的线上会议和沟通</td>
 </tr>
 </tbody>
 </table>
@@ -473,10 +477,6 @@ author: "Joe"
 <td>主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩</td>
 </tr>
 <tr>
-<td><a href="https://icemenubar.app/">Ice</a></td>
-<td>Menubar 管理工具 Bartender 的最佳平替，完全免费</td>
-</tr>
-<tr>
 <td><a href="https://rectangleapp.com/">Rectangle</a></td>
 <td>窗口管理工具，支持快捷键或者自定义触发位置来实现自定义的窗口尺寸和位置，免费完全够用</td>
 </tr>
@@ -546,6 +546,10 @@ author: "Joe"
 <tr>
 <td><strong>Delux 折叠鼠标</strong></td>
 <td>可参考<a href="/posts/foldable-mouse-review/">《比较喜欢的一款可折叠收纳的鼠标》</a>，从罗技 MX Master 3S 换到这款平替，最主要是便携性，折叠后只有 AirPods 充电盒大小，适合经常外出的远程办公场景</td>
+</tr>
+<tr>
+<td><strong>Anker 超大能量舱</strong></td>
+<td>超大充电宝，自己补电很快，输出功率也很高，完全解决了电量焦虑，充手机、无人机、电脑，等等</td>
 </tr>
 </tbody>
 </table>
