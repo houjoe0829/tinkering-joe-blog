@@ -297,8 +297,8 @@ author: "Joe"
 <td>原本是把 ChatGPT 当做 Claude 替代品，现在发现除了代码以外，ChatGPT 的生成质量都好于 Claude，而且可以和 Notion 很好地打通</td>
 </tr>
 <tr>
-<td><a href="https://cursor.com">Cursor</a></td>
-<td>由于 Windsurf 不能很顺滑读取 Notion 里的内容，还是换成 Cursor 了。</td>
+<td><a href="https://windsurf.com/refer?referral_code=cd31deea80">Windsurf</a></td>
+<td>Windsurf 的计费目前是 AI IDE 里最简单的了，Cursor 有点黑盒，而且要做的东西越来越多了。</td>
 </tr>
 <tr>
 <td><a href="https://www.lovart.ai">Lovart</a></td>
