@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>ChatGPT Atlas 浏览器</strong></td>
-<td>尽管作为浏览器有很多的缺点，但需要一个 AI 浏览器，只有它可以调用 ChatGPT 里的记忆，更了解我</td>
+<td><strong>Dia 浏览器</strong></td>
+<td>最近放弃了 ChatGPT，也就换回了免费且体验最好的 Dia。</td>
 </tr>
 </tbody>
 </table>
@@ -290,15 +290,11 @@ author: "Joe"
 <tbody>
 <tr>
 <td><a href="https://www.notion.so/ai">Notion AI</a></td>
-<td>感觉 Notion AI 可选择 Claude 或者 ChatGPT 之后，可用性在持续增加，现在写方案、整理思考，都可以让 Notion AI 辅助</td>
-</tr>
-<tr>
-<td><a href="https://chatgpt.com/">ChatGPT</a></td>
-<td>原本是把 ChatGPT 当做 Claude 替代品，现在发现除了代码以外，ChatGPT 的生成质量都好于 Claude，而且可以和 Notion 很好地打通</td>
+<td>感觉 Notion AI 可选择 Claude、Gemini 或者 ChatGPT 之后，可用性在持续增加，现在已经作为主力，问问题、写方案、整理思考，都可以让 Notion AI 辅助</td>
 </tr>
 <tr>
 <td><a href="https://windsurf.com/refer?referral_code=cd31deea80">Windsurf</a></td>
-<td>Windsurf 的计费目前是 AI IDE 里最简单的了，Cursor 有点黑盒，而且要做的东西越来越多了。</td>
+<td>Windsurf 的计费目前是 AI IDE 里最简单的了，Cursor 的计费有点黑盒，而且在我的电脑上总是很卡，目前无法定位问题。</td>
 </tr>
 <tr>
 <td><a href="https://www.lovart.ai">Lovart</a></td>
