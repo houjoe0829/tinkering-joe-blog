@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Dia 浏览器</strong></td>
-<td>最近放弃了 ChatGPT，也就换回了免费且体验最好的 Dia。</td>
+<td><strong>ChatGPT Atlas</strong></td>
+<td>暂时没有想好原因，大概是为了ChatGPT 里的记忆吧。</td>
 </tr>
 </tbody>
 </table>
@@ -293,8 +293,8 @@ author: "Joe"
 <td>感觉 Notion AI 可选择 Claude、Gemini 或者 ChatGPT 之后，可用性在持续增加，现在已经作为主力，问问题、写方案、整理思考，都可以让 Notion AI 辅助</td>
 </tr>
 <tr>
-<td><a href="https://windsurf.com/refer?referral_code=cd31deea80">Windsurf</a></td>
-<td>Windsurf 的计费目前是 AI IDE 里最简单的了，Cursor 的计费有点黑盒，而且在我的电脑上总是很卡，目前无法定位问题。</td>
+<td><a href="https://cursor.sh/">Cursor</a></td>
+<td>虽然 Cursor 的计费很黑盒，但依然是最好用的 AI IDE，费钱就费钱吧，而且，Cursor 读取 Notion 的 API 好像是专门支持的，与 Notion 丝滑协作。</td>
 </tr>
 <tr>
 <td><a href="https://www.lovart.ai">Lovart</a></td>
