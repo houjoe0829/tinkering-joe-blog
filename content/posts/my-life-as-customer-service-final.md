@@ -97,7 +97,9 @@ author: "Joe"
 
 一直觉得，客服是交流甚少的行业，在我从事工作的三四年中，除了在推销客户服务工具的销售员那里，在其他地方几乎听不到同行的声音。但是每一家企业呈现的客服都有着自己的思路，我们仍然应该虚心查看同行的作品，可以尝试作为用户逐个体验，或者用抓包的形式找到服务背后所应用的工具名称，甚至直接勾搭客服找到幕后工作者。我自己尝试了很多互联网产品的客服，并收为案例来研究。
 
-![企业学习示意图](/images/posts/my-life-as-customer-service-final/image-3.webp)
+<div style="display: flex; justify-content: center;">
+<img src="/images/posts/my-life-as-customer-service-final/image-3.webp" alt="企业学习示意图" width="50%" />
+</div>
 
 ## 注意客服团队的稳定，一个负能量爆棚的部门
 
