@@ -421,6 +421,15 @@ hideMeta: true
 ## 🌟 Side Projects
 
 <div class="bento-container projects-container">
+  <a href="https://fm.houjoe.me" class="bento-card audio-project">
+    <div class="card-content">
+      <div class="card-icon">📻</div>
+      <h3>Roam FM</h3>
+      <p>让全球四万个电台成为你的工作背景音乐,而且每个电台都会在地球上有一个点亮的位置。</p>
+      <span class="read-more">访问网站 →</span>
+    </div>
+  </a>
+  
   <a href="https://omniaudio.info/" class="bento-card audio-project">
     <div class="card-content">
       <div class="card-icon">🎧</div>
