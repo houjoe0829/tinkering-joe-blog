@@ -13,3 +13,4 @@ hugo_stats.json
 /static/images_compressed/
 /temp_notion/
 /temp_files/
+.claude/
