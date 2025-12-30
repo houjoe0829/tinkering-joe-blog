@@ -425,7 +425,7 @@ hideMeta: true
     <div class="card-content">
       <div class="card-icon">📻</div>
       <h3>Roam FM</h3>
-      <p>让全球四万个电台成为你的工作背景音乐,而且每个电台都会在地球上有一个点亮的位置。</p>
+      <p>跟随电台漫游地球，点亮未知角落。40000+ 全球电台，一键随机出发。</p>
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
