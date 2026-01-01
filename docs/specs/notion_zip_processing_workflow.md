@@ -32,17 +32,33 @@ python3 scripts/extract_zip_utf8.py temp_files/[ZIP文件名].zip
 ```
 
 #### 1.2 解压结果
-- 内容解压到：`temp_notion/[ZIP包名命名的目录]/`
-- 通常包含：主 Markdown 文件 + 附件文件夹（图片等）
+- 内容解压到：`temp_notion/` 目录（Markdown 文件和图片平铺在根目录）
+- 通常包含：主 Markdown 文件 + 图片文件
 
-### 2. 内容创建阶段
+### 2. 图片迁移阶段（在创建文章之前）
 
-#### 2.1 确定文章信息
-- 确认主 Markdown 文件
+> **重要**：必须先将图片复制到目标目录，再创建文章文件。这是因为图片压缩脚本需要从 `static/images/` 目录读取原始图片。
+
+#### 2.1 创建图片目录并复制图片
+```bash
+# 博客文章
+mkdir -p static/images/posts/[article-name]
+cp temp_notion/*.png temp_notion/*.jpg temp_notion/*.jpeg static/images/posts/[article-name]/ 2>/dev/null
+
+# 随思录
+mkdir -p static/images/thoughts/[thought-name]
+cp temp_notion/*.png temp_notion/*.jpg temp_notion/*.jpeg static/images/thoughts/[thought-name]/ 2>/dev/null
+```
+
+### 3. 内容创建阶段
+
+#### 3.1 确定文章信息
+- 确认主 Markdown 文件（在 `temp_notion/` 中）
 - 确定文章标题
 - 确定内容类型（posts 或 thoughts）
+- 确定英文文件名
 
-#### 2.2 创建目标文件
+#### 3.2 创建目标文件
 **博客文章**：
 - 位置：`content/posts/[英文文件名].md`
 - 命名规范：英文单词，短横线分隔，避免拼音
@@ -51,9 +67,12 @@ python3 scripts/extract_zip_utf8.py temp_files/[ZIP文件名].zip
 - 位置：`content/thoughts/[英文文件名].md`
 - 命名规范：同博客文章
 
-### 3. 元数据配置阶段
+#### 3.3 图片引用格式
+在创建文章时，可以直接使用相对路径引用图片（如 `![alt](filename.png)`），`update_image_refs.py` 脚本会自动将其转换为正确的绝对路径格式。
 
-#### 3.1 Front Matter 结构
+### 4. 元数据配置阶段
+
+#### 4.1 Front Matter 结构
 ```yaml
 ---
 author: "Joe"
@@ -65,21 +84,21 @@ title: "文章标题"  # thoughts 类型可以留空 ""
 ---
 ```
 
-#### 3.2 元数据规范
+#### 4.2 元数据规范
 - **YAML 敏感性**：使用纯英文引号包裹值
 - **标点符号**：统一使用半角标点
 - **标签限制**：只能从预定义标签列表中选择
 - **参考模板**：以 `@nezha-movie-review.md` 为格式参考
 
-### 4. 内容转换阶段
+### 5. 内容转换阶段
 
-#### 4.1 正文内容处理
+#### 5.1 正文内容处理
 - 复制 Notion Markdown 正文到目标文件
-- 移除或转换 Notion 内部链接
+- 移除或转换 Notion 内部链接（转换为博客内部链接格式 `/posts/article-name`）
 - 调整 Callout、Toggle 等 Notion 特有块格式
 - 清理不必要的 HTML 标签或样式
 
-#### 4.2 图片 Caption 处理
+#### 5.2 图片 Caption 处理
 当 Notion 导出包含图片 Caption 时，使用以下 HTML 格式：
 ```html
 <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
@@ -87,77 +106,62 @@ title: "文章标题"  # thoughts 类型可以留空 ""
 </div>
 ```
 
-### 5. 图片处理阶段
+#### 5.3 图片尺寸调整
+如需调整图片显示尺寸（如 50% 宽度并居中），使用以下格式：
+```html
+<img src="/images/posts/article-name/image.webp" alt="描述" style="width: 50%; display: block; margin: 0 auto;" />
+```
 
-#### 5.1 图片目录创建
-**博客文章**：`static/images/posts/[文章名]/`
-**随思录**：`static/images/thoughts/[文章名]/`
+### 6. 图片处理阶段
 
-#### 5.2 图片处理命令序列
+#### 6.1 图片处理命令序列
 
 **博客文章处理**：
 ```bash
-# 1. 压缩并转换图片为 WebP 格式
+# 1. 压缩并转换图片为 WebP 格式（图片必须已在 static/images/posts/article-name/ 中）
 python3 scripts/compress_article_images.py content/posts/article-name.md
 
-# 2. 移动压缩后的图片到正确位置
+# 2. 移动压缩后的图片到正确位置（覆盖原始图片目录）
 cp -r static/images_compressed/posts/article-name/* static/images/posts/article-name/
 
-# 3. 更新图片引用（运行两次确保完全更新）
-python3 scripts/update_image_refs.py
-python3 scripts/update_image_refs.py
-
-# 4. 检查并重命名包含空格的文件名
-ls static/images/posts/article-name/ | grep " " || echo "无需重命名"
-# 如需重命名：
-# cd static/images/posts/article-name
-# mv "image 1.webp" "image1.webp"
-
-# 5. 再次更新引用（处理重命名的文件）
+# 3. 更新图片引用（自动将相对路径转为绝对路径，并更新扩展名为 .webp）
 python3 scripts/update_image_refs.py
 
-# 6. 清理原始图片文件
+# 4. 清理原始图片文件（删除 jpg/png，只保留 webp）
 python3 scripts/clean_original_images.py --execute
 
-# 7. 清理临时文件
+# 5. 清理临时目录
 rm -rf static/images_compressed/posts/article-name
 ```
 
 **随思录处理**：
 ```bash
-# 1. 压缩并转换图片
+# 步骤相同，路径替换为 thoughts
 python3 scripts/compress_article_images.py content/thoughts/thought-name.md
-
-# 2. 移动压缩后的图片
 cp -r static/images_compressed/thoughts/thought-name/* static/images/thoughts/thought-name/
-
-# 3-7. 其余步骤同博客文章，路径替换为 thoughts
 python3 scripts/update_image_refs.py
-python3 scripts/update_image_refs.py
-# ... 其余步骤
+python3 scripts/clean_original_images.py --execute
 rm -rf static/images_compressed/thoughts/thought-name
 ```
 
-#### 5.3 图片处理注意事项
-- **禁止手动操作**：不要手动重命名图片或修改 Markdown 引用
+#### 6.2 图片处理注意事项
+- **先迁移图片**：必须先将图片复制到 `static/images/` 目录，再运行压缩脚本
 - **路径规范**：使用完整文件路径作为脚本参数
 - **格式统一**：最终所有图片统一为 WebP 格式
-- **引用格式**：`/images/posts/article-name/image-name.webp`
+- **引用格式**：脚本会自动转换为 `/images/posts/article-name/image-name.webp`
 
-### 6. 质量检查阶段
+### 7. 质量检查阶段
 
-#### 6.1 内容验证
+#### 7.1 内容验证
 - 确认所有图片正确显示
 - 检查文章格式规范（列表、引用、代码块）
-- 验证图片描述准确性
+- 验证图片 alt 文本是否有意义（避免使用文件名作为 alt）
 - 确认元数据准确性，特别是标签合规性
 
-#### 6.2 交叉引用检查
+#### 7.2 交叉引用检查
 ```bash
-# 搜索相关关键词
-grep -r "关键词" content/posts/
-# 或使用项目搜索脚本
-python3 scripts/grep_search.py "关键词"
+# 搜索相关关键词，查找需要更新的 Notion 链接
+grep -r "notion.so" content/posts/
 ```
 
 检查要点：
@@ -165,12 +169,12 @@ python3 scripts/grep_search.py "关键词"
 - 修正指向 Notion 平台的旧链接
 - 更新为正确的博客内部链接格式：`/posts/article-name`
 
-### 7. 清理阶段
+### 8. 清理阶段
 
-#### 7.1 临时文件清理
+#### 8.1 临时文件清理
 ```bash
 # 清理 Notion 解压目录
-rm -rf temp_notion/[ZIP包名命名的目录]
+rm -rf temp_notion/*
 
 # 清理图片压缩临时目录
 rm -rf static/images_compressed/posts/article-name
@@ -180,21 +184,23 @@ rm -rf static/images_compressed/thoughts/thought-name
 rm -f temp_files/[Notion导出文件名].zip
 ```
 
-#### 7.2 最终自检清单
+#### 8.2 最终自检清单
 - [ ] 文章标签全部来自预定义列表
 - [ ] 所有临时文件和目录已清理
-- [ ] 图片引用检查通过
+- [ ] 图片引用检查通过（全部为 .webp 格式的绝对路径）
+- [ ] 图片 alt 文本有意义
+- [ ] Notion 内部链接已转换为博客链接
 - [ ] 文章格式符合规范
 
 ## 常见问题处理
 
 ### 脚本执行问题
+- **图片目录不存在**：必须先创建图片目录并复制图片，再运行压缩脚本
 - **路径错误**：必须使用完整文件路径，如 `content/posts/article-name.md`
-- **引用更新不完全**：需要多次运行 `update_image_refs.py`
-- **WebP 文件不存在警告**：移动图片前运行更新脚本的正常现象
+- **WebP 文件不存在警告**：确保已运行压缩脚本并移动了压缩后的图片
 
 ### 文件名问题
-- **包含空格**：Notion 导出的图片可能包含空格，需手动重命名
+- **包含空格**：`extract_zip_utf8.py` 会自动处理文件名中的空格
 - **特殊字符**：避免使用特殊字符，使用英文和短横线
 
 ### 验证工具
@@ -212,17 +218,19 @@ python3 scripts/check_spacing.py
 ## 技术实现细节
 
 ### 脚本依赖关系
-1. `extract_zip_utf8.py` - 处理文件名编码问题
-2. `compress_article_images.py` - 图片压缩和格式转换
-3. `update_image_refs.py` - 自动更新 Markdown 中的图片引用
+1. `extract_zip_utf8.py` - 处理文件名编码问题，自动去除空格
+2. `compress_article_images.py` - 图片压缩和格式转换（需要图片已在 static/images/ 目录）
+3. `update_image_refs.py` - 自动更新 Markdown 中的图片引用（相对路径 → 绝对路径，扩展名 → .webp）
 4. `clean_original_images.py` - 清理已转换的原始图片
 
 ### 图片处理参数
-- **WebP 质量**：85%
-- **最大尺寸**：保持原比例，适当压缩
+- **WebP 质量**：85%（JPG）/ 100% 无损（PNG）
+- **最大尺寸**：1920x1920，保持原比例
 - **格式转换**：统一转换为 WebP 格式
 
-### 自动化程度
-- 文件扫描：自动识别唯一 ZIP 文件
-- 图片处理：全自动压缩、转换、引用更新
-- 清理操作：脚本化批量清理临时文件
+### update_image_refs.py 功能说明
+该脚本会自动处理两种情况：
+1. **相对路径**：`![alt](filename.png)` → `![alt](/images/posts/article-name/filename.webp)`
+2. **绝对路径**：`![alt](/images/posts/article-name/filename.png)` → `![alt](/images/posts/article-name/filename.webp)`
+
+脚本会检查 WebP 文件是否存在，只有存在时才会更新引用。
