@@ -901,3 +901,130 @@ var {
 .post-content a {
     margin-right: 0 !important;
 }
+
+/* ========================================
+   侧边栏 TOC 布局
+   ======================================== */
+
+/* 移动端和小屏幕：隐藏侧边栏，显示移动端 TOC */
+.toc-sidebar {
+    display: none;
+}
+
+.toc-mobile {
+    display: block;
+}
+
+/* 桌面端：启用侧边栏布局 (≥1200px) */
+@media screen and (min-width: 1200px) {
+    /* 隐藏移动端 TOC */
+    .toc-mobile {
+        display: none;
+    }
+
+    /* 显示侧边栏 TOC - 使用 fixed 定位固定在视口右侧垂直居中 */
+    .toc-sidebar {
+        display: block;
+        position: fixed;
+        /* 水平位置：视口中心 + 内容区一半宽度 + 间距 */
+        left: calc(50% + var(--main-width) / 2 + 40px);
+        /* 垂直居中 */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 220px;
+        max-height: calc(100vh - var(--header-height) * 2 - 48px);
+        overflow-y: auto;
+        /* 滚动条样式 */
+        scrollbar-width: thin;
+        scrollbar-color: var(--tertiary) transparent;
+    }
+
+    .toc-sidebar::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .toc-sidebar::-webkit-scrollbar-thumb {
+        background: var(--tertiary);
+        border-radius: 2px;
+    }
+
+    .toc-sidebar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* 侧边栏内部样式 */
+    .toc-sidebar-inner {
+        padding: 16px;
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        font-size: 0.85rem;
+    }
+
+    .dark .toc-sidebar-inner {
+        background: var(--entry);
+    }
+
+    /* 标题样式 */
+    .toc-sidebar-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary);
+        margin: 0 0 12px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    /* 导航链接样式 */
+    .toc-sidebar-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .toc-sidebar-nav li {
+        margin: 6px 0;
+    }
+
+    .toc-sidebar-nav a {
+        display: block;
+        color: var(--secondary);
+        text-decoration: none;
+        padding: 4px 0 4px 12px;
+        border-left: 2px solid transparent;
+        transition: color 0.2s, border-color 0.2s;
+        line-height: 1.5;
+    }
+
+    .toc-sidebar-nav a:hover {
+        color: var(--primary);
+    }
+
+    /* 当前阅读位置高亮 */
+    .toc-sidebar-nav a.active {
+        color: var(--primary);
+        border-left-color: var(--primary);
+        font-weight: 500;
+    }
+
+    /* 嵌套层级缩进 */
+    .toc-sidebar-nav li ul {
+        margin-left: 12px;
+    }
+
+    .toc-sidebar-nav li ul a {
+        font-size: 0.8rem;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .toc-sidebar {
+        display: none;
+    }
+
+    .toc-mobile .toc {
+        display: block;
+        position: static;
+    }
+}

@@ -1,5 +1,9 @@
 {{- define "main" }}
 
+{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $hasToc := and (.Param "ShowToc") (ge (len $headers) 1) -}}
+
+<div class="post-container{{ if $hasToc }} has-toc{{ end }}">
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -25,8 +29,10 @@
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
+  {{- if $hasToc }}
+  <div class="toc-mobile">
+    {{- partial "toc.html" . }}
+  </div>
   {{- end }}
 
   {{- if .Content }}
@@ -114,5 +120,12 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
+
+{{- if $hasToc }}
+<aside class="toc-sidebar">
+  {{- partial "toc-sidebar.html" . }}
+</aside>
+{{- end }}
+</div>
 
 {{- end }}{{/* end main */}} 
