@@ -1,0 +1,51 @@
+{{- /* Footer custom content area start */ -}}
+
+{{- /* 侧边栏 TOC 阅读进度高亮 */ -}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocLinks = document.querySelectorAll('.toc-sidebar-nav a');
+    const headings = document.querySelectorAll('.post-content h1[id], .post-content h2[id], .post-content h3[id], .post-content h4[id], .post-content h5[id], .post-content h6[id]');
+
+    if (tocLinks.length === 0 || headings.length === 0) return;
+
+    // 构建 ID 到 TOC 链接的映射（处理 URL 编码）
+    var idToLink = {};
+    tocLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            // 解码 URL 编码的 href
+            var decodedId = decodeURIComponent(href.substring(1));
+            idToLink[decodedId] = link;
+        }
+    });
+
+    let currentActive = null;
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                const tocLink = idToLink[id];
+
+                if (currentActive) {
+                    currentActive.classList.remove('active');
+                }
+
+                if (tocLink) {
+                    tocLink.classList.add('active');
+                    currentActive = tocLink;
+                }
+            }
+        });
+    }, {
+        rootMargin: '-80px 0px -80% 0px',
+        threshold: 0
+    });
+
+    headings.forEach(function(heading) {
+        observer.observe(heading);
+    });
+});
+</script>
+
+{{- /* Footer custom content area end */ -}}
