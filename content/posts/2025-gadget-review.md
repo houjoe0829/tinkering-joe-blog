@@ -109,7 +109,7 @@ Roam FM 就是我自己开发的 Mac App 了，一款很多人评价说非常有
 
 我是主要拿它当背景音乐来用，开启专注时就会打开它，过滤掉所有中文的电台，戴上耳机，就成了不会重复的白噪音。
 
-网站是：[https://fm.houjoe.me/](https://fm.houjoe.me/)，免费可用
+网站是：[https://roamfm.app/](https://roamfm.app/)，免费可用
 
 ## 硬件盘点
 
