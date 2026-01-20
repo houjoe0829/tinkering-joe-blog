@@ -1,6 +1,8 @@
-{{- /* 提取图片：优先使用 cover.image，否则自动提取文章中第一张图片 */ -}}
+{{- /* 提取图片优先级：cover.image > thumbnail > 文章中第一张图片 */ -}}
 {{- $image := "" -}}
 {{- with .Params.cover.image -}}
+  {{- $image = . -}}
+{{- else with .Params.thumbnail -}}
   {{- $image = . -}}
 {{- else -}}
   {{- $matches := findRE `!\[.*?\]\((/[^)]+)\)` .RawContent 1 -}}
