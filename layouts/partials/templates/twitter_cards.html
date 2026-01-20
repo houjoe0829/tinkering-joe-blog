@@ -1,4 +1,17 @@
+{{- /* 提取图片优先级：cover.image > thumbnail > 文章中第一张图片 */ -}}
+{{- $image := "" -}}
 {{- with .Params.cover.image -}}
+  {{- $image = . -}}
+{{- else with .Params.thumbnail -}}
+  {{- $image = . -}}
+{{- else -}}
+  {{- $matches := findRE `!\[.*?\]\((/[^)]+)\)` .RawContent 1 -}}
+  {{- with $matches -}}
+    {{- $image = replaceRE `!\[.*?\]\((/[^)]+)\)` "$1" (index . 0) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $image -}}
 <meta name="twitter:card" content="summary_large_image" />
 {{- else -}}
 <meta name="twitter:card" content="summary"/>
@@ -12,6 +25,6 @@
 {{- with .Description | default .Summary | default site.Params.description }}
 <meta name="twitter:description" content="{{ . }}" />
 {{- end -}}
-{{- with .Params.cover.image -}}
+{{- with $image -}}
 <meta name="twitter:image" content="{{ (. | absURL) | default " " }}"/>
 {{ end -}} 
