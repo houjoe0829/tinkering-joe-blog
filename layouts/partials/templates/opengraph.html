@@ -1,9 +1,20 @@
+{{- /* 提取图片：优先使用 cover.image，否则自动提取文章中第一张图片 */ -}}
+{{- $image := "" -}}
+{{- with .Params.cover.image -}}
+  {{- $image = . -}}
+{{- else -}}
+  {{- $matches := findRE `!\[.*?\]\((/[^)]+)\)` .RawContent 1 -}}
+  {{- with $matches -}}
+    {{- $image = replaceRE `!\[.*?\]\((/[^)]+)\)` "$1" (index . 0) -}}
+  {{- end -}}
+{{- end -}}
+
 <meta property="og:title" content="{{ .Title | default site.Title }}" />
 <meta property="og:description" content="{{ with .Description | default .Summary | default site.Params.description }}{{ . }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{- with .Params.cover.image -}}
+{{- with $image -}}
 <meta property="og:image" content="{{ (. | absURL) | default " " }}" />
 {{- end -}}
 
