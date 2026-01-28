@@ -106,7 +106,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><a href="https://www.notion.so/">Notion</a></td>
-<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Cursor、ChatGPT 的上下文，基于官方的 MCP</td>
+<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Claude Code、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
 <tr>
 <td><a href="https://whimsical.com/">Whimsical</a></td>
@@ -130,8 +130,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>ChatGPT Atlas</strong></td>
-<td>暂时没有想好原因，大概是为了ChatGPT 里的记忆吧。</td>
+<td><strong>Chrome</strong></td>
+<td>很无聊，但最稳定朴实的浏览器。</td>
 </tr>
 </tbody>
 </table>
@@ -188,8 +188,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://dida365.com/">滴答清单</a></td>
-<td>目前最爱的任务管理工具，任务、日历、番茄专注、习惯打卡，多合一。</td>
+<td><a href="https://culturedcode.com/things/">Things3</a></td>
+<td>简单易用的任务管理工具，像一张白纸一样。</td>
 </tr>
 </tbody>
 </table>
@@ -227,8 +227,8 @@ author: "Joe"
 <td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
-<td><strong>滴答清单</strong></td>
-<td>也用滴答清单放置待看清单</td>
+<td><a href="https://culturedcode.com/things/">Things3</a></td>
+<td>也用 Things3 放置待看清单</td>
 </tr>
 <tr>
 <td><a href="https://pocketcasts.com/">Pocket Casts</a></td>
@@ -268,8 +268,8 @@ author: "Joe"
 <td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
 </tr>
 <tr>
-<td><strong>随机电台</strong></td>
-<td>自己糊得一个，部署在 Nas 上，随机播放一个外语电台，当做背景音乐</td>
+<td><a href="https://roamfm.app/">Roam FM</a></td>
+<td>最佳工作搭档，可以将全球电台作为白噪音</td>
 </tr>
 </tbody>
 </table>
@@ -293,8 +293,8 @@ author: "Joe"
 <td>感觉 Notion AI 可选择 Claude、Gemini 或者 ChatGPT 之后，可用性在持续增加，现在已经作为主力，问问题、写方案、整理思考，都可以让 Notion AI 辅助</td>
 </tr>
 <tr>
-<td><a href="https://cursor.sh/">Cursor</a></td>
-<td>虽然 Cursor 的计费很黑盒，但依然是最好用的 AI IDE，费钱就费钱吧，而且，Cursor 读取 Notion 的 API 好像是专门支持的，与 Notion 丝滑协作。</td>
+<td><a href="https://claude.com/product/claude-code">Claude Code</a></td>
+<td>每月 100刀，但很值。</td>
 </tr>
 <tr>
 <td><a href="https://www.lovart.ai">Lovart</a></td>
