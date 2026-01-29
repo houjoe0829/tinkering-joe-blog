@@ -101,15 +101,15 @@ author: "Joe"
 <td>当做微信渠道信息发布平台，国内互动</td>
 </tr>
 <tr>
-<td><a href="https://dayoneapp.com/">Day One</a></td>
+<td><strong><a href="https://dayoneapp.com/">Day One</a></strong></td>
 <td>日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受</td>
 </tr>
 <tr>
-<td><a href="https://www.notion.so/">Notion</a></td>
+<td><strong><a href="https://www.notion.so/">Notion</a></strong></td>
 <td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Claude Code、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
 <tr>
-<td><a href="https://whimsical.com/">Whimsical</a></td>
+<td><strong><a href="https://whimsical.com/">Whimsical</a></strong></td>
 <td>白板工具，各种画图，比如思维导图、原型图和流程图，缺少移动端是个遗憾，但是好用且可免费使用</td>
 </tr>
 </tbody>
@@ -147,27 +147,27 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/aitdk-seo-extension-traff/hhfkpjffbhledfpkhhcoidplcebgdgbk">AITDK SEO</a></td>
+<td><strong><a href="https://chromewebstore.google.com/detail/aitdk-seo-extension-traff/hhfkpjffbhledfpkhhcoidplcebgdgbk">AITDK SEO</a></strong></td>
 <td>快速查看一个网站的 SEO 数据</td>
 </tr>
 <tr>
-<td><a href="https://1password.com/">1Password</a></td>
+<td><strong><a href="https://1password.com/">1Password</a></strong></td>
 <td>配合密码管理软件 1Password</td>
 </tr>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/omniaudio-web-article-to/dahkpjmanmlkiiccnkgeahfldjpabobp">OmniAudio</a></td>
+<td><strong><a href="https://chromewebstore.google.com/detail/omniaudio-web-article-to/dahkpjmanmlkiiccnkgeahfldjpabobp">OmniAudio</a></strong></td>
 <td>快速将网页变成稍后再听的播客</td>
 </tr>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj">Douban Book+</a></td>
+<td><strong><a href="https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj">Douban Book+</a></strong></td>
 <td>在豆瓣书籍页面显示其可下载的在线资源网站</td>
 </tr>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/bpoadfkcbjbfhfodiogcnhhhpibjhbnh">沉浸式翻译</a></td>
+<td><strong><a href="https://chromewebstore.google.com/detail/bpoadfkcbjbfhfodiogcnhhhpibjhbnh">沉浸式翻译</a></strong></td>
 <td>能生成双语对照阅读的插件</td>
 </tr>
 <tr>
-<td><a href="https://chromewebstore.google.com/detail/copyurl-title-link-format/ocmgjlfbnlldclhibengfmabcbgimhhl">CopyURL</a></td>
+<td><strong><a href="https://chromewebstore.google.com/detail/copyurl-title-link-format/ocmgjlfbnlldclhibengfmabcbgimhhl">CopyURL</a></strong></td>
 <td>复制当前网页的标题和链接，以想要的格式分享，这个也是我自己做的</td>
 </tr>
 </tbody>
@@ -188,7 +188,7 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://culturedcode.com/things/">Things3</a></td>
+<td><strong><a href="https://culturedcode.com/things/">Things3</a></strong></td>
 <td>简单易用的任务管理工具，像一张白纸一样。</td>
 </tr>
 </tbody>
@@ -211,7 +211,7 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://netnewswire.com/">NetNewsWire</a></td>
+<td><strong><a href="https://netnewswire.com/">NetNewsWire</a></strong></td>
 <td>Folo 已经自暴自弃了，Reeder Classic 已经不怎么维护了，免费的 NetNewsWire 是最具性价比的选择了</td>
 </tr>
 <tr>
@@ -227,15 +227,15 @@ author: "Joe"
 <td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
-<td><a href="https://culturedcode.com/things/">Things3</a></td>
+<td><strong><a href="https://culturedcode.com/things/">Things3</a></strong></td>
 <td>也用 Things3 放置待看清单</td>
 </tr>
 <tr>
-<td><a href="https://pocketcasts.com/">Pocket Casts</a></td>
+<td><strong><a href="https://pocketcasts.com/">Pocket Casts</a></strong></td>
 <td>跨平台的播客 App，支持 iOS、Android、Web 等等，不用小宇宙，因为听得比较杂</td>
 </tr>
 <tr>
-<td><a href="https://omniaudio.info/">OmniAudio</a></td>
+<td><strong><a href="https://omniaudio.info/">OmniAudio</a></strong></td>
 <td>将网页等转为播客来稍后再听</td>
 </tr>
 <tr>
@@ -268,8 +268,8 @@ author: "Joe"
 <td>本地下载 500GB 的歌曲，适合日常背景音乐来听</td>
 </tr>
 <tr>
-<td><a href="https://roamfm.app/">Roam FM</a></td>
-<td>最佳工作搭档，可以将全球电台作为白噪音</td>
+<td><strong><a href="https://roamfm.app/">Roam FM</a></strong></td>
+<td>最佳工作搭档，可以将全球电台作为白噪音，深夜工作的陪伴</td>
 </tr>
 </tbody>
 </table>
@@ -289,27 +289,27 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.notion.so/ai">Notion AI</a></td>
+<td><strong><a href="https://www.notion.so/ai">Notion AI</a></strong></td>
 <td>感觉 Notion AI 可选择 Claude、Gemini 或者 ChatGPT 之后，可用性在持续增加，现在已经作为主力，问问题、写方案、整理思考，都可以让 Notion AI 辅助</td>
 </tr>
 <tr>
-<td><a href="https://claude.com/product/claude-code">Claude Code</a></td>
+<td><strong><a href="https://claude.com/product/claude-code">Claude Code</a></strong></td>
 <td>每月 100刀，但很值。</td>
 </tr>
 <tr>
-<td><a href="https://www.lovart.ai">Lovart</a></td>
+<td><strong><a href="https://www.lovart.ai">Lovart</a></strong></td>
 <td>经常用 Lovart 做一些内容的配图，免费用量也很慷慨，够我每天使用的额度了。</td>
 </tr>
 <tr>
-<td><a href="https://www.doubao.com/chat/">豆包</a></td>
+<td><strong><a href="https://www.doubao.com/chat/">豆包</a></strong></td>
 <td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
 </tr>
 <tr>
-<td><a href="https://bobtranslate.com/">Bob Translate</a></td>
+<td><strong><a href="https://bobtranslate.com/">Bob Translate</a></strong></td>
 <td>一款好用的翻译软件，方便快捷唤起，且支持 Popclip 插件，可以快速翻译选中的文字</td>
 </tr>
 <tr>
-<td><a href="https://www.duolingo.com/">多邻国</a></td>
+<td><strong><a href="https://www.duolingo.com/">多邻国</a></strong></td>
 <td>最近喜欢上的碎片化学习方式，用来学习日语，比之前自主学日语能坚持下去</td>
 </tr>
 </tbody>
@@ -353,11 +353,11 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.zspace.cn/">极空间 Nas</a></td>
+<td><strong><a href="https://www.zspace.cn/">极空间 Nas</a></strong></td>
 <td>备份照片、视频和文件</td>
 </tr>
 <tr>
-<td><a href="https://www.resilio.com/sync/">Resilio Sync</a></td>
+<td><strong><a href="https://www.resilio.com/sync/">Resilio Sync</a></strong></td>
 <td>免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册</td>
 </tr>
 <tr>
@@ -436,7 +436,7 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://cleanshot.com/">CleanshotX</a></td>
+<td><strong><a href="https://cleanshot.com/">CleanshotX</a></strong></td>
 <td>可以涵盖截图、录屏、OCR 的全能截图软件，还好看</td>
 </tr>
 </tbody>
@@ -457,31 +457,31 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><a href="https://apps.apple.com/us/app/irvue/id1039633667?mt=12">Irvue</a></td>
+<td><strong><a href="https://apps.apple.com/us/app/irvue/id1039633667?mt=12">Irvue</a></strong></td>
 <td>免费随机壁纸，可设置定时更换</td>
 </tr>
 <tr>
-<td><a href="https://www.popclip.app/">PopClip</a></td>
+<td><strong><a href="https://www.popclip.app/">PopClip</a></strong></td>
 <td>Mac 上最实用也是最没有存在感的软件，可以对选中文字进行快速操作</td>
 </tr>
 <tr>
-<td><a href="https://www.apparentsoft.com/trickster">Trickster</a></td>
+<td><strong><a href="https://www.apparentsoft.com/trickster">Trickster</a></strong></td>
 <td>不用打开 Finder 的情况下，方便快速调用最近的文件</td>
 </tr>
 <tr>
-<td><a href="https://www.downie.cn/">Downie 4</a></td>
+<td><strong><a href="https://www.downie.cn/">Downie 4</a></strong></td>
 <td>主要用来在各种视频网站上下载视频，尤其是 YouTube 和哔哩哔哩</td>
 </tr>
 <tr>
-<td><a href="https://rectangleapp.com/">Rectangle</a></td>
+<td><strong><a href="https://rectangleapp.com/">Rectangle</a></strong></td>
 <td>窗口管理工具，支持快捷键或者自定义触发位置来实现自定义的窗口尺寸和位置，免费完全够用</td>
 </tr>
 <tr>
-<td><a href="https://folivora.ai/keyboardcleantool">KeyboardCleanTool</a></td>
+<td><strong><a href="https://folivora.ai/keyboardcleantool">KeyboardCleanTool</a></strong></td>
 <td>Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理</td>
 </tr>
 <tr>
-<td><a href="https://github.com/noah-nuebling/mac-mouse-fix/">Mac Mouse Fix</a></td>
+<td><strong><a href="https://github.com/noah-nuebling/mac-mouse-fix/">Mac Mouse Fix</a></strong></td>
 <td>免费的修改鼠标按键功能的工具，针对任意鼠标</td>
 </tr>
 </tbody>
@@ -540,8 +540,8 @@ author: "Joe"
 <td>iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作</td>
 </tr>
 <tr>
-<td><strong>Delux 折叠鼠标</strong></td>
-<td>可参考<a href="/posts/foldable-mouse-review/">《比较喜欢的一款可折叠收纳的鼠标》</a>，从罗技 MX Master 3S 换到这款平替，最主要是便携性，折叠后只有 AirPods 充电盒大小，适合经常外出的远程办公场景</td>
+<td><strong>苹果 Magic Mouse</strong></td>
+<td>多任务的情况下,还是苹果的鼠标更丝滑,多窗口切换,一个手势搞定,兜兜转转回到了原点。</td>
 </tr>
 <tr>
 <td><strong>Anker 超大能量舱</strong></td>
