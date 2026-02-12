@@ -438,16 +438,7 @@ hideMeta: true
       <span class="read-more">访问网站 →</span>
     </div>
   </a>
-  
-  <a href="https://instantai.houjoe.me/" class="bento-card ai-project">
-    <div class="card-content">
-      <div class="card-icon">🤖</div>
-      <h3>Instant AI</h3>
-      <p>一款极简风格的 Mac 版 AI 客户端，支持侧滑快捷访问，无缝连接多种主流大语言模型，完全免费。</p>
-      <span class="read-more">访问网站 →</span>
-    </div>
-  </a>
-  
+
   <a href="https://copyurl.houjoe.me/" class="bento-card software">
     <div class="card-content">
       <div class="card-icon">🔗</div>
