@@ -98,7 +98,11 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong><a href="/wechat">微信公众号</a></strong></td>
-<td>当做微信渠道信息发布平台，国内互动</td>
+<td>当做微信渠道信息发布平台，主要是分享生活和想法</td>
+</tr>
+<tr>
+<td><strong><a href="https://houjoe.substack.com/">Substack</a></strong></td>
+<td>开始输出英文内容了，选择 Substack 平台，内容偏向于自己的独立开发和 AI</td>
 </tr>
 <tr>
 <td><strong><a href="https://dayoneapp.com/">Day One</a></strong></td>
@@ -305,12 +309,12 @@ author: "Joe"
 <td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
 </tr>
 <tr>
-<td><strong><a href="https://bobtranslate.com/">Bob Translate</a></strong></td>
-<td>一款好用的翻译软件，方便快捷唤起，且支持 Popclip 插件，可以快速翻译选中的文字</td>
+<td><strong>豆包输入法</strong></td>
+<td>手机上使用，算是单点改变我的输入习惯的输入法，大幅提升输入带宽。</td>
 </tr>
 <tr>
-<td><strong><a href="https://www.duolingo.com/">多邻国</a></strong></td>
-<td>最近喜欢上的碎片化学习方式，用来学习日语，比之前自主学日语能坚持下去</td>
+<td><strong>闪电说</strong></td>
+<td>需要闪电说配合豆包流式语音输入模型，大概成本是按照语音输入时长计算，每个小时大概一块钱，性价比高，而且不基于 AI 的语音输入，不会出现 AI 回复你的内容的尴尬。</td>
 </tr>
 </tbody>
 </table>
@@ -480,10 +484,6 @@ author: "Joe"
 <td><strong><a href="https://folivora.ai/keyboardcleantool">KeyboardCleanTool</a></strong></td>
 <td>Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理</td>
 </tr>
-<tr>
-<td><strong><a href="https://github.com/noah-nuebling/mac-mouse-fix/">Mac Mouse Fix</a></strong></td>
-<td>免费的修改鼠标按键功能的工具，针对任意鼠标</td>
-</tr>
 </tbody>
 </table>
 
@@ -512,8 +512,8 @@ author: "Joe"
 <td>下定决心从 Pro 切换回了 Air，虽然只轻了 360 克左右，但是明显轻便很多</td>
 </tr>
 <tr>
-<td><strong>索尼降噪耳机 XM5</strong></td>
-<td>适合在外咖啡厅远程工作和开会，降噪靠谱</td>
+<td><strong>Apple AirPods Max</strong></td>
+<td>多设备不用再手动切换，无缝衔接的体验太好了，还不需要开关机，使用简单，降噪也不错，主要是线上会议、日常补觉场景</td>
 </tr>
 <tr>
 <td><strong>iPhone 16 Pro</strong></td>
@@ -521,10 +521,10 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong>豆包的 Ola friend 耳机</strong></td>
-<td>特意为了它写个文章：<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a>，主要是为了自驾和骑行的时候用豆包</td>
+<td>特意为了它写个文章：<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a>，依然是开车、骑车、出行的耳机必备</td>
 </tr>
 <tr>
-<td><strong>Amazfit Active Edge</strong></td>
+<td><strong>华米 Active Edge 手表</strong></td>
 <td>运动记录、消息、闹钟、门禁，应该是最具性价比的运动手表</td>
 </tr>
 <tr>
@@ -532,20 +532,16 @@ author: "Joe"
 <td>始终保持敲键盘永远很舒服的指甲长度</td>
 </tr>
 <tr>
-<td><strong>iPad mini</strong></td>
-<td>最佳电子书阅读器，也是电脑用累了之后，捧在手里的屏幕</td>
-</tr>
-<tr>
 <td><strong>随身 WiFi</strong></td>
 <td>iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作</td>
 </tr>
 <tr>
 <td><strong>苹果 Magic Mouse</strong></td>
-<td>多任务的情况下,还是苹果的鼠标更丝滑,多窗口切换,一个手势搞定,兜兜转转回到了原点。</td>
+<td>多任务的情况下，还是苹果的鼠标更丝滑，多窗口切换，一个手势搞定，兜兜转转回到了原点。</td>
 </tr>
 <tr>
 <td><strong>Anker 超大能量舱</strong></td>
-<td>超大充电宝，自己补电很快，输出功率也很高，完全解决了电量焦虑，充手机、无人机、电脑，等等</td>
+<td>两万五千毫安超大充电宝，自己补电很快，输出功率也很高，完全解决了电量焦虑，充手机、无人机、电脑，等等</td>
 </tr>
 </tbody>
 </table>
