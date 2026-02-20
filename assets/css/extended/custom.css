@@ -1,41 +1,19 @@
 /* ========================================
-   全站字体设置 - 参考 UNTAG 设计
+   全站字体设置
    ======================================== */
 
 /* 全局字体设置 */
 body,
 html {
-    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
-                 "Source Han Serif SC", "source-han-serif-sc", 
-                 "Times New Roman", "Georgia", serif;
-    font-weight: 500;
-    letter-spacing: 0.03em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--content);  /* 使用主题的内容颜色变量,确保颜色足够深 */
-}
-
-/* 标题字体增强 */
-h1, h2, h3, h4, h5, h6,
-.post-title,
-.entry-header h2 {
-    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
-                 "Source Han Serif SC", "source-han-serif-sc", 
-                 "Times New Roman", "Georgia", serif;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    text-rendering: optimizeLegibility;
 }
 
 /* 正文字体 */
 .post-content,
 .entry-content,
 article {
-    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK", 
-                 "Source Han Serif SC", "source-han-serif-sc", 
-                 "Times New Roman", "Georgia", serif;
-    font-weight: 500;
-    letter-spacing: 0.03em;
     color: var(--content);  /* 确保正文颜色足够深 */
 }
 
