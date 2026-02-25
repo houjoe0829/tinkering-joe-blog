@@ -8,7 +8,7 @@ hideMeta: true
 
 ## 👨‍💻 自我介绍
 
-我是 Joe，不知名的产品经理，主业与兴趣都是设计各类 ToC 或者 ToB 的生产力工具，目前在做 AI 相关的产品咨询顾问，帮助初创公司设计产品和项目落地。
+我是 Joe，不知名的产品经理。主业与兴趣都是设计各类 ToC / ToB 的生产力工具，目前自由职业，以远程兼职为主，也在做自己的 App，长期深耕 AI 生产力工具方向。
 
 <div class="tags-container">
   <span class="tag" data-color="blue"><i class="tag-icon">💻</i>Coding with AI</span>
@@ -29,7 +29,7 @@ hideMeta: true
 
 ## 📮 找到我
 
-如果有任何工作机会、合作想法或只是想打个招呼，欢迎通过以下方式找到我。我也有一些闲聊的兴趣群，有意向的话可以添加微信并备注来意，目前还在折腾的兴趣群包括 Note taking 工具、AI、Vibe Coding、主机游戏、休闲骑行、无人机交流等：
+如果有任何工作机会、合作想法或只是想打个招呼，欢迎通过以下方式找到我。我也有一些闲聊的兴趣群，有意向的话可以添加微信并备注来意，目前还在折腾的兴趣群包括生产力工具、AI、Vibe Coding、主机游戏、休闲骑行、无人机交流等：
 
 <table class="toolkit-table contact-table">
 <thead>
@@ -53,7 +53,7 @@ hideMeta: true
 <tr>
 <td>🐙 <strong>GitHub</strong></td>
 <td><a href="https://github.com/houjoe0829">houjoe0829</a></td>
-<td>我也开始写代码了……</td>
+<td>独立开发者 with AI Coding</td>
 </tr>
 <tr>
 <td>💬 <strong>Wechat</strong></td>
