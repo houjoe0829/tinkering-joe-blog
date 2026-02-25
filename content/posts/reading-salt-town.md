@@ -1,10 +1,10 @@
 ---
 author: "Joe"
 date: 2026-02-21
-description: "借别人的眼睛，去一座沉甸甸的镇子"
+description: "借别人的眼睛，走进一座沉甸甸的镇子"
 draft: false
 tags: ["书影音的精神角落"]
-title: "《盐镇》：借别人的记录，去一座沉甸甸的镇子"
+title: "《盐镇》：借别人的眼睛，走进一座沉甸甸的镇子"
 ---
 
 [《盐镇》](https://book.douban.com/subject/36193112/)，我给它打 4 分，推荐，但瑕疵也挺明显的。
