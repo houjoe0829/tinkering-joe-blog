@@ -65,13 +65,13 @@ docs/
 [状态] 简短描述.md
 ```
 
-** 状态定义 **
+**状态定义**
 
 - `[open]`：进行中，方案在推进或问题正在排查
 - `[solved]`：已解决，方案已落地并固化进 specs，或 Bug 已有结论
 - `[abandoned]`：放弃，不再推进或确认无法复现
 
-** 示例 **
+**示例**
 
 - staging/[open]new-import-flow.md
 - staging/[solved]data-cleaning-logic.md
@@ -88,4 +88,4 @@ docs/
 
 - **README** 是门面，让 AI 或者未来的自己能快速理解项目。
 - **docs** 是知识库，确保产品与实现的知识有序沉淀。
-- ** 最佳实践 ** 是通过 README → docs 的分工，让代码和文档同源、同步演进。
+- **最佳实践** 是通过 README → docs 的分工，让代码和文档同源、同步演进。
