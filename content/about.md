@@ -60,6 +60,11 @@ hideMeta: true
 <td>微信号[houjoe829]</td>
 <td>请备注来意和多一点自我介绍</td>
 </tr>
+<tr>
+<td>📢 <strong>公众号</strong></td>
+<td><a href="/wechat/">微信公众号</a></td>
+<td>与博客同步更新</td>
+</tr>
 </tbody>
 </table>
 
