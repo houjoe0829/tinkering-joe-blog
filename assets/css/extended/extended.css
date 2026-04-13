@@ -589,7 +589,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 0.75rem;
     color: var(--secondary);
     font-size: 14px;
     line-height: 1.6;
@@ -603,7 +603,7 @@
 }
 
 .nav #menu .sub-menu svg {
-    margin-right: 0.75rem;
+    margin-right: 0;
     width: 18px;
     height: 18px;
     flex-shrink: 0;
@@ -745,7 +745,7 @@
     }
 
     .nav #menu .more-menu .sub-menu svg {
-        margin-right: 0.75rem;
+        margin-right: 0;
         width: 18px;
         height: 18px;
         flex-shrink: 0;
@@ -838,4 +838,140 @@
     color: var(--secondary);
     font-size: 14px;
     margin: 2rem 0;
+}
+
+/* Desktop Language Switcher & More Menu */
+.nav #menu .lang-menu,
+.nav #menu .more-menu {
+    position: relative;
+}
+
+.nav #menu .lang-icon,
+.nav #menu .more-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.nav #menu .dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease;
+}
+
+.nav #menu li.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.nav #menu .lang-menu .sub-menu,
+.nav #menu .more-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 0;
+    min-width: 160px;
+    z-index: 100;
+}
+
+.nav #menu .lang-menu.active .sub-menu,
+.nav #menu .more-menu.active .sub-menu {
+    display: block;
+}
+
+.nav #menu .lang-menu .sub-menu li,
+.nav #menu .more-menu .sub-menu li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav #menu .lang-menu .sub-menu a,
+.nav #menu .more-menu .sub-menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.nav #menu .more-menu .sub-menu a svg {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 0;
+}
+
+.nav #menu .more-menu .sub-menu a span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav #menu .lang-menu .sub-menu a:hover,
+.nav #menu .more-menu .sub-menu a:hover {
+    background: var(--theme);
+}
+
+/* Language switcher item (inside More menu) */
+.nav #menu .more-menu .sub-menu li.lang-switcher-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.lang-switcher-item svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.lang-switcher-item a {
+    padding: 0 !important;
+    background: none !important;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.lang-switcher-item a:hover {
+    text-decoration: underline;
+}
+
+.lang-switcher-item a.lang-active {
+    color: var(--content);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* Responsive visibility classes */
+@media screen and (min-width: 769px) {
+    .desktop-only {
+        display: flex !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: flex !important;
+    }
 }

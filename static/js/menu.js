@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // 检测当前语言并高亮对应的语言切换链接
+    const isEnglish = window.location.pathname.startsWith('/en');
+    document.querySelectorAll('.lang-switcher-item a').forEach(function(link) {
+        const href = link.getAttribute('href');
+        if (isEnglish && href && href.startsWith('/en')) {
+            link.classList.add('lang-active');
+        } else if (!isEnglish && href === '/') {
+            link.classList.add('lang-active');
+        }
+    });
+
     // 获取所有有子菜单的菜单项
     const menuItemsWithChildren = document.querySelectorAll('#menu li a:not([href])');
     

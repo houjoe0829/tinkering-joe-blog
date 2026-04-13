@@ -129,84 +129,36 @@
         </div>
         {{- $currentPage := . }}
         <ul id="menu">
+            <!-- Search Icon (always visible) -->
             {{- range site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- if eq .Identifier "search" }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
-            {{- $should_hide := or (eq .Identifier "subscribe") (eq .Identifier "rss") (eq .Identifier "telegram") (eq .Identifier "twitter") }}
-            <li {{- if $should_hide }} class="hide-on-mobile" {{- end }}>
-                {{- if .HasChildren }}
-                <div class="menu-trigger" onclick="this.parentElement.classList.toggle('active')">
-                    <span class="menu-item-name">
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} (Alt + /)" accesskey="/">
+                    <span>
                         {{- .Pre }}
                         {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                </div>
-                <ul class="sub-menu">
-                    {{- range .Children }}
-                    <li>
-                        <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
-                            {{- if eq .Identifier "rss" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
-                            {{- else if eq .Identifier "telegram" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                            {{- else if eq .Identifier "wechat" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M17 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L2 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                            {{- else if eq .Identifier "twitter" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                            {{- else if eq .Identifier "email" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            {{- end }}
-                            {{- .Name -}}
-                            {{- if and (findRE "://" .URL) (ne .Identifier "telegram") (ne .Identifier "email") (ne .Identifier "twitter") }}&nbsp;
-                            <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14L21 3"></path>
-                            </svg>
-                            {{- end }}
-                        </a>
-                    </li>
-                    {{- end }}
-                </ul>
-                {{- else }}
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                        {{- if eq .URL "/sky-eye/" }}
-                        <img src="/images/sky-eye/drone.svg" alt="无人机" class="menu-drone-icon" style="height: 16px; width: auto; vertical-align: middle; margin-left: 2px;"/>
-                        {{- end }}
                     </span>
                 </a>
-                {{- end }}
             </li>
             {{- end }}
-            <!-- More Menu for Mobile -->
-            <li class="show-more-on-mobile more-menu">
+            {{- end }}
+
+            <!-- More Menu (Desktop - contains all other menu items) -->
+            <li class="more-menu desktop-only">
                 <div class="menu-trigger" onclick="this.parentElement.classList.toggle('active')">
-                    <div class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <span class="more-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="12" cy="5" r="1"></circle>
+                            <circle cx="12" cy="19" r="1"></circle>
+                        </svg>
+                    </span>
                 </div>
                 <ul class="sub-menu">
                     <li>
-                        <a href="/search/" title="搜索">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            搜索
-                        </a>
-                    </li>
-                    <li>
                         <a href="/thoughts/" title="随思录">
-                            <svg class="icon" viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
-                              <path d="M512 32C247.04 32 32 224 32 464A410.24 410.24 0 0 0 172.48 768L160 965.12a25.28 25.28 0 0 0 39.04 22.4l168-112A528.64 528.64 0 0 0 512 896c264.96 0 480-192 480-432S776.96 32 512 32z m-144 608c-72 0-118.72-53.12-118.72-135.04A216 216 0 0 1 416 289.92a36.8 36.8 0 0 1 45.44 17.6c6.4 17.6-8.64 32-26.56 39.04a142.72 142.72 0 0 0-96 88a100.16 100.16 0 0 1 147.2 93.44A107.84 107.84 0 0 1 368 640z m288 0c-72.32 0-119.04-53.12-119.04-135.04a216.32 216.32 0 0 1 167.68-215.04a36.48 36.48 0 0 1 45.44 17.6c6.4 16.96-8.32 32-26.56 39.04a142.4 142.4 0 0 0-96 88a100.16 100.16 0 0 1 147.2 93.44a107.52 107.52 0 0 1-117.76 112z"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                             随思录
                         </a>
                     </li>
@@ -219,7 +171,7 @@
                     <li>
                         <a href="/sky-eye/" title="天空之眼">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><path d="M22 12c-2.667 4.667-6 7-10 7s-7.333-2.333-10-7c2.667-4.667 6-7 10-7s7.333 2.333 10 7"></path></svg>
-                            天空之眼<img src="/images/sky-eye/drone.svg" alt="无人机" class="menu-drone-icon" style="height: 16px; width: auto; vertical-align: middle; margin-left: 2px;"/>
+                            天空之眼
                         </a>
                     </li>
                     <li>
@@ -235,22 +187,91 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://t.me/blogofjoe" title="Telegram 订阅">
+                        <a href="https://t.me/blogofjoe" title="Telegram">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                            Telegram 订阅
+                            Telegram
                         </a>
                     </li>
                     <li>
-                        <a href="/wechat/" title="关注微信公众号">
+                        <a href="/wechat/" title="微信公众号">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L2 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                            关注微信公众号
+                            微信公众号
                         </a>
                     </li>
                     <li>
-                        <a href="https://x.com/houjoe1" title="关注作者 Twitter">
+                        <a href="https://x.com/houjoe1" title="Twitter">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                            关注作者 Twitter
+                            Twitter
                         </a>
+                    </li>
+                    <li class="lang-switcher-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <a href="/" title="中文">中文</a>/<a href="/en/" title="English">English</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Mobile Hamburger Menu -->
+            <li class="show-more-on-mobile more-menu mobile-only">
+                <div class="menu-trigger" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/thoughts/" title="随思录">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            随思录
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/posts/" title="博文">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            博文
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sky-eye/" title="天空之眼">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><path d="M22 12c-2.667 4.667-6 7-10 7s-7.333-2.333-10-7c2.667-4.667 6-7 10-7s7.333 2.333 10 7"></path></svg>
+                            天空之眼
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about/" title="关于我">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            关于我
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index.xml" title="RSS">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                            RSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/blogofjoe" title="Telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/wechat/" title="微信公众号">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L2 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            微信公众号
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/houjoe1" title="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="lang-switcher-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <a href="/" title="中文">中文</a>/<a href="/en/" title="English">English</a>
                     </li>
                 </ul>
             </li>
