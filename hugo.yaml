@@ -2,11 +2,20 @@ baseURL: 'https://houjoe.me/'
 languageCode: 'zh-cn'
 defaultContentLanguage: 'zh-cn'
 hasCJKLanguage: true
-title: "Joe 的折腾日记"
 theme: 'PaperMod'
 enableEmoji: true
 buildFuture: true  # 允许显示未来日期的文章
 timeZone: "Asia/Shanghai"  # 设置时区为北京时间
+
+# 语言配置
+languages:
+  zh-cn:
+    languageName: "中文"
+    weight: 1
+    title: "Joe 的折腾日记"
+    params:
+      description: "记录学习、思考和生活感悟"
+      mainSections: ["posts", "thoughts", "sky-eye"]
 
 # Markdown 渲染配置
 markup:
@@ -51,7 +60,6 @@ params:
   ShowShareButtons: true
   ShowToc: true
   ShowBreadCrumbs: true
-  mainSections: ["posts", "thoughts", "sky-eye"]  # 首页显示博文、随思录和天空之眼内容
   ShowCodeCopyButtons: true
   
   # 评论系统配置

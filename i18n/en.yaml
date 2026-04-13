@@ -1,0 +1,23 @@
+- id: toc
+  translation: "Table of Contents"
+
+- id: thoughts
+  translation: "Thoughts"
+
+- id: posts
+  translation: "Posts"
+
+- id: sky_eye
+  translation: "Sky Eye"
+
+- id: about
+  translation: "About"
+
+- id: wechat
+  translation: "WeChat"
+
+- id: chinese
+  translation: "Chinese"
+
+- id: english
+  translation: "English"

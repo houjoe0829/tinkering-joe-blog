@@ -1,2 +1,23 @@
 - id: toc
   translation: "目录"
+
+- id: thoughts
+  translation: "随思录"
+
+- id: posts
+  translation: "博文"
+
+- id: sky_eye
+  translation: "天空之眼"
+
+- id: about
+  translation: "关于我"
+
+- id: wechat
+  translation: "微信公众号"
+
+- id: chinese
+  translation: "中文"
+
+- id: english
+  translation: "English"
