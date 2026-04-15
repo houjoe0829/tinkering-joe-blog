@@ -105,10 +105,6 @@ author: "Joe"
 <td>开始输出英文内容了，选择 Substack 平台，内容偏向于自己的独立开发和 AI</td>
 </tr>
 <tr>
-<td><strong><a href="https://dayoneapp.com/">Day One</a></strong></td>
-<td>日记应用，最赞的是可以读取照片的时间和地点，记录遇到的琐碎的事情和感受</td>
-</tr>
-<tr>
 <td><strong><a href="https://www.notion.so/">Notion</a></strong></td>
 <td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Claude Code、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
@@ -192,8 +188,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://culturedcode.com/things/">Things3</a></strong></td>
-<td>简单易用的任务管理工具，像一张白纸一样。</td>
+<td><strong><a href="https://dida365.com/">滴答清单</a></strong></td>
+<td>该有的功能都有，性价比很高，一直在稳定更新中，是目前主力的任务管理工具。</td>
 </tr>
 </tbody>
 </table>
@@ -231,12 +227,12 @@ author: "Joe"
 <td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
 </tr>
 <tr>
-<td><strong><a href="https://culturedcode.com/things/">Things3</a></strong></td>
-<td>也用 Things3 放置待看清单</td>
+<td><strong><a href="https://dida365.com/">滴答清单</a></strong></td>
+<td>也用滴答清单放置待看清单</td>
 </tr>
 <tr>
-<td><strong><a href="https://pocketcasts.com/">Pocket Casts</a></strong></td>
-<td>跨平台的播客 App，支持 iOS、Android、Web 等等，不用小宇宙，因为听得比较杂</td>
+<td><strong><a href="https://www.xiaoyuzhoufm.com/">小宇宙</a></strong></td>
+<td>国内播客 App，生态越来越好了，主要是想看国内播客的评论</td>
 </tr>
 <tr>
 <td><strong><a href="https://omniaudio.info/">OmniAudio</a></strong></td>
@@ -530,10 +526,6 @@ author: "Joe"
 <tr>
 <td><strong>指甲刀</strong></td>
 <td>始终保持敲键盘永远很舒服的指甲长度</td>
-</tr>
-<tr>
-<td><strong>随身 WiFi</strong></td>
-<td>iPhone 的网络本身就一般，热点经常检测不到，于是买了个中兴的随身 WiFi 全球版，每月 200 GB 的流量，速度明显稳定也快，适合野外办公、自驾、出差等等，不过，建议再买个手机散热器，这样多设备连接也可以稳定工作</td>
 </tr>
 <tr>
 <td><strong>苹果 Magic Mouse</strong></td>
