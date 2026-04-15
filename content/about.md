@@ -8,7 +8,7 @@ hideMeta: true
 
 ## 👨‍💻 自我介绍
 
-Hi，我是 Joe，一个不知名的产品经理，目前暂居在武汉。主业与兴趣都是设计各类 ToC / ToB 的生产力工具，目前灵活就业中，以远程办公为主，长期深耕 AI 生产力工具方向，也做自己的 App。
+Hi，我是 Joe，一个不知名的产品经理，暂居武汉。主业与兴趣都是设计各类 ToC / ToB 的生产力工具，灵活就业中，以远程办公为主，长期深耕 AI 生产力工具方向，也做自己的 App。这里是我专门码字的地方。
 
 <div class="tags-container">
   <span class="tag" data-color="blue"><i class="tag-icon">💻</i>Coding with AI</span>
