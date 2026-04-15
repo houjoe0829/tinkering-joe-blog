@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>随机读一篇</title>
+</head>
+<body>
+<script>
+    var urls = [
+        {{- $pages := where (where site.RegularPages "Section" "in" (slice "posts" "thoughts")) ".Draft" false }}
+        {{- range $i, $p := $pages }}
+        {{- if $i }},{{ end }}"{{ $p.RelPermalink }}"
+        {{- end }}
+    ];
+    if (urls.length > 0) {
+        var target = urls[Math.floor(Math.random() * urls.length)];
+        window.location.replace(target);
+    }
+</script>
+</body>
+</html>

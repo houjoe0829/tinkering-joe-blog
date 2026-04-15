@@ -123,6 +123,13 @@
             {{- end }}
             {{- end }}
 
+            <!-- Random Post Button (Desktop) -->
+            <li class="desktop-only">
+                <a href="{{ "random/" | relLangURL }}" title="随机读一篇">
+                    <span>随机读一篇</span>
+                </a>
+            </li>
+
             <!-- More Menu (Desktop - contains all other menu items) -->
             <li class="more-menu desktop-only">
                 <div class="menu-trigger" onclick="this.parentElement.classList.toggle('active')">
@@ -196,6 +203,11 @@
                     </div>
                 </div>
                 <ul class="sub-menu">
+                    <li>
+                        <a href="{{ "random/" | relLangURL }}" title="随机读一篇">
+                            随机读一篇
+                        </a>
+                    </li>
                     <li>
                         <a href="{{ "thoughts/" | relLangURL }}" title="{{ i18n "thoughts" | default "随思录" }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
