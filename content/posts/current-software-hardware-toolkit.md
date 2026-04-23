@@ -163,10 +163,6 @@ author: "Joe"
 <td>在豆瓣书籍页面显示其可下载的在线资源网站</td>
 </tr>
 <tr>
-<td><strong><a href="https://chromewebstore.google.com/detail/bpoadfkcbjbfhfodiogcnhhhpibjhbnh">沉浸式翻译</a></strong></td>
-<td>能生成双语对照阅读的插件</td>
-</tr>
-<tr>
 <td><strong><a href="https://chromewebstore.google.com/detail/copyurl-title-link-format/ocmgjlfbnlldclhibengfmabcbgimhhl">CopyURL</a></strong></td>
 <td>复制当前网页的标题和链接，以想要的格式分享，这个也是我自己做的</td>
 </tr>
@@ -224,7 +220,7 @@ author: "Joe"
 </tr>
 <tr>
 <td><strong>YouTube</strong></td>
-<td>什么都能找到，还能依赖沉浸式翻译插件完成字幕翻译</td>
+<td>什么都能找到</td>
 </tr>
 <tr>
 <td><strong><a href="https://dida365.com/">滴答清单</a></strong></td>
