@@ -101,10 +101,6 @@ author: "Joe"
 <td>当做微信渠道信息发布平台，主要是分享生活和想法</td>
 </tr>
 <tr>
-<td><strong><a href="https://houjoe.substack.com/">Substack</a></strong></td>
-<td>开始输出英文内容了，选择 Substack 平台，内容偏向于自己的独立开发和 AI</td>
-</tr>
-<tr>
 <td><strong><a href="https://www.notion.so/">Notion</a></strong></td>
 <td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Claude Code、ChatGPT 的上下文，基于官方的 MCP</td>
 </tr>
