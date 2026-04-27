@@ -41,6 +41,7 @@ author: "Joe"
 
 最强保险是买两家线路，或者一家机场，但有很多地区的线路节点那种，分摊风险，可以搜一搜，一大堆，以下是我自己用了好几年的两家：
 - 稳定且速度快的一家 [https://invite.wgetcloud.ltd/auth/register?code=X2ysYn](https://invite.wgetcloud.ltd/auth/register?code=X2ysYn)
+  - 注意：这一家已经取消了月付套餐
 - 性价比较高的一家 [https://renzhe.cloud/auth/register?code=ciDE](https://renzhe.cloud/auth/register?code=ciDE)
   - 不过，这一家需要自己国外 IP 才可以访问购买，国内无法直接访问
 
