@@ -108,11 +108,11 @@
         </div>
         {{- $currentPage := . }}
         <ul id="menu">
-            <!-- Search Icon (always visible) -->
+            <!-- Search Icon (always visible, including mobile) -->
             {{- range site.Menus.main }}
             {{- if eq .Identifier "search" }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
-            <li>
+            <li class="show-more-on-mobile">
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} (Alt + /)" accesskey="/">
                     <span>
                         {{- .Pre }}
