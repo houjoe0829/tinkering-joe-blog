@@ -472,6 +472,10 @@ author: "Joe"
 <td><strong><a href="https://folivora.ai/keyboardcleantool">KeyboardCleanTool</a></strong></td>
 <td>Mac 上的键盘清理工具，可以临时禁用掉键盘的响应，方便清理</td>
 </tr>
+<tr>
+<td><strong><a href="https://github.com/tw93/mole">Mole</a></strong></td>
+<td>最佳 Mac 清理工具，完全免费，尤其适合 Vibe Coding 玩家清理各类 AI 编程工具产生的垃圾文件，但需要在终端运行，对非技术用户稍有门槛</td>
+</tr>
 </tbody>
 </table>
 
