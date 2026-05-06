@@ -9,6 +9,8 @@ hugo_stats.json
 /temp_static/
 /backup/
 .venv/
+__pycache__/
+*.pyc
 /draftfiles/
 /static/images_compressed/
 /temp_notion/
