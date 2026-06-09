@@ -611,6 +611,26 @@
     background: var(--code-bg);
 }
 
+.nav #menu .more-menu .sub-menu li.sub-menu-heading {
+    padding: 0.4rem 0.75rem 0.3rem;
+    margin-top: 0.5rem;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    color: var(--secondary);
+    opacity: 0.45;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav #menu .sub-menu > .sub-menu-heading:first-child {
+    margin-top: 0.15rem;
+}
+
+.nav #menu .sub-menu .sub-menu-divider {
+    display: none;
+}
+
 .nav #menu .sub-menu svg {
     margin-right: 0;
     width: 18px;
