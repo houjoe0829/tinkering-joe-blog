@@ -249,6 +249,15 @@
 
 .card-icon {
     font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--card-accent);
+}
+
+.card-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .card-header h4 {
