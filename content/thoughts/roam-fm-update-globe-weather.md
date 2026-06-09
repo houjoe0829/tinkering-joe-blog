@@ -3,7 +3,7 @@ author: "Joe"
 date: 2026-06-02
 description: "Roam FM 最新更新：高清地球、电台精确定位、当地天气、菜单栏切换主题，以及性能优化的感受"
 draft: false
-tags: ["Vibe Coding", "我有个想法！"]
+tags: ["Vibe Coding", "我有个想法！", "造物笔记"]
 title: ""
 ---
 

@@ -3,7 +3,7 @@ author: "Joe"
 date: 2025-09-17
 description: "用 AI 做了个番茄钟，部署在 NAS 上，还带随机电台功能"
 draft: false
-tags: ["折腾软硬件"]
+tags: ["折腾软硬件", "造物笔记"]
 title: ""
 ---
 

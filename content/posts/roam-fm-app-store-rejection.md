@@ -3,7 +3,7 @@ author: "Joe"
 date: 2026-02-11
 description: "记录 Roam FM 电台 App 在 App Store 审核中遭遇的拒审经历，以及最终选择独立分发的完整过程"
 draft: false
-tags: ["Vibe Coding"]
+tags: ["Vibe Coding", "造物笔记"]
 title: "一个电台 App 的 App Store 拒审记"
 ---
 
