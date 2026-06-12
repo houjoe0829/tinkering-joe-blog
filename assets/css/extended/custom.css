@@ -83,10 +83,17 @@ kbd,
 samp,
 tt,
 var {
-    font-family: -apple-system, BlinkMacSystemFont, "Menlo", "Monaco", "Consolas", 
+    font-family: "JetBrains Mono", "SF Mono", "Menlo", "Monaco", "Consolas",
+                 "Noto Sans Mono CJK SC", "Sarasa Mono SC", "PingFang SC",
                  "Courier New", monospace;
     font-weight: 400;
     letter-spacing: 0;
+    font-variant-east-asian: full-width;
+}
+
+/* ASCII 线框图等需要严格等宽对齐的场景：让框线字符也按 1 格宽渲染 */
+pre code {
+    font-variant-east-asian: normal;
 }
 
 .post-header .post-title {
