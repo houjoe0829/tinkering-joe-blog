@@ -21,7 +21,7 @@
       <div class="sky-eye-thumbnail-container">
         <div class="sky-eye-thumbnail">
           <!-- 点击跳转到全景查看页面 -->
-          <a href="/sky-eye-viewer.html?panorama={{ .Params.panorama_image | urlize }}&title={{ .Title | urlize }}&return={{ .RelPermalink | urlize }}" title="点击进入沉浸式360度查看">
+          <a href="{{ printf "/sky-eye-viewer.html?%s" (querify "panorama" .Params.panorama_image "title" .Title "return" .RelPermalink "desc" .Params.description) | safeURL }}" title="点击进入沉浸式360度查看">
             <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
             <div class="sky-eye-thumbnail-prompt">
               <div class="prompt-icon">
@@ -212,12 +212,17 @@
     padding-bottom: 0;
   }
 
-  .sky-eye-info h3 {
+  .sky-eye-info .sky-eye-info-item h3 {
+    margin-top: 0 !important;
     margin-bottom: 0.7rem;
     font-size: 1.1rem;
     color: var(--primary);
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
   }
 
   .sky-eye-info h3 svg {

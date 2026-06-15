@@ -152,6 +152,116 @@
       margin-top: 10px;
       display: inline-block;
     }
+
+    /* 顶部标题栏 —— 右上角，胶囊样式 */
+    .panorama-title {
+      position: fixed;
+      top: 22px;
+      right: 22px;
+      z-index: 100;
+      max-width: 320px;
+      padding: 9px 18px;
+      background-color: rgba(20, 20, 22, 0.42);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      backdrop-filter: blur(12px) saturate(150%);
+      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    /* 底部描述栏 —— 右下角面板 */
+    .panorama-desc {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 100;
+      width: 380px;
+      max-width: calc(100vw - 44px);
+      padding: 16px 40px 14px 18px;
+      background-color: rgba(20, 20, 22, 0.42);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 13.5px;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      backdrop-filter: blur(12px) saturate(150%);
+      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+
+    .panorama-desc.hidden {
+      display: none;
+    }
+
+    .panorama-desc-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      white-space: normal;
+    }
+
+    .panorama-desc.expanded .panorama-desc-text {
+      -webkit-line-clamp: unset;
+      overflow: visible;
+    }
+
+    .panorama-desc-toggle {
+      margin-top: 6px;
+      color: #7ec1ff;
+      cursor: pointer;
+      font-size: 13px;
+      user-select: none;
+      display: none;
+    }
+
+    .panorama-desc.clamped .panorama-desc-toggle,
+    .panorama-desc.expanded .panorama-desc-toggle {
+      display: inline-block;
+    }
+
+    .panorama-desc-close {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      opacity: 0.7;
+      font-size: 18px;
+      line-height: 1;
+      border-radius: 4px;
+      transition: opacity 0.2s, background-color 0.2s;
+    }
+
+    .panorama-desc-close:hover {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* 移动端隐藏标题和描述 */
+    @media (max-width: 768px) {
+      .panorama-title,
+      .panorama-desc {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -164,8 +274,18 @@
     <span>返回详情页</span>
   </a>
   
+  <!-- 顶部标题 -->
+  <div id="panorama-title" class="panorama-title" style="display: none;"></div>
+
   <!-- 全景照片查看器容器 -->
   <div id="panorama"></div>
+
+  <!-- 底部描述 -->
+  <div id="panorama-desc" class="panorama-desc hidden">
+    <div id="panorama-desc-close" class="panorama-desc-close" title="关闭描述">×</div>
+    <div id="panorama-desc-text" class="panorama-desc-text"></div>
+    <span id="panorama-desc-toggle" class="panorama-desc-toggle">展开全部</span>
+  </div>
   
   <!-- 错误信息容器 -->
   <div id="error-container" style="display: none;" class="error-message"></div>
@@ -198,9 +318,52 @@
       const panoramaPath = urlParams.get('panorama');
       const pageTitle = urlParams.get('title') || '全景照片';
       const returnUrl = urlParams.get('return') || '/sky-eye/';
+      const pageDesc = urlParams.get('desc') || '';
       
       // 设置返回按钮
-      document.getElementById('back-button').href = decodeURIComponent(returnUrl);
+      const decodedReturnUrl = decodeURIComponent(returnUrl);
+      document.getElementById('back-button').href = decodedReturnUrl;
+
+      // 设置顶部标题
+      const decodedTitle = decodeURIComponent(pageTitle);
+      const titleEl = document.getElementById('panorama-title');
+      if (decodedTitle && decodedTitle !== '全景照片') {
+        titleEl.textContent = decodedTitle;
+        titleEl.style.display = 'block';
+      }
+
+      // 拉取并展示底部描述
+      (function setupDescription() {
+        const descBox = document.getElementById('panorama-desc');
+        const descText = document.getElementById('panorama-desc-text');
+        const toggleBtn = document.getElementById('panorama-desc-toggle');
+        const closeBtn = document.getElementById('panorama-desc-close');
+
+        closeBtn.addEventListener('click', function() {
+          descBox.classList.add('hidden');
+        });
+
+        toggleBtn.addEventListener('click', function() {
+          if (descBox.classList.contains('expanded')) {
+            descBox.classList.remove('expanded');
+            toggleBtn.textContent = '展开全部';
+          } else {
+            descBox.classList.add('expanded');
+            toggleBtn.textContent = '收起';
+          }
+        });
+
+        const decodedDesc = pageDesc ? decodeURIComponent(pageDesc) : '';
+        if (decodedDesc) {
+          descText.textContent = decodedDesc;
+          descBox.classList.remove('hidden');
+          requestAnimationFrame(function() {
+            if (descText.scrollHeight - descText.clientHeight > 1) {
+              descBox.classList.add('clamped');
+            }
+          });
+        }
+      })();
       
       if (!panoramaPath) {
         showError('未指定全景照片路径');
