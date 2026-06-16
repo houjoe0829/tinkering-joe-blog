@@ -82,9 +82,14 @@ thumbnail: "/images/sky-eye/huangshan-yunhai-thumb.jpg"
 panorama_image: "/images/sky-eye/optimized/huangshan-yunhai.webp"
 location: "黄山风景区"
 coordinates: "30.1347,118.1566"
+tags: ["徽州印象"]
 draft: false
 ---
 ```
+
+#### 标签展示
+- 详情页底部使用与博文一致的 `post-tags` 样式（带计数徽章的胶囊链接）
+- 在 `/tags/<标签>/` 聚合页中，与博文卡片并列展示，沿用首页的缩略图 + 描述卡片样式
 
 #### 处理工具
 - **EXIF 读取**：`exiftool` 读取拍摄信息和 GPS 坐标

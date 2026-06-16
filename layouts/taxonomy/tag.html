@@ -33,6 +33,42 @@
 {{- $class := "post-entry" }}
 
 <article class="{{ $class }}">
+  {{- if or (eq .Type "sky-eye") (eq .Section "sky-eye") (in .RelPermalink "/sky-eye/") }}
+  <div class="sky-eye-entry-content-wrapper" style="display: flex; margin-bottom: 15px; align-items: flex-start;">
+    <div class="entry-text-content" style="flex: 1; margin-right: 15px;">
+      <header class="entry-header">
+        <h2 class="sky-eye-home-card-title">
+          <a class="sky-eye-home-card-title-link" href="{{ .Permalink }}">
+            {{- .Title -}}
+            <img src="/images/sky-eye/drone.svg" alt="无人机" class="sky-eye-home-card-title-icon"/>
+          </a>
+          {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        </h2>
+      </header>
+
+      {{- with .Params.description }}
+        <div class="entry-content">
+          <p>{{ . | plainify | htmlUnescape }}</p>
+        </div>
+      {{- end }}
+
+      {{- if not .Date.IsZero -}}
+        <footer class="entry-footer">
+          <span class='post-date' data-date='{{ .Date | time.Format "2006-01-02" }}' title='{{ .Date | time.Format "2006-01-02" }}'>{{ .Date | time.Format "2006-01-02" }}</span>
+        </footer>
+      {{- end }}
+    </div>
+
+    {{- with .Params.thumbnail }}
+      <div class="entry-thumbnail-wrapper" style="flex: 0 0 180px; height: 120px; border-radius: 5px; overflow: hidden; margin-top: 10px;">
+        <a href="{{ $.Permalink }}" aria-label="post link to {{ $.Title | plainify }}">
+          <img src="{{ . | absURL }}" alt="{{ $.Title }} Sky Eye Thumbnail" loading="lazy" class="entry-thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+      </div>
+    {{- end }}
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  {{- else }}
   {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
   <header class="entry-header">
@@ -53,11 +89,11 @@
       {{- $dateStr := .Date | time.Format "2006-01-02" -}}
       {{- $scratch.Add "meta" (slice (printf "<span class='post-date' data-date='%s' title='%s'>%s</span>" $dateStr $dateStr $dateStr)) -}}
     {{- end }}
-    
+
     {{- if (.Param "ShowReadingTime") -}}
       {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d 分钟" .ReadingTime))) }}
     {{- end }}
-    
+
     {{- with ($scratch.Get "meta") }}
     <span class="meta-item">
       {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
@@ -66,6 +102,7 @@
   </footer>
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  {{- end }}
 </article>
 {{- end }}
 {{- end }}

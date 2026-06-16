@@ -56,7 +56,7 @@
   {{- $class := "post-entry" }}
 
 <article class="{{ $class }}">
-  {{- if eq .Type "sky-eye" }}
+  {{- if or (eq .Type "sky-eye") (eq .Section "sky-eye") (in .RelPermalink "/sky-eye/") }}
   <div class="sky-eye-entry-content-wrapper" style="display: flex; margin-bottom: 15px; align-items: flex-start;">
     
     <div class="entry-text-content" style="flex: 1; margin-right: 15px;">

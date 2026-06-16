@@ -63,8 +63,30 @@
           {{- end }}
         </div>
         {{- end }}
+
       </div>
     </div>
+
+    <!-- 标签 -->
+    {{- if .Params.tags }}
+    <footer class="post-footer sky-eye-tags-footer">
+      <div class="post-tags">
+        {{ range .Params.tags }}
+        {{- $tag := . }}
+        {{- $tagCount := 0 }}
+        {{- range $.Site.RegularPages }}
+          {{- if in .Params.tags $tag }}
+            {{- $tagCount = add $tagCount 1 }}
+          {{- end }}
+        {{- end }}
+        <a href="/tags/{{ $tag | urlize }}/" class="tag-link">
+          <span class="tag-name">{{ $tag }}</span>
+          <span class="tag-count">{{ $tagCount }}</span>
+        </a>
+        {{ end }}
+      </div>
+    </footer>
+    {{- end }}
   </div>
 
   {{- partial "prev_next_nav.html" (dict "context" . "outerClass" "sky-eye-nav") }}
@@ -275,6 +297,10 @@
     background-color: #6b7280; /* 悬停时使用稍浅的灰色 */
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 在夜间模式下增强悬浮时的阴影 */
+  }
+
+  .sky-eye-tags-footer {
+    margin-top: 1.5rem;
   }
 
   /* 相关文章样式使用博客文章中的反向引用样式 */
