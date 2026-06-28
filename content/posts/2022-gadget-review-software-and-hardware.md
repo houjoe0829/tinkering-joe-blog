@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2023-01-01
+date: 2023-01-01T12:00:00+08:00
 description: "2022年那些让生活更美好的软件与硬件清单，从 Evernote 到特斯拉 Model Y，记录那些改变生活的工具"
 draft: false
 tags: ["折腾软硬件", "提升幸福感的好物"]

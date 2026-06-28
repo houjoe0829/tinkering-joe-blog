@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2021-06-30
+date: 2021-06-30T12:00:00+08:00
 description: "分享我使用 Oculus Quest 2 VR 设备的体验，包括它的优点和局限性"
 draft: false
 tags: ["折腾软硬件", "提升幸福感的好物"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-09-15
+date: 2025-09-15T11:45:12+08:00
 description: "关于 Codex 作为手机端编程辅助工具的使用体验和定位思考"
 draft: false
 tags: ["Vibe Coding", "AI 相关"]

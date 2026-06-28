@@ -1,6 +1,6 @@
 ---
 title: '最简约的科学上网方案：Quantumlt X'
-date: 2024-06-27
+date: 2024-06-27T12:00:00+08:00
 draft: false
 description: "一个简单但完整的 Quantumult X 使用指南，从购买到配置的全过程详解。"
 tags: ["折腾软硬件"]

@@ -1,6 +1,6 @@
 ---
 title: "可以替代 Chrome 的极品浏览器：Vivaldi"
-date: "2018-01-18"
+date: "2018-01-18T12:00:00+08:00"
 description: "一款兼容 Chrome 使用习惯和插件，同时拥有独特个性的浏览器"
 tags: ["折腾软硬件"]
 author: "Joe"

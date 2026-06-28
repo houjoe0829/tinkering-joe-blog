@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: "2025-09-26"
+date: "2025-09-26T22:15:00+08:00"
 description: "AI 如何让 NAS 上的 Docker 变成更有趣的 DIY 工作坊，从简单部署到自定义构建的折腾记录"
 draft: false
 tags: ["折腾软硬件", "AI 相关"]

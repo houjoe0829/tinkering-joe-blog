@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2026-02-12
+date: 2026-02-12T22:14:36+08:00
 description: "Instant AI 的短暂旅程，从 Quick AI 的设计到 Instant AI 的上线与下线"
 draft: false
 tags: ["AI 相关", "Vibe Coding", "工作感悟"]

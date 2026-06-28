@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2022-05-15
+date: 2022-05-15T12:00:00+08:00
 description: "深度体验 Clover Note 后的评测，一款融合文档、白板和任务管理的创新笔记软件，探索当文档遇上白板的无限可能"
 draft: false
 tags: ["折腾软硬件"]

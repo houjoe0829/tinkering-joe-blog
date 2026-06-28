@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2018-04-03
+date: 2018-04-03T12:00:00+08:00
 description: "探索如何结合 XMind Zen 思维导图和 Evernote 云笔记，打造更立体的个人知识管理系统"
 draft: false
 tags: ["折腾软硬件"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2022-05-12
+date: 2022-05-12T12:00:00+08:00
 description: "分享我的 Notion 使用心得：如何将 Notion 打造成个人资料库和数字花园，以及哪些场景不适合使用 Notion"
 draft: false
 tags: ["折腾软硬件", "我有个想法！"]

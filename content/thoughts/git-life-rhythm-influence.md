@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-08-17
+date: 2025-08-17T22:29:44+08:00
 description: "Git 版本控制系统如何影响我的生活节奏和工作方式"
 draft: false
 tags: ["生活感悟"]

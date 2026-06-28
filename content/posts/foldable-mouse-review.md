@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-09-22
+date: 2025-09-22T23:44:22+08:00
 description: "分享一款便携可折叠收纳鼠标的使用体验，从罗技 MX Master 3S 到国产平替的选择心得"
 draft: false
 tags: ["提升幸福感的好物", "折腾软硬件"]

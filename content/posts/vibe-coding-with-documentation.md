@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-09-12
+date: 2025-09-12T12:42:14+08:00
 description: "与 AI 协作编程的实践总结：通过合理的文档分工，让 README 和 docs 各司其职，减少协作噪音，提升开发效率"
 draft: false
 tags: ["Vibe Coding", "工作感悟"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-11-22
+date: 2025-11-22T12:05:14+08:00
 description: "在不同设备上写作带来的情绪落差，以及 iPad mini 带来的沉浸感"
 draft: false
 tags: ["生活感悟"]

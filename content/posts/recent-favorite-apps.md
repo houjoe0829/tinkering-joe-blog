@@ -1,6 +1,6 @@
 ---
 title: "最近看上了什么 App｜006"
-date: "2020-06-15"
+date: "2020-06-15T12:00:00+08:00"
 draft: false
 description: "分享几个最近发现的实用工具：Markdown Nice、微信小助手、DeepL 翻译和一个电子书资源网站"
 tags: ["折腾软硬件"]

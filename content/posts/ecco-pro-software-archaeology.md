@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2021-12-17
+date: 2021-12-17T12:00:00+08:00
 description: "探索 20 世纪 90 年代的个人信息管理工具 Ecco Pro，一个超前设计但最终被微软 Outlook 击败的软件"
 draft: false
 tags: ["折腾软硬件", "我有个想法！"]

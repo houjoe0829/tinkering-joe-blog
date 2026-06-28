@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-08-17
+date: 2025-08-17T14:20:27+08:00
 description: "通过 Teslamate 和自动化脚本，将特斯拉行程数据无缝同步到日历应用中，实现行程记录的可视化管理"
 draft: false
 tags: ["折腾软硬件"]

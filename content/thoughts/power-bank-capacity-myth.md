@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: "2025-07-18"
+date: "2025-07-18T23:45:06+08:00"
 description: "关于充电宝容量宣传和实际可用容量的思考"
 draft: false
 tags: ["折腾软硬件"]

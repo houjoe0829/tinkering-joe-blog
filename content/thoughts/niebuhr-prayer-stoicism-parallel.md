@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-05-27
+date: 2025-05-27T15:06:18+08:00
 description: "关于尼布尔祷文与斯多葛主义异曲同工之妙的思考"
 draft: false
 tags: ["生活感悟", "阅读笔记"]

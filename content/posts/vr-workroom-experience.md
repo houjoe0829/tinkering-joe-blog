@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2024-02-20
+date: 2024-02-20T12:00:00+08:00
 description: "记录一次在 Meta 的 Horizon Workroom 中体验 VR 会议的经历，分享了配置过程、使用体验以及对未来 VR 应用的思考"
 draft: false
 tags: ["折腾软硬件"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2023-07-31
+date: 2023-07-31T12:00:00+08:00
 description: "这一篇是写给 Newsletter 通道的文章，欢迎订阅关注"
 draft: false
 tags: ["折腾软硬件", "现实是个开放世界", "生活感悟"]

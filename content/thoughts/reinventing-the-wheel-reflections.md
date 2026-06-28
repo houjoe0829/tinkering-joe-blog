@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-05-26
+date: 2025-05-26T14:55:51+08:00
 description: "对于\"重新发明轮子\"这篇文章的几点思考和延伸。"
 draft: false
 tags: ["阅读笔记", "Vibe Coding"]

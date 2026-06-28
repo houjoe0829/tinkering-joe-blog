@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-04-18
+date: 2025-04-18T17:34:26+08:00
 description: "介绍如何在 Notion 中设置和使用 Daily Note 功能，通过自动化实现每日笔记的创建和管理"
 draft: false
 tags: ["折腾软硬件"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2023-07-21
+date: 2023-07-21T12:00:00+08:00
 description: "在 Steam Deck 发布一年多后的使用体验分享，包括设备优缺点、游戏体验、实用配件以及避坑指南"
 draft: false
 tags: ["折腾软硬件", "游戏也是场冒险"]

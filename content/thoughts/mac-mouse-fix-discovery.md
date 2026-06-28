@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-09-16
+date: 2025-09-16T22:03:07+08:00
 description: "发现了一个免费的修改 Mac 鼠标按键功能的工具 Mac Mouse Fix，比 Linear Mouse 功能更丰富"
 draft: false
 tags: ["折腾软硬件"]

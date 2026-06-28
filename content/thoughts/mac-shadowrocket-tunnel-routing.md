@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2026-04-27
+date: 2026-04-27T22:38:14+08:00
 description: "Mac 版 Shadowrocket 默认不接管系统流量，只需开启隧道里的「强制路由」即可让 CLI 工具走代理。"
 draft: false
 tags: ["折腾软硬件"]

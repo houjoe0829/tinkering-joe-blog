@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2021-09-21
+date: 2021-09-21T12:00:00+08:00
 description: "探讨兴趣培养中的顿悟时刻（Aha moment），以及如何主动创造这些契机"
 draft: false
 tags: ["生活感悟"]

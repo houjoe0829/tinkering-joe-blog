@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-06-27
+date: 2025-06-27T14:53:01+08:00
 description: "个人博客的三种内容形式（随思录、博文、天空之眼）终于实现了统一，可以在首页、RSS 和 Telegram 频道混合排序更新，相互引用关系也得以保留。"
 draft: false
 tags: ["Vibe Coding", "我有个想法！", "造物笔记"]

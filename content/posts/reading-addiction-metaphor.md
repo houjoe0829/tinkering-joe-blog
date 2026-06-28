@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2015-10-01
+date: 2015-10-01T12:00:00+08:00
 description: "关于我对效率工具使用态度的转变，以及对软件使用习惯的一些思考"
 draft: false
 tags: ["生活感悟"]

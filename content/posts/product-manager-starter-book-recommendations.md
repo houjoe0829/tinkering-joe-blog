@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2024-10-22
+date: 2024-10-22T12:00:00+08:00
 description: "一份个人总结的产品经理入门书籍推荐清单"
 draft: false
 tags: ["工作感悟"]

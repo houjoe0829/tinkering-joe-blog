@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2026-03-02
+date: 2026-03-02T21:39:22+08:00
 description: "用 Git Hook 自动把代码仓库里的 README 和 Specs 文档同步到 Notion，让两边共享最新的项目上下文"
 draft: false
 tags: ["Vibe Coding"]

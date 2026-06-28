@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2025-09-16
+date: 2025-09-16T10:29:03+08:00
 description: "Teslamate 迁移到 NAS Docker 后的部署体验，继续利用自动化保持日历记录同步。"
 draft: false
 tags: ["折腾软硬件"]

@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2020-05-14
+date: 2020-05-14T12:00:00+08:00
 description: "关于那些看似无用的想法的价值和生命周期的思考"
 draft: false
 tags: ["工作感悟", "生活感悟"]

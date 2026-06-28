@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2023-06-26
+date: 2023-06-26T12:00:00+08:00
 description: "Weebly CEO David Rusenko 分享如何寻找产品市场契合度（PMF）的经验和洞察"
 draft: false
 tags: ["工作感悟", "阅读笔记"]

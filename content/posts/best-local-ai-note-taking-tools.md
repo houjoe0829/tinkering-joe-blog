@@ -1,6 +1,6 @@
 ---
 title: "最好的本地 AI 笔记软件：Obsidian + Cursor"
-date: 2025-02-18
+date: 2025-02-18T23:14:46+08:00
 draft: false
 description: "探索如何将 Obsidian 和 Cursor 结合使用，打造一个真正本地优先的 AI 笔记解决方案"
 tags: ["折腾软硬件", "AI 相关"]

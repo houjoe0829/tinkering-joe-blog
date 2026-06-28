@@ -1,6 +1,6 @@
 ---
 author: "Joe"
-date: 2024-08-31
+date: 2024-08-31T12:00:00+08:00
 description: "分享 Steam Deck + PC 主机的游戏配置经验，实现跨设备无缝游戏体验和远程串流"
 draft: false
 tags: ["游戏也是场冒险", "折腾软硬件"]
