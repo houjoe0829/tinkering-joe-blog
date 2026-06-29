@@ -48,4 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+{{- /* medium-zoom 初始化：正文图片点击放大 */ -}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof mediumZoom === 'undefined') return;
+    mediumZoom('.post-content img:not(.no-zoom)', {
+        margin: 24,
+        background: 'rgba(0, 0, 0, 0.85)',
+        scrollOffset: 0,
+    });
+});
+</script>
+
 {{- /* Footer custom content area end */ -}}
