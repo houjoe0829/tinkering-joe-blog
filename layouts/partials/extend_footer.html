@@ -48,15 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-{{- /* medium-zoom 初始化：正文图片点击放大 */ -}}
+{{- /* PhotoSwipe 初始化：正文图片点击放大，原生支持移动端双指捏合缩放、双击缩放、拖动平移 */ -}}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    if (typeof mediumZoom === 'undefined') return;
-    mediumZoom('.post-content img:not(.no-zoom)', {
-        margin: 24,
-        background: 'rgba(0, 0, 0, 0.85)',
-        scrollOffset: 0,
+    if (typeof PhotoSwipeLightbox === 'undefined' || typeof PhotoSwipe === 'undefined') return;
+    var lightbox = new PhotoSwipeLightbox({
+        gallery: '.post-content',
+        children: 'a.post-image-zoom',
+        pswpModule: PhotoSwipe,
+        bgOpacity: 0.85,
+        showHideAnimationType: 'zoom',
     });
+    lightbox.init();
 });
 </script>
 
