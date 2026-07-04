@@ -1050,6 +1050,12 @@ pre code {
     }
 }
 
+/* PhotoSwipe 图片放大链接：去掉文字链接的下划线样式 */
+.post-content a.post-image-zoom {
+    box-shadow: none;
+    cursor: zoom-in;
+}
+
 /* 打印样式 */
 @media print {
     .toc-sidebar {
