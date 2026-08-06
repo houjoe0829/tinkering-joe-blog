@@ -126,7 +126,7 @@ cp temp_notion/*.png temp_notion/*.jpg temp_notion/*.jpeg static/images/thoughts
 ```yaml
 ---
 author: "Joe"
-date: YYYY-MM-DD  # 使用 `date +%Y-%m-%d` 获取当前日期
+date: YYYY-MM-DDTHH:MM:SS+08:00  # 使用 `date +%Y-%m-%dT%H:%M:%S+08:00` 获取当前日期时间
 description: "文章简短描述"
 draft: false
 tags: ["标签1", "标签2"]  # 必须从预定义标签列表选择

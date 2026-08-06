@@ -33,7 +33,7 @@ Thought (随想) 是博客中一种更简短、随性的内容形式，通常没
 ```yaml
 ---
 author: "Joe"
-date: "2024-03-15"  # 使用实际日期，格式：YYYY-MM-DD
+date: 2024-03-15T12:00:00+08:00  # 使用实际日期时间，格式：YYYY-MM-DDTHH:MM:SS+08:00
 description: "这里填写对这个 Thought 的简短描述" 
 draft: false
 tags: ["生活感悟"] # 从预定义标签列表选择
