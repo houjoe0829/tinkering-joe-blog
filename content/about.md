@@ -74,30 +74,6 @@ Hi，我是 Joe，一个不知名的产品经理，暂居武汉。主业与兴�
 
 {{< tag-cloud >}}
 
-## 🔧 我的日常工具包
-
-<p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>
-
-<div class="bento-container toolkit-cards">
-  <a href="/posts/current-software-hardware-toolkit/" class="bento-card software toolkit-card">
-    <div class="card-content">
-      <div class="card-icon">📱</div>
-      <h3>软件工具</h3>
-      <p>我日常使用的各类软件工具，包括记录与文档、浏览器、任务管理、阅读、音乐、AI 助手等</p>
-      <span class="read-more">查看详情 →</span>
-    </div>
-  </a>
-  
-  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="bento-card hardware toolkit-card">
-    <div class="card-content">
-      <div class="card-icon">💻</div>
-      <h3>硬件装备</h3>
-      <p>我的随身和随车硬件装备，包括电脑、耳机、手机、无人机、折叠自行车等</p>
-      <span class="read-more">查看详情 →</span>
-    </div>
-  </a>
-</div>
-
 <style>
 /* 为工具包卡片添加特殊样式 */
 .toolkit-cards .toolkit-card::before {
@@ -292,6 +268,54 @@ Hi，我是 Joe，一个不知名的产品经理，暂居武汉。主业与兴�
   margin-bottom: 10px;
   display: inline-block;
 }
+/* Side Projects：图标与标题同一行，卡片更紧凑 */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.card-header .card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+/* 选择器权重需压过主题 custom.css 的 .main .post-content h3（其 margin 左右为 auto，
+   在 flex 布局里会吃掉所有剩余空间，把图标挤到最左） */
+.projects-container .card-header h3 {
+  margin: 0;
+  flex: 0 0 auto;
+  width: auto;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+/* 名字右侧的箭头：默认隐藏，悬浮卡片时淡入并右移 */
+.projects-container .card-arrow {
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.projects-container .bento-card:hover .card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+.projects-container .card-header .card-icon svg,
+.projects-container .card-header .card-icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* 卡片图标使用真实 logo 时（内联 SVG 或图片），与 emoji 保持同样尺寸 */
+.card-icon svg,
+.card-icon img {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
 
 .card-content h3 {
   margin-top: 0;
@@ -428,28 +452,69 @@ Hi，我是 Joe，一个不知名的产品经理，暂居武汉。主业与兴�
 <div class="bento-container projects-container">
   <a href="https://roamfm.app" class="bento-card audio-project">
     <div class="card-content">
-      <div class="card-icon">📻</div>
-      <h3>Roam FM</h3>
-      <p>跟随电台漫游地球，点亮未知角落。40000+ 全球电台，一键随机出发。</p>
-      <span class="read-more">访问网站 →</span>
+      <div class="card-header">
+        <div class="card-icon"><img src="/images/projects/roamfm.png" alt="Roam FM" loading="lazy"></div>
+        <h3>Roam FM</h3>
+        <span class="card-arrow">→</span>
+      </div>
+      <p>一款常驻 Mac 菜单栏的电台，随手点开就能跟随电台漫游地球，点亮未知角落。40000+ 全球电台，一键随机出发。</p>
     </div>
   </a>
   
   <a href="https://omniaudio.info/" class="bento-card audio-project">
     <div class="card-content">
-      <div class="card-icon">🎧</div>
-      <h3>OmniAudio</h3>
-      <p>AI 稍后再听服务，将网页文章、文档转化为私人播客，生成可直接在 Podcast 应用中订阅收听的 Feed URL，让你随时随地，轻松畅听信息。</p>
-      <span class="read-more">访问网站 →</span>
+      <div class="card-header">
+        <div class="card-icon"><img src="/images/projects/omniaudio.png" alt="OmniAudio" loading="lazy"></div>
+        <h3>OmniAudio</h3>
+        <span class="card-arrow">→</span>
+      </div>
+      <p>AI 稍后再听服务，将网页文章、文档转化为私人播客，可直接在你常用的 Podcast 应用里订阅收听，让你随时随地，轻松畅听信息。</p>
     </div>
   </a>
 
   <a href="https://copyurl.houjoe.me/" class="bento-card software">
     <div class="card-content">
-      <div class="card-icon">🔗</div>
-      <h3>CopyURL</h3>
+      <div class="card-header">
+        <div class="card-icon"><img src="/images/projects/copyurl.png" alt="CopyURL" loading="lazy"></div>
+        <h3>CopyURL</h3>
+        <span class="card-arrow">→</span>
+      </div>
       <p>一款浏览器插件，支持快速将网页链接复制为多种格式并可检测移除链接里的追踪码，方便网页链接的分享。</p>
-      <span class="read-more">访问网站 →</span>
+    </div>
+  </a>
+
+  <a href="https://community.obsidian.md/plugins/spark-memo" class="bento-card software">
+    <div class="card-content">
+      <div class="card-header">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/></svg></div>
+        <h3>Spark Memo</h3>
+        <span class="card-arrow">→</span>
+      </div>
+      <p>一款 Obsidian 日记插件。你只管拍照，插件会自动读出照片里的时间和地点，还原成当时的想法，最后汇聚成一张属于你的足迹地图。</p>
+    </div>
+  </a>
+</div>
+
+## 🔧 我的日常工具包
+
+<p class="toolkit-description">定期整理自己在用的软硬件工具，方便断舍离，减少不必要的分心。</p>
+
+<div class="bento-container toolkit-cards">
+  <a href="/posts/current-software-hardware-toolkit/" class="bento-card software toolkit-card">
+    <div class="card-content">
+      <div class="card-icon">📱</div>
+      <h3>软件工具</h3>
+      <p>我日常使用的各类软件工具，包括记录与文档、浏览器、任务管理、阅读、音乐、AI 助手等</p>
+      <span class="read-more">查看详情 →</span>
+    </div>
+  </a>
+  
+  <a href="/posts/current-software-hardware-toolkit/#硬件部分" class="bento-card hardware toolkit-card">
+    <div class="card-content">
+      <div class="card-icon">💻</div>
+      <h3>硬件装备</h3>
+      <p>我的随身和随车硬件装备，包括电脑、耳机、手机、无人机、折叠自行车等</p>
+      <span class="read-more">查看详情 →</span>
     </div>
   </a>
 </div>
