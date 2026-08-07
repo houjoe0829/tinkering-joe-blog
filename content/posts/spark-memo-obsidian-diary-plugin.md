@@ -11,15 +11,15 @@ author: "Joe"
 
 对于记录，我自己的习惯是先拍照，再补文字。当下来不及写，拍一张就等于先占住了那一刻，隔几天再回来补也不怕漏。Spark Memo 就是从这儿来的：添加图片时自动读取照片里的时间和地理位置，可以回到当初那个时间、那个地方。
 
-![添加图片时自动读取照片的时间与地理位置](/images/posts/spark-memo-obsidian-diary-plugin/memo-photo-meta.webp)
+<img src="/images/posts/spark-memo-obsidian-diary-plugin/memo-photo-meta.webp" alt="添加图片时自动读取照片的时间与地理位置" style="width: 443px; max-width: 100%; margin: 1rem auto;" />
 
 而且，所有带地理位置的想法会聚合成一张足迹地图。下图是我的 2733 条 Memos 铺开之后的样子。
 
-<img src="/images/posts/spark-memo-obsidian-diary-plugin/footprint-map.webp" alt="足迹地图" style="width: 50%; display: block; margin: 0 auto;" />
+<img src="/images/posts/spark-memo-obsidian-diary-plugin/footprint-map.webp" alt="足迹地图" style="width: 441px; max-width: 100%; margin: 1rem auto;" />
 
 如果你坚持记录，还可以看到每天的进步，以热力图的形式来标记。
 
-<img src="/images/posts/spark-memo-obsidian-diary-plugin/heatmap.webp" alt="记录热力图" style="width: 50%; display: block; margin: 0 auto;" />
+<img src="/images/posts/spark-memo-obsidian-diary-plugin/heatmap.webp" alt="记录热力图" style="width: 444px; max-width: 100%; margin: 1rem auto;" />
 
 ## 为什么要做它？
 
@@ -71,9 +71,9 @@ author: "Joe"
 
 这个是我的番茄钟工具 Flow，之前在我的 Nas 的 Docker 上。
 
-<img src="/images/posts/spark-memo-obsidian-diary-plugin/flow-1.webp" alt="番茄钟工具 Flow" style="width: 50%; display: block; margin: 0 auto;" />
+<img src="/images/posts/spark-memo-obsidian-diary-plugin/flow-1.webp" alt="番茄钟工具 Flow" style="width: 444px; max-width: 100%; margin: 1rem auto;" />
 
-<img src="/images/posts/spark-memo-obsidian-diary-plugin/flow-2.webp" alt="Flow 的统计界面" style="width: 50%; display: block; margin: 0 auto;" />
+<img src="/images/posts/spark-memo-obsidian-diary-plugin/flow-2.webp" alt="Flow 的统计界面" style="width: 445px; max-width: 100%; margin: 1rem auto;" />
 
 这有两个有趣的结果。
 
