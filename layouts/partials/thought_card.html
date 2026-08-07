@@ -1,7 +1,6 @@
-{{- $cleanedContent := .RawContent | replaceRE "{{< link .*? >}}" "" -}}
-{{- $plainContent := $cleanedContent | plainify | htmlUnescape -}}
+{{- $plainContent := partial "summary_text.html" . -}}
 {{- $needsExpand := gt (len $plainContent) 200 -}}
-{{- $summary := $plainContent | truncate 200 -}}
+{{- $summary := $plainContent | truncate 200 "" -}}
 
 <article class="post-entry thought-entry" data-thought-id="{{ .File.UniqueID }}">
   <header class="entry-header">

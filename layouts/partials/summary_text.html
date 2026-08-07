@@ -1,0 +1,13 @@
+{{/*
+  生成列表卡片用的纯文本摘要。
+  用渲染后的 .Content（HTML）而非 .RawContent（Markdown），
+  这样链接只保留文字、图片直接消失，不会漏出 Markdown 语法。
+  额外剔除：书签卡片（会把网址当正文显示）、图片/图注、代码块。
+*/}}
+{{- $html := .Content -}}
+{{- $html = $html | replaceRE `(?s)<div class="bookmark-container">.*?</a>\s*</div>` " " -}}
+{{- $html = $html | replaceRE `(?s)<figure.*?</figure>` " " -}}
+{{- $html = $html | replaceRE `(?s)<pre.*?</pre>` " " -}}
+{{- $text := $html | plainify | htmlUnescape -}}
+{{- $text = $text | replaceRE `\s+` " " | strings.TrimSpace -}}
+{{- return $text -}}

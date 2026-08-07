@@ -104,9 +104,8 @@
     </header>
     <div class="entry-content">
       {{- if (ne (.Param "hideSummary") true) }}
-        {{ $cleanedContent := .RawContent | replaceRE "\\{\\{<\\s*link\\s+[^>]*>\\}\\}" "" }}
-        {{ $summary := $cleanedContent | plainify | htmlUnescape | truncate 150 }}
-        <p>{{ $summary }}{{ if gt (len ($cleanedContent | plainify | htmlUnescape)) 150 }}...{{ end }}</p>
+        {{ $plainContent := partial "summary_text.html" . }}
+        <p>{{ $plainContent | truncate 150 "" }}{{ if gt (len $plainContent) 150 }}...{{ end }}</p>
       {{- end }}
     </div>
     {{- if not (.Param "hideMeta") }}

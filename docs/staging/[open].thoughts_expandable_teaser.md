@@ -20,7 +20,7 @@
 
 ## 3. 技术实现要点
 - **模板 (`layouts/partials/thought_card.html`)**：
-  - 通过 `replaceRE` 去除 `{{< link >}}` 短代码，再 `plainify` 与 `htmlUnescape` 计算字符长度；判定 `len > 200` 时输出预览/全文双容器。
+  - 调用 `layouts/partials/summary_text.html` 取纯文本摘要（基于渲染后的 `.Content`，剔除书签卡片、图片与代码块后再 `plainify`、`htmlUnescape` 并压缩空白），据此计算字符长度；判定 `len > 200` 时输出预览/全文双容器。
   - 为文章元素添加 `data-thought-id`，并在全文容器中包裹 `.thought-body.post-content` 与 `.thought-actions`。
 - **脚本 (`assets/js/thought-expand.js`)**：
   - DOMContentLoaded 后初始化所有 `.thought-entry`，为每个卡片绑定展开、键盘触发、防止冒泡等逻辑。
