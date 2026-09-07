@@ -151,6 +151,19 @@
     margin-bottom: 0;
   }
 
+  /* 描述中的行内链接，与博文正文保持一致 */
+  .post-description a {
+    box-shadow: 0 1px 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    transition: box-shadow 0.2s ease, color 0.2s ease;
+  }
+
+  .post-description a:hover {
+    box-shadow: 0 2px 0;
+    color: var(--primary);
+  }
+
   .sky-eye-detail {
     display: flex;
     flex-direction: column;
