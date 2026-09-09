@@ -225,6 +225,23 @@ ls -lh static/images/sky-eye/your-file-name-thumb.jpg
 
 这会在博文中插入一个交互式的全景图预览卡片。
 
+### 全屏查看器的数据来源
+
+点击文章里的全景图会跳到 `static/sky-eye-viewer.html`，链接格式为：
+
+```
+/sky-eye-viewer.html?p=文件名
+```
+
+`p` 就是这篇文章的 Markdown 文件名（不含 .md）。查看器拿到它之后，会请求 `/sky-eye/文件名/index.json`，从中读取标题、描述和全景图路径。这份 JSON 由 `content/sky-eye/_index.md` 的 cascade 配置开启输出，模板是 `layouts/sky-eye/single.json.json`。
+
+需要注意的三点：
+- 重命名 sky-eye 的 Markdown 文件会让已分享出去的查看器链接失效，因为 JSON 地址跟着变了
+- 描述字段允许写 `<a>`、`<br>`、`<strong>`、`<em>` 这几个标签，查看器会按白名单还原成 HTML，其余标签一律当纯文字显示
+- 描述里的站内链接写相对路径（`/sky-eye/xxx/`）而不是完整域名，本地开发时才能正常跳转
+
+早期版本把标题和整段描述直接塞在 URL 查询参数里，中文编码后链接长达两千多字符，已于 v1.1 改为上面的方式，旧参数写法仍然兼容。
+
 ## 故障排除
 
 ### 图片无法加载
@@ -265,4 +282,5 @@ ls -lh static/images/sky-eye/your-file-name-thumb.jpg
 ## 版本历史
 
 - **v1.0**（2025-10-04）：初始版本，建立完整的天空之眼图片添加流程规范
+- **v1.1**（2026-09-09）：补充全屏查看器的数据来源说明，查看器链接改为 `?p=文件名` 并通过 JSON 获取信息
 

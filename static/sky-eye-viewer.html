@@ -218,6 +218,16 @@
       overflow: visible;
     }
 
+    .panorama-desc-text a {
+      color: #7ec1ff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .panorama-desc-text a:hover {
+      color: #a8d5ff;
+    }
+
     .panorama-desc-toggle {
       margin-top: 6px;
       color: #7ec1ff;
@@ -301,7 +311,7 @@
   </div>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', async function() {
       // 显示错误信息
       function showError(message) {
         const errorContainer = document.getElementById('error-container');
@@ -315,20 +325,42 @@
       
       // 从 URL 查询参数中获取全景照片路径和标题
       const urlParams = new URLSearchParams(window.location.search);
-      const panoramaPath = urlParams.get('panorama');
-      const pageTitle = urlParams.get('title') || '全景照片';
-      const returnUrl = urlParams.get('return') || '/sky-eye/';
-      const pageDesc = urlParams.get('desc') || '';
+      // 新写法：?p=slug，信息由对应文章的 JSON 提供，URL 因此很短
+      // 旧写法：panorama / title / return / desc 四个参数，保留以兼容已分享出去的长链接
+      let panoramaPath, pageTitle, returnUrl, pageDesc;
+      const slug = urlParams.get('p');
+      if (slug) {
+        if (!/^[a-z0-9-]+$/i.test(slug)) {
+          showError('全景照片标识无效');
+          return;
+        }
+        try {
+          const resp = await fetch('/sky-eye/' + slug + '/index.json');
+          if (!resp.ok) throw new Error(resp.status);
+          const meta = await resp.json();
+          panoramaPath = meta.panorama_image || '';
+          pageTitle = meta.title || '全景照片';
+          returnUrl = meta.url || ('/sky-eye/' + slug + '/');
+          pageDesc = meta.description || '';
+        } catch (e) {
+          console.error('加载全景信息失败:', e);
+          showError('未找到这张全景照片的信息');
+          return;
+        }
+      } else {
+        panoramaPath = urlParams.get('panorama') || '';
+        pageTitle = urlParams.get('title') || '全景照片';
+        returnUrl = urlParams.get('return') || '/sky-eye/';
+        pageDesc = urlParams.get('desc') || '';
+      }
       
       // 设置返回按钮
-      const decodedReturnUrl = decodeURIComponent(returnUrl);
-      document.getElementById('back-button').href = decodedReturnUrl;
+      document.getElementById('back-button').href = returnUrl;
 
       // 设置顶部标题
-      const decodedTitle = decodeURIComponent(pageTitle);
       const titleEl = document.getElementById('panorama-title');
-      if (decodedTitle && decodedTitle !== '全景照片') {
-        titleEl.textContent = decodedTitle;
+      if (pageTitle && pageTitle !== '全景照片') {
+        titleEl.textContent = pageTitle;
         titleEl.style.display = 'block';
       }
 
@@ -353,9 +385,26 @@
           }
         });
 
-        const decodedDesc = pageDesc ? decodeURIComponent(pageDesc) : '';
-        if (decodedDesc) {
-          descText.textContent = decodedDesc;
+        // 描述可能来自 URL 参数，必须先转义再按白名单放行少量标签，避免 XSS
+        function sanitizeDesc(raw) {
+          const escaped = raw
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+          return escaped
+            .replace(/&lt;(\/?)(br|strong|em)\s*\/?&gt;/gi, function(m, slash, tag) {
+              return '<' + slash + tag.toLowerCase() + '>';
+            })
+            .replace(/&lt;a\s+href=&quot;([^&"'<>\s]+)&quot;\s*&gt;/gi, function(m, href) {
+              if (!/^(https?:\/\/|\/(?!\/)|#)/i.test(href)) return '';
+              return '<a href="' + href + '" target="_blank" rel="noopener noreferrer">';
+            })
+            .replace(/&lt;\/a&gt;/gi, '</a>');
+        }
+
+        if (pageDesc) {
+          descText.innerHTML = sanitizeDesc(pageDesc);
           descBox.classList.remove('hidden');
           requestAnimationFrame(function() {
             if (descText.scrollHeight - descText.clientHeight > 1) {
@@ -371,7 +420,7 @@
       }
       
       // 构建完整的全景照片 URL
-      let panoramaUrl = decodeURIComponent(panoramaPath);
+      let panoramaUrl = panoramaPath;
       if (panoramaUrl.startsWith('/')) {
         panoramaUrl = window.location.origin + panoramaUrl;
       }
