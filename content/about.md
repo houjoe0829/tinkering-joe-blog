@@ -18,9 +18,7 @@ Hi，我是 Joe，一个不知名的产品经理，暂居武汉。主业与兴�
   <span class="tag" data-color="red"><i class="tag-icon">🚁</i>无人机机长</span>
   <span class="tag" data-color="blue"><i class="tag-icon">🎮</i>主机游戏玩家</span>
   <span class="tag" data-color="purple"><i class="tag-icon">🐱</i>有个流浪猫</span>
-  <span class="tag" data-color="green"><i class="tag-icon">🏙️</i>江浙沪包游中</span>
   <span class="tag" data-color="orange"><i class="tag-icon">🚲</i>骑行新手</span>
-  <span class="tag" data-color="red"><i class="tag-icon">🚗</i>顺风车司机</span>
 </div>
 
 长期涉足的产品领域：编辑器、协同文档、笔记工具、白板，以及 AI。

@@ -101,12 +101,8 @@ author: "Joe"
 <td>当做微信渠道信息发布平台，主要是分享生活和想法</td>
 </tr>
 <tr>
-<td><strong><a href="https://www.notion.so/">Notion</a></strong></td>
-<td>最佳 Wiki 工具，既可以关联 Whimsical，还可以作为 Claude Code、ChatGPT 的上下文，基于官方的 MCP</td>
-</tr>
-<tr>
-<td><strong><a href="https://whimsical.com/">Whimsical</a></strong></td>
-<td>白板工具，各种画图，比如思维导图、原型图和流程图，缺少移动端是个遗憾，但是好用且可免费使用</td>
+<td><strong><a href="https://obsidian.md/">Obsidian</a></strong></td>
+<td>高度可自定义的个人笔记工具，所有 Agent 的上下文和工作台，最终可以发布到网页（部署在 Nas）上或者飞书文档</td>
 </tr>
 </tbody>
 </table>
@@ -126,8 +122,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong>Chrome</strong></td>
-<td>很无聊，但最稳定朴实的浏览器。</td>
+<td><strong>Aside</strong></td>
+<td>Chromium 内核，但支持 CLI 调用，方便 Agent 直接操作浏览器</td>
 </tr>
 </tbody>
 </table>
@@ -180,8 +176,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://dida365.com/">滴答清单</a></strong></td>
-<td>该有的功能都有，性价比很高，一直在稳定更新中，是目前主力的任务管理工具。</td>
+<td><strong><a href="https://culturedcode.com/things/">Things 3</a></strong></td>
+<td>简约好看的任务管理工具，可以很方便被 Agent 读取和操作</td>
 </tr>
 </tbody>
 </table>
@@ -203,8 +199,8 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://netnewswire.com/">NetNewsWire</a></strong></td>
-<td>Folo 已经自暴自弃了，Reeder Classic 已经不怎么维护了，免费的 NetNewsWire 是最具性价比的选择了</td>
+<td><strong>Obsidian</strong></td>
+<td>已经放弃了第三方的 RSS reader，自己做了一个插件放在 Obsidian 里，还可以基于 Obsidian 跨平台同步</td>
 </tr>
 <tr>
 <td><strong>微信读书</strong></td>
@@ -219,12 +215,8 @@ author: "Joe"
 <td>什么都能找到</td>
 </tr>
 <tr>
-<td><strong><a href="https://dida365.com/">滴答清单</a></strong></td>
-<td>也用滴答清单放置待看清单</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.xiaoyuzhoufm.com/">小宇宙</a></strong></td>
-<td>国内播客 App，生态越来越好了，主要是想看国内播客的评论</td>
+<td><strong><a href="https://pocketcasts.com/">Pocket Casts</a></strong></td>
+<td>跨平台的播客客户端，没有内容审核</td>
 </tr>
 <tr>
 <td><strong><a href="https://omniaudio.info/">OmniAudio</a></strong></td>
@@ -281,28 +273,16 @@ author: "Joe"
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://www.notion.so/ai">Notion AI</a></strong></td>
-<td>感觉 Notion AI 可选择 Claude、Gemini 或者 ChatGPT 之后，可用性在持续增加，现在已经作为主力，问问题、写方案、整理思考，都可以让 Notion AI 辅助</td>
-</tr>
-<tr>
 <td><strong><a href="https://claude.com/product/claude-code">Claude Code</a></strong></td>
 <td>每月 100刀，但很值。</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.lovart.ai">Lovart</a></strong></td>
-<td>经常用 Lovart 做一些内容的配图，免费用量也很慷慨，够我每天使用的额度了。</td>
 </tr>
 <tr>
 <td><strong><a href="https://www.doubao.com/chat/">豆包</a></strong></td>
 <td>适合回答"是什么"的问题，可以快速耳机唤醒，参考<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a></td>
 </tr>
 <tr>
-<td><strong>豆包输入法</strong></td>
-<td>手机上使用，算是单点改变我的输入习惯的输入法，大幅提升输入带宽。</td>
-</tr>
-<tr>
 <td><strong>Typeless</strong></td>
-<td>体验极佳、开箱即用的语音输入工具，极大地扩展了电脑端的输出带宽，已成为使用频率最高的工具之一。手机端短平快的场景仍以豆包输入法为主，两者形成互补。</td>
+<td>体验极佳、开箱即用的语音输入工具，极大地扩展了电脑端的输出带宽，已成为使用频率最高的工具之一</td>
 </tr>
 </tbody>
 </table>
@@ -347,10 +327,6 @@ author: "Joe"
 <tr>
 <td><strong><a href="https://www.zspace.cn/">极空间 Nas</a></strong></td>
 <td>备份照片、视频和文件</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.resilio.com/sync/">Resilio Sync</a></strong></td>
-<td>免费的去中心化同步，主要用来同步游戏主机里的游戏截图到 Nas 里的极相册</td>
 </tr>
 <tr>
 <td><strong>Google Photos</strong></td>
@@ -405,10 +381,6 @@ author: "Joe"
 <tr>
 <td><strong>QuantumltX</strong></td>
 <td>可参考<a href="/posts/quantumult-x-guide/">《最简约的科学上网方案：Quantumlt X》</a>，备用工具是 Shadowrocket，可参考<a href="/posts/shadowrocket-guide/">《性价比最高的科学上网方案：Shadowrocket》</a></td>
-</tr>
-<tr>
-<td><strong>Clash Verge</strong></td>
-<td>在我的 Windows 游戏主机上使用，<a href="https://github.com/clash-verge-rev/clash-verge-rev">GitHub 项目地址</a></td>
 </tr>
 </tbody>
 </table>
@@ -504,16 +476,12 @@ author: "Joe"
 <td>下定决心从 Pro 切换回了 Air，虽然只轻了 360 克左右，但是明显轻便很多</td>
 </tr>
 <tr>
-<td><strong>Apple AirPods Max</strong></td>
-<td>多设备不用再手动切换，无缝衔接的体验太好了，还不需要开关机，使用简单，降噪也不错，主要是线上会议、日常补觉场景</td>
+<td><strong>Apple AirPods 5</strong></td>
+<td>佩戴舒适，还增加了降噪，外出开会非常适合</td>
 </tr>
 <tr>
 <td><strong>iPhone 16 Pro</strong></td>
 <td>用不了 Pro Max 了，这个尺寸和重量也是刚刚好</td>
-</tr>
-<tr>
-<td><strong>豆包的 Ola friend 耳机</strong></td>
-<td>特意为了它写个文章：<a href="/posts/ola-friend-ai-earphone/">《自驾和骑行的新伴侣：AI 耳机》</a>，依然是开车、骑车、出行的耳机必备</td>
 </tr>
 <tr>
 <td><strong>华米 Active Edge 手表</strong></td>
@@ -524,12 +492,16 @@ author: "Joe"
 <td>始终保持敲键盘永远很舒服的指甲长度</td>
 </tr>
 <tr>
-<td><strong>苹果 Magic Mouse</strong></td>
-<td>多任务的情况下，还是苹果的鼠标更丝滑，多窗口切换，一个手势搞定，兜兜转转回到了原点。</td>
-</tr>
-<tr>
 <td><strong>Anker 超大能量舱</strong></td>
 <td>两万五千毫安超大充电宝，自己补电很快，输出功率也很高，完全解决了电量焦虑，充手机、无人机、电脑，等等</td>
+</tr>
+<tr>
+<td><strong>小米磁吸音箱</strong></td>
+<td>可以通过磁吸吸附在手机后面，还可以作为手机支架</td>
+</tr>
+<tr>
+<td><strong>iPad mini</strong></td>
+<td>看书和远程控制电脑的最佳设备</td>
 </tr>
 </tbody>
 </table>
