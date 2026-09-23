@@ -104,6 +104,10 @@ author: "Joe"
 <td><strong><a href="https://obsidian.md/">Obsidian</a></strong></td>
 <td>高度可自定义的个人笔记工具，所有 Agent 的上下文和工作台，最终可以发布到网页（部署在 Nas）上或者飞书文档</td>
 </tr>
+<tr>
+<td><strong><a href="/posts/spark-memo-obsidian-diary-plugin/">Spark Memo</a></strong></td>
+<td>我自己构建的 Obsidian 日记插件，减轻记录的压力，同时，也更容易被 Agent 读写</td>
+</tr>
 </tbody>
 </table>
 
