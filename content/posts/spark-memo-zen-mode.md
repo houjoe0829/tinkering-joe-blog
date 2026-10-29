@@ -7,7 +7,7 @@ tags: ["造物笔记", "折腾软硬件"]
 title: "日记插件 Spark Memo 更新了 Zen 模式"
 ---
 
-Spark Memo 算是 Obsidian 上最好看的日记插件之一了，我自己封的。
+[Spark Memo](https://community.obsidian.md/plugins/spark-memo) 算是 Obsidian 上最好看的日记插件之一了，我自己封的。
 
 最近想起来更新一下它，是因为有海外用户发来了问题反馈，没想到在社区有 2k 的下载量，虽然不多，也算是零的突破。
 
