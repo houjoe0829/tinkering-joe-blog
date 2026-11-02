@@ -1050,6 +1050,16 @@ pre code {
     }
 }
 
+/* 正文图片使用双层柔和阴影形成悬浮感，不改变尺寸、间距或交互。 */
+.post-content img:not(.site-favicon, .in-text, .no-zoom, .sky-eye-embed img, .sky-eye-detail img) {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* 深色主题加强黑色阴影，不增加发光描边。 */
+.dark .post-content img:not(.site-favicon, .in-text, .no-zoom, .sky-eye-embed img, .sky-eye-detail img) {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), 0 12px 28px rgba(0, 0, 0, 0.38);
+}
+
 /* PhotoSwipe 图片放大链接：去掉文字链接的下划线样式 */
 .post-content a.post-image-zoom {
     box-shadow: none;
