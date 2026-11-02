@@ -4,7 +4,7 @@ date: 2026-11-02T12:11:46+08:00
 description: "Claude 账号被封后，我重新搭建了自己的 AI 工作流，尝试让个人积累独立于模型保留下来。"
 draft: false
 tags: ["AI 相关", "折腾软硬件"]
-title: "Claude 被封之后，我开始重新设计自己的工作流"
+title: "Claude 被封之后，我开始重建自己的工作流"
 ---
 
 最近不少人的 Claude 账号被封了，包括我自己。
