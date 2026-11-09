@@ -74,7 +74,6 @@ params:
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: "bottom"
-    theme: "preferred_color_scheme"
     lang: "zh-CN"
   
   # 搜索功能配置

@@ -2,24 +2,26 @@
 
 ## 概述
 
-本站点使用主题 PaperMod 的默认字体方案，以 **Noto Sans SC**（思源黑体）为主字体，兼顾现代感与中文阅读体验。
+本站点以 Noto Serif SC（思源宋体）为全站标题和正文字体，通过 Google Fonts 加载。
 
 ## 字体栈配置
 
 ### 全局字体
 
-由主题 `reset.css` 定义：
+由 `assets/css/extended/custom.css` 定义，正文采用 500 字重，标题采用 700 字重：
 
 ```css
-font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK",
+             "Source Han Serif SC", "source-han-serif-sc",
+             "Times New Roman", "Georgia", serif;
 ```
 
-**字体优先级说明:**
-1. **Noto Sans SC** - 思源黑体简体中文版，主要中文字体
-2. **-apple-system / BlinkMacSystemFont** - macOS/iOS 系统字体
-3. **Segoe UI** - Windows 系统字体
-4. **Roboto** - Android 系统字体
-5. **sans-serif** - 系统默认无衬线字体兜底
+字体优先级说明：
+1. Noto Serif SC、Noto Serif：主要字体。
+2. Noto Serif CJK SC、Noto Serif CJK：Noto CJK 宋体备用字体。
+3. Source Han Serif SC、source-han-serif-sc：思源宋体备用字体。
+4. Times New Roman、Georgia：西文备用字体。
+5. serif：系统默认衬线字体。
 
 ### 代码字体
 
@@ -98,3 +100,4 @@ color: var(--content);
 字体配置主要在以下文件中：
 - `/themes/PaperMod/assets/css/core/reset.css` - 全局字体定义（主题默认）
 - `/assets/css/extended/custom.css` - 自定义样式扩展
+- `/assets/css/giscus.css`：评论区单独加载思源宋体，沿用全站字体栈和正文 500 字重。

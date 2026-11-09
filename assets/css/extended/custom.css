@@ -53,9 +53,20 @@
 /* 全局字体设置 */
 body,
 html {
+    font-family: "Noto Serif SC", "Noto Serif", "Noto Serif CJK SC", "Noto Serif CJK",
+                 "Source Han Serif SC", "source-han-serif-sc",
+                 "Times New Roman", "Georgia", serif;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--content);  /* 使用主题的内容颜色变量,确保颜色足够深 */
+}
+
+/* 标题沿用宋体，恢复原先的字重 */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-header h2 {
+    font-weight: 700;
 }
 
 /* 正文字体 */
@@ -97,7 +108,7 @@ pre code {
 }
 
 .post-header .post-title {
-    font-size: 24px !important;  /* 与首页博客列表标题大小一致 */
+    font-size: 24px !important;  /* 文章详情页标题 */
     margin-bottom: 2px;
 }
 
@@ -111,7 +122,7 @@ pre code {
 
 /* 调整文章头部整体间距 */
 .post-header {
-    margin-bottom: 3rem;
+    margin-bottom: 24px;
 }
 
 /* 调整面包屑导航的间距 */
@@ -130,10 +141,14 @@ pre code {
     margin-top: 1rem;
 }
 
+.post-header .post-meta {
+    margin-bottom: 0;
+}
+
 /* 确保移动端也有良好的间距 */
 @media screen and (max-width: 768px) {
     .post-header {
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
     }
     
     .nav.breadcrumbs {
@@ -502,6 +517,10 @@ pre code {
   }
 }
 
+.post-entry .entry-header h2 {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 640px) {
   .post-entry .entry-header h2 {
     font-size: 18px;
@@ -510,6 +529,110 @@ pre code {
 
   .post-entry .sky-eye-entry-content-wrapper .entry-header .sky-eye-home-card-title {
     font-size: 18px;
+  }
+}
+
+/* 文章末尾的订阅与支持入口 */
+.giscus {
+  padding-top: 24px;
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.post-action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 104px;
+  min-height: 40px;
+  padding: 8px 20px;
+  border: 2px solid var(--primary);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--primary);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.post-support-link {
+  background: var(--primary);
+  color: var(--theme);
+}
+
+.post-action:hover {
+  opacity: 0.8;
+}
+
+.post-action:focus-visible,
+.post-subscription-links a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.post-subscription-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+}
+
+.post-subscription-links[hidden] {
+  display: none;
+}
+
+.post-subscription-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--theme);
+  color: var(--primary);
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.post-subscription-links svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.post-subscription-links a:hover {
+  border-color: var(--primary);
+}
+
+@media screen and (max-width: 640px) {
+  .post-subscription-links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-items: center;
+  }
+
+  .post-action,
+  .post-subscription-links a {
+    min-height: 44px;
+  }
+
+  .giscus {
+    padding-top: 16px;
   }
 }
 
@@ -946,6 +1069,67 @@ pre code {
 
 .toc-mobile {
     display: block;
+}
+
+.contact-sidebar {
+    display: none;
+}
+
+/* 宽屏列表页的订阅入口沿用目录侧栏的位置与卡片样式 */
+@media screen and (min-width: 1280px) {
+    .header.has-contact-sidebar #menu .contact-menu-item {
+        display: none;
+    }
+
+    .contact-sidebar {
+        display: block;
+        position: fixed;
+        left: calc(50% + var(--main-width) / 2 + 40px);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 220px;
+        max-height: calc(100vh - var(--header-height) * 2 - 48px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--tertiary) transparent;
+    }
+
+    .contact-sidebar-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-sidebar-nav li {
+        margin: 6px 0;
+    }
+
+    .contact-sidebar-nav a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--secondary);
+    }
+
+    .contact-sidebar-nav a:hover,
+    .contact-sidebar-nav a:focus-visible {
+        color: var(--primary);
+    }
+
+    .contact-sidebar-nav a:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+        border-radius: 4px;
+    }
+
+    .contact-sidebar-nav svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
 }
 
 /* 桌面端：启用侧边栏布局 (≥1200px) */
