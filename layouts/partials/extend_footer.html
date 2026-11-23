@@ -48,19 +48,171 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-{{- /* PhotoSwipe 初始化：正文图片点击放大，原生支持移动端双指捏合缩放、双击缩放、拖动平移 */ -}}
+{{- /* PhotoSwipe 初始化：正文图片点击放大，自动补齐真实宽高比，支持图注与极简交互 */ -}}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    if (typeof PhotoSwipeLightbox === 'undefined' || typeof PhotoSwipe === 'undefined') return;
-    var lightbox = new PhotoSwipeLightbox({
-        gallery: '.post-content',
-        children: 'a.post-image-zoom',
-        pswpModule: PhotoSwipe,
-        bgOpacity: 0.85,
-        showHideAnimationType: 'zoom',
-    });
-    lightbox.init();
-});
+(function() {
+    var initialized = false;
+
+    function syncImageSize(link, img) {
+        if (!link || !img) return false;
+        if (img.naturalWidth > 0 && img.naturalHeight > 0) {
+            link.setAttribute('data-pswp-width', String(img.naturalWidth));
+            link.setAttribute('data-pswp-height', String(img.naturalHeight));
+            return true;
+        }
+        return false;
+    }
+
+    function resolveCaption(link) {
+        if (!link) return '';
+        var parent = link.parentElement;
+        var nextEl = (parent && parent.tagName === 'P') ? parent.nextElementSibling : link.nextElementSibling;
+        if (nextEl && nextEl.tagName === 'DIV') {
+            var em = nextEl.querySelector('em');
+            if (em && em.textContent.trim()) {
+                return em.textContent.trim();
+            }
+        }
+        var img = link.querySelector('img');
+        return (img && img.alt) ? img.alt.trim() : '';
+    }
+
+    function initPostImageLightbox() {
+        if (initialized) return;
+        if (typeof PhotoSwipeLightbox === 'undefined' || typeof PhotoSwipe === 'undefined') return;
+
+        var galleries = document.querySelectorAll('.post-content');
+        if (galleries.length === 0) return;
+
+        initialized = true;
+
+        galleries.forEach(function(gallery) {
+            // 自动包裹未包在 <a> 内的正文图片，统一支持点击放大
+            var rawImgs = gallery.querySelectorAll('img:not(.site-favicon):not(.in-text):not(.no-zoom)');
+            rawImgs.forEach(function(img) {
+                if (img.closest('.sky-eye-embed, .sky-eye-detail')) return;
+                var existingAnchor = img.closest('a');
+                if (existingAnchor) {
+                    if (existingAnchor.classList.contains('post-image-zoom')) {
+                        syncImageSize(existingAnchor, img);
+                        if (!img.complete) {
+                            img.addEventListener('load', function() { syncImageSize(existingAnchor, img); }, { once: true });
+                        }
+                    }
+                    return;
+                }
+                var src = img.getAttribute('src');
+                if (!src) return;
+                var anchor = document.createElement('a');
+                anchor.href = src;
+                anchor.className = 'post-image-zoom';
+                anchor.target = '_blank';
+                anchor.rel = 'noopener';
+                img.parentNode.insertBefore(anchor, img);
+                anchor.appendChild(img);
+                syncImageSize(anchor, img);
+                if (!img.complete) {
+                    img.addEventListener('load', function() { syncImageSize(anchor, img); }, { once: true });
+                }
+            });
+        });
+
+        var lightbox = new PhotoSwipeLightbox({
+            gallery: '.post-content',
+            children: 'a.post-image-zoom',
+            pswpModule: PhotoSwipe,
+            bgOpacity: 1,
+            zoom: false,
+            wheelToZoom: true,
+            showHideAnimationType: 'zoom',
+            imageClickAction: 'zoom',
+            tapAction: 'close',
+            paddingFn: function(viewportSize) {
+                if (viewportSize.x < 768) {
+                    return { top: 56, bottom: 64, left: 16, right: 16 };
+                }
+                return { top: 56, bottom: 72, left: 72, right: 72 };
+            }
+        });
+
+        // 在读取每个 slide 数据时，确保拿到真实图片宽高，防止比例失真
+        lightbox.addFilter('domItemData', function(itemData, element) {
+            var img = element.querySelector('img');
+            if (img && img.naturalWidth > 0 && img.naturalHeight > 0) {
+                itemData.w = img.naturalWidth;
+                itemData.h = img.naturalHeight;
+                element.setAttribute('data-pswp-width', String(img.naturalWidth));
+                element.setAttribute('data-pswp-height', String(img.naturalHeight));
+            }
+            return itemData;
+        });
+
+        // 兜底：懒加载图片在灯箱中首次加载完成时，同步修正真实宽高比
+        lightbox.on('contentLoadImage', function(e) {
+            var content = e.content;
+            if (!content || !content.element) return;
+            var imgEl = content.element;
+            var applyRealSize = function() {
+                if (imgEl.naturalWidth > 0 && imgEl.naturalHeight > 0) {
+                    if (content.data.w !== imgEl.naturalWidth || content.data.h !== imgEl.naturalHeight) {
+                        content.data.w = imgEl.naturalWidth;
+                        content.data.h = imgEl.naturalHeight;
+                        if (content.data.element) {
+                            content.data.element.setAttribute('data-pswp-width', String(imgEl.naturalWidth));
+                            content.data.element.setAttribute('data-pswp-height', String(imgEl.naturalHeight));
+                        }
+                        if (lightbox.pswp) {
+                            lightbox.pswp.refreshSlideContent(content.index);
+                        }
+                    }
+                }
+            };
+            if (imgEl.complete) {
+                applyRealSize();
+            } else {
+                imgEl.addEventListener('load', applyRealSize, { once: true });
+            }
+        });
+
+        // 注册底部极简图注，单图时隐藏计数器
+        lightbox.on('uiRegister', function() {
+            var pswp = lightbox.pswp;
+            if (pswp && pswp.getNumItems() <= 1 && pswp.element) {
+                pswp.element.classList.add('pswp--single-item');
+            }
+            pswp.ui.registerElement({
+                name: 'custom-caption',
+                order: 9,
+                isButton: false,
+                appendTo: 'root',
+                html: '',
+                onInit: function(el, pswpInstance) {
+                    pswpInstance.on('change', function() {
+                        var currSlide = pswpInstance.currSlide;
+                        var triggerEl = currSlide && currSlide.data ? currSlide.data.element : null;
+                        var text = resolveCaption(triggerEl);
+                        if (text) {
+                            el.textContent = text;
+                            el.style.display = '';
+                        } else {
+                            el.textContent = '';
+                            el.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        lightbox.init();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPostImageLightbox);
+    } else {
+        initPostImageLightbox();
+    }
+    window.addEventListener('load', initPostImageLightbox);
+})();
 </script>
 
 {{- /* Footer custom content area end */ -}}

@@ -1250,6 +1250,143 @@ pre code {
     cursor: zoom-in;
 }
 
+/* PhotoSwipe 灯箱极简视觉优化（使用双类名提升优先级，覆盖后加载的 photoswipe.css） */
+.pswp .pswp__bg {
+    background: rgba(14, 16, 20, 0.92);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+
+.pswp .pswp__img {
+    border-radius: 8px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.pswp .pswp__top-bar {
+    padding: 16px 20px;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pswp .pswp__counter {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 13px;
+    margin: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.pswp.pswp--single-item .pswp__counter {
+    display: none;
+}
+
+.pswp .pswp__button--close,
+.pswp .pswp__button--arrow--prev,
+.pswp .pswp__button--arrow--next {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.18s ease, border-color 0.18s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.92;
+}
+
+.pswp .pswp__button--close:hover,
+.pswp .pswp__button--arrow--prev:hover,
+.pswp .pswp__button--arrow--next:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.28);
+    opacity: 1;
+}
+
+.pswp .pswp__button--arrow--prev {
+    left: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.pswp .pswp__button--arrow--next {
+    right: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.pswp .pswp__button--arrow .pswp__icn {
+    position: static;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    transform: none;
+}
+
+.pswp .pswp__button--arrow--next .pswp__icn {
+    transform: scale(-1, 1);
+}
+
+.pswp .pswp__button--close .pswp__icn {
+    position: static;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.pswp .pswp__icn-shadow {
+    display: none;
+}
+
+.pswp .pswp__custom-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    max-width: min(680px, 88vw);
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .pswp .pswp__top-bar {
+        padding: 12px 14px;
+    }
+
+    .pswp .pswp__button--arrow--prev,
+    .pswp .pswp__button--arrow--next {
+        display: none;
+    }
+
+    .pswp .pswp__custom-caption {
+        bottom: 16px;
+        font-size: 12px;
+        white-space: normal;
+        border-radius: 12px;
+    }
+}
+
 /* 打印样式 */
 @media print {
     .toc-sidebar {

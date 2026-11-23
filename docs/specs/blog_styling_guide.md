@@ -24,6 +24,7 @@
 - 评论主题加载：生产环境使用站点自身的 `/css/giscus.css`，通过 `static/_headers` 允许 Giscus 跨域读取；本地预览由 `layouts/partials/comments.html` 将压缩主题作为数据链接传入。
 - 页面间距：文章信息下方留白为电脑端 24px、手机端（不超过 768px）20px，并清除元信息的重复底部留白。文章末尾按钮与评论卡片之间额外增加电脑端 24px、手机端（不超过 640px）16px 留白。
 - 网站图标：页头、浏览器标签页和手机端网站图标统一使用透明背景的鳄鱼形象，资源位于 `static/` 下的 favicon、apple-touch-icon 和 android-chrome 图标文件中。
+- 图片预览灯箱：基于 PhotoSwipe 5 实现正文图片点击放大（`layouts/partials/extend_footer.html` 与 `assets/css/extended/custom.css`），自动读取并写入图片真实 `naturalWidth` / `naturalHeight` 以保持原始宽高比，自动兼容直接书写的正文 `<img>`；采用深色半透明磨砂背景、圆角图片、圆形毛玻璃控制按钮、胶囊页码（单图隐藏）与底部居中图注，支持点击缩放、滚轮缩放、点空白背景关闭与 Esc 退出。
 
 ### 标题样式规范
 
